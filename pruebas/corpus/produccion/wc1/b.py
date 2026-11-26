@@ -1,0 +1,40 @@
+import sys; sys.path.insert(0,'/home/claude/d24'); from formato import *
+F=["If coffee sends you running to the bathroom, it's not just the caffeine. And there's a detail almost nobody knows.",
+"It usually hits in the morning, right after that first cup.",
+"In 1990, researchers in the UK tested it.",
+"They placed pressure sensors in volunteers' lower gut, and gave them a cup of coffee.",
+"In people who felt the urge, the gut started moving within four minutes. And it kept going for at least half an hour.",
+"They also tested it with plain hot water and no coffee, to compare results. Surprisingly, nothing happened. So it wasn't about a warm drink.",
+"But here's the detail almost nobody knows, and it changes who this happens to.",
+"Decaf did it too. Less than regular coffee, but still more than water.",
+"That's because coffee triggers a gut hormone called gastrin, even without caffeine.",
+"Gastrin tells your gut to get moving. It's the same kind of signal your body sends after you eat.",
+"And it doesn't happen to everyone. Only about 3 in 10 people feel it, and women far more than men.",
+"So if it happens to you, it's your gut waking up.",
+"Tell me if coffee does this to you.",
+"Follow for one coffee curiosity a day."]
+V=[f.replace("1990","nineteen ninety").replace("3 in 10","three in ten") for f in F]
+CL=dict(look="cliente",var=76,pelo="#212121",camisa="#ec407a",s=1.0)
+HO=dict(look="cliente",var=78,pelo="#4e342e",camisa="#26a69a",s=1.0)
+video("C2026112501_src.json","C2026112501","COFFEE, BUT WHY?","Why Coffee Makes You RUN to the Bathroom 🚽😳","RUN TO THE BATHROOM",F,V,
+ marcas=[("running",0,"^running"),("caffeine0",0,"^caffeine"),("morning",1,"^morning"),("uk",2,"^uk"),("sensors",3,"^sensors"),("four",4,"^four"),("half",4,"^half"),("water",5,"^water"),("nothing",5,"^nothing"),("detail",6,"^detail"),("decaf",7,"^decaf"),("gastrin",8,"^gastrin"),("eat",9,"^eat"),("women",10,"^women"),("waking",11,"^waking")],
+ escenas=[
+  {"z":"cocinaV","actores":[{**CL,"keys":[{"k":0,"x":400,"pose":"bebe","cara":"neutral","objeto":"taza"},{"k":"running","x":330,"pose":"piensa","cara":"sorpresa"}]}],
+   "props":[{"tipo":"puerta","x":700,"y":1700,"s":.85},{"tipo":"rotulo","x":700,"y":1330,"s":.9,"texto":"WC","color":"#90caf9","k":"running"},{"tipo":"humo","x":560,"y":1600,"s":.4,"a":.14}]},
+  {"k":"s_1","z":"dormitorioV","o":{"pared":["#f3e0c0","#e2c79a"]},"actores":[{**HO,"keys":[{"k":"s_1","x":420,"pose":"bebe","cara":"feliz","objeto":"taza"}]}]},
+  {"k":"s_2","z":"labV","o":{"pantalla":"COFFEE · GUT","pantalla2":"1990"},"titulo":("1990","amar"),
+   "actores":[{"look":"inventor","var":79,"lentes":True,"pelo":"#9e9e9e","camisa":"#eceff1","s":.98,"keys":[{"k":"s_2","x":330,"pose":"lee","cara":"neutral","objeto":"documento"}]}]},
+  {"k":"s_3","i":["#e8e2d2","#a89878","#2a2214"],"luz2":"255,245,220","props":[{"tipo":"papel","x":540,"y":1760,"s":1.25,"titulo":"GUT · PRESSURE TEST","dato":"SENSORS ON · 1 CUP OF COFFEE","sello":"RECORDING","selloc":"azul","filaDato":5}]},
+  {"k":"s_4","i":["#3a2a20","#1c130d","#050302"],"luz2":"255,220,180","pedestal":True,"props":[{"tipo":"tazaPremium","x":540,"y":1380,"s":1.4,"texto":"","pcolor":"#ffcc80"},{"tipo":"neblina","y":1700,"a":.12}]},
+  {"k":"s_5","i":["#16243f","#0b1222","#020408"],"luz2":"190,210,255","props":[{"tipo":"barras2","x":540,"y":1650,"s":1.6,"a":[100,"COFFEE","#8d6e63","ACTIVE"],"b":[3,"HOT WATER","#90caf9","NOTHING"],"suf":""}]},
+  {"k":"s_6","z":"cocinaV","actores":[{**CL,"keys":[{"k":"s_6","x":420,"pose":"piensa","cara":"sorpresa"}]}],"props":[{"tipo":"humo","x":800,"y":1500,"s":.4,"a":.16}]},
+  {"k":"s_7","i":["#2a2a3a","#14141f","#040408"],"luz2":"220,220,255","pedestal":True,"props":[{"tipo":"tazaPremium","x":540,"y":1330,"s":1.4,"texto":"DECAF","pcolor":"#a5d6a7"}]},
+  {"k":"s_8","i":["#1b3a1f","#0c1d0f","#020603"],"luz2":"190,255,190","props":[{"tipo":"rotulo","x":540,"y":1150,"s":1.6,"texto":"GASTRIN","color":"#a5d6a7","k":"gastrin"},{"tipo":"rotulo","x":540,"y":1330,"s":.8,"texto":"GUT HORMONE","color":"#ffffff","k":"gastrin"},{"tipo":"neblina","y":1700,"a":.14}]},
+  {"k":"s_9","z":"fuenteSodaV","actores":[{**HO,"keys":[{"k":"s_9","x":360,"pose":"bebe","cara":"feliz","objeto":"taza"}]}],"props":[{"tipo":"cafetera","x":120,"y":1520,"s":.8,"z":1500}]},
+  {"k":"s_10","i":["#3a0d2a","#1c0614","#050104"],"luz2":"255,170,210","props":[{"tipo":"barras2","x":540,"y":1650,"s":1.6,"a":[53,"WOMEN","#ec407a","53%"],"b":[19,"MEN","#42a5f5","19%"],"suf":""}]},
+  {"k":"s_11","z":"parqueV","o":{"hora":"manana"},"actores":[{**CL,"keys":[{"k":"s_11","x":420,"pose":"celebra","cara":"risa"}]}],"props":[{"tipo":"neblina","x":540,"y":1800,"a":.12}]}],
+ numeros=[{"k":"four","n":4,"suf":" MIN","c":"amar","etq":"GUT STARTS MOVING","fin":"s_5"}],
+ emojis=[{"k":"running","e":"🚽"},{"k":"nothing","e":"🤔"},{"k":"decaf","e":"😳"},{"k":"waking","e":"☀️","dur":1.2}],
+ gancho2=6,cierre="DOES IT HAPPEN TO YOU?",cierre2="Tell me. Comment",paises=["YES","NO"],
+ nota="Brown, Cann y Read (1990), Gut 31(4): 29% de 92 encuestados sienten ganas de defecar con café (53% mujeres, 19% hombres); en 8 'respondedores' el colon se activó a los 4 min con café y con descafeinado, duró ≥30 min; agua caliente no produjo aumento. Rao (1998): café 23% más que descafeinado y 60% más que agua. Café y descafeinado estimulan gastrina (McGill OSS). Guion aprobado por Tao 25-nov (línea base). Proporciones del gráfico de agua caliente: ilustrativas (sin aumento).",
+ fuentes=["https://pmc.ncbi.nlm.nih.gov/articles/PMC1378422","https://www.mcgill.ca/oss/article/health-nutrition/why-does-coffee-make-you-poop","https://www.healthline.com/health/is-coffee-a-laxative"])

@@ -1,0 +1,36 @@
+# Entorno de trabajo de la fábrica · registrado en la E0 (2026-11-26 02:52 -03)
+
+## Sistema
+Linux 6.18.44-fc-v880
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+
+## Herramientas
+Python 3.13.18
+Google Chrome for Testing 153.0.8010.12 
+ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
+git version 2.43.0
+node v22.23.4
+
+## Paquetes de Python que usa la fábrica
+librosa                    1.0.1
+matplotlib                 3.11.2
+numpy                      2.5.3
+onnxruntime                1.29.0
+pillow                     12.3.0
+playwright                 1.63.0
+requests                   2.34.2
+scipy                      1.18.1
+soundfile                  0.14.0
+
+## Modelos y activos externos
+- Voz (Kokoro ONNX): /mnt/user-data/uploads/gta-shorts/models/kokoro-v1.0.onnx y voices-v1.0.bin (origen: ~/gta-shorts/models del Mac)
+   4096 .
+   4096 ..
+   325532387 kokoro-v1.0.onnx
+   28214398 voices-v1.0.bin
+- Fuentes del motor: escena/Poppins-Bold.ttf y escena/Poppins-Regular.ttf (en el repositorio)
+- Sonidos del armado: escena/sonidos/ (en el repositorio)
+  espeakng-loader            0.2.4
+  kokoro-onnx                0.6.1
+  phonemizer                 3.6.0
+  kokoro-onnx (import ok) 0.6.1

@@ -1,0 +1,4 @@
+  wd2          55 cuadros en    5.2 s
+motor 725e0dba158579ef · 55 cuadros · 5.9 s
+{"cuadros_comparados": 55, "cuadros_distintos": 1, "identicos": false}
+  wd2       {'cuadros': 55, 'distintos': 1, 'primeros': ['24.000000'], 'sin_comparar': 0}

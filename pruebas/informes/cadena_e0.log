@@ -1,0 +1,66 @@
+== 1 · nivel completo, motor actual (línea base)
+Thu Nov 26 02:52:02 -03 2026
+  wd2        1413 cuadros en  133.5 s
+  wk2        1203 cuadros en  114.7 s
+  wc1        1908 cuadros en  194.0 s
+  wm2        1869 cuadros en  177.7 s
+  wr1        1479 cuadros en  160.4 s
+  wge2       1624 cuadros en  180.7 s
+  wgs1       1372 cuadros en  145.6 s
+  plano04     150 cuadros en  122.1 s
+  plano05     100 cuadros en   14.9 s
+  plano06     100 cuadros en   18.9 s
+  plano10     158 cuadros en  125.8 s
+motor 725e0dba158579ef · 11376 cuadros · 1391.6 s
+== 2 · nivel completo, motor de entrega del 25-nov (solo los 7 videos) contra la línea base
+Thu Nov 26 03:15:13 -03 2026
+  wd2        1413 cuadros en  134.1 s
+  wk2        1203 cuadros en  111.2 s
+  wc1        1908 cuadros en  183.7 s
+  wm2        1869 cuadros en  174.2 s
+  wr1        1479 cuadros en  150.7 s
+  wge2       1624 cuadros en  159.5 s
+  wgs1       1372 cuadros en  142.9 s
+motor 75bb7c4480a0d1bc · 10868 cuadros · 1058.5 s
+{"cuadros_comparados": 10868, "cuadros_distintos": 0, "identicos": true}
+  wd2       {'cuadros': 1413, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  wk2       {'cuadros': 1203, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  wc1       {'cuadros': 1908, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  wm2       {'cuadros': 1869, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  wr1       {'cuadros': 1479, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  wge2      {'cuadros': 1624, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  wgs1      {'cuadros': 1372, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+salida 0
+== 3 · nivel completo, planos, segunda corrida
+Thu Nov 26 03:32:52 -03 2026
+  plano04     150 cuadros en  114.8 s
+  plano05     100 cuadros en   15.7 s
+  plano06     100 cuadros en   18.8 s
+  plano10     158 cuadros en  126.0 s
+motor 725e0dba158579ef · 508 cuadros · 276.6 s
+{"cuadros_comparados": 508, "cuadros_distintos": 0, "identicos": true}
+  plano04   {'cuadros': 150, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  plano05   {'cuadros': 100, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  plano06   {'cuadros': 100, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  plano10   {'cuadros': 158, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+salida 0
+== 4 · camino real (render.py sin modificar + semilla) de los planos contra los videos aprobados
+Thu Nov 26 03:37:29 -03 2026
+plano04: 150 cuadros · aprobado 150 cuadros · IDÉNTICO al video aprobado
+plano05: 100 cuadros · aprobado 100 cuadros · IDÉNTICO al video aprobado
+plano06: 100 cuadros · aprobado 100 cuadros · IDÉNTICO al video aprobado
+plano10: 158 cuadros · aprobado 158 cuadros · IDÉNTICO al video aprobado
+== 5 · camino real de wd2, dos corridas
+Thu Nov 26 03:42:19 -03 2026
+wd2: 1413 cuadros · corridas IDÉNTICAS
+== 6 · cordura contra los videos entregados (con tolerancia)
+Thu Nov 26 03:48:28 -03 2026
+wd2   PSNR mín  34.4 dB · dif. media máx  3.63 · bloques 8x8: media máx  1.35, peor bloque  13.3
+wk2   PSNR mín  34.2 dB · dif. media máx  3.75 · bloques 8x8: media máx  1.45, peor bloque  13.7
+wc1   PSNR mín  34.7 dB · dif. media máx  3.54 · bloques 8x8: media máx  1.48, peor bloque  11.0
+wm2   PSNR mín  35.6 dB · dif. media máx  3.14 · bloques 8x8: media máx  1.48, peor bloque  12.9
+wr1   PSNR mín  35.9 dB · dif. media máx  2.78 · bloques 8x8: media máx  1.36, peor bloque  16.6
+wge2  PSNR mín  34.2 dB · dif. media máx  2.55 · bloques 8x8: media máx  1.43, peor bloque  19.0
+wgs1  PSNR mín  34.4 dB · dif. media máx  2.50 · bloques 8x8: media máx  1.39, peor bloque  16.3
+== fin
+Thu Nov 26 03:53:22 -03 2026

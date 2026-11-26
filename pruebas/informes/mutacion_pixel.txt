@@ -1,0 +1,6 @@
+  wd2          55 cuadros en    5.0 s
+  plano05      21 cuadros en    3.3 s
+motor bc84b2a9640df728 · 76 cuadros · 9.2 s
+{"cuadros_comparados": 76, "cuadros_distintos": 76, "identicos": false}
+  wd2       {'cuadros': 55, 'distintos': 55, 'primeros': ['0.000000', '1.000000', '2.000000', '3.000000', '4.000000', '5.000000', '6.000000', '7.000000', '8.000000', '9.000000'], 'sin_comparar': 0}
+  plano05   {'cuadros': 21, 'distintos': 21, 'primeros': ['0.150000', '0.316667', '0.483333', '0.650000', '0.816667', '0.983333', '1.150000', '1.316667', '1.483333', '1.650000'], 'sin_comparar': 0}

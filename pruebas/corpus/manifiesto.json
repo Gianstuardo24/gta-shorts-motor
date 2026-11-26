@@ -1,0 +1,610 @@
+{
+ "creado": "2026-11-26T02:44:04",
+ "nota": "Corpus de referencia de la E0. Solo lectura. Cambiarlo requiere autorización de Tao.",
+ "motor_entrega_25nov": {
+  "carpeta": "motor_entrega_25nov",
+  "escena.html": "75bb7c4480a0d1bcc59eaeb6ef2e192c39cb5acd042480558d2740cdf7aa5f61",
+  "igual_a": "escena/escena.html.bak_p27_paso0"
+ },
+ "items": [
+  {
+   "id": "wd2",
+   "tipo": "produccion",
+   "lote": "D2026112502",
+   "canal": "DogDecoded",
+   "titulo_archivo": "21h - STOP Buying RED TOYS For Your Dog",
+   "origen": {
+    "datos_render": "/tmp/rw.7dTU/_tmp/datos.json",
+    "slot": "/home/claude/d24/wd2",
+    "video_entregado": "/mnt/user-data/outputs/d25/DogDecoded/21h - STOP Buying RED TOYS For Your Dog.mp4"
+   },
+   "render": {
+    "t0": 0.0,
+    "fps": 30,
+    "cuadros": 1413
+   },
+   "motor_de_origen": "75bb7c4480a0d1bcc59eaeb6ef2e192c39cb5acd042480558d2740cdf7aa5f61",
+   "video": {
+    "archivo": "referencias_video/wd2_entregado.mp4",
+    "sha256": "a416edbae5b59a4d043b1df1b3e80f2751ce7e2a10265ba90447092226474d71",
+    "md5_video": "43650fbaa41421bcadaa3ba0116e75b2"
+   },
+   "archivos": {
+    "D2026112502.json": {
+     "sha256": "8c0d01cffe414ebb57003f968b19b452a0e9763e2e8a347046e7a76a78ea2f98",
+     "bytes": 11791
+    },
+    "D2026112502_src.json": {
+     "sha256": "54ea5418e06cb0fb77b238808e84bc0b7b9baeecc457bfa21642f74bfa4ef623",
+     "bytes": 9791
+    },
+    "b.py": {
+     "sha256": "e57c3799e005247f868707e53fd7b500b0810338553b9ad737de871e21def825",
+     "bytes": 4578
+    },
+    "datos_render.json": {
+     "sha256": "2fe4a05df204086baec2646e7e5e2ed34e9df378d582fb68832dfacc7cb81ee9",
+     "bytes": 11879
+    },
+    "ficha.json": {
+     "sha256": "c4ea8cfb06176a3a263d301baca117ec5344398ed8a54dd405d2d243e7200408",
+     "bytes": 455
+    },
+    "planos.log": {
+     "sha256": "5ff47d7a97ba9db1ede163a50b080a397c220265adbfc7de7dedbe0066c7bf9d",
+     "bytes": 382
+    },
+    "vz.wav": {
+     "sha256": "6b7e1f9ef1308fc9d1d987179f3bad3d4c6934898dc7b938a525dab38faa5a19",
+     "bytes": 2184044
+    },
+    "vz_palabras.json": {
+     "sha256": "3e7aebe573bc2f1da0aca6c453f30e8e652265cf3d75757739a3b95d6267fd99",
+     "bytes": 6756
+    },
+    "wd2.txt": {
+     "sha256": "be519261fb434991b82e5d61a0cf51c97204f6c1dac6e1fd1a61442adbba7dfe",
+     "bytes": 343
+    }
+   }
+  },
+  {
+   "id": "wk2",
+   "tipo": "produccion",
+   "lote": "K2026112502",
+   "canal": "CatDecoded",
+   "titulo_archivo": "21h - YOUR CAT SECRETLY SPEAKS TO YOU",
+   "origen": {
+    "datos_render": "/tmp/rw.1xtx/_tmp/datos.json",
+    "slot": "/home/claude/d24/wk2",
+    "video_entregado": "/mnt/user-data/outputs/d25/CatDecoded/21h - YOUR CAT SECRETLY SPEAKS TO YOU.mp4"
+   },
+   "render": {
+    "t0": 0.0,
+    "fps": 30,
+    "cuadros": 1203
+   },
+   "motor_de_origen": "75bb7c4480a0d1bcc59eaeb6ef2e192c39cb5acd042480558d2740cdf7aa5f61",
+   "video": {
+    "archivo": "referencias_video/wk2_entregado.mp4",
+    "sha256": "dd245d71e8501e063550e46b88e2a51aee8b3add3b8a7f6617e907da8a2a7861",
+    "md5_video": "d339390b8bb8d729a1d8c179a74f4a64"
+   },
+   "archivos": {
+    "K2026112502.json": {
+     "sha256": "aac47bfebd42e47bc00b9e2195b77bdec85c113789aa268338b972ddbfd95491",
+     "bytes": 12616
+    },
+    "K2026112502_src.json": {
+     "sha256": "9659a0093f213fb58c30e92b91956768fb286a192fe96b08fdd4ce898c03a934",
+     "bytes": 10390
+    },
+    "b.py": {
+     "sha256": "a18bff21f0bbe9b23b7e43b6f17706462f238ca0459ed24c3c1cd473938efb96",
+     "bytes": 4913
+    },
+    "datos_render.json": {
+     "sha256": "ed2b5b75d1966c4da259320b504083d782fa7ffe07504d9e98403493cb89a937",
+     "bytes": 12711
+    },
+    "ficha.json": {
+     "sha256": "66b2e2cbecdd1bd70988c002c93e03816544ec86c98b770c84d7d17bdd8e8b53",
+     "bytes": 450
+    },
+    "planos.log": {
+     "sha256": "980c0cde1cb21f34e636261f243ea98fe300da244cb3318b60cde243a519f265",
+     "bytes": 454
+    },
+    "vz.wav": {
+     "sha256": "6c6a6cfe51f5f90c27d3dfc54219157ad19200766953eed089ad228cecc9de3f",
+     "bytes": 1849484
+    },
+    "vz_palabras.json": {
+     "sha256": "b3695a3cc5f713c19dd3a00849d414d7c4759e9950c1b524a45b2706bd60e335",
+     "bytes": 5821
+    },
+    "wk2.txt": {
+     "sha256": "8097d3a58e987ce4d74df2bb3304da0a21503a5809ba368a791337b03d44d351",
+     "bytes": 324
+    }
+   }
+  },
+  {
+   "id": "wc1",
+   "tipo": "produccion",
+   "lote": "C2026112501",
+   "canal": "ChiChibitsTV",
+   "titulo_archivo": "21h - Why Coffee Makes You RUN to the Bathroom",
+   "origen": {
+    "datos_render": "/tmp/rw.AonJ/_tmp/datos.json",
+    "slot": "/home/claude/d24/wc1",
+    "video_entregado": "/mnt/user-data/outputs/d25/ChiChibitsTV/21h - Why Coffee Makes You RUN to the Bathroom.mp4"
+   },
+   "render": {
+    "t0": 0.0,
+    "fps": 30,
+    "cuadros": 1908
+   },
+   "motor_de_origen": "75bb7c4480a0d1bcc59eaeb6ef2e192c39cb5acd042480558d2740cdf7aa5f61",
+   "video": {
+    "archivo": "referencias_video/wc1_entregado.mp4",
+    "sha256": "18f85493ee4bd489f680e87ee13f98fb55a07d0d2dfc5bb7bac8b15ab7a42199",
+    "md5_video": "f16d0f1f2a67a7e14f42bd57b93d35b7"
+   },
+   "archivos": {
+    "C2026112501.json": {
+     "sha256": "5c510f9f934f3d176d964e8eca6862761790bf2dcd9f9dac29362223e65a94c4",
+     "bytes": 14381
+    },
+    "C2026112501_src.json": {
+     "sha256": "5e804de38012ad959d47e701b0ac8822e17a56b2505d5a6a94ea1b9729fc4563",
+     "bytes": 11742
+    },
+    "b.py": {
+     "sha256": "3a59d67b865ce570dee818af9ce707750d667ff72bb05921db84b8ef67134435",
+     "bytes": 5684
+    },
+    "datos_render.json": {
+     "sha256": "5555e70d66abb6547c633c75e7fc6d9545edae5b935730e69e5e23c51b1dd248",
+     "bytes": 14421
+    },
+    "ficha.json": {
+     "sha256": "3b963921a1777a78c61231f25e277dfe217a8ba8ec1f13e0819438da48d13ff7",
+     "bytes": 450
+    },
+    "planos.log": {
+     "sha256": "5f5469f3bb2d1982e211ae47978a86e65bd42ec04aab851459bf63673e1f7cc6",
+     "bytes": 486
+    },
+    "vz.wav": {
+     "sha256": "70fe658dd4ea3bafc8e58e40b61d4fa53794a7687a0c1f2611f396f88c6777a8",
+     "bytes": 2977484
+    },
+    "vz_palabras.json": {
+     "sha256": "61375bec3c3a3adad077e11792f7355280fc56bcb928a7aa315b9e4ba341e803",
+     "bytes": 8788
+    },
+    "wc1.txt": {
+     "sha256": "be5eefd6aafcdf02c29f30b539758551d439bc381f2729bfc787a63324f42ca9",
+     "bytes": 352
+    }
+   }
+  },
+  {
+   "id": "wm2",
+   "tipo": "produccion",
+   "lote": "M2026112502",
+   "canal": "MillionDollarMistake",
+   "titulo_archivo": "21h - Blockbuster LOST Everything in ONE Decision",
+   "origen": {
+    "datos_render": "/tmp/rw.wCc0/_tmp/datos.json",
+    "slot": "/home/claude/d24/wm2",
+    "video_entregado": "/mnt/user-data/outputs/d25/MillionDollarMistake/21h - Blockbuster LOST Everything in ONE Decision.mp4"
+   },
+   "render": {
+    "t0": 0.0,
+    "fps": 30,
+    "cuadros": 1869
+   },
+   "motor_de_origen": "75bb7c4480a0d1bcc59eaeb6ef2e192c39cb5acd042480558d2740cdf7aa5f61",
+   "video": {
+    "archivo": "referencias_video/wm2_entregado.mp4",
+    "sha256": "6409e0cb40e15f04577e32303eda01b72e7f873542cd6069a888a35c8ae20045",
+    "md5_video": "9bf2641983aec375506b1498fb9d875d"
+   },
+   "archivos": {
+    "M2026112502.json": {
+     "sha256": "c05ae2c990a700283a88797d8d4171ff937c4cf814ad9fdd6bbc1f499e83e282",
+     "bytes": 14130
+    },
+    "M2026112502_src.json": {
+     "sha256": "d45a76e95c86028825ca16831121a46ccc5e3e7c09bf5f4e7f15f48f01fdc2c4",
+     "bytes": 11245
+    },
+    "b.py": {
+     "sha256": "e95dd87385a70e3b7d4ae48173b807cfcfddb2e116463077af772cd4de96a905",
+     "bytes": 5594
+    },
+    "datos_render.json": {
+     "sha256": "8f8e4cd38edf8a1b880f893a0841397bed6d1dee1877921f1009ba20aabd91f0",
+     "bytes": 13601
+    },
+    "ficha.json": {
+     "sha256": "df90735288bd45fd49351ba7bb4a33f250cae9e4840b27fe46edcaa878f90d1b",
+     "bytes": 435
+    },
+    "planos.log": {
+     "sha256": "11902216df4919816862b31cbeff3a2ee535b2663ec2f7a3db5e0d022ca8e7ba",
+     "bytes": 616
+    },
+    "vz.wav": {
+     "sha256": "1d8d879be0ccc76fba27d89a49189520ea232281e50f7671f8db9715c42eb3e4",
+     "bytes": 2913644
+    },
+    "vz_palabras.json": {
+     "sha256": "2a5d808c3ff4a8b8a2e62e0260ea0e4b2e16631e379d24021dfd9015a68e5b45",
+     "bytes": 7328
+    },
+    "wm2.txt": {
+     "sha256": "9725bb876947aa94ec97b9d046115511de256ef78efbf37673abb98703383978",
+     "bytes": 382
+    }
+   }
+  },
+  {
+   "id": "wr1",
+   "tipo": "produccion",
+   "lote": "R2026112501",
+   "canal": "TheRabbitLoop",
+   "titulo_archivo": "22h - THE PENTAGON CONFIRMED THIS VIDEO IS REAL",
+   "origen": {
+    "datos_render": "/tmp/rw.CSa7/_tmp/datos.json",
+    "slot": "/home/claude/d24/wr1",
+    "video_entregado": "/mnt/user-data/outputs/d25/TheRabbitLoop/22h - THE PENTAGON CONFIRMED THIS VIDEO IS REAL.mp4"
+   },
+   "render": {
+    "t0": 0.0,
+    "fps": 30,
+    "cuadros": 1479
+   },
+   "motor_de_origen": "75bb7c4480a0d1bcc59eaeb6ef2e192c39cb5acd042480558d2740cdf7aa5f61",
+   "video": {
+    "archivo": "referencias_video/wr1_entregado.mp4",
+    "sha256": "c4f66c9bbaddbf744bbe01d9f50cbc21994c73e97ae2fff6b6a47f346eab8e62",
+    "md5_video": "3e367436fa3966a89e12208737a84d62"
+   },
+   "archivos": {
+    "R2026112501.json": {
+     "sha256": "c95b8e05b420f9e9950ecba5eafb821a258864ccf54c8f69892b3b3d2b0c2847",
+     "bytes": 11093
+    },
+    "R2026112501_src.json": {
+     "sha256": "c13f3be5b2b1243dd36f7211d6286135eaa8e8cbb1194171592c4a64c3607213",
+     "bytes": 9113
+    },
+    "b.py": {
+     "sha256": "bbfff9e59b0e6fd6efed391e11d4d4e203bc8f69f1758fb2eaa31b822295085a",
+     "bytes": 4427
+    },
+    "datos_render.json": {
+     "sha256": "91ec50906cfbe82982d370946585c990afacf75436c0e94edae25e248f015c18",
+     "bytes": 10775
+    },
+    "ficha.json": {
+     "sha256": "e3c505d44f13e5c139e0c5e0f98c7c482f5eff6629557b0fc3561eb67e0178b5",
+     "bytes": 459
+    },
+    "planos.log": {
+     "sha256": "caf5b0caf71ac927310ee6a339a43b720c335bc889007f3da17d483672dc0192",
+     "bytes": 403
+    },
+    "vz.wav": {
+     "sha256": "2b16a9c1b2211fedc4e76cbf56fdf659b1277a5f3d3adff835510e3f7dbd3206",
+     "bytes": 2291084
+    },
+    "vz_palabras.json": {
+     "sha256": "7e28406f07e064dad1043c60f9b0ffbf24813a96a6ef19b77293e6be18726df0",
+     "bytes": 6477
+    },
+    "wr1.txt": {
+     "sha256": "74cf0b306bf487369d42eba30c0b0f4eae18455a65217ea615f5c1d981bea220",
+     "bytes": 414
+    }
+   }
+  },
+  {
+   "id": "wge2",
+   "tipo": "produccion",
+   "lote": "G2026112502en",
+   "canal": "TheViceVerseGG",
+   "titulo_archivo": "21h - GTA 6 Just HUMILIATED Hollywood",
+   "origen": {
+    "datos_render": "/tmp/rw.COgH/_tmp/datos.json",
+    "slot": "/home/claude/d24/wge2",
+    "video_entregado": "/mnt/user-data/outputs/d25/TheViceVerseGG/21h - GTA 6 Just HUMILIATED Hollywood.mp4"
+   },
+   "render": {
+    "t0": 0.0,
+    "fps": 30,
+    "cuadros": 1624
+   },
+   "motor_de_origen": "75bb7c4480a0d1bcc59eaeb6ef2e192c39cb5acd042480558d2740cdf7aa5f61",
+   "video": {
+    "archivo": "referencias_video/wge2_entregado.mp4",
+    "sha256": "d96e7bfa8857ffbeec6c05e6bd9a8a2de57d9747e4bc97d9ebf3b33a8544e845",
+    "md5_video": "54fca121fa504a7da8b1f2971b9c0277"
+   },
+   "archivos": {
+    "G2026112502en.json": {
+     "sha256": "22e2224180eb4a501d06d2c01c114a36cb83db0ec31081a5bbbf7e103d5ad607",
+     "bytes": 11133
+    },
+    "G2026112502en_src.json": {
+     "sha256": "2330a04797af7870310df1dad945c24d00118d6b0d7c1dd769b87c4186da116c",
+     "bytes": 9104
+    },
+    "b.py": {
+     "sha256": "bfcb7c8db91d03fa131c2cfdfd306ad9045e5a7b468d8a69571b8d9055b5b9cd",
+     "bytes": 4833
+    },
+    "datos_render.json": {
+     "sha256": "b63aacf57f3916bc1a2b8efe5238d9cfaddb87f19f7e46f6ab18a0d964156f73",
+     "bytes": 10923
+    },
+    "ficha.json": {
+     "sha256": "6b3e18e882d481b94845f14843d39efce40d889e8a88e5530a962fea43f3824a",
+     "bytes": 424
+    },
+    "planos.log": {
+     "sha256": "10a9fd1068461ffff25824249414166284ffbc1b70980f47fceef2b048234917",
+     "bytes": 385
+    },
+    "vz.wav": {
+     "sha256": "10610ae8d730cfe6ad0b8901f177a568329e78075cc7ff4a58c77de155459e01",
+     "bytes": 2521964
+    },
+    "vz_palabras.json": {
+     "sha256": "dc9a183a030d72ce9a58cfbfd0656320f4c646bd5f4ab6dafc90421969187570",
+     "bytes": 6808
+    },
+    "wge2.txt": {
+     "sha256": "b81927628efff724d78c748cf3fef18ff7154c83d2a31a4d5a311bc69ac76ee4",
+     "bytes": 288
+    }
+   }
+  },
+  {
+   "id": "wgs1",
+   "tipo": "produccion",
+   "lote": "G2026112501",
+   "canal": "ViceVersoGG",
+   "titulo_archivo": "22h - GTA 5 HUMILLÓ a GTA 6",
+   "origen": {
+    "datos_render": "/tmp/rw.7vRY/_tmp/datos.json",
+    "slot": "/home/claude/d24/wgs1",
+    "video_entregado": "/mnt/user-data/outputs/d25/ViceVersoGG/22h - GTA 5 HUMILLÓ a GTA 6.mp4"
+   },
+   "render": {
+    "t0": 0.0,
+    "fps": 30,
+    "cuadros": 1372
+   },
+   "motor_de_origen": "75bb7c4480a0d1bcc59eaeb6ef2e192c39cb5acd042480558d2740cdf7aa5f61",
+   "video": {
+    "archivo": "referencias_video/wgs1_entregado.mp4",
+    "sha256": "6d397ac180d09804193ff78fd776dfd0fc5cbfe2b427e3d53e7ab2baae686ac8",
+    "md5_video": "0deba575f4b7046c6fc0c79c0878d6b5"
+   },
+   "archivos": {
+    "G2026112501.json": {
+     "sha256": "8cc01f34e59dd49c6bccebb7f801255ba77107a8018f3221e16d47746af6596d",
+     "bytes": 10569
+    },
+    "G2026112501_src.json": {
+     "sha256": "ab841a14fc5f890f3931aa533b0761543bfc4ac1bfe3f059500ca475e01c89bd",
+     "bytes": 8487
+    },
+    "b.py": {
+     "sha256": "989fcbc86316e985797010b528acede65a4ac63b1fb44cbc00d8a51b32c4bbb4",
+     "bytes": 4722
+    },
+    "datos_render.json": {
+     "sha256": "5cf00da4bc117099174bd855a5b65b2f8583724d5aaf5dc9d2e7e5638608054a",
+     "bytes": 10361
+    },
+    "ficha.json": {
+     "sha256": "128185cbf15f3894dd988a00906c74e26e6ca98bcf0878eb3ace8586721c7370",
+     "bytes": 436
+    },
+    "planos.log": {
+     "sha256": "676ad4b800c04dab9c2e4b85aec306898644a59ffa5749b13b98c94ec0247f28",
+     "bytes": 362
+    },
+    "vz.wav": {
+     "sha256": "9448ae28433e6c58dad8916af21a8437ceac09b17b3bee53ee53e51965550f70",
+     "bytes": 2119004
+    },
+    "vz_palabras.json": {
+     "sha256": "a383178107c0b22a982308755801006f770ff2912bbb476d502b4c5dc9434866",
+     "bytes": 6067
+    },
+    "wgs1.txt": {
+     "sha256": "36088d85c08e178577d8aa9ac10d587300cfcd089be6d4c77c552a0521bcec95",
+     "bytes": 229
+    }
+   }
+  },
+  {
+   "id": "plano04",
+   "tipo": "plano",
+   "version_aprobada": "plano04_v2",
+   "origen": {
+    "carpeta": "/home/claude/prueba27/p04"
+   },
+   "render": {
+    "t0": 0.15,
+    "fps": 30,
+    "cuadros": 150
+   },
+   "video": {
+    "archivo": "referencias_video/plano04_aprobado.mp4",
+    "sha256": "187bff18e0d20684d1b78e6afa1371e9d92fb96b2c19e152b4ea479a2f8e2d1b",
+    "md5_video": "c836349a48387fffa6f9d51eb8e4913c"
+   },
+   "archivos": {
+    "datos.json": {
+     "sha256": "dc0d06e4e83bd8affd2c58e2de5db91de60d0a2042b529fa54a2763d175b002b",
+     "bytes": 2244
+    },
+    "gen04.py": {
+     "sha256": "a696d65471fa21fe18a38d401333885f2d650eff417d90427be9262c89f3ca30",
+     "bytes": 3207
+    },
+    "src.json": {
+     "sha256": "7557a017cd22bb1ac61de0bd66c0b7202c4dc33e069dc298c97849a529249f29",
+     "bytes": 171
+    },
+    "vz.wav": {
+     "sha256": "a38755e26b3a8b27c1a4de3e7fdf8eed5f27258545197d191b670d8b5c3d3dd0",
+     "bytes": 232844
+    },
+    "vz_palabras.json": {
+     "sha256": "05c73a7904f10184cccb024ce2056f0ba961bd7cbc0fa66a3165ea247ba90711",
+     "bytes": 584
+    }
+   }
+  },
+  {
+   "id": "plano05",
+   "tipo": "plano",
+   "version_aprobada": "plano05_v3",
+   "origen": {
+    "carpeta": "/home/claude/prueba27/p05"
+   },
+   "render": {
+    "t0": 0.15,
+    "fps": 30,
+    "cuadros": 100
+   },
+   "video": {
+    "archivo": "referencias_video/plano05_aprobado.mp4",
+    "sha256": "9eb4efa3c49aea7f71f0b917058d8b29d825d7aa566c235b61316c05042840e2",
+    "md5_video": "795300e453d6ace14115c820492d5b3c"
+   },
+   "archivos": {
+    "datos.json": {
+     "sha256": "473fe543543545537baa9bb64fdaca286db98348764bf0e06237cfa982e65b8f",
+     "bytes": 1584
+    },
+    "datos_control.json": {
+     "sha256": "177cf5239d7b68abe826986e9d63394ccf93020f7334e1cb102ca32368169985",
+     "bytes": 1602
+    },
+    "datos_testigo.json": {
+     "sha256": "84231d5bbc4abde5df28116ecf01465226c99f18b2f5411a5c12a5d1ecc1e825",
+     "bytes": 1601
+    },
+    "gen05.py": {
+     "sha256": "8722adfbec6af68cef42df06ce5435f50e60a4ac58bd9fc08aa5397e33f7f612",
+     "bytes": 4096
+    },
+    "src.json": {
+     "sha256": "672a3ec2711cbb5958aa3e0650e7accfb73d40214cca9bc33d1dcc1a6ee1ea71",
+     "bytes": 139
+    },
+    "vz.wav": {
+     "sha256": "c8c0cb35f0653e8cebd542e29546841ed65ef475d464ecbd0697611cfea2fe6d",
+     "bytes": 131564
+    },
+    "vz_palabras.json": {
+     "sha256": "3789814196d7f8c955dfc1d8eee0549023f5a4f84ccdb80c2565d1324e937e48",
+     "bytes": 372
+    }
+   }
+  },
+  {
+   "id": "plano06",
+   "tipo": "plano",
+   "version_aprobada": "plano06_v2",
+   "origen": {
+    "carpeta": "/home/claude/prueba27/p06"
+   },
+   "render": {
+    "t0": 0.15,
+    "fps": 30,
+    "cuadros": 100
+   },
+   "video": {
+    "archivo": "referencias_video/plano06_aprobado.mp4",
+    "sha256": "48fe1ab51401d63599aaec8d5a86a168d5e9465ef356b9e60d9bf621db161651",
+    "md5_video": "baee3baabb3dd338dfdf5289d6245173"
+   },
+   "archivos": {
+    "datos.json": {
+     "sha256": "92aab16687e9fcc25e2955d5276386b9d870e0194eea65c9babeb08de97a0e33",
+     "bytes": 10836
+    },
+    "datos_testigo.json": {
+     "sha256": "8a48542ccc46eeac85cfabee8fa58683359b460409c281de3e3add71209668e0",
+     "bytes": 10853
+    },
+    "gen06.py": {
+     "sha256": "362128b9a05854a07e47d88290ad2fdb46aab5fe8fe4aebd38efbc80fe9be7c5",
+     "bytes": 8041
+    },
+    "src.json": {
+     "sha256": "6730a40536c78bf101a9ac5d3edcc4b191eb5a2713d53476d313181e2f6e6773",
+     "bytes": 147
+    },
+    "vz.wav": {
+     "sha256": "00059f648436452e5b1224a7b7b5b95d97fb6648dc6a29f7c74fe16a89364263",
+     "bytes": 136844
+    },
+    "vz_palabras.json": {
+     "sha256": "7bedbafc0d290ac3696684c997825ff9ea5c6f21dca8b769bca5e40e92030ee2",
+     "bytes": 456
+    }
+   }
+  },
+  {
+   "id": "plano10",
+   "tipo": "plano",
+   "version_aprobada": "plano10_v4",
+   "origen": {
+    "carpeta": "/home/claude/prueba27/p10"
+   },
+   "render": {
+    "t0": 0.15,
+    "fps": 30,
+    "cuadros": 158
+   },
+   "video": {
+    "archivo": "referencias_video/plano10_aprobado.mp4",
+    "sha256": "33692c4df7606933a7e07ab47b835341e718d8cef5bfcbe39e6672ddccd31dbb",
+    "md5_video": "bd79a97a282f8da6e7e7a1c85dc95de5"
+   },
+   "archivos": {
+    "datos.json": {
+     "sha256": "80a489d44c6bb73d4b32a959a0592a8efba75b081c89c20e8e87267c987b9074",
+     "bytes": 4259
+    },
+    "gen10.py": {
+     "sha256": "1541b89a3f8d6731ab2e8a4e233d3f1688b896889f93e17e51a17f5ea4b26f43",
+     "bytes": 6277
+    },
+    "src.json": {
+     "sha256": "d4e2481c46d7c36337d276742446104a6a471e3643ebba0c9c3c031a0b081cbe",
+     "bytes": 180
+    },
+    "vz.wav": {
+     "sha256": "85e0130f6804a90574dee34681a5d073cace33de01d68a57ee5c45133fd25640",
+     "bytes": 243404
+    },
+    "vz_palabras.json": {
+     "sha256": "ab66c6f46a71328f821e6122880ab7bd6c7f3ec6cedc95886f7aff5312d4679e",
+     "bytes": 697
+    }
+   }
+  }
+ ]
+}

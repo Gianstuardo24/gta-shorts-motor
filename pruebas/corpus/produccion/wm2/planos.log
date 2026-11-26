@@ -1,0 +1,14 @@
+  0.00-  4.24 objeto    L=4.2 foco=- n_vis=0 cifra
+  4.24-  7.13 recorre   L=2.9 foco=- n_vis=0
+  7.19- 12.38 detalle   (inclina)
+ 12.44- 16.35 detalle   (sube)
+ 16.41- 22.44 dos       L=6.0 foco=105 n_vis=2 cifra
+ 22.50- 25.82 medio     L=3.3 foco=104 n_vis=1 cifra
+ 25.88- 26.67 detalle   (papel)
+ 26.73- 29.33 detalle   (empuje)
+ 29.39- 33.59 balanceo  L=4.2 foco=- n_vis=0 cifra
+ 33.59- 39.72 general   L=6.1 foco=- n_vis=0 cifra
+ 39.78- 43.31 primer    L=3.5 foco=105 n_vis=3
+ 43.37- 48.43 detalle   (abre)
+ 48.49- 51.98 objeto    L=3.5 foco=- n_vis=0 cifra
+ 52.04- 56.54 tercio    L=4.5 foco=105 n_vis=1 cifra
