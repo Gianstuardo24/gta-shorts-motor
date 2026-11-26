@@ -1,0 +1,7 @@
+wd2 salida=0 "cuadros_comparados": 55, "cuadros_distintos": 0
+wk2 salida=0 "cuadros_comparados": 47, "cuadros_distintos": 0
+wc1 salida=0 "cuadros_comparados": 71, "cuadros_distintos": 0
+wm2 salida=0 "cuadros_comparados": 70, "cuadros_distintos": 0
+wr1 salida=0 "cuadros_comparados": 57, "cuadros_distintos": 0
+wge2 salida=0 "cuadros_comparados": 62, "cuadros_distintos": 0
+wgs1 salida=0 "cuadros_comparados": 53, "cuadros_distintos": 0

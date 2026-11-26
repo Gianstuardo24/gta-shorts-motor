@@ -1,0 +1,4153 @@
+{
+ "creado": "2026-11-26T11:23:24-0300",
+ "nota": "Condiciones exactas de cada render de referencia. Solo lectura: cambiarlo requiere autorización de Tao.",
+ "etiqueta": "estado-inicial-2026-11-26",
+ "commit": "a1b3787e4835911753643ceac50dcfef930c1d3e",
+ "scripts_pipeline": {
+  "d24/uno2.sh": {
+   "ruta_git": "d24/uno2.sh",
+   "blob": "78dee95aef111a2e8b2cdc9ec17e025bd276b834",
+   "sha256": "1d60f077812a5443e3e57359adb4f31f39b4b781aeeca4a00c21cbfd7949bc41"
+  },
+  "d24/q2.sh": {
+   "ruta_git": "d24/q2.sh",
+   "blob": "a3529df4764dc0b4bec63ba41e8fb48c536d3525",
+   "sha256": "64c063aded1e6049ffb117f0cc11f396e52110bf3c0b7f902d871f305d9e59c0"
+  },
+  "hacer.sh": {
+   "ruta_git": "hacer.sh",
+   "blob": "87195b15bc914d04bfd1f74b0f68f4db0d77b19d",
+   "sha256": "108261570a1eaa5ba41691c9d48472c704c57cdc39bdc0045365ff6ccd077389"
+  },
+  "datos_de.sh": {
+   "ruta_git": "datos_de.sh",
+   "blob": "6890e01007fd52e5369b8af5f7aeabd3fc7cb56d",
+   "sha256": "ce6be8518f8e91ef2d73676d8834a2d48252057e23746b032ac120e310921076"
+  },
+  "resolver.py": {
+   "ruta_git": "resolver.py",
+   "blob": "e2e7ca528212435dbb92095de87d75a3260d9ad3",
+   "sha256": "6c4c040c31ca9b922fcbdff64d049d10cd5a483b43d001945e3a89e60ab85423"
+  },
+  "d24/post.py": {
+   "ruta_git": "d24/post.py",
+   "blob": "328e83281c008edf4f52f37b54b73766a6f28f06",
+   "sha256": "3a10cd3bf8d9dff3993bbb553e757d087d92af98c82a21b665015354ebe273e1"
+  },
+  "planos_shorts.py": {
+   "ruta_git": "planos_shorts.py",
+   "blob": "0f8713374842c87b05c954fca28987cc53d16acf",
+   "sha256": "a896232e50720fc3e14ec98422a4fc8657d35600337b531dc2ffd2daaaf3ecd0"
+  },
+  "render_par.sh": {
+   "ruta_git": "render_par.sh",
+   "blob": "afc7fecb5c43bdb5e6ebcf732b8d2cddc6bf8c9a",
+   "sha256": "9b3498f8c085013c57a38fa0ea9eab00d082e73fe061949f9b08b404c24dec09"
+  },
+  "d24/formato.py": {
+   "ruta_git": "d24/formato.py",
+   "blob": "1655af6859b901c034b1c5fb78b23e04ebdbc748",
+   "sha256": "2bc0ed02d292f58eb6e2b681056701a1ae62ef560bb7b89b2a00e63fd9cd98a1"
+  }
+ },
+ "modelo_voz": {
+  "kokoro-v1.0.onnx": {
+   "bytes": 325532387,
+   "sha256": "7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5"
+  },
+  "voices-v1.0.bin": {
+   "bytes": 28214398,
+   "sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d"
+  }
+ },
+ "entorno": "# Entorno de trabajo de la fábrica · registrado en la E0 (2026-11-26 02:52 -03)\n\n## Sistema\nLinux 6.18.44-fc-v880\nPRETTY_NAME=\"Ubuntu 24.04.5 LTS\"\n\n## Herramientas\nPython 3.13.18\nGoogle Chrome for Testing 153.0.8010.12 \nffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\ngit version 2.43.0\nnode v22.23.4\n\n## Paquetes de Python que usa la fábrica\nlibrosa                    1.0.1\nmatplotlib                 3.11.2\nnumpy                      2.5.3\nonnxruntime                1.29.0\npillow                     12.3.0\nplaywright                 1.63.0\nrequests                   2.34.2\nscipy                      1.18.1\nsoundfile                  0.14.0\n\n## Modelos y activos externos\n- Voz (Kokoro ONNX): /mnt/user-data/uploads/gta-shorts/models/kokoro-v1.0.onnx y voices-v1.0.bin (origen: ~/gta-shorts/models del Mac)\n   4096 .\n   4096 ..\n   325532387 kokoro-v1.0.onnx\n   28214398 voices-v1.0.bin\n- Fuentes del motor: escena/Poppins-Bold.ttf y escena/Poppins-Regular.ttf (en el repositorio)\n- Sonidos del armado: escena/sonidos/ (en el repositorio)\n  espeakng-loader            0.2.4\n  kokoro-onnx                0.6.1\n  phonemizer                 3.6.0\n  kokoro-onnx (import ok) 0.6.1\n",
+ "slots": {
+  "wd2": {
+   "lote": "D2026112502",
+   "canal": "DogDecoded",
+   "titulo_archivo": "21h - STOP Buying RED TOYS For Your Dog",
+   "datos_slot": {
+    "datos.json": {
+     "ruta_git": "d24/wd2/datos.json",
+     "blob": "7c248fc8a3c8ee3321de244b956ba2d588faf5bd",
+     "sha256": "87d2dfa9d3a0124baedbf0ae96a968a800ad71d73c7c5ef53f0b996884da9f7b"
+    },
+    "datos0.json": {
+     "ruta_git": "d24/wd2/datos0.json",
+     "blob": "7c248fc8a3c8ee3321de244b956ba2d588faf5bd",
+     "sha256": "87d2dfa9d3a0124baedbf0ae96a968a800ad71d73c7c5ef53f0b996884da9f7b"
+    },
+    "nota": "marcadores T de la voz; post.py y planos_shorts.py los leen. Igual a datos0.json"
+   },
+   "entradas_corpus": {
+    "D2026112502.json": "8c0d01cffe414ebb57003f968b19b452a0e9763e2e8a347046e7a76a78ea2f98",
+    "D2026112502_src.json": "54ea5418e06cb0fb77b238808e84bc0b7b9baeecc457bfa21642f74bfa4ef623",
+    "b.py": "e57c3799e005247f868707e53fd7b500b0810338553b9ad737de871e21def825",
+    "datos_render.json": "2fe4a05df204086baec2646e7e5e2ed34e9df378d582fb68832dfacc7cb81ee9",
+    "ficha.json": "c4ea8cfb06176a3a263d301baca117ec5344398ed8a54dd405d2d243e7200408",
+    "planos.log": "5ff47d7a97ba9db1ede163a50b080a397c220265adbfc7de7dedbe0066c7bf9d",
+    "vz.wav": "6b7e1f9ef1308fc9d1d987179f3bad3d4c6934898dc7b938a525dab38faa5a19",
+    "vz_palabras.json": "3e7aebe573bc2f1da0aca6c453f30e8e652265cf3d75757739a3b95d6267fd99",
+    "wd2.txt": "be519261fb434991b82e5d61a0cf51c97204f6c1dac6e1fd1a61442adbba7dfe"
+   },
+   "entradas_en_git": {
+    "D2026112502_src.json": {
+     "ruta_git": "d24/wd2/D2026112502_src.json",
+     "blob": "2f8adcb4827feeed2f3a326a11c6ed0e7a9a5c66",
+     "sha256": "54ea5418e06cb0fb77b238808e84bc0b7b9baeecc457bfa21642f74bfa4ef623"
+    },
+    "D2026112502.json": {
+     "ruta_git": "d24/wd2/D2026112502.json",
+     "blob": "bad0db1e226b2be9230c31fd01bbe62554af6d25",
+     "sha256": "8c0d01cffe414ebb57003f968b19b452a0e9763e2e8a347046e7a76a78ea2f98"
+    },
+    "b.py": {
+     "ruta_git": "d24/wd2/b.py",
+     "blob": "0d880932b52c82deee8e4109d847a728c2e54f38",
+     "sha256": "e57c3799e005247f868707e53fd7b500b0810338553b9ad737de871e21def825"
+    },
+    "vz_palabras.json": {
+     "ruta_git": "d24/wd2/vz_palabras.json",
+     "blob": "1ad29425586cca4a5de72ef0be65c55cdf878ec9",
+     "sha256": "3e7aebe573bc2f1da0aca6c453f30e8e652265cf3d75757739a3b95d6267fd99"
+    },
+    "planos.log": {
+     "ruta_git": "d24/wd2/planos.log",
+     "blob": "733592ca358e42977d218621966fbd3467e89c6f",
+     "sha256": "5ff47d7a97ba9db1ede163a50b080a397c220265adbfc7de7dedbe0066c7bf9d"
+    },
+    "ficha.json": {
+     "ruta_git": "d24/wd2/ficha.json",
+     "blob": "664292eed0949403fd52a0fdd328cf62e13e9df9",
+     "sha256": "c4ea8cfb06176a3a263d301baca117ec5344398ed8a54dd405d2d243e7200408"
+    }
+   },
+   "comando": {
+    "encolar": "d24/q2.sh wd2 D2026112502 af_heart 1.2 en",
+    "pipeline": "uno2.sh: b.py → hacer.sh (voz, datos_de.sh, resolver.py) → post.py → planos_shorts.py → render_par.sh",
+    "render": "render_par.sh D2026112502.json vz.wav vz_palabras.json v1.mp4 deep"
+   },
+   "voz": {
+    "voz": "af_heart",
+    "velocidad": 1.2,
+    "idioma": "en",
+    "pausa": 0.12,
+    "joven": false,
+    "modelo": "kokoro-v1.0 (ver modelo_voz)"
+   },
+   "musica": {
+    "estilo": "deep",
+    "azar": "con semilla fija (musica.py: md5 de la semilla; armar_escena.py: el lote; sintet_sfx.py: 7)"
+   },
+   "render": {
+    "t0": 0.0,
+    "fps": 30,
+    "cuadros": 1413,
+    "cuadro": "JPEG calidad 0.92 → ffmpeg libx264 -preset veryfast -crf 20 yuv420p (render.py)",
+    "azar_del_motor": "Math.random sin semilla en el grano del acabado pro (no reproducible bit a bit)"
+   },
+   "motor": {
+    "sha256": "75bb7c4480a0d1bcc59eaeb6ef2e192c39cb5acd042480558d2740cdf7aa5f61",
+    "ruta_git": "escena/escena.html.bak_p27_paso0",
+    "copia_corpus": "corpus/motor_entrega_25nov/escena.html"
+   },
+   "carpeta_render": {
+    "origen": "/tmp/rw.7dTU",
+    "archivos": {
+     "Poppins-Bold.ttf": {
+      "sha256": "983676516167748b74de6f4771fb384c664fd913acb8b471122ecacf5da5ea6c",
+      "ruta_git": "escena/Poppins-Bold.ttf",
+      "igual_a_git": true
+     },
+     "Poppins-Regular.ttf": {
+      "sha256": "7e65201e9b79159e2300267cc885e16c8dcef2424cdfa09a29bfb0980a94a7ba",
+      "ruta_git": "escena/Poppins-Regular.ttf",
+      "igual_a_git": true
+     },
+     "ajustar_tiempos.py": {
+      "sha256": "bb85ca6bf3f6931ed92d72829322e8a8459d0213c8fcbae99032ff337a650618",
+      "ruta_git": "escena/ajustar_tiempos.py",
+      "igual_a_git": true
+     },
+     "armar_escena.py": {
+      "sha256": "0ad7c3b0cd4bcd0581a3f074ffda3d4e44e76d71ce5316559aabd7134b7eed98",
+      "ruta_git": "escena/armar_escena.py",
+      "igual_a_git": true
+     },
+     "armar_largo.py": {
+      "sha256": "360f3c8c87972c645bf2ef24751bc0a7abe173d7b98ad26ef3a49ce600b9084c",
+      "ruta_git": "escena/armar_largo.py",
+      "igual_a_git": true
+     },
+     "clip_planos.py": {
+      "sha256": "66787f258bef4d0b2e188efcaadea99fd5a78b9f5135c81a55360ffd806ec07b",
+      "ruta_git": "escena/clip_planos.py",
+      "igual_a_git": true
+     },
+     "entonacion.py": {
+      "sha256": "642d5c028dcc4f8555745456ebb15fbff070c511ac738c57aa5eaccb38c61806",
+      "ruta_git": "escena/entonacion.py",
+      "igual_a_git": true
+     },
+     "escena.html": {
+      "sha256": "75bb7c4480a0d1bcc59eaeb6ef2e192c39cb5acd042480558d2740cdf7aa5f61",
+      "ruta_git": "escena/escena.html.bak_p27_paso0",
+      "igual_a_git": true
+     },
+     "joven.py": {
+      "sha256": "2bd2352222d44131845fbf8976e708e84af318f3835a6efb2cc365feccf25472",
+      "ruta_git": "escena/joven.py",
+      "igual_a_git": true
+     },
+     "muestras.py": {
+      "sha256": "475873623e791caf0cf843ace1d53833a751a92d8a75305cffaa93165981ccdb",
+      "ruta_git": "escena/muestras.py",
+      "igual_a_git": true
+     },
+     "muestras_h.py": {
+      "sha256": "100a3d11183bc766b3c2d9386e7279d192e4180bbdbe9695ac7fb796aff72408",
+      "ruta_git": "escena/muestras_h.py",
+      "igual_a_git": true
+     },
+     "musica.py": {
+      "sha256": "eed07eb6a2b89004b492748ff99a85a18c43de34cb5ce53fb2a166b841da1246",
+      "ruta_git": "escena/musica.py",
+      "igual_a_git": true
+     },
+     "musica_funk.py": {
+      "sha256": "473c2e6c4b964a0f1402bc040513c9bea91ffe613f0d16601a1a5964fc476de3",
+      "ruta_git": "escena/musica_funk.py",
+      "igual_a_git": true
+     },
+     "portada.py": {
+      "sha256": "ba9c9c3e64c82b196ba067942ab8521028bfe7b96b0a79c4d1cec6f4d6e96ba5",
+      "ruta_git": "escena/portada.py",
+      "igual_a_git": true
+     },
+     "probar_sets_h.py": {
+      "sha256": "8572df827d76419475cca30f279f24f3d83779a6bc78f78a906e531da131ffa5",
+      "ruta_git": "escena/probar_sets_h.py",
+      "igual_a_git": true
+     },
+     "render.py": {
+      "sha256": "719e8fbb5df2d0b84d3cf603774c7fadb82d6edb929938448e21f1e5d78b42b5",
+      "ruta_git": "escena/render.py",
+      "igual_a_git": true
+     },
+     "render_h.py": {
+      "sha256": "c03be44d189eacf2ab07b16b6df37d047338b21af7384772d96cbb42acdfbbb5",
+      "ruta_git": "escena/render_h.py",
+      "igual_a_git": true
+     },
+     "sintet_sfx.py": {
+      "sha256": "c567e6ddd15edb8cd288e92c8d96748323c20e6294d125ecd7d093da311b6a4e",
+      "ruta_git": "escena/sintet_sfx.py",
+      "igual_a_git": true
+     },
+     "sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_1.wav": {
+      "sha256": "bb910017fc0f0e643453a70e31c13318dba0cbb6f932058947b366daaf6fd961",
+      "ruta_git": "escena/sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_1.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_2.wav": {
+      "sha256": "7e6562312baf7fdd94682d26c427ea5650d08daa68e2c6a4b72834994b72b061",
+      "ruta_git": "escena/sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_2.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/CarEngineRev_BW.52086.wav": {
+      "sha256": "fa993c943b08a1f26b10fa5b15e40831dc5bbc3db7bb4a695a7bcf7a27ca3c40",
+      "ruta_git": "escena/sonidos/extra/CarEngineRev_BW.52086.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/CbRadioStatic_S08TE.394.wav": {
+      "sha256": "96951e94009a9b9def7632d5538c0d09d6ec9cbe838e703b7dd58023a851b575",
+      "ruta_git": "escena/sonidos/extra/CbRadioStatic_S08TE.394.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ESM_Builder_Game_Item_Bubble_3_Cartoon_Comedy_Arcade_Casual_Old_School_Retro_Collect_Coin.wav": {
+      "sha256": "a912c76ab758669be6225343c7a05994164b08651239624803da34888cb44eed",
+      "ruta_git": "escena/sonidos/extra/ESM_Builder_Game_Item_Bubble_3_Cartoon_Comedy_Arcade_Casual_Old_School_Retro_Collect_Coin.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_02.wav": {
+      "sha256": "445320949de23e0afc2529e7217b9d048a8cdf96bd4581373182d967144c6658",
+      "ruta_git": "escena/sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_03.wav": {
+      "sha256": "8a7c3bdcfa7209df9db7fcb94235cc83c90c090cdc19626cff63f0023483a7dd",
+      "ruta_git": "escena/sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ElectricZapBuzz_S011SF.344.wav": {
+      "sha256": "dc775e9b1fa79e52d38bf8ec0b97f37482fe7a03f66a3fe88fd539cd5466f8e0",
+      "ruta_git": "escena/sonidos/extra/ElectricZapBuzz_S011SF.344.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/FF_WP_foley_typewriter_ding.wav": {
+      "sha256": "57aa0a798c896375783f13e8b62ce7dc2e5aaecec1f66fbaa38ce23cdf96afa2",
+      "ruta_git": "escena/sonidos/extra/FF_WP_foley_typewriter_ding.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Lev_FX_Short_079.wav": {
+      "sha256": "1d5c5ff254cff9945c1854694493a18c7e2044794046a232808bc7b432ff5c97",
+      "ruta_git": "escena/sonidos/extra/Lev_FX_Short_079.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Lev_Glitch_094.wav": {
+      "sha256": "602a598b4b7e9821dcfd9f42037f39ee108735d6c1b00899e89608bf0d9cb2aa",
+      "ruta_git": "escena/sonidos/extra/Lev_Glitch_094.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Lev_Glitch_104.wav": {
+      "sha256": "5f81f75d9fce15b3a7c2b6c883c0610217ff78b75e3374df9b60a57de467dba0",
+      "ruta_git": "escena/sonidos/extra/Lev_Glitch_104.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/MODE_BE2_fx_foley_whoosh_03.wav": {
+      "sha256": "cebfa85f5f07f7944b32bd342482ace85c7761b83e8b5fef82d232f09d33f20b",
+      "ruta_git": "escena/sonidos/extra/MODE_BE2_fx_foley_whoosh_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/MODE_BE2_fx_foley_whoosh_04.wav": {
+      "sha256": "f0bb8d6f7583baa3e81ad0f877bdd95e068004ebe861a36ccbe38b7f863bfff3",
+      "ruta_git": "escena/sonidos/extra/MODE_BE2_fx_foley_whoosh_04.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/OS_ATL_kick_subby.wav": {
+      "sha256": "c420d129c06a878d5c537debb2cb57c37efcbabf1940930b300fb32742b8c24b",
+      "ruta_git": "escena/sonidos/extra/OS_ATL_kick_subby.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/SPLC-6461_FX_Oneshot_Glitch_Experimental_Leave_Menu_Crystalline.wav": {
+      "sha256": "effaef723b838038a04029561547179b525f4cef9f838864446ccea49a896ce5",
+      "ruta_git": "escena/sonidos/extra/SPLC-6461_FX_Oneshot_Glitch_Experimental_Leave_Menu_Crystalline.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/STCR2_SG_FX_Upsweep_Slow.wav": {
+      "sha256": "78a07712640c8c6a0a9020863e444721d670b6997e0c501f1f2c4cbbfc85956b",
+      "ruta_git": "escena/sonidos/extra/STCR2_SG_FX_Upsweep_Slow.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/TimerClock_AP1.1323.wav": {
+      "sha256": "7ba763577e8c762cde822bd2ab4a938b540c2f8ae75b32345c37aa423645a97b",
+      "ruta_git": "escena/sonidos/extra/TimerClock_AP1.1323.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/VOX_FRVP_vocal_fx_bubble.wav": {
+      "sha256": "08b1b4b2ffea78e9044a1d29b84cd97bffb8c78576de59e5b7da8c94bd93758b",
+      "ruta_git": "escena/sonidos/extra/VOX_FRVP_vocal_fx_bubble.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/WhipWhooshHeavy_SFXB.1080.wav": {
+      "sha256": "67bd65acfd91436fa2d8d703178000edc878a6d158f3e9c0e1292af77f62ee76",
+      "ruta_git": "escena/sonidos/extra/WhipWhooshHeavy_SFXB.1080.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Whip_Whoosh_BW.11026.wav": {
+      "sha256": "9a0dfa30ccb1f644e0524e34a1e3d4bc30afe112c652a0dcbf6bb0cc81a2ae7b",
+      "ruta_git": "escena/sonidos/extra/Whip_Whoosh_BW.11026.wav",
+      "igual_a_git": true
+     },
+     "sonidos/glitch/electrico_02.wav": {
+      "sha256": "3c479aec7a3ceaa1fd95a7c06a99e10548282b7907030d2b596a8fd73e0e372f",
+      "ruta_git": "escena/sonidos/glitch/electrico_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/glitch/glitch_01.wav": {
+      "sha256": "9169401d81de5cac0180b3297d750528cc71c3b23c69b29a584a143471abdad0",
+      "ruta_git": "escena/sonidos/glitch/glitch_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/impacto/kick_01.wav": {
+      "sha256": "a0ba7dd46f38311687c3a73d56303b2ab03afcdde68cb6615106440993fb3472",
+      "ruta_git": "escena/sonidos/impacto/kick_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/impacto/riser_01.wav": {
+      "sha256": "51d6acdc62de0b8155434f9aad858f206146eaea945ecbdbfce402e5dd0786ca",
+      "ruta_git": "escena/sonidos/impacto/riser_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/clap_01.wav": {
+      "sha256": "d5d3e935e71001b256f18fdb0b292887f971b2294714736de79058f5c8e00c8b",
+      "ruta_git": "escena/sonidos/musica/clap_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/clap_02.wav": {
+      "sha256": "1aac40852a704a843d4bf3a031b8706a15053ca9a5af47b928ffb71b4a5a65e6",
+      "ruta_git": "escena/sonidos/musica/clap_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/clap_03.wav": {
+      "sha256": "45b0969f8d278d33d467a6dcc1454a7f2bc5763983e6b2c5e90d36713c36a63f",
+      "ruta_git": "escena/sonidos/musica/clap_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/hat_abierto_01.wav": {
+      "sha256": "0118f3de5a312f5b015a31a8d1f71a5298dc0ebad4275710d41bdb4e4926adca",
+      "ruta_git": "escena/sonidos/musica/hat_abierto_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/hat_cerrado_01.wav": {
+      "sha256": "57d69c06f0c751964e198eb02110e88b62864bb37874ddc81b68df68c53583e2",
+      "ruta_git": "escena/sonidos/musica/hat_cerrado_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/hat_cerrado_02.wav": {
+      "sha256": "0c62869a3f2ebe01a4481a4ea9794a0e6b9de20ea7fa2842555b92c194658523",
+      "ruta_git": "escena/sonidos/musica/hat_cerrado_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/kick_01.wav": {
+      "sha256": "a0ba7dd46f38311687c3a73d56303b2ab03afcdde68cb6615106440993fb3472",
+      "ruta_git": "escena/sonidos/musica/kick_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/kick_02.wav": {
+      "sha256": "da5128509f25c77a69cb45b41d0ceba9cbcc85be1f3a7ed259cfbfd4b7897c53",
+      "ruta_git": "escena/sonidos/musica/kick_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/perc_01.wav": {
+      "sha256": "c8651c6553e01284660329a1321b92cc045fdf320b71dc814d81aaa4d79ae4a8",
+      "ruta_git": "escena/sonidos/musica/perc_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/shaker_01.wav": {
+      "sha256": "61932e3b435de2e8c16a4b9de20250a4fe4fc674125df5e904520b1f676b3cdf",
+      "ruta_git": "escena/sonidos/musica/shaker_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/shaker_02.wav": {
+      "sha256": "e7cb74256f52bbedb94f3b94c6a102b7c7d7622e16b11cb18d4d3783d75795a2",
+      "ruta_git": "escena/sonidos/musica/shaker_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/aletas.wav": {
+      "sha256": "23f5a02813d69f3cbba264afd531193723de86cc9618b72c2e7437cf35c8e39d",
+      "ruta_git": "escena/sonidos/sintet/aletas.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/baja.wav": {
+      "sha256": "b68aeed0e722f8e311908180c758efb24bd3f389ff036899b35655709132c64e",
+      "ruta_git": "escena/sonidos/sintet/baja.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/balanza.wav": {
+      "sha256": "25f167736fcf8b319dc1ea5087121bacccad9488495086aaaff6537489fb902c",
+      "ruta_git": "escena/sonidos/sintet/balanza.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/billetes.wav": {
+      "sha256": "637c26a76d3c42e061454897c86a1e3a1638aa589f52cf0d6e66a08306895ce2",
+      "ruta_git": "escena/sonidos/sintet/billetes.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/chinche.wav": {
+      "sha256": "82c3f10a98e55e2f26ad490acfe185b736e8470830bfc56bcf11c919fa5c3d6d",
+      "ruta_git": "escena/sonidos/sintet/chinche.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/ciudad.wav": {
+      "sha256": "de380828ab104db25e115b6f24cca16c39fc5858f5db8ce4fc502e3838600007",
+      "ruta_git": "escena/sonidos/sintet/ciudad.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/claqueta.wav": {
+      "sha256": "2c02fba8f9d34941fe69d4edecdbc6ff6ea5a705e591f56f56afce85c73ac83d",
+      "ruta_git": "escena/sonidos/sintet/claqueta.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/compu.wav": {
+      "sha256": "29b2c8b82420aed3b30a54c1a2d9f03d9eab85a96a9d2ca192560f0c55acf334",
+      "ruta_git": "escena/sonidos/sintet/compu.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/dados.wav": {
+      "sha256": "9c81759e300189391da25d1835750739a06c28859a145f7b38b9ac2c29ad9272",
+      "ruta_git": "escena/sonidos/sintet/dados.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/descuelga.wav": {
+      "sha256": "467141acf8fb7f12e3afa5ea3e1822bb43bcdcb36897b80df34a46022a12ebee",
+      "ruta_git": "escena/sonidos/sintet/descuelga.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/hoja.wav": {
+      "sha256": "bd9891b03073ec34cc31a39709e9dfb1127c2a3a9d835d834627d3e4ed3bae8e",
+      "ruta_git": "escena/sonidos/sintet/hoja.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/lapiz.wav": {
+      "sha256": "cd376140826301ea8a300a943ba38304dd6fe69cf3415c24741aa8339f34477b",
+      "ruta_git": "escena/sonidos/sintet/lapiz.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/proyector.wav": {
+      "sha256": "064431e0705f6c614209e7b6a790fef8e49cd9ff3b748055fb77337215ff9436",
+      "ruta_git": "escena/sonidos/sintet/proyector.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/sube.wav": {
+      "sha256": "d8647c237ee2b46d4692b49b65358025fe1759dab1827b9daf1566cd6cd77134",
+      "ruta_git": "escena/sonidos/sintet/sube.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/teclas.wav": {
+      "sha256": "9880933509cfc11bfc0640ea9078d9f10a9a07050a226dba0af3354faeee481b",
+      "ruta_git": "escena/sonidos/sintet/teclas.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/tics.wav": {
+      "sha256": "af88fce6c77c2c457e28455c904a4fa56dc33231d4a8d9e8c3434495be6af314",
+      "ruta_git": "escena/sonidos/sintet/tics.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/timbre.wav": {
+      "sha256": "bc1252ce390731c598ddc4d1dd5ecc0ca9dfd6a56dc3480fd355908974b89d18",
+      "ruta_git": "escena/sonidos/sintet/timbre.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/caja_01.wav": {
+      "sha256": "f4e9a009379835a03a8ab6999722c34996612c08830a69086d50c3fc56e643e8",
+      "ruta_git": "escena/sonidos/tematicos/caja_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/caja_02.wav": {
+      "sha256": "3fbfefd024174b0ff61f6f1d475c0166475c0fbd5e6d7916c8a36e8b58a71086",
+      "ruta_git": "escena/sonidos/tematicos/caja_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/caja_03.wav": {
+      "sha256": "19aad084129a5c6e8e7a48f8937fd9c14787439e8ab1aa7dc82259b1aeaf9891",
+      "ruta_git": "escena/sonidos/tematicos/caja_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/moneda_01.wav": {
+      "sha256": "f811225ba6b248bb69bbff0910575cdef851adb51a246b39ca70d65d7e4eeccf",
+      "ruta_git": "escena/sonidos/tematicos/moneda_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/moneda_02.wav": {
+      "sha256": "a32b144cb979ac79809921ff416409d23f43314801613ece76d34aac7359394b",
+      "ruta_git": "escena/sonidos/tematicos/moneda_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/motor_acelera_01.wav": {
+      "sha256": "c07401359904f2319701e4ba20cce8968a047ef732a382300f45a3bebe975e5f",
+      "ruta_git": "escena/sonidos/tematicos/motor_acelera_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/obturador_01.wav": {
+      "sha256": "5bb4721f89f04f3817a6bbeee8c4a3a352c81fccf22bf1e605c9f032b942fc77",
+      "ruta_git": "escena/sonidos/tematicos/obturador_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/sirena_01.wav": {
+      "sha256": "5052bd7afa3e8516ff672f4fdb9d650e9cd3a02fb3f88b0a9bef69d7fc65769a",
+      "ruta_git": "escena/sonidos/tematicos/sirena_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/pasada_larga_02.wav": {
+      "sha256": "e75d7491088ca19eebd6c6c771a3e54408a3a48a1b69d778514e7bfb230a5482",
+      "ruta_git": "escena/sonidos/transicion/pasada_larga_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_01.wav": {
+      "sha256": "f9a01bbcaa7ee70bb6a3ce88bc3dc1a5b40443a4b756392d74e3b7989bf06b65",
+      "ruta_git": "escena/sonidos/transicion/whoosh_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_02.wav": {
+      "sha256": "17512900abafa9f9115a60c59707028496c0bcc313cbe343c13d9f216ad9ed03",
+      "ruta_git": "escena/sonidos/transicion/whoosh_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_03.wav": {
+      "sha256": "227aaf086d8f9e9c2d7d96af191535f581d4bbbbac0c6396a5a8d11684c22059",
+      "ruta_git": "escena/sonidos/transicion/whoosh_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_04.wav": {
+      "sha256": "905639f15a00fb7da921bf81804661d767b763efa2b2a33126dca7c19ceb83fc",
+      "ruta_git": "escena/sonidos/transicion/whoosh_04.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_05.wav": {
+      "sha256": "1f10450fb74ef28c7ad56856e635a5caccb1e0d1bfec2f4ca1c21cc23f00b282",
+      "ruta_git": "escena/sonidos/transicion/whoosh_05.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_06.wav": {
+      "sha256": "fd555539017d8121188edf368c93fe80a67faf6c006bd2b69624b184039509b6",
+      "ruta_git": "escena/sonidos/transicion/whoosh_06.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/clap_03.wav": {
+      "sha256": "45b0969f8d278d33d467a6dcc1454a7f2bc5763983e6b2c5e90d36713c36a63f",
+      "ruta_git": "escena/sonidos/ui/clap_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/ding_01.wav": {
+      "sha256": "c03f3b6082c37e5235066b5682dcf96a2dd9718a992af5ed88ec7ec5937051dd",
+      "ruta_git": "escena/sonidos/ui/ding_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/pop_01.wav": {
+      "sha256": "28651964f04a2be6a49900643e5aa3fd4feb1c2acfc5f82a3efb2b927d9deab1",
+      "ruta_git": "escena/sonidos/ui/pop_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/pop_02.wav": {
+      "sha256": "597330e718a05c9460689c1608cfe04a303077e2530fb145508564909ce36a2e",
+      "ruta_git": "escena/sonidos/ui/pop_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/pop_03.wav": {
+      "sha256": "623c77e325ab7e838d4bba40429361709c0b4943e6209f926985ca7dcdcdd230",
+      "ruta_git": "escena/sonidos/ui/pop_03.wav",
+      "igual_a_git": true
+     },
+     "voz_local.py": {
+      "sha256": "d610f4ef4263c8121250f9663cdbae702067323b3a26616315f8967dc3cd4837",
+      "ruta_git": "escena/voz_local.py",
+      "igual_a_git": true
+     }
+    },
+    "distintos_de_git": []
+   },
+   "salidas_render": {
+    "_tmp/datos.json": "2fe4a05df204086baec2646e7e5e2ed34e9df378d582fb68832dfacc7cb81ee9",
+    "_tmp/video.mp4": "7396b5b8428f9d69fdaa6466887eaa5cd15f55a0d83025f3e21c4857aa401357",
+    "_tmp/mezcla.wav": "1482556d499109b094e5f017ea82422bcc9f56b715b353652960d2423d1559e9"
+   },
+   "video_entregado": {
+    "archivo": "referencias_video/wd2_entregado.mp4",
+    "sha256": "a416edbae5b59a4d043b1df1b3e80f2751ce7e2a10265ba90447092226474d71",
+    "md5_video": "43650fbaa41421bcadaa3ba0116e75b2"
+   }
+  },
+  "wk2": {
+   "lote": "K2026112502",
+   "canal": "CatDecoded",
+   "titulo_archivo": "21h - YOUR CAT SECRETLY SPEAKS TO YOU",
+   "datos_slot": {
+    "datos.json": {
+     "ruta_git": "d24/wk2/datos.json",
+     "blob": "2660a708d85dde7aca7a78373b14cb61bf134d12",
+     "sha256": "00f84f309f1bed506ef60d2a64be6dcb31287ba7f81b2014958acfcdb4a432de"
+    },
+    "datos0.json": {
+     "ruta_git": "d24/wk2/datos0.json",
+     "blob": "2660a708d85dde7aca7a78373b14cb61bf134d12",
+     "sha256": "00f84f309f1bed506ef60d2a64be6dcb31287ba7f81b2014958acfcdb4a432de"
+    },
+    "nota": "marcadores T de la voz; post.py y planos_shorts.py los leen. Igual a datos0.json"
+   },
+   "entradas_corpus": {
+    "K2026112502.json": "aac47bfebd42e47bc00b9e2195b77bdec85c113789aa268338b972ddbfd95491",
+    "K2026112502_src.json": "9659a0093f213fb58c30e92b91956768fb286a192fe96b08fdd4ce898c03a934",
+    "b.py": "a18bff21f0bbe9b23b7e43b6f17706462f238ca0459ed24c3c1cd473938efb96",
+    "datos_render.json": "ed2b5b75d1966c4da259320b504083d782fa7ffe07504d9e98403493cb89a937",
+    "ficha.json": "66b2e2cbecdd1bd70988c002c93e03816544ec86c98b770c84d7d17bdd8e8b53",
+    "planos.log": "980c0cde1cb21f34e636261f243ea98fe300da244cb3318b60cde243a519f265",
+    "vz.wav": "6c6a6cfe51f5f90c27d3dfc54219157ad19200766953eed089ad228cecc9de3f",
+    "vz_palabras.json": "b3695a3cc5f713c19dd3a00849d414d7c4759e9950c1b524a45b2706bd60e335",
+    "wk2.txt": "8097d3a58e987ce4d74df2bb3304da0a21503a5809ba368a791337b03d44d351"
+   },
+   "entradas_en_git": {
+    "K2026112502_src.json": {
+     "ruta_git": "d24/wk2/K2026112502_src.json",
+     "blob": "fb1f433a9fd20a641101ae4f45cd435b77d0b6cf",
+     "sha256": "9659a0093f213fb58c30e92b91956768fb286a192fe96b08fdd4ce898c03a934"
+    },
+    "K2026112502.json": {
+     "ruta_git": "d24/wk2/K2026112502.json",
+     "blob": "eaae8d3aea4e570ea84fb009bcfab8028aecf7b2",
+     "sha256": "aac47bfebd42e47bc00b9e2195b77bdec85c113789aa268338b972ddbfd95491"
+    },
+    "b.py": {
+     "ruta_git": "d24/wk2/b.py",
+     "blob": "b796ca9bbb8ab040feb5ff56f3d36146ec9025b9",
+     "sha256": "a18bff21f0bbe9b23b7e43b6f17706462f238ca0459ed24c3c1cd473938efb96"
+    },
+    "vz_palabras.json": {
+     "ruta_git": "d24/wk2/vz_palabras.json",
+     "blob": "655cac5f5e8ecc52ffc3687366cd4788341f2f35",
+     "sha256": "b3695a3cc5f713c19dd3a00849d414d7c4759e9950c1b524a45b2706bd60e335"
+    },
+    "planos.log": {
+     "ruta_git": "d24/wk2/planos.log",
+     "blob": "8259da490b8048884e0831dcbe3ca3072f2159d0",
+     "sha256": "980c0cde1cb21f34e636261f243ea98fe300da244cb3318b60cde243a519f265"
+    },
+    "ficha.json": {
+     "ruta_git": "d24/wk2/ficha.json",
+     "blob": "f4fd7ceb96a9b76b7c6ef388a8085a8984044427",
+     "sha256": "66b2e2cbecdd1bd70988c002c93e03816544ec86c98b770c84d7d17bdd8e8b53"
+    }
+   },
+   "comando": {
+    "encolar": "d24/q2.sh wk2 K2026112502 bf_emma 1.2 en",
+    "pipeline": "uno2.sh: b.py → hacer.sh (voz, datos_de.sh, resolver.py) → post.py → planos_shorts.py → render_par.sh",
+    "render": "render_par.sh K2026112502.json vz.wav vz_palabras.json v1.mp4 deep"
+   },
+   "voz": {
+    "voz": "bf_emma",
+    "velocidad": 1.2,
+    "idioma": "en",
+    "pausa": 0.12,
+    "joven": false,
+    "modelo": "kokoro-v1.0 (ver modelo_voz)"
+   },
+   "musica": {
+    "estilo": "deep",
+    "azar": "con semilla fija (musica.py: md5 de la semilla; armar_escena.py: el lote; sintet_sfx.py: 7)"
+   },
+   "render": {
+    "t0": 0.0,
+    "fps": 30,
+    "cuadros": 1203,
+    "cuadro": "JPEG calidad 0.92 → ffmpeg libx264 -preset veryfast -crf 20 yuv420p (render.py)",
+    "azar_del_motor": "Math.random sin semilla en el grano del acabado pro (no reproducible bit a bit)"
+   },
+   "motor": {
+    "sha256": "75bb7c4480a0d1bcc59eaeb6ef2e192c39cb5acd042480558d2740cdf7aa5f61",
+    "ruta_git": "escena/escena.html.bak_p27_paso0",
+    "copia_corpus": "corpus/motor_entrega_25nov/escena.html"
+   },
+   "carpeta_render": {
+    "origen": "/tmp/rw.1xtx",
+    "archivos": {
+     "Poppins-Bold.ttf": {
+      "sha256": "983676516167748b74de6f4771fb384c664fd913acb8b471122ecacf5da5ea6c",
+      "ruta_git": "escena/Poppins-Bold.ttf",
+      "igual_a_git": true
+     },
+     "Poppins-Regular.ttf": {
+      "sha256": "7e65201e9b79159e2300267cc885e16c8dcef2424cdfa09a29bfb0980a94a7ba",
+      "ruta_git": "escena/Poppins-Regular.ttf",
+      "igual_a_git": true
+     },
+     "ajustar_tiempos.py": {
+      "sha256": "bb85ca6bf3f6931ed92d72829322e8a8459d0213c8fcbae99032ff337a650618",
+      "ruta_git": "escena/ajustar_tiempos.py",
+      "igual_a_git": true
+     },
+     "armar_escena.py": {
+      "sha256": "0ad7c3b0cd4bcd0581a3f074ffda3d4e44e76d71ce5316559aabd7134b7eed98",
+      "ruta_git": "escena/armar_escena.py",
+      "igual_a_git": true
+     },
+     "armar_largo.py": {
+      "sha256": "360f3c8c87972c645bf2ef24751bc0a7abe173d7b98ad26ef3a49ce600b9084c",
+      "ruta_git": "escena/armar_largo.py",
+      "igual_a_git": true
+     },
+     "clip_planos.py": {
+      "sha256": "66787f258bef4d0b2e188efcaadea99fd5a78b9f5135c81a55360ffd806ec07b",
+      "ruta_git": "escena/clip_planos.py",
+      "igual_a_git": true
+     },
+     "entonacion.py": {
+      "sha256": "642d5c028dcc4f8555745456ebb15fbff070c511ac738c57aa5eaccb38c61806",
+      "ruta_git": "escena/entonacion.py",
+      "igual_a_git": true
+     },
+     "escena.html": {
+      "sha256": "75bb7c4480a0d1bcc59eaeb6ef2e192c39cb5acd042480558d2740cdf7aa5f61",
+      "ruta_git": "escena/escena.html.bak_p27_paso0",
+      "igual_a_git": true
+     },
+     "joven.py": {
+      "sha256": "2bd2352222d44131845fbf8976e708e84af318f3835a6efb2cc365feccf25472",
+      "ruta_git": "escena/joven.py",
+      "igual_a_git": true
+     },
+     "muestras.py": {
+      "sha256": "475873623e791caf0cf843ace1d53833a751a92d8a75305cffaa93165981ccdb",
+      "ruta_git": "escena/muestras.py",
+      "igual_a_git": true
+     },
+     "muestras_h.py": {
+      "sha256": "100a3d11183bc766b3c2d9386e7279d192e4180bbdbe9695ac7fb796aff72408",
+      "ruta_git": "escena/muestras_h.py",
+      "igual_a_git": true
+     },
+     "musica.py": {
+      "sha256": "eed07eb6a2b89004b492748ff99a85a18c43de34cb5ce53fb2a166b841da1246",
+      "ruta_git": "escena/musica.py",
+      "igual_a_git": true
+     },
+     "musica_funk.py": {
+      "sha256": "473c2e6c4b964a0f1402bc040513c9bea91ffe613f0d16601a1a5964fc476de3",
+      "ruta_git": "escena/musica_funk.py",
+      "igual_a_git": true
+     },
+     "portada.py": {
+      "sha256": "ba9c9c3e64c82b196ba067942ab8521028bfe7b96b0a79c4d1cec6f4d6e96ba5",
+      "ruta_git": "escena/portada.py",
+      "igual_a_git": true
+     },
+     "probar_sets_h.py": {
+      "sha256": "8572df827d76419475cca30f279f24f3d83779a6bc78f78a906e531da131ffa5",
+      "ruta_git": "escena/probar_sets_h.py",
+      "igual_a_git": true
+     },
+     "render.py": {
+      "sha256": "719e8fbb5df2d0b84d3cf603774c7fadb82d6edb929938448e21f1e5d78b42b5",
+      "ruta_git": "escena/render.py",
+      "igual_a_git": true
+     },
+     "render_h.py": {
+      "sha256": "c03be44d189eacf2ab07b16b6df37d047338b21af7384772d96cbb42acdfbbb5",
+      "ruta_git": "escena/render_h.py",
+      "igual_a_git": true
+     },
+     "sintet_sfx.py": {
+      "sha256": "c567e6ddd15edb8cd288e92c8d96748323c20e6294d125ecd7d093da311b6a4e",
+      "ruta_git": "escena/sintet_sfx.py",
+      "igual_a_git": true
+     },
+     "sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_1.wav": {
+      "sha256": "bb910017fc0f0e643453a70e31c13318dba0cbb6f932058947b366daaf6fd961",
+      "ruta_git": "escena/sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_1.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_2.wav": {
+      "sha256": "7e6562312baf7fdd94682d26c427ea5650d08daa68e2c6a4b72834994b72b061",
+      "ruta_git": "escena/sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_2.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/CarEngineRev_BW.52086.wav": {
+      "sha256": "fa993c943b08a1f26b10fa5b15e40831dc5bbc3db7bb4a695a7bcf7a27ca3c40",
+      "ruta_git": "escena/sonidos/extra/CarEngineRev_BW.52086.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/CbRadioStatic_S08TE.394.wav": {
+      "sha256": "96951e94009a9b9def7632d5538c0d09d6ec9cbe838e703b7dd58023a851b575",
+      "ruta_git": "escena/sonidos/extra/CbRadioStatic_S08TE.394.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ESM_Builder_Game_Item_Bubble_3_Cartoon_Comedy_Arcade_Casual_Old_School_Retro_Collect_Coin.wav": {
+      "sha256": "a912c76ab758669be6225343c7a05994164b08651239624803da34888cb44eed",
+      "ruta_git": "escena/sonidos/extra/ESM_Builder_Game_Item_Bubble_3_Cartoon_Comedy_Arcade_Casual_Old_School_Retro_Collect_Coin.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_02.wav": {
+      "sha256": "445320949de23e0afc2529e7217b9d048a8cdf96bd4581373182d967144c6658",
+      "ruta_git": "escena/sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_03.wav": {
+      "sha256": "8a7c3bdcfa7209df9db7fcb94235cc83c90c090cdc19626cff63f0023483a7dd",
+      "ruta_git": "escena/sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ElectricZapBuzz_S011SF.344.wav": {
+      "sha256": "dc775e9b1fa79e52d38bf8ec0b97f37482fe7a03f66a3fe88fd539cd5466f8e0",
+      "ruta_git": "escena/sonidos/extra/ElectricZapBuzz_S011SF.344.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/FF_WP_foley_typewriter_ding.wav": {
+      "sha256": "57aa0a798c896375783f13e8b62ce7dc2e5aaecec1f66fbaa38ce23cdf96afa2",
+      "ruta_git": "escena/sonidos/extra/FF_WP_foley_typewriter_ding.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Lev_FX_Short_079.wav": {
+      "sha256": "1d5c5ff254cff9945c1854694493a18c7e2044794046a232808bc7b432ff5c97",
+      "ruta_git": "escena/sonidos/extra/Lev_FX_Short_079.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Lev_Glitch_094.wav": {
+      "sha256": "602a598b4b7e9821dcfd9f42037f39ee108735d6c1b00899e89608bf0d9cb2aa",
+      "ruta_git": "escena/sonidos/extra/Lev_Glitch_094.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Lev_Glitch_104.wav": {
+      "sha256": "5f81f75d9fce15b3a7c2b6c883c0610217ff78b75e3374df9b60a57de467dba0",
+      "ruta_git": "escena/sonidos/extra/Lev_Glitch_104.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/MODE_BE2_fx_foley_whoosh_03.wav": {
+      "sha256": "cebfa85f5f07f7944b32bd342482ace85c7761b83e8b5fef82d232f09d33f20b",
+      "ruta_git": "escena/sonidos/extra/MODE_BE2_fx_foley_whoosh_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/MODE_BE2_fx_foley_whoosh_04.wav": {
+      "sha256": "f0bb8d6f7583baa3e81ad0f877bdd95e068004ebe861a36ccbe38b7f863bfff3",
+      "ruta_git": "escena/sonidos/extra/MODE_BE2_fx_foley_whoosh_04.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/OS_ATL_kick_subby.wav": {
+      "sha256": "c420d129c06a878d5c537debb2cb57c37efcbabf1940930b300fb32742b8c24b",
+      "ruta_git": "escena/sonidos/extra/OS_ATL_kick_subby.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/SPLC-6461_FX_Oneshot_Glitch_Experimental_Leave_Menu_Crystalline.wav": {
+      "sha256": "effaef723b838038a04029561547179b525f4cef9f838864446ccea49a896ce5",
+      "ruta_git": "escena/sonidos/extra/SPLC-6461_FX_Oneshot_Glitch_Experimental_Leave_Menu_Crystalline.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/STCR2_SG_FX_Upsweep_Slow.wav": {
+      "sha256": "78a07712640c8c6a0a9020863e444721d670b6997e0c501f1f2c4cbbfc85956b",
+      "ruta_git": "escena/sonidos/extra/STCR2_SG_FX_Upsweep_Slow.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/TimerClock_AP1.1323.wav": {
+      "sha256": "7ba763577e8c762cde822bd2ab4a938b540c2f8ae75b32345c37aa423645a97b",
+      "ruta_git": "escena/sonidos/extra/TimerClock_AP1.1323.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/VOX_FRVP_vocal_fx_bubble.wav": {
+      "sha256": "08b1b4b2ffea78e9044a1d29b84cd97bffb8c78576de59e5b7da8c94bd93758b",
+      "ruta_git": "escena/sonidos/extra/VOX_FRVP_vocal_fx_bubble.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/WhipWhooshHeavy_SFXB.1080.wav": {
+      "sha256": "67bd65acfd91436fa2d8d703178000edc878a6d158f3e9c0e1292af77f62ee76",
+      "ruta_git": "escena/sonidos/extra/WhipWhooshHeavy_SFXB.1080.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Whip_Whoosh_BW.11026.wav": {
+      "sha256": "9a0dfa30ccb1f644e0524e34a1e3d4bc30afe112c652a0dcbf6bb0cc81a2ae7b",
+      "ruta_git": "escena/sonidos/extra/Whip_Whoosh_BW.11026.wav",
+      "igual_a_git": true
+     },
+     "sonidos/glitch/electrico_02.wav": {
+      "sha256": "3c479aec7a3ceaa1fd95a7c06a99e10548282b7907030d2b596a8fd73e0e372f",
+      "ruta_git": "escena/sonidos/glitch/electrico_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/glitch/glitch_01.wav": {
+      "sha256": "9169401d81de5cac0180b3297d750528cc71c3b23c69b29a584a143471abdad0",
+      "ruta_git": "escena/sonidos/glitch/glitch_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/impacto/kick_01.wav": {
+      "sha256": "a0ba7dd46f38311687c3a73d56303b2ab03afcdde68cb6615106440993fb3472",
+      "ruta_git": "escena/sonidos/impacto/kick_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/impacto/riser_01.wav": {
+      "sha256": "51d6acdc62de0b8155434f9aad858f206146eaea945ecbdbfce402e5dd0786ca",
+      "ruta_git": "escena/sonidos/impacto/riser_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/clap_01.wav": {
+      "sha256": "d5d3e935e71001b256f18fdb0b292887f971b2294714736de79058f5c8e00c8b",
+      "ruta_git": "escena/sonidos/musica/clap_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/clap_02.wav": {
+      "sha256": "1aac40852a704a843d4bf3a031b8706a15053ca9a5af47b928ffb71b4a5a65e6",
+      "ruta_git": "escena/sonidos/musica/clap_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/clap_03.wav": {
+      "sha256": "45b0969f8d278d33d467a6dcc1454a7f2bc5763983e6b2c5e90d36713c36a63f",
+      "ruta_git": "escena/sonidos/musica/clap_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/hat_abierto_01.wav": {
+      "sha256": "0118f3de5a312f5b015a31a8d1f71a5298dc0ebad4275710d41bdb4e4926adca",
+      "ruta_git": "escena/sonidos/musica/hat_abierto_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/hat_cerrado_01.wav": {
+      "sha256": "57d69c06f0c751964e198eb02110e88b62864bb37874ddc81b68df68c53583e2",
+      "ruta_git": "escena/sonidos/musica/hat_cerrado_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/hat_cerrado_02.wav": {
+      "sha256": "0c62869a3f2ebe01a4481a4ea9794a0e6b9de20ea7fa2842555b92c194658523",
+      "ruta_git": "escena/sonidos/musica/hat_cerrado_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/kick_01.wav": {
+      "sha256": "a0ba7dd46f38311687c3a73d56303b2ab03afcdde68cb6615106440993fb3472",
+      "ruta_git": "escena/sonidos/musica/kick_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/kick_02.wav": {
+      "sha256": "da5128509f25c77a69cb45b41d0ceba9cbcc85be1f3a7ed259cfbfd4b7897c53",
+      "ruta_git": "escena/sonidos/musica/kick_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/perc_01.wav": {
+      "sha256": "c8651c6553e01284660329a1321b92cc045fdf320b71dc814d81aaa4d79ae4a8",
+      "ruta_git": "escena/sonidos/musica/perc_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/shaker_01.wav": {
+      "sha256": "61932e3b435de2e8c16a4b9de20250a4fe4fc674125df5e904520b1f676b3cdf",
+      "ruta_git": "escena/sonidos/musica/shaker_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/shaker_02.wav": {
+      "sha256": "e7cb74256f52bbedb94f3b94c6a102b7c7d7622e16b11cb18d4d3783d75795a2",
+      "ruta_git": "escena/sonidos/musica/shaker_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/aletas.wav": {
+      "sha256": "23f5a02813d69f3cbba264afd531193723de86cc9618b72c2e7437cf35c8e39d",
+      "ruta_git": "escena/sonidos/sintet/aletas.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/baja.wav": {
+      "sha256": "b68aeed0e722f8e311908180c758efb24bd3f389ff036899b35655709132c64e",
+      "ruta_git": "escena/sonidos/sintet/baja.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/balanza.wav": {
+      "sha256": "25f167736fcf8b319dc1ea5087121bacccad9488495086aaaff6537489fb902c",
+      "ruta_git": "escena/sonidos/sintet/balanza.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/billetes.wav": {
+      "sha256": "637c26a76d3c42e061454897c86a1e3a1638aa589f52cf0d6e66a08306895ce2",
+      "ruta_git": "escena/sonidos/sintet/billetes.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/chinche.wav": {
+      "sha256": "82c3f10a98e55e2f26ad490acfe185b736e8470830bfc56bcf11c919fa5c3d6d",
+      "ruta_git": "escena/sonidos/sintet/chinche.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/ciudad.wav": {
+      "sha256": "de380828ab104db25e115b6f24cca16c39fc5858f5db8ce4fc502e3838600007",
+      "ruta_git": "escena/sonidos/sintet/ciudad.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/claqueta.wav": {
+      "sha256": "2c02fba8f9d34941fe69d4edecdbc6ff6ea5a705e591f56f56afce85c73ac83d",
+      "ruta_git": "escena/sonidos/sintet/claqueta.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/compu.wav": {
+      "sha256": "29b2c8b82420aed3b30a54c1a2d9f03d9eab85a96a9d2ca192560f0c55acf334",
+      "ruta_git": "escena/sonidos/sintet/compu.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/dados.wav": {
+      "sha256": "9c81759e300189391da25d1835750739a06c28859a145f7b38b9ac2c29ad9272",
+      "ruta_git": "escena/sonidos/sintet/dados.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/descuelga.wav": {
+      "sha256": "467141acf8fb7f12e3afa5ea3e1822bb43bcdcb36897b80df34a46022a12ebee",
+      "ruta_git": "escena/sonidos/sintet/descuelga.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/hoja.wav": {
+      "sha256": "bd9891b03073ec34cc31a39709e9dfb1127c2a3a9d835d834627d3e4ed3bae8e",
+      "ruta_git": "escena/sonidos/sintet/hoja.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/lapiz.wav": {
+      "sha256": "cd376140826301ea8a300a943ba38304dd6fe69cf3415c24741aa8339f34477b",
+      "ruta_git": "escena/sonidos/sintet/lapiz.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/proyector.wav": {
+      "sha256": "064431e0705f6c614209e7b6a790fef8e49cd9ff3b748055fb77337215ff9436",
+      "ruta_git": "escena/sonidos/sintet/proyector.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/sube.wav": {
+      "sha256": "d8647c237ee2b46d4692b49b65358025fe1759dab1827b9daf1566cd6cd77134",
+      "ruta_git": "escena/sonidos/sintet/sube.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/teclas.wav": {
+      "sha256": "9880933509cfc11bfc0640ea9078d9f10a9a07050a226dba0af3354faeee481b",
+      "ruta_git": "escena/sonidos/sintet/teclas.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/tics.wav": {
+      "sha256": "af88fce6c77c2c457e28455c904a4fa56dc33231d4a8d9e8c3434495be6af314",
+      "ruta_git": "escena/sonidos/sintet/tics.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/timbre.wav": {
+      "sha256": "bc1252ce390731c598ddc4d1dd5ecc0ca9dfd6a56dc3480fd355908974b89d18",
+      "ruta_git": "escena/sonidos/sintet/timbre.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/caja_01.wav": {
+      "sha256": "f4e9a009379835a03a8ab6999722c34996612c08830a69086d50c3fc56e643e8",
+      "ruta_git": "escena/sonidos/tematicos/caja_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/caja_02.wav": {
+      "sha256": "3fbfefd024174b0ff61f6f1d475c0166475c0fbd5e6d7916c8a36e8b58a71086",
+      "ruta_git": "escena/sonidos/tematicos/caja_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/caja_03.wav": {
+      "sha256": "19aad084129a5c6e8e7a48f8937fd9c14787439e8ab1aa7dc82259b1aeaf9891",
+      "ruta_git": "escena/sonidos/tematicos/caja_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/moneda_01.wav": {
+      "sha256": "f811225ba6b248bb69bbff0910575cdef851adb51a246b39ca70d65d7e4eeccf",
+      "ruta_git": "escena/sonidos/tematicos/moneda_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/moneda_02.wav": {
+      "sha256": "a32b144cb979ac79809921ff416409d23f43314801613ece76d34aac7359394b",
+      "ruta_git": "escena/sonidos/tematicos/moneda_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/motor_acelera_01.wav": {
+      "sha256": "c07401359904f2319701e4ba20cce8968a047ef732a382300f45a3bebe975e5f",
+      "ruta_git": "escena/sonidos/tematicos/motor_acelera_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/obturador_01.wav": {
+      "sha256": "5bb4721f89f04f3817a6bbeee8c4a3a352c81fccf22bf1e605c9f032b942fc77",
+      "ruta_git": "escena/sonidos/tematicos/obturador_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/sirena_01.wav": {
+      "sha256": "5052bd7afa3e8516ff672f4fdb9d650e9cd3a02fb3f88b0a9bef69d7fc65769a",
+      "ruta_git": "escena/sonidos/tematicos/sirena_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/pasada_larga_02.wav": {
+      "sha256": "e75d7491088ca19eebd6c6c771a3e54408a3a48a1b69d778514e7bfb230a5482",
+      "ruta_git": "escena/sonidos/transicion/pasada_larga_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_01.wav": {
+      "sha256": "f9a01bbcaa7ee70bb6a3ce88bc3dc1a5b40443a4b756392d74e3b7989bf06b65",
+      "ruta_git": "escena/sonidos/transicion/whoosh_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_02.wav": {
+      "sha256": "17512900abafa9f9115a60c59707028496c0bcc313cbe343c13d9f216ad9ed03",
+      "ruta_git": "escena/sonidos/transicion/whoosh_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_03.wav": {
+      "sha256": "227aaf086d8f9e9c2d7d96af191535f581d4bbbbac0c6396a5a8d11684c22059",
+      "ruta_git": "escena/sonidos/transicion/whoosh_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_04.wav": {
+      "sha256": "905639f15a00fb7da921bf81804661d767b763efa2b2a33126dca7c19ceb83fc",
+      "ruta_git": "escena/sonidos/transicion/whoosh_04.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_05.wav": {
+      "sha256": "1f10450fb74ef28c7ad56856e635a5caccb1e0d1bfec2f4ca1c21cc23f00b282",
+      "ruta_git": "escena/sonidos/transicion/whoosh_05.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_06.wav": {
+      "sha256": "fd555539017d8121188edf368c93fe80a67faf6c006bd2b69624b184039509b6",
+      "ruta_git": "escena/sonidos/transicion/whoosh_06.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/clap_03.wav": {
+      "sha256": "45b0969f8d278d33d467a6dcc1454a7f2bc5763983e6b2c5e90d36713c36a63f",
+      "ruta_git": "escena/sonidos/ui/clap_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/ding_01.wav": {
+      "sha256": "c03f3b6082c37e5235066b5682dcf96a2dd9718a992af5ed88ec7ec5937051dd",
+      "ruta_git": "escena/sonidos/ui/ding_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/pop_01.wav": {
+      "sha256": "28651964f04a2be6a49900643e5aa3fd4feb1c2acfc5f82a3efb2b927d9deab1",
+      "ruta_git": "escena/sonidos/ui/pop_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/pop_02.wav": {
+      "sha256": "597330e718a05c9460689c1608cfe04a303077e2530fb145508564909ce36a2e",
+      "ruta_git": "escena/sonidos/ui/pop_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/pop_03.wav": {
+      "sha256": "623c77e325ab7e838d4bba40429361709c0b4943e6209f926985ca7dcdcdd230",
+      "ruta_git": "escena/sonidos/ui/pop_03.wav",
+      "igual_a_git": true
+     },
+     "voz_local.py": {
+      "sha256": "d610f4ef4263c8121250f9663cdbae702067323b3a26616315f8967dc3cd4837",
+      "ruta_git": "escena/voz_local.py",
+      "igual_a_git": true
+     }
+    },
+    "distintos_de_git": []
+   },
+   "salidas_render": {
+    "_tmp/datos.json": "ed2b5b75d1966c4da259320b504083d782fa7ffe07504d9e98403493cb89a937",
+    "_tmp/video.mp4": "ffcfe339f9d28aa74c40076e80ac1f5207ea05ef7c2daca361d24ddaf5e677b3",
+    "_tmp/mezcla.wav": "50960faef7edc86b3a7ef8c6b869262d94cf5b413a3d2f373e49d326d507668f"
+   },
+   "video_entregado": {
+    "archivo": "referencias_video/wk2_entregado.mp4",
+    "sha256": "dd245d71e8501e063550e46b88e2a51aee8b3add3b8a7f6617e907da8a2a7861",
+    "md5_video": "d339390b8bb8d729a1d8c179a74f4a64"
+   }
+  },
+  "wc1": {
+   "lote": "C2026112501",
+   "canal": "ChiChibitsTV",
+   "titulo_archivo": "21h - Why Coffee Makes You RUN to the Bathroom",
+   "datos_slot": {
+    "datos.json": {
+     "ruta_git": "d24/wc1/datos.json",
+     "blob": "04697484f61a15f98c909511bfab2d83decb8690",
+     "sha256": "80ffed2b4bf3e42e3c7d1ea15cc01ae5217b17c6897a16a991149d8e4aa4ed67"
+    },
+    "datos0.json": {
+     "ruta_git": "d24/wc1/datos0.json",
+     "blob": "04697484f61a15f98c909511bfab2d83decb8690",
+     "sha256": "80ffed2b4bf3e42e3c7d1ea15cc01ae5217b17c6897a16a991149d8e4aa4ed67"
+    },
+    "nota": "marcadores T de la voz; post.py y planos_shorts.py los leen. Igual a datos0.json"
+   },
+   "entradas_corpus": {
+    "C2026112501.json": "5c510f9f934f3d176d964e8eca6862761790bf2dcd9f9dac29362223e65a94c4",
+    "C2026112501_src.json": "5e804de38012ad959d47e701b0ac8822e17a56b2505d5a6a94ea1b9729fc4563",
+    "b.py": "3a59d67b865ce570dee818af9ce707750d667ff72bb05921db84b8ef67134435",
+    "datos_render.json": "5555e70d66abb6547c633c75e7fc6d9545edae5b935730e69e5e23c51b1dd248",
+    "ficha.json": "3b963921a1777a78c61231f25e277dfe217a8ba8ec1f13e0819438da48d13ff7",
+    "planos.log": "5f5469f3bb2d1982e211ae47978a86e65bd42ec04aab851459bf63673e1f7cc6",
+    "vz.wav": "70fe658dd4ea3bafc8e58e40b61d4fa53794a7687a0c1f2611f396f88c6777a8",
+    "vz_palabras.json": "61375bec3c3a3adad077e11792f7355280fc56bcb928a7aa315b9e4ba341e803",
+    "wc1.txt": "be5eefd6aafcdf02c29f30b539758551d439bc381f2729bfc787a63324f42ca9"
+   },
+   "entradas_en_git": {
+    "C2026112501_src.json": {
+     "ruta_git": "d24/wc1/C2026112501_src.json",
+     "blob": "6cd9159b5d960b21bbdf97c72c14b170e23d5a19",
+     "sha256": "5e804de38012ad959d47e701b0ac8822e17a56b2505d5a6a94ea1b9729fc4563"
+    },
+    "C2026112501.json": {
+     "ruta_git": "d24/wc1/C2026112501.json",
+     "blob": "bf6ac0e3afd2fc217bb5a98402e69feb864ddf35",
+     "sha256": "5c510f9f934f3d176d964e8eca6862761790bf2dcd9f9dac29362223e65a94c4"
+    },
+    "b.py": {
+     "ruta_git": "d24/wc1/b.py",
+     "blob": "14dd967eec7d2ed964ae12e0c6218d59298d4217",
+     "sha256": "3a59d67b865ce570dee818af9ce707750d667ff72bb05921db84b8ef67134435"
+    },
+    "vz_palabras.json": {
+     "ruta_git": "d24/wc1/vz_palabras.json",
+     "blob": "86e3c8bca1d05b67868cf06b66250728bf46d427",
+     "sha256": "61375bec3c3a3adad077e11792f7355280fc56bcb928a7aa315b9e4ba341e803"
+    },
+    "planos.log": {
+     "ruta_git": "d24/wc1/planos.log",
+     "blob": "5cb15b4e44a27669316cd292b90184a6dc1000cd",
+     "sha256": "5f5469f3bb2d1982e211ae47978a86e65bd42ec04aab851459bf63673e1f7cc6"
+    },
+    "ficha.json": {
+     "ruta_git": "d24/wc1/ficha.json",
+     "blob": "f6977485377dbe5398a3907176f6b129e38f28fd",
+     "sha256": "3b963921a1777a78c61231f25e277dfe217a8ba8ec1f13e0819438da48d13ff7"
+    }
+   },
+   "comando": {
+    "encolar": "d24/q2.sh wc1 C2026112501 am_michael 1.25 en",
+    "pipeline": "uno2.sh: b.py → hacer.sh (voz, datos_de.sh, resolver.py) → post.py → planos_shorts.py → render_par.sh",
+    "render": "render_par.sh C2026112501.json vz.wav vz_palabras.json v1.mp4 deep"
+   },
+   "voz": {
+    "voz": "am_michael",
+    "velocidad": 1.25,
+    "idioma": "en",
+    "pausa": 0.12,
+    "joven": false,
+    "modelo": "kokoro-v1.0 (ver modelo_voz)"
+   },
+   "musica": {
+    "estilo": "deep",
+    "azar": "con semilla fija (musica.py: md5 de la semilla; armar_escena.py: el lote; sintet_sfx.py: 7)"
+   },
+   "render": {
+    "t0": 0.0,
+    "fps": 30,
+    "cuadros": 1908,
+    "cuadro": "JPEG calidad 0.92 → ffmpeg libx264 -preset veryfast -crf 20 yuv420p (render.py)",
+    "azar_del_motor": "Math.random sin semilla en el grano del acabado pro (no reproducible bit a bit)"
+   },
+   "motor": {
+    "sha256": "75bb7c4480a0d1bcc59eaeb6ef2e192c39cb5acd042480558d2740cdf7aa5f61",
+    "ruta_git": "escena/escena.html.bak_p27_paso0",
+    "copia_corpus": "corpus/motor_entrega_25nov/escena.html"
+   },
+   "carpeta_render": {
+    "origen": "/tmp/rw.AonJ",
+    "archivos": {
+     "Poppins-Bold.ttf": {
+      "sha256": "983676516167748b74de6f4771fb384c664fd913acb8b471122ecacf5da5ea6c",
+      "ruta_git": "escena/Poppins-Bold.ttf",
+      "igual_a_git": true
+     },
+     "Poppins-Regular.ttf": {
+      "sha256": "7e65201e9b79159e2300267cc885e16c8dcef2424cdfa09a29bfb0980a94a7ba",
+      "ruta_git": "escena/Poppins-Regular.ttf",
+      "igual_a_git": true
+     },
+     "ajustar_tiempos.py": {
+      "sha256": "bb85ca6bf3f6931ed92d72829322e8a8459d0213c8fcbae99032ff337a650618",
+      "ruta_git": "escena/ajustar_tiempos.py",
+      "igual_a_git": true
+     },
+     "armar_escena.py": {
+      "sha256": "0ad7c3b0cd4bcd0581a3f074ffda3d4e44e76d71ce5316559aabd7134b7eed98",
+      "ruta_git": "escena/armar_escena.py",
+      "igual_a_git": true
+     },
+     "armar_largo.py": {
+      "sha256": "360f3c8c87972c645bf2ef24751bc0a7abe173d7b98ad26ef3a49ce600b9084c",
+      "ruta_git": "escena/armar_largo.py",
+      "igual_a_git": true
+     },
+     "clip_planos.py": {
+      "sha256": "66787f258bef4d0b2e188efcaadea99fd5a78b9f5135c81a55360ffd806ec07b",
+      "ruta_git": "escena/clip_planos.py",
+      "igual_a_git": true
+     },
+     "entonacion.py": {
+      "sha256": "642d5c028dcc4f8555745456ebb15fbff070c511ac738c57aa5eaccb38c61806",
+      "ruta_git": "escena/entonacion.py",
+      "igual_a_git": true
+     },
+     "escena.html": {
+      "sha256": "75bb7c4480a0d1bcc59eaeb6ef2e192c39cb5acd042480558d2740cdf7aa5f61",
+      "ruta_git": "escena/escena.html.bak_p27_paso0",
+      "igual_a_git": true
+     },
+     "joven.py": {
+      "sha256": "2bd2352222d44131845fbf8976e708e84af318f3835a6efb2cc365feccf25472",
+      "ruta_git": "escena/joven.py",
+      "igual_a_git": true
+     },
+     "muestras.py": {
+      "sha256": "475873623e791caf0cf843ace1d53833a751a92d8a75305cffaa93165981ccdb",
+      "ruta_git": "escena/muestras.py",
+      "igual_a_git": true
+     },
+     "muestras_h.py": {
+      "sha256": "100a3d11183bc766b3c2d9386e7279d192e4180bbdbe9695ac7fb796aff72408",
+      "ruta_git": "escena/muestras_h.py",
+      "igual_a_git": true
+     },
+     "musica.py": {
+      "sha256": "eed07eb6a2b89004b492748ff99a85a18c43de34cb5ce53fb2a166b841da1246",
+      "ruta_git": "escena/musica.py",
+      "igual_a_git": true
+     },
+     "musica_funk.py": {
+      "sha256": "473c2e6c4b964a0f1402bc040513c9bea91ffe613f0d16601a1a5964fc476de3",
+      "ruta_git": "escena/musica_funk.py",
+      "igual_a_git": true
+     },
+     "portada.py": {
+      "sha256": "ba9c9c3e64c82b196ba067942ab8521028bfe7b96b0a79c4d1cec6f4d6e96ba5",
+      "ruta_git": "escena/portada.py",
+      "igual_a_git": true
+     },
+     "probar_sets_h.py": {
+      "sha256": "8572df827d76419475cca30f279f24f3d83779a6bc78f78a906e531da131ffa5",
+      "ruta_git": "escena/probar_sets_h.py",
+      "igual_a_git": true
+     },
+     "render.py": {
+      "sha256": "719e8fbb5df2d0b84d3cf603774c7fadb82d6edb929938448e21f1e5d78b42b5",
+      "ruta_git": "escena/render.py",
+      "igual_a_git": true
+     },
+     "render_h.py": {
+      "sha256": "c03be44d189eacf2ab07b16b6df37d047338b21af7384772d96cbb42acdfbbb5",
+      "ruta_git": "escena/render_h.py",
+      "igual_a_git": true
+     },
+     "sintet_sfx.py": {
+      "sha256": "c567e6ddd15edb8cd288e92c8d96748323c20e6294d125ecd7d093da311b6a4e",
+      "ruta_git": "escena/sintet_sfx.py",
+      "igual_a_git": true
+     },
+     "sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_1.wav": {
+      "sha256": "bb910017fc0f0e643453a70e31c13318dba0cbb6f932058947b366daaf6fd961",
+      "ruta_git": "escena/sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_1.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_2.wav": {
+      "sha256": "7e6562312baf7fdd94682d26c427ea5650d08daa68e2c6a4b72834994b72b061",
+      "ruta_git": "escena/sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_2.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/CarEngineRev_BW.52086.wav": {
+      "sha256": "fa993c943b08a1f26b10fa5b15e40831dc5bbc3db7bb4a695a7bcf7a27ca3c40",
+      "ruta_git": "escena/sonidos/extra/CarEngineRev_BW.52086.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/CbRadioStatic_S08TE.394.wav": {
+      "sha256": "96951e94009a9b9def7632d5538c0d09d6ec9cbe838e703b7dd58023a851b575",
+      "ruta_git": "escena/sonidos/extra/CbRadioStatic_S08TE.394.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ESM_Builder_Game_Item_Bubble_3_Cartoon_Comedy_Arcade_Casual_Old_School_Retro_Collect_Coin.wav": {
+      "sha256": "a912c76ab758669be6225343c7a05994164b08651239624803da34888cb44eed",
+      "ruta_git": "escena/sonidos/extra/ESM_Builder_Game_Item_Bubble_3_Cartoon_Comedy_Arcade_Casual_Old_School_Retro_Collect_Coin.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_02.wav": {
+      "sha256": "445320949de23e0afc2529e7217b9d048a8cdf96bd4581373182d967144c6658",
+      "ruta_git": "escena/sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_03.wav": {
+      "sha256": "8a7c3bdcfa7209df9db7fcb94235cc83c90c090cdc19626cff63f0023483a7dd",
+      "ruta_git": "escena/sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ElectricZapBuzz_S011SF.344.wav": {
+      "sha256": "dc775e9b1fa79e52d38bf8ec0b97f37482fe7a03f66a3fe88fd539cd5466f8e0",
+      "ruta_git": "escena/sonidos/extra/ElectricZapBuzz_S011SF.344.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/FF_WP_foley_typewriter_ding.wav": {
+      "sha256": "57aa0a798c896375783f13e8b62ce7dc2e5aaecec1f66fbaa38ce23cdf96afa2",
+      "ruta_git": "escena/sonidos/extra/FF_WP_foley_typewriter_ding.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Lev_FX_Short_079.wav": {
+      "sha256": "1d5c5ff254cff9945c1854694493a18c7e2044794046a232808bc7b432ff5c97",
+      "ruta_git": "escena/sonidos/extra/Lev_FX_Short_079.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Lev_Glitch_094.wav": {
+      "sha256": "602a598b4b7e9821dcfd9f42037f39ee108735d6c1b00899e89608bf0d9cb2aa",
+      "ruta_git": "escena/sonidos/extra/Lev_Glitch_094.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Lev_Glitch_104.wav": {
+      "sha256": "5f81f75d9fce15b3a7c2b6c883c0610217ff78b75e3374df9b60a57de467dba0",
+      "ruta_git": "escena/sonidos/extra/Lev_Glitch_104.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/MODE_BE2_fx_foley_whoosh_03.wav": {
+      "sha256": "cebfa85f5f07f7944b32bd342482ace85c7761b83e8b5fef82d232f09d33f20b",
+      "ruta_git": "escena/sonidos/extra/MODE_BE2_fx_foley_whoosh_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/MODE_BE2_fx_foley_whoosh_04.wav": {
+      "sha256": "f0bb8d6f7583baa3e81ad0f877bdd95e068004ebe861a36ccbe38b7f863bfff3",
+      "ruta_git": "escena/sonidos/extra/MODE_BE2_fx_foley_whoosh_04.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/OS_ATL_kick_subby.wav": {
+      "sha256": "c420d129c06a878d5c537debb2cb57c37efcbabf1940930b300fb32742b8c24b",
+      "ruta_git": "escena/sonidos/extra/OS_ATL_kick_subby.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/SPLC-6461_FX_Oneshot_Glitch_Experimental_Leave_Menu_Crystalline.wav": {
+      "sha256": "effaef723b838038a04029561547179b525f4cef9f838864446ccea49a896ce5",
+      "ruta_git": "escena/sonidos/extra/SPLC-6461_FX_Oneshot_Glitch_Experimental_Leave_Menu_Crystalline.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/STCR2_SG_FX_Upsweep_Slow.wav": {
+      "sha256": "78a07712640c8c6a0a9020863e444721d670b6997e0c501f1f2c4cbbfc85956b",
+      "ruta_git": "escena/sonidos/extra/STCR2_SG_FX_Upsweep_Slow.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/TimerClock_AP1.1323.wav": {
+      "sha256": "7ba763577e8c762cde822bd2ab4a938b540c2f8ae75b32345c37aa423645a97b",
+      "ruta_git": "escena/sonidos/extra/TimerClock_AP1.1323.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/VOX_FRVP_vocal_fx_bubble.wav": {
+      "sha256": "08b1b4b2ffea78e9044a1d29b84cd97bffb8c78576de59e5b7da8c94bd93758b",
+      "ruta_git": "escena/sonidos/extra/VOX_FRVP_vocal_fx_bubble.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/WhipWhooshHeavy_SFXB.1080.wav": {
+      "sha256": "67bd65acfd91436fa2d8d703178000edc878a6d158f3e9c0e1292af77f62ee76",
+      "ruta_git": "escena/sonidos/extra/WhipWhooshHeavy_SFXB.1080.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Whip_Whoosh_BW.11026.wav": {
+      "sha256": "9a0dfa30ccb1f644e0524e34a1e3d4bc30afe112c652a0dcbf6bb0cc81a2ae7b",
+      "ruta_git": "escena/sonidos/extra/Whip_Whoosh_BW.11026.wav",
+      "igual_a_git": true
+     },
+     "sonidos/glitch/electrico_02.wav": {
+      "sha256": "3c479aec7a3ceaa1fd95a7c06a99e10548282b7907030d2b596a8fd73e0e372f",
+      "ruta_git": "escena/sonidos/glitch/electrico_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/glitch/glitch_01.wav": {
+      "sha256": "9169401d81de5cac0180b3297d750528cc71c3b23c69b29a584a143471abdad0",
+      "ruta_git": "escena/sonidos/glitch/glitch_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/impacto/kick_01.wav": {
+      "sha256": "a0ba7dd46f38311687c3a73d56303b2ab03afcdde68cb6615106440993fb3472",
+      "ruta_git": "escena/sonidos/impacto/kick_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/impacto/riser_01.wav": {
+      "sha256": "51d6acdc62de0b8155434f9aad858f206146eaea945ecbdbfce402e5dd0786ca",
+      "ruta_git": "escena/sonidos/impacto/riser_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/clap_01.wav": {
+      "sha256": "d5d3e935e71001b256f18fdb0b292887f971b2294714736de79058f5c8e00c8b",
+      "ruta_git": "escena/sonidos/musica/clap_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/clap_02.wav": {
+      "sha256": "1aac40852a704a843d4bf3a031b8706a15053ca9a5af47b928ffb71b4a5a65e6",
+      "ruta_git": "escena/sonidos/musica/clap_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/clap_03.wav": {
+      "sha256": "45b0969f8d278d33d467a6dcc1454a7f2bc5763983e6b2c5e90d36713c36a63f",
+      "ruta_git": "escena/sonidos/musica/clap_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/hat_abierto_01.wav": {
+      "sha256": "0118f3de5a312f5b015a31a8d1f71a5298dc0ebad4275710d41bdb4e4926adca",
+      "ruta_git": "escena/sonidos/musica/hat_abierto_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/hat_cerrado_01.wav": {
+      "sha256": "57d69c06f0c751964e198eb02110e88b62864bb37874ddc81b68df68c53583e2",
+      "ruta_git": "escena/sonidos/musica/hat_cerrado_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/hat_cerrado_02.wav": {
+      "sha256": "0c62869a3f2ebe01a4481a4ea9794a0e6b9de20ea7fa2842555b92c194658523",
+      "ruta_git": "escena/sonidos/musica/hat_cerrado_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/kick_01.wav": {
+      "sha256": "a0ba7dd46f38311687c3a73d56303b2ab03afcdde68cb6615106440993fb3472",
+      "ruta_git": "escena/sonidos/musica/kick_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/kick_02.wav": {
+      "sha256": "da5128509f25c77a69cb45b41d0ceba9cbcc85be1f3a7ed259cfbfd4b7897c53",
+      "ruta_git": "escena/sonidos/musica/kick_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/perc_01.wav": {
+      "sha256": "c8651c6553e01284660329a1321b92cc045fdf320b71dc814d81aaa4d79ae4a8",
+      "ruta_git": "escena/sonidos/musica/perc_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/shaker_01.wav": {
+      "sha256": "61932e3b435de2e8c16a4b9de20250a4fe4fc674125df5e904520b1f676b3cdf",
+      "ruta_git": "escena/sonidos/musica/shaker_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/shaker_02.wav": {
+      "sha256": "e7cb74256f52bbedb94f3b94c6a102b7c7d7622e16b11cb18d4d3783d75795a2",
+      "ruta_git": "escena/sonidos/musica/shaker_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/aletas.wav": {
+      "sha256": "23f5a02813d69f3cbba264afd531193723de86cc9618b72c2e7437cf35c8e39d",
+      "ruta_git": "escena/sonidos/sintet/aletas.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/baja.wav": {
+      "sha256": "b68aeed0e722f8e311908180c758efb24bd3f389ff036899b35655709132c64e",
+      "ruta_git": "escena/sonidos/sintet/baja.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/balanza.wav": {
+      "sha256": "25f167736fcf8b319dc1ea5087121bacccad9488495086aaaff6537489fb902c",
+      "ruta_git": "escena/sonidos/sintet/balanza.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/billetes.wav": {
+      "sha256": "637c26a76d3c42e061454897c86a1e3a1638aa589f52cf0d6e66a08306895ce2",
+      "ruta_git": "escena/sonidos/sintet/billetes.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/chinche.wav": {
+      "sha256": "82c3f10a98e55e2f26ad490acfe185b736e8470830bfc56bcf11c919fa5c3d6d",
+      "ruta_git": "escena/sonidos/sintet/chinche.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/ciudad.wav": {
+      "sha256": "de380828ab104db25e115b6f24cca16c39fc5858f5db8ce4fc502e3838600007",
+      "ruta_git": "escena/sonidos/sintet/ciudad.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/claqueta.wav": {
+      "sha256": "2c02fba8f9d34941fe69d4edecdbc6ff6ea5a705e591f56f56afce85c73ac83d",
+      "ruta_git": "escena/sonidos/sintet/claqueta.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/compu.wav": {
+      "sha256": "29b2c8b82420aed3b30a54c1a2d9f03d9eab85a96a9d2ca192560f0c55acf334",
+      "ruta_git": "escena/sonidos/sintet/compu.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/dados.wav": {
+      "sha256": "9c81759e300189391da25d1835750739a06c28859a145f7b38b9ac2c29ad9272",
+      "ruta_git": "escena/sonidos/sintet/dados.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/descuelga.wav": {
+      "sha256": "467141acf8fb7f12e3afa5ea3e1822bb43bcdcb36897b80df34a46022a12ebee",
+      "ruta_git": "escena/sonidos/sintet/descuelga.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/hoja.wav": {
+      "sha256": "bd9891b03073ec34cc31a39709e9dfb1127c2a3a9d835d834627d3e4ed3bae8e",
+      "ruta_git": "escena/sonidos/sintet/hoja.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/lapiz.wav": {
+      "sha256": "cd376140826301ea8a300a943ba38304dd6fe69cf3415c24741aa8339f34477b",
+      "ruta_git": "escena/sonidos/sintet/lapiz.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/proyector.wav": {
+      "sha256": "064431e0705f6c614209e7b6a790fef8e49cd9ff3b748055fb77337215ff9436",
+      "ruta_git": "escena/sonidos/sintet/proyector.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/sube.wav": {
+      "sha256": "d8647c237ee2b46d4692b49b65358025fe1759dab1827b9daf1566cd6cd77134",
+      "ruta_git": "escena/sonidos/sintet/sube.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/teclas.wav": {
+      "sha256": "9880933509cfc11bfc0640ea9078d9f10a9a07050a226dba0af3354faeee481b",
+      "ruta_git": "escena/sonidos/sintet/teclas.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/tics.wav": {
+      "sha256": "af88fce6c77c2c457e28455c904a4fa56dc33231d4a8d9e8c3434495be6af314",
+      "ruta_git": "escena/sonidos/sintet/tics.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/timbre.wav": {
+      "sha256": "bc1252ce390731c598ddc4d1dd5ecc0ca9dfd6a56dc3480fd355908974b89d18",
+      "ruta_git": "escena/sonidos/sintet/timbre.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/caja_01.wav": {
+      "sha256": "f4e9a009379835a03a8ab6999722c34996612c08830a69086d50c3fc56e643e8",
+      "ruta_git": "escena/sonidos/tematicos/caja_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/caja_02.wav": {
+      "sha256": "3fbfefd024174b0ff61f6f1d475c0166475c0fbd5e6d7916c8a36e8b58a71086",
+      "ruta_git": "escena/sonidos/tematicos/caja_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/caja_03.wav": {
+      "sha256": "19aad084129a5c6e8e7a48f8937fd9c14787439e8ab1aa7dc82259b1aeaf9891",
+      "ruta_git": "escena/sonidos/tematicos/caja_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/moneda_01.wav": {
+      "sha256": "f811225ba6b248bb69bbff0910575cdef851adb51a246b39ca70d65d7e4eeccf",
+      "ruta_git": "escena/sonidos/tematicos/moneda_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/moneda_02.wav": {
+      "sha256": "a32b144cb979ac79809921ff416409d23f43314801613ece76d34aac7359394b",
+      "ruta_git": "escena/sonidos/tematicos/moneda_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/motor_acelera_01.wav": {
+      "sha256": "c07401359904f2319701e4ba20cce8968a047ef732a382300f45a3bebe975e5f",
+      "ruta_git": "escena/sonidos/tematicos/motor_acelera_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/obturador_01.wav": {
+      "sha256": "5bb4721f89f04f3817a6bbeee8c4a3a352c81fccf22bf1e605c9f032b942fc77",
+      "ruta_git": "escena/sonidos/tematicos/obturador_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/sirena_01.wav": {
+      "sha256": "5052bd7afa3e8516ff672f4fdb9d650e9cd3a02fb3f88b0a9bef69d7fc65769a",
+      "ruta_git": "escena/sonidos/tematicos/sirena_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/pasada_larga_02.wav": {
+      "sha256": "e75d7491088ca19eebd6c6c771a3e54408a3a48a1b69d778514e7bfb230a5482",
+      "ruta_git": "escena/sonidos/transicion/pasada_larga_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_01.wav": {
+      "sha256": "f9a01bbcaa7ee70bb6a3ce88bc3dc1a5b40443a4b756392d74e3b7989bf06b65",
+      "ruta_git": "escena/sonidos/transicion/whoosh_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_02.wav": {
+      "sha256": "17512900abafa9f9115a60c59707028496c0bcc313cbe343c13d9f216ad9ed03",
+      "ruta_git": "escena/sonidos/transicion/whoosh_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_03.wav": {
+      "sha256": "227aaf086d8f9e9c2d7d96af191535f581d4bbbbac0c6396a5a8d11684c22059",
+      "ruta_git": "escena/sonidos/transicion/whoosh_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_04.wav": {
+      "sha256": "905639f15a00fb7da921bf81804661d767b763efa2b2a33126dca7c19ceb83fc",
+      "ruta_git": "escena/sonidos/transicion/whoosh_04.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_05.wav": {
+      "sha256": "1f10450fb74ef28c7ad56856e635a5caccb1e0d1bfec2f4ca1c21cc23f00b282",
+      "ruta_git": "escena/sonidos/transicion/whoosh_05.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_06.wav": {
+      "sha256": "fd555539017d8121188edf368c93fe80a67faf6c006bd2b69624b184039509b6",
+      "ruta_git": "escena/sonidos/transicion/whoosh_06.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/clap_03.wav": {
+      "sha256": "45b0969f8d278d33d467a6dcc1454a7f2bc5763983e6b2c5e90d36713c36a63f",
+      "ruta_git": "escena/sonidos/ui/clap_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/ding_01.wav": {
+      "sha256": "c03f3b6082c37e5235066b5682dcf96a2dd9718a992af5ed88ec7ec5937051dd",
+      "ruta_git": "escena/sonidos/ui/ding_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/pop_01.wav": {
+      "sha256": "28651964f04a2be6a49900643e5aa3fd4feb1c2acfc5f82a3efb2b927d9deab1",
+      "ruta_git": "escena/sonidos/ui/pop_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/pop_02.wav": {
+      "sha256": "597330e718a05c9460689c1608cfe04a303077e2530fb145508564909ce36a2e",
+      "ruta_git": "escena/sonidos/ui/pop_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/pop_03.wav": {
+      "sha256": "623c77e325ab7e838d4bba40429361709c0b4943e6209f926985ca7dcdcdd230",
+      "ruta_git": "escena/sonidos/ui/pop_03.wav",
+      "igual_a_git": true
+     },
+     "voz_local.py": {
+      "sha256": "d610f4ef4263c8121250f9663cdbae702067323b3a26616315f8967dc3cd4837",
+      "ruta_git": "escena/voz_local.py",
+      "igual_a_git": true
+     }
+    },
+    "distintos_de_git": []
+   },
+   "salidas_render": {
+    "_tmp/datos.json": "5555e70d66abb6547c633c75e7fc6d9545edae5b935730e69e5e23c51b1dd248",
+    "_tmp/video.mp4": "0ab826ba91f4b848588b72d47c800dfe88a8036b622b384ecf64b3f5e83f5d2f",
+    "_tmp/mezcla.wav": "87a40bd286e414ccc5d665b023848a52a64358023ea415cdf5d53a7f461e2dd6"
+   },
+   "video_entregado": {
+    "archivo": "referencias_video/wc1_entregado.mp4",
+    "sha256": "18f85493ee4bd489f680e87ee13f98fb55a07d0d2dfc5bb7bac8b15ab7a42199",
+    "md5_video": "f16d0f1f2a67a7e14f42bd57b93d35b7"
+   }
+  },
+  "wm2": {
+   "lote": "M2026112502",
+   "canal": "MillionDollarMistake",
+   "titulo_archivo": "21h - Blockbuster LOST Everything in ONE Decision",
+   "datos_slot": {
+    "datos.json": {
+     "ruta_git": "d24/wm2/datos.json",
+     "blob": "08a639fd0352b483bdf8c0a483b1c5663ab2b122",
+     "sha256": "0e1128ae5870cf4fe8db4c9a0e7b8d372b85948e2cc7e67c5d16318f3088defe"
+    },
+    "datos0.json": {
+     "ruta_git": "d24/wm2/datos0.json",
+     "blob": "08a639fd0352b483bdf8c0a483b1c5663ab2b122",
+     "sha256": "0e1128ae5870cf4fe8db4c9a0e7b8d372b85948e2cc7e67c5d16318f3088defe"
+    },
+    "nota": "marcadores T de la voz; post.py y planos_shorts.py los leen. Igual a datos0.json"
+   },
+   "entradas_corpus": {
+    "M2026112502.json": "c05ae2c990a700283a88797d8d4171ff937c4cf814ad9fdd6bbc1f499e83e282",
+    "M2026112502_src.json": "d45a76e95c86028825ca16831121a46ccc5e3e7c09bf5f4e7f15f48f01fdc2c4",
+    "b.py": "e95dd87385a70e3b7d4ae48173b807cfcfddb2e116463077af772cd4de96a905",
+    "datos_render.json": "8f8e4cd38edf8a1b880f893a0841397bed6d1dee1877921f1009ba20aabd91f0",
+    "ficha.json": "df90735288bd45fd49351ba7bb4a33f250cae9e4840b27fe46edcaa878f90d1b",
+    "planos.log": "11902216df4919816862b31cbeff3a2ee535b2663ec2f7a3db5e0d022ca8e7ba",
+    "vz.wav": "1d8d879be0ccc76fba27d89a49189520ea232281e50f7671f8db9715c42eb3e4",
+    "vz_palabras.json": "2a5d808c3ff4a8b8a2e62e0260ea0e4b2e16631e379d24021dfd9015a68e5b45",
+    "wm2.txt": "9725bb876947aa94ec97b9d046115511de256ef78efbf37673abb98703383978"
+   },
+   "entradas_en_git": {
+    "M2026112502_src.json": {
+     "ruta_git": "d24/wm2/M2026112502_src.json",
+     "blob": "2b69106869bc30a0736b17f52436a8dc7ae2ef80",
+     "sha256": "d45a76e95c86028825ca16831121a46ccc5e3e7c09bf5f4e7f15f48f01fdc2c4"
+    },
+    "M2026112502.json": {
+     "ruta_git": "d24/wm2/M2026112502.json",
+     "blob": "8756774be1dfe6b6f1462657a9b7417c27dcf519",
+     "sha256": "c05ae2c990a700283a88797d8d4171ff937c4cf814ad9fdd6bbc1f499e83e282"
+    },
+    "b.py": {
+     "ruta_git": "d24/wm2/b.py",
+     "blob": "7763ec967a28bf9cc4947ffc4b68c6f0d58c2b89",
+     "sha256": "e95dd87385a70e3b7d4ae48173b807cfcfddb2e116463077af772cd4de96a905"
+    },
+    "vz_palabras.json": {
+     "ruta_git": "d24/wm2/vz_palabras.json",
+     "blob": "9f4b1315e0772c06b6b9985d05caa9c3c42c88a5",
+     "sha256": "2a5d808c3ff4a8b8a2e62e0260ea0e4b2e16631e379d24021dfd9015a68e5b45"
+    },
+    "planos.log": {
+     "ruta_git": "d24/wm2/planos.log",
+     "blob": "b78737638833f6a37b5db28f7fc9ec3dd93baefb",
+     "sha256": "11902216df4919816862b31cbeff3a2ee535b2663ec2f7a3db5e0d022ca8e7ba"
+    },
+    "ficha.json": {
+     "ruta_git": "d24/wm2/ficha.json",
+     "blob": "c3e6c457a98e97f72ea7c710937440f69717177e",
+     "sha256": "df90735288bd45fd49351ba7bb4a33f250cae9e4840b27fe46edcaa878f90d1b"
+    }
+   },
+   "comando": {
+    "encolar": "d24/q2.sh wm2 M2026112502 bm_george 1.25 en",
+    "pipeline": "uno2.sh: b.py → hacer.sh (voz, datos_de.sh, resolver.py) → post.py → planos_shorts.py → render_par.sh",
+    "render": "render_par.sh M2026112502.json vz.wav vz_palabras.json v1.mp4 deep"
+   },
+   "voz": {
+    "voz": "bm_george",
+    "velocidad": 1.25,
+    "idioma": "en",
+    "pausa": 0.12,
+    "joven": false,
+    "modelo": "kokoro-v1.0 (ver modelo_voz)"
+   },
+   "musica": {
+    "estilo": "deep",
+    "azar": "con semilla fija (musica.py: md5 de la semilla; armar_escena.py: el lote; sintet_sfx.py: 7)"
+   },
+   "render": {
+    "t0": 0.0,
+    "fps": 30,
+    "cuadros": 1869,
+    "cuadro": "JPEG calidad 0.92 → ffmpeg libx264 -preset veryfast -crf 20 yuv420p (render.py)",
+    "azar_del_motor": "Math.random sin semilla en el grano del acabado pro (no reproducible bit a bit)"
+   },
+   "motor": {
+    "sha256": "75bb7c4480a0d1bcc59eaeb6ef2e192c39cb5acd042480558d2740cdf7aa5f61",
+    "ruta_git": "escena/escena.html.bak_p27_paso0",
+    "copia_corpus": "corpus/motor_entrega_25nov/escena.html"
+   },
+   "carpeta_render": {
+    "origen": "/tmp/rw.wCc0",
+    "archivos": {
+     "Poppins-Bold.ttf": {
+      "sha256": "983676516167748b74de6f4771fb384c664fd913acb8b471122ecacf5da5ea6c",
+      "ruta_git": "escena/Poppins-Bold.ttf",
+      "igual_a_git": true
+     },
+     "Poppins-Regular.ttf": {
+      "sha256": "7e65201e9b79159e2300267cc885e16c8dcef2424cdfa09a29bfb0980a94a7ba",
+      "ruta_git": "escena/Poppins-Regular.ttf",
+      "igual_a_git": true
+     },
+     "ajustar_tiempos.py": {
+      "sha256": "bb85ca6bf3f6931ed92d72829322e8a8459d0213c8fcbae99032ff337a650618",
+      "ruta_git": "escena/ajustar_tiempos.py",
+      "igual_a_git": true
+     },
+     "armar_escena.py": {
+      "sha256": "0ad7c3b0cd4bcd0581a3f074ffda3d4e44e76d71ce5316559aabd7134b7eed98",
+      "ruta_git": "escena/armar_escena.py",
+      "igual_a_git": true
+     },
+     "armar_largo.py": {
+      "sha256": "360f3c8c87972c645bf2ef24751bc0a7abe173d7b98ad26ef3a49ce600b9084c",
+      "ruta_git": "escena/armar_largo.py",
+      "igual_a_git": true
+     },
+     "clip_planos.py": {
+      "sha256": "66787f258bef4d0b2e188efcaadea99fd5a78b9f5135c81a55360ffd806ec07b",
+      "ruta_git": "escena/clip_planos.py",
+      "igual_a_git": true
+     },
+     "entonacion.py": {
+      "sha256": "642d5c028dcc4f8555745456ebb15fbff070c511ac738c57aa5eaccb38c61806",
+      "ruta_git": "escena/entonacion.py",
+      "igual_a_git": true
+     },
+     "escena.html": {
+      "sha256": "75bb7c4480a0d1bcc59eaeb6ef2e192c39cb5acd042480558d2740cdf7aa5f61",
+      "ruta_git": "escena/escena.html.bak_p27_paso0",
+      "igual_a_git": true
+     },
+     "joven.py": {
+      "sha256": "2bd2352222d44131845fbf8976e708e84af318f3835a6efb2cc365feccf25472",
+      "ruta_git": "escena/joven.py",
+      "igual_a_git": true
+     },
+     "muestras.py": {
+      "sha256": "475873623e791caf0cf843ace1d53833a751a92d8a75305cffaa93165981ccdb",
+      "ruta_git": "escena/muestras.py",
+      "igual_a_git": true
+     },
+     "muestras_h.py": {
+      "sha256": "100a3d11183bc766b3c2d9386e7279d192e4180bbdbe9695ac7fb796aff72408",
+      "ruta_git": "escena/muestras_h.py",
+      "igual_a_git": true
+     },
+     "musica.py": {
+      "sha256": "eed07eb6a2b89004b492748ff99a85a18c43de34cb5ce53fb2a166b841da1246",
+      "ruta_git": "escena/musica.py",
+      "igual_a_git": true
+     },
+     "musica_funk.py": {
+      "sha256": "473c2e6c4b964a0f1402bc040513c9bea91ffe613f0d16601a1a5964fc476de3",
+      "ruta_git": "escena/musica_funk.py",
+      "igual_a_git": true
+     },
+     "portada.py": {
+      "sha256": "ba9c9c3e64c82b196ba067942ab8521028bfe7b96b0a79c4d1cec6f4d6e96ba5",
+      "ruta_git": "escena/portada.py",
+      "igual_a_git": true
+     },
+     "probar_sets_h.py": {
+      "sha256": "8572df827d76419475cca30f279f24f3d83779a6bc78f78a906e531da131ffa5",
+      "ruta_git": "escena/probar_sets_h.py",
+      "igual_a_git": true
+     },
+     "render.py": {
+      "sha256": "719e8fbb5df2d0b84d3cf603774c7fadb82d6edb929938448e21f1e5d78b42b5",
+      "ruta_git": "escena/render.py",
+      "igual_a_git": true
+     },
+     "render_h.py": {
+      "sha256": "c03be44d189eacf2ab07b16b6df37d047338b21af7384772d96cbb42acdfbbb5",
+      "ruta_git": "escena/render_h.py",
+      "igual_a_git": true
+     },
+     "sintet_sfx.py": {
+      "sha256": "c567e6ddd15edb8cd288e92c8d96748323c20e6294d125ecd7d093da311b6a4e",
+      "ruta_git": "escena/sintet_sfx.py",
+      "igual_a_git": true
+     },
+     "sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_1.wav": {
+      "sha256": "bb910017fc0f0e643453a70e31c13318dba0cbb6f932058947b366daaf6fd961",
+      "ruta_git": "escena/sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_1.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_2.wav": {
+      "sha256": "7e6562312baf7fdd94682d26c427ea5650d08daa68e2c6a4b72834994b72b061",
+      "ruta_git": "escena/sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_2.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/CarEngineRev_BW.52086.wav": {
+      "sha256": "fa993c943b08a1f26b10fa5b15e40831dc5bbc3db7bb4a695a7bcf7a27ca3c40",
+      "ruta_git": "escena/sonidos/extra/CarEngineRev_BW.52086.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/CbRadioStatic_S08TE.394.wav": {
+      "sha256": "96951e94009a9b9def7632d5538c0d09d6ec9cbe838e703b7dd58023a851b575",
+      "ruta_git": "escena/sonidos/extra/CbRadioStatic_S08TE.394.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ESM_Builder_Game_Item_Bubble_3_Cartoon_Comedy_Arcade_Casual_Old_School_Retro_Collect_Coin.wav": {
+      "sha256": "a912c76ab758669be6225343c7a05994164b08651239624803da34888cb44eed",
+      "ruta_git": "escena/sonidos/extra/ESM_Builder_Game_Item_Bubble_3_Cartoon_Comedy_Arcade_Casual_Old_School_Retro_Collect_Coin.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_02.wav": {
+      "sha256": "445320949de23e0afc2529e7217b9d048a8cdf96bd4581373182d967144c6658",
+      "ruta_git": "escena/sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_03.wav": {
+      "sha256": "8a7c3bdcfa7209df9db7fcb94235cc83c90c090cdc19626cff63f0023483a7dd",
+      "ruta_git": "escena/sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ElectricZapBuzz_S011SF.344.wav": {
+      "sha256": "dc775e9b1fa79e52d38bf8ec0b97f37482fe7a03f66a3fe88fd539cd5466f8e0",
+      "ruta_git": "escena/sonidos/extra/ElectricZapBuzz_S011SF.344.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/FF_WP_foley_typewriter_ding.wav": {
+      "sha256": "57aa0a798c896375783f13e8b62ce7dc2e5aaecec1f66fbaa38ce23cdf96afa2",
+      "ruta_git": "escena/sonidos/extra/FF_WP_foley_typewriter_ding.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Lev_FX_Short_079.wav": {
+      "sha256": "1d5c5ff254cff9945c1854694493a18c7e2044794046a232808bc7b432ff5c97",
+      "ruta_git": "escena/sonidos/extra/Lev_FX_Short_079.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Lev_Glitch_094.wav": {
+      "sha256": "602a598b4b7e9821dcfd9f42037f39ee108735d6c1b00899e89608bf0d9cb2aa",
+      "ruta_git": "escena/sonidos/extra/Lev_Glitch_094.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Lev_Glitch_104.wav": {
+      "sha256": "5f81f75d9fce15b3a7c2b6c883c0610217ff78b75e3374df9b60a57de467dba0",
+      "ruta_git": "escena/sonidos/extra/Lev_Glitch_104.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/MODE_BE2_fx_foley_whoosh_03.wav": {
+      "sha256": "cebfa85f5f07f7944b32bd342482ace85c7761b83e8b5fef82d232f09d33f20b",
+      "ruta_git": "escena/sonidos/extra/MODE_BE2_fx_foley_whoosh_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/MODE_BE2_fx_foley_whoosh_04.wav": {
+      "sha256": "f0bb8d6f7583baa3e81ad0f877bdd95e068004ebe861a36ccbe38b7f863bfff3",
+      "ruta_git": "escena/sonidos/extra/MODE_BE2_fx_foley_whoosh_04.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/OS_ATL_kick_subby.wav": {
+      "sha256": "c420d129c06a878d5c537debb2cb57c37efcbabf1940930b300fb32742b8c24b",
+      "ruta_git": "escena/sonidos/extra/OS_ATL_kick_subby.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/SPLC-6461_FX_Oneshot_Glitch_Experimental_Leave_Menu_Crystalline.wav": {
+      "sha256": "effaef723b838038a04029561547179b525f4cef9f838864446ccea49a896ce5",
+      "ruta_git": "escena/sonidos/extra/SPLC-6461_FX_Oneshot_Glitch_Experimental_Leave_Menu_Crystalline.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/STCR2_SG_FX_Upsweep_Slow.wav": {
+      "sha256": "78a07712640c8c6a0a9020863e444721d670b6997e0c501f1f2c4cbbfc85956b",
+      "ruta_git": "escena/sonidos/extra/STCR2_SG_FX_Upsweep_Slow.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/TimerClock_AP1.1323.wav": {
+      "sha256": "7ba763577e8c762cde822bd2ab4a938b540c2f8ae75b32345c37aa423645a97b",
+      "ruta_git": "escena/sonidos/extra/TimerClock_AP1.1323.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/VOX_FRVP_vocal_fx_bubble.wav": {
+      "sha256": "08b1b4b2ffea78e9044a1d29b84cd97bffb8c78576de59e5b7da8c94bd93758b",
+      "ruta_git": "escena/sonidos/extra/VOX_FRVP_vocal_fx_bubble.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/WhipWhooshHeavy_SFXB.1080.wav": {
+      "sha256": "67bd65acfd91436fa2d8d703178000edc878a6d158f3e9c0e1292af77f62ee76",
+      "ruta_git": "escena/sonidos/extra/WhipWhooshHeavy_SFXB.1080.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Whip_Whoosh_BW.11026.wav": {
+      "sha256": "9a0dfa30ccb1f644e0524e34a1e3d4bc30afe112c652a0dcbf6bb0cc81a2ae7b",
+      "ruta_git": "escena/sonidos/extra/Whip_Whoosh_BW.11026.wav",
+      "igual_a_git": true
+     },
+     "sonidos/glitch/electrico_02.wav": {
+      "sha256": "3c479aec7a3ceaa1fd95a7c06a99e10548282b7907030d2b596a8fd73e0e372f",
+      "ruta_git": "escena/sonidos/glitch/electrico_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/glitch/glitch_01.wav": {
+      "sha256": "9169401d81de5cac0180b3297d750528cc71c3b23c69b29a584a143471abdad0",
+      "ruta_git": "escena/sonidos/glitch/glitch_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/impacto/kick_01.wav": {
+      "sha256": "a0ba7dd46f38311687c3a73d56303b2ab03afcdde68cb6615106440993fb3472",
+      "ruta_git": "escena/sonidos/impacto/kick_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/impacto/riser_01.wav": {
+      "sha256": "51d6acdc62de0b8155434f9aad858f206146eaea945ecbdbfce402e5dd0786ca",
+      "ruta_git": "escena/sonidos/impacto/riser_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/clap_01.wav": {
+      "sha256": "d5d3e935e71001b256f18fdb0b292887f971b2294714736de79058f5c8e00c8b",
+      "ruta_git": "escena/sonidos/musica/clap_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/clap_02.wav": {
+      "sha256": "1aac40852a704a843d4bf3a031b8706a15053ca9a5af47b928ffb71b4a5a65e6",
+      "ruta_git": "escena/sonidos/musica/clap_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/clap_03.wav": {
+      "sha256": "45b0969f8d278d33d467a6dcc1454a7f2bc5763983e6b2c5e90d36713c36a63f",
+      "ruta_git": "escena/sonidos/musica/clap_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/hat_abierto_01.wav": {
+      "sha256": "0118f3de5a312f5b015a31a8d1f71a5298dc0ebad4275710d41bdb4e4926adca",
+      "ruta_git": "escena/sonidos/musica/hat_abierto_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/hat_cerrado_01.wav": {
+      "sha256": "57d69c06f0c751964e198eb02110e88b62864bb37874ddc81b68df68c53583e2",
+      "ruta_git": "escena/sonidos/musica/hat_cerrado_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/hat_cerrado_02.wav": {
+      "sha256": "0c62869a3f2ebe01a4481a4ea9794a0e6b9de20ea7fa2842555b92c194658523",
+      "ruta_git": "escena/sonidos/musica/hat_cerrado_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/kick_01.wav": {
+      "sha256": "a0ba7dd46f38311687c3a73d56303b2ab03afcdde68cb6615106440993fb3472",
+      "ruta_git": "escena/sonidos/musica/kick_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/kick_02.wav": {
+      "sha256": "da5128509f25c77a69cb45b41d0ceba9cbcc85be1f3a7ed259cfbfd4b7897c53",
+      "ruta_git": "escena/sonidos/musica/kick_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/perc_01.wav": {
+      "sha256": "c8651c6553e01284660329a1321b92cc045fdf320b71dc814d81aaa4d79ae4a8",
+      "ruta_git": "escena/sonidos/musica/perc_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/shaker_01.wav": {
+      "sha256": "61932e3b435de2e8c16a4b9de20250a4fe4fc674125df5e904520b1f676b3cdf",
+      "ruta_git": "escena/sonidos/musica/shaker_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/shaker_02.wav": {
+      "sha256": "e7cb74256f52bbedb94f3b94c6a102b7c7d7622e16b11cb18d4d3783d75795a2",
+      "ruta_git": "escena/sonidos/musica/shaker_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/aletas.wav": {
+      "sha256": "23f5a02813d69f3cbba264afd531193723de86cc9618b72c2e7437cf35c8e39d",
+      "ruta_git": "escena/sonidos/sintet/aletas.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/baja.wav": {
+      "sha256": "b68aeed0e722f8e311908180c758efb24bd3f389ff036899b35655709132c64e",
+      "ruta_git": "escena/sonidos/sintet/baja.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/balanza.wav": {
+      "sha256": "25f167736fcf8b319dc1ea5087121bacccad9488495086aaaff6537489fb902c",
+      "ruta_git": "escena/sonidos/sintet/balanza.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/billetes.wav": {
+      "sha256": "637c26a76d3c42e061454897c86a1e3a1638aa589f52cf0d6e66a08306895ce2",
+      "ruta_git": "escena/sonidos/sintet/billetes.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/chinche.wav": {
+      "sha256": "82c3f10a98e55e2f26ad490acfe185b736e8470830bfc56bcf11c919fa5c3d6d",
+      "ruta_git": "escena/sonidos/sintet/chinche.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/ciudad.wav": {
+      "sha256": "de380828ab104db25e115b6f24cca16c39fc5858f5db8ce4fc502e3838600007",
+      "ruta_git": "escena/sonidos/sintet/ciudad.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/claqueta.wav": {
+      "sha256": "2c02fba8f9d34941fe69d4edecdbc6ff6ea5a705e591f56f56afce85c73ac83d",
+      "ruta_git": "escena/sonidos/sintet/claqueta.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/compu.wav": {
+      "sha256": "29b2c8b82420aed3b30a54c1a2d9f03d9eab85a96a9d2ca192560f0c55acf334",
+      "ruta_git": "escena/sonidos/sintet/compu.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/dados.wav": {
+      "sha256": "9c81759e300189391da25d1835750739a06c28859a145f7b38b9ac2c29ad9272",
+      "ruta_git": "escena/sonidos/sintet/dados.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/descuelga.wav": {
+      "sha256": "467141acf8fb7f12e3afa5ea3e1822bb43bcdcb36897b80df34a46022a12ebee",
+      "ruta_git": "escena/sonidos/sintet/descuelga.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/hoja.wav": {
+      "sha256": "bd9891b03073ec34cc31a39709e9dfb1127c2a3a9d835d834627d3e4ed3bae8e",
+      "ruta_git": "escena/sonidos/sintet/hoja.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/lapiz.wav": {
+      "sha256": "cd376140826301ea8a300a943ba38304dd6fe69cf3415c24741aa8339f34477b",
+      "ruta_git": "escena/sonidos/sintet/lapiz.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/proyector.wav": {
+      "sha256": "064431e0705f6c614209e7b6a790fef8e49cd9ff3b748055fb77337215ff9436",
+      "ruta_git": "escena/sonidos/sintet/proyector.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/sube.wav": {
+      "sha256": "d8647c237ee2b46d4692b49b65358025fe1759dab1827b9daf1566cd6cd77134",
+      "ruta_git": "escena/sonidos/sintet/sube.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/teclas.wav": {
+      "sha256": "9880933509cfc11bfc0640ea9078d9f10a9a07050a226dba0af3354faeee481b",
+      "ruta_git": "escena/sonidos/sintet/teclas.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/tics.wav": {
+      "sha256": "af88fce6c77c2c457e28455c904a4fa56dc33231d4a8d9e8c3434495be6af314",
+      "ruta_git": "escena/sonidos/sintet/tics.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/timbre.wav": {
+      "sha256": "bc1252ce390731c598ddc4d1dd5ecc0ca9dfd6a56dc3480fd355908974b89d18",
+      "ruta_git": "escena/sonidos/sintet/timbre.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/caja_01.wav": {
+      "sha256": "f4e9a009379835a03a8ab6999722c34996612c08830a69086d50c3fc56e643e8",
+      "ruta_git": "escena/sonidos/tematicos/caja_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/caja_02.wav": {
+      "sha256": "3fbfefd024174b0ff61f6f1d475c0166475c0fbd5e6d7916c8a36e8b58a71086",
+      "ruta_git": "escena/sonidos/tematicos/caja_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/caja_03.wav": {
+      "sha256": "19aad084129a5c6e8e7a48f8937fd9c14787439e8ab1aa7dc82259b1aeaf9891",
+      "ruta_git": "escena/sonidos/tematicos/caja_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/moneda_01.wav": {
+      "sha256": "f811225ba6b248bb69bbff0910575cdef851adb51a246b39ca70d65d7e4eeccf",
+      "ruta_git": "escena/sonidos/tematicos/moneda_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/moneda_02.wav": {
+      "sha256": "a32b144cb979ac79809921ff416409d23f43314801613ece76d34aac7359394b",
+      "ruta_git": "escena/sonidos/tematicos/moneda_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/motor_acelera_01.wav": {
+      "sha256": "c07401359904f2319701e4ba20cce8968a047ef732a382300f45a3bebe975e5f",
+      "ruta_git": "escena/sonidos/tematicos/motor_acelera_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/obturador_01.wav": {
+      "sha256": "5bb4721f89f04f3817a6bbeee8c4a3a352c81fccf22bf1e605c9f032b942fc77",
+      "ruta_git": "escena/sonidos/tematicos/obturador_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/sirena_01.wav": {
+      "sha256": "5052bd7afa3e8516ff672f4fdb9d650e9cd3a02fb3f88b0a9bef69d7fc65769a",
+      "ruta_git": "escena/sonidos/tematicos/sirena_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/pasada_larga_02.wav": {
+      "sha256": "e75d7491088ca19eebd6c6c771a3e54408a3a48a1b69d778514e7bfb230a5482",
+      "ruta_git": "escena/sonidos/transicion/pasada_larga_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_01.wav": {
+      "sha256": "f9a01bbcaa7ee70bb6a3ce88bc3dc1a5b40443a4b756392d74e3b7989bf06b65",
+      "ruta_git": "escena/sonidos/transicion/whoosh_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_02.wav": {
+      "sha256": "17512900abafa9f9115a60c59707028496c0bcc313cbe343c13d9f216ad9ed03",
+      "ruta_git": "escena/sonidos/transicion/whoosh_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_03.wav": {
+      "sha256": "227aaf086d8f9e9c2d7d96af191535f581d4bbbbac0c6396a5a8d11684c22059",
+      "ruta_git": "escena/sonidos/transicion/whoosh_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_04.wav": {
+      "sha256": "905639f15a00fb7da921bf81804661d767b763efa2b2a33126dca7c19ceb83fc",
+      "ruta_git": "escena/sonidos/transicion/whoosh_04.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_05.wav": {
+      "sha256": "1f10450fb74ef28c7ad56856e635a5caccb1e0d1bfec2f4ca1c21cc23f00b282",
+      "ruta_git": "escena/sonidos/transicion/whoosh_05.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_06.wav": {
+      "sha256": "fd555539017d8121188edf368c93fe80a67faf6c006bd2b69624b184039509b6",
+      "ruta_git": "escena/sonidos/transicion/whoosh_06.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/clap_03.wav": {
+      "sha256": "45b0969f8d278d33d467a6dcc1454a7f2bc5763983e6b2c5e90d36713c36a63f",
+      "ruta_git": "escena/sonidos/ui/clap_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/ding_01.wav": {
+      "sha256": "c03f3b6082c37e5235066b5682dcf96a2dd9718a992af5ed88ec7ec5937051dd",
+      "ruta_git": "escena/sonidos/ui/ding_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/pop_01.wav": {
+      "sha256": "28651964f04a2be6a49900643e5aa3fd4feb1c2acfc5f82a3efb2b927d9deab1",
+      "ruta_git": "escena/sonidos/ui/pop_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/pop_02.wav": {
+      "sha256": "597330e718a05c9460689c1608cfe04a303077e2530fb145508564909ce36a2e",
+      "ruta_git": "escena/sonidos/ui/pop_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/pop_03.wav": {
+      "sha256": "623c77e325ab7e838d4bba40429361709c0b4943e6209f926985ca7dcdcdd230",
+      "ruta_git": "escena/sonidos/ui/pop_03.wav",
+      "igual_a_git": true
+     },
+     "voz_local.py": {
+      "sha256": "d610f4ef4263c8121250f9663cdbae702067323b3a26616315f8967dc3cd4837",
+      "ruta_git": "escena/voz_local.py",
+      "igual_a_git": true
+     }
+    },
+    "distintos_de_git": []
+   },
+   "salidas_render": {
+    "_tmp/datos.json": "8f8e4cd38edf8a1b880f893a0841397bed6d1dee1877921f1009ba20aabd91f0",
+    "_tmp/video.mp4": "e611ee1a76b64f400d7606a65925b2a3adb7358e53daadc73810da445fb03fc3",
+    "_tmp/mezcla.wav": "665002f8824fd25f86a2120b2ab9d5636e58477628e7782781a8ed0b0fcb701c"
+   },
+   "video_entregado": {
+    "archivo": "referencias_video/wm2_entregado.mp4",
+    "sha256": "6409e0cb40e15f04577e32303eda01b72e7f873542cd6069a888a35c8ae20045",
+    "md5_video": "9bf2641983aec375506b1498fb9d875d"
+   }
+  },
+  "wr1": {
+   "lote": "R2026112501",
+   "canal": "TheRabbitLoop",
+   "titulo_archivo": "22h - THE PENTAGON CONFIRMED THIS VIDEO IS REAL",
+   "datos_slot": {
+    "datos.json": {
+     "ruta_git": "d24/wr1/datos.json",
+     "blob": "64c8e5d4f5746eb8ab9687da9dd3fd718cbbbcaa",
+     "sha256": "b2b876a6cde3edea628fc8b60bc9d7c1c699fab7371c139800cba0d81d5d1a83"
+    },
+    "datos0.json": {
+     "ruta_git": "d24/wr1/datos0.json",
+     "blob": "64c8e5d4f5746eb8ab9687da9dd3fd718cbbbcaa",
+     "sha256": "b2b876a6cde3edea628fc8b60bc9d7c1c699fab7371c139800cba0d81d5d1a83"
+    },
+    "nota": "marcadores T de la voz; post.py y planos_shorts.py los leen. Igual a datos0.json"
+   },
+   "entradas_corpus": {
+    "R2026112501.json": "c95b8e05b420f9e9950ecba5eafb821a258864ccf54c8f69892b3b3d2b0c2847",
+    "R2026112501_src.json": "c13f3be5b2b1243dd36f7211d6286135eaa8e8cbb1194171592c4a64c3607213",
+    "b.py": "bbfff9e59b0e6fd6efed391e11d4d4e203bc8f69f1758fb2eaa31b822295085a",
+    "datos_render.json": "91ec50906cfbe82982d370946585c990afacf75436c0e94edae25e248f015c18",
+    "ficha.json": "e3c505d44f13e5c139e0c5e0f98c7c482f5eff6629557b0fc3561eb67e0178b5",
+    "planos.log": "caf5b0caf71ac927310ee6a339a43b720c335bc889007f3da17d483672dc0192",
+    "vz.wav": "2b16a9c1b2211fedc4e76cbf56fdf659b1277a5f3d3adff835510e3f7dbd3206",
+    "vz_palabras.json": "7e28406f07e064dad1043c60f9b0ffbf24813a96a6ef19b77293e6be18726df0",
+    "wr1.txt": "74cf0b306bf487369d42eba30c0b0f4eae18455a65217ea615f5c1d981bea220"
+   },
+   "entradas_en_git": {
+    "R2026112501_src.json": {
+     "ruta_git": "d24/wr1/R2026112501_src.json",
+     "blob": "eead118fe14776f68baa00e12b7e803d463a6900",
+     "sha256": "c13f3be5b2b1243dd36f7211d6286135eaa8e8cbb1194171592c4a64c3607213"
+    },
+    "R2026112501.json": {
+     "ruta_git": "d24/wr1/R2026112501.json",
+     "blob": "c427e789cffbd5421ade897f300747db5d61e26f",
+     "sha256": "c95b8e05b420f9e9950ecba5eafb821a258864ccf54c8f69892b3b3d2b0c2847"
+    },
+    "b.py": {
+     "ruta_git": "d24/wr1/b.py",
+     "blob": "9acd4ca3443cdf129ebd482f5c6375b5d6c3bb24",
+     "sha256": "bbfff9e59b0e6fd6efed391e11d4d4e203bc8f69f1758fb2eaa31b822295085a"
+    },
+    "vz_palabras.json": {
+     "ruta_git": "d24/wr1/vz_palabras.json",
+     "blob": "b9a1913a7d4d6210c3c9fd80a39dc99afa3be8cb",
+     "sha256": "7e28406f07e064dad1043c60f9b0ffbf24813a96a6ef19b77293e6be18726df0"
+    },
+    "planos.log": {
+     "ruta_git": "d24/wr1/planos.log",
+     "blob": "24c0200bce7c549160a142ccc9457ada03b4c1f3",
+     "sha256": "caf5b0caf71ac927310ee6a339a43b720c335bc889007f3da17d483672dc0192"
+    },
+    "ficha.json": {
+     "ruta_git": "d24/wr1/ficha.json",
+     "blob": "29a161d066a6b06111e5910ad2891a21d9453c9a",
+     "sha256": "e3c505d44f13e5c139e0c5e0f98c7c482f5eff6629557b0fc3561eb67e0178b5"
+    }
+   },
+   "comando": {
+    "encolar": "d24/q2.sh wr1 R2026112501 am_michael 1.3 en",
+    "pipeline": "uno2.sh: b.py → hacer.sh (voz, datos_de.sh, resolver.py) → post.py → planos_shorts.py → render_par.sh",
+    "render": "render_par.sh R2026112501.json vz.wav vz_palabras.json v1.mp4 deep"
+   },
+   "voz": {
+    "voz": "am_michael",
+    "velocidad": 1.3,
+    "idioma": "en",
+    "pausa": 0.12,
+    "joven": false,
+    "modelo": "kokoro-v1.0 (ver modelo_voz)"
+   },
+   "musica": {
+    "estilo": "deep",
+    "azar": "con semilla fija (musica.py: md5 de la semilla; armar_escena.py: el lote; sintet_sfx.py: 7)"
+   },
+   "render": {
+    "t0": 0.0,
+    "fps": 30,
+    "cuadros": 1479,
+    "cuadro": "JPEG calidad 0.92 → ffmpeg libx264 -preset veryfast -crf 20 yuv420p (render.py)",
+    "azar_del_motor": "Math.random sin semilla en el grano del acabado pro (no reproducible bit a bit)"
+   },
+   "motor": {
+    "sha256": "75bb7c4480a0d1bcc59eaeb6ef2e192c39cb5acd042480558d2740cdf7aa5f61",
+    "ruta_git": "escena/escena.html.bak_p27_paso0",
+    "copia_corpus": "corpus/motor_entrega_25nov/escena.html"
+   },
+   "carpeta_render": {
+    "origen": "/tmp/rw.CSa7",
+    "archivos": {
+     "Poppins-Bold.ttf": {
+      "sha256": "983676516167748b74de6f4771fb384c664fd913acb8b471122ecacf5da5ea6c",
+      "ruta_git": "escena/Poppins-Bold.ttf",
+      "igual_a_git": true
+     },
+     "Poppins-Regular.ttf": {
+      "sha256": "7e65201e9b79159e2300267cc885e16c8dcef2424cdfa09a29bfb0980a94a7ba",
+      "ruta_git": "escena/Poppins-Regular.ttf",
+      "igual_a_git": true
+     },
+     "ajustar_tiempos.py": {
+      "sha256": "bb85ca6bf3f6931ed92d72829322e8a8459d0213c8fcbae99032ff337a650618",
+      "ruta_git": "escena/ajustar_tiempos.py",
+      "igual_a_git": true
+     },
+     "armar_escena.py": {
+      "sha256": "0ad7c3b0cd4bcd0581a3f074ffda3d4e44e76d71ce5316559aabd7134b7eed98",
+      "ruta_git": "escena/armar_escena.py",
+      "igual_a_git": true
+     },
+     "armar_largo.py": {
+      "sha256": "360f3c8c87972c645bf2ef24751bc0a7abe173d7b98ad26ef3a49ce600b9084c",
+      "ruta_git": "escena/armar_largo.py",
+      "igual_a_git": true
+     },
+     "clip_planos.py": {
+      "sha256": "66787f258bef4d0b2e188efcaadea99fd5a78b9f5135c81a55360ffd806ec07b",
+      "ruta_git": "escena/clip_planos.py",
+      "igual_a_git": true
+     },
+     "entonacion.py": {
+      "sha256": "642d5c028dcc4f8555745456ebb15fbff070c511ac738c57aa5eaccb38c61806",
+      "ruta_git": "escena/entonacion.py",
+      "igual_a_git": true
+     },
+     "escena.html": {
+      "sha256": "75bb7c4480a0d1bcc59eaeb6ef2e192c39cb5acd042480558d2740cdf7aa5f61",
+      "ruta_git": "escena/escena.html.bak_p27_paso0",
+      "igual_a_git": true
+     },
+     "joven.py": {
+      "sha256": "2bd2352222d44131845fbf8976e708e84af318f3835a6efb2cc365feccf25472",
+      "ruta_git": "escena/joven.py",
+      "igual_a_git": true
+     },
+     "muestras.py": {
+      "sha256": "475873623e791caf0cf843ace1d53833a751a92d8a75305cffaa93165981ccdb",
+      "ruta_git": "escena/muestras.py",
+      "igual_a_git": true
+     },
+     "muestras_h.py": {
+      "sha256": "100a3d11183bc766b3c2d9386e7279d192e4180bbdbe9695ac7fb796aff72408",
+      "ruta_git": "escena/muestras_h.py",
+      "igual_a_git": true
+     },
+     "musica.py": {
+      "sha256": "eed07eb6a2b89004b492748ff99a85a18c43de34cb5ce53fb2a166b841da1246",
+      "ruta_git": "escena/musica.py",
+      "igual_a_git": true
+     },
+     "musica_funk.py": {
+      "sha256": "473c2e6c4b964a0f1402bc040513c9bea91ffe613f0d16601a1a5964fc476de3",
+      "ruta_git": "escena/musica_funk.py",
+      "igual_a_git": true
+     },
+     "portada.py": {
+      "sha256": "ba9c9c3e64c82b196ba067942ab8521028bfe7b96b0a79c4d1cec6f4d6e96ba5",
+      "ruta_git": "escena/portada.py",
+      "igual_a_git": true
+     },
+     "probar_sets_h.py": {
+      "sha256": "8572df827d76419475cca30f279f24f3d83779a6bc78f78a906e531da131ffa5",
+      "ruta_git": "escena/probar_sets_h.py",
+      "igual_a_git": true
+     },
+     "render.py": {
+      "sha256": "719e8fbb5df2d0b84d3cf603774c7fadb82d6edb929938448e21f1e5d78b42b5",
+      "ruta_git": "escena/render.py",
+      "igual_a_git": true
+     },
+     "render_h.py": {
+      "sha256": "c03be44d189eacf2ab07b16b6df37d047338b21af7384772d96cbb42acdfbbb5",
+      "ruta_git": "escena/render_h.py",
+      "igual_a_git": true
+     },
+     "sintet_sfx.py": {
+      "sha256": "c567e6ddd15edb8cd288e92c8d96748323c20e6294d125ecd7d093da311b6a4e",
+      "ruta_git": "escena/sintet_sfx.py",
+      "igual_a_git": true
+     },
+     "sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_1.wav": {
+      "sha256": "bb910017fc0f0e643453a70e31c13318dba0cbb6f932058947b366daaf6fd961",
+      "ruta_git": "escena/sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_1.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_2.wav": {
+      "sha256": "7e6562312baf7fdd94682d26c427ea5650d08daa68e2c6a4b72834994b72b061",
+      "ruta_git": "escena/sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_2.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/CarEngineRev_BW.52086.wav": {
+      "sha256": "fa993c943b08a1f26b10fa5b15e40831dc5bbc3db7bb4a695a7bcf7a27ca3c40",
+      "ruta_git": "escena/sonidos/extra/CarEngineRev_BW.52086.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/CbRadioStatic_S08TE.394.wav": {
+      "sha256": "96951e94009a9b9def7632d5538c0d09d6ec9cbe838e703b7dd58023a851b575",
+      "ruta_git": "escena/sonidos/extra/CbRadioStatic_S08TE.394.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ESM_Builder_Game_Item_Bubble_3_Cartoon_Comedy_Arcade_Casual_Old_School_Retro_Collect_Coin.wav": {
+      "sha256": "a912c76ab758669be6225343c7a05994164b08651239624803da34888cb44eed",
+      "ruta_git": "escena/sonidos/extra/ESM_Builder_Game_Item_Bubble_3_Cartoon_Comedy_Arcade_Casual_Old_School_Retro_Collect_Coin.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_02.wav": {
+      "sha256": "445320949de23e0afc2529e7217b9d048a8cdf96bd4581373182d967144c6658",
+      "ruta_git": "escena/sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_03.wav": {
+      "sha256": "8a7c3bdcfa7209df9db7fcb94235cc83c90c090cdc19626cff63f0023483a7dd",
+      "ruta_git": "escena/sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ElectricZapBuzz_S011SF.344.wav": {
+      "sha256": "dc775e9b1fa79e52d38bf8ec0b97f37482fe7a03f66a3fe88fd539cd5466f8e0",
+      "ruta_git": "escena/sonidos/extra/ElectricZapBuzz_S011SF.344.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/FF_WP_foley_typewriter_ding.wav": {
+      "sha256": "57aa0a798c896375783f13e8b62ce7dc2e5aaecec1f66fbaa38ce23cdf96afa2",
+      "ruta_git": "escena/sonidos/extra/FF_WP_foley_typewriter_ding.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Lev_FX_Short_079.wav": {
+      "sha256": "1d5c5ff254cff9945c1854694493a18c7e2044794046a232808bc7b432ff5c97",
+      "ruta_git": "escena/sonidos/extra/Lev_FX_Short_079.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Lev_Glitch_094.wav": {
+      "sha256": "602a598b4b7e9821dcfd9f42037f39ee108735d6c1b00899e89608bf0d9cb2aa",
+      "ruta_git": "escena/sonidos/extra/Lev_Glitch_094.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Lev_Glitch_104.wav": {
+      "sha256": "5f81f75d9fce15b3a7c2b6c883c0610217ff78b75e3374df9b60a57de467dba0",
+      "ruta_git": "escena/sonidos/extra/Lev_Glitch_104.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/MODE_BE2_fx_foley_whoosh_03.wav": {
+      "sha256": "cebfa85f5f07f7944b32bd342482ace85c7761b83e8b5fef82d232f09d33f20b",
+      "ruta_git": "escena/sonidos/extra/MODE_BE2_fx_foley_whoosh_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/MODE_BE2_fx_foley_whoosh_04.wav": {
+      "sha256": "f0bb8d6f7583baa3e81ad0f877bdd95e068004ebe861a36ccbe38b7f863bfff3",
+      "ruta_git": "escena/sonidos/extra/MODE_BE2_fx_foley_whoosh_04.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/OS_ATL_kick_subby.wav": {
+      "sha256": "c420d129c06a878d5c537debb2cb57c37efcbabf1940930b300fb32742b8c24b",
+      "ruta_git": "escena/sonidos/extra/OS_ATL_kick_subby.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/SPLC-6461_FX_Oneshot_Glitch_Experimental_Leave_Menu_Crystalline.wav": {
+      "sha256": "effaef723b838038a04029561547179b525f4cef9f838864446ccea49a896ce5",
+      "ruta_git": "escena/sonidos/extra/SPLC-6461_FX_Oneshot_Glitch_Experimental_Leave_Menu_Crystalline.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/STCR2_SG_FX_Upsweep_Slow.wav": {
+      "sha256": "78a07712640c8c6a0a9020863e444721d670b6997e0c501f1f2c4cbbfc85956b",
+      "ruta_git": "escena/sonidos/extra/STCR2_SG_FX_Upsweep_Slow.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/TimerClock_AP1.1323.wav": {
+      "sha256": "7ba763577e8c762cde822bd2ab4a938b540c2f8ae75b32345c37aa423645a97b",
+      "ruta_git": "escena/sonidos/extra/TimerClock_AP1.1323.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/VOX_FRVP_vocal_fx_bubble.wav": {
+      "sha256": "08b1b4b2ffea78e9044a1d29b84cd97bffb8c78576de59e5b7da8c94bd93758b",
+      "ruta_git": "escena/sonidos/extra/VOX_FRVP_vocal_fx_bubble.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/WhipWhooshHeavy_SFXB.1080.wav": {
+      "sha256": "67bd65acfd91436fa2d8d703178000edc878a6d158f3e9c0e1292af77f62ee76",
+      "ruta_git": "escena/sonidos/extra/WhipWhooshHeavy_SFXB.1080.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Whip_Whoosh_BW.11026.wav": {
+      "sha256": "9a0dfa30ccb1f644e0524e34a1e3d4bc30afe112c652a0dcbf6bb0cc81a2ae7b",
+      "ruta_git": "escena/sonidos/extra/Whip_Whoosh_BW.11026.wav",
+      "igual_a_git": true
+     },
+     "sonidos/glitch/electrico_02.wav": {
+      "sha256": "3c479aec7a3ceaa1fd95a7c06a99e10548282b7907030d2b596a8fd73e0e372f",
+      "ruta_git": "escena/sonidos/glitch/electrico_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/glitch/glitch_01.wav": {
+      "sha256": "9169401d81de5cac0180b3297d750528cc71c3b23c69b29a584a143471abdad0",
+      "ruta_git": "escena/sonidos/glitch/glitch_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/impacto/kick_01.wav": {
+      "sha256": "a0ba7dd46f38311687c3a73d56303b2ab03afcdde68cb6615106440993fb3472",
+      "ruta_git": "escena/sonidos/impacto/kick_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/impacto/riser_01.wav": {
+      "sha256": "51d6acdc62de0b8155434f9aad858f206146eaea945ecbdbfce402e5dd0786ca",
+      "ruta_git": "escena/sonidos/impacto/riser_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/clap_01.wav": {
+      "sha256": "d5d3e935e71001b256f18fdb0b292887f971b2294714736de79058f5c8e00c8b",
+      "ruta_git": "escena/sonidos/musica/clap_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/clap_02.wav": {
+      "sha256": "1aac40852a704a843d4bf3a031b8706a15053ca9a5af47b928ffb71b4a5a65e6",
+      "ruta_git": "escena/sonidos/musica/clap_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/clap_03.wav": {
+      "sha256": "45b0969f8d278d33d467a6dcc1454a7f2bc5763983e6b2c5e90d36713c36a63f",
+      "ruta_git": "escena/sonidos/musica/clap_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/hat_abierto_01.wav": {
+      "sha256": "0118f3de5a312f5b015a31a8d1f71a5298dc0ebad4275710d41bdb4e4926adca",
+      "ruta_git": "escena/sonidos/musica/hat_abierto_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/hat_cerrado_01.wav": {
+      "sha256": "57d69c06f0c751964e198eb02110e88b62864bb37874ddc81b68df68c53583e2",
+      "ruta_git": "escena/sonidos/musica/hat_cerrado_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/hat_cerrado_02.wav": {
+      "sha256": "0c62869a3f2ebe01a4481a4ea9794a0e6b9de20ea7fa2842555b92c194658523",
+      "ruta_git": "escena/sonidos/musica/hat_cerrado_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/kick_01.wav": {
+      "sha256": "a0ba7dd46f38311687c3a73d56303b2ab03afcdde68cb6615106440993fb3472",
+      "ruta_git": "escena/sonidos/musica/kick_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/kick_02.wav": {
+      "sha256": "da5128509f25c77a69cb45b41d0ceba9cbcc85be1f3a7ed259cfbfd4b7897c53",
+      "ruta_git": "escena/sonidos/musica/kick_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/perc_01.wav": {
+      "sha256": "c8651c6553e01284660329a1321b92cc045fdf320b71dc814d81aaa4d79ae4a8",
+      "ruta_git": "escena/sonidos/musica/perc_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/shaker_01.wav": {
+      "sha256": "61932e3b435de2e8c16a4b9de20250a4fe4fc674125df5e904520b1f676b3cdf",
+      "ruta_git": "escena/sonidos/musica/shaker_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/shaker_02.wav": {
+      "sha256": "e7cb74256f52bbedb94f3b94c6a102b7c7d7622e16b11cb18d4d3783d75795a2",
+      "ruta_git": "escena/sonidos/musica/shaker_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/aletas.wav": {
+      "sha256": "23f5a02813d69f3cbba264afd531193723de86cc9618b72c2e7437cf35c8e39d",
+      "ruta_git": "escena/sonidos/sintet/aletas.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/baja.wav": {
+      "sha256": "b68aeed0e722f8e311908180c758efb24bd3f389ff036899b35655709132c64e",
+      "ruta_git": "escena/sonidos/sintet/baja.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/balanza.wav": {
+      "sha256": "25f167736fcf8b319dc1ea5087121bacccad9488495086aaaff6537489fb902c",
+      "ruta_git": "escena/sonidos/sintet/balanza.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/billetes.wav": {
+      "sha256": "637c26a76d3c42e061454897c86a1e3a1638aa589f52cf0d6e66a08306895ce2",
+      "ruta_git": "escena/sonidos/sintet/billetes.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/chinche.wav": {
+      "sha256": "82c3f10a98e55e2f26ad490acfe185b736e8470830bfc56bcf11c919fa5c3d6d",
+      "ruta_git": "escena/sonidos/sintet/chinche.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/ciudad.wav": {
+      "sha256": "de380828ab104db25e115b6f24cca16c39fc5858f5db8ce4fc502e3838600007",
+      "ruta_git": "escena/sonidos/sintet/ciudad.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/claqueta.wav": {
+      "sha256": "2c02fba8f9d34941fe69d4edecdbc6ff6ea5a705e591f56f56afce85c73ac83d",
+      "ruta_git": "escena/sonidos/sintet/claqueta.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/compu.wav": {
+      "sha256": "29b2c8b82420aed3b30a54c1a2d9f03d9eab85a96a9d2ca192560f0c55acf334",
+      "ruta_git": "escena/sonidos/sintet/compu.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/dados.wav": {
+      "sha256": "9c81759e300189391da25d1835750739a06c28859a145f7b38b9ac2c29ad9272",
+      "ruta_git": "escena/sonidos/sintet/dados.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/descuelga.wav": {
+      "sha256": "467141acf8fb7f12e3afa5ea3e1822bb43bcdcb36897b80df34a46022a12ebee",
+      "ruta_git": "escena/sonidos/sintet/descuelga.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/hoja.wav": {
+      "sha256": "bd9891b03073ec34cc31a39709e9dfb1127c2a3a9d835d834627d3e4ed3bae8e",
+      "ruta_git": "escena/sonidos/sintet/hoja.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/lapiz.wav": {
+      "sha256": "cd376140826301ea8a300a943ba38304dd6fe69cf3415c24741aa8339f34477b",
+      "ruta_git": "escena/sonidos/sintet/lapiz.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/proyector.wav": {
+      "sha256": "064431e0705f6c614209e7b6a790fef8e49cd9ff3b748055fb77337215ff9436",
+      "ruta_git": "escena/sonidos/sintet/proyector.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/sube.wav": {
+      "sha256": "d8647c237ee2b46d4692b49b65358025fe1759dab1827b9daf1566cd6cd77134",
+      "ruta_git": "escena/sonidos/sintet/sube.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/teclas.wav": {
+      "sha256": "9880933509cfc11bfc0640ea9078d9f10a9a07050a226dba0af3354faeee481b",
+      "ruta_git": "escena/sonidos/sintet/teclas.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/tics.wav": {
+      "sha256": "af88fce6c77c2c457e28455c904a4fa56dc33231d4a8d9e8c3434495be6af314",
+      "ruta_git": "escena/sonidos/sintet/tics.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/timbre.wav": {
+      "sha256": "bc1252ce390731c598ddc4d1dd5ecc0ca9dfd6a56dc3480fd355908974b89d18",
+      "ruta_git": "escena/sonidos/sintet/timbre.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/caja_01.wav": {
+      "sha256": "f4e9a009379835a03a8ab6999722c34996612c08830a69086d50c3fc56e643e8",
+      "ruta_git": "escena/sonidos/tematicos/caja_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/caja_02.wav": {
+      "sha256": "3fbfefd024174b0ff61f6f1d475c0166475c0fbd5e6d7916c8a36e8b58a71086",
+      "ruta_git": "escena/sonidos/tematicos/caja_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/caja_03.wav": {
+      "sha256": "19aad084129a5c6e8e7a48f8937fd9c14787439e8ab1aa7dc82259b1aeaf9891",
+      "ruta_git": "escena/sonidos/tematicos/caja_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/moneda_01.wav": {
+      "sha256": "f811225ba6b248bb69bbff0910575cdef851adb51a246b39ca70d65d7e4eeccf",
+      "ruta_git": "escena/sonidos/tematicos/moneda_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/moneda_02.wav": {
+      "sha256": "a32b144cb979ac79809921ff416409d23f43314801613ece76d34aac7359394b",
+      "ruta_git": "escena/sonidos/tematicos/moneda_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/motor_acelera_01.wav": {
+      "sha256": "c07401359904f2319701e4ba20cce8968a047ef732a382300f45a3bebe975e5f",
+      "ruta_git": "escena/sonidos/tematicos/motor_acelera_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/obturador_01.wav": {
+      "sha256": "5bb4721f89f04f3817a6bbeee8c4a3a352c81fccf22bf1e605c9f032b942fc77",
+      "ruta_git": "escena/sonidos/tematicos/obturador_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/sirena_01.wav": {
+      "sha256": "5052bd7afa3e8516ff672f4fdb9d650e9cd3a02fb3f88b0a9bef69d7fc65769a",
+      "ruta_git": "escena/sonidos/tematicos/sirena_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/pasada_larga_02.wav": {
+      "sha256": "e75d7491088ca19eebd6c6c771a3e54408a3a48a1b69d778514e7bfb230a5482",
+      "ruta_git": "escena/sonidos/transicion/pasada_larga_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_01.wav": {
+      "sha256": "f9a01bbcaa7ee70bb6a3ce88bc3dc1a5b40443a4b756392d74e3b7989bf06b65",
+      "ruta_git": "escena/sonidos/transicion/whoosh_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_02.wav": {
+      "sha256": "17512900abafa9f9115a60c59707028496c0bcc313cbe343c13d9f216ad9ed03",
+      "ruta_git": "escena/sonidos/transicion/whoosh_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_03.wav": {
+      "sha256": "227aaf086d8f9e9c2d7d96af191535f581d4bbbbac0c6396a5a8d11684c22059",
+      "ruta_git": "escena/sonidos/transicion/whoosh_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_04.wav": {
+      "sha256": "905639f15a00fb7da921bf81804661d767b763efa2b2a33126dca7c19ceb83fc",
+      "ruta_git": "escena/sonidos/transicion/whoosh_04.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_05.wav": {
+      "sha256": "1f10450fb74ef28c7ad56856e635a5caccb1e0d1bfec2f4ca1c21cc23f00b282",
+      "ruta_git": "escena/sonidos/transicion/whoosh_05.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_06.wav": {
+      "sha256": "fd555539017d8121188edf368c93fe80a67faf6c006bd2b69624b184039509b6",
+      "ruta_git": "escena/sonidos/transicion/whoosh_06.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/clap_03.wav": {
+      "sha256": "45b0969f8d278d33d467a6dcc1454a7f2bc5763983e6b2c5e90d36713c36a63f",
+      "ruta_git": "escena/sonidos/ui/clap_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/ding_01.wav": {
+      "sha256": "c03f3b6082c37e5235066b5682dcf96a2dd9718a992af5ed88ec7ec5937051dd",
+      "ruta_git": "escena/sonidos/ui/ding_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/pop_01.wav": {
+      "sha256": "28651964f04a2be6a49900643e5aa3fd4feb1c2acfc5f82a3efb2b927d9deab1",
+      "ruta_git": "escena/sonidos/ui/pop_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/pop_02.wav": {
+      "sha256": "597330e718a05c9460689c1608cfe04a303077e2530fb145508564909ce36a2e",
+      "ruta_git": "escena/sonidos/ui/pop_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/pop_03.wav": {
+      "sha256": "623c77e325ab7e838d4bba40429361709c0b4943e6209f926985ca7dcdcdd230",
+      "ruta_git": "escena/sonidos/ui/pop_03.wav",
+      "igual_a_git": true
+     },
+     "voz_local.py": {
+      "sha256": "d610f4ef4263c8121250f9663cdbae702067323b3a26616315f8967dc3cd4837",
+      "ruta_git": "escena/voz_local.py",
+      "igual_a_git": true
+     }
+    },
+    "distintos_de_git": []
+   },
+   "salidas_render": {
+    "_tmp/datos.json": "91ec50906cfbe82982d370946585c990afacf75436c0e94edae25e248f015c18",
+    "_tmp/video.mp4": "34098f1a1609568989cb60393451f6987cbe4e2f8fce52b45c7a8f7d89ee1785",
+    "_tmp/mezcla.wav": "99e06f967a690e22505c6b56966169b2d2dab26c1521cef6f2daee4131164ae3"
+   },
+   "video_entregado": {
+    "archivo": "referencias_video/wr1_entregado.mp4",
+    "sha256": "c4f66c9bbaddbf744bbe01d9f50cbc21994c73e97ae2fff6b6a47f346eab8e62",
+    "md5_video": "3e367436fa3966a89e12208737a84d62"
+   }
+  },
+  "wge2": {
+   "lote": "G2026112502en",
+   "canal": "TheViceVerseGG",
+   "titulo_archivo": "21h - GTA 6 Just HUMILIATED Hollywood",
+   "datos_slot": {
+    "datos.json": {
+     "ruta_git": "d24/wge2/datos.json",
+     "blob": "a884d2e3686c0a9de3f9f3032905e07498fa083d",
+     "sha256": "2283007713678f057d297a75858bef7654a560ef25e2cf1bc0729529a9b0c180"
+    },
+    "datos0.json": {
+     "ruta_git": "d24/wge2/datos0.json",
+     "blob": "a884d2e3686c0a9de3f9f3032905e07498fa083d",
+     "sha256": "2283007713678f057d297a75858bef7654a560ef25e2cf1bc0729529a9b0c180"
+    },
+    "nota": "marcadores T de la voz; post.py y planos_shorts.py los leen. Igual a datos0.json"
+   },
+   "entradas_corpus": {
+    "G2026112502en.json": "22e2224180eb4a501d06d2c01c114a36cb83db0ec31081a5bbbf7e103d5ad607",
+    "G2026112502en_src.json": "2330a04797af7870310df1dad945c24d00118d6b0d7c1dd769b87c4186da116c",
+    "b.py": "bfcb7c8db91d03fa131c2cfdfd306ad9045e5a7b468d8a69571b8d9055b5b9cd",
+    "datos_render.json": "b63aacf57f3916bc1a2b8efe5238d9cfaddb87f19f7e46f6ab18a0d964156f73",
+    "ficha.json": "6b3e18e882d481b94845f14843d39efce40d889e8a88e5530a962fea43f3824a",
+    "planos.log": "10a9fd1068461ffff25824249414166284ffbc1b70980f47fceef2b048234917",
+    "vz.wav": "10610ae8d730cfe6ad0b8901f177a568329e78075cc7ff4a58c77de155459e01",
+    "vz_palabras.json": "dc9a183a030d72ce9a58cfbfd0656320f4c646bd5f4ab6dafc90421969187570",
+    "wge2.txt": "b81927628efff724d78c748cf3fef18ff7154c83d2a31a4d5a311bc69ac76ee4"
+   },
+   "entradas_en_git": {
+    "G2026112502en_src.json": {
+     "ruta_git": "d24/wge2/G2026112502en_src.json",
+     "blob": "eae937a744da0c992f03d8fd95413590c6855436",
+     "sha256": "2330a04797af7870310df1dad945c24d00118d6b0d7c1dd769b87c4186da116c"
+    },
+    "G2026112502en.json": {
+     "ruta_git": "d24/wge2/G2026112502en.json",
+     "blob": "70d46b5d13e16aab2aec14a03f8c5e5c9460fdf1",
+     "sha256": "22e2224180eb4a501d06d2c01c114a36cb83db0ec31081a5bbbf7e103d5ad607"
+    },
+    "b.py": {
+     "ruta_git": "d24/wge2/b.py",
+     "blob": "125b36a695e82f1cad68c68522647f8d9900f21c",
+     "sha256": "bfcb7c8db91d03fa131c2cfdfd306ad9045e5a7b468d8a69571b8d9055b5b9cd"
+    },
+    "vz_palabras.json": {
+     "ruta_git": "d24/wge2/vz_palabras.json",
+     "blob": "46e7b7a9fc4ef3e97987c03e334e6678ab8a355b",
+     "sha256": "dc9a183a030d72ce9a58cfbfd0656320f4c646bd5f4ab6dafc90421969187570"
+    },
+    "planos.log": {
+     "ruta_git": "d24/wge2/planos.log",
+     "blob": "2f69084401c39a09fda6b1d972dd8d7d4ab8ed43",
+     "sha256": "10a9fd1068461ffff25824249414166284ffbc1b70980f47fceef2b048234917"
+    },
+    "ficha.json": {
+     "ruta_git": "d24/wge2/ficha.json",
+     "blob": "6ab8210d6e52652f40f4f9112c19c600a6b708f6",
+     "sha256": "6b3e18e882d481b94845f14843d39efce40d889e8a88e5530a962fea43f3824a"
+    }
+   },
+   "comando": {
+    "encolar": "d24/q2.sh wge2 G2026112502en am_michael 1.3 en",
+    "pipeline": "uno2.sh: b.py → hacer.sh (voz, datos_de.sh, resolver.py) → post.py → planos_shorts.py → render_par.sh",
+    "render": "render_par.sh G2026112502en.json vz.wav vz_palabras.json v1.mp4 deep"
+   },
+   "voz": {
+    "voz": "am_michael",
+    "velocidad": 1.3,
+    "idioma": "en",
+    "pausa": 0.12,
+    "joven": false,
+    "modelo": "kokoro-v1.0 (ver modelo_voz)"
+   },
+   "musica": {
+    "estilo": "deep",
+    "azar": "con semilla fija (musica.py: md5 de la semilla; armar_escena.py: el lote; sintet_sfx.py: 7)"
+   },
+   "render": {
+    "t0": 0.0,
+    "fps": 30,
+    "cuadros": 1624,
+    "cuadro": "JPEG calidad 0.92 → ffmpeg libx264 -preset veryfast -crf 20 yuv420p (render.py)",
+    "azar_del_motor": "Math.random sin semilla en el grano del acabado pro (no reproducible bit a bit)"
+   },
+   "motor": {
+    "sha256": "75bb7c4480a0d1bcc59eaeb6ef2e192c39cb5acd042480558d2740cdf7aa5f61",
+    "ruta_git": "escena/escena.html.bak_p27_paso0",
+    "copia_corpus": "corpus/motor_entrega_25nov/escena.html"
+   },
+   "carpeta_render": {
+    "origen": "/tmp/rw.COgH",
+    "archivos": {
+     "Poppins-Bold.ttf": {
+      "sha256": "983676516167748b74de6f4771fb384c664fd913acb8b471122ecacf5da5ea6c",
+      "ruta_git": "escena/Poppins-Bold.ttf",
+      "igual_a_git": true
+     },
+     "Poppins-Regular.ttf": {
+      "sha256": "7e65201e9b79159e2300267cc885e16c8dcef2424cdfa09a29bfb0980a94a7ba",
+      "ruta_git": "escena/Poppins-Regular.ttf",
+      "igual_a_git": true
+     },
+     "ajustar_tiempos.py": {
+      "sha256": "bb85ca6bf3f6931ed92d72829322e8a8459d0213c8fcbae99032ff337a650618",
+      "ruta_git": "escena/ajustar_tiempos.py",
+      "igual_a_git": true
+     },
+     "armar_escena.py": {
+      "sha256": "0ad7c3b0cd4bcd0581a3f074ffda3d4e44e76d71ce5316559aabd7134b7eed98",
+      "ruta_git": "escena/armar_escena.py",
+      "igual_a_git": true
+     },
+     "armar_largo.py": {
+      "sha256": "360f3c8c87972c645bf2ef24751bc0a7abe173d7b98ad26ef3a49ce600b9084c",
+      "ruta_git": "escena/armar_largo.py",
+      "igual_a_git": true
+     },
+     "clip_planos.py": {
+      "sha256": "66787f258bef4d0b2e188efcaadea99fd5a78b9f5135c81a55360ffd806ec07b",
+      "ruta_git": "escena/clip_planos.py",
+      "igual_a_git": true
+     },
+     "entonacion.py": {
+      "sha256": "642d5c028dcc4f8555745456ebb15fbff070c511ac738c57aa5eaccb38c61806",
+      "ruta_git": "escena/entonacion.py",
+      "igual_a_git": true
+     },
+     "escena.html": {
+      "sha256": "75bb7c4480a0d1bcc59eaeb6ef2e192c39cb5acd042480558d2740cdf7aa5f61",
+      "ruta_git": "escena/escena.html.bak_p27_paso0",
+      "igual_a_git": true
+     },
+     "joven.py": {
+      "sha256": "2bd2352222d44131845fbf8976e708e84af318f3835a6efb2cc365feccf25472",
+      "ruta_git": "escena/joven.py",
+      "igual_a_git": true
+     },
+     "muestras.py": {
+      "sha256": "475873623e791caf0cf843ace1d53833a751a92d8a75305cffaa93165981ccdb",
+      "ruta_git": "escena/muestras.py",
+      "igual_a_git": true
+     },
+     "muestras_h.py": {
+      "sha256": "100a3d11183bc766b3c2d9386e7279d192e4180bbdbe9695ac7fb796aff72408",
+      "ruta_git": "escena/muestras_h.py",
+      "igual_a_git": true
+     },
+     "musica.py": {
+      "sha256": "eed07eb6a2b89004b492748ff99a85a18c43de34cb5ce53fb2a166b841da1246",
+      "ruta_git": "escena/musica.py",
+      "igual_a_git": true
+     },
+     "musica_funk.py": {
+      "sha256": "473c2e6c4b964a0f1402bc040513c9bea91ffe613f0d16601a1a5964fc476de3",
+      "ruta_git": "escena/musica_funk.py",
+      "igual_a_git": true
+     },
+     "portada.py": {
+      "sha256": "ba9c9c3e64c82b196ba067942ab8521028bfe7b96b0a79c4d1cec6f4d6e96ba5",
+      "ruta_git": "escena/portada.py",
+      "igual_a_git": true
+     },
+     "probar_sets_h.py": {
+      "sha256": "8572df827d76419475cca30f279f24f3d83779a6bc78f78a906e531da131ffa5",
+      "ruta_git": "escena/probar_sets_h.py",
+      "igual_a_git": true
+     },
+     "render.py": {
+      "sha256": "719e8fbb5df2d0b84d3cf603774c7fadb82d6edb929938448e21f1e5d78b42b5",
+      "ruta_git": "escena/render.py",
+      "igual_a_git": true
+     },
+     "render_h.py": {
+      "sha256": "c03be44d189eacf2ab07b16b6df37d047338b21af7384772d96cbb42acdfbbb5",
+      "ruta_git": "escena/render_h.py",
+      "igual_a_git": true
+     },
+     "sintet_sfx.py": {
+      "sha256": "c567e6ddd15edb8cd288e92c8d96748323c20e6294d125ecd7d093da311b6a4e",
+      "ruta_git": "escena/sintet_sfx.py",
+      "igual_a_git": true
+     },
+     "sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_1.wav": {
+      "sha256": "bb910017fc0f0e643453a70e31c13318dba0cbb6f932058947b366daaf6fd961",
+      "ruta_git": "escena/sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_1.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_2.wav": {
+      "sha256": "7e6562312baf7fdd94682d26c427ea5650d08daa68e2c6a4b72834994b72b061",
+      "ruta_git": "escena/sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_2.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/CarEngineRev_BW.52086.wav": {
+      "sha256": "fa993c943b08a1f26b10fa5b15e40831dc5bbc3db7bb4a695a7bcf7a27ca3c40",
+      "ruta_git": "escena/sonidos/extra/CarEngineRev_BW.52086.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/CbRadioStatic_S08TE.394.wav": {
+      "sha256": "96951e94009a9b9def7632d5538c0d09d6ec9cbe838e703b7dd58023a851b575",
+      "ruta_git": "escena/sonidos/extra/CbRadioStatic_S08TE.394.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ESM_Builder_Game_Item_Bubble_3_Cartoon_Comedy_Arcade_Casual_Old_School_Retro_Collect_Coin.wav": {
+      "sha256": "a912c76ab758669be6225343c7a05994164b08651239624803da34888cb44eed",
+      "ruta_git": "escena/sonidos/extra/ESM_Builder_Game_Item_Bubble_3_Cartoon_Comedy_Arcade_Casual_Old_School_Retro_Collect_Coin.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_02.wav": {
+      "sha256": "445320949de23e0afc2529e7217b9d048a8cdf96bd4581373182d967144c6658",
+      "ruta_git": "escena/sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_03.wav": {
+      "sha256": "8a7c3bdcfa7209df9db7fcb94235cc83c90c090cdc19626cff63f0023483a7dd",
+      "ruta_git": "escena/sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ElectricZapBuzz_S011SF.344.wav": {
+      "sha256": "dc775e9b1fa79e52d38bf8ec0b97f37482fe7a03f66a3fe88fd539cd5466f8e0",
+      "ruta_git": "escena/sonidos/extra/ElectricZapBuzz_S011SF.344.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/FF_WP_foley_typewriter_ding.wav": {
+      "sha256": "57aa0a798c896375783f13e8b62ce7dc2e5aaecec1f66fbaa38ce23cdf96afa2",
+      "ruta_git": "escena/sonidos/extra/FF_WP_foley_typewriter_ding.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Lev_FX_Short_079.wav": {
+      "sha256": "1d5c5ff254cff9945c1854694493a18c7e2044794046a232808bc7b432ff5c97",
+      "ruta_git": "escena/sonidos/extra/Lev_FX_Short_079.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Lev_Glitch_094.wav": {
+      "sha256": "602a598b4b7e9821dcfd9f42037f39ee108735d6c1b00899e89608bf0d9cb2aa",
+      "ruta_git": "escena/sonidos/extra/Lev_Glitch_094.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Lev_Glitch_104.wav": {
+      "sha256": "5f81f75d9fce15b3a7c2b6c883c0610217ff78b75e3374df9b60a57de467dba0",
+      "ruta_git": "escena/sonidos/extra/Lev_Glitch_104.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/MODE_BE2_fx_foley_whoosh_03.wav": {
+      "sha256": "cebfa85f5f07f7944b32bd342482ace85c7761b83e8b5fef82d232f09d33f20b",
+      "ruta_git": "escena/sonidos/extra/MODE_BE2_fx_foley_whoosh_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/MODE_BE2_fx_foley_whoosh_04.wav": {
+      "sha256": "f0bb8d6f7583baa3e81ad0f877bdd95e068004ebe861a36ccbe38b7f863bfff3",
+      "ruta_git": "escena/sonidos/extra/MODE_BE2_fx_foley_whoosh_04.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/OS_ATL_kick_subby.wav": {
+      "sha256": "c420d129c06a878d5c537debb2cb57c37efcbabf1940930b300fb32742b8c24b",
+      "ruta_git": "escena/sonidos/extra/OS_ATL_kick_subby.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/SPLC-6461_FX_Oneshot_Glitch_Experimental_Leave_Menu_Crystalline.wav": {
+      "sha256": "effaef723b838038a04029561547179b525f4cef9f838864446ccea49a896ce5",
+      "ruta_git": "escena/sonidos/extra/SPLC-6461_FX_Oneshot_Glitch_Experimental_Leave_Menu_Crystalline.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/STCR2_SG_FX_Upsweep_Slow.wav": {
+      "sha256": "78a07712640c8c6a0a9020863e444721d670b6997e0c501f1f2c4cbbfc85956b",
+      "ruta_git": "escena/sonidos/extra/STCR2_SG_FX_Upsweep_Slow.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/TimerClock_AP1.1323.wav": {
+      "sha256": "7ba763577e8c762cde822bd2ab4a938b540c2f8ae75b32345c37aa423645a97b",
+      "ruta_git": "escena/sonidos/extra/TimerClock_AP1.1323.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/VOX_FRVP_vocal_fx_bubble.wav": {
+      "sha256": "08b1b4b2ffea78e9044a1d29b84cd97bffb8c78576de59e5b7da8c94bd93758b",
+      "ruta_git": "escena/sonidos/extra/VOX_FRVP_vocal_fx_bubble.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/WhipWhooshHeavy_SFXB.1080.wav": {
+      "sha256": "67bd65acfd91436fa2d8d703178000edc878a6d158f3e9c0e1292af77f62ee76",
+      "ruta_git": "escena/sonidos/extra/WhipWhooshHeavy_SFXB.1080.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Whip_Whoosh_BW.11026.wav": {
+      "sha256": "9a0dfa30ccb1f644e0524e34a1e3d4bc30afe112c652a0dcbf6bb0cc81a2ae7b",
+      "ruta_git": "escena/sonidos/extra/Whip_Whoosh_BW.11026.wav",
+      "igual_a_git": true
+     },
+     "sonidos/glitch/electrico_02.wav": {
+      "sha256": "3c479aec7a3ceaa1fd95a7c06a99e10548282b7907030d2b596a8fd73e0e372f",
+      "ruta_git": "escena/sonidos/glitch/electrico_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/glitch/glitch_01.wav": {
+      "sha256": "9169401d81de5cac0180b3297d750528cc71c3b23c69b29a584a143471abdad0",
+      "ruta_git": "escena/sonidos/glitch/glitch_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/impacto/kick_01.wav": {
+      "sha256": "a0ba7dd46f38311687c3a73d56303b2ab03afcdde68cb6615106440993fb3472",
+      "ruta_git": "escena/sonidos/impacto/kick_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/impacto/riser_01.wav": {
+      "sha256": "51d6acdc62de0b8155434f9aad858f206146eaea945ecbdbfce402e5dd0786ca",
+      "ruta_git": "escena/sonidos/impacto/riser_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/clap_01.wav": {
+      "sha256": "d5d3e935e71001b256f18fdb0b292887f971b2294714736de79058f5c8e00c8b",
+      "ruta_git": "escena/sonidos/musica/clap_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/clap_02.wav": {
+      "sha256": "1aac40852a704a843d4bf3a031b8706a15053ca9a5af47b928ffb71b4a5a65e6",
+      "ruta_git": "escena/sonidos/musica/clap_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/clap_03.wav": {
+      "sha256": "45b0969f8d278d33d467a6dcc1454a7f2bc5763983e6b2c5e90d36713c36a63f",
+      "ruta_git": "escena/sonidos/musica/clap_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/hat_abierto_01.wav": {
+      "sha256": "0118f3de5a312f5b015a31a8d1f71a5298dc0ebad4275710d41bdb4e4926adca",
+      "ruta_git": "escena/sonidos/musica/hat_abierto_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/hat_cerrado_01.wav": {
+      "sha256": "57d69c06f0c751964e198eb02110e88b62864bb37874ddc81b68df68c53583e2",
+      "ruta_git": "escena/sonidos/musica/hat_cerrado_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/hat_cerrado_02.wav": {
+      "sha256": "0c62869a3f2ebe01a4481a4ea9794a0e6b9de20ea7fa2842555b92c194658523",
+      "ruta_git": "escena/sonidos/musica/hat_cerrado_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/kick_01.wav": {
+      "sha256": "a0ba7dd46f38311687c3a73d56303b2ab03afcdde68cb6615106440993fb3472",
+      "ruta_git": "escena/sonidos/musica/kick_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/kick_02.wav": {
+      "sha256": "da5128509f25c77a69cb45b41d0ceba9cbcc85be1f3a7ed259cfbfd4b7897c53",
+      "ruta_git": "escena/sonidos/musica/kick_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/perc_01.wav": {
+      "sha256": "c8651c6553e01284660329a1321b92cc045fdf320b71dc814d81aaa4d79ae4a8",
+      "ruta_git": "escena/sonidos/musica/perc_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/shaker_01.wav": {
+      "sha256": "61932e3b435de2e8c16a4b9de20250a4fe4fc674125df5e904520b1f676b3cdf",
+      "ruta_git": "escena/sonidos/musica/shaker_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/shaker_02.wav": {
+      "sha256": "e7cb74256f52bbedb94f3b94c6a102b7c7d7622e16b11cb18d4d3783d75795a2",
+      "ruta_git": "escena/sonidos/musica/shaker_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/aletas.wav": {
+      "sha256": "23f5a02813d69f3cbba264afd531193723de86cc9618b72c2e7437cf35c8e39d",
+      "ruta_git": "escena/sonidos/sintet/aletas.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/baja.wav": {
+      "sha256": "b68aeed0e722f8e311908180c758efb24bd3f389ff036899b35655709132c64e",
+      "ruta_git": "escena/sonidos/sintet/baja.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/balanza.wav": {
+      "sha256": "25f167736fcf8b319dc1ea5087121bacccad9488495086aaaff6537489fb902c",
+      "ruta_git": "escena/sonidos/sintet/balanza.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/billetes.wav": {
+      "sha256": "637c26a76d3c42e061454897c86a1e3a1638aa589f52cf0d6e66a08306895ce2",
+      "ruta_git": "escena/sonidos/sintet/billetes.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/chinche.wav": {
+      "sha256": "82c3f10a98e55e2f26ad490acfe185b736e8470830bfc56bcf11c919fa5c3d6d",
+      "ruta_git": "escena/sonidos/sintet/chinche.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/ciudad.wav": {
+      "sha256": "de380828ab104db25e115b6f24cca16c39fc5858f5db8ce4fc502e3838600007",
+      "ruta_git": "escena/sonidos/sintet/ciudad.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/claqueta.wav": {
+      "sha256": "2c02fba8f9d34941fe69d4edecdbc6ff6ea5a705e591f56f56afce85c73ac83d",
+      "ruta_git": "escena/sonidos/sintet/claqueta.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/compu.wav": {
+      "sha256": "29b2c8b82420aed3b30a54c1a2d9f03d9eab85a96a9d2ca192560f0c55acf334",
+      "ruta_git": "escena/sonidos/sintet/compu.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/dados.wav": {
+      "sha256": "9c81759e300189391da25d1835750739a06c28859a145f7b38b9ac2c29ad9272",
+      "ruta_git": "escena/sonidos/sintet/dados.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/descuelga.wav": {
+      "sha256": "467141acf8fb7f12e3afa5ea3e1822bb43bcdcb36897b80df34a46022a12ebee",
+      "ruta_git": "escena/sonidos/sintet/descuelga.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/hoja.wav": {
+      "sha256": "bd9891b03073ec34cc31a39709e9dfb1127c2a3a9d835d834627d3e4ed3bae8e",
+      "ruta_git": "escena/sonidos/sintet/hoja.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/lapiz.wav": {
+      "sha256": "cd376140826301ea8a300a943ba38304dd6fe69cf3415c24741aa8339f34477b",
+      "ruta_git": "escena/sonidos/sintet/lapiz.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/proyector.wav": {
+      "sha256": "064431e0705f6c614209e7b6a790fef8e49cd9ff3b748055fb77337215ff9436",
+      "ruta_git": "escena/sonidos/sintet/proyector.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/sube.wav": {
+      "sha256": "d8647c237ee2b46d4692b49b65358025fe1759dab1827b9daf1566cd6cd77134",
+      "ruta_git": "escena/sonidos/sintet/sube.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/teclas.wav": {
+      "sha256": "9880933509cfc11bfc0640ea9078d9f10a9a07050a226dba0af3354faeee481b",
+      "ruta_git": "escena/sonidos/sintet/teclas.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/tics.wav": {
+      "sha256": "af88fce6c77c2c457e28455c904a4fa56dc33231d4a8d9e8c3434495be6af314",
+      "ruta_git": "escena/sonidos/sintet/tics.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/timbre.wav": {
+      "sha256": "bc1252ce390731c598ddc4d1dd5ecc0ca9dfd6a56dc3480fd355908974b89d18",
+      "ruta_git": "escena/sonidos/sintet/timbre.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/caja_01.wav": {
+      "sha256": "f4e9a009379835a03a8ab6999722c34996612c08830a69086d50c3fc56e643e8",
+      "ruta_git": "escena/sonidos/tematicos/caja_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/caja_02.wav": {
+      "sha256": "3fbfefd024174b0ff61f6f1d475c0166475c0fbd5e6d7916c8a36e8b58a71086",
+      "ruta_git": "escena/sonidos/tematicos/caja_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/caja_03.wav": {
+      "sha256": "19aad084129a5c6e8e7a48f8937fd9c14787439e8ab1aa7dc82259b1aeaf9891",
+      "ruta_git": "escena/sonidos/tematicos/caja_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/moneda_01.wav": {
+      "sha256": "f811225ba6b248bb69bbff0910575cdef851adb51a246b39ca70d65d7e4eeccf",
+      "ruta_git": "escena/sonidos/tematicos/moneda_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/moneda_02.wav": {
+      "sha256": "a32b144cb979ac79809921ff416409d23f43314801613ece76d34aac7359394b",
+      "ruta_git": "escena/sonidos/tematicos/moneda_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/motor_acelera_01.wav": {
+      "sha256": "c07401359904f2319701e4ba20cce8968a047ef732a382300f45a3bebe975e5f",
+      "ruta_git": "escena/sonidos/tematicos/motor_acelera_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/obturador_01.wav": {
+      "sha256": "5bb4721f89f04f3817a6bbeee8c4a3a352c81fccf22bf1e605c9f032b942fc77",
+      "ruta_git": "escena/sonidos/tematicos/obturador_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/sirena_01.wav": {
+      "sha256": "5052bd7afa3e8516ff672f4fdb9d650e9cd3a02fb3f88b0a9bef69d7fc65769a",
+      "ruta_git": "escena/sonidos/tematicos/sirena_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/pasada_larga_02.wav": {
+      "sha256": "e75d7491088ca19eebd6c6c771a3e54408a3a48a1b69d778514e7bfb230a5482",
+      "ruta_git": "escena/sonidos/transicion/pasada_larga_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_01.wav": {
+      "sha256": "f9a01bbcaa7ee70bb6a3ce88bc3dc1a5b40443a4b756392d74e3b7989bf06b65",
+      "ruta_git": "escena/sonidos/transicion/whoosh_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_02.wav": {
+      "sha256": "17512900abafa9f9115a60c59707028496c0bcc313cbe343c13d9f216ad9ed03",
+      "ruta_git": "escena/sonidos/transicion/whoosh_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_03.wav": {
+      "sha256": "227aaf086d8f9e9c2d7d96af191535f581d4bbbbac0c6396a5a8d11684c22059",
+      "ruta_git": "escena/sonidos/transicion/whoosh_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_04.wav": {
+      "sha256": "905639f15a00fb7da921bf81804661d767b763efa2b2a33126dca7c19ceb83fc",
+      "ruta_git": "escena/sonidos/transicion/whoosh_04.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_05.wav": {
+      "sha256": "1f10450fb74ef28c7ad56856e635a5caccb1e0d1bfec2f4ca1c21cc23f00b282",
+      "ruta_git": "escena/sonidos/transicion/whoosh_05.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_06.wav": {
+      "sha256": "fd555539017d8121188edf368c93fe80a67faf6c006bd2b69624b184039509b6",
+      "ruta_git": "escena/sonidos/transicion/whoosh_06.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/clap_03.wav": {
+      "sha256": "45b0969f8d278d33d467a6dcc1454a7f2bc5763983e6b2c5e90d36713c36a63f",
+      "ruta_git": "escena/sonidos/ui/clap_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/ding_01.wav": {
+      "sha256": "c03f3b6082c37e5235066b5682dcf96a2dd9718a992af5ed88ec7ec5937051dd",
+      "ruta_git": "escena/sonidos/ui/ding_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/pop_01.wav": {
+      "sha256": "28651964f04a2be6a49900643e5aa3fd4feb1c2acfc5f82a3efb2b927d9deab1",
+      "ruta_git": "escena/sonidos/ui/pop_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/pop_02.wav": {
+      "sha256": "597330e718a05c9460689c1608cfe04a303077e2530fb145508564909ce36a2e",
+      "ruta_git": "escena/sonidos/ui/pop_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/pop_03.wav": {
+      "sha256": "623c77e325ab7e838d4bba40429361709c0b4943e6209f926985ca7dcdcdd230",
+      "ruta_git": "escena/sonidos/ui/pop_03.wav",
+      "igual_a_git": true
+     },
+     "voz_local.py": {
+      "sha256": "d610f4ef4263c8121250f9663cdbae702067323b3a26616315f8967dc3cd4837",
+      "ruta_git": "escena/voz_local.py",
+      "igual_a_git": true
+     }
+    },
+    "distintos_de_git": []
+   },
+   "salidas_render": {
+    "_tmp/datos.json": "b63aacf57f3916bc1a2b8efe5238d9cfaddb87f19f7e46f6ab18a0d964156f73",
+    "_tmp/video.mp4": "a3a6a414fde1b102ea3b8e675a8bc29bc696c209b0e9c9ba0cadfe53d4f59185",
+    "_tmp/mezcla.wav": "159fa261818fd122d36486b528383f2d44707fe08d225072066b381de9728c38"
+   },
+   "video_entregado": {
+    "archivo": "referencias_video/wge2_entregado.mp4",
+    "sha256": "d96e7bfa8857ffbeec6c05e6bd9a8a2de57d9747e4bc97d9ebf3b33a8544e845",
+    "md5_video": "54fca121fa504a7da8b1f2971b9c0277"
+   }
+  },
+  "wgs1": {
+   "lote": "G2026112501",
+   "canal": "ViceVersoGG",
+   "titulo_archivo": "22h - GTA 5 HUMILLÓ a GTA 6",
+   "datos_slot": {
+    "datos.json": {
+     "ruta_git": "d24/wgs1/datos.json",
+     "blob": "8661e19d357764fbc761a695b206655943348ba1",
+     "sha256": "f142c4ed2a2511ba1a61a7ec6d8e15f00e863b02cf28162b805dc735bacab44c"
+    },
+    "datos0.json": {
+     "ruta_git": "d24/wgs1/datos0.json",
+     "blob": "8661e19d357764fbc761a695b206655943348ba1",
+     "sha256": "f142c4ed2a2511ba1a61a7ec6d8e15f00e863b02cf28162b805dc735bacab44c"
+    },
+    "nota": "marcadores T de la voz; post.py y planos_shorts.py los leen. Igual a datos0.json"
+   },
+   "entradas_corpus": {
+    "G2026112501.json": "8cc01f34e59dd49c6bccebb7f801255ba77107a8018f3221e16d47746af6596d",
+    "G2026112501_src.json": "ab841a14fc5f890f3931aa533b0761543bfc4ac1bfe3f059500ca475e01c89bd",
+    "b.py": "989fcbc86316e985797010b528acede65a4ac63b1fb44cbc00d8a51b32c4bbb4",
+    "datos_render.json": "5cf00da4bc117099174bd855a5b65b2f8583724d5aaf5dc9d2e7e5638608054a",
+    "ficha.json": "128185cbf15f3894dd988a00906c74e26e6ca98bcf0878eb3ace8586721c7370",
+    "planos.log": "676ad4b800c04dab9c2e4b85aec306898644a59ffa5749b13b98c94ec0247f28",
+    "vz.wav": "9448ae28433e6c58dad8916af21a8437ceac09b17b3bee53ee53e51965550f70",
+    "vz_palabras.json": "a383178107c0b22a982308755801006f770ff2912bbb476d502b4c5dc9434866",
+    "wgs1.txt": "36088d85c08e178577d8aa9ac10d587300cfcd089be6d4c77c552a0521bcec95"
+   },
+   "entradas_en_git": {
+    "G2026112501_src.json": {
+     "ruta_git": "d24/wgs1/G2026112501_src.json",
+     "blob": "b88fc09eedb2ee3689e62878843c06a301837e52",
+     "sha256": "ab841a14fc5f890f3931aa533b0761543bfc4ac1bfe3f059500ca475e01c89bd"
+    },
+    "G2026112501.json": {
+     "ruta_git": "d24/wgs1/G2026112501.json",
+     "blob": "8eb48f31cff8dc33621d2b69c9329c3fd03d2586",
+     "sha256": "8cc01f34e59dd49c6bccebb7f801255ba77107a8018f3221e16d47746af6596d"
+    },
+    "b.py": {
+     "ruta_git": "d24/wgs1/b.py",
+     "blob": "15be76183f1be410936dba043dcce8ec85ee75da",
+     "sha256": "989fcbc86316e985797010b528acede65a4ac63b1fb44cbc00d8a51b32c4bbb4"
+    },
+    "vz_palabras.json": {
+     "ruta_git": "d24/wgs1/vz_palabras.json",
+     "blob": "0762cc94806543716935894746b401334d095690",
+     "sha256": "a383178107c0b22a982308755801006f770ff2912bbb476d502b4c5dc9434866"
+    },
+    "planos.log": {
+     "ruta_git": "d24/wgs1/planos.log",
+     "blob": "6c2777f6194a12f5928e1572f9bac472a6eeeb7c",
+     "sha256": "676ad4b800c04dab9c2e4b85aec306898644a59ffa5749b13b98c94ec0247f28"
+    },
+    "ficha.json": {
+     "ruta_git": "d24/wgs1/ficha.json",
+     "blob": "3c1d2574d4073706d9ddc3e9989a90a67806c423",
+     "sha256": "128185cbf15f3894dd988a00906c74e26e6ca98bcf0878eb3ace8586721c7370"
+    }
+   },
+   "comando": {
+    "encolar": "d24/q2.sh wgs1 G2026112501 em_santa 1.3 es",
+    "pipeline": "uno2.sh: b.py → hacer.sh (voz, datos_de.sh, resolver.py) → post.py → planos_shorts.py → render_par.sh",
+    "render": "render_par.sh G2026112501.json vz.wav vz_palabras.json v1.mp4 deep"
+   },
+   "voz": {
+    "voz": "em_santa",
+    "velocidad": 1.3,
+    "idioma": "es",
+    "pausa": 0.12,
+    "joven": false,
+    "modelo": "kokoro-v1.0 (ver modelo_voz)"
+   },
+   "musica": {
+    "estilo": "deep",
+    "azar": "con semilla fija (musica.py: md5 de la semilla; armar_escena.py: el lote; sintet_sfx.py: 7)"
+   },
+   "render": {
+    "t0": 0.0,
+    "fps": 30,
+    "cuadros": 1372,
+    "cuadro": "JPEG calidad 0.92 → ffmpeg libx264 -preset veryfast -crf 20 yuv420p (render.py)",
+    "azar_del_motor": "Math.random sin semilla en el grano del acabado pro (no reproducible bit a bit)"
+   },
+   "motor": {
+    "sha256": "75bb7c4480a0d1bcc59eaeb6ef2e192c39cb5acd042480558d2740cdf7aa5f61",
+    "ruta_git": "escena/escena.html.bak_p27_paso0",
+    "copia_corpus": "corpus/motor_entrega_25nov/escena.html"
+   },
+   "carpeta_render": {
+    "origen": "/tmp/rw.7vRY",
+    "archivos": {
+     "Poppins-Bold.ttf": {
+      "sha256": "983676516167748b74de6f4771fb384c664fd913acb8b471122ecacf5da5ea6c",
+      "ruta_git": "escena/Poppins-Bold.ttf",
+      "igual_a_git": true
+     },
+     "Poppins-Regular.ttf": {
+      "sha256": "7e65201e9b79159e2300267cc885e16c8dcef2424cdfa09a29bfb0980a94a7ba",
+      "ruta_git": "escena/Poppins-Regular.ttf",
+      "igual_a_git": true
+     },
+     "ajustar_tiempos.py": {
+      "sha256": "bb85ca6bf3f6931ed92d72829322e8a8459d0213c8fcbae99032ff337a650618",
+      "ruta_git": "escena/ajustar_tiempos.py",
+      "igual_a_git": true
+     },
+     "armar_escena.py": {
+      "sha256": "0ad7c3b0cd4bcd0581a3f074ffda3d4e44e76d71ce5316559aabd7134b7eed98",
+      "ruta_git": "escena/armar_escena.py",
+      "igual_a_git": true
+     },
+     "armar_largo.py": {
+      "sha256": "360f3c8c87972c645bf2ef24751bc0a7abe173d7b98ad26ef3a49ce600b9084c",
+      "ruta_git": "escena/armar_largo.py",
+      "igual_a_git": true
+     },
+     "clip_planos.py": {
+      "sha256": "66787f258bef4d0b2e188efcaadea99fd5a78b9f5135c81a55360ffd806ec07b",
+      "ruta_git": "escena/clip_planos.py",
+      "igual_a_git": true
+     },
+     "entonacion.py": {
+      "sha256": "642d5c028dcc4f8555745456ebb15fbff070c511ac738c57aa5eaccb38c61806",
+      "ruta_git": "escena/entonacion.py",
+      "igual_a_git": true
+     },
+     "escena.html": {
+      "sha256": "75bb7c4480a0d1bcc59eaeb6ef2e192c39cb5acd042480558d2740cdf7aa5f61",
+      "ruta_git": "escena/escena.html.bak_p27_paso0",
+      "igual_a_git": true
+     },
+     "joven.py": {
+      "sha256": "2bd2352222d44131845fbf8976e708e84af318f3835a6efb2cc365feccf25472",
+      "ruta_git": "escena/joven.py",
+      "igual_a_git": true
+     },
+     "muestras.py": {
+      "sha256": "475873623e791caf0cf843ace1d53833a751a92d8a75305cffaa93165981ccdb",
+      "ruta_git": "escena/muestras.py",
+      "igual_a_git": true
+     },
+     "muestras_h.py": {
+      "sha256": "100a3d11183bc766b3c2d9386e7279d192e4180bbdbe9695ac7fb796aff72408",
+      "ruta_git": "escena/muestras_h.py",
+      "igual_a_git": true
+     },
+     "musica.py": {
+      "sha256": "eed07eb6a2b89004b492748ff99a85a18c43de34cb5ce53fb2a166b841da1246",
+      "ruta_git": "escena/musica.py",
+      "igual_a_git": true
+     },
+     "musica_funk.py": {
+      "sha256": "473c2e6c4b964a0f1402bc040513c9bea91ffe613f0d16601a1a5964fc476de3",
+      "ruta_git": "escena/musica_funk.py",
+      "igual_a_git": true
+     },
+     "portada.py": {
+      "sha256": "ba9c9c3e64c82b196ba067942ab8521028bfe7b96b0a79c4d1cec6f4d6e96ba5",
+      "ruta_git": "escena/portada.py",
+      "igual_a_git": true
+     },
+     "probar_sets_h.py": {
+      "sha256": "8572df827d76419475cca30f279f24f3d83779a6bc78f78a906e531da131ffa5",
+      "ruta_git": "escena/probar_sets_h.py",
+      "igual_a_git": true
+     },
+     "render.py": {
+      "sha256": "719e8fbb5df2d0b84d3cf603774c7fadb82d6edb929938448e21f1e5d78b42b5",
+      "ruta_git": "escena/render.py",
+      "igual_a_git": true
+     },
+     "render_h.py": {
+      "sha256": "c03be44d189eacf2ab07b16b6df37d047338b21af7384772d96cbb42acdfbbb5",
+      "ruta_git": "escena/render_h.py",
+      "igual_a_git": true
+     },
+     "sintet_sfx.py": {
+      "sha256": "c567e6ddd15edb8cd288e92c8d96748323c20e6294d125ecd7d093da311b6a4e",
+      "ruta_git": "escena/sintet_sfx.py",
+      "igual_a_git": true
+     },
+     "sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_1.wav": {
+      "sha256": "bb910017fc0f0e643453a70e31c13318dba0cbb6f932058947b366daaf6fd961",
+      "ruta_git": "escena/sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_1.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_2.wav": {
+      "sha256": "7e6562312baf7fdd94682d26c427ea5650d08daa68e2c6a4b72834994b72b061",
+      "ruta_git": "escena/sonidos/extra/BRS_Comedy_Blip_Bubble_Burst_Small_2.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/CarEngineRev_BW.52086.wav": {
+      "sha256": "fa993c943b08a1f26b10fa5b15e40831dc5bbc3db7bb4a695a7bcf7a27ca3c40",
+      "ruta_git": "escena/sonidos/extra/CarEngineRev_BW.52086.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/CbRadioStatic_S08TE.394.wav": {
+      "sha256": "96951e94009a9b9def7632d5538c0d09d6ec9cbe838e703b7dd58023a851b575",
+      "ruta_git": "escena/sonidos/extra/CbRadioStatic_S08TE.394.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ESM_Builder_Game_Item_Bubble_3_Cartoon_Comedy_Arcade_Casual_Old_School_Retro_Collect_Coin.wav": {
+      "sha256": "a912c76ab758669be6225343c7a05994164b08651239624803da34888cb44eed",
+      "ruta_git": "escena/sonidos/extra/ESM_Builder_Game_Item_Bubble_3_Cartoon_Comedy_Arcade_Casual_Old_School_Retro_Collect_Coin.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_02.wav": {
+      "sha256": "445320949de23e0afc2529e7217b9d048a8cdf96bd4581373182d967144c6658",
+      "ruta_git": "escena/sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_03.wav": {
+      "sha256": "8a7c3bdcfa7209df9db7fcb94235cc83c90c090cdc19626cff63f0023483a7dd",
+      "ruta_git": "escena/sonidos/extra/ESM_SPG_fx_action_transaction_cash_register_ding_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/ElectricZapBuzz_S011SF.344.wav": {
+      "sha256": "dc775e9b1fa79e52d38bf8ec0b97f37482fe7a03f66a3fe88fd539cd5466f8e0",
+      "ruta_git": "escena/sonidos/extra/ElectricZapBuzz_S011SF.344.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/FF_WP_foley_typewriter_ding.wav": {
+      "sha256": "57aa0a798c896375783f13e8b62ce7dc2e5aaecec1f66fbaa38ce23cdf96afa2",
+      "ruta_git": "escena/sonidos/extra/FF_WP_foley_typewriter_ding.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Lev_FX_Short_079.wav": {
+      "sha256": "1d5c5ff254cff9945c1854694493a18c7e2044794046a232808bc7b432ff5c97",
+      "ruta_git": "escena/sonidos/extra/Lev_FX_Short_079.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Lev_Glitch_094.wav": {
+      "sha256": "602a598b4b7e9821dcfd9f42037f39ee108735d6c1b00899e89608bf0d9cb2aa",
+      "ruta_git": "escena/sonidos/extra/Lev_Glitch_094.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Lev_Glitch_104.wav": {
+      "sha256": "5f81f75d9fce15b3a7c2b6c883c0610217ff78b75e3374df9b60a57de467dba0",
+      "ruta_git": "escena/sonidos/extra/Lev_Glitch_104.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/MODE_BE2_fx_foley_whoosh_03.wav": {
+      "sha256": "cebfa85f5f07f7944b32bd342482ace85c7761b83e8b5fef82d232f09d33f20b",
+      "ruta_git": "escena/sonidos/extra/MODE_BE2_fx_foley_whoosh_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/MODE_BE2_fx_foley_whoosh_04.wav": {
+      "sha256": "f0bb8d6f7583baa3e81ad0f877bdd95e068004ebe861a36ccbe38b7f863bfff3",
+      "ruta_git": "escena/sonidos/extra/MODE_BE2_fx_foley_whoosh_04.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/OS_ATL_kick_subby.wav": {
+      "sha256": "c420d129c06a878d5c537debb2cb57c37efcbabf1940930b300fb32742b8c24b",
+      "ruta_git": "escena/sonidos/extra/OS_ATL_kick_subby.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/SPLC-6461_FX_Oneshot_Glitch_Experimental_Leave_Menu_Crystalline.wav": {
+      "sha256": "effaef723b838038a04029561547179b525f4cef9f838864446ccea49a896ce5",
+      "ruta_git": "escena/sonidos/extra/SPLC-6461_FX_Oneshot_Glitch_Experimental_Leave_Menu_Crystalline.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/STCR2_SG_FX_Upsweep_Slow.wav": {
+      "sha256": "78a07712640c8c6a0a9020863e444721d670b6997e0c501f1f2c4cbbfc85956b",
+      "ruta_git": "escena/sonidos/extra/STCR2_SG_FX_Upsweep_Slow.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/TimerClock_AP1.1323.wav": {
+      "sha256": "7ba763577e8c762cde822bd2ab4a938b540c2f8ae75b32345c37aa423645a97b",
+      "ruta_git": "escena/sonidos/extra/TimerClock_AP1.1323.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/VOX_FRVP_vocal_fx_bubble.wav": {
+      "sha256": "08b1b4b2ffea78e9044a1d29b84cd97bffb8c78576de59e5b7da8c94bd93758b",
+      "ruta_git": "escena/sonidos/extra/VOX_FRVP_vocal_fx_bubble.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/WhipWhooshHeavy_SFXB.1080.wav": {
+      "sha256": "67bd65acfd91436fa2d8d703178000edc878a6d158f3e9c0e1292af77f62ee76",
+      "ruta_git": "escena/sonidos/extra/WhipWhooshHeavy_SFXB.1080.wav",
+      "igual_a_git": true
+     },
+     "sonidos/extra/Whip_Whoosh_BW.11026.wav": {
+      "sha256": "9a0dfa30ccb1f644e0524e34a1e3d4bc30afe112c652a0dcbf6bb0cc81a2ae7b",
+      "ruta_git": "escena/sonidos/extra/Whip_Whoosh_BW.11026.wav",
+      "igual_a_git": true
+     },
+     "sonidos/glitch/electrico_02.wav": {
+      "sha256": "3c479aec7a3ceaa1fd95a7c06a99e10548282b7907030d2b596a8fd73e0e372f",
+      "ruta_git": "escena/sonidos/glitch/electrico_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/glitch/glitch_01.wav": {
+      "sha256": "9169401d81de5cac0180b3297d750528cc71c3b23c69b29a584a143471abdad0",
+      "ruta_git": "escena/sonidos/glitch/glitch_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/impacto/kick_01.wav": {
+      "sha256": "a0ba7dd46f38311687c3a73d56303b2ab03afcdde68cb6615106440993fb3472",
+      "ruta_git": "escena/sonidos/impacto/kick_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/impacto/riser_01.wav": {
+      "sha256": "51d6acdc62de0b8155434f9aad858f206146eaea945ecbdbfce402e5dd0786ca",
+      "ruta_git": "escena/sonidos/impacto/riser_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/clap_01.wav": {
+      "sha256": "d5d3e935e71001b256f18fdb0b292887f971b2294714736de79058f5c8e00c8b",
+      "ruta_git": "escena/sonidos/musica/clap_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/clap_02.wav": {
+      "sha256": "1aac40852a704a843d4bf3a031b8706a15053ca9a5af47b928ffb71b4a5a65e6",
+      "ruta_git": "escena/sonidos/musica/clap_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/clap_03.wav": {
+      "sha256": "45b0969f8d278d33d467a6dcc1454a7f2bc5763983e6b2c5e90d36713c36a63f",
+      "ruta_git": "escena/sonidos/musica/clap_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/hat_abierto_01.wav": {
+      "sha256": "0118f3de5a312f5b015a31a8d1f71a5298dc0ebad4275710d41bdb4e4926adca",
+      "ruta_git": "escena/sonidos/musica/hat_abierto_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/hat_cerrado_01.wav": {
+      "sha256": "57d69c06f0c751964e198eb02110e88b62864bb37874ddc81b68df68c53583e2",
+      "ruta_git": "escena/sonidos/musica/hat_cerrado_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/hat_cerrado_02.wav": {
+      "sha256": "0c62869a3f2ebe01a4481a4ea9794a0e6b9de20ea7fa2842555b92c194658523",
+      "ruta_git": "escena/sonidos/musica/hat_cerrado_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/kick_01.wav": {
+      "sha256": "a0ba7dd46f38311687c3a73d56303b2ab03afcdde68cb6615106440993fb3472",
+      "ruta_git": "escena/sonidos/musica/kick_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/kick_02.wav": {
+      "sha256": "da5128509f25c77a69cb45b41d0ceba9cbcc85be1f3a7ed259cfbfd4b7897c53",
+      "ruta_git": "escena/sonidos/musica/kick_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/perc_01.wav": {
+      "sha256": "c8651c6553e01284660329a1321b92cc045fdf320b71dc814d81aaa4d79ae4a8",
+      "ruta_git": "escena/sonidos/musica/perc_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/shaker_01.wav": {
+      "sha256": "61932e3b435de2e8c16a4b9de20250a4fe4fc674125df5e904520b1f676b3cdf",
+      "ruta_git": "escena/sonidos/musica/shaker_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/musica/shaker_02.wav": {
+      "sha256": "e7cb74256f52bbedb94f3b94c6a102b7c7d7622e16b11cb18d4d3783d75795a2",
+      "ruta_git": "escena/sonidos/musica/shaker_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/aletas.wav": {
+      "sha256": "23f5a02813d69f3cbba264afd531193723de86cc9618b72c2e7437cf35c8e39d",
+      "ruta_git": "escena/sonidos/sintet/aletas.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/baja.wav": {
+      "sha256": "b68aeed0e722f8e311908180c758efb24bd3f389ff036899b35655709132c64e",
+      "ruta_git": "escena/sonidos/sintet/baja.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/balanza.wav": {
+      "sha256": "25f167736fcf8b319dc1ea5087121bacccad9488495086aaaff6537489fb902c",
+      "ruta_git": "escena/sonidos/sintet/balanza.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/billetes.wav": {
+      "sha256": "637c26a76d3c42e061454897c86a1e3a1638aa589f52cf0d6e66a08306895ce2",
+      "ruta_git": "escena/sonidos/sintet/billetes.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/chinche.wav": {
+      "sha256": "82c3f10a98e55e2f26ad490acfe185b736e8470830bfc56bcf11c919fa5c3d6d",
+      "ruta_git": "escena/sonidos/sintet/chinche.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/ciudad.wav": {
+      "sha256": "de380828ab104db25e115b6f24cca16c39fc5858f5db8ce4fc502e3838600007",
+      "ruta_git": "escena/sonidos/sintet/ciudad.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/claqueta.wav": {
+      "sha256": "2c02fba8f9d34941fe69d4edecdbc6ff6ea5a705e591f56f56afce85c73ac83d",
+      "ruta_git": "escena/sonidos/sintet/claqueta.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/compu.wav": {
+      "sha256": "29b2c8b82420aed3b30a54c1a2d9f03d9eab85a96a9d2ca192560f0c55acf334",
+      "ruta_git": "escena/sonidos/sintet/compu.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/dados.wav": {
+      "sha256": "9c81759e300189391da25d1835750739a06c28859a145f7b38b9ac2c29ad9272",
+      "ruta_git": "escena/sonidos/sintet/dados.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/descuelga.wav": {
+      "sha256": "467141acf8fb7f12e3afa5ea3e1822bb43bcdcb36897b80df34a46022a12ebee",
+      "ruta_git": "escena/sonidos/sintet/descuelga.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/hoja.wav": {
+      "sha256": "bd9891b03073ec34cc31a39709e9dfb1127c2a3a9d835d834627d3e4ed3bae8e",
+      "ruta_git": "escena/sonidos/sintet/hoja.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/lapiz.wav": {
+      "sha256": "cd376140826301ea8a300a943ba38304dd6fe69cf3415c24741aa8339f34477b",
+      "ruta_git": "escena/sonidos/sintet/lapiz.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/proyector.wav": {
+      "sha256": "064431e0705f6c614209e7b6a790fef8e49cd9ff3b748055fb77337215ff9436",
+      "ruta_git": "escena/sonidos/sintet/proyector.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/sube.wav": {
+      "sha256": "d8647c237ee2b46d4692b49b65358025fe1759dab1827b9daf1566cd6cd77134",
+      "ruta_git": "escena/sonidos/sintet/sube.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/teclas.wav": {
+      "sha256": "9880933509cfc11bfc0640ea9078d9f10a9a07050a226dba0af3354faeee481b",
+      "ruta_git": "escena/sonidos/sintet/teclas.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/tics.wav": {
+      "sha256": "af88fce6c77c2c457e28455c904a4fa56dc33231d4a8d9e8c3434495be6af314",
+      "ruta_git": "escena/sonidos/sintet/tics.wav",
+      "igual_a_git": true
+     },
+     "sonidos/sintet/timbre.wav": {
+      "sha256": "bc1252ce390731c598ddc4d1dd5ecc0ca9dfd6a56dc3480fd355908974b89d18",
+      "ruta_git": "escena/sonidos/sintet/timbre.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/caja_01.wav": {
+      "sha256": "f4e9a009379835a03a8ab6999722c34996612c08830a69086d50c3fc56e643e8",
+      "ruta_git": "escena/sonidos/tematicos/caja_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/caja_02.wav": {
+      "sha256": "3fbfefd024174b0ff61f6f1d475c0166475c0fbd5e6d7916c8a36e8b58a71086",
+      "ruta_git": "escena/sonidos/tematicos/caja_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/caja_03.wav": {
+      "sha256": "19aad084129a5c6e8e7a48f8937fd9c14787439e8ab1aa7dc82259b1aeaf9891",
+      "ruta_git": "escena/sonidos/tematicos/caja_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/moneda_01.wav": {
+      "sha256": "f811225ba6b248bb69bbff0910575cdef851adb51a246b39ca70d65d7e4eeccf",
+      "ruta_git": "escena/sonidos/tematicos/moneda_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/moneda_02.wav": {
+      "sha256": "a32b144cb979ac79809921ff416409d23f43314801613ece76d34aac7359394b",
+      "ruta_git": "escena/sonidos/tematicos/moneda_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/motor_acelera_01.wav": {
+      "sha256": "c07401359904f2319701e4ba20cce8968a047ef732a382300f45a3bebe975e5f",
+      "ruta_git": "escena/sonidos/tematicos/motor_acelera_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/obturador_01.wav": {
+      "sha256": "5bb4721f89f04f3817a6bbeee8c4a3a352c81fccf22bf1e605c9f032b942fc77",
+      "ruta_git": "escena/sonidos/tematicos/obturador_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/tematicos/sirena_01.wav": {
+      "sha256": "5052bd7afa3e8516ff672f4fdb9d650e9cd3a02fb3f88b0a9bef69d7fc65769a",
+      "ruta_git": "escena/sonidos/tematicos/sirena_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/pasada_larga_02.wav": {
+      "sha256": "e75d7491088ca19eebd6c6c771a3e54408a3a48a1b69d778514e7bfb230a5482",
+      "ruta_git": "escena/sonidos/transicion/pasada_larga_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_01.wav": {
+      "sha256": "f9a01bbcaa7ee70bb6a3ce88bc3dc1a5b40443a4b756392d74e3b7989bf06b65",
+      "ruta_git": "escena/sonidos/transicion/whoosh_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_02.wav": {
+      "sha256": "17512900abafa9f9115a60c59707028496c0bcc313cbe343c13d9f216ad9ed03",
+      "ruta_git": "escena/sonidos/transicion/whoosh_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_03.wav": {
+      "sha256": "227aaf086d8f9e9c2d7d96af191535f581d4bbbbac0c6396a5a8d11684c22059",
+      "ruta_git": "escena/sonidos/transicion/whoosh_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_04.wav": {
+      "sha256": "905639f15a00fb7da921bf81804661d767b763efa2b2a33126dca7c19ceb83fc",
+      "ruta_git": "escena/sonidos/transicion/whoosh_04.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_05.wav": {
+      "sha256": "1f10450fb74ef28c7ad56856e635a5caccb1e0d1bfec2f4ca1c21cc23f00b282",
+      "ruta_git": "escena/sonidos/transicion/whoosh_05.wav",
+      "igual_a_git": true
+     },
+     "sonidos/transicion/whoosh_06.wav": {
+      "sha256": "fd555539017d8121188edf368c93fe80a67faf6c006bd2b69624b184039509b6",
+      "ruta_git": "escena/sonidos/transicion/whoosh_06.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/clap_03.wav": {
+      "sha256": "45b0969f8d278d33d467a6dcc1454a7f2bc5763983e6b2c5e90d36713c36a63f",
+      "ruta_git": "escena/sonidos/ui/clap_03.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/ding_01.wav": {
+      "sha256": "c03f3b6082c37e5235066b5682dcf96a2dd9718a992af5ed88ec7ec5937051dd",
+      "ruta_git": "escena/sonidos/ui/ding_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/pop_01.wav": {
+      "sha256": "28651964f04a2be6a49900643e5aa3fd4feb1c2acfc5f82a3efb2b927d9deab1",
+      "ruta_git": "escena/sonidos/ui/pop_01.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/pop_02.wav": {
+      "sha256": "597330e718a05c9460689c1608cfe04a303077e2530fb145508564909ce36a2e",
+      "ruta_git": "escena/sonidos/ui/pop_02.wav",
+      "igual_a_git": true
+     },
+     "sonidos/ui/pop_03.wav": {
+      "sha256": "623c77e325ab7e838d4bba40429361709c0b4943e6209f926985ca7dcdcdd230",
+      "ruta_git": "escena/sonidos/ui/pop_03.wav",
+      "igual_a_git": true
+     },
+     "voz_local.py": {
+      "sha256": "d610f4ef4263c8121250f9663cdbae702067323b3a26616315f8967dc3cd4837",
+      "ruta_git": "escena/voz_local.py",
+      "igual_a_git": true
+     }
+    },
+    "distintos_de_git": []
+   },
+   "salidas_render": {
+    "_tmp/datos.json": "5cf00da4bc117099174bd855a5b65b2f8583724d5aaf5dc9d2e7e5638608054a",
+    "_tmp/video.mp4": "c8d3f8b338abf85ffead197b094f154ef223b73e45554c3239521526417d30da",
+    "_tmp/mezcla.wav": "0f861cd317440b97eaccf89c87a2d36970cad5dd59d14f141555dfd62de1f8fc"
+   },
+   "video_entregado": {
+    "archivo": "referencias_video/wgs1_entregado.mp4",
+    "sha256": "6d397ac180d09804193ff78fd776dfd0fc5cbfe2b427e3d53e7ab2baae686ac8",
+    "md5_video": "0deba575f4b7046c6fc0c79c0878d6b5"
+   }
+  }
+ },
+ "planos": {
+  "plano04": {
+   "entradas_corpus": {
+    "datos.json": "dc0d06e4e83bd8affd2c58e2de5db91de60d0a2042b529fa54a2763d175b002b",
+    "gen04.py": "a696d65471fa21fe18a38d401333885f2d650eff417d90427be9262c89f3ca30",
+    "src.json": "7557a017cd22bb1ac61de0bd66c0b7202c4dc33e069dc298c97849a529249f29",
+    "vz.wav": "a38755e26b3a8b27c1a4de3e7fdf8eed5f27258545197d191b670d8b5c3d3dd0",
+    "vz_palabras.json": "05c73a7904f10184cccb024ce2056f0ba961bd7cbc0fa66a3165ea247ba90711"
+   },
+   "bloque_p27": {
+    "ruta_git": "prueba27/p27_bloque.js",
+    "blob": "50e7fe0ea035aae809641b85f2e646a39e7c893d",
+    "sha256": "689809eb3447e8b1f11c9d62f8cab3ad918a6647d62df2b46318612eec1d914a"
+   },
+   "motor": {
+    "sha256": "725e0dba158579ef2c670393d980c3dcfb5ff4bf98a360630699f55d59861fb9",
+    "ruta_git": "escena/escena.html",
+    "nota": "el motor actual reproduce el video aprobado cuadro a cuadro (camino real, E0)"
+   },
+   "render": {
+    "t0": 0.15,
+    "fps": 30,
+    "cuadros": 150,
+    "comando": "render.py 0.15 <fin> 30 con prueba27/p04/datos.json"
+   },
+   "video_aprobado": {
+    "archivo": "referencias_video/plano04_aprobado.mp4",
+    "sha256": "187bff18e0d20684d1b78e6afa1371e9d92fb96b2c19e152b4ea479a2f8e2d1b",
+    "md5_video": "c836349a48387fffa6f9d51eb8e4913c"
+   }
+  },
+  "plano05": {
+   "entradas_corpus": {
+    "datos.json": "473fe543543545537baa9bb64fdaca286db98348764bf0e06237cfa982e65b8f",
+    "datos_control.json": "177cf5239d7b68abe826986e9d63394ccf93020f7334e1cb102ca32368169985",
+    "datos_testigo.json": "84231d5bbc4abde5df28116ecf01465226c99f18b2f5411a5c12a5d1ecc1e825",
+    "gen05.py": "8722adfbec6af68cef42df06ce5435f50e60a4ac58bd9fc08aa5397e33f7f612",
+    "src.json": "672a3ec2711cbb5958aa3e0650e7accfb73d40214cca9bc33d1dcc1a6ee1ea71",
+    "vz.wav": "c8c0cb35f0653e8cebd542e29546841ed65ef475d464ecbd0697611cfea2fe6d",
+    "vz_palabras.json": "3789814196d7f8c955dfc1d8eee0549023f5a4f84ccdb80c2565d1324e937e48"
+   },
+   "bloque_p27": {
+    "ruta_git": "prueba27/p27_bloque.js",
+    "blob": "50e7fe0ea035aae809641b85f2e646a39e7c893d",
+    "sha256": "689809eb3447e8b1f11c9d62f8cab3ad918a6647d62df2b46318612eec1d914a"
+   },
+   "motor": {
+    "sha256": "725e0dba158579ef2c670393d980c3dcfb5ff4bf98a360630699f55d59861fb9",
+    "ruta_git": "escena/escena.html",
+    "nota": "el motor actual reproduce el video aprobado cuadro a cuadro (camino real, E0)"
+   },
+   "render": {
+    "t0": 0.15,
+    "fps": 30,
+    "cuadros": 100,
+    "comando": "render.py 0.15 <fin> 30 con prueba27/p05/datos.json"
+   },
+   "video_aprobado": {
+    "archivo": "referencias_video/plano05_aprobado.mp4",
+    "sha256": "9eb4efa3c49aea7f71f0b917058d8b29d825d7aa566c235b61316c05042840e2",
+    "md5_video": "795300e453d6ace14115c820492d5b3c"
+   }
+  },
+  "plano06": {
+   "entradas_corpus": {
+    "datos.json": "92aab16687e9fcc25e2955d5276386b9d870e0194eea65c9babeb08de97a0e33",
+    "datos_testigo.json": "8a48542ccc46eeac85cfabee8fa58683359b460409c281de3e3add71209668e0",
+    "gen06.py": "362128b9a05854a07e47d88290ad2fdb46aab5fe8fe4aebd38efbc80fe9be7c5",
+    "src.json": "6730a40536c78bf101a9ac5d3edcc4b191eb5a2713d53476d313181e2f6e6773",
+    "vz.wav": "00059f648436452e5b1224a7b7b5b95d97fb6648dc6a29f7c74fe16a89364263",
+    "vz_palabras.json": "7bedbafc0d290ac3696684c997825ff9ea5c6f21dca8b769bca5e40e92030ee2"
+   },
+   "bloque_p27": {
+    "ruta_git": "prueba27/p27_bloque.js",
+    "blob": "50e7fe0ea035aae809641b85f2e646a39e7c893d",
+    "sha256": "689809eb3447e8b1f11c9d62f8cab3ad918a6647d62df2b46318612eec1d914a"
+   },
+   "motor": {
+    "sha256": "725e0dba158579ef2c670393d980c3dcfb5ff4bf98a360630699f55d59861fb9",
+    "ruta_git": "escena/escena.html",
+    "nota": "el motor actual reproduce el video aprobado cuadro a cuadro (camino real, E0)"
+   },
+   "render": {
+    "t0": 0.15,
+    "fps": 30,
+    "cuadros": 100,
+    "comando": "render.py 0.15 <fin> 30 con prueba27/p06/datos.json"
+   },
+   "video_aprobado": {
+    "archivo": "referencias_video/plano06_aprobado.mp4",
+    "sha256": "48fe1ab51401d63599aaec8d5a86a168d5e9465ef356b9e60d9bf621db161651",
+    "md5_video": "baee3baabb3dd338dfdf5289d6245173"
+   }
+  },
+  "plano10": {
+   "entradas_corpus": {
+    "datos.json": "80a489d44c6bb73d4b32a959a0592a8efba75b081c89c20e8e87267c987b9074",
+    "gen10.py": "1541b89a3f8d6731ab2e8a4e233d3f1688b896889f93e17e51a17f5ea4b26f43",
+    "src.json": "d4e2481c46d7c36337d276742446104a6a471e3643ebba0c9c3c031a0b081cbe",
+    "vz.wav": "85e0130f6804a90574dee34681a5d073cace33de01d68a57ee5c45133fd25640",
+    "vz_palabras.json": "ab66c6f46a71328f821e6122880ab7bd6c7f3ec6cedc95886f7aff5312d4679e"
+   },
+   "bloque_p27": {
+    "ruta_git": "prueba27/p27_bloque.js",
+    "blob": "50e7fe0ea035aae809641b85f2e646a39e7c893d",
+    "sha256": "689809eb3447e8b1f11c9d62f8cab3ad918a6647d62df2b46318612eec1d914a"
+   },
+   "motor": {
+    "sha256": "725e0dba158579ef2c670393d980c3dcfb5ff4bf98a360630699f55d59861fb9",
+    "ruta_git": "escena/escena.html",
+    "nota": "el motor actual reproduce el video aprobado cuadro a cuadro (camino real, E0)"
+   },
+   "render": {
+    "t0": 0.15,
+    "fps": 30,
+    "cuadros": 158,
+    "comando": "render.py 0.15 <fin> 30 con prueba27/p10/datos.json"
+   },
+   "video_aprobado": {
+    "archivo": "referencias_video/plano10_aprobado.mp4",
+    "sha256": "33692c4df7606933a7e07ab47b835341e718d8cef5bfcbe39e6672ddccd31dbb",
+    "md5_video": "bd79a97a282f8da6e7e7a1c85dc95de5"
+   }
+  }
+ }
+}
