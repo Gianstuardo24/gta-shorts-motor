@@ -1,0 +1,300 @@
+[
+ {
+  "caso": "corpus wc1/datos_render.json",
+  "cuadros": 319,
+  "llamadas_tk": 127713,
+  "motor_no_resolvio": [],
+  "validador_marco": [],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "corpus wd2/datos_render.json",
+  "cuadros": 236,
+  "llamadas_tk": 70507,
+  "motor_no_resolvio": [],
+  "validador_marco": [],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "corpus wge2/datos_render.json",
+  "cuadros": 271,
+  "llamadas_tk": 74856,
+  "motor_no_resolvio": [],
+  "validador_marco": [],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "corpus wgs1/datos_render.json",
+  "cuadros": 229,
+  "llamadas_tk": 62121,
+  "motor_no_resolvio": [],
+  "validador_marco": [],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "corpus wk2/datos_render.json",
+  "cuadros": 201,
+  "llamadas_tk": 64158,
+  "motor_no_resolvio": [],
+  "validador_marco": [],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "corpus wm2/datos_render.json",
+  "cuadros": 312,
+  "llamadas_tk": 126654,
+  "motor_no_resolvio": [],
+  "validador_marco": [],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "corpus wr1/datos_render.json",
+  "cuadros": 247,
+  "llamadas_tk": 71390,
+  "motor_no_resolvio": [],
+  "validador_marco": [],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "corpus plano04/datos.json",
+  "cuadros": 155,
+  "llamadas_tk": 5041,
+  "motor_no_resolvio": [],
+  "validador_marco": [],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "corpus plano05/datos.json",
+  "cuadros": 105,
+  "llamadas_tk": 2730,
+  "motor_no_resolvio": [],
+  "validador_marco": [],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "corpus plano05/datos_control.json",
+  "cuadros": 105,
+  "llamadas_tk": 2730,
+  "motor_no_resolvio": [],
+  "validador_marco": [],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "corpus plano05/datos_testigo.json",
+  "cuadros": 105,
+  "llamadas_tk": 2730,
+  "motor_no_resolvio": [],
+  "validador_marco": [],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "corpus plano06/datos.json",
+  "cuadros": 106,
+  "llamadas_tk": 62466,
+  "motor_no_resolvio": [],
+  "validador_marco": [],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "corpus plano06/datos_testigo.json",
+  "cuadros": 106,
+  "llamadas_tk": 62466,
+  "motor_no_resolvio": [],
+  "validador_marco": [],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "corpus plano10/datos.json",
+  "cuadros": 163,
+  "llamadas_tk": 8021,
+  "motor_no_resolvio": [],
+  "validador_marco": [],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "caso real · plano 05 v1",
+  "cuadros": 108,
+  "llamadas_tk": 3240,
+  "motor_no_resolvio": [
+   "p27_fin",
+   "p27_fin-0.55"
+  ],
+  "validador_marco": [
+   "p27_fin",
+   "p27_fin-0.55"
+  ],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "mutación · clave mal escrita en utilería",
+  "cuadros": 236,
+  "llamadas_tk": 70507,
+  "motor_no_resolvio": [
+   "s_l"
+  ],
+  "validador_marco": [
+   "s_l"
+  ],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "mutación · clave inexistente en una pose de actor",
+  "cuadros": 236,
+  "llamadas_tk": 70507,
+  "motor_no_resolvio": [
+   "s_11"
+  ],
+  "validador_marco": [
+   "s_11"
+  ],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "mutación · desplazamiento mal escrito",
+  "cuadros": 236,
+  "llamadas_tk": 70507,
+  "motor_no_resolvio": [],
+  "validador_marco": [],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "mutación · número escrito como texto",
+  "cuadros": 236,
+  "llamadas_tk": 106547,
+  "motor_no_resolvio": [
+   "1.5"
+  ],
+  "validador_marco": [
+   "1.5"
+  ],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "mutación · valor booleano",
+  "cuadros": 236,
+  "llamadas_tk": 70507,
+  "motor_no_resolvio": [],
+  "validador_marco": [],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "mutación · inicio de escena inexistente",
+  "cuadros": 236,
+  "llamadas_tk": 78595,
+  "motor_no_resolvio": [
+   "s_fin"
+  ],
+  "validador_marco": [
+   "s_fin"
+  ],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "mutación · inicio de escena con ±n (el motor no lo acepta)",
+  "cuadros": 236,
+  "llamadas_tk": 78595,
+  "motor_no_resolvio": [
+   "s_fin"
+  ],
+  "validador_marco": [
+   "s_fin"
+  ],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "mutación · campo de un objeto nuevo (teléfono)",
+  "cuadros": 312,
+  "llamadas_tk": 127256,
+  "motor_no_resolvio": [
+   "nadie"
+  ],
+  "validador_marco": [
+   "nadie"
+  ],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "mutación · tipo de escena antiguo (T directo)",
+  "cuadros": 236,
+  "llamadas_tk": 70507,
+  "motor_no_resolvio": [],
+  "validador_marco": [],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "mutación · p27: recorrido del cursor",
+  "cuadros": 105,
+  "llamadas_tk": 2730,
+  "motor_no_resolvio": [
+   "p27_unusd"
+  ],
+  "validador_marco": [
+   "p27_unusd"
+  ],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "mutación · p27: desplazamiento mal escrito en el cursor",
+  "cuadros": 105,
+  "llamadas_tk": 2730,
+  "motor_no_resolvio": [
+   "p27_at-x"
+  ],
+  "validador_marco": [
+   "p27_at-x"
+  ],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "mutación · p27: claves densas del desplazamiento",
+  "cuadros": 106,
+  "llamadas_tk": 62467,
+  "motor_no_resolvio": [
+   "Leonida"
+  ],
+  "validador_marco": [
+   "Leonida"
+  ],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "mutación · p27: zona del plano 10",
+  "cuadros": 163,
+  "llamadas_tk": 8021,
+  "motor_no_resolvio": [
+   "noexiste"
+  ],
+  "validador_marco": [
+   "noexiste"
+  ],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ }
+]

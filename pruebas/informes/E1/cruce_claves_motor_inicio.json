@@ -1,0 +1,28 @@
+[
+ {
+  "caso": "mutación · inicio de escena inexistente",
+  "cuadros": 236,
+  "llamadas_tk": 78595,
+  "motor_no_resolvio": [
+   "s_fin"
+  ],
+  "validador_marco": [
+   "s_fin"
+  ],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ },
+ {
+  "caso": "mutación · inicio de escena con ±n (el motor no lo acepta)",
+  "cuadros": 236,
+  "llamadas_tk": 78595,
+  "motor_no_resolvio": [
+   "s_fin"
+  ],
+  "validador_marco": [
+   "s_fin"
+  ],
+  "falsos_negativos": [],
+  "marcados_no_evaluados": []
+ }
+]

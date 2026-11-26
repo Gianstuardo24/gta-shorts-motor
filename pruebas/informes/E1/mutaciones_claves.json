@@ -1,0 +1,208 @@
+[
+ {
+  "caso": "clave mal escrita en utilería",
+  "datos": "wd2",
+  "esperado": "error en props[0].k",
+  "detectado": true,
+  "otros_hallazgos": []
+ },
+ {
+  "caso": "clave inexistente en una pose de actor",
+  "datos": "wd2",
+  "esperado": "error en actores[0].keys[0].k",
+  "detectado": true,
+  "otros_hallazgos": []
+ },
+ {
+  "caso": "desplazamiento mal escrito",
+  "datos": "wd2",
+  "esperado": "error en actores[1].keys[1].k",
+  "detectado": true,
+  "otros_hallazgos": []
+ },
+ {
+  "caso": "número escrito como texto",
+  "datos": "wd2",
+  "esperado": "error en zoom[3].k",
+  "detectado": true,
+  "otros_hallazgos": []
+ },
+ {
+  "caso": "valor booleano",
+  "datos": "wd2",
+  "esperado": "error en props[0].fin",
+  "detectado": true,
+  "otros_hallazgos": []
+ },
+ {
+  "caso": "inicio de escena inexistente",
+  "datos": "wd2",
+  "esperado": "error en escenas[1].desde",
+  "detectado": true,
+  "otros_hallazgos": [
+   "error escenas[0].props[6].fin",
+   "error escenas[0].props[7].fin",
+   "error escenas[0].props[8].fin"
+  ]
+ },
+ {
+  "caso": "inicio de escena con ±n (el motor no lo acepta)",
+  "datos": "wd2",
+  "esperado": "error en escenas[1].desde",
+  "detectado": true,
+  "otros_hallazgos": [
+   "error escenas[0].props[6].fin",
+   "error escenas[0].props[7].fin",
+   "error escenas[0].props[8].fin"
+  ]
+ },
+ {
+  "caso": "algo que empieza después del final",
+  "datos": "wd2",
+  "esperado": "aviso en emojis[0].k",
+  "detectado": true,
+  "otros_hallazgos": []
+ },
+ {
+  "caso": "fin antes del inicio",
+  "datos": "wd2",
+  "esperado": "aviso en props[0].fin",
+  "detectado": true,
+  "otros_hallazgos": []
+ },
+ {
+  "caso": "campo de un objeto nuevo (teléfono)",
+  "datos": "wm2",
+  "esperado": "error en telefono.items[0].k",
+  "detectado": true,
+  "otros_hallazgos": []
+ },
+ {
+  "caso": "escenas desordenadas",
+  "datos": "wd2",
+  "esperado": "aviso en escenas[2].desde",
+  "detectado": true,
+  "otros_hallazgos": []
+ },
+ {
+  "caso": "tipo de escena antiguo (T directo)",
+  "datos": "wd2",
+  "esperado": "error en escenas[2].k2",
+  "detectado": true,
+  "otros_hallazgos": []
+ },
+ {
+  "caso": "p27: recorrido del cursor",
+  "datos": "p05",
+  "esperado": "error en curMov[1][0]",
+  "detectado": true,
+  "otros_hallazgos": []
+ },
+ {
+  "caso": "p27: desplazamiento mal escrito en el cursor",
+  "datos": "p05",
+  "esperado": "error en cursor[0]",
+  "detectado": true,
+  "otros_hallazgos": []
+ },
+ {
+  "caso": "p27: claves densas del desplazamiento",
+  "datos": "p06",
+  "esperado": "error en despK[5][0]",
+  "detectado": true,
+  "otros_hallazgos": []
+ },
+ {
+  "caso": "p27: zona del plano 10",
+  "datos": "p10",
+  "esperado": "error en zonas[0].k",
+  "detectado": true,
+  "otros_hallazgos": []
+ },
+ {
+  "caso": "escena cortada por la siguiente (efecto en cascada)",
+  "datos": "wd2",
+  "esperado": "aviso en escenas[0].emojis[3].k",
+  "detectado": true,
+  "otros_hallazgos": [
+   "aviso escenas[1].desde",
+   "aviso escenas[0].zonas[1].k",
+   "aviso escenas[0].zonas[2].k",
+   "aviso escenas[0].zonas[3].k",
+   "aviso escenas[0].zonas[4].k",
+   "aviso escenas[0].zoom[3].k",
+   "aviso escenas[0].zoom[4].k",
+   "aviso escenas[0].zoom[5].k",
+   "aviso escenas[0].zoom[6].k",
+   "aviso escenas[0].zoom[7].k",
+   "aviso escenas[0].zoom[8].k",
+   "aviso escenas[0].zoom[9].k",
+   "aviso escenas[0].zoom[10].k",
+   "aviso escenas[0].zoom[11].k",
+   "aviso escenas[0].zoom[12].k",
+   "aviso escenas[0].zoom[13].k",
+   "aviso escenas[0].zoom[14].k",
+   "aviso escenas[0].zoom[15].k",
+   "aviso escenas[0].zoom[16].k",
+   "aviso escenas[0].zoom[17].k",
+   "aviso escenas[0].zoom[18].k",
+   "aviso escenas[0].zoom[19].k",
+   "aviso escenas[0].zoom[20].k",
+   "aviso escenas[0].zoom[21].k",
+   "aviso escenas[0].zoom[22].k",
+   "aviso escenas[0].zoom[23].k",
+   "aviso escenas[0].zoom[24].k",
+   "aviso escenas[0].zoom[25].k",
+   "aviso escenas[0].zoom[26].k",
+   "aviso escenas[0].zoom[27].k",
+   "aviso escenas[0].zoom[28].k",
+   "aviso escenas[0].zoom[29].k",
+   "aviso escenas[0].zoom[30].k",
+   "aviso escenas[0].zoom[31].k",
+   "aviso escenas[0].zoom[32].k",
+   "aviso escenas[0].zoom[33].k",
+   "aviso escenas[0].zoom[34].k",
+   "aviso escenas[0].pan[0].k",
+   "aviso escenas[0].pan[1].k",
+   "aviso escenas[0].pan[2].k",
+   "aviso escenas[0].pan[3].k",
+   "aviso escenas[0].pan[5].k",
+   "aviso escenas[0].pan[6].k",
+   "aviso escenas[0].pan[7].k",
+   "aviso escenas[0].pan[8].k",
+   "aviso escenas[0].pan[9].k",
+   "aviso escenas[0].pan[10].k",
+   "aviso escenas[0].pan[11].k",
+   "aviso escenas[0].actores[0].desde",
+   "aviso escenas[0].actores[1].desde",
+   "aviso escenas[0].actores[2].desde",
+   "aviso escenas[0].actores[3].desde",
+   "aviso escenas[0].actores[4].desde",
+   "aviso escenas[0].actores[0].keys[0].k",
+   "aviso escenas[0].actores[1].keys[0].k",
+   "aviso escenas[0].actores[1].keys[1].k",
+   "aviso escenas[0].actores[2].keys[0].k",
+   "aviso escenas[0].actores[3].keys[0].k",
+   "aviso escenas[0].actores[4].keys[0].k",
+   "aviso escenas[0].props[0].k",
+   "aviso escenas[0].props[1].k",
+   "aviso escenas[0].props[2].k",
+   "aviso escenas[0].props[3].k",
+   "aviso escenas[0].props[4].k",
+   "aviso escenas[0].props[5].k",
+   "aviso escenas[0].props[6].k",
+   "aviso escenas[0].props[7].k",
+   "aviso escenas[0].props[8].k",
+   "aviso escenas[0].props[11].k",
+   "aviso escenas[0].props[12].k",
+   "aviso escenas[0].props[13].k",
+   "aviso escenas[0].props[14].k",
+   "aviso escenas[0].props[15].k",
+   "aviso escenas[0].props[16].k",
+   "aviso escenas[0].titulos[0].k",
+   "aviso escenas[0].emojis[0].k",
+   "aviso escenas[0].emojis[1].k",
+   "aviso escenas[0].emojis[2].k"
+  ]
+ }
+]

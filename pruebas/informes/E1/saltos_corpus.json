@@ -1,0 +1,981 @@
+{
+ "wc1": {
+  "video": "/home/claude/pruebas/referencias_video/wc1_entregado.mp4",
+  "cuadros": 1908,
+  "islas_con_datos": [
+   {
+    "desde": 374,
+    "hasta": 374,
+    "largo": 1,
+    "entra": 79.61,
+    "sale": 78.66,
+    "r": 0.333,
+    "motivo": "aislado",
+    "tiempo": 12.467,
+    "tira": "informes/E1/tiras_saltos/wc1_entregado_isla_00374.png"
+   },
+   {
+    "desde": 508,
+    "hasta": 508,
+    "largo": 1,
+    "entra": 14.3,
+    "sale": 52.25,
+    "r": 3.953,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 16.933,
+    "tira": "informes/E1/tiras_saltos/wc1_entregado_isla_00508.png"
+   },
+   {
+    "desde": 931,
+    "hasta": 931,
+    "largo": 1,
+    "entra": 15.38,
+    "sale": 54.87,
+    "r": 2.919,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 31.033,
+    "tira": "informes/E1/tiras_saltos/wc1_entregado_isla_00931.png"
+   },
+   {
+    "desde": 1071,
+    "hasta": 1071,
+    "largo": 1,
+    "entra": 72.42,
+    "sale": 21.4,
+    "r": 2.599,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 35.7,
+    "tira": "informes/E1/tiras_saltos/wc1_entregado_isla_01071.png"
+   },
+   {
+    "desde": 1194,
+    "hasta": 1194,
+    "largo": 1,
+    "entra": 12.99,
+    "sale": 13.29,
+    "r": 0.926,
+    "motivo": "aislado",
+    "tiempo": 39.8,
+    "tira": "informes/E1/tiras_saltos/wc1_entregado_isla_01194.png"
+   },
+   {
+    "desde": 1326,
+    "hasta": 1326,
+    "largo": 1,
+    "entra": 11.18,
+    "sale": 53.65,
+    "r": 4.225,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 44.2,
+    "tira": "informes/E1/tiras_saltos/wc1_entregado_isla_01326.png"
+   },
+   {
+    "desde": 1484,
+    "hasta": 1485,
+    "largo": 2,
+    "entra": 53.79,
+    "sale": 20.88,
+    "r": 2.29,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 49.467,
+    "tira": "informes/E1/tiras_saltos/wc1_entregado_isla_01484.png"
+   },
+   {
+    "desde": 1655,
+    "hasta": 1656,
+    "largo": 2,
+    "entra": 16.86,
+    "sale": 36.74,
+    "r": 1.932,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 55.167,
+    "tira": "informes/E1/tiras_saltos/wc1_entregado_isla_01655.png"
+   }
+  ],
+  "islas_sin_datos": [
+   {
+    "desde": 374,
+    "hasta": 374,
+    "largo": 1,
+    "entra": 79.61,
+    "sale": 78.66,
+    "r": 0.333,
+    "motivo": "aislado",
+    "tiempo": 12.467
+   },
+   {
+    "desde": 1194,
+    "hasta": 1194,
+    "largo": 1,
+    "entra": 12.99,
+    "sale": 13.29,
+    "r": 0.926,
+    "motivo": "aislado",
+    "tiempo": 39.8
+   }
+  ],
+  "destellos_sin_datos": [
+   {
+    "desde": 1737,
+    "hasta": 1737,
+    "largo": 1,
+    "entra": 11.89,
+    "sale": 15.65,
+    "tiempo": 57.9
+   }
+  ],
+  "previstos_por_el_validador": [
+   0,
+   187,
+   284,
+   285,
+   374,
+   508,
+   692,
+   693,
+   931,
+   1071,
+   1194,
+   1326,
+   1484,
+   1485,
+   1655,
+   1656
+  ],
+  "previstos_no_marcados": [
+   0,
+   187,
+   284,
+   285,
+   692,
+   693
+  ],
+  "marcados_no_previstos": []
+ },
+ "wd2": {
+  "video": "/home/claude/pruebas/referencias_video/wd2_entregado.mp4",
+  "cuadros": 1413,
+  "islas_con_datos": [
+   {
+    "desde": 200,
+    "hasta": 201,
+    "largo": 2,
+    "entra": 25.34,
+    "sale": 20.51,
+    "r": 2.069,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 6.667,
+    "tira": "informes/E1/tiras_saltos/wd2_entregado_isla_00200.png"
+   },
+   {
+    "desde": 294,
+    "hasta": 294,
+    "largo": 1,
+    "entra": 8.91,
+    "sale": 28.36,
+    "r": 3.581,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 9.8,
+    "tira": "informes/E1/tiras_saltos/wd2_entregado_isla_00294.png"
+   },
+   {
+    "desde": 448,
+    "hasta": 448,
+    "largo": 1,
+    "entra": 43.43,
+    "sale": 30.76,
+    "r": 1.859,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 14.933,
+    "tira": "informes/E1/tiras_saltos/wd2_entregado_isla_00448.png"
+   },
+   {
+    "desde": 556,
+    "hasta": 556,
+    "largo": 1,
+    "entra": 22.44,
+    "sale": 23.02,
+    "r": 0.436,
+    "motivo": "aislado",
+    "tiempo": 18.533,
+    "tira": "informes/E1/tiras_saltos/wd2_entregado_isla_00556.png"
+   },
+   {
+    "desde": 713,
+    "hasta": 713,
+    "largo": 1,
+    "entra": 27.5,
+    "sale": 18.19,
+    "r": 2.144,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 23.767,
+    "tira": "informes/E1/tiras_saltos/wd2_entregado_isla_00713.png"
+   },
+   {
+    "desde": 834,
+    "hasta": 834,
+    "largo": 1,
+    "entra": 34.77,
+    "sale": 25.79,
+    "r": 1.959,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 27.8,
+    "tira": "informes/E1/tiras_saltos/wd2_entregado_isla_00834.png"
+   },
+   {
+    "desde": 965,
+    "hasta": 966,
+    "largo": 2,
+    "entra": 21.04,
+    "sale": 21.28,
+    "r": 1.959,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 32.167,
+    "tira": "informes/E1/tiras_saltos/wd2_entregado_isla_00965.png"
+   }
+  ],
+  "islas_sin_datos": [
+   {
+    "desde": 556,
+    "hasta": 556,
+    "largo": 1,
+    "entra": 22.44,
+    "sale": 23.02,
+    "r": 0.436,
+    "motivo": "aislado",
+    "tiempo": 18.533
+   }
+  ],
+  "destellos_sin_datos": [],
+  "previstos_por_el_validador": [
+   1,
+   200,
+   201,
+   294,
+   448,
+   556,
+   713,
+   834,
+   965,
+   966,
+   1116
+  ],
+  "previstos_no_marcados": [
+   1,
+   1116
+  ],
+  "marcados_no_previstos": []
+ },
+ "wge2": {
+  "video": "/home/claude/pruebas/referencias_video/wge2_entregado.mp4",
+  "cuadros": 1624,
+  "islas_con_datos": [
+   {
+    "desde": 200,
+    "hasta": 200,
+    "largo": 1,
+    "entra": 20.59,
+    "sale": 22.5,
+    "r": 1.192,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 6.667,
+    "tira": "informes/E1/tiras_saltos/wge2_entregado_isla_00200.png"
+   },
+   {
+    "desde": 287,
+    "hasta": 288,
+    "largo": 2,
+    "entra": 21.23,
+    "sale": 12.49,
+    "r": 1.755,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 9.567,
+    "tira": "informes/E1/tiras_saltos/wge2_entregado_isla_00287.png"
+   },
+   {
+    "desde": 406,
+    "hasta": 406,
+    "largo": 1,
+    "entra": 26.39,
+    "sale": 17.57,
+    "r": 1.182,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 13.533,
+    "tira": "informes/E1/tiras_saltos/wge2_entregado_isla_00406.png"
+   },
+   {
+    "desde": 747,
+    "hasta": 747,
+    "largo": 1,
+    "entra": 16.78,
+    "sale": 22.81,
+    "r": 1.134,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 24.9,
+    "tira": "informes/E1/tiras_saltos/wge2_entregado_isla_00747.png"
+   },
+   {
+    "desde": 921,
+    "hasta": 922,
+    "largo": 2,
+    "entra": 20.42,
+    "sale": 10.08,
+    "r": 1.619,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 30.7,
+    "tira": "informes/E1/tiras_saltos/wge2_entregado_isla_00921.png"
+   },
+   {
+    "desde": 1190,
+    "hasta": 1190,
+    "largo": 1,
+    "entra": 21.65,
+    "sale": 20.8,
+    "r": 1.14,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 39.667,
+    "tira": "informes/E1/tiras_saltos/wge2_entregado_isla_01190.png"
+   }
+  ],
+  "islas_sin_datos": [],
+  "destellos_sin_datos": [],
+  "previstos_por_el_validador": [
+   0,
+   200,
+   287,
+   288,
+   406,
+   548,
+   549,
+   747,
+   921,
+   922,
+   1034,
+   1035,
+   1190
+  ],
+  "previstos_no_marcados": [
+   0,
+   548,
+   549,
+   1034,
+   1035
+  ],
+  "marcados_no_previstos": []
+ },
+ "wgs1": {
+  "video": "/home/claude/pruebas/referencias_video/wgs1_entregado.mp4",
+  "cuadros": 1372,
+  "islas_con_datos": [
+   {
+    "desde": 227,
+    "hasta": 228,
+    "largo": 2,
+    "entra": 28.68,
+    "sale": 25.22,
+    "r": 1.15,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 7.567,
+    "tira": "informes/E1/tiras_saltos/wgs1_entregado_isla_00227.png"
+   },
+   {
+    "desde": 373,
+    "hasta": 373,
+    "largo": 1,
+    "entra": 23.74,
+    "sale": 20.86,
+    "r": 1.248,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 12.433,
+    "tira": "informes/E1/tiras_saltos/wgs1_entregado_isla_00373.png"
+   },
+   {
+    "desde": 470,
+    "hasta": 471,
+    "largo": 2,
+    "entra": 21.78,
+    "sale": 10.79,
+    "r": 1.697,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 15.667,
+    "tira": "informes/E1/tiras_saltos/wgs1_entregado_isla_00470.png"
+   },
+   {
+    "desde": 616,
+    "hasta": 616,
+    "largo": 1,
+    "entra": 8.04,
+    "sale": 22.2,
+    "r": 3.106,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 20.533,
+    "tira": "informes/E1/tiras_saltos/wgs1_entregado_isla_00616.png"
+   },
+   {
+    "desde": 740,
+    "hasta": 740,
+    "largo": 1,
+    "entra": 16.33,
+    "sale": 14.32,
+    "r": 1.033,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 24.667,
+    "tira": "informes/E1/tiras_saltos/wgs1_entregado_isla_00740.png"
+   },
+   {
+    "desde": 894,
+    "hasta": 894,
+    "largo": 1,
+    "entra": 10.62,
+    "sale": 14.01,
+    "r": 0.946,
+    "motivo": "aislado",
+    "tiempo": 29.8,
+    "tira": "informes/E1/tiras_saltos/wgs1_entregado_isla_00894.png"
+   },
+   {
+    "desde": 1018,
+    "hasta": 1018,
+    "largo": 1,
+    "entra": 11.32,
+    "sale": 13.15,
+    "r": 0.714,
+    "motivo": "aislado",
+    "tiempo": 33.933,
+    "tira": "informes/E1/tiras_saltos/wgs1_entregado_isla_01018.png"
+   }
+  ],
+  "islas_sin_datos": [
+   {
+    "desde": 894,
+    "hasta": 894,
+    "largo": 1,
+    "entra": 10.62,
+    "sale": 14.01,
+    "r": 0.946,
+    "motivo": "aislado",
+    "tiempo": 29.8
+   },
+   {
+    "desde": 1018,
+    "hasta": 1018,
+    "largo": 1,
+    "entra": 11.32,
+    "sale": 13.15,
+    "r": 0.714,
+    "motivo": "aislado",
+    "tiempo": 33.933
+   }
+  ],
+  "destellos_sin_datos": [],
+  "previstos_por_el_validador": [
+   1,
+   227,
+   228,
+   373,
+   470,
+   471,
+   616,
+   673,
+   740,
+   894,
+   1018
+  ],
+  "previstos_no_marcados": [
+   1,
+   673
+  ],
+  "marcados_no_previstos": []
+ },
+ "wk2": {
+  "video": "/home/claude/pruebas/referencias_video/wk2_entregado.mp4",
+  "cuadros": 1203,
+  "islas_con_datos": [
+   {
+    "desde": 188,
+    "hasta": 188,
+    "largo": 1,
+    "entra": 34.2,
+    "sale": 30.35,
+    "r": 0.788,
+    "motivo": "aislado",
+    "tiempo": 6.267,
+    "tira": "informes/E1/tiras_saltos/wk2_entregado_isla_00188.png"
+   },
+   {
+    "desde": 243,
+    "hasta": 243,
+    "largo": 1,
+    "entra": 18.39,
+    "sale": 23.47,
+    "r": 0.923,
+    "motivo": "aislado",
+    "tiempo": 8.1,
+    "tira": "informes/E1/tiras_saltos/wk2_entregado_isla_00243.png"
+   },
+   {
+    "desde": 531,
+    "hasta": 531,
+    "largo": 1,
+    "entra": 30.36,
+    "sale": 23.72,
+    "r": 1.783,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 17.7,
+    "tira": "informes/E1/tiras_saltos/wk2_entregado_isla_00531.png"
+   },
+   {
+    "desde": 589,
+    "hasta": 589,
+    "largo": 1,
+    "entra": 21.92,
+    "sale": 33.54,
+    "r": 2.371,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 19.633,
+    "tira": "informes/E1/tiras_saltos/wk2_entregado_isla_00589.png"
+   },
+   {
+    "desde": 725,
+    "hasta": 726,
+    "largo": 2,
+    "entra": 25.27,
+    "sale": 36.16,
+    "r": 0.954,
+    "motivo": "aislado",
+    "tiempo": 24.167,
+    "tira": "informes/E1/tiras_saltos/wk2_entregado_isla_00725.png"
+   }
+  ],
+  "islas_sin_datos": [
+   {
+    "desde": 188,
+    "hasta": 188,
+    "largo": 1,
+    "entra": 34.2,
+    "sale": 30.35,
+    "r": 0.788,
+    "motivo": "aislado",
+    "tiempo": 6.267
+   },
+   {
+    "desde": 243,
+    "hasta": 243,
+    "largo": 1,
+    "entra": 18.39,
+    "sale": 23.47,
+    "r": 0.923,
+    "motivo": "aislado",
+    "tiempo": 8.1
+   },
+   {
+    "desde": 725,
+    "hasta": 726,
+    "largo": 2,
+    "entra": 25.27,
+    "sale": 36.16,
+    "r": 0.954,
+    "motivo": "aislado",
+    "tiempo": 24.167
+   }
+  ],
+  "destellos_sin_datos": [
+   {
+    "desde": 1038,
+    "hasta": 1038,
+    "largo": 1,
+    "entra": 18.96,
+    "sale": 14.01,
+    "tiempo": 34.6
+   }
+  ],
+  "previstos_por_el_validador": [
+   0,
+   188,
+   243,
+   385,
+   386,
+   458,
+   459,
+   531,
+   589,
+   725,
+   726,
+   799,
+   800,
+   917,
+   918
+  ],
+  "previstos_no_marcados": [
+   0,
+   385,
+   386,
+   458,
+   459,
+   799,
+   800,
+   917,
+   918
+  ],
+  "marcados_no_previstos": []
+ },
+ "wm2": {
+  "video": "/home/claude/pruebas/referencias_video/wm2_entregado.mp4",
+  "cuadros": 1869,
+  "islas_con_datos": [
+   {
+    "desde": 215,
+    "hasta": 215,
+    "largo": 1,
+    "entra": 21.27,
+    "sale": 22.16,
+    "r": 0.753,
+    "motivo": "aislado",
+    "tiempo": 7.167,
+    "tira": "informes/E1/tiras_saltos/wm2_entregado_isla_00215.png"
+   },
+   {
+    "desde": 372,
+    "hasta": 372,
+    "largo": 1,
+    "entra": 18.21,
+    "sale": 15.65,
+    "r": 0.972,
+    "motivo": "aislado",
+    "tiempo": 12.4,
+    "tira": "informes/E1/tiras_saltos/wm2_entregado_isla_00372.png"
+   },
+   {
+    "desde": 491,
+    "hasta": 492,
+    "largo": 2,
+    "entra": 24.74,
+    "sale": 13.29,
+    "r": 1.576,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 16.367,
+    "tira": "informes/E1/tiras_saltos/wm2_entregado_isla_00491.png"
+   },
+   {
+    "desde": 674,
+    "hasta": 675,
+    "largo": 2,
+    "entra": 8.05,
+    "sale": 16.75,
+    "r": 3.227,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 22.467,
+    "tira": "informes/E1/tiras_saltos/wm2_entregado_isla_00674.png"
+   },
+   {
+    "desde": 776,
+    "hasta": 776,
+    "largo": 1,
+    "entra": 28.1,
+    "sale": 92.62,
+    "r": 2.351,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 25.867,
+    "tira": "informes/E1/tiras_saltos/wm2_entregado_isla_00776.png"
+   },
+   {
+    "desde": 801,
+    "hasta": 801,
+    "largo": 1,
+    "entra": 19.2,
+    "sale": 53.61,
+    "r": 3.404,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 26.7,
+    "tira": "informes/E1/tiras_saltos/wm2_entregado_isla_00801.png"
+   },
+   {
+    "desde": 881,
+    "hasta": 882,
+    "largo": 2,
+    "entra": 17.52,
+    "sale": 18.22,
+    "r": 2.931,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 29.367,
+    "tira": "informes/E1/tiras_saltos/wm2_entregado_isla_00881.png"
+   },
+   {
+    "desde": 1193,
+    "hasta": 1193,
+    "largo": 1,
+    "entra": 57.73,
+    "sale": 17.85,
+    "r": 3.048,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 39.767,
+    "tira": "informes/E1/tiras_saltos/wm2_entregado_isla_01193.png"
+   },
+   {
+    "desde": 1300,
+    "hasta": 1300,
+    "largo": 1,
+    "entra": 22.86,
+    "sale": 22.07,
+    "r": 0.9,
+    "motivo": "aislado",
+    "tiempo": 43.333,
+    "tira": "informes/E1/tiras_saltos/wm2_entregado_isla_01300.png"
+   },
+   {
+    "desde": 1454,
+    "hasta": 1455,
+    "largo": 2,
+    "entra": 16.0,
+    "sale": 9.49,
+    "r": 1.667,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 48.467,
+    "tira": "informes/E1/tiras_saltos/wm2_entregado_isla_01454.png"
+   }
+  ],
+  "islas_sin_datos": [
+   {
+    "desde": 215,
+    "hasta": 215,
+    "largo": 1,
+    "entra": 21.27,
+    "sale": 22.16,
+    "r": 0.753,
+    "motivo": "aislado",
+    "tiempo": 7.167
+   },
+   {
+    "desde": 372,
+    "hasta": 372,
+    "largo": 1,
+    "entra": 18.21,
+    "sale": 15.65,
+    "r": 0.972,
+    "motivo": "aislado",
+    "tiempo": 12.4
+   },
+   {
+    "desde": 1300,
+    "hasta": 1300,
+    "largo": 1,
+    "entra": 22.86,
+    "sale": 22.07,
+    "r": 0.9,
+    "motivo": "aislado",
+    "tiempo": 43.333
+   }
+  ],
+  "destellos_sin_datos": [
+   {
+    "desde": 1696,
+    "hasta": 1696,
+    "largo": 1,
+    "entra": 19.83,
+    "sale": 17.89,
+    "tiempo": 56.533
+   }
+  ],
+  "previstos_por_el_validador": [
+   0,
+   215,
+   372,
+   491,
+   492,
+   674,
+   675,
+   776,
+   801,
+   881,
+   882,
+   1193,
+   1300,
+   1454,
+   1455,
+   1560,
+   1561
+  ],
+  "previstos_no_marcados": [
+   0,
+   1560,
+   1561
+  ],
+  "marcados_no_previstos": []
+ },
+ "wr1": {
+  "video": "/home/claude/pruebas/referencias_video/wr1_entregado.mp4",
+  "cuadros": 1479,
+  "islas_con_datos": [
+   {
+    "desde": 223,
+    "hasta": 223,
+    "largo": 1,
+    "entra": 19.84,
+    "sale": 16.71,
+    "r": 0.732,
+    "motivo": "aislado",
+    "tiempo": 7.433,
+    "tira": "informes/E1/tiras_saltos/wr1_entregado_isla_00223.png"
+   },
+   {
+    "desde": 372,
+    "hasta": 372,
+    "largo": 1,
+    "entra": 8.71,
+    "sale": 64.94,
+    "r": 6.63,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 12.4,
+    "tira": "informes/E1/tiras_saltos/wr1_entregado_isla_00372.png"
+   },
+   {
+    "desde": 514,
+    "hasta": 514,
+    "largo": 1,
+    "entra": 23.67,
+    "sale": 62.81,
+    "r": 2.64,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 17.133,
+    "tira": "informes/E1/tiras_saltos/wr1_entregado_isla_00514.png"
+   },
+   {
+    "desde": 749,
+    "hasta": 749,
+    "largo": 1,
+    "entra": 28.59,
+    "sale": 14.82,
+    "r": 1.336,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 24.967,
+    "tira": "informes/E1/tiras_saltos/wr1_entregado_isla_00749.png"
+   },
+   {
+    "desde": 943,
+    "hasta": 943,
+    "largo": 1,
+    "entra": 10.44,
+    "sale": 14.21,
+    "r": 0.923,
+    "motivo": "aislado",
+    "tiempo": 31.433,
+    "tira": "informes/E1/tiras_saltos/wr1_entregado_isla_00943.png"
+   },
+   {
+    "desde": 1216,
+    "hasta": 1217,
+    "largo": 2,
+    "entra": 10.31,
+    "sale": 31.05,
+    "r": 2.276,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 40.533,
+    "tira": "informes/E1/tiras_saltos/wr1_entregado_isla_01216.png"
+   }
+  ],
+  "islas_sin_datos": [
+   {
+    "desde": 223,
+    "hasta": 223,
+    "largo": 1,
+    "entra": 19.84,
+    "sale": 16.71,
+    "r": 0.732,
+    "motivo": "aislado",
+    "tiempo": 7.433
+   },
+   {
+    "desde": 943,
+    "hasta": 943,
+    "largo": 1,
+    "entra": 10.44,
+    "sale": 14.21,
+    "r": 0.923,
+    "motivo": "aislado",
+    "tiempo": 31.433
+   }
+  ],
+  "destellos_sin_datos": [],
+  "previstos_por_el_validador": [
+   0,
+   223,
+   372,
+   514,
+   598,
+   599,
+   749,
+   943,
+   1094,
+   1216,
+   1217
+  ],
+  "previstos_no_marcados": [
+   0,
+   598,
+   599,
+   1094
+  ],
+  "marcados_no_previstos": []
+ },
+ "plano04": {
+  "video": "/home/claude/pruebas/referencias_video/plano04_aprobado.mp4",
+  "cuadros": 150,
+  "islas_con_datos": [],
+  "islas_sin_datos": [],
+  "destellos_sin_datos": [],
+  "previstos_por_el_validador": [],
+  "previstos_no_marcados": [],
+  "marcados_no_previstos": []
+ },
+ "plano05": {
+  "video": "/home/claude/pruebas/referencias_video/plano05_aprobado.mp4",
+  "cuadros": 100,
+  "islas_con_datos": [],
+  "islas_sin_datos": [],
+  "destellos_sin_datos": [],
+  "previstos_por_el_validador": [],
+  "previstos_no_marcados": [],
+  "marcados_no_previstos": []
+ },
+ "plano06": {
+  "video": "/home/claude/pruebas/referencias_video/plano06_aprobado.mp4",
+  "cuadros": 100,
+  "islas_con_datos": [],
+  "islas_sin_datos": [],
+  "destellos_sin_datos": [],
+  "previstos_por_el_validador": [],
+  "previstos_no_marcados": [],
+  "marcados_no_previstos": []
+ },
+ "plano10": {
+  "video": "/home/claude/pruebas/referencias_video/plano10_aprobado.mp4",
+  "cuadros": 158,
+  "islas_con_datos": [],
+  "islas_sin_datos": [],
+  "destellos_sin_datos": [],
+  "previstos_por_el_validador": [],
+  "previstos_no_marcados": [],
+  "marcados_no_previstos": []
+ },
+ "plano10_v2 (caso real)": {
+  "video": "/home/claude/prueba27/p10/plano10_v2.mp4",
+  "cuadros": 158,
+  "islas_con_datos": null,
+  "islas_sin_datos": [
+   {
+    "desde": 58,
+    "hasta": 58,
+    "largo": 1,
+    "entra": 21.51,
+    "sale": 18.15,
+    "r": 0.723,
+    "motivo": "aislado",
+    "tiempo": 2.083
+   }
+  ],
+  "destellos_sin_datos": [],
+  "previstos_por_el_validador": [],
+  "previstos_no_marcados": null,
+  "marcados_no_previstos": null
+ }
+}

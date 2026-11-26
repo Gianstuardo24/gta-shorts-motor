@@ -1,0 +1,29 @@
+✔ corpus wc1/datos_render.json                                319 cuadros ·  127713 llamadas · motor sin resolver 0 · validador 0 · 46 s
+✔ corpus wd2/datos_render.json                                236 cuadros ·   70507 llamadas · motor sin resolver 0 · validador 0 · 34 s
+✔ corpus wge2/datos_render.json                               271 cuadros ·   74856 llamadas · motor sin resolver 0 · validador 0 · 36 s
+✔ corpus wgs1/datos_render.json                               229 cuadros ·   62121 llamadas · motor sin resolver 0 · validador 0 · 33 s
+✔ corpus wk2/datos_render.json                                201 cuadros ·   64158 llamadas · motor sin resolver 0 · validador 0 · 25 s
+✔ corpus wm2/datos_render.json                                312 cuadros ·  126654 llamadas · motor sin resolver 0 · validador 0 · 42 s
+✔ corpus wr1/datos_render.json                                247 cuadros ·   71390 llamadas · motor sin resolver 0 · validador 0 · 36 s
+✔ corpus plano04/datos.json                                   155 cuadros ·    5041 llamadas · motor sin resolver 0 · validador 0 · 171 s
+✔ corpus plano05/datos.json                                   105 cuadros ·    2730 llamadas · motor sin resolver 0 · validador 0 · 20 s
+✔ corpus plano05/datos_control.json                           105 cuadros ·    2730 llamadas · motor sin resolver 0 · validador 0 · 21 s
+✔ corpus plano05/datos_testigo.json                           105 cuadros ·    2730 llamadas · motor sin resolver 0 · validador 0 · 20 s
+✔ corpus plano06/datos.json                                   106 cuadros ·   62466 llamadas · motor sin resolver 0 · validador 0 · 25 s
+✔ corpus plano06/datos_testigo.json                           106 cuadros ·   62466 llamadas · motor sin resolver 0 · validador 0 · 28 s
+✔ corpus plano10/datos.json                                   163 cuadros ·    8021 llamadas · motor sin resolver 0 · validador 0 · 173 s
+✔ caso real · plano 05 v1                                     108 cuadros ·    3240 llamadas · motor sin resolver 2 · validador 2 · 21 s
+✔ mutación · clave mal escrita en utilería                    236 cuadros ·   70507 llamadas · motor sin resolver 1 · validador 1 · 28 s
+✔ mutación · clave inexistente en una pose de actor           236 cuadros ·   70507 llamadas · motor sin resolver 1 · validador 1 · 32 s
+✔ mutación · desplazamiento mal escrito                       236 cuadros ·   70507 llamadas · motor sin resolver 0 · validador 0 · 31 s
+✔ mutación · número escrito como texto                        236 cuadros ·  106547 llamadas · motor sin resolver 1 · validador 1 · 28 s
+✔ mutación · valor booleano                                   236 cuadros ·   70507 llamadas · motor sin resolver 0 · validador 0 · 31 s
+✔ mutación · inicio de escena inexistente                     236 cuadros ·   78595 llamadas · motor sin resolver 1 · validador 1 · 36 s
+✔ mutación · inicio de escena con ±n (el motor no lo acepta)  236 cuadros ·   78595 llamadas · motor sin resolver 1 · validador 1 · 34 s
+✔ mutación · campo de un objeto nuevo (teléfono)              312 cuadros ·  127256 llamadas · motor sin resolver 1 · validador 1 · 37 s
+✔ mutación · tipo de escena antiguo (T directo)               236 cuadros ·   70507 llamadas · motor sin resolver 0 · validador 0 · 32 s
+✔ mutación · p27: recorrido del cursor                        105 cuadros ·    2730 llamadas · motor sin resolver 1 · validador 1 · 25 s
+✔ mutación · p27: desplazamiento mal escrito en el cursor     105 cuadros ·    2730 llamadas · motor sin resolver 1 · validador 1 · 23 s
+✔ mutación · p27: claves densas del desplazamiento            106 cuadros ·   62467 llamadas · motor sin resolver 1 · validador 1 · 28 s
+✔ mutación · p27: zona del plano 10                           163 cuadros ·    8021 llamadas · motor sin resolver 1 · validador 1 · 184 s
+falsos negativos del validador frente al motor: 0

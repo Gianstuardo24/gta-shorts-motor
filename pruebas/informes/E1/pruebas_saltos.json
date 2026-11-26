@@ -1,0 +1,116 @@
+[
+ {
+  "caso": "1 cuadro ajeno en el plano 05",
+  "esperado": "isla",
+  "ok": true,
+  "islas": [
+   {
+    "desde": 50,
+    "hasta": 50,
+    "largo": 1,
+    "entra": 52.35,
+    "sale": 52.4,
+    "r": 0.012,
+    "motivo": "aislado"
+   }
+  ],
+  "destellos": []
+ },
+ {
+  "caso": "1 cuadro ajeno en el plano 10",
+  "esperado": "isla",
+  "ok": true,
+  "islas": [
+   {
+    "desde": 80,
+    "hasta": 80,
+    "largo": 1,
+    "entra": 42.65,
+    "sale": 42.57,
+    "r": 0.008,
+    "motivo": "aislado"
+   }
+  ],
+  "destellos": []
+ },
+ {
+  "caso": "2 cuadros ajenos seguidos (plano 10)",
+  "esperado": "isla",
+  "ok": true,
+  "islas": [
+   {
+    "desde": 80,
+    "hasta": 81,
+    "largo": 2,
+    "entra": 42.65,
+    "sale": 42.5,
+    "r": 0.012,
+    "motivo": "aislado"
+   }
+  ],
+  "destellos": []
+ },
+ {
+  "caso": "cuadro ajeno a medias (mezcla 50 %)",
+  "esperado": "isla",
+  "ok": true,
+  "islas": [
+   {
+    "desde": 80,
+    "hasta": 80,
+    "largo": 1,
+    "entra": 21.29,
+    "sale": 21.21,
+    "r": 0.016,
+    "motivo": "aislado"
+   }
+  ],
+  "destellos": []
+ },
+ {
+  "caso": "cuadro ajeno muy suave (mezcla 15 %)",
+  "esperado": "nada",
+  "ok": true,
+  "islas": [],
+  "destellos": []
+ },
+ {
+  "caso": "cuadro repetido (tirón)",
+  "esperado": "nada",
+  "ok": true,
+  "islas": [],
+  "destellos": []
+ },
+ {
+  "caso": "destello blanco parejo de 1 cuadro (sin datos)",
+  "esperado": "destello",
+  "ok": true,
+  "islas": [],
+  "destellos": [
+   {
+    "desde": 80,
+    "hasta": 80,
+    "largo": 1,
+    "entra": 76.25,
+    "sale": 76.25
+   }
+  ]
+ },
+ {
+  "caso": "cuadro ajeno durante un movimiento rápido (plano 06)",
+  "esperado": "isla",
+  "ok": true,
+  "islas": [
+   {
+    "desde": 30,
+    "hasta": 30,
+    "largo": 1,
+    "entra": 57.07,
+    "sale": 55.49,
+    "r": 0.328,
+    "motivo": "aislado"
+   }
+  ],
+  "destellos": []
+ }
+]
