@@ -356,6 +356,18 @@ for a in ACT:
     for k in a["keys"]: k.pop("_t", None)
     a.pop("_d", None); a.pop("_h", None)
 NZ.sort(key=lambda z: z["k"])
+# 26-nov (prueba, pedido de Tao 14:02): el zoom que fija el encuadre nuevo usa la MISMA clave que el corte de zona y lleva
+# "corte": el motor lo aplica de golpe en el mismo cuadro que la zona. Antes quedaba 25-45 ms despues y en ese hueco se
+# veian 1-2 cuadros con la zona nueva y el encuadre viejo (fondo ajeno).
+for p in e.get("pan", []):
+    tp = res(p.get("k")) if p.get("corte") else None
+    if tp is None: continue
+    sig = [z for z in NZ if -1e-9 <= A0 + z["k"] - tp <= 0.1]
+    if not sig: continue
+    z = min(sig, key=lambda z_: z_["k"])
+    if z["dur"] <= 0.02 and z.get("_kc", p["k"]) == p["k"]: z["_kc"] = p["k"]
+for z in NZ:
+    if "_kc" in z: z["k"] = z.pop("_kc"); z["corte"] = 1
 e["zoom"] = NZ
 json.dump(g, open(fj, "w"), ensure_ascii=False)
 np = len(LOG); dur = FIN - A0

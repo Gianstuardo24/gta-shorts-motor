@@ -1,0 +1,36 @@
+inicio 14:13:54
+== 1 · motor de la rama con los datos actuales, sin la marca (nivel rápido, 11 referencias)
+  plano10      33 cuadros en   31.6 s
+motor e21899c83d819380 · 521 cuadros · 127.7 s
+{"cuadros_comparados": 521, "cuadros_distintos": 0, "identicos": true}
+  wd2       {'cuadros': 55, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  wk2       {'cuadros': 47, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  wc1       {'cuadros': 71, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  wm2       {'cuadros': 70, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  wr1       {'cuadros': 57, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  wge2      {'cuadros': 62, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  wgs1      {'cuadros': 53, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  plano04   {'cuadros': 31, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  plano05   {'cuadros': 21, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  plano06   {'cuadros': 21, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  plano10   {'cuadros': 33, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+== 2 · wgs1 DESPUÉS: todos los cuadros (14:16:02)
+wgs1: 1372 cuadros · distintos de la línea base: 11 · previstos: 11 · coinciden: True · iguales: 1361
+== 3 · wgs1 ANTES alrededor de cada corte (14:19:42)
+wgs1: 148 cuadros del antes · idénticos a la línea base: True
+== 4 · comparación (14:20:08)
+wgs1: hoja de 9 cortes, clip lento de 592 cuadros y video DESPUÉS en /tmp/prueba_corte/wgs1/comparacion
+== 5 · detector sobre el video DESPUÉS (14:20:49)
+/tmp/prueba_corte/wgs1/comparacion/wgs1_despues_prueba.mp4: 1370 cuadros · 0 islas · 33 cortes (11 sin explicar) · OK
+   · cambio brusco sin corte en los datos: cuadro 4 (0.133 s) · cambio 15.96 (informativo)
+   · cambio brusco sin corte en los datos: cuadro 5 (0.167 s) · cambio 12.75 (informativo)
+   · cambio brusco sin corte en los datos: cuadro 6 (0.200 s) · cambio 8.94 (informativo)
+   · cambio brusco sin corte en los datos: cuadro 376 (12.533 s) · cambio 8.15 (informativo)
+   · cambio brusco sin corte en los datos: cuadro 473 (15.767 s) · cambio 10.52 (informativo)
+   · cambio brusco sin corte en los datos: cuadro 474 (15.800 s) · cambio 11.66 (informativo)
+   · cambio brusco sin corte en los datos: cuadro 619 (20.633 s) · cambio 9.73 (informativo)
+   · cambio brusco sin corte en los datos: cuadro 1021 (34.033 s) · cambio 10.27 (informativo)
+   · cambio brusco sin corte en los datos: cuadro 1022 (34.067 s) · cambio 9.67 (informativo)
+   · cambio brusco sin corte en los datos: cuadro 1140 (38.000 s) · cambio 13.78 (informativo)
+   · cambio brusco sin corte en los datos: cuadro 1144 (38.133 s) · cambio 24.82 (informativo)
+== FIN 14:20:56

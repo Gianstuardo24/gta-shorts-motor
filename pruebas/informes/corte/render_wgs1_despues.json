@@ -1,0 +1,33 @@
+{
+ "slot": "wgs1",
+ "cuadros": 1372,
+ "distintos_de_la_linea_base": [
+  1,
+  227,
+  228,
+  373,
+  470,
+  471,
+  616,
+  673,
+  740,
+  894,
+  1018
+ ],
+ "previstos": [
+  1,
+  227,
+  228,
+  373,
+  470,
+  471,
+  616,
+  673,
+  740,
+  894,
+  1018
+ ],
+ "coinciden": true,
+ "motor_despues": "e21899c83d81938063930d897ba8988de63acaa8a518bb9de005354d34dfab08",
+ "motor_linea_base": "725e0dba158579ef2c670393d980c3dcfb5ff4bf98a360630699f55d59861fb9"
+}

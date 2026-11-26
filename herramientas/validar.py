@@ -60,7 +60,7 @@ def cuadros_mezclados(e, a, T, t0=0.0, fps=30.0):
         malos = []
         while t0 + n / fps < fin - 1e-9:
             t = t0 + n / fps
-            q = min(1.0, max(0.0, (t - tz) / dz))
+            q = (1.0 if t >= tz else 0.0) if z.get("corte") else min(1.0, max(0.0, (t - tz) / dz))   # zoom con corte: de golpe
             paneo = tp is None or t >= tp
             if (0 < q < 1) or (paneo != (q >= 1)):
                 malos.append(n)

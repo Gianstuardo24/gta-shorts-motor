@@ -1,0 +1,1168 @@
+{
+ "wd2": {
+  "antes_igual_a_lo_entregado": true,
+  "antes_igual_a_datos_del_motor": true,
+  "planos_log_igual": true,
+  "todo_lo_demas_igual": true,
+  "zooms_cambiados": 9,
+  "solo_clave_y_marca": true,
+  "cambios": [
+   {
+    "antes": 0.035,
+    "despues": 0.01,
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 6.701,
+    "despues": "s_1",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 9.821,
+    "despues": "s_2",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 14.931,
+    "despues": "s_3",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 18.541,
+    "despues": "s_4",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 23.781,
+    "despues": "s_5",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 27.821,
+    "despues": "s_6",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 32.201,
+    "despues": "s_7",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 37.221,
+    "despues": "s_8",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   }
+  ],
+  "intermedios_antes": {
+   "grupos": 9,
+   "cuadros": 11,
+   "detalle": [
+    {
+     "zoom_k": 0.035,
+     "zoom": 0.035,
+     "paneo": 0.01,
+     "cuadros": [
+      1
+     ]
+    },
+    {
+     "zoom_k": 6.701,
+     "zoom": 6.701,
+     "paneo": 6.656,
+     "cuadros": [
+      200,
+      201
+     ]
+    },
+    {
+     "zoom_k": 9.821,
+     "zoom": 9.821,
+     "paneo": 9.776,
+     "cuadros": [
+      294
+     ]
+    },
+    {
+     "zoom_k": 14.931,
+     "zoom": 14.931,
+     "paneo": 14.906,
+     "cuadros": [
+      448
+     ]
+    },
+    {
+     "zoom_k": 18.541,
+     "zoom": 18.541,
+     "paneo": 18.516,
+     "cuadros": [
+      556
+     ]
+    },
+    {
+     "zoom_k": 23.781,
+     "zoom": 23.781,
+     "paneo": 23.736,
+     "cuadros": [
+      713
+     ]
+    },
+    {
+     "zoom_k": 27.821,
+     "zoom": 27.821,
+     "paneo": 27.796,
+     "cuadros": [
+      834
+     ]
+    },
+    {
+     "zoom_k": 32.201,
+     "zoom": 32.201,
+     "paneo": 32.156,
+     "cuadros": [
+      965,
+      966
+     ]
+    },
+    {
+     "zoom_k": 37.221,
+     "zoom": 37.221,
+     "paneo": 37.176,
+     "cuadros": [
+      1116
+     ]
+    }
+   ]
+  },
+  "intermedios_despues": {
+   "grupos": 0,
+   "cuadros": 0,
+   "detalle": []
+  }
+ },
+ "wk2": {
+  "antes_igual_a_lo_entregado": true,
+  "antes_igual_a_datos_del_motor": true,
+  "planos_log_igual": true,
+  "todo_lo_demas_igual": true,
+  "zooms_cambiados": 9,
+  "solo_clave_y_marca": true,
+  "cambios": [
+   {
+    "antes": 6.271,
+    "despues": "s_1",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 8.121,
+    "despues": "s_2",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 12.871,
+    "despues": "s_3",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 15.291,
+    "despues": "s_4",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 17.711,
+    "despues": "s_5",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 19.641,
+    "despues": "s_6",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 24.201,
+    "despues": "s_7",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 26.661,
+    "despues": "s_8",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 30.601,
+    "despues": "s_9",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   }
+  ],
+  "intermedios_antes": {
+   "grupos": 10,
+   "cuadros": 15,
+   "detalle": [
+    {
+     "zoom_k": 0.0,
+     "zoom": 0.0,
+     "paneo": null,
+     "cuadros": [
+      0
+     ]
+    },
+    {
+     "zoom_k": 6.271,
+     "zoom": 6.271,
+     "paneo": 6.246,
+     "cuadros": [
+      188
+     ]
+    },
+    {
+     "zoom_k": 8.121,
+     "zoom": 8.121,
+     "paneo": 8.076,
+     "cuadros": [
+      243
+     ]
+    },
+    {
+     "zoom_k": 12.871,
+     "zoom": 12.871,
+     "paneo": 12.826,
+     "cuadros": [
+      385,
+      386
+     ]
+    },
+    {
+     "zoom_k": 15.291,
+     "zoom": 15.291,
+     "paneo": 15.246,
+     "cuadros": [
+      458,
+      459
+     ]
+    },
+    {
+     "zoom_k": 17.711,
+     "zoom": 17.711,
+     "paneo": 17.686,
+     "cuadros": [
+      531
+     ]
+    },
+    {
+     "zoom_k": 19.641,
+     "zoom": 19.641,
+     "paneo": 19.616,
+     "cuadros": [
+      589
+     ]
+    },
+    {
+     "zoom_k": 24.201,
+     "zoom": 24.201,
+     "paneo": 24.156,
+     "cuadros": [
+      725,
+      726
+     ]
+    },
+    {
+     "zoom_k": 26.661,
+     "zoom": 26.661,
+     "paneo": 26.616,
+     "cuadros": [
+      799,
+      800
+     ]
+    },
+    {
+     "zoom_k": 30.601,
+     "zoom": 30.601,
+     "paneo": 30.556,
+     "cuadros": [
+      917,
+      918
+     ]
+    }
+   ]
+  },
+  "intermedios_despues": {
+   "grupos": 1,
+   "cuadros": 1,
+   "detalle": [
+    {
+     "zoom_k": 0.0,
+     "zoom": 0.0,
+     "paneo": null,
+     "cuadros": [
+      0
+     ]
+    }
+   ]
+  }
+ },
+ "wc1": {
+  "antes_igual_a_lo_entregado": true,
+  "antes_igual_a_datos_del_motor": true,
+  "planos_log_igual": true,
+  "todo_lo_demas_igual": true,
+  "zooms_cambiados": 11,
+  "solo_clave_y_marca": true,
+  "cambios": [
+   {
+    "antes": 6.251,
+    "despues": "s_1",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 9.511,
+    "despues": "s_2",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 12.481,
+    "despues": "s_3",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 16.941,
+    "despues": "s_4",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 23.091,
+    "despues": "s_5",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 31.051,
+    "despues": "s_6",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 35.701,
+    "despues": "s_7",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 39.811,
+    "despues": "s_8",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 44.221,
+    "despues": "s_9",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 49.491,
+    "despues": "s_10",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 55.211,
+    "despues": "s_11",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   }
+  ],
+  "intermedios_antes": {
+   "grupos": 12,
+   "cuadros": 16,
+   "detalle": [
+    {
+     "zoom_k": 0.0,
+     "zoom": 0.0,
+     "paneo": null,
+     "cuadros": [
+      0
+     ]
+    },
+    {
+     "zoom_k": 6.251,
+     "zoom": 6.251,
+     "paneo": 6.206,
+     "cuadros": [
+      187
+     ]
+    },
+    {
+     "zoom_k": 9.511,
+     "zoom": 9.511,
+     "paneo": 9.466,
+     "cuadros": [
+      284,
+      285
+     ]
+    },
+    {
+     "zoom_k": 12.481,
+     "zoom": 12.481,
+     "paneo": 12.456,
+     "cuadros": [
+      374
+     ]
+    },
+    {
+     "zoom_k": 16.941,
+     "zoom": 16.941,
+     "paneo": 16.916,
+     "cuadros": [
+      508
+     ]
+    },
+    {
+     "zoom_k": 23.091,
+     "zoom": 23.091,
+     "paneo": 23.066,
+     "cuadros": [
+      692,
+      693
+     ]
+    },
+    {
+     "zoom_k": 31.051,
+     "zoom": 31.051,
+     "paneo": 31.006,
+     "cuadros": [
+      931
+     ]
+    },
+    {
+     "zoom_k": 35.701,
+     "zoom": 35.701,
+     "paneo": 35.676,
+     "cuadros": [
+      1071
+     ]
+    },
+    {
+     "zoom_k": 39.811,
+     "zoom": 39.811,
+     "paneo": 39.786,
+     "cuadros": [
+      1194
+     ]
+    },
+    {
+     "zoom_k": 44.221,
+     "zoom": 44.221,
+     "paneo": 44.176,
+     "cuadros": [
+      1326
+     ]
+    },
+    {
+     "zoom_k": 49.491,
+     "zoom": 49.491,
+     "paneo": 49.466,
+     "cuadros": [
+      1484,
+      1485
+     ]
+    },
+    {
+     "zoom_k": 55.211,
+     "zoom": 55.211,
+     "paneo": 55.166,
+     "cuadros": [
+      1655,
+      1656
+     ]
+    }
+   ]
+  },
+  "intermedios_despues": {
+   "grupos": 1,
+   "cuadros": 1,
+   "detalle": [
+    {
+     "zoom_k": 0.0,
+     "zoom": 0.0,
+     "paneo": null,
+     "cuadros": [
+      0
+     ]
+    }
+   ]
+  }
+ },
+ "wm2": {
+  "antes_igual_a_lo_entregado": true,
+  "antes_igual_a_datos_del_motor": true,
+  "planos_log_igual": true,
+  "todo_lo_demas_igual": true,
+  "zooms_cambiados": 11,
+  "solo_clave_y_marca": true,
+  "cambios": [
+   {
+    "antes": 7.171,
+    "despues": "s_1",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 12.421,
+    "despues": "s_2",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 16.411,
+    "despues": "s_3",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 22.501,
+    "despues": "s_4",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 25.864,
+    "despues": "flat",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 26.711,
+    "despues": "s_5",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 29.391,
+    "despues": "s_6",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 39.781,
+    "despues": "s_7",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 43.351,
+    "despues": "s_8",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 48.491,
+    "despues": "s_9",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 52.041,
+    "despues": "s_10",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   }
+  ],
+  "intermedios_antes": {
+   "grupos": 12,
+   "cuadros": 17,
+   "detalle": [
+    {
+     "zoom_k": 0.0,
+     "zoom": 0.0,
+     "paneo": null,
+     "cuadros": [
+      0
+     ]
+    },
+    {
+     "zoom_k": 7.171,
+     "zoom": 7.171,
+     "paneo": 7.146,
+     "cuadros": [
+      215
+     ]
+    },
+    {
+     "zoom_k": 12.421,
+     "zoom": 12.421,
+     "paneo": 12.396,
+     "cuadros": [
+      372
+     ]
+    },
+    {
+     "zoom_k": 16.411,
+     "zoom": 16.411,
+     "paneo": 16.366,
+     "cuadros": [
+      491,
+      492
+     ]
+    },
+    {
+     "zoom_k": 22.501,
+     "zoom": 22.501,
+     "paneo": 22.456,
+     "cuadros": [
+      674,
+      675
+     ]
+    },
+    {
+     "zoom_k": 25.864,
+     "zoom": 25.864,
+     "paneo": 25.839,
+     "cuadros": [
+      776
+     ]
+    },
+    {
+     "zoom_k": 26.711,
+     "zoom": 26.711,
+     "paneo": 26.686,
+     "cuadros": [
+      801
+     ]
+    },
+    {
+     "zoom_k": 29.391,
+     "zoom": 29.391,
+     "paneo": 29.346,
+     "cuadros": [
+      881,
+      882
+     ]
+    },
+    {
+     "zoom_k": 39.781,
+     "zoom": 39.781,
+     "paneo": 39.736,
+     "cuadros": [
+      1193
+     ]
+    },
+    {
+     "zoom_k": 43.351,
+     "zoom": 43.351,
+     "paneo": 43.326,
+     "cuadros": [
+      1300
+     ]
+    },
+    {
+     "zoom_k": 48.491,
+     "zoom": 48.491,
+     "paneo": 48.446,
+     "cuadros": [
+      1454,
+      1455
+     ]
+    },
+    {
+     "zoom_k": 52.041,
+     "zoom": 52.041,
+     "paneo": 51.996,
+     "cuadros": [
+      1560,
+      1561
+     ]
+    }
+   ]
+  },
+  "intermedios_despues": {
+   "grupos": 1,
+   "cuadros": 1,
+   "detalle": [
+    {
+     "zoom_k": 0.0,
+     "zoom": 0.0,
+     "paneo": null,
+     "cuadros": [
+      0
+     ]
+    }
+   ]
+  }
+ },
+ "wr1": {
+  "antes_igual_a_lo_entregado": true,
+  "antes_igual_a_datos_del_motor": true,
+  "planos_log_igual": true,
+  "todo_lo_demas_igual": true,
+  "zooms_cambiados": 8,
+  "solo_clave_y_marca": true,
+  "cambios": [
+   {
+    "antes": 7.451,
+    "despues": "s_1",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 12.411,
+    "despues": "s_2",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 17.151,
+    "despues": "s_3",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 19.971,
+    "despues": "s_4",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 24.981,
+    "despues": "s_5",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 31.431,
+    "despues": "s_6",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 36.471,
+    "despues": "s_7",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 40.561,
+    "despues": "s_8",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   }
+  ],
+  "intermedios_antes": {
+   "grupos": 9,
+   "cuadros": 11,
+   "detalle": [
+    {
+     "zoom_k": 0.0,
+     "zoom": 0.0,
+     "paneo": null,
+     "cuadros": [
+      0
+     ]
+    },
+    {
+     "zoom_k": 7.451,
+     "zoom": 7.451,
+     "paneo": 7.426,
+     "cuadros": [
+      223
+     ]
+    },
+    {
+     "zoom_k": 12.411,
+     "zoom": 12.411,
+     "paneo": 12.386,
+     "cuadros": [
+      372
+     ]
+    },
+    {
+     "zoom_k": 17.151,
+     "zoom": 17.151,
+     "paneo": 17.106,
+     "cuadros": [
+      514
+     ]
+    },
+    {
+     "zoom_k": 19.971,
+     "zoom": 19.971,
+     "paneo": 19.926,
+     "cuadros": [
+      598,
+      599
+     ]
+    },
+    {
+     "zoom_k": 24.981,
+     "zoom": 24.981,
+     "paneo": 24.956,
+     "cuadros": [
+      749
+     ]
+    },
+    {
+     "zoom_k": 31.431,
+     "zoom": 31.431,
+     "paneo": 31.406,
+     "cuadros": [
+      943
+     ]
+    },
+    {
+     "zoom_k": 36.471,
+     "zoom": 36.471,
+     "paneo": 36.446,
+     "cuadros": [
+      1094
+     ]
+    },
+    {
+     "zoom_k": 40.561,
+     "zoom": 40.561,
+     "paneo": 40.516,
+     "cuadros": [
+      1216,
+      1217
+     ]
+    }
+   ]
+  },
+  "intermedios_despues": {
+   "grupos": 1,
+   "cuadros": 1,
+   "detalle": [
+    {
+     "zoom_k": 0.0,
+     "zoom": 0.0,
+     "paneo": null,
+     "cuadros": [
+      0
+     ]
+    }
+   ]
+  }
+ },
+ "wge2": {
+  "antes_igual_a_lo_entregado": true,
+  "antes_igual_a_datos_del_motor": true,
+  "planos_log_igual": true,
+  "todo_lo_demas_igual": true,
+  "zooms_cambiados": 8,
+  "solo_clave_y_marca": true,
+  "cambios": [
+   {
+    "antes": 6.661,
+    "despues": "s_1",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 9.611,
+    "despues": "s_2",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 13.551,
+    "despues": "s_3",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 18.311,
+    "despues": "s_4",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 24.901,
+    "despues": "s_5",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 30.731,
+    "despues": "s_6",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 34.501,
+    "despues": "s_7",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 39.671,
+    "despues": "s_8",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   }
+  ],
+  "intermedios_antes": {
+   "grupos": 9,
+   "cuadros": 13,
+   "detalle": [
+    {
+     "zoom_k": 0.0,
+     "zoom": 0.0,
+     "paneo": null,
+     "cuadros": [
+      0
+     ]
+    },
+    {
+     "zoom_k": 6.661,
+     "zoom": 6.661,
+     "paneo": 6.636,
+     "cuadros": [
+      200
+     ]
+    },
+    {
+     "zoom_k": 9.611,
+     "zoom": 9.611,
+     "paneo": 9.566,
+     "cuadros": [
+      287,
+      288
+     ]
+    },
+    {
+     "zoom_k": 13.551,
+     "zoom": 13.551,
+     "paneo": 13.526,
+     "cuadros": [
+      406
+     ]
+    },
+    {
+     "zoom_k": 18.311,
+     "zoom": 18.311,
+     "paneo": 18.266,
+     "cuadros": [
+      548,
+      549
+     ]
+    },
+    {
+     "zoom_k": 24.901,
+     "zoom": 24.901,
+     "paneo": 24.876,
+     "cuadros": [
+      747
+     ]
+    },
+    {
+     "zoom_k": 30.731,
+     "zoom": 30.731,
+     "paneo": 30.686,
+     "cuadros": [
+      921,
+      922
+     ]
+    },
+    {
+     "zoom_k": 34.501,
+     "zoom": 34.501,
+     "paneo": 34.456,
+     "cuadros": [
+      1034,
+      1035
+     ]
+    },
+    {
+     "zoom_k": 39.671,
+     "zoom": 39.671,
+     "paneo": 39.646,
+     "cuadros": [
+      1190
+     ]
+    }
+   ]
+  },
+  "intermedios_despues": {
+   "grupos": 1,
+   "cuadros": 1,
+   "detalle": [
+    {
+     "zoom_k": 0.0,
+     "zoom": 0.0,
+     "paneo": null,
+     "cuadros": [
+      0
+     ]
+    }
+   ]
+  }
+ },
+ "wgs1": {
+  "antes_igual_a_lo_entregado": true,
+  "antes_igual_a_datos_del_motor": true,
+  "planos_log_igual": true,
+  "todo_lo_demas_igual": true,
+  "zooms_cambiados": 9,
+  "solo_clave_y_marca": true,
+  "cambios": [
+   {
+    "antes": 0.035,
+    "despues": 0.01,
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 7.611,
+    "despues": "s_1",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 12.431,
+    "despues": "s_2",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 15.711,
+    "despues": "s_3",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 20.551,
+    "despues": "s_4",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 22.446,
+    "despues": "s_5",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 24.686,
+    "despues": "s_6",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 29.806,
+    "despues": "s_7",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   },
+   {
+    "antes": 33.946,
+    "despues": "s_8",
+    "corte": 1,
+    "solo_clave_y_marca": true
+   }
+  ],
+  "intermedios_antes": {
+   "grupos": 9,
+   "cuadros": 11,
+   "detalle": [
+    {
+     "zoom_k": 0.035,
+     "zoom": 0.035,
+     "paneo": 0.01,
+     "cuadros": [
+      1
+     ]
+    },
+    {
+     "zoom_k": 7.611,
+     "zoom": 7.611,
+     "paneo": 7.566,
+     "cuadros": [
+      227,
+      228
+     ]
+    },
+    {
+     "zoom_k": 12.431,
+     "zoom": 12.431,
+     "paneo": 12.406,
+     "cuadros": [
+      373
+     ]
+    },
+    {
+     "zoom_k": 15.711,
+     "zoom": 15.711,
+     "paneo": 15.666,
+     "cuadros": [
+      470,
+      471
+     ]
+    },
+    {
+     "zoom_k": 20.551,
+     "zoom": 20.551,
+     "paneo": 20.506,
+     "cuadros": [
+      616
+     ]
+    },
+    {
+     "zoom_k": 22.446,
+     "zoom": 22.446,
+     "paneo": 22.401,
+     "cuadros": [
+      673
+     ]
+    },
+    {
+     "zoom_k": 24.686,
+     "zoom": 24.686,
+     "paneo": 24.661,
+     "cuadros": [
+      740
+     ]
+    },
+    {
+     "zoom_k": 29.806,
+     "zoom": 29.806,
+     "paneo": 29.781,
+     "cuadros": [
+      894
+     ]
+    },
+    {
+     "zoom_k": 33.946,
+     "zoom": 33.946,
+     "paneo": 33.921,
+     "cuadros": [
+      1018
+     ]
+    }
+   ]
+  },
+  "intermedios_despues": {
+   "grupos": 0,
+   "cuadros": 0,
+   "detalle": []
+  }
+ }
+}
