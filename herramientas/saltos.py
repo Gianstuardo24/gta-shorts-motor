@@ -133,14 +133,20 @@ def analizar(video, datos=None, t0=0.0, salida=None):
                 i, j = c["cuadros"][0], c["cuadros"][-1]
                 if i < 1 or j + 1 >= len(fr):
                     continue
-                entra, sale = float(d[i - 1]), float(d[j])
-                if entra > UMBRAL and sale > UMBRAL:
-                    if not any(k in ya for k in range(i, j + 1)):
-                        isl.append({"desde": i, "hasta": j, "largo": j - i + 1, "entra": round(entra, 2), "sale": round(sale, 2),
-                                    "r": round(dif(fr[i - 1], fr[j + 1]) / min(entra, sale), 3),
+                # el grupo previsto (o una parte de 1 o 2 cuadros) se ve si entra y sale con un cambio brusco
+                vis = None
+                for p_, q_ in sorted({(x, y) for x in range(i, j + 1) for y in range(x, min(x + 1, j) + 1)}, key=lambda z: z[0] - z[1]):
+                    entra, sale = float(d[p_ - 1]), float(d[q_])
+                    if entra > UMBRAL and sale > UMBRAL:
+                        vis = (p_, q_, entra, sale); break
+                if vis:
+                    p_, q_, entra, sale = vis
+                    if not any(k in ya for k in range(p_, q_ + 1)):
+                        isl.append({"desde": p_, "hasta": q_, "largo": q_ - p_ + 1, "entra": round(entra, 2), "sale": round(sale, 2),
+                                    "r": round(dif(fr[p_ - 1], fr[q_ + 1]) / min(entra, sale), 3),
                                     "motivo": "intermedio en un corte (previsto por los datos)"})
                 else:
-                    previstos_no_visibles.append({"desde": i, "hasta": j, "entra": round(entra, 2), "sale": round(sale, 2)})
+                    previstos_no_visibles.append({"desde": i, "hasta": j, "entra": round(float(d[i - 1]), 2), "sale": round(float(d[j]), 2)})
         isl.sort(key=lambda x: x["desde"])
     en_isla = {k for x in isl for k in range(x["desde"], x["hasta"] + 2)}
     cortes = []

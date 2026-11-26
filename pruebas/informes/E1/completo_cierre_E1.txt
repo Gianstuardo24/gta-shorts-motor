@@ -1,0 +1,24 @@
+  wd2        1413 cuadros en  209.4 s
+  wk2        1203 cuadros en  170.2 s
+  wc1        1908 cuadros en  281.4 s
+  wm2        1869 cuadros en  253.6 s
+  wr1        1479 cuadros en  220.7 s
+  wge2       1624 cuadros en  225.9 s
+  wgs1       1372 cuadros en  192.9 s
+  plano04     150 cuadros en  154.1 s
+  plano05     100 cuadros en   19.8 s
+  plano06     100 cuadros en   24.5 s
+  plano10     158 cuadros en  159.0 s
+motor 725e0dba158579ef · 11376 cuadros · 1916.0 s
+{"cuadros_comparados": 11376, "cuadros_distintos": 0, "identicos": true}
+  wd2       {'cuadros': 1413, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  wk2       {'cuadros': 1203, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  wc1       {'cuadros': 1908, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  wm2       {'cuadros': 1869, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  wr1       {'cuadros': 1479, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  wge2      {'cuadros': 1624, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  wgs1      {'cuadros': 1372, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  plano04   {'cuadros': 150, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  plano05   {'cuadros': 100, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  plano06   {'cuadros': 100, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}
+  plano10   {'cuadros': 158, 'distintos': 0, 'primeros': [], 'sin_comparar': 0}

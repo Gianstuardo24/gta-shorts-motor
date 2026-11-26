@@ -26,6 +26,17 @@
     "tira": "informes/E1/tiras_saltos/wc1_entregado_isla_00508.png"
    },
    {
+    "desde": 692,
+    "hasta": 692,
+    "largo": 1,
+    "entra": 17.59,
+    "sale": 14.49,
+    "r": 1.292,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 23.067,
+    "tira": "informes/E1/tiras_saltos/wc1_entregado_isla_00692.png"
+   },
+   {
     "desde": 931,
     "hasta": 931,
     "largo": 1,
@@ -147,7 +158,6 @@
    187,
    284,
    285,
-   692,
    693
   ],
   "marcados_no_previstos": []
@@ -514,6 +524,28 @@
     "tira": "informes/E1/tiras_saltos/wk2_entregado_isla_00243.png"
    },
    {
+    "desde": 386,
+    "hasta": 386,
+    "largo": 1,
+    "entra": 9.06,
+    "sale": 23.89,
+    "r": 2.342,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 12.867,
+    "tira": "informes/E1/tiras_saltos/wk2_entregado_isla_00386.png"
+   },
+   {
+    "desde": 459,
+    "hasta": 459,
+    "largo": 1,
+    "entra": 22.67,
+    "sale": 16.74,
+    "r": 1.821,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 15.3,
+    "tira": "informes/E1/tiras_saltos/wk2_entregado_isla_00459.png"
+   },
+   {
     "desde": 531,
     "hasta": 531,
     "largo": 1,
@@ -545,6 +577,17 @@
     "motivo": "aislado",
     "tiempo": 24.167,
     "tira": "informes/E1/tiras_saltos/wk2_entregado_isla_00725.png"
+   },
+   {
+    "desde": 800,
+    "hasta": 800,
+    "largo": 1,
+    "entra": 50.99,
+    "sale": 13.77,
+    "r": 3.926,
+    "motivo": "intermedio en un corte (previsto por los datos)",
+    "tiempo": 26.667,
+    "tira": "informes/E1/tiras_saltos/wk2_entregado_isla_00800.png"
    }
   ],
   "islas_sin_datos": [
@@ -609,11 +652,8 @@
   "previstos_no_marcados": [
    0,
    385,
-   386,
    458,
-   459,
    799,
-   800,
    917,
    918
   ],

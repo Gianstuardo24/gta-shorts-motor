@@ -1,0 +1,53 @@
+{
+ "scripts": {
+  "resolver.py": "6c4c040c31ca9b922fcbdff64d049d10cd5a483b43d001945e3a89e60ab85423",
+  "post.py": "3a10cd3bf8d9dff3993bbb553e757d087d92af98c82a21b665015354ebe273e1",
+  "planos_shorts.py": "a896232e50720fc3e14ec98422a4fc8657d35600337b531dc2ffd2daaaf3ecd0"
+ },
+ "etiqueta_datos": "estado-inicial-2026-11-26",
+ "items": {
+  "wd2": {
+   "datos_slot_sha256": "87d2dfa9d3a0124baedbf0ae96a968a800ad71d73c7c5ef53f0b996884da9f7b",
+   "guion_final": true,
+   "planos_log": true,
+   "identico": true
+  },
+  "wk2": {
+   "datos_slot_sha256": "00f84f309f1bed506ef60d2a64be6dcb31287ba7f81b2014958acfcdb4a432de",
+   "guion_final": true,
+   "planos_log": true,
+   "identico": true
+  },
+  "wc1": {
+   "datos_slot_sha256": "80ffed2b4bf3e42e3c7d1ea15cc01ae5217b17c6897a16a991149d8e4aa4ed67",
+   "guion_final": true,
+   "planos_log": true,
+   "identico": true
+  },
+  "wm2": {
+   "datos_slot_sha256": "0e1128ae5870cf4fe8db4c9a0e7b8d372b85948e2cc7e67c5d16318f3088defe",
+   "guion_final": true,
+   "planos_log": true,
+   "identico": true
+  },
+  "wr1": {
+   "datos_slot_sha256": "b2b876a6cde3edea628fc8b60bc9d7c1c699fab7371c139800cba0d81d5d1a83",
+   "guion_final": true,
+   "planos_log": true,
+   "identico": true
+  },
+  "wge2": {
+   "datos_slot_sha256": "2283007713678f057d297a75858bef7654a560ef25e2cf1bc0729529a9b0c180",
+   "guion_final": true,
+   "planos_log": true,
+   "identico": true
+  },
+  "wgs1": {
+   "datos_slot_sha256": "f142c4ed2a2511ba1a61a7ec6d8e15f00e863b02cf28162b805dc735bacab44c",
+   "guion_final": true,
+   "planos_log": true,
+   "identico": true
+  }
+ },
+ "identicos": true
+}
