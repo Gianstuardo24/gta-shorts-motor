@@ -38,7 +38,7 @@ def inicio_escena(e, T):
                   f'exacto (sin ±n ni números); con esto la escena no se dibuja bien')
 
 
-def cuadros_mezclados(e, a, T, t0=0.0, fps=30.0):
+def cuadros_mezclados(e, a, T, t0=0.0, fps=30.0, perfil=False):
     """Cortes de cámara (zoom con dur ≤ 0,02) y de zona (pan con corte) del motor, cuadro a cuadro.
     El paneo con corte cambia de golpe (t ≥ clave); el zoom de corte pasa de un encuadre al otro en dur segundos.
     Un cuadro donde el paneo ya cambió y el zoom todavía no (o el zoom está a mitad de camino) mira un lugar que
@@ -60,7 +60,8 @@ def cuadros_mezclados(e, a, T, t0=0.0, fps=30.0):
         malos = []
         while t0 + n / fps < fin - 1e-9:
             t = t0 + n / fps
-            q = (1.0 if t >= tz else 0.0) if z.get("corte") else min(1.0, max(0.0, (t - tz) / dz))   # zoom con corte: de golpe
+            de_golpe = z.get("corte") or (perfil and dz <= 0.02)   # con perfil de fondos (27i), un zoom instantáneo rige desde su cuadro
+            q = (1.0 if t >= tz else 0.0) if de_golpe else min(1.0, max(0.0, (t - tz) / dz))   # zoom con corte: de golpe
             paneo = tp is None or t >= tp
             if (0 < q < 1) or (paneo != (q >= 1)):
                 malos.append(n)
@@ -69,6 +70,59 @@ def cuadros_mezclados(e, a, T, t0=0.0, fps=30.0):
             out.append({"zoom_k": z.get("k"), "zoom": round(tz, 3), "paneo": None if tp is None else round(tp, 3),
                         "cuadros": malos})
     return out
+
+
+TRANS = {"inicio", "corte", "fundido", "negro", "paneo"}
+
+
+def perfil_de_datos(d):
+    """Perfil de fondos: arriba (DATOS.fondos) o dentro de una escena, como lo toma el motor (27i bloque 3)."""
+    return d.get("fondos") or next((e.get("fondos") for e in d.get("escenas") or [] if isinstance(e, dict) and e.get("fondos")), None)
+
+
+def revisar_planos_v2(d, esc, a_s, T, h):
+    """27i bloque 3: campos de cada plano y perfil de fondos. Solo con perfil (datos v2); sin perfil no revisa nada."""
+    perfil = perfil_de_datos(d)
+    if not perfil:
+        return
+    for c, ok in (("inicio", {"escena"}), ("cierre", {"base"}), ("escenas", {"solo_si_la_piden", "nunca"}),
+                  ("transicion", TRANS - {"inicio"})):
+        if perfil.get(c) not in ok:
+            h("error", f"fondos.{c}", perfil.get(c), f"valor no válido en el perfil de fondos (se espera {sorted(ok)})")
+    for i, e in enumerate(esc):
+        if e.get("tipo") != "pelicula":
+            continue
+        a = a_s[i] if a_s[i] is not None else 0.0
+        ZS = e.get("zonas") or []; x0s = {z.get("x0") for z in ZS}
+        for j, z in enumerate(ZS):
+            r = f"escenas[{i}].zonas[{j}]"; tr, ent, st = z.get("transicion"), z.get("entorno"), z.get("set")
+            if tr is not None and tr not in TRANS:
+                h("error", r + ".transicion", tr, f"transición desconocida (se espera {sorted(TRANS)})")
+            if ent is not None and not (ent == st or (ent == "vitrina" and st == "vitrinaV") or (ent == "base" and st == "baseCanal")):
+                h("error", r + ".entorno", ent, f"el plano declara el entorno '{ent}' y dibuja el set '{st}'")
+            if ent == "base" and perfil.get("escenas") != "solo_si_la_piden":
+                h("error", r + ".entorno", ent, "el perfil del canal no permite que un plano pida el fondo base")
+            for c, ok in (("camara", {"respira", "fija"}), ("acabado", {"pro", "ninguno"})):
+                if c in z and z[c] not in ok:
+                    h("error", f"{r}.{c}", z[c], f"valor no válido (se espera {sorted(ok)})")
+            if tr == "fundido" and z.get("previa") not in x0s:
+                h("error", r + ".previa", z.get("previa"), "fundido sin plano anterior: el entorno se fundiría sobre nada (hueco)")
+            if tr in ("fundido", "negro") and z.get("k") is None:
+                h("error", r + ".k", None, f"la transición '{tr}' necesita la clave de entrada del plano")
+            if tr == "paneo" and any(p.get("corte") and z.get("x0", 0) <= p.get("x", -1) < z.get("x1", 0) for p in e.get("pan") or []):
+                h("error", r + ".transicion", tr, "el plano declara paneo, pero la cámara llega con un corte")
+        cortes = collections.defaultdict(set)
+        for p in e.get("pan") or []:
+            if p.get("efecto") not in (None, "ninguno", "oscurece"):
+                h("error", f"escenas[{i}].pan.efecto", p.get("efecto"), "efecto de corte no válido (ninguno u oscurece)")
+            if p.get("corte"):
+                t = C.tk(p.get("k"), a, T)
+                if t == t:
+                    cortes[round(t, 3)].add(p.get("x"))
+        for t, xs in sorted(cortes.items()):
+            if len(xs) > 1:
+                h("error", f"escenas[{i}].pan", sorted(xs), f"dos cortes de cámara a los {t:.3f} s hacia lugares distintos: "
+                  "el plano que se ve depende del orden de la lista (clave repetida)", t)
 
 
 def validar_datos(d, nombre="", t0=0.0):
@@ -136,7 +190,7 @@ def validar_datos(d, nombre="", t0=0.0):
             if m:
                 por_objeto[m.group(1)][m.group(3) or m.group(4)] = (t, r, v)
         if e.get("tipo") == "pelicula":
-            for c in cuadros_mezclados(e, a, T, t0):
+            for c in cuadros_mezclados(e, a, T, t0, perfil=bool(perfil_de_datos(d))):
                 ts = ", ".join(f"{t0 + n / 30:.3f}" for n in c["cuadros"])
                 h("aviso", f"escenas[{i}].zoom (corte {c['zoom']:.3f} s)", c["zoom_k"],
                   (f"corte de zona a los {c['paneo']:.3f} s y de cámara a los {c['zoom']:.3f} s: " if c["paneo"] is not None
@@ -146,6 +200,7 @@ def validar_datos(d, nombre="", t0=0.0):
             for ini, fin in (("k", "fin"), ("desde", "hasta"), ("de", "a"), ("0", "1")):
                 if ini in cs and fin in cs and cs[fin][0] < cs[ini][0] - 1e-6:
                     h("aviso", cs[fin][1], cs[fin][2], f"termina ({cs[fin][0]:.2f} s) antes de empezar ({cs[ini][0]:.2f} s)", cs[fin][0])
+    revisar_planos_v2(d, esc, a_s, T, h)
     cuenta = collections.Counter(x["nivel"] for x in hall)
     return {"archivo": nombre, "claves_revisadas": n, "errores": cuenta["error"], "avisos": cuenta["aviso"],
             "info": cuenta["info"], "hallazgos": hall}

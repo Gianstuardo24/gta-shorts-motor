@@ -165,6 +165,11 @@ def sin_medios(i0, t, actores):
 for sg in segs:
     a, b, camx = sg["a"], sg["b"], sg["x"]
     if b - a < 0.25: continue
+    zf = next((z for z in e.get("zonas", []) if z["x0"] <= camx + 540 <= z["x1"]), None)
+    if zf and zf.get("camara") == "fija":  # 27i bloque 3 (datos v2): el plano pide camara fija -> un solo encuadre quieto
+        K(a - 0.02 if camx >= 99000 else a, 1.0); hist.append("fijo"); cuenta["fijo"] = cuenta.get("fijo", 0) + 1
+        LOG.append(f"{a:6.2f}-{b:6.2f} fijo      (camara fija del plano)")
+        continue
     if camx >= 99000:                      # inserto de detalle: cada uno con una forma de camara distinta
         L = b - a; cxi = camx + 540; d = max(0.3, L - 0.08); n_ins = len(NZ)
         pap = next((p for p in e.get("props", []) if p.get("tipo") == "papel" and camx - 150 <= p.get("x", 0) <= camx + 1230), None)

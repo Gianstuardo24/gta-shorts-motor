@@ -1,0 +1,18 @@
+[
+ {
+  "archivo": "datos_render.json",
+  "claves_revisadas": 130,
+  "errores": 0,
+  "avisos": 1,
+  "info": 0,
+  "hallazgos": [
+   {
+    "nivel": "aviso",
+    "ruta": "escenas[0].zoom (corte 0.000 s)",
+    "valor": 0.0,
+    "motivo": "corte de cámara a los 0.000 s: 1 cuadro(s) con encuadre intermedio (cuadro 0 · 0.000 s)",
+    "tiempo": 0.0
+   }
+  ]
+ }
+]

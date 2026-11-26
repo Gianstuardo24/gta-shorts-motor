@@ -1,0 +1,246 @@
+{
+ "casos": [
+  {
+   "caso": "D0",
+   "planta": "nada (base limpia: control)",
+   "cuadros": [
+    380,
+    392
+   ],
+   "esperado": null,
+   "encontrado": [],
+   "detectado": true,
+   "tramos": null
+  },
+  {
+   "caso": "D1",
+   "planta": "zona con transparencia",
+   "cuadros": [
+    380,
+    400
+   ],
+   "esperado": "hueco",
+   "encontrado": [
+    "hueco",
+    "validador"
+   ],
+   "detectado": true,
+   "tramos": [
+    {
+     "desde": 385,
+     "hasta": 395,
+     "cuadros": 11,
+     "seg": 12.833,
+     "plano": "montanaV",
+     "hueco_max": 99.74,
+     "base_max": 0.0
+    }
+   ]
+  },
+  {
+   "caso": "D2",
+   "planta": "set sin cubrir (la cámara se aleja de más)",
+   "cuadros": [
+    403,
+    415
+   ],
+   "esperado": "hueco",
+   "encontrado": [
+    "hueco"
+   ],
+   "detectado": true,
+   "tramos": [
+    {
+     "desde": 408,
+     "hasta": 415,
+     "cuadros": 8,
+     "seg": 13.6,
+     "plano": "montanaV",
+     "hueco_max": 15.743,
+     "base_max": 0
+    }
+   ]
+  },
+  {
+   "caso": "D3",
+   "planta": "corte con desfase de 2 cuadros",
+   "cuadros": [
+    380,
+    392
+   ],
+   "esperado": "desfase_de_corte",
+   "encontrado": [
+    "desfase_de_corte"
+   ],
+   "detectado": true,
+   "tramos": [
+    {
+     "desde": 385,
+     "hasta": 386,
+     "cuadros": 2,
+     "seg": 12.833,
+     "plano": "montanaV",
+     "hueco_max": 0,
+     "base_max": 0
+    }
+   ]
+  },
+  {
+   "caso": "D4",
+   "planta": "fondo base pedido donde el perfil no lo deja",
+   "cuadros": [
+    800,
+    812
+   ],
+   "esperado": "base_no_permitida",
+   "encontrado": [
+    "base_no_permitida",
+    "validador"
+   ],
+   "detectado": true,
+   "tramos": [
+    {
+     "desde": 800,
+     "hasta": 812,
+     "cuadros": 13,
+     "seg": 26.667,
+     "plano": "baseCanal",
+     "hueco_max": 0,
+     "base_max": 98.549
+    }
+   ]
+  },
+  {
+   "caso": "D5",
+   "planta": "fondo base visible en un plano que no lo pide",
+   "cuadros": [
+    800,
+    812
+   ],
+   "esperado": "base_fuera_de_lugar",
+   "encontrado": [
+    "base_fuera_de_lugar",
+    "fuera_de_plano",
+    "validador"
+   ],
+   "detectado": true,
+   "tramos": [
+    {
+     "desde": 800,
+     "hasta": 812,
+     "cuadros": 13,
+     "seg": 26.667,
+     "plano": "baseCanal",
+     "hueco_max": 0,
+     "base_max": 98.556
+    }
+   ]
+  },
+  {
+   "caso": "D6",
+   "planta": "primer cuadro sin su entorno",
+   "cuadros": [
+    0,
+    6
+   ],
+   "esperado": "primer_cuadro",
+   "encontrado": [
+    "hueco",
+    "primer_cuadro",
+    "validador"
+   ],
+   "detectado": true,
+   "tramos": [
+    {
+     "desde": 0,
+     "hasta": 0,
+     "cuadros": 1,
+     "seg": 0.0,
+     "plano": "cafeGatosV",
+     "hueco_max": 99.868,
+     "base_max": 0.0
+    }
+   ]
+  },
+  {
+   "caso": "D7",
+   "planta": "escenario distinto del entorno declarado",
+   "cuadros": [
+    800,
+    806
+   ],
+   "esperado": "fuera_de_plano",
+   "encontrado": [
+    "fuera_de_plano",
+    "validador"
+   ],
+   "detectado": true,
+   "tramos": [
+    {
+     "desde": 800,
+     "hasta": 806,
+     "cuadros": 7,
+     "seg": 26.667,
+     "plano": "dormitorioV",
+     "hueco_max": 0,
+     "base_max": 0
+    }
+   ]
+  },
+  {
+   "caso": "D8",
+   "planta": "clave de tiempo inexistente",
+   "cuadros": [
+    0,
+    2
+   ],
+   "esperado": "validador",
+   "encontrado": [
+    "validador"
+   ],
+   "detectado": true,
+   "tramos": [
+    {
+     "desde": 0,
+     "hasta": 0,
+     "cuadros": 1,
+     "seg": 0.0,
+     "plano": "cafeGatosV",
+     "hueco_max": 0,
+     "base_max": 0
+    }
+   ]
+  },
+  {
+   "caso": "D9",
+   "planta": "un cuadro ajeno en el video (cuadro 500)",
+   "esperado": "cuadro_aislado",
+   "encontrado": [
+    "cuadro_aislado"
+   ],
+   "detectado": true,
+   "islas": [
+    {
+     "desde": 500,
+     "hasta": 500,
+     "largo": 1,
+     "entra": 44.41,
+     "sale": 44.47,
+     "r": 0.047,
+     "motivo": "aislado",
+     "tiempo": 16.667
+    }
+   ]
+  },
+  {
+   "caso": "D9-control",
+   "planta": "el mismo video sin el cuadro ajeno",
+   "esperado": "sin cuadros aislados",
+   "encontrado": [],
+   "detectado": true,
+   "islas": null
+  }
+ ],
+ "correctos": 11,
+ "total": 11
+}

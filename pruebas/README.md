@@ -41,3 +41,12 @@ python3 datos_pipeline.py
 
 ## Qué significa "idéntico"
 La huella es SHA-256 de los **píxeles** del lienzo en cada instante, con `Math.random` reemplazado por una semilla fija solo dentro de la herramienta. El motor solo usa `Math.random` en el grano del acabado "pro".
+
+## 27i · Bloques 1–4 (rama `fondos-v2`)
+| Archivo | Qué comprueba |
+|---|---|
+| `piloto_fondos.py` · `piloto_base_visible.py` | Piloto técnico wk2 y caso C (bloque 1) |
+| `pruebas_inspeccion.py` | **D · negativas:** 9 errores plantados en el piloto (transparencia, set sin cubrir, desfase, fondo base no permitido o fuera de lugar, primer cuadro, entorno distinto, clave inexistente, cuadro aislado) y 2 controles sin error |
+| `inspeccion_originales.py` | **Control positivo:** la inspección sobre los 7 entregados (sin perfil) contra la tabla del 27h, cuadro por cuadro |
+| `pruebas_constructor.py` | **Bloque 3:** los 36 `b.py` de d24 salen idénticos al código de producción; el planificador, idéntico al de 27g en los 7; v2 con perfil y campos de cada plano, sin cortes repetidos; las opciones por plano |
+| `v2/wk2/b.py` · `v2/wk2_opciones/b.py` | **Bloque 4 (prueba E):** el `b.py` entregado de wk2 con `v2=True`, y con una opción distinta por plano. **Pruebas técnicas, no reconstrucciones** |

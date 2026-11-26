@@ -1,0 +1,2 @@
+planos: 10 en 34.6 s (uno cada 3.5 s) · tipos distintos: 10 · objeto×1, detalle:empuje×1, dos×1, tercio×1, ojos×1, detalle:abre×1, detalle:sube×1, acerca×1, holandes×1, fijo×1
+repetidos seguidos: 1

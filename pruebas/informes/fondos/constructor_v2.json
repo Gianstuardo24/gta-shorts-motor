@@ -1,0 +1,821 @@
+{
+ "originales": {
+  "identicos": 36,
+  "total": 36,
+  "por_slot": {
+   "c17": {
+    "estado": "idéntico",
+    "archivos": [
+     "C2026112401_src.json"
+    ],
+    "coincide_con_el_guardado": false
+   },
+   "c17n": {
+    "estado": "idéntico",
+    "archivos": [
+     "C2026112403_src.json"
+    ],
+    "coincide_con_el_guardado": true
+   },
+   "c21": {
+    "estado": "idéntico",
+    "archivos": [
+     "C2026112402_src.json"
+    ],
+    "coincide_con_el_guardado": false
+   },
+   "cat16": {
+    "estado": "idéntico",
+    "archivos": [
+     "K2026112401_src.json"
+    ],
+    "coincide_con_el_guardado": false
+   },
+   "cat16n": {
+    "estado": "idéntico",
+    "archivos": [
+     "K2026112403_src.json"
+    ],
+    "coincide_con_el_guardado": false
+   },
+   "cat21": {
+    "estado": "idéntico",
+    "archivos": [
+     "K2026112402_src.json"
+    ],
+    "coincide_con_el_guardado": false
+   },
+   "dog14": {
+    "estado": "idéntico",
+    "archivos": [
+     "D2026112401_src.json"
+    ],
+    "coincide_con_el_guardado": false
+   },
+   "dog14n": {
+    "estado": "idéntico",
+    "archivos": [
+     "D2026112403_src.json"
+    ],
+    "coincide_con_el_guardado": false
+   },
+   "dog18": {
+    "estado": "idéntico",
+    "archivos": [
+     "D2026112402_src.json"
+    ],
+    "coincide_con_el_guardado": false
+   },
+   "dog18n": {
+    "estado": "idéntico",
+    "archivos": [
+     "D2026112404_src.json"
+    ],
+    "coincide_con_el_guardado": false
+   },
+   "gen14": {
+    "estado": "idéntico",
+    "archivos": [
+     "G2026112401en_src.json"
+    ],
+    "coincide_con_el_guardado": false
+   },
+   "gen14n": {
+    "estado": "idéntico",
+    "archivos": [
+     "G2026112403en_src.json"
+    ],
+    "coincide_con_el_guardado": false
+   },
+   "gen19": {
+    "estado": "idéntico",
+    "archivos": [
+     "G2026112402en_src.json"
+    ],
+    "coincide_con_el_guardado": false
+   },
+   "ges19": {
+    "estado": "idéntico",
+    "archivos": [
+     "G2026112401_src.json"
+    ],
+    "coincide_con_el_guardado": false
+   },
+   "ges19n": {
+    "estado": "idéntico",
+    "archivos": [
+     "G2026112403_src.json"
+    ],
+    "coincide_con_el_guardado": false
+   },
+   "ges22": {
+    "estado": "idéntico",
+    "archivos": [
+     "G2026112402_src.json"
+    ],
+    "coincide_con_el_guardado": false
+   },
+   "m18": {
+    "estado": "idéntico",
+    "archivos": [
+     "M2026112401_src.json"
+    ],
+    "coincide_con_el_guardado": false
+   },
+   "m21": {
+    "estado": "idéntico",
+    "archivos": [
+     "M2026112402_src.json"
+    ],
+    "coincide_con_el_guardado": false
+   },
+   "m21n": {
+    "estado": "idéntico",
+    "archivos": [
+     "M2026112403_src.json"
+    ],
+    "coincide_con_el_guardado": false
+   },
+   "r18": {
+    "estado": "idéntico",
+    "archivos": [
+     "R2026112401_src.json"
+    ],
+    "coincide_con_el_guardado": false
+   },
+   "r22": {
+    "estado": "idéntico",
+    "archivos": [
+     "R2026112402_src.json"
+    ],
+    "coincide_con_el_guardado": false
+   },
+   "r22n": {
+    "estado": "idéntico",
+    "archivos": [
+     "R2026112403_src.json"
+    ],
+    "coincide_con_el_guardado": false
+   },
+   "wc1": {
+    "estado": "idéntico",
+    "archivos": [
+     "C2026112501_src.json"
+    ],
+    "coincide_con_el_guardado": true
+   },
+   "wc2": {
+    "estado": "idéntico",
+    "archivos": [
+     "C2026112502_src.json"
+    ],
+    "coincide_con_el_guardado": true
+   },
+   "wd1": {
+    "estado": "idéntico",
+    "archivos": [
+     "D2026112501_src.json"
+    ],
+    "coincide_con_el_guardado": true
+   },
+   "wd2": {
+    "estado": "idéntico",
+    "archivos": [
+     "D2026112502_src.json"
+    ],
+    "coincide_con_el_guardado": true
+   },
+   "wge1": {
+    "estado": "idéntico",
+    "archivos": [
+     "G2026112501en_src.json"
+    ],
+    "coincide_con_el_guardado": true
+   },
+   "wge2": {
+    "estado": "idéntico",
+    "archivos": [
+     "G2026112502en_src.json"
+    ],
+    "coincide_con_el_guardado": true
+   },
+   "wgs1": {
+    "estado": "idéntico",
+    "archivos": [
+     "G2026112501_src.json"
+    ],
+    "coincide_con_el_guardado": true
+   },
+   "wgs2": {
+    "estado": "idéntico",
+    "archivos": [
+     "G2026112502_src.json"
+    ],
+    "coincide_con_el_guardado": true
+   },
+   "wk1": {
+    "estado": "idéntico",
+    "archivos": [
+     "K2026112501_src.json"
+    ],
+    "coincide_con_el_guardado": true
+   },
+   "wk2": {
+    "estado": "idéntico",
+    "archivos": [
+     "K2026112502_src.json"
+    ],
+    "coincide_con_el_guardado": true
+   },
+   "wm1": {
+    "estado": "idéntico",
+    "archivos": [
+     "M2026112501_src.json"
+    ],
+    "coincide_con_el_guardado": true
+   },
+   "wm2": {
+    "estado": "idéntico",
+    "archivos": [
+     "M2026112502_src.json"
+    ],
+    "coincide_con_el_guardado": true
+   },
+   "wr1": {
+    "estado": "idéntico",
+    "archivos": [
+     "R2026112501_src.json"
+    ],
+    "coincide_con_el_guardado": true
+   },
+   "wr2": {
+    "estado": "idéntico",
+    "archivos": [
+     "R2026112502_src.json"
+    ],
+    "coincide_con_el_guardado": true
+   }
+  }
+ },
+ "planificador": {
+  "identicos": 7,
+  "total": 7,
+  "por_slot": {
+   "wd2": "idéntico",
+   "wk2": "idéntico",
+   "wc1": "idéntico",
+   "wm2": "idéntico",
+   "wr1": "idéntico",
+   "wge2": "idéntico",
+   "wgs1": "idéntico"
+  }
+ },
+ "v2": {
+  "ok": 7,
+  "total": 7,
+  "por_slot": {
+   "wd2": {
+    "estado": "ok",
+    "problemas": [],
+    "cortes_repetidos_antes": {
+     "\"s_4\"": [
+      1300,
+      107800
+     ]
+    },
+    "cortes_repetidos_v2": {},
+    "planos": [
+     [
+      "salaV",
+      "salaV",
+      "corte",
+      null
+     ],
+     [
+      "labV",
+      "labV",
+      "corte",
+      "s_2"
+     ],
+     [
+      "parqueV",
+      "parqueV",
+      "corte",
+      "s_5"
+     ],
+     [
+      "parqueV",
+      "parqueV",
+      "corte",
+      "s_7"
+     ],
+     [
+      "casaPalmasV",
+      "casaPalmasV",
+      "corte",
+      "s_8"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "inicio",
+      0.01
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_3"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_4"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_6"
+     ]
+    ]
+   },
+   "wk2": {
+    "estado": "ok",
+    "problemas": [],
+    "cortes_repetidos_antes": {
+     "\"s_6\"": [
+      3900,
+      107800
+     ]
+    },
+    "cortes_repetidos_v2": {},
+    "planos": [
+     [
+      "cafeGatosV",
+      "cafeGatosV",
+      "inicio",
+      null
+     ],
+     [
+      "parqueV",
+      "parqueV",
+      "corte",
+      "s_2"
+     ],
+     [
+      "montanaV",
+      "montanaV",
+      "corte",
+      "s_3"
+     ],
+     [
+      "salaV",
+      "salaV",
+      "corte",
+      "s_4"
+     ],
+     [
+      "cocinaV",
+      "cocinaV",
+      "corte",
+      "s_7"
+     ],
+     [
+      "dormitorioV",
+      "dormitorioV",
+      "corte",
+      "s_8"
+     ],
+     [
+      "salaV",
+      "salaV",
+      "corte",
+      "s_9"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_1"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_5"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_6"
+     ]
+    ]
+   },
+   "wc1": {
+    "estado": "ok",
+    "problemas": [],
+    "cortes_repetidos_antes": {
+     "\"s_4\"": [
+      2600,
+      105200
+     ],
+     "\"s_5\"": [
+      2600,
+      107800
+     ],
+     "\"s_8\"": [
+      3900,
+      113000
+     ]
+    },
+    "cortes_repetidos_v2": {},
+    "planos": [
+     [
+      "cocinaV",
+      "cocinaV",
+      "inicio",
+      null
+     ],
+     [
+      "dormitorioV",
+      "dormitorioV",
+      "corte",
+      "s_1"
+     ],
+     [
+      "labV",
+      "labV",
+      "corte",
+      "s_2"
+     ],
+     [
+      "cocinaV",
+      "cocinaV",
+      "corte",
+      "s_6"
+     ],
+     [
+      "fuenteSodaV",
+      "fuenteSodaV",
+      "corte",
+      "s_9"
+     ],
+     [
+      "parqueV",
+      "parqueV",
+      "corte",
+      "s_11"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_3"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_4"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_5"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_7"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_8"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_10"
+     ]
+    ]
+   },
+   "wm2": {
+    "estado": "ok",
+    "problemas": [],
+    "cortes_repetidos_antes": {
+     "\"s_2\"": [
+      0,
+      105200
+     ],
+     "\"s_5\"": [
+      2600,
+      110400
+     ]
+    },
+    "cortes_repetidos_v2": {},
+    "planos": [
+     [
+      "nocheV",
+      "nocheV",
+      "inicio",
+      null
+     ],
+     [
+      "corporativoV",
+      "corporativoV",
+      "corte",
+      "s_3"
+     ],
+     [
+      "palacioV",
+      "palacioV",
+      "corte",
+      "s_4"
+     ],
+     [
+      "montanaV",
+      "montanaV",
+      "corte",
+      "s_6"
+     ],
+     [
+      "corporativoV",
+      "corporativoV",
+      "corte",
+      "s_7"
+     ],
+     [
+      "nocheV",
+      "nocheV",
+      "corte",
+      "s_9"
+     ],
+     [
+      "tallerV",
+      "tallerV",
+      "corte",
+      "s_10"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_1"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_2"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "flat"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_5"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_8"
+     ]
+    ]
+   },
+   "wr1": {
+    "estado": "ok",
+    "problemas": [],
+    "cortes_repetidos_antes": {
+     "\"s_2\"": [
+      0,
+      105200
+     ],
+     "\"s_6\"": [
+      2600,
+      110400
+     ],
+     "\"s_7\"": [
+      2600,
+      113000
+     ]
+    },
+    "cortes_repetidos_v2": {},
+    "planos": [
+     [
+      "marNocheV",
+      "marNocheV",
+      "inicio",
+      null
+     ],
+     [
+      "cuartoGamerV",
+      "cuartoGamerV",
+      "corte",
+      "s_3"
+     ],
+     [
+      "noticiasV",
+      "noticiasV",
+      "corte",
+      "s_4"
+     ],
+     [
+      "investigaV",
+      "investigaV",
+      "corte",
+      "s_8"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_1"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_2"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_5"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_6"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_7"
+     ]
+    ]
+   },
+   "wge2": {
+    "estado": "ok",
+    "problemas": [],
+    "cortes_repetidos_antes": {},
+    "cortes_repetidos_v2": {},
+    "planos": [
+     [
+      "escenarioV",
+      "escenarioV",
+      "inicio",
+      null
+     ],
+     [
+      "tiendaJuegosV",
+      "tiendaJuegosV",
+      "corte",
+      "s_2"
+     ],
+     [
+      "nocheV",
+      "nocheV",
+      "corte",
+      "s_4"
+     ],
+     [
+      "nocheV",
+      "nocheV",
+      "corte",
+      "s_6"
+     ],
+     [
+      "cuartoGamerV",
+      "cuartoGamerV",
+      "corte",
+      "s_7"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_1"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_3"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_5"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_8"
+     ]
+    ]
+   },
+   "wgs1": {
+    "estado": "ok",
+    "problemas": [],
+    "cortes_repetidos_antes": {
+     "\"s_7\"": [
+      3900,
+      110400
+     ],
+     "\"s_8\"": [
+      3900,
+      113000
+     ]
+    },
+    "cortes_repetidos_v2": {},
+    "planos": [
+     [
+      "tiendaJuegosV",
+      "tiendaJuegosV",
+      "corte",
+      null
+     ],
+     [
+      "cuartoGamerV",
+      "cuartoGamerV",
+      "corte",
+      "s_3"
+     ],
+     [
+      "escenarioV",
+      "escenarioV",
+      "corte",
+      "s_4"
+     ],
+     [
+      "nocheV",
+      "nocheV",
+      "corte",
+      "s_5"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "inicio",
+      0.01
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_2"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_6"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_7"
+     ],
+     [
+      "vitrinaV",
+      "vitrina",
+      "corte",
+      "s_8"
+     ]
+    ]
+   }
+  }
+ },
+ "opciones": {
+  "estado": "ok",
+  "chequeos": {
+   "paneo: la cámara llega a la montaña sin corte": true,
+   "fundido: la sala se funde sobre la montaña": true,
+   "negro sin líneas: la cocina pasa por negro": true,
+   "el dormitorio pide el fondo base": true,
+   "la segunda sala: cámara fija y sin acabado": true
+  },
+  "problemas": [],
+  "src": "/tmp/fv2/constructor/opciones/wk2/K2026112502_src.json"
+ }
+}

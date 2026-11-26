@@ -7,6 +7,13 @@ LOBO=dict(color="#8d8d94",color2="#d6d6dc",oscuro="#55555e",lejos="#6e6e76",coll
 def gato(**k):
     d={"tipo":"gato","pose":"sentado","s":0.85}; d.update(k); return d
 TEMAS={"COFFEE":"cafe","RABBIT":"espacio","MILLION":"mdm","DOGS":"mascotas","CATS":"mascotas","DOG":"mascotas","CAT":"mascotas"}
+def perfil_de(marca):
+    """27i bloque 3: perfil de fondos del canal (d24/perfiles_canal.json). Solo lo usa video(..., v2=True)."""
+    import pathlib
+    P = json.loads((pathlib.Path(__file__).resolve().parent / "perfiles_canal.json").read_text())["canales"]
+    m = (marca or "").upper()
+    if m not in P: raise KeyError(f"sin perfil de fondos para la marca {marca!r} (d24/perfiles_canal.json)")
+    return dict(P[m], version=1)
 def guardar(path,g):
     # fondo base por canal (inicio, cierre y huecos): Tao 24-nov 22:54 no quiere el fondo de GTA fuera de GTA
     m=(g.get("marca") or "").upper()
@@ -28,17 +35,24 @@ def quitar_props(E, tipos):
     e = E["escenas"][0]; e["props"] = [p for p in e["props"] if p["tipo"] not in tipos]
 
 _INS = [0]
-def insertar(E, k_in, k_out, vuelta, set_="vitrinaV", o=None, props=(), whoosh=True):
-    """Corte a un primer plano entre k_in y k_out; 'vuelta' = x de camara de la zona a la que vuelve."""
+def insertar(E, k_in, k_out, vuelta, set_="vitrinaV", o=None, props=(), whoosh=True, plano=None, sale_a=None):
+    """Corte a un primer plano entre k_in y k_out; 'vuelta' = x de camara de la zona a la que vuelve.
+    27i bloque 3 (solo con plano != None, es decir, b.py con v2=True): la zona lleva sus campos de plano (entorno, transicion,
+    k de entrada…) y la salida no repite claves: sin "vuelta" si le sigue otro inserto o el cierre (sale_a), ni si ya hay un
+    corte de camara con esa misma clave."""
     e = E["escenas"][0]; _INS[0] += 1; XI = 100000 + _INS[0] * 2600
     z = {"x0": XI - 120, "x1": XI + 1200, "set": set_, "cam": XI}
     if o: z["o"] = o
+    if plano is not None: z.update(plano); z["k"] = k_in
     e["zonas"].append(z)
     e["pan"].append({"k": k_in, "x": XI, "dur": 0.04, "corte": 1})
-    ex = [p for p in e["pan"] if p["k"] == k_out and not p.get("corte")]
-    if ex: ex[0].update({"dur": 0.04, "corte": 1, "dir": 1})      # sale del inserto directo a la escena siguiente
-    else: e["pan"].append({"k": k_out, "x": vuelta, "dur": 0.04, "corte": 1, "dir": 1})
-    e.setdefault("zoom", []).extend([{"k": k_in, "s": 1.0, "dur": 0.01}, {"k": k_out, "s": 1.0, "dur": 0.01}])
+    if plano is not None and (sale_a in ("inserto", "cierre") or any(p["k"] == k_out and p.get("corte") for p in e["pan"])):
+        e.setdefault("zoom", []).append({"k": k_in, "s": 1.0, "dur": 0.01})
+    else:
+        ex = [p for p in e["pan"] if p["k"] == k_out and not p.get("corte")]
+        if ex: ex[0].update({"dur": 0.04, "corte": 1, "dir": 1})      # sale del inserto directo a la escena siguiente
+        else: e["pan"].append({"k": k_out, "x": vuelta, "dur": 0.04, "corte": 1, "dir": 1})
+        e.setdefault("zoom", []).extend([{"k": k_in, "s": 1.0, "dur": 0.01}, {"k": k_out, "s": 1.0, "dur": 0.01}])
     for p in props:
         p = dict(p); p["x"] = XI + p.get("x", 540); p.setdefault("y", 1650); p.setdefault("k", k_in); p.setdefault("fin", k_out); p.setdefault("z", 1800)
         e["props"].append(p)

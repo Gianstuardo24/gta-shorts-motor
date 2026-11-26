@@ -28,7 +28,7 @@ function rr(x,y,w,h,r){X.beginPath();X.roundRect(x,y,w,h,r)}
 let FRASES=[{a:0,b:99,t:'(sin datos)',k:[],w:[]}];
 let T0={paises:2.6,tiendas:3.4,s2:4.2,moneda:5.8,s3:7.3,xbox:7.9,ps:10.9,amazon:14.6,tres:16.4,s4:19,ar_xbox:20.5,ar_ps:22.5,s5:24,cambia:25.5,s6:27,fin:30};
 let MARCA='VICEVERSO GG';
-let T=T0;var ACENTO=ROSA;if(window.DATOS){if(DATOS.acento)ACENTO=DATOS.acento;FRASES=DATOS.frases;T=DATOS.T;MARCA=DATOS.marca||MARCA}
+let T=T0;var ACENTO=ROSA;if(window.DATOS){if(DATOS.acento)ACENTO=DATOS.acento;FRASES=DATOS.frases;T=DATOS.T;MARCA=DATOS.marca||MARCA;if(!DATOS.fondos){const _pf=(DATOS.escenas||[]).find(s=>s&&s.fondos);if(_pf)DATOS.fondos=_pf.fondos}}  // 27i bloque 3: el perfil puede venir dentro de la escena (armar_escena copia las escenas tal cual)
 let DUR=T.fin;
 
 // ---------- mundo: cielo, sol, ciudad, palmeras, grilla ----------

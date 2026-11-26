@@ -29,3 +29,17 @@ python3 saltos.py video.mp4                         # sin datos: solo islas clar
 | `cruce_claves_motor.py` | El validador contra el **motor real** (su `tk()` envuelto solo en la memoria de la página): 0 falsos negativos |
 | `evaluar_saltos.py` | El detector sobre los 7 videos entregados, los 4 planos aprobados y el plano 10 v2 |
 | `pruebas_saltos.py` | 8 alteraciones en memoria de cuadros aprobados (cuadro ajeno, dos seguidos, mezclas, repetido, destello) |
+
+## 27i · Fondos, inspección y camino nuevo (rama `fondos-v2`, 26-nov-2026)
+| Herramienta | Qué hace |
+|---|---|
+| `cobertura_sets.py` | **Cobertura de sets (bloque 1b).** Dibuja cada set sobre un color testigo y cuenta lo que queda sin cubrir en toda el área que puede encuadrar la cámara, con barrido de encuadres reales |
+| `inspeccion_fondos.py` | **Inspección de fondos (bloque 2). Solo lee.** Dibuja cada cuadro dos veces con colores testigo distintos (debajo de todo y en lugar del fondo base) y mide, dentro de la página, huecos, fondo base visible, plano en el centro y escala. Separa **errores técnicos** (bloquean: sale con 1) de **observaciones creativas** (solo informan). Con `--video`, suma el detector de cuadros aislados. `--hoja` arma una hoja con los cuadros marcados |
+| `validar.py` | Además (bloque 3), **con perfil de fondos** revisa los campos de cada plano (entorno, transición, cámara, acabado, fundido, paneo, efecto del corte) y los **cortes de cámara repetidos** en un mismo instante. Sin perfil, revisa lo mismo que en la E1 |
+
+```bash
+flock /tmp/render.lock python3 inspeccion_fondos.py datos_render.json --salida inspeccion.json --hoja hoja.png [--video v1.mp4]
+```
+- **Errores técnicos:** `hueco` · `base_fuera_de_lugar` · `base_no_permitida` · `fuera_de_plano` · `desfase_de_corte` · `primer_cuadro` · `validador` · `cuadro_aislado`.
+- **Observaciones creativas:** `oscuro` · `negro_declarado` / `negro_no_declarado` · `quietud` · `paneo` · `fundido` · `base_pedida` · `aviso_del_validador`.
+- ≈ 3,4 min por video de 40 s (todos los cuadros, dos pasadas cada uno).

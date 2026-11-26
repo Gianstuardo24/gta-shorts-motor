@@ -1,0 +1,20 @@
+{
+  "_nota": "27i § 2.1 (decisiones de Tao 26-nov 16:03 y 16:23). Un perfil por canal: hoy son iguales salvo el fondo base, para poder cambiarlos después sin tocar el motor. Solo se usan cuando el b.py pide video(..., v2=True).",
+  "_campos": {
+    "base": "fondo base de CTA del canal (función del motor según DATOS.tema; su arte no cambia)",
+    "inicio": "escena = la primera escena narrativa, completa desde el cuadro 0",
+    "cierre": "base = el cierre muestra el fondo base del canal",
+    "escenas": "solo_si_la_piden = un plano puede pedir el fondo base con entorno 'base' · nunca = ningún plano puede",
+    "transicion": "corte = transición por defecto de cada plano (cada plano puede definir otra)",
+    "cobertura": "completa = los escenarios cubren todo lo que encuadra la cámara"
+  },
+  "canales": {
+    "THE DOGS DECODER":       {"base": "mascotas", "inicio": "escena", "cierre": "base", "escenas": "solo_si_la_piden", "transicion": "corte", "cobertura": "completa"},
+    "THE CATS DECODER":       {"base": "mascotas", "inicio": "escena", "cierre": "base", "escenas": "solo_si_la_piden", "transicion": "corte", "cobertura": "completa"},
+    "COFFEE, BUT WHY?":       {"base": "cafe",     "inicio": "escena", "cierre": "base", "escenas": "solo_si_la_piden", "transicion": "corte", "cobertura": "completa"},
+    "MILLION DOLLAR MISTAKE": {"base": "mdm",      "inicio": "escena", "cierre": "base", "escenas": "solo_si_la_piden", "transicion": "corte", "cobertura": "completa"},
+    "THE RABBIT LOOP":        {"base": "espacio",  "inicio": "escena", "cierre": "base", "escenas": "solo_si_la_piden", "transicion": "corte", "cobertura": "completa"},
+    "THE VICEVERSE GG":       {"base": "mundo",    "inicio": "escena", "cierre": "base", "escenas": "solo_si_la_piden", "transicion": "corte", "cobertura": "completa"},
+    "VICEVERSO GG":           {"base": "mundo",    "inicio": "escena", "cierre": "base", "escenas": "solo_si_la_piden", "transicion": "corte", "cobertura": "completa"}
+  }
+}
