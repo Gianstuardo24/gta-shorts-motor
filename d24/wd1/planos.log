@@ -1,0 +1,7 @@
+  0.00-  3.18 general   L=3.2 foco=74 n_vis=2 cifra
+  3.24-  4.88 objeto    L=1.6 foco=74 n_vis=2
+  4.94-  8.87 mano      L=3.9 foco=75 n_vis=2
+  8.93- 14.75 detalle   (deriva)
+ 14.81- 16.41 recorre   L=1.6 foco=74 n_vis=2 cifra
+ 16.47- 20.12 detalle   (empuje)
+ 20.18- 24.14 medio     L=4.0 foco=74 n_vis=2 cifra

@@ -1,0 +1,46 @@
+{
+ "id": "mdm1",
+ "canal": "Million Dollar Mistake",
+ "titulo": "Pixar: The Worst Deal in Hollywood History",
+ "dur_min": 6.7,
+ "voz": {
+  "ppm": 188,
+  "ppm_primeros_30s": 190,
+  "pausas_min": 0.2
+ },
+ "imagen": {
+  "cortes_min": 8.5,
+  "plano_mediano": 3.7,
+  "plano_max": 27.6,
+  "sin_cambio": 5,
+  "cambios_locales_min": 6.2,
+  "racha_quieta_max": 18.4,
+  "en_rachas_5s": 5
+ },
+ "gancho": {
+  "cortes_30s": 3,
+  "sin_cambio_30s": 1,
+  "primera_frase_palabras": 13,
+  "primera_pregunta": false,
+  "primera_con_numero": true,
+  "primera_con_tu": false
+ },
+ "lenguaje": {
+  "palabras": 1206,
+  "frases": 130,
+  "frase_media": 9.3,
+  "preguntas_100f": 0.0,
+  "tu_100": 0.25,
+  "yo_100": 0.17,
+  "contracciones_100": 0.5,
+  "numeros_100": 3.9,
+  "largo_palabra": 4.44,
+  "palabras_largas": 7.8,
+  "variedad": 0.703,
+  "flesch": 73.6,
+  "registro": "neutro"
+ },
+ "sincronia": {
+  "frases_con_cambio_visual": 100
+ }
+}

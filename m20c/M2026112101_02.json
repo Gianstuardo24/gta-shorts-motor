@@ -1,0 +1,507 @@
+{
+ "titulo": "10,000 Bitcoin for 2 Pizzas 🍕",
+ "texto_pantalla": "2 PIZZAS",
+ "lote": "M2026112101",
+ "tema": "mdm",
+ "marca": "MILLION DOLLAR MISTAKE",
+ "nota_datos": "22-may-2010: Laszlo Hanyecz pagó 10.000 BTC por 2 pizzas (~US$41 entonces; Fortune, Decrypt, Gulf News). BTC el 20-nov-2026 ~US$59-61 mil (Fortune 61.321 a las 7:15 ET; Fool/Yahoo 'just under 60,000') -> ~US$600 M. Máximo ~US$126 mil (oct-2025; Fool, Binance) -> ~US$1.260 M. Él dice no arrepentirse (Decrypt). Primera compra real con bitcoin (Nasdaq/Bitcoin Magazine, Quartz).",
+ "frases": [
+  "In 2010, a man paid 10,000 bitcoins for two pizzas.",
+  "Back then, those coins were worth about 41 dollars.",
+  "How much would they be worth today?",
+  "At around 60,000 dollars per bitcoin, about 600 million dollars.",
+  "And at Bitcoin's peak, last year? About 1.26 billion.",
+  "Still, he says he has no regrets. It was the first time bitcoin bought something real.",
+  "Lesson: you never know what something will be worth. Would you have spent them?"
+ ],
+ "frases_voz": [
+  "In twenty ten, a man paid ten thousand bitcoins for two pizzas.",
+  "Back then, those coins were worth about forty-one dollars.",
+  "How much would they be worth today?",
+  "At around sixty thousand dollars per bitcoin, about six hundred million dollars.",
+  "And at Bitcoin's peak, last year? About one point two six billion.",
+  "Still, he says he has no regrets. It was the first time bitcoin bought something real.",
+  "Lesson. You never know what something will be worth. Would you have spent them?"
+ ],
+ "fuentes": [
+  "https://fortune.com/article/pizza-bitcoin-day-story-laszlo-hanyecz-papa-johns-pizzas-value/",
+  "https://gulfnews.com/amp/story/your-money%2Fcryptocurrency%2Fthe-10000-bitcoin-pizza-purchase-remembered-1.2032051",
+  "https://decrypt.co/29815/bitcoin-pizza-day-2020-how-two-papa-johns-pies-became-famous",
+  "https://fortune.com/article/price-of-bitcoin-11-20-2026/",
+  "https://www.fool.com/investing/2026/11/20/bitcoin-fell-more-than-20-in-november-history-says-this-happens-next/",
+  "https://www.binance.com/price/bitcoin"
+ ],
+ "escena": {
+  "momentos": [
+   [
+    "paid",
+    0,
+    "^paid"
+   ],
+   [
+    "pizzas",
+    0,
+    "^pizzas"
+   ],
+   [
+    "s_41",
+    1,
+    null
+   ],
+   [
+    "d41",
+    1,
+    "^41|^forty"
+   ],
+   [
+    "s_hoy",
+    2,
+    null
+   ],
+   [
+    "hoy",
+    3,
+    "^600|^six$|^hundred"
+   ],
+   [
+    "s_rank",
+    4,
+    null
+   ],
+   [
+    "pico",
+    4,
+    "^1"
+   ],
+   [
+    "s_no",
+    5,
+    null
+   ],
+   [
+    "regrets",
+    5,
+    "^regrets"
+   ],
+   [
+    "first",
+    5,
+    "^first"
+   ],
+   [
+    "s_les",
+    6,
+    null
+   ],
+   [
+    "s_fin",
+    6,
+    "^would"
+   ]
+  ],
+  "escenas": [
+   {
+    "tipo": "historia",
+    "desde": "0",
+    "trans": "corte",
+    "set": "sala",
+    "titulo": "MAY 22, 2010",
+    "props": [
+     {
+      "tipo": "escritorio",
+      "x": 360,
+      "y": 1440,
+      "s": 0.9
+     },
+     {
+      "tipo": "btc",
+      "s": 0.9,
+      "k": "paid",
+      "mov": [
+       {
+        "k": "paid",
+        "x": 400,
+        "y": 1180
+       },
+       {
+        "k": 2.6,
+        "x": 1200,
+        "y": 900,
+        "arco": 200
+       }
+      ]
+     },
+     {
+      "tipo": "btc",
+      "s": 0.9,
+      "k": 1.9,
+      "mov": [
+       {
+        "k": 1.9,
+        "x": 400,
+        "y": 1180
+       },
+       {
+        "k": 2.9,
+        "x": 1200,
+        "y": 950,
+        "arco": 240
+       }
+      ]
+     },
+     {
+      "tipo": "btc",
+      "s": 0.9,
+      "k": 2.2,
+      "mov": [
+       {
+        "k": 2.2,
+        "x": 400,
+        "y": 1180
+       },
+       {
+        "k": 3.2,
+        "x": 1200,
+        "y": 1000,
+        "arco": 180
+       }
+      ]
+     },
+     {
+      "tipo": "caja_pizza",
+      "s": 1.7,
+      "k": 4.4,
+      "fin": 7.0,
+      "mov": [
+       {
+        "k": 4.4,
+        "x": 760,
+        "y": 1300
+       },
+       {
+        "k": 4.8,
+        "x": 470,
+        "y": 1290,
+        "arco": 120
+       }
+      ]
+     },
+     {
+      "tipo": "caja_pizza",
+      "s": 1.7,
+      "k": 4.4,
+      "fin": 7.0,
+      "mov": [
+       {
+        "k": 4.5,
+        "x": 760,
+        "y": 1270
+       },
+       {
+        "k": 4.9,
+        "x": 470,
+        "y": 1255,
+        "arco": 140
+       }
+      ]
+     }
+    ],
+    "actores": [
+     {
+      "look": "gamer",
+      "camisa": "#5c6bc0",
+      "pelo": "#4e342e",
+      "peloT": "corto",
+      "lentes": true,
+      "s": 0.95,
+      "keys": [
+       {
+        "k": 0,
+        "x": 300,
+        "y": 1460,
+        "pose": "juega",
+        "cara": "feliz"
+       },
+       {
+        "k": "paid",
+        "x": 300,
+        "y": 1460,
+        "pose": "juega",
+        "cara": "risa"
+       },
+       {
+        "k": 4.2,
+        "x": 300,
+        "y": 1480,
+        "pose": "parado",
+        "cara": "sorpresa",
+        "a": [
+         400,
+         1480
+        ],
+        "dur": 0.4
+       },
+       {
+        "k": 4.9,
+        "x": 400,
+        "y": 1480,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "brinca"
+       },
+       {
+        "k": 7.0,
+        "x": 400,
+        "y": 1480,
+        "pose": "sostiene",
+        "cara": "feliz",
+        "objeto": "pizza"
+       }
+      ],
+      "os": 0.8
+     },
+     {
+      "look": "repartidor",
+      "s": 0.95,
+      "objeto": "caja_pizza",
+      "os": 1.0,
+      "keys": [
+       {
+        "k": 0,
+        "x": 1300,
+        "y": 1480,
+        "pose": "parado",
+        "dir": -1
+       },
+       {
+        "k": 2.9,
+        "x": 1300,
+        "y": 1480,
+        "pose": "parado",
+        "dir": -1,
+        "a": [
+         780,
+         1480
+        ],
+        "dur": 1.2
+       },
+       {
+        "k": 4.4,
+        "x": 780,
+        "y": 1480,
+        "pose": "ofrece",
+        "dir": -1,
+        "cara": "feliz",
+        "objeto": ""
+       },
+       {
+        "k": 5.6,
+        "x": 780,
+        "y": 1480,
+        "pose": "saluda",
+        "dir": -1,
+        "objeto": ""
+       },
+       {
+        "k": 6.4,
+        "x": 780,
+        "y": 1480,
+        "pose": "parado",
+        "dir": 1,
+        "a": [
+         1350,
+         1480
+        ],
+        "dur": 1.0,
+        "objeto": ""
+       }
+      ]
+     }
+    ],
+    "burbujas": [
+     {
+      "t": 0.3,
+      "x": 560,
+      "y": 860,
+      "texto": "10,000 BTC FOR 2 PIZZAS?",
+      "fin": "pizzas"
+     }
+    ],
+    "chips": [
+     {
+      "k": "d41",
+      "texto": "10,000 BTC ≈ $41",
+      "c": "verde",
+      "y": 1590,
+      "s": 1.3
+     }
+    ]
+   },
+   {
+    "tipo": "contador",
+    "desde": "s_hoy",
+    "k": "hoy",
+    "n": 600,
+    "pre": "$",
+    "suf": " MILLION",
+    "titulo": "TODAY",
+    "sub": "at ~$60,000 per bitcoin",
+    "color": "verde"
+   },
+   {
+    "tipo": "ranking",
+    "desde": "s_rank",
+    "titulo": "10,000 BTC · US DOLLARS",
+    "filas": [
+     {
+      "p": "2010",
+      "v": "$41",
+      "n": 1,
+      "k": "s_rank",
+      "c": "cian"
+     },
+     {
+      "p": "TODAY",
+      "v": "$600M",
+      "n": 600,
+      "k": "s_rank",
+      "c": "verde"
+     },
+     {
+      "p": "PEAK (OCT 2025)",
+      "v": "$1.26B",
+      "n": 1260,
+      "k": "pico",
+      "c": "amar",
+      "top": "MAX"
+     }
+    ]
+   },
+   {
+    "tipo": "historia",
+    "desde": "s_no",
+    "trans": "barrido",
+    "set": "sala",
+    "titulo": "LASZLO TODAY",
+    "props": [
+     {
+      "tipo": "caja_pizza",
+      "x": 720,
+      "y": 1460,
+      "s": 1.7
+     },
+     {
+      "tipo": "btc",
+      "x": 200,
+      "y": 1000,
+      "s": 0.8,
+      "k": "first",
+      "pop": true,
+      "gira": 0
+     }
+    ],
+    "actores": [
+     {
+      "look": "gamer",
+      "camisa": "#5c6bc0",
+      "pelo": "#4e342e",
+      "peloT": "corto",
+      "lentes": true,
+      "s": 0.95,
+      "keys": [
+       {
+        "k": 0,
+        "x": 420,
+        "y": 1480,
+        "pose": "sostiene",
+        "cara": "feliz",
+        "objeto": "pizza"
+       },
+       {
+        "k": "regrets",
+        "x": 420,
+        "y": 1480,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "salto",
+        "objeto": ""
+       }
+      ],
+      "os": 0.8
+     }
+    ],
+    "chips": [
+     {
+      "k": "regrets",
+      "texto": "HE SAYS: NO REGRETS",
+      "c": "verde",
+      "y": 880
+     },
+     {
+      "k": "first",
+      "texto": "FIRST REAL BITCOIN PURCHASE",
+      "c": "amar",
+      "y": 1590
+     }
+    ]
+   },
+   {
+    "tipo": "historia",
+    "desde": "s_les",
+    "trans": "zoom",
+    "set": "sala",
+    "titulo": "LESSON",
+    "props": [
+     {
+      "tipo": "cartel",
+      "x": 620,
+      "y": 1080,
+      "s": 1.0,
+      "texto": "WHAT WILL IT BE WORTH?",
+      "k": 0.3,
+      "pop": true
+     }
+    ],
+    "actores": [
+     {
+      "look": "gamer",
+      "camisa": "#5c6bc0",
+      "pelo": "#4e342e",
+      "peloT": "corto",
+      "lentes": true,
+      "s": 0.95,
+      "keys": [
+       {
+        "k": 0,
+        "x": 300,
+        "y": 1480,
+        "pose": "piensa",
+        "cara": "neutral"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "tipo": "cierre",
+    "desde": "s_fin"
+   }
+  ],
+  "cierre": "SPEND OR HOLD?",
+  "cierre2": "Would you have spent them? Comment",
+  "paises": [
+   "SPEND",
+   "HOLD"
+  ],
+  "sfx": [
+   {
+    "f": "extra/ESM_SPG_fx_action_transaction_cash_register_ding_02.wav",
+    "k": "hoy",
+    "off": 0.0,
+    "dur": 0.9,
+    "g": 0.12
+   }
+  ]
+ },
+ "acento": "#5effa1"
+}

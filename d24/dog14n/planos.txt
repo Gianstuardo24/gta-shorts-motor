@@ -1,0 +1,2 @@
+planos: 12 en 19.8 s (uno cada 1.7 s) · tipos distintos: 11 · globo×2, objeto×1, detalle:empuje×1, camina×1, medio×1, holandes×1, detalle:abre×1, vertical×1, balanceo×1, general×1, detalle:sube×1
+repetidos seguidos: 1

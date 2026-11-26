@@ -1,0 +1,14 @@
+ok /home/claude/d24/wd1/D2026112501.json dur 29.56
+T: hiding=1.25 s_1=3.20 smile=3.53 s_2=4.90 test=8.28 s_3=8.89 calm=11.78 math=13.64 s_4=14.77 fake=15.78 s_5=16.43 s_6=20.14 stress=21.19 s_fin=24.14 s_cta=26.42 fin=29.56
+  {"a": 0, "b": 1.5839999999999999, "t": "Your dog knows what you're hiding.", "k": ["hiding."], "w": [0.056, 0.286, 0.472, 0.746, 0.976, 1.25]}
+  {"a": 1.5839999999999999, "b": 3.1460000000000004, "t": "Even when you act normal.", "k": ["normal."], "w": [1.634, 1.864, 2.094, 2.28, 2.465]}
+  {"a": 3.1460000000000004, "b": 4.846, "t": "You can smile and say you're fine.", "k": ["you're"], "w": [3.196, 3.365, 3.534, 3.783, 3.952, 4.121, 4.371]}
+  {"a": 4.846, "b": 8.835999999999999, "t": "But in 2022, scientists in Belfast put four dogs to a test.", "k": ["2022,"], "w": [4.896, 5.115, 5.282, 6.055, 6.64,
+  {"a": 8.835999999999999, "b": 11.455, "t": "They took breath and sweat from 36 people:", "k": ["36"], "w": [8.886, 9.157, 9.427, 9.802, 10.021, 10.344, 10.614, 
+  {"a": 11.455, "b": 14.716, "t": "once calm, and once right after a hard math problem.", "k": ["problem."], "w": [11.505, 11.775, 12.124, 12.343, 12.614, 12.936,
+  {"a": 14.716, "b": 16.375999999999998, "t": "Now the part you can't fake.", "k": ["can't"], "w": [14.766, 14.952, 15.138, 15.368, 15.554, 15.784]}
+  {"a": 16.375999999999998, "b": 20.086, "t": "The dogs picked the stressed sample almost 94 percent of the time.", "k": ["94"], "w": [16.426, 16.619, 16.858, 17.
+  {"a": 20.086, "b": 21.505, "t": "What they smell is your stress.", "k": ["stress."], "w": [20.136, 20.355, 20.574, 20.835, 20.97, 21.189]}
+  {"a": 21.505, "b": 24.086, "t": "You can hide it from people, but not from your dog.", "k": ["people,"], "w": [21.555, 21.732, 21.909, 22.128, 22.263, 22.482, 2
+  {"a": 24.086, "b": 26.366, "t": "Tell me if your dog notices your bad days.", "k": ["notices"], "w": [24.136, 24.358, 24.495, 24.631, 24.853, 25.033, 25.383, 25
+  {"a": 26.366, "b": 29.509999999999998, "t": "Follow to decode your dog.", "k": ["Follow"], "w": [26.416, 26.756, 26.906, 27.246, 27.491]}

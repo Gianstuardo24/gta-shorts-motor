@@ -1,0 +1,379 @@
+{
+ "titulo": "A King Tried to Ban Coffee ☕",
+ "texto_pantalla": "BANNED?",
+ "lote": "C2026112101",
+ "tema": "cafe",
+ "frases": [
+  "In 1675, a king tried to ban coffee.",
+  "King Charles the Second ordered every coffee house in England to close.",
+  "Why? People sat there for hours, sharing news and gossip about the government.",
+  "The ban would start on January 10th.",
+  "London got angry. Fast.",
+  "Two days before the deadline, the king backed down.",
+  "The coffee houses stayed open.",
+  "So, would you give up coffee for a king?"
+ ],
+ "frases_voz": [
+  "In sixteen seventy-five, a king tried to ban coffee.",
+  "King Charles the Second ordered every coffee house in England to close.",
+  "Why? People sat there for hours, sharing news and gossip about the government.",
+  "The ban would start on January tenth.",
+  "London got angry. Fast.",
+  "Two days before the deadline, the king backed down.",
+  "The coffee houses stayed open.",
+  "So, would you give up coffee for a king?"
+ ],
+ "fuentes": [
+  "https://www.taylorfrancis.com/chapters/mono/10.4324/9781315094618-6/",
+  "https://rpsl.org.uk/rpsl/StandingDisplays/SD2016-01_Ian_Marshall_London_Coffee_Houses/files/basic-html/page7.html",
+  "https://www.ancientpages.com/2018/06/18/king-charles-ii-of-england-banned-coffeehouses-in-1675",
+  "https://exhibits.lafayette.edu/s/mate/item/34276"
+ ],
+ "escena": {
+  "momentos": [
+   [
+    "ban0",
+    0,
+    "^ban"
+   ],
+   [
+    "s1",
+    1,
+    null
+   ],
+   [
+    "ban",
+    1,
+    "^close"
+   ],
+   [
+    "s_casa",
+    2,
+    null
+   ],
+   [
+    "news",
+    2,
+    "^news"
+   ],
+   [
+    "gossip",
+    2,
+    "^gossip"
+   ],
+   [
+    "govt",
+    2,
+    "^government"
+   ],
+   [
+    "s_cal",
+    3,
+    null
+   ],
+   [
+    "enojo",
+    4,
+    "^angry"
+   ],
+   [
+    "s_atras",
+    5,
+    null
+   ],
+   [
+    "atras",
+    5,
+    "^backed|^down$"
+   ],
+   [
+    "abierto",
+    6,
+    "^open"
+   ],
+   [
+    "s_open",
+    6,
+    null
+   ],
+   [
+    "s_fin",
+    7,
+    null
+   ]
+  ],
+  "escenas": [
+   {
+    "tipo": "historia",
+    "desde": "0",
+    "trans": "corte",
+    "set": "trono",
+    "titulo": "ENGLAND · 1675",
+    "props": [
+     {
+      "tipo": "trono",
+      "x": 420,
+      "y": 1440,
+      "s": 1.0
+     },
+     {
+      "tipo": "taza",
+      "x": 800,
+      "y": 1250,
+      "s": 2.0,
+      "k": 0.2,
+      "pop": true
+     }
+    ],
+    "actores": [
+     {
+      "look": "rey",
+      "s": 1.05,
+      "keys": [
+       {
+        "k": 0,
+        "x": 420,
+        "y": 1410,
+        "pose": "sentado",
+        "cara": "neutral"
+       },
+       {
+        "k": "ban0",
+        "x": 420,
+        "y": 1480,
+        "pose": "apunta",
+        "cara": "enojado",
+        "fx": "salto"
+       }
+      ]
+     }
+    ],
+    "prohibidos": [
+     {
+      "k": "ban0",
+      "x": 800,
+      "y": 1250,
+      "r": 120
+     }
+    ],
+    "burbujas": [
+     {
+      "k": "ban0",
+      "x": 430,
+      "y": 860,
+      "texto": "NO MORE COFFEE!",
+      "fin": "s1"
+     }
+    ],
+    "zoom": [
+     {
+      "k": "ban0",
+      "s": 1.2,
+      "x": 560,
+      "y": 1220,
+      "dur": 0.5
+     }
+    ]
+   },
+   {
+    "tipo": "rey",
+    "desde": "s1",
+    "lineas": [
+     "BY THE KING",
+     "A PROCLAMATION",
+     "for the Suppression",
+     "of Coffee-Houses",
+     "1675"
+    ],
+    "k": "ban",
+    "sello": "BANNED"
+   },
+   {
+    "tipo": "historia",
+    "desde": "s_casa",
+    "trans": "barrido",
+    "set": "cafe",
+    "titulo": "WHY? THE COFFEE HOUSES",
+    "props": [
+     {
+      "tipo": "cajita",
+      "x": 540,
+      "y": 1420,
+      "s": 1.4,
+      "color": "#8d6e63"
+     }
+    ],
+    "actores": [
+     {
+      "var": 5,
+      "look": "cliente",
+      "s": 0.9,
+      "objeto": "taza",
+      "os": 0.55,
+      "keys": [
+       {
+        "k": 0,
+        "x": 260,
+        "y": 1440,
+        "pose": "sentado",
+        "cara": "feliz"
+       },
+       {
+        "k": "news",
+        "x": 260,
+        "y": 1440,
+        "pose": "apunta",
+        "cara": "risa",
+        "fx": "salto"
+       }
+      ]
+     },
+     {
+      "var": 9,
+      "look": "cliente",
+      "s": 0.9,
+      "objeto": "taza",
+      "os": 0.55,
+      "keys": [
+       {
+        "k": 0,
+        "x": 820,
+        "y": 1440,
+        "pose": "sentado",
+        "cara": "feliz",
+        "dir": -1
+       },
+       {
+        "k": "gossip",
+        "x": 820,
+        "y": 1440,
+        "pose": "sentado",
+        "cara": "sorpresa",
+        "dir": -1,
+        "fx": "tiembla"
+       }
+      ]
+     },
+     {
+      "var": 14,
+      "look": "cliente",
+      "s": 0.8,
+      "keys": [
+       {
+        "k": 0,
+        "x": 540,
+        "y": 1300,
+        "pose": "piensa",
+        "cara": "neutral"
+       }
+      ]
+     }
+    ],
+    "burbujas": [
+     {
+      "k": "news",
+      "x": 300,
+      "y": 930,
+      "texto": "NEWS!",
+      "fin": "gossip"
+     },
+     {
+      "k": "gossip",
+      "x": 780,
+      "y": 930,
+      "texto": "DID YOU HEAR?",
+      "fin": "s_cal"
+     }
+    ],
+    "chips": [
+     {
+      "k": "govt",
+      "texto": "GOSSIP ABOUT THE GOVERNMENT",
+      "c": "rojo",
+      "y": 1590
+     }
+    ]
+   },
+   {
+    "tipo": "calendario",
+    "desde": "s_cal",
+    "mes1": "JAN",
+    "dia1": "10",
+    "etq1": "BAN STARTS",
+    "mes2": "JAN",
+    "dia2": "8",
+    "etq2": "KING BACKS DOWN",
+    "k": "atras",
+    "ke": "enojo"
+   },
+   {
+    "tipo": "historia",
+    "desde": "s_open",
+    "trans": "zoom",
+    "set": "cafe",
+    "titulo": "STILL OPEN",
+    "props": [
+     {
+      "tipo": "cartel",
+      "x": 540,
+      "y": 1080,
+      "s": 1.3,
+      "texto": "OPEN",
+      "k": 0.1,
+      "pop": true
+     }
+    ],
+    "actores": [
+     {
+      "var": 5,
+      "look": "cliente",
+      "s": 0.95,
+      "objeto": "taza",
+      "os": 0.55,
+      "keys": [
+       {
+        "k": 0,
+        "x": 270,
+        "y": 1470,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "brinca"
+       }
+      ]
+     },
+     {
+      "var": 9,
+      "look": "cliente",
+      "s": 0.95,
+      "objeto": "taza",
+      "os": 0.55,
+      "keys": [
+       {
+        "k": 0,
+        "x": 810,
+        "y": 1470,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "brinca",
+        "dir": -1
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "tipo": "cierre",
+    "desde": "s_fin"
+   }
+  ],
+  "cierre": "COFFEE OR KING?",
+  "cierre2": "Would you give it up? Comment",
+  "paises": [
+   "COFFEE",
+   "KING"
+  ],
+  "sfx": []
+ },
+ "nota_datos": "Carlos II de Inglaterra: proclama del 29-dic-1675 para cerrar los coffee houses desde el 10-ene-1676; molestia general; el 8-ene-1676 dio marcha atrás (proclama adicional que posterga y nunca se aplicó).",
+ "marca": "COFFEE, BUT WHY?"
+}

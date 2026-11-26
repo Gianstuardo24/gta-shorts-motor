@@ -1,0 +1,52 @@
+{
+  "canal": "@TheViceVerseGG",
+  "idioma": "en",
+  "nota": "versión inicial 19-nov (criterio + datos de la semana del lanzamiento); el 📡 Radar la ajusta con evidencia",
+  "audiencia": "English-speaking players 15-30 already playing GTA 6",
+  "motivaciones": [
+    "find real hidden details first",
+    "understand WHY the game does something odd",
+    "avoid missing events/mechanics"
+  ],
+  "temas_prioritarios": [
+    "how to make money (verified steps)",
+    "where is X on the map (animated route)",
+    "what to do first / mistakes to avoid",
+    "STORY MODE cheats",
+    "GTA 5 vs 6 comparisons with data",
+    "confirmed real details"
+  ],
+  "temas_prohibidos": [
+    "pre-release speculation as fact",
+    "leaks",
+    "other creators' footage",
+    "fake glitches or money promises",
+    "reposting the same video",
+    "ONLINE cheats or exploits (Rockstar policy)",
+    "story spoilers (ending, cutscenes)",
+    "facts not verified in 2+ sources"
+  ],
+  "angulo_vs_es": "EN: 'why' + anomaly / curiosity; ES uses identity/participation",
+  "estilo_narrativo": "punchy, curious, gamer-to-gamer",
+  "duracion_objetivo_s": [
+    25,
+    40
+  ],
+  "hooks_preferidos": [
+    "'Why does GTA 6 [odd thing]?'",
+    "'Are you one of the players who…?'",
+    "hidden-detail reveal with proof",
+    "real loss: 'don't do X before Y' (if true)",
+    "'most players miss this' only with a verified fact"
+  ],
+  "hooks_evitar": [
+    "plain news statements",
+    "questions with nothing at stake"
+  ],
+  "ritmo": "cut every 1-2 s, payoff before 70%",
+  "identidad_visual": "no own game: code animation (maps/routes/steps), OFFICIAL Rockstar stills, labeled illustrations",
+  "titulos": "specific detail + curiosity, no all-caps bait",
+  "objetivo": "beat channel median at 24 h; avg viewed ≥ 80%",
+  "tiene_juego": false,
+  "formato_principal": "GUIDES and TIPS explained WITHOUT own gameplay: code-made animation (maps, routes, steps, counters, comparisons), official Rockstar material and labeled illustrations. Watch others' gameplays/guides ONLY to learn facts (verified in 2+ sources), never to use their footage."
+}

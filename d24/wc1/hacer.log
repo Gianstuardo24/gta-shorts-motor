@@ -1,0 +1,27 @@
+ok /home/claude/d24/wc1/C2026112501.json dur 63.63
+T: running=1.07 caffeine0=3.23 s_1=6.21 morning=7.35 s_2=9.47 uk=11.42 s_3=12.46 sensors=13.48 s_4=16.92 four=19.85 half=22.09 s_5=23.07 water=24.94 nothing=27.94 s_6=31.01 detail=31.78 s_7=35.68 decaf=35.68 s_8=39.79 gastrin=42.30 s_9=44.18 eat=48.93 s_10=49.47 women=53.62 s_11=55.17 waking=57.08 s_fin=57.90 s_cta=59.79 fin=63.63
+  {"a": 0, "b": 3.709, "t": "If coffee sends you running to the bathroom, it's not just the caffeine.", "k": ["bathroom,"], "w": [0.056, 0.213, 0.565, 0.869, 1.07
+  {"a": 3.709, "b": 6.156000000000001, "t": "And there's a detail almost nobody knows.", "k": ["there's"], "w": [3.759, 3.965, 4.317, 4.425, 4.778, 5.13, 5.483]}
+  {"a": 6.156000000000001, "b": 9.415999999999999, "t": "It usually hits in the morning, right after that first cup.", "k": ["morning,"], "w": [6.206, 6.358, 6.74
+  {"a": 9.415999999999999, "b": 12.405999999999999, "t": "In 1990, researchers in the UK tested it.", "k": ["1990,"], "w": [9.466, 9.632, 10.4, 11.033, 11.199, 11
+  {"a": 12.405999999999999, "b": 15.056, "t": "They placed pressure sensors in volunteers' lower gut,", "k": ["volunteers'"], "w": [12.456, 12.702, 13.042, 13.476
+  {"a": 15.056, "b": 16.866, "t": "and gave them a cup of coffee.", "k": ["coffee."], "w": [15.106, 15.304, 15.55, 15.796, 15.9, 16.098, 16.249]}
+  {"a": 16.866, "b": 20.503999999999998, "t": "In people who felt the urge, the gut started moving within four minutes.", "k": ["minutes."], "w": [16.916, 17.068,
+  {"a": 20.503999999999998, "b": 23.016, "t": "And it kept going for at least half an hour.", "k": ["going"], "w": [20.554, 20.754, 20.905, 21.152, 21.447, 21.646
+  {"a": 23.016, "b": 26.041999999999998, "t": "They also tested it with plain hot water and no coffee,", "k": ["coffee,"], "w": [23.066, 23.334, 23.602, 23.973, 2
+  {"a": 26.041999999999998, "b": 27.13, "t": "to compare results.", "k": ["results."], "w": [26.092, 26.257, 26.68]}
+  {"a": 27.13, "b": 28.862, "t": "Surprisingly, nothing happened.", "k": ["Surprisingly,"], "w": [27.18, 27.938, 28.361]}
+  {"a": 28.862, "b": 30.956, "t": "So it wasn't about a warm drink.", "k": ["wasn't"], "w": [28.912, 29.077, 29.242, 29.562, 29.882, 29.995, 30.263]}
+  {"a": 30.956, "b": 33.277, "t": "But here's the detail almost nobody knows,", "k": ["here's"], "w": [31.006, 31.228, 31.556, 31.778, 32.158, 32.539, 32.92]}
+  {"a": 33.277, "b": 35.626000000000005, "t": "and it changes who this happens to.", "k": ["changes"], "w": [33.327, 33.549, 33.718, 34.151, 34.373, 34.648, 35.08
+  {"a": 35.626000000000005, "b": 36.616, "t": "Decaf did it too.", "k": ["Decaf"], "w": [35.676, 35.994, 36.21, 36.374]}
+  {"a": 36.616, "b": 39.736000000000004, "t": "Less than regular coffee, but still more than water.", "k": ["regular"], "w": [36.666, 36.933, 37.2, 37.621, 38.067
+  {"a": 39.736000000000004, "b": 44.126000000000005, "t": "That's because coffee triggers a gut hormone called gastrin, even without caffeine.", "k": ["caffeine."
+  {"a": 44.126000000000005, "b": 46.099000000000004, "t": "Gastrin tells your gut to get moving.", "k": ["Gastrin"], "w": [44.176, 44.581, 44.888, 45.145, 45.353,
+  {"a": 46.099000000000004, "b": 49.416000000000004, "t": "It's the same kind of signal your body sends after you eat.", "k": ["signal"], "w": [46.149, 46.357, 46
+  {"a": 49.416000000000004, "b": 51.156000000000006, "t": "And it doesn't happen to everyone.", "k": ["everyone."], "w": [49.466, 49.671, 49.827, 50.178, 50.528, 
+  {"a": 51.156000000000006, "b": 53.364000000000004, "t": "Only about 3 in 10 people feel it,", "k": ["3", "10"], "w": [51.206, 51.459, 51.762, 52.015, 52.171, 52
+  {"a": 53.364000000000004, "b": 55.116, "t": "and women far more than men.", "k": ["women"], "w": [53.414, 53.618, 53.921, 54.125, 54.379, 54.632]}
+  {"a": 55.116, "b": 57.846000000000004, "t": "So if it happens to you, it's your gut waking up.", "k": ["happens"], "w": [55.166, 55.318, 55.469, 55.621, 56.01, 
+  {"a": 57.846000000000004, "b": 59.736000000000004, "t": "Tell me if coffee does this to you.", "k": ["coffee"], "w": [57.896, 58.107, 58.236, 58.366, 58.658, 58
+  {"a": 59.736000000000004, "b": 63.580000000000005, "t": "Follow for one coffee curiosity a day.", "k": ["curiosity"], "w": [59.786, 60.146, 60.356, 60.566, 60.9

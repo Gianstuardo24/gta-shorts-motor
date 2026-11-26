@@ -1,0 +1,411 @@
+{
+ "funcion": {
+  "acuerdo": 0.8,
+  "azar": 0.16,
+  "kappa": 0.76,
+  "por_codigo": {
+   "Abrir": [
+    2,
+    3,
+    2,
+    3
+   ],
+   "Avanzar": [
+    6,
+    9,
+    7,
+    8
+   ],
+   "Cerrar": [
+    1,
+    2,
+    1,
+    2
+   ],
+   "Complicar": [
+    4,
+    4,
+    4,
+    4
+   ],
+   "Girar": [
+    2,
+    3,
+    3,
+    2
+   ],
+   "Pagar": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "Reflexionar": [
+    0,
+    2,
+    1,
+    1
+   ],
+   "Respirar": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "Situar": [
+    1,
+    3,
+    3,
+    1
+   ]
+  },
+  "confusiones": [
+   [
+    [
+     "Situar",
+     "Abrir"
+    ],
+    1
+   ],
+   [
+    [
+     "Avanzar",
+     "Reflexionar"
+    ],
+    1
+   ],
+   [
+    [
+     "Girar",
+     "Avanzar"
+    ],
+    1
+   ],
+   [
+    [
+     "Situar",
+     "Avanzar"
+    ],
+    1
+   ],
+   [
+    [
+     "Reflexionar",
+     "Cerrar"
+    ],
+    1
+   ]
+  ],
+  "desacuerdos": [
+   "2",
+   "7",
+   "13",
+   "18",
+   "24"
+  ]
+ },
+ "enigma": {
+  "acuerdo": 0.48,
+  "azar": 0.14,
+  "kappa": 0.39,
+  "por_codigo": {
+   "Demorar": [
+    1,
+    5,
+    1,
+    5
+   ],
+   "Ninguno": [
+    2,
+    11,
+    11,
+    2
+   ],
+   "Plantear": [
+    3,
+    5,
+    4,
+    4
+   ],
+   "Prometer respuesta": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "Responder a medias": [
+    4,
+    10,
+    4,
+    10
+   ],
+   "Revelar": [
+    0,
+    4,
+    3,
+    1
+   ],
+   "Suspender": [
+    1,
+    2,
+    1,
+    2
+   ]
+  },
+  "confusiones": [
+   [
+    [
+     "Ninguno",
+     "Responder a medias"
+    ],
+    5
+   ],
+   [
+    [
+     "Ninguno",
+     "Demorar"
+    ],
+    3
+   ],
+   [
+    [
+     "Revelar",
+     "Plantear"
+    ],
+    1
+   ],
+   [
+    [
+     "Revelar",
+     "Demorar"
+    ],
+    1
+   ],
+   [
+    [
+     "Revelar",
+     "Responder a medias"
+    ],
+    1
+   ],
+   [
+    [
+     "Ninguno",
+     "Revelar"
+    ],
+    1
+   ]
+  ],
+  "desacuerdos": [
+   "2",
+   "4",
+   "5",
+   "6",
+   "9",
+   "10",
+   "13",
+   "17",
+   "19",
+   "20",
+   "22",
+   "24",
+   "25"
+  ]
+ },
+ "saber": {
+  "acuerdo": 0.84,
+  "azar": 0.56,
+  "kappa": 0.63,
+  "por_codigo": {
+   "Igual": [
+    16,
+    20,
+    18,
+    18
+   ],
+   "No aplica": [
+    4,
+    6,
+    5,
+    5
+   ],
+   "Público más": [
+    1,
+    3,
+    2,
+    2
+   ]
+  },
+  "confusiones": [
+   [
+    [
+     "No aplica",
+     "Igual"
+    ],
+    1
+   ],
+   [
+    [
+     "Igual",
+     "No aplica"
+    ],
+    1
+   ],
+   [
+    [
+     "Igual",
+     "Público más"
+    ],
+    1
+   ],
+   [
+    [
+     "Público más",
+     "Igual"
+    ],
+    1
+   ]
+  ],
+  "desacuerdos": [
+   "1",
+   "10",
+   "12",
+   "14"
+  ]
+ },
+ "apunta": {
+  "acuerdo": 0.88,
+  "azar": 0.53,
+  "kappa": 0.75,
+  "por_codigo": {
+   "Atención": [
+    5,
+    8,
+    5,
+    8
+   ],
+   "Comprensión": [
+    16,
+    18,
+    18,
+    16
+   ],
+   "Emoción": [
+    1,
+    2,
+    2,
+    1
+   ]
+  },
+  "confusiones": [
+   [
+    [
+     "Comprensión",
+     "Atención"
+    ],
+    2
+   ],
+   [
+    [
+     "Emoción",
+     "Atención"
+    ],
+    1
+   ]
+  ],
+  "desacuerdos": [
+   "3",
+   "13",
+   "20"
+  ]
+ },
+ "img_rel": {
+  "acuerdo": 0.96,
+  "azar": 0.82,
+  "kappa": 0.78,
+  "por_codigo": {
+   "Adorna": [
+    2,
+    3,
+    3,
+    2
+   ],
+   "Muestra": [
+    22,
+    23,
+    22,
+    23
+   ]
+  },
+  "confusiones": [
+   [
+    [
+     "Adorna",
+     "Muestra"
+    ],
+    1
+   ]
+  ],
+  "desacuerdos": [
+   "24"
+  ]
+ },
+ "img_tipo": {
+  "acuerdo": 0.88,
+  "azar": 0.28,
+  "kappa": 0.83,
+  "por_codigo": {
+   "Archivo de época": [
+    9,
+    9,
+    9,
+    9
+   ],
+   "Dato o gráfico": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "Documento o prueba": [
+    5,
+    7,
+    7,
+    5
+   ],
+   "Producto": [
+    6,
+    9,
+    6,
+    9
+   ],
+   "Texto en pantalla": [
+    0,
+    1,
+    1,
+    0
+   ]
+  },
+  "confusiones": [
+   [
+    [
+     "Documento o prueba",
+     "Producto"
+    ],
+    2
+   ],
+   [
+    [
+     "Texto en pantalla",
+     "Producto"
+    ],
+    1
+   ]
+  ],
+  "desacuerdos": [
+   "7",
+   "18",
+   "23"
+  ]
+ }
+}

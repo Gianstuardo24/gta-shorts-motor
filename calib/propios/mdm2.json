@@ -1,0 +1,46 @@
+{
+ "id": "mdm2",
+ "canal": "Million Dollar Mistake",
+ "titulo": "MDM 2",
+ "dur_min": 6.4,
+ "voz": {
+  "ppm": 151,
+  "ppm_primeros_30s": 166,
+  "pausas_min": 0.3
+ },
+ "imagen": {
+  "cortes_min": 3.1,
+  "plano_mediano": 6.3,
+  "plano_max": 86.2,
+  "sin_cambio": 5,
+  "cambios_locales_min": 5.1,
+  "racha_quieta_max": 18.6,
+  "en_rachas_5s": 5
+ },
+ "gancho": {
+  "cortes_30s": 2,
+  "sin_cambio_30s": 1,
+  "primera_frase_palabras": 24,
+  "primera_pregunta": false,
+  "primera_con_numero": true,
+  "primera_con_tu": false
+ },
+ "lenguaje": {
+  "palabras": 924,
+  "frases": 54,
+  "frase_media": 17.1,
+  "preguntas_100f": 0.0,
+  "tu_100": 0.32,
+  "yo_100": 0.11,
+  "contracciones_100": 0.22,
+  "numeros_100": 2.81,
+  "largo_palabra": 4.47,
+  "palabras_largas": 10.5,
+  "variedad": 0.71,
+  "flesch": 63.7,
+  "registro": "neutro"
+ },
+ "sincronia": {
+  "frases_con_cambio_visual": 100
+ }
+}

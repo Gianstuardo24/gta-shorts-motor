@@ -1,0 +1,46 @@
+{
+ "id": "dog1",
+ "canal": "Dog Decoded",
+ "titulo": "Dog 1",
+ "dur_min": 6.5,
+ "voz": {
+  "ppm": 178,
+  "ppm_primeros_30s": 198,
+  "pausas_min": 0.3
+ },
+ "imagen": {
+  "cortes_min": 0.3,
+  "plano_mediano": 174.3,
+  "plano_max": 189.5,
+  "sin_cambio": 5,
+  "cambios_locales_min": 3.5,
+  "racha_quieta_max": 18.2,
+  "en_rachas_5s": 5
+ },
+ "gancho": {
+  "cortes_30s": 1,
+  "sin_cambio_30s": 1,
+  "primera_frase_palabras": 8,
+  "primera_pregunta": false,
+  "primera_con_numero": false,
+  "primera_con_tu": true
+ },
+ "lenguaje": {
+  "palabras": 1110,
+  "frases": 92,
+  "frase_media": 12.1,
+  "preguntas_100f": 1.1,
+  "tu_100": 2.34,
+  "yo_100": 0.72,
+  "contracciones_100": 0.54,
+  "numeros_100": 1.8,
+  "largo_palabra": 4.25,
+  "palabras_largas": 6.5,
+  "variedad": 0.72,
+  "flesch": 80.2,
+  "registro": "neutro"
+ },
+ "sincronia": {
+  "frases_con_cambio_visual": 100
+ }
+}

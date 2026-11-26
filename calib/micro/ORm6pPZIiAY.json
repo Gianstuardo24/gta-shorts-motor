@@ -1,0 +1,53 @@
+{
+ "id": "ORm6pPZIiAY",
+ "titulo": "Stop Calling It a Kiss: What Your Dog Is Actually Telling You When He Licks You",
+ "canal": "Wade | K9 Dog Training",
+ "subs": 8410,
+ "vistas": 922264,
+ "fecha": "20261024",
+ "dur_min": 13.3,
+ "idioma": "en",
+ "xN": 109.7,
+ "voz": {
+  "ppm": 186,
+  "ppm_primeros_30s": 174,
+  "pausas_min": 1.7
+ },
+ "imagen": {
+  "cortes_min": 12.2,
+  "plano_mediano": 4.9,
+  "plano_max": 5.9,
+  "sin_cambio": 0,
+  "cambios_locales_min": 8.9,
+  "racha_quieta_max": 0.4,
+  "en_rachas_5s": 0
+ },
+ "gancho": {
+  "cortes_30s": 6,
+  "seg_primer_corte": 3.5,
+  "sin_cambio_30s": 0,
+  "primera_frase_palabras": 24,
+  "primera_pregunta": false,
+  "primera_con_numero": false,
+  "primera_con_tu": true
+ },
+ "lenguaje": {
+  "palabras": 2475,
+  "frases": 134,
+  "frase_media": 18.5,
+  "preguntas_100f": 1.5,
+  "tu_100": 6.71,
+  "yo_100": 0.93,
+  "contracciones_100": 0.53,
+  "numeros_100": 0.61,
+  "largo_palabra": 4.19,
+  "palabras_largas": 6.3,
+  "variedad": 0.743,
+  "flesch": 76.4,
+  "registro": "neutro"
+ },
+ "sincronia": {
+  "frases_con_cambio_visual": 96,
+  "cortes_junto_a_inicio_de_frase": 43
+ }
+}

@@ -1,0 +1,11 @@
+ok /home/claude/d24/cat16/K2026112401.json dur 25.13
+T: knows=0.51 see=2.23 s_2021=2.98 japan=4.60 voices=5.63 speakers=6.82 s_first=7.69 outside=8.81 s_then=9.90 same=11.18 inside=12.17 s_surp=12.91 surprised=13.67 teleported=15.25 s_map=16.17 mental=17.40 sound=18.74 s_fin=19.67 s_cta=21.90 fin=25.13
+  {"a": 0, "b": 2.93, "t": "Your cat knows where you are, even when it can't see you.", "k": ["knows"], "w": [0.12, 0.337, 0.512, 0.771, 1.03, 1.205, 1.443, 1.66,
+  {"a": 2.93, "b": 7.640000000000001, "t": "In 2021, scientists in Japan played owners' voices to cats through speakers.", "k": ["2021,"], "w": [2.98, 3.14, 3.879
+  {"a": 7.640000000000001, "b": 9.85, "t": "First, the voice came from outside the room.", "k": ["outside"], "w": [7.69, 7.993, 8.158, 8.401, 8.605, 8.81, 9.132, 
+  {"a": 9.85, "b": 12.86, "t": "Then, a moment later, the same voice came from inside.", "k": ["inside."], "w": [9.9, 10.206, 10.306, 10.635, 10.986, 11.178, 11.4
+  {"a": 12.86, "b": 16.12, "t": "The cats looked surprised, as if their owner had teleported.", "k": ["teleported."], "w": [12.91, 13.102, 13.339, 13.667, 14.201,
+  {"a": 16.12, "b": 18.211, "t": "That means your cat keeps a mental map of you,", "k": ["mental"], "w": [16.17, 16.39, 16.652, 16.871, 17.049, 17.311, 17.404, 17
+  {"a": 18.211, "b": 19.62, "t": "built from sound alone.", "k": ["alone."], "w": [18.261, 18.523, 18.743, 19.005]}
+  {"a": 19.62, "b": 21.849999999999998, "t": "Tell me if your cat finds you in every room.", "k": ["finds"], "w": [19.67, 19.877, 20.004, 20.132, 20.338, 20.506, 
+  {"a": 21.849999999999998, "b": 25.08, "t": "Follow to decode your cat.", "k": ["Follow"], "w": [21.9, 22.256, 22.415, 22.771, 23.028]}

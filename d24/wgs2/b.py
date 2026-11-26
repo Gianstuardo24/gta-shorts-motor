@@ -1,0 +1,35 @@
+import sys; sys.path.insert(0,'/home/claude/d24'); from formato import *
+F=["GTA 6 empató un récord que nadie tocaba desde 1998. Y no es de ventas.",
+"Las reseñas de la prensa salieron el 18 de noviembre.",
+"En Metacritic, el sitio que promedia a los críticos, sacó 99 de 100.",
+"Ese puntaje solo lo tenía un juego: Ocarina of Time, de 1998.",
+"Ahora viene el detalle que casi nadie nota.",
+"Ocarina llegó a 99 con 22 reseñas. GTA 6 lo hizo con más de 140.",
+"O sea, el mismo número, pero con muchos más críticos opinando.",
+"Comenta si crees que se merece el 99.",
+"Sigue el canal para más números de GTA 6."]
+V=["GTA seis empató un récord que nadie tocaba desde mil novecientos noventa y ocho. Y no es de ventas.",
+"Las reseñas de la prensa salieron el dieciocho de noviembre.",
+"En Metacritic, el sitio que promedia a los críticos, sacó noventa y nueve de cien.",
+"Ese puntaje solo lo tenía un juego: Ocarina of Time, de mil novecientos noventa y ocho.",
+"Ahora viene el detalle que casi nadie nota.",
+"Ocarina llegó a noventa y nueve con veintidós reseñas. GTA seis lo hizo con más de ciento cuarenta.",
+"O sea, el mismo número, pero con muchos más críticos opinando.",
+"Comenta si crees que se merece el noventa y nueve.",
+"Sigue el canal para más números de GTA seis."]
+G=dict(look="gamer",var=101,pelo="#212121",camisa="#8e24aa",lentes=False,s=1.0)
+video("G2026112502_src.json","G2026112502","VICEVERSO GG","GTA 6 empató un récord de 1998 🏆","EMPATÓ UN RÉCORD DE 1998",F,V,
+ marcas=[("record",0,"^record"),("ventas",0,"^ventas"),("resenas",1,"^resenas"),("m99",2,"^99"),("ocarina",3,"^ocarina"),("detalle",4,"^detalle"),("m22",5,"^22"),("m140",5,"^140"),("mismo",6,"^mismo")],
+ escenas=[
+  {"i":["#3b2a0a","#1c1405","#050301"],"luz2":"255,215,120","pedestal":True,"props":[{"tipo":"trofeo","x":540,"y":1300,"s":1.8},{"tipo":"neblina","y":1700,"a":.12}]},
+  {"k":"s_1","z":"noticiasV","o":{"cintillo":"RESEÑAS DE GTA 6"},"actores":[{"look":"ejecutivo","var":102,"camisa":"#37474f","corbata":"#7b1fa2","s":1.0,"keys":[{"k":"s_1","x":420,"pose":"lee","cara":"sorpresa","objeto":"documento"}]}]},
+  {"k":"s_2","z":"escenarioV","actores":[{**G,"keys":[{"k":"s_2","x":540,"pose":"celebra","cara":"risa"}]}],"props":[{"tipo":"humo","x":540,"y":1800,"s":.8,"a":.12}]},
+  {"k":"s_3","i":["#16243f","#0b1222","#020408"],"luz2":"190,210,255","pedestal":True,"props":[{"tipo":"calendario","x":540,"y":1300,"s":1.7,"mes":"NOVIEMBRE","anio":1998,"color":"#2e7d32"}]},
+  {"k":"s_4","z":"nocheV","o":{"ciudad":True,"sem":43},"actores":[{**G,"keys":[{"k":"s_4","x":420,"pose":"piensa","cara":"sorpresa"}]}]},
+  {"k":"s_5","i":["#2a1d55","#120b2c","#030108"],"luz2":"255,120,200","props":[{"tipo":"barras2","x":540,"y":1650,"s":1.6,"a":[22,"1998","#78909c"],"b":[146,"GTA 6","#ff4081"],"suf":""},{"tipo":"rotulo","x":540,"y":880,"s":1.0,"texto":"RESEÑAS","color":"#ff80ab"}]},
+  {"k":"s_6","z":"cuartoGamerV","o":{"era":2026},"actores":[{**G,"keys":[{"k":"s_6","x":420,"pose":"juega","cara":"feliz"}]}]}],
+ numeros=[{"k":"m99","n":99,"c":"amar","etq":"METACRITIC","fin":"s_3"}],
+ emojis=[{"k":"ventas","e":"🤔"},{"k":"detalle","e":"👀"},{"k":"mismo","e":"🏆","dur":1.2}],
+ gancho2=4,cierre="¿SE MERECE EL 99?",cierre2="Comenta: sí o no",paises=["SÍ","NO"],cta="SIGUE EL CANAL",
+ nota="Reseñas de GTA VI publicadas el 18-nov-2026: Metascore 99 (PS5), empata con The Legend of Zelda: Ocarina of Time (N64, noviembre de 1998), el único con 99. Ocarina: 99 con 22 reseñas (PC Guide, gameluster); GTA VI: 99 con 146-148 reseñas (Fandomwire, Technobezz) -> 'más de 140'. No se dibuja ningún personaje de Nintendo ni de Rockstar. Disparador: comparación inesperada. Gancho tipo 6.",
+ fuentes=["https://www.pcguide.com/news/gta-6-metacritic-review-score-ties-long-standing-record-held-by-the-original-ocarina-of-time/","https://www.technobezz.com/news/gta-6-reviews-metacritic-opencritic-scores","https://games.gg/news/grand-theft-auto-6-metacritic-record/"])

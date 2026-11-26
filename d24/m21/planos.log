@@ -1,0 +1,16 @@
+  0.00-  1.99 general   L=2.0 foco=81 n_vis=1
+  1.99-  4.94 recorre   L=2.9 foco=81 n_vis=1 cifra
+  4.94-  7.48 acerca    L=2.5 foco=81 n_vis=1 cifra
+  7.48-  9.02 holandes  L=1.5 foco=82 n_vis=2
+  9.02- 10.42 dos       L=1.4 foco=83 n_vis=3
+ 10.48- 11.15 detalle
+ 11.21- 12.67 camina    L=1.5 foco=81 n_vis=1 cifra
+ 12.67- 14.87 objeto    L=2.2 foco=82 n_vis=2 cifra
+ 14.87- 15.96 globo     L=1.1 foco=81 n_vis=2 burbuja cifra
+ 17.40- 19.42 mano      L=2.0 foco=81 n_vis=1
+ 20.86- 21.47 primer    L=0.6 foco=81 n_vis=2
+ 21.53- 22.34 detalle
+ 22.41- 23.33 objeto    L=0.9 foco=81 n_vis=2
+ 24.77- 27.27 globo     L=2.5 foco=81 n_vis=1 burbuja
+ 27.27- 28.84 general   L=1.6 foco=81 n_vis=1 burbuja
+ 28.84- 30.02 medio     L=1.2 foco=81 n_vis=1

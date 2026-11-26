@@ -1,0 +1,43 @@
+{
+  "canal": "@TheRabbitLoop",
+  "idioma": "en",
+  "nota": "versión inicial 19-nov (criterio + datos de la semana del lanzamiento); el 📡 Radar la ajusta con evidencia",
+  "audiencia": "curious adults 18-45 into aliens, UFOs, space mysteries and strange science",
+  "motivaciones": [
+    "resolve uncertainty: is it real?",
+    "feel smart (see through hype)",
+    "awe at the unknown",
+    "take a side and comment"
+  ],
+  "temas_prioritarios": [
+    "claim checks of viral UFO/UAP claims",
+    "real messages and signals to/from space",
+    "interstellar objects",
+    "official reports vs testimony",
+    "alien languages/communication attempts"
+  ],
+  "temas_prohibidos": [
+    "asserting aliens are proven",
+    "conspiracies stated as fact",
+    "deepfakes or real faces",
+    "fake 'leaked' footage"
+  ],
+  "estilo_narrativo": "calm, investigative, 'here is what the evidence says'; theories always as questions",
+  "duracion_objetivo_s": [
+    35,
+    50
+  ],
+  "hooks_preferidos": [
+    "'X claimed Y. Claim check.'",
+    "real event + why it's strange",
+    "dilemma question at the end ('should we reply?')"
+  ],
+  "hooks_evitar": [
+    "lore without stakes",
+    "generic 'top 5 mysteries'"
+  ],
+  "ritmo": "steady, one reveal every ~8 s, final vote question",
+  "identidad_visual": "ChatGPT illustrations labeled as recreations, space/documentary look, no logos",
+  "titulos": "claim + 'Claim Check' or strange fact + 'Why?'",
+  "objetivo": "beat channel median at 24 h; comments from the final question"
+}

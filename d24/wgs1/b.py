@@ -1,0 +1,42 @@
+import sys; sys.path.insert(0,'/home/claude/d24'); from formato import *
+F=["GTA 5 humilló a GTA 6. Y no es por lo que crees. Cuidado, el detalle que viene después podría cambiar lo que piensas de GTA 6.",
+"GTA 5 vendió más de 215 millones de copias desde 2013, según Take-Two.",
+"Eso lo convierte en uno de los juegos más vendidos de la historia.",
+"Y GTA 6 partió fuerte: 32,5 millones vendidos antes de salir.",
+"Suena enorme. Y lo es.",
+"Pero hay un cálculo que casi nadie hace.",
+"Esos 32,5 millones son apenas el 15 por ciento de lo que lleva GTA 5.",
+"Para alcanzarlo, GTA 6 tendría que vender casi siete veces lo que ya vendió.",
+"Pero a GTA 5 le tomó 13 años llegar ahí. GTA 6 recién empieza.",
+"Comenta si crees que GTA 6 lo va a superar y en cuánto tiempo.",
+"Sigue el canal para más números de GTA 6."]
+V=["GTA cinco humilló a GTA seis. Y no es por lo que crees. Cuidado, el detalle que viene después podría cambiar lo que piensas de GTA seis.",
+"GTA cinco vendió más de doscientos quince millones de copias desde dos mil trece, según Téik Tu.",
+"Eso lo convierte en uno de los juegos más vendidos de la historia.",
+"Y GTA seis partió fuerte. Treinta y dos coma cinco millones vendidos antes de salir.",
+"Suena enorme. Y lo es.",
+"Pero hay un cálculo que casi nadie hace.",
+"Esos treinta y dos coma cinco millones son apenas el quince por ciento de lo que lleva GTA cinco.",
+"Para alcanzarlo, GTA seis tendría que vender casi siete veces lo que ya vendió.",
+"Pero a GTA cinco le tomó trece años llegar ahí. GTA seis recién empieza.",
+"Comenta si crees que GTA seis lo va a superar y en cuánto tiempo.",
+"Sigue el canal para más números de GTA seis."]
+G=dict(look="gamer",var=83,pelo="#4e342e",camisa="#ff7043",lentes=False,s=1.0)
+G6=dict(look="jugador",var=86,pelo="#212121",camisa="#ec407a",s=1.0)
+video("G2026112501_src.json","G2026112501","VICEVERSO GG","GTA 5 HUMILLÓ a GTA 6 😳","HUMILLÓ A GTA 6",F,V,
+ marcas=[("humillo",0,"^humill"),("crees",0,"^crees"),("m215",1,"^215"),("historia",2,"^historia"),("fuerte",3,"^fuerte"),("m32",3,"^32"),("enorme",4,"^enorme"),("calculo",5,"^c"),("apenas",6,"^apenas"),("siete",7,"^siete"),("anios",8,"^13"),("empieza",8,"^empieza")],
+ escenas=[
+  {"i":["#2a1d55","#120b2c","#030108"],"luz2":"255,120,200","props":[{"tipo":"barras2","x":540,"y":1650,"s":1.6,"a":[215,"GTA 5","#78909c"],"b":[32.5,"GTA 6","#ff4081","32,5"],"suf":" M"}]},
+  {"k":"s_1","z":"tiendaJuegosV","actores":[{"look":"vendedor","var":84,"s":1.0,"keys":[{"k":"s_1","x":360,"pose":"ofrece","cara":"feliz","objeto":"cajita"}]}],"props":[{"tipo":"neblina","x":540,"y":1800,"a":.10}]},
+  {"k":"s_2","i":["#3b2a0a","#1c1405","#050301"],"luz2":"255,215,120","pedestal":True,"props":[{"tipo":"trofeo","x":540,"y":1300,"s":1.6}]},
+  {"k":"s_3","z":"cuartoGamerV","o":{"era":2026},"actores":[{**G,"keys":[{"k":"s_3","x":420,"pose":"celebra","cara":"risa"}]}]},
+  {"k":"s_4","z":"escenarioV","actores":[{**G6,"keys":[{"k":"s_4","x":540,"pose":"celebra","cara":"risa"}]}],"props":[{"tipo":"humo","x":540,"y":1800,"s":.8,"a":.12}]},
+  {"k":"s_5","z":"nocheV","o":{"ciudad":True,"sem":17},"actores":[{**G,"keys":[{"k":"s_5","x":420,"pose":"piensa","cara":"sorpresa"}]}]},
+  {"k":"s_6","i":["#3a0d2a","#1c0614","#050104"],"luz2":"255,120,200","props":[{"tipo":"mitad","x":540,"y":1560,"s":.95,"de":"s_6","a":"s_6+2.0","n0":0,"n1":.15,"half":"15%","sinReloj":1,"c1":"#ff4081","c2":"#880e4f","texto":"DEL CAMINO"}]},
+  {"k":"s_7","i":["#2a1d55","#120b2c","#030108"],"luz2":"255,120,200","props":[{"tipo":"rotulo","x":540,"y":1250,"s":3.2,"texto":"x7","color":"#ff4081","k":"siete"},{"tipo":"neblina","y":1700,"a":.12}]},
+  {"k":"s_8","i":["#16243f","#0b1222","#020408"],"luz2":"190,210,255","props":[{"tipo":"calendario","x":330,"y":1400,"s":1.3,"mes":"SEPTIEMBRE","anio":2013,"color":"#2e7d32"},{"tipo":"calendario","x":760,"y":1400,"s":1.3,"mes":"HOY","anio":2026,"color":"#c2185b","k":"empieza"}]}],
+ numeros=[{"k":"m215","n":215,"suf":" M","c":"cian","etq":"GTA 5 · COPIAS","fin":"s_2"},{"k":"m32","n":32,"suf":",5 M","c":"rosa","etq":"GTA 6 · ANTES DE SALIR","fin":"s_4"}],
+ emojis=[{"k":"humillo","e":"😳"},{"k":"calculo","e":"🧮"},{"k":"empieza","e":"🚀","dur":1.2}],
+ gancho2=5,cierre="¿LO VA A SUPERAR?",cierre2="Comenta: sí o no",paises=["SÍ","NO"],cta="SIGUE EL CANAL",
+ nota="GTA V (2013): más de 215 M de copias (Take-Two). GTA VI: 32,5 M antes del lanzamiento (Take-Two, 20-nov-2026). 32,5/215 = 15,1 %; 215/32,5 = 6,6 ('casi siete veces'). 2013->2026 = 13 años. Guion aprobado por Tao 25-nov (línea base).",
+ fuentes=["https://www.take2games.com/ir","https://www.gtaboom.com/take-two-reports-142-billion-quarter-as-gta-6-hype-increases-e8b7"])

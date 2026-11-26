@@ -1,0 +1,53 @@
+{
+ "id": "yZPkrR_1vCI",
+ "titulo": "Your Cat Doesn’t Think You're Petting Them – Here’s What This Touch Really Is to Them",
+ "canal": "Tyler Brooks",
+ "subs": 7400,
+ "vistas": 287801,
+ "fecha": "20261103",
+ "dur_min": 11.5,
+ "idioma": "en",
+ "xN": 38.9,
+ "voz": {
+  "ppm": 207,
+  "ppm_primeros_30s": 208,
+  "pausas_min": 0.3
+ },
+ "imagen": {
+  "cortes_min": 12.1,
+  "plano_mediano": 4.5,
+  "plano_max": 12.4,
+  "sin_cambio": 4,
+  "cambios_locales_min": 7.8,
+  "racha_quieta_max": 7.4,
+  "en_rachas_5s": 2
+ },
+ "gancho": {
+  "cortes_30s": 6,
+  "seg_primer_corte": 4.5,
+  "sin_cambio_30s": 0,
+  "primera_frase_palabras": 15,
+  "primera_pregunta": false,
+  "primera_con_numero": false,
+  "primera_con_tu": true
+ },
+ "lenguaje": {
+  "palabras": 2367,
+  "frases": 221,
+  "frase_media": 10.7,
+  "preguntas_100f": 2.7,
+  "tu_100": 3.55,
+  "yo_100": 2.07,
+  "contracciones_100": 4.48,
+  "numeros_100": 0.13,
+  "largo_palabra": 4.08,
+  "palabras_largas": 5.8,
+  "variedad": 0.725,
+  "flesch": 87.2,
+  "registro": "informal"
+ },
+ "sincronia": {
+  "frases_con_cambio_visual": 96,
+  "cortes_junto_a_inicio_de_frase": 66
+ }
+}

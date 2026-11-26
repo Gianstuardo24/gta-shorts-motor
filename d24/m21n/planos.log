@@ -1,0 +1,15 @@
+  0.00-  0.81 objeto    L=0.8 foco=81 n_vis=1
+  0.87-  3.30 detalle   (deriva)
+  3.36-  5.58 alto      L=2.2 foco=81 n_vis=1
+  5.58-  7.12 acerca    L=1.5 foco=82 n_vis=2
+  7.12-  8.52 dos       L=1.4 foco=83 n_vis=3
+  8.58-  9.25 detalle   (inclina)
+  9.31- 10.77 camina    L=1.5 foco=81 n_vis=1 cifra
+ 10.77- 13.10 recorre   L=2.3 foco=82 n_vis=2 cifra
+ 13.10- 14.21 globo     L=1.1 foco=81 n_vis=2 burbuja cifra
+ 15.65- 17.67 tercio    L=2.0 foco=81 n_vis=1
+ 19.35- 21.65 detalle   (papel)
+ 21.71- 23.37 holandes  L=1.7 foco=81 n_vis=1
+ 23.37- 25.18 general   L=1.8 foco=81 n_vis=1 burbuja
+ 25.18- 26.75 balanceo  L=1.6 foco=81 n_vis=1 burbuja
+ 26.75- 27.93 mano      L=1.2 foco=81 n_vis=1

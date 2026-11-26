@@ -1,0 +1,53 @@
+{
+ "id": "2J37vvHIFcU",
+ "titulo": "GTA 6 Can Do Things We Never Imagined in GTA 5",
+ "canal": "GTAbites",
+ "subs": 6120,
+ "vistas": 7029142,
+ "fecha": "20261104",
+ "dur_min": 26.2,
+ "idioma": "en",
+ "xN": 1148.6,
+ "voz": {
+  "ppm": 178,
+  "ppm_primeros_30s": 204,
+  "pausas_min": 0.2
+ },
+ "imagen": {
+  "cortes_min": 15.2,
+  "plano_mediano": 2.2,
+  "plano_max": 360.3,
+  "sin_cambio": 1,
+  "cambios_locales_min": 10.1,
+  "racha_quieta_max": 2.6,
+  "en_rachas_5s": 0
+ },
+ "gancho": {
+  "cortes_30s": 8,
+  "seg_primer_corte": 0.5,
+  "sin_cambio_30s": 3,
+  "primera_frase_palabras": 18,
+  "primera_pregunta": false,
+  "primera_con_numero": true,
+  "primera_con_tu": true
+ },
+ "lenguaje": {
+  "palabras": 4677,
+  "frases": 432,
+  "frase_media": 10.8,
+  "preguntas_100f": 2.3,
+  "tu_100": 3.68,
+  "yo_100": 0.36,
+  "contracciones_100": 3.31,
+  "numeros_100": 1.09,
+  "largo_palabra": 4.39,
+  "palabras_largas": 9.2,
+  "variedad": 0.776,
+  "flesch": 76.9,
+  "registro": "informal"
+ },
+ "sincronia": {
+  "frases_con_cambio_visual": 99,
+  "cortes_junto_a_inicio_de_frase": 62
+ }
+}

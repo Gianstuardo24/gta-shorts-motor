@@ -1,0 +1,12 @@
+  0.00-  0.74 objeto    L=0.7 foco=21 n_vis=2
+  0.81-  1.86 detalle   (empuje)
+  1.92-  3.96 camina    L=2.0 foco=- n_vis=0
+  3.96-  5.63 medio     L=1.7 foco=22 n_vis=2
+  6.91-  9.20 globo     L=2.3 foco=animal n_vis=2 burbuja
+ 10.48- 11.24 holandes  L=0.8 foco=22 n_vis=4 cifra
+ 11.31- 12.32 detalle   (abre)
+ 12.38- 14.30 vertical  L=1.9 foco=23 n_vis=2
+ 14.30- 15.30 balanceo  L=1.0 foco=23 n_vis=2
+ 16.58- 17.29 general   L=0.7 foco=21 n_vis=2 burbuja
+ 17.35- 18.85 detalle   (sube)
+ 18.91- 19.80 globo     L=0.9 foco=21 n_vis=2 burbuja

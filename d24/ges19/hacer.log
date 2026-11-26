@@ -1,0 +1,11 @@
+ok /home/claude/d24/ges19/G2026112401.json dur 29.8
+T: tuvo=1.54 vistas=3.27 solo=4.08 s_seg=5.06 mayo=6.44 sumando=7.57 s_take=9.48 duena=10.64 s_rec=11.79 pelicula=13.57 con=15.51 s_gano=17.36 gano=18.33 por=19.00 s_falta=20.63 medio=21.89 saliera=23.02 s_fin=23.79 s_cta=25.77 fin=29.80
+  {"a": 0, "b": 2.4850000000000003, "t": "El tráiler de GTA 6 tuvo 475", "k": ["6", "475"], "w": [0.12, 0.309, 0.795, 0.984, 1.233, 1.541, 1.849]}
+  {"a": 2.4850000000000003, "b": 5.01, "t": "millones de vistas en un solo día.", "k": ["millones"], "w": [2.535, 3.08, 3.27, 3.696, 3.885, 4.075, 4.383]}
+  {"a": 5.01, "b": 9.43, "t": "Fue el segundo tráiler, en mayo de 2025, sumando todas las plataformas.", "k": ["2025,"], "w": [5.06, 5.264, 5.419, 5.818, 6.289, 6
+  {"a": 9.43, "b": 11.739999999999998, "t": "El dato lo dio Take-Two, la dueña de Rockstar.", "k": ["Take-Two,"], "w": [9.48, 9.609, 9.819, 9.948, 10.118, 10.509,
+  {"a": 11.739999999999998, "b": 17.31, "t": "El récord anterior era de una película: Deadpool y Wolverine, con 365 millones.", "k": ["365"], "w": [11.79, 11.973,
+  {"a": 17.31, "b": 20.58, "t": "O sea, un videojuego le ganó a Hollywood por más de 100 millones.", "k": ["100"], "w": [17.36, 17.444, 17.661, 17.782, 18.209, 18
+  {"a": 20.58, "b": 23.74, "t": "Y todavía faltaba un año y medio para que el juego saliera.", "k": ["saliera."], "w": [20.63, 20.729, 21.096, 21.464, 21.607, 21.
+  {"a": 23.74, "b": 25.72, "t": "Comenta si tú lo viste ese día.", "k": ["tú"], "w": [23.79, 24.187, 24.342, 24.496, 24.651, 24.951, 25.154]}
+  {"a": 25.72, "b": 29.75, "t": "Sigue el canal para más números de GTA 6.", "k": ["6."], "w": [25.77, 26.069, 26.224, 26.523, 26.774, 26.976, 27.372, 27.526, 27.

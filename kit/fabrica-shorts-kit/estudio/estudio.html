@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{NOMBRE}}</title>
+<style>
+:root{--fondo:#0d0b16;--panel:#171425;--borde:#2a2540;--texto:#ecebf5;--suave:#9a96b3;--c1:{{COLOR}};--c2:{{COLOR2}};--verde:#3ddc84;--amar:#ffc94a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--texto);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+header{position:sticky;top:0;z-index:5;background:rgba(13,11,22,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--borde);padding:14px 22px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+h1{font-size:19px;margin:0;letter-spacing:.3px}
+h1 b{color:var(--c1)}
+nav{display:flex;gap:6px}
+nav button{background:none;border:1px solid var(--borde);color:var(--suave);padding:7px 14px;border-radius:999px;cursor:pointer;font-size:14px}
+nav button.on{color:var(--texto);border-color:var(--c1);background:color-mix(in srgb,var(--c1) 16%,transparent)}
+main{padding:20px 22px 60px;max-width:1280px;margin:auto}
+.canal{margin:0 0 30px}
+.canal h2{font-size:17px;margin:0 0 10px;display:flex;gap:10px;align-items:center}
+.canal h2 .pt{width:10px;height:10px;border-radius:50%}
+.dia{color:var(--suave);font-size:13px;margin:14px 0 8px;text-transform:uppercase;letter-spacing:.6px}
+.grilla{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--borde);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.card.sub{opacity:.62}
+.portada{aspect-ratio:9/16;max-height:340px;width:100%;object-fit:cover;object-position:top;background:#000;cursor:pointer;display:block}
+.sinp{aspect-ratio:9/16;max-height:300px;display:grid;place-items:center;color:var(--suave);background:#000;cursor:pointer}
+.info{padding:12px;display:flex;flex-direction:column;gap:8px;flex:1}
+.hora{font-weight:700;color:var(--c2);font-size:13px}
+.tit{font-weight:650}
+.desc{color:var(--suave);font-size:13px;white-space:pre-wrap;max-height:4.4em;overflow:hidden}
+.bot{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+.bot button,.bot a{background:#221e36;border:1px solid var(--borde);color:var(--texto);padding:6px 10px;border-radius:9px;font-size:13px;cursor:pointer;text-decoration:none}
+.bot .ok{border-color:var(--verde);color:var(--verde)}
+.vacio{color:var(--suave);padding:30px 0}
+#modal{position:fixed;inset:0;background:rgba(0,0,0,.8);display:none;place-items:center;z-index:9}
+#modal video{max-height:90vh;max-width:92vw;border-radius:12px}
+#toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:var(--verde);color:#000;padding:9px 16px;border-radius:10px;font-weight:600;display:none}
+.md table{border-collapse:collapse;margin:10px 0;font-size:14px}
+.md th,.md td{border:1px solid var(--borde);padding:6px 10px;text-align:left}
+.md th{background:#1d1930}
+.md h1,.md h2{margin:22px 0 8px}.md h2{color:var(--c1);font-size:18px}
+.md blockquote{color:var(--suave);border-left:3px solid var(--borde);margin:8px 0;padding-left:12px}
+pre{white-space:pre-wrap;background:var(--panel);border:1px solid var(--borde);border-radius:12px;padding:14px;font-size:13px}
+</style>
+</head>
+<body>
+<header>
+  <h1>🎬 <b>{{NOMBRE}}</b></h1>
+  <nav>
+    <button data-t="pend" class="on">Para subir</button>
+    <button data-t="sub">Subidos</button>
+    <button data-t="rep">Reporte</button>
+    <button data-t="can">Canales</button>
+  </nav>
+</header>
+<main id="m"></main>
+<div id="modal" onclick="cerrar()"><video id="vid" controls playsinline></video></div>
+<div id="toast"></div>
+<script>
+let TAB = "pend", V = [];
+const e = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const url = (rel, dl) => "/archivo?rel=" + encodeURIComponent(rel) + (dl ? "&dl=1" : "");
+function toast(t){const x=document.getElementById("toast");x.textContent=t;x.style.display="block";setTimeout(()=>x.style.display="none",1400)}
+function copiar(t){navigator.clipboard.writeText(t).then(()=>toast("Copiado ✓"))}
+function ver(rel){const v=document.getElementById("vid");v.src=url(rel);document.getElementById("modal").style.display="grid";v.play()}
+function cerrar(){const v=document.getElementById("vid");v.pause();v.removeAttribute("src");document.getElementById("modal").style.display="none"}
+async function post(ruta, rel){const r=await fetch(ruta,{method:"POST",body:JSON.stringify({rel})});const j=await r.json();toast(j.ok?"Listo ✓":"No se pudo");cargar()}
+function tarjeta(it){
+  const img = it.portada ? `<img class="portada" loading="lazy" src="${url(it.portada)}" onclick='ver(${JSON.stringify(it.rel)})'>`
+                         : `<div class="sinp" onclick='ver(${JSON.stringify(it.rel)})'>▶ ver</div>`;
+  const acc = it.subido ? `<button onclick='post("/api/desmarcar",${JSON.stringify(it.rel)})'>↩︎ Desmarcar</button>`
+                        : `<button class="ok" onclick='post("/api/subido",${JSON.stringify(it.rel)})'>✓ Subido</button>`;
+  return `<div class="card ${it.subido?"sub":""}">${img}<div class="info">
+    <div class="hora">🕒 ${e(it.hora)}</div><div class="tit">${e(it.titulo)}</div><div class="desc">${e(it.desc)}</div>
+    <div class="bot"><button onclick='copiar(${JSON.stringify(it.titulo)})'>Copiar título</button>
+    <button onclick='copiar(${JSON.stringify(it.desc)})'>Copiar descripción</button>
+    <a href="${url(it.rel,1)}">⬇ Video</a>${acc}</div></div></div>`;
+}
+function videos(sub){
+  let h = "";
+  for (const c of V){
+    const dias = c.dias.filter(d => d.subido === sub);
+    if (!dias.length) continue;
+    h += `<section class="canal"><h2><span class="pt" style="background:${e(c.acento||"var(--c1)")}"></span>${e(c.nombre)}</h2>`;
+    for (const d of (sub ? dias.slice().reverse() : dias)) h += `<div class="dia">${e(d.dia)}</div><div class="grilla">${d.items.map(tarjeta).join("")}</div>`;
+    h += `</section>`;
+  }
+  return h || `<div class="vacio">${sub ? "Nada subido en los últimos 14 días." : "No hay videos pendientes. Pídele a Claude: «produce los videos de mañana»."}</div>`;
+}
+function md(t){                                   // markdown simple: títulos, tablas, listas, negritas, citas
+  const L = t.split("\n"); let h = "", i = 0;
+  const inl = s => e(s).replace(/\*\*(.+?)\*\*/g,"<b>$1</b>").replace(/_(.+?)_/g,"<i>$1</i>").replace(/`(.+?)`/g,"<code>$1</code>");
+  while (i < L.length){
+    const l = L[i];
+    if (/^\|/.test(l)){ let rows=[]; while(i<L.length && /^\|/.test(L[i])){ if(!/^\|[\s:|-]+\|$/.test(L[i])) rows.push(L[i]); i++; }
+      h += "<table>" + rows.map((r,k)=>"<tr>"+r.slice(1,-1).split("|").map(c=>k?`<td>${inl(c.trim())}</td>`:`<th>${inl(c.trim())}</th>`).join("")+"</tr>").join("") + "</table>"; continue; }
+    const m = l.match(/^(#{1,3}) (.*)/);
+    if (m) h += `<h${m[1].length}>${inl(m[2])}</h${m[1].length}>`;
+    else if (/^> /.test(l)) h += `<blockquote>${inl(l.slice(2))}</blockquote>`;
+    else if (/^[-*] /.test(l)) h += `<div>• ${inl(l.slice(2))}</div>`;
+    else if (l.trim()) h += `<p>${inl(l)}</p>`;
+    i++;
+  }
+  return `<div class="md">${h}</div>`;
+}
+async function cargar(){
+  const m = document.getElementById("m");
+  if (TAB === "pend" || TAB === "sub"){ V = await (await fetch("/api/videos")).json(); m.innerHTML = videos(TAB === "sub"); }
+  else if (TAB === "rep"){ const r = await (await fetch("/api/reporte")).json();
+    m.innerHTML = r ? md(r.md) : `<div class="vacio">Aún no hay reporte. Se crea solo los domingos (o: <code>./venv/bin/python3 metricas/reporte_semanal.py</code>).</div>`; }
+  else { const r = await (await fetch("/api/canales")).json();
+    m.innerHTML = r.canales.map(c => `<h2 style="color:var(--c1)">${e(c.nombre)}</h2><pre>${e(JSON.stringify(c,null,1))}</pre>`).join("")
+      + Object.entries(r.planes).map(([k,v]) => `<h2>Plan: ${e(k)}</h2>${md(v)}`).join(""); }
+}
+document.querySelectorAll("nav button").forEach(b => b.onclick = () => {
+  document.querySelectorAll("nav button").forEach(x => x.classList.remove("on")); b.classList.add("on"); TAB = b.dataset.t; cargar(); });
+document.addEventListener("keydown", ev => { if (ev.key === "Escape") cerrar(); });
+cargar();
+</script>
+</body>
+</html>

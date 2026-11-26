@@ -1,0 +1,585 @@
+{
+ "titulo": "GTA 6 Lets You Flip Your Car Back 🚗",
+ "texto_pantalla": "FLIPPED CAR?",
+ "lote": "G2026112102en",
+ "marca": "THE VICEVERSE GG",
+ "nota_datos": "Micronicho EN: hidden mechanics. Kotaku (20-nov-2026): acercarse al costado del auto volcado, clic en stick izquierdo, mantener Cuadrado/X para darlo vuelta; falla si es muy pesado, se acaba la stamina o en pendiente; misma mecánica para empujar un auto sin gasolina y para empujar un bote o jet ski de la arena al agua. PC Gamer: empujar bote varado y llevar el auto a la bencinera. RockstarINTEL y Mobalytics: empujar autos por delante o detrás (L3/LS).",
+ "frases": [
+  "If your car flips over in GTA 6, don't walk away.",
+  "Walk up to the side and click the left stick.",
+  "Then hold Square, or X on Xbox, and push it back on its wheels.",
+  "It fails if the car is too heavy, or you run out of stamina.",
+  "The same move lets you push a car with no gas to the station.",
+  "And you can shove a boat or a jet ski off the sand into the water.",
+  "Tell me if you've tried it yet.",
+  "Follow for more GTA 6 secrets."
+ ],
+ "frases_voz": [
+  "If your car flips over in GTA six, don't walk away.",
+  "Walk up to the side, and click the left stick.",
+  "Then hold Square, or X on Xbox, and push it back on its wheels.",
+  "It fails if the car is too heavy, or you run out of stamina.",
+  "The same move lets you push a car with no gas to the station.",
+  "And you can shove a boat or a jet ski off the sand, into the water.",
+  "Tell me if you've tried it yet.",
+  "Follow for more GTA six secrets."
+ ],
+ "fuentes": [
+  "https://kotaku.com/two-cool-hidden-features-gta-6-doesnt-explain-flipping-and-sitting-2000757835",
+  "https://www.pcgamer.com/games/grand-theft-auto/15-hidden-gta-6-controls-and-features-you-should-know-about/",
+  "https://rockstarintel.com/30-hidden-gta-6-controls-and-secret-mechanics-you-probably-missed/",
+  "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-hidden-details-you-missed"
+ ],
+ "escena": {
+  "momentos": [
+   [
+    "s_stick",
+    1,
+    null
+   ],
+   [
+    "stick",
+    1,
+    "^stick"
+   ],
+   [
+    "hold",
+    2,
+    "^hold"
+   ],
+   [
+    "s_fail",
+    3,
+    null
+   ],
+   [
+    "heavy",
+    3,
+    "^heavy"
+   ],
+   [
+    "s_gas",
+    4,
+    null
+   ],
+   [
+    "s_boat",
+    5,
+    null
+   ],
+   [
+    "s_fin",
+    6,
+    null
+   ],
+   [
+    "s_cta",
+    7,
+    null
+   ],
+   [
+    "dont",
+    0,
+    "^don"
+   ],
+   [
+    "wheels",
+    2,
+    "^wheels"
+   ],
+   [
+    "stamina",
+    3,
+    "^stamina"
+   ],
+   [
+    "station",
+    4,
+    "^station"
+   ],
+   [
+    "water",
+    5,
+    "^water"
+   ]
+  ],
+  "escenas": [
+   {
+    "tipo": "pelicula",
+    "desde": "0",
+    "escala": 1.1,
+    "chipY": 680,
+    "zonas": [
+     {
+      "x0": -300,
+      "x1": 1300,
+      "set": "calle"
+     },
+     {
+      "x0": 1300,
+      "x1": 2600,
+      "set": "garage",
+      "k": "s_fail"
+     },
+     {
+      "x0": 2600,
+      "x1": 3900,
+      "set": "calle",
+      "k": "s_gas",
+      "luz": "neon",
+      "neon": [
+       "GAS",
+       "24/7"
+      ]
+     },
+     {
+      "x0": 3900,
+      "x1": 5300,
+      "set": "cielo",
+      "k": "s_boat"
+     }
+    ],
+    "pan": [
+     {
+      "k": "s_fail",
+      "x": 1300
+     },
+     {
+      "k": "s_gas",
+      "x": 2600
+     },
+     {
+      "k": 14.51,
+      "x": 2760,
+      "dur": 1.6
+     },
+     {
+      "k": "s_boat",
+      "x": 3950
+     },
+     {
+      "k": 18.51,
+      "x": 4150,
+      "dur": 1.4
+     }
+    ],
+    "props": [
+     {
+      "tipo": "sedan",
+      "x": 650,
+      "y": 1560,
+      "s": 1.3,
+      "color": "rosa",
+      "k": 0.1,
+      "rots": [
+       {
+        "k": 0,
+        "r": 3.1416
+       },
+       {
+        "k": 8.51,
+        "r": 3.1416
+       },
+       {
+        "k": "wheels",
+        "r": 0
+       }
+      ],
+      "mov": [
+       {
+        "k": 0,
+        "x": 650,
+        "y": 1665
+       },
+       {
+        "k": 8.51,
+        "x": 650,
+        "y": 1665
+       },
+       {
+        "k": "wheels",
+        "x": 650,
+        "y": 1560
+       }
+      ]
+     },
+     {
+      "tipo": "sedan",
+      "x": 2050,
+      "y": 1650,
+      "s": 1.75,
+      "color": "rojo",
+      "k": "s_fail",
+      "rot": 3.1416
+     },
+     {
+      "tipo": "surtidor",
+      "x": 3850,
+      "y": 1700,
+      "s": 1.2,
+      "k": "s_gas"
+     },
+     {
+      "tipo": "sedan",
+      "x": 2950,
+      "y": 1560,
+      "s": 1.15,
+      "color": "cian",
+      "k": "s_gas",
+      "mov": [
+       {
+        "k": "s_gas",
+        "x": 2950,
+        "y": 1560
+       },
+       {
+        "k": 13.81,
+        "x": 2950,
+        "y": 1560
+       },
+       {
+        "k": "station",
+        "x": 3380,
+        "y": 1560
+       }
+      ],
+      "giro": 0
+     },
+     {
+      "tipo": "arena",
+      "x": 4250,
+      "y": 1700,
+      "s": 1.0,
+      "k": "s_boat",
+      "z": 1500
+     },
+     {
+      "tipo": "jetski",
+      "x": 4600,
+      "y": 1640,
+      "s": 1.6,
+      "color": "amar",
+      "k": "s_boat",
+      "mov": [
+       {
+        "k": "s_boat",
+        "x": 4560,
+        "y": 1650
+       },
+       {
+        "k": 17.51,
+        "x": 4560,
+        "y": 1650
+       },
+       {
+        "k": "water",
+        "x": 5100,
+        "y": 1730
+       }
+      ],
+      "estados": [
+       {
+        "k": "water",
+        "flota": true
+       }
+      ]
+     }
+    ],
+    "actores": [
+     {
+      "look": "jugador",
+      "var": 7,
+      "s": 1.0,
+      "keys": [
+       {
+        "k": 0,
+        "x": 420,
+        "y": 1710,
+        "pose": "piensa",
+        "cara": "triste"
+       },
+       {
+        "k": 0.9,
+        "x": 420,
+        "y": 1710,
+        "pose": "parado",
+        "cara": "triste",
+        "dir": -1,
+        "a": [
+         160,
+         1710
+        ],
+        "dur": 1.3
+       },
+       {
+        "k": "dont",
+        "x": 160,
+        "y": 1710,
+        "pose": "parado",
+        "cara": "sorpresa",
+        "fx": "salto"
+       },
+       {
+        "k": "s_stick",
+        "x": 160,
+        "y": 1710,
+        "pose": "parado",
+        "cara": "feliz",
+        "a": [
+         300,
+         1710
+        ],
+        "dur": 0.9
+       },
+       {
+        "k": "stick",
+        "x": 300,
+        "y": 1710,
+        "pose": "piensa",
+        "cara": "feliz"
+       },
+       {
+        "k": "hold",
+        "x": 300,
+        "y": 1710,
+        "pose": "empuja",
+        "cara": "enojado",
+        "fx": "tiembla"
+       },
+       {
+        "k": "wheels",
+        "x": 300,
+        "y": 1710,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "brinca"
+       },
+       {
+        "k": "s_fail",
+        "x": 1500,
+        "y": 1710,
+        "pose": "empuja",
+        "cara": "enojado",
+        "fx": "tiembla"
+       },
+       {
+        "k": "stamina",
+        "x": 1500,
+        "y": 1710,
+        "pose": "piensa",
+        "cara": "triste"
+       },
+       {
+        "k": "s_gas",
+        "x": 2450,
+        "y": 1710,
+        "pose": "empuja",
+        "cara": "enojado",
+        "a": [
+         2880,
+         1710
+        ],
+        "dur": 2.6,
+        "ease": "eio"
+       },
+       {
+        "k": "station",
+        "x": 2880,
+        "y": 1710,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "brinca"
+       },
+       {
+        "k": "s_boat",
+        "x": 4210,
+        "y": 1710,
+        "pose": "empuja",
+        "cara": "enojado",
+        "a": [
+         4560,
+         1715
+        ],
+        "dur": 2.4,
+        "ease": "eio"
+       },
+       {
+        "k": "water",
+        "x": 4560,
+        "y": 1715,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "brinca"
+       }
+      ]
+     }
+    ],
+    "mando": {
+     "k": "s_stick",
+     "fin": 8.31,
+     "y": 900,
+     "items": [
+      {
+       "k": "s_stick",
+       "boton": "L",
+       "texto": "CLICK LEFT STICK"
+      },
+      {
+       "k": "hold",
+       "boton": "sq",
+       "texto": "HOLD SQUARE  ·  X ON XBOX"
+      }
+     ]
+    },
+    "barra": {
+     "k": 10.51,
+     "fin": "s_gas",
+     "y": 900,
+     "texto": "STAMINA",
+     "dur": 2.1,
+     "fin_txt": "OUT OF STAMINA"
+    },
+    "zoom": [
+     {
+      "k": 0.1,
+      "s": 1.08,
+      "y": 1450
+     },
+     {
+      "k": "dont",
+      "s": 1.2,
+      "x": 300,
+      "y": 1450
+     },
+     {
+      "k": "s_stick",
+      "s": 1.0
+     },
+     {
+      "k": "hold",
+      "s": 1.12,
+      "x": 520,
+      "y": 1480
+     },
+     {
+      "k": "wheels",
+      "s": 1.0
+     },
+     {
+      "k": "s_fail",
+      "s": 1.0
+     },
+     {
+      "k": "heavy",
+      "s": 1.1,
+      "x": 1800,
+      "y": 1480
+     },
+     {
+      "k": "s_gas",
+      "s": 1.0
+     },
+     {
+      "k": "s_boat",
+      "s": 1.0
+     },
+     {
+      "k": "water",
+      "s": 1.1,
+      "x": 4700,
+      "y": 1500
+     }
+    ],
+    "sacudidas": [
+     {
+      "k": "wheels",
+      "f": 20
+     },
+     {
+      "k": "heavy",
+      "f": 10
+     }
+    ],
+    "titulos": [
+     {
+      "k": 0.2,
+      "texto": "FLIPPED?",
+      "c": "rosa",
+      "grande": true,
+      "fin": "s_stick"
+     },
+     {
+      "k": "s_stick",
+      "texto": "HIDDEN MECHANIC",
+      "c": "cian",
+      "fin": "s_fail"
+     },
+     {
+      "k": "s_fail",
+      "texto": "WHEN IT FAILS",
+      "c": "rojo",
+      "fin": "s_gas"
+     },
+     {
+      "k": "s_gas",
+      "texto": "OUT OF GAS?",
+      "c": "amar",
+      "grande": true,
+      "fin": "s_boat"
+     },
+     {
+      "k": "s_boat",
+      "texto": "AT THE BEACH",
+      "c": "cian"
+     }
+    ],
+    "chips": [
+     {
+      "k": "wheels",
+      "texto": "BACK ON ITS WHEELS",
+      "c": "verde",
+      "fin": "s_fail"
+     },
+     {
+      "k": "heavy",
+      "texto": "TOO HEAVY",
+      "c": "rojo",
+      "fin": "stamina"
+     },
+     {
+      "k": "station",
+      "texto": "PUSH IT TO THE STATION",
+      "c": "verde",
+      "fin": "s_boat"
+     },
+     {
+      "k": "water",
+      "texto": "BOATS & JET SKIS TOO",
+      "c": "cian"
+     }
+    ]
+   },
+   {
+    "tipo": "cierre",
+    "desde": "s_fin"
+   }
+  ],
+  "cierre": "TRIED IT YET?",
+  "cierre2": "Comment: yes or no",
+  "paises": [
+   "YES",
+   "NOT YET"
+  ],
+  "sfx": [
+   {
+    "f": "extra/CarEngineRev_BW.52086.wav",
+    "k": "0",
+    "off": 0.0,
+    "dur": 1.2,
+    "fade": 0.5,
+    "g": 0.12
+   }
+  ],
+  "cta": "FOLLOW FOR MORE"
+ }
+}

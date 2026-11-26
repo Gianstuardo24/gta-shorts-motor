@@ -1,0 +1,778 @@
+{
+ "titulo": "Coffee Was Put on Trial in 1511 ☕",
+ "texto_pantalla": "GUILTY?",
+ "lote": "C2026112102",
+ "tema": "cafe",
+ "marca": "COFFEE, BUT WHY?",
+ "nota_datos": "Micronicho: el café prohibido. Meca, 1511: Kha'ir Beg vio hombres tomando café fuera de una mezquita y le pareció sospechoso (Atlas Obscura, Taylor & Francis); reunió a eruditos para decidir si prohibirlo (PopSci/Yahoo); cerraron cafés, quemaron granos y golpearon a bebedores (PopSci/Yahoo); el sultán de El Cairo, bebedor de café, lo revirtió (Tasting Table, PopSci); la prohibición no duró ni un año (Atlas Obscura: semanas; Tasting Table). El destino de Kha'ir Beg es discutido: no se menciona. Personajes = ilustración.",
+ "frases": [
+  "In 1511, an official in Mecca saw men drinking coffee, and he didn't like it.",
+  "So he called in scholars to judge one thing: coffee.",
+  "The verdict? Guilty. Coffee was banned.",
+  "Coffeehouses closed. Beans were burned. Drinkers were beaten.",
+  "Then the sultan in Cairo heard about it, and he drank coffee himself.",
+  "The ban didn't even last a year.",
+  "Would you have hidden your coffee?",
+  "Follow for more banned coffee stories."
+ ],
+ "frases_voz": [
+  "In fifteen eleven, an official in Mecca saw men drinking coffee, and he didn't like it.",
+  "So he called in scholars to judge one thing. Coffee.",
+  "The verdict? Guilty. Coffee was banned.",
+  "Coffeehouses closed. Beans were burned. Drinkers were beaten.",
+  "Then the sultan in Cairo heard about it, and he drank coffee himself.",
+  "The ban didn't even last a year.",
+  "Would you have hidden your coffee?",
+  "Follow for more banned coffee stories."
+ ],
+ "fuentes": [
+  "https://www.atlasobscura.com/articles/was-coffee-ever-illegal",
+  "https://www.popsci.com/health/coffee-ban-history/",
+  "https://tastingtable.com/1029221/times-coffee-was-banned-around-the-world"
+ ],
+ "escena": {
+  "momentos": [
+   [
+    "saw",
+    0,
+    "^saw"
+   ],
+   [
+    "didnt",
+    0,
+    "^didn"
+   ],
+   [
+    "s_judge",
+    1,
+    null
+   ],
+   [
+    "guilty",
+    2,
+    "^guilty"
+   ],
+   [
+    "banned",
+    2,
+    "^banned"
+   ],
+   [
+    "s_closed",
+    3,
+    null
+   ],
+   [
+    "burned",
+    3,
+    "^burned"
+   ],
+   [
+    "s_sultan",
+    4,
+    null
+   ],
+   [
+    "himself",
+    4,
+    "^himself"
+   ],
+   [
+    "s_over",
+    5,
+    null
+   ],
+   [
+    "s_fin",
+    6,
+    null
+   ],
+   [
+    "s_cta",
+    7,
+    null
+   ],
+   [
+    "beaten",
+    3,
+    "^beaten"
+   ],
+   [
+    "cairo",
+    4,
+    "^cairo"
+   ],
+   [
+    "scholars",
+    1,
+    "^scholars"
+   ],
+   [
+    "judge",
+    1,
+    "^judge"
+   ],
+   [
+    "s_ver",
+    2,
+    null
+   ]
+  ],
+  "escenas": [
+   {
+    "tipo": "pelicula",
+    "desde": "0",
+    "escala": 1.1,
+    "chipY": 880,
+    "zonas": [
+     {
+      "x0": -300,
+      "x1": 1300,
+      "set": "cafe"
+     },
+     {
+      "x0": 1300,
+      "x1": 2600,
+      "set": "oficina",
+      "k": "s_judge",
+      "luz": "tenue"
+     },
+     {
+      "x0": 2600,
+      "x1": 3900,
+      "set": "calle",
+      "k": "s_closed",
+      "luz": "tenue"
+     },
+     {
+      "x0": 3900,
+      "x1": 5200,
+      "set": "trono",
+      "k": "s_sultan"
+     },
+     {
+      "x0": 5200,
+      "x1": 6600,
+      "set": "cafe",
+      "k": "s_over",
+      "luz": "neon",
+      "neon": [
+       "OPEN",
+       "COFFEE"
+      ]
+     }
+    ],
+    "pan": [
+     {
+      "k": "s_judge",
+      "x": 1300
+     },
+     {
+      "k": "s_closed",
+      "x": 2600
+     },
+     {
+      "k": "s_sultan",
+      "x": 3900
+     },
+     {
+      "k": "s_over",
+      "x": 5200
+     }
+    ],
+    "props": [
+     {
+      "tipo": "cajita",
+      "x": 560,
+      "y": 1760,
+      "s": 1.6,
+      "color": "#5d4037",
+      "k": 0.2,
+      "z": 1800
+     },
+     {
+      "tipo": "cajita",
+      "x": 2250,
+      "y": 1720,
+      "s": 1.5,
+      "color": "#3e2723",
+      "k": "s_judge"
+     },
+     {
+      "tipo": "taza",
+      "x": 2250,
+      "y": 1575,
+      "s": 1.6,
+      "k": "judge",
+      "cae": true
+     },
+     {
+      "tipo": "documento",
+      "x": 2000,
+      "y": 1300,
+      "s": 1.1,
+      "sello": "GUILTY",
+      "k": "guilty",
+      "cae": true,
+      "z": 1800
+     },
+     {
+      "tipo": "cartel",
+      "x": 3450,
+      "y": 1340,
+      "s": 1.1,
+      "texto": "CLOSED",
+      "k": "s_closed",
+      "cae": true
+     },
+     {
+      "tipo": "cajita",
+      "x": 3600,
+      "y": 1730,
+      "s": 1.3,
+      "color": "#6d4c41",
+      "texto": "BEANS",
+      "k": 13.4
+     },
+     {
+      "tipo": "fuego",
+      "x": 3600,
+      "y": 1650,
+      "s": 1.3,
+      "k": "burned"
+     },
+     {
+      "tipo": "trono",
+      "x": 4250,
+      "y": 1640,
+      "s": 1.1,
+      "k": "s_sultan"
+     },
+     {
+      "tipo": "cartel",
+      "x": 5900,
+      "y": 1330,
+      "s": 1.1,
+      "texto": "OPEN AGAIN",
+      "k": 21.2,
+      "cae": true
+     }
+    ],
+    "actores": [
+     {
+      "look": "cliente",
+      "var": 200,
+      "keys": [
+       {
+        "k": 0,
+        "x": 420,
+        "y": 1710,
+        "pose": "sostiene",
+        "cara": "feliz",
+        "objeto": "taza",
+        "dir": 1
+       },
+       {
+        "k": "didnt",
+        "x": 420,
+        "y": 1710,
+        "pose": "sostiene",
+        "cara": "sorpresa",
+        "objeto": "taza",
+        "dir": 1
+       }
+      ],
+      "s": 0.95,
+      "hasta": "s_judge"
+     },
+     {
+      "look": "vendedor",
+      "var": 201,
+      "keys": [
+       {
+        "k": 0,
+        "x": 700,
+        "y": 1710,
+        "pose": "sostiene",
+        "cara": "feliz",
+        "objeto": "taza",
+        "dir": -1
+       },
+       {
+        "k": "didnt",
+        "x": 700,
+        "y": 1710,
+        "pose": "sostiene",
+        "cara": "sorpresa",
+        "objeto": "taza",
+        "dir": -1
+       }
+      ],
+      "s": 0.95,
+      "hasta": "s_judge"
+     },
+     {
+      "look": "jugadora",
+      "var": 202,
+      "keys": [
+       {
+        "k": 0,
+        "x": 980,
+        "y": 1710,
+        "pose": "sostiene",
+        "cara": "feliz",
+        "objeto": "taza",
+        "dir": -1
+       },
+       {
+        "k": "didnt",
+        "x": 980,
+        "y": 1710,
+        "pose": "sostiene",
+        "cara": "sorpresa",
+        "objeto": "taza",
+        "dir": -1
+       }
+      ],
+      "s": 0.95,
+      "hasta": "s_judge"
+     },
+     {
+      "look": "oficial",
+      "var": 210,
+      "keys": [
+       {
+        "k": 1.6,
+        "x": -150,
+        "y": 1720,
+        "pose": "parado",
+        "a": [
+         150,
+         1720
+        ],
+        "dur": 0.8
+       },
+       {
+        "k": "saw",
+        "x": 150,
+        "y": 1720,
+        "pose": "apunta",
+        "cara": "neutral"
+       },
+       {
+        "k": "didnt",
+        "x": 150,
+        "y": 1720,
+        "pose": "apunta",
+        "cara": "enojado",
+        "fx": "tiembla"
+       }
+      ],
+      "s": 1.0,
+      "hasta": "s_judge"
+     },
+     {
+      "look": "sabio",
+      "var": 220,
+      "keys": [
+       {
+        "k": "s_judge",
+        "x": 1500,
+        "y": 1700,
+        "pose": "piensa",
+        "cara": "neutral"
+       },
+       {
+        "k": "guilty",
+        "x": 1500,
+        "y": 1700,
+        "pose": "apunta",
+        "cara": "enojado"
+       }
+      ],
+      "s": 0.95,
+      "desde": "s_judge",
+      "hasta": "s_closed"
+     },
+     {
+      "look": "sabio",
+      "var": 221,
+      "keys": [
+       {
+        "k": "s_judge",
+        "x": 1750,
+        "y": 1700,
+        "pose": "piensa",
+        "cara": "neutral"
+       },
+       {
+        "k": "guilty",
+        "x": 1750,
+        "y": 1700,
+        "pose": "apunta",
+        "cara": "enojado",
+        "fx": "salto"
+       }
+      ],
+      "s": 0.95,
+      "desde": "s_judge",
+      "hasta": "s_closed"
+     },
+     {
+      "look": "sabio",
+      "var": 222,
+      "keys": [
+       {
+        "k": "s_judge",
+        "x": 2000,
+        "y": 1700,
+        "pose": "piensa",
+        "cara": "neutral"
+       },
+       {
+        "k": "guilty",
+        "x": 2000,
+        "y": 1700,
+        "pose": "apunta",
+        "cara": "enojado"
+       }
+      ],
+      "s": 0.95,
+      "desde": "s_judge",
+      "hasta": "s_closed"
+     },
+     {
+      "look": "cliente",
+      "var": 230,
+      "keys": [
+       {
+        "k": "s_closed",
+        "x": 2950,
+        "y": 1710,
+        "pose": "parado",
+        "cara": "triste"
+       },
+       {
+        "k": "beaten",
+        "x": 2950,
+        "y": 1710,
+        "pose": "parado",
+        "cara": "sorpresa",
+        "a": [
+         2450,
+         1710
+        ],
+        "dur": 1.0,
+        "dir": -1
+       }
+      ],
+      "s": 0.95,
+      "desde": "s_closed",
+      "hasta": "s_sultan"
+     },
+     {
+      "look": "jugador",
+      "var": 231,
+      "keys": [
+       {
+        "k": "s_closed",
+        "x": 3150,
+        "y": 1710,
+        "pose": "parado",
+        "cara": "triste"
+       },
+       {
+        "k": "beaten",
+        "x": 3150,
+        "y": 1710,
+        "pose": "parado",
+        "cara": "sorpresa",
+        "a": [
+         2650,
+         1710
+        ],
+        "dur": 1.0,
+        "dir": -1
+       }
+      ],
+      "s": 0.95,
+      "desde": "s_closed",
+      "hasta": "s_sultan"
+     },
+     {
+      "look": "rey",
+      "var": 240,
+      "keys": [
+       {
+        "k": "s_sultan",
+        "x": 4250,
+        "y": 1600,
+        "pose": "sentado",
+        "cara": "neutral",
+        "z": 1660
+       },
+       {
+        "k": "cairo",
+        "x": 4250,
+        "y": 1600,
+        "pose": "sentado",
+        "cara": "sorpresa",
+        "z": 1660
+       },
+       {
+        "k": "himself",
+        "x": 4250,
+        "y": 1600,
+        "pose": "sentado",
+        "cara": "feliz",
+        "objeto": "taza",
+        "z": 1660
+       }
+      ],
+      "s": 1.0,
+      "desde": "s_sultan",
+      "hasta": "s_over"
+     },
+     {
+      "look": "cliente",
+      "var": 250,
+      "keys": [
+       {
+        "k": "s_over",
+        "x": 5450,
+        "y": 1710,
+        "pose": "sostiene",
+        "cara": "feliz",
+        "objeto": "taza"
+       },
+       {
+        "k": 21.6,
+        "x": 5450,
+        "y": 1710,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "brinca"
+       }
+      ],
+      "s": 0.95,
+      "desde": "s_over"
+     },
+     {
+      "look": "vendedor",
+      "var": 251,
+      "keys": [
+       {
+        "k": "s_over",
+        "x": 5720,
+        "y": 1710,
+        "pose": "sostiene",
+        "cara": "feliz",
+        "objeto": "taza"
+       },
+       {
+        "k": 21.6,
+        "x": 5720,
+        "y": 1710,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "brinca"
+       }
+      ],
+      "s": 0.95,
+      "desde": "s_over"
+     },
+     {
+      "look": "jugadora",
+      "var": 252,
+      "keys": [
+       {
+        "k": "s_over",
+        "x": 6000,
+        "y": 1710,
+        "pose": "sostiene",
+        "cara": "feliz",
+        "objeto": "taza"
+       },
+       {
+        "k": 21.6,
+        "x": 6000,
+        "y": 1710,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "brinca"
+       }
+      ],
+      "s": 0.95,
+      "desde": "s_over"
+     }
+    ],
+    "prohibidos": [
+     {
+      "k": "banned",
+      "x": 2250,
+      "y": 1540,
+      "r": 140
+     }
+    ],
+    "burbujas": [
+     {
+      "k": "didnt",
+      "de": 3,
+      "texto": "NOT ALLOWED!",
+      "fin": "s_judge"
+     }
+    ],
+    "zoom": [
+     {
+      "k": 0.1,
+      "s": 1.05
+     },
+     {
+      "k": "didnt",
+      "s": 1.15,
+      "x": 300,
+      "y": 1450
+     },
+     {
+      "k": "s_judge",
+      "s": 1.0
+     },
+     {
+      "k": "judge",
+      "s": 1.15,
+      "x": 2150,
+      "y": 1500
+     },
+     {
+      "k": "s_ver",
+      "s": 1.0
+     },
+     {
+      "k": "banned",
+      "s": 1.15,
+      "x": 2250,
+      "y": 1500
+     },
+     {
+      "k": "s_closed",
+      "s": 1.0
+     },
+     {
+      "k": "burned",
+      "s": 1.12,
+      "x": 3500,
+      "y": 1500
+     },
+     {
+      "k": "s_sultan",
+      "s": 1.0
+     },
+     {
+      "k": "himself",
+      "s": 1.2,
+      "x": 4250,
+      "y": 1400
+     },
+     {
+      "k": "s_over",
+      "s": 1.0
+     }
+    ],
+    "sacudidas": [
+     {
+      "k": "guilty",
+      "f": 20
+     },
+     {
+      "k": "banned",
+      "f": 12
+     }
+    ],
+    "titulos": [
+     {
+      "k": 0.2,
+      "texto": "MECCA · 1511",
+      "c": "amar",
+      "fin": "s_judge"
+     },
+     {
+      "k": "s_judge",
+      "texto": "THE TRIAL",
+      "c": "rosa",
+      "fin": "guilty"
+     },
+     {
+      "k": "guilty",
+      "texto": "GUILTY",
+      "c": "rojo",
+      "grande": true,
+      "fin": "s_closed"
+     },
+     {
+      "k": "s_closed",
+      "texto": "THE CRACKDOWN",
+      "c": "rojo",
+      "fin": "s_sultan"
+     },
+     {
+      "k": "s_sultan",
+      "texto": "CAIRO · THE SULTAN",
+      "c": "amar",
+      "fin": "s_over"
+     },
+     {
+      "k": "s_over",
+      "texto": "COFFEE IS BACK",
+      "c": "verde",
+      "grande": true
+     }
+    ],
+    "chips": [
+     {
+      "k": "judge",
+      "texto": "THE ACCUSED: COFFEE",
+      "c": "amar",
+      "y": 1020,
+      "fin": "s_ver"
+     },
+     {
+      "k": "banned",
+      "texto": "COFFEE BANNED",
+      "c": "rojo",
+      "y": 1020,
+      "fin": "s_closed"
+     },
+     {
+      "k": "burned",
+      "texto": "BEANS BURNED",
+      "c": "rojo",
+      "fin": "s_sultan"
+     },
+     {
+      "k": "himself",
+      "texto": "HE DRANK IT HIMSELF",
+      "c": "verde",
+      "fin": "s_over"
+     },
+     {
+      "k": 21.4,
+      "texto": "THE BAN DIDN'T LAST A YEAR",
+      "c": "amar"
+     }
+    ]
+   },
+   {
+    "tipo": "cierre",
+    "desde": "s_fin"
+   }
+  ],
+  "cierre": "HIDE IT OR DROP IT?",
+  "cierre2": "Would you have hidden it? Comment",
+  "paises": [
+   "HIDE IT",
+   "DROP IT"
+  ],
+  "sfx": [],
+  "cta": "FOLLOW FOR MORE"
+ }
+}

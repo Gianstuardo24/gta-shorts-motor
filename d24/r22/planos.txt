@@ -1,0 +1,2 @@
+planos: 11 en 24.8 s (uno cada 2.3 s) · tipos distintos: 7 · objeto×3, detalle×2, globo×2, general×1, recorre×1, holandes×1, vertical×1
+repetidos seguidos: 0

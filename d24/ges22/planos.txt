@@ -1,0 +1,2 @@
+planos: 9 en 21.8 s (uno cada 2.4 s) · tipos distintos: 6 · general×2, detalle×2, medio×2, primer×1, objeto×1, acerca×1
+repetidos seguidos: 2

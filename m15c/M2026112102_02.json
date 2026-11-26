@@ -1,0 +1,646 @@
+{
+ "titulo": "Pixar Was Sold for $5 Million 🎬",
+ "texto_pantalla": "$5 MILLION",
+ "lote": "M2026112102",
+ "tema": "mdm",
+ "marca": "MILLION DOLLAR MISTAKE",
+ "acento": "#5effa1",
+ "nota_datos": "Lucas vendió la división gráfica de Lucasfilm tras su divorcio de 1983; pidió ~US$30 M sin compradores (AOL/GOBankingRates). Jobs pagó US$5 M y puso US$5 M más de capital, 3-feb-1986 (Cord Cutters, CNN Money; Biography: US$10 M en total). Disney compró Pixar por ~US$7.400 M en acciones, ene/may 2006 (CNN Money, Cord Cutters). 7.400/10 = 740 veces.",
+ "frases": [
+  "In 1986, George Lucas sold a small computer team.",
+  "After his divorce he needed cash. He asked for 30 million dollars, and nobody bought it.",
+  "Then Steve Jobs paid 5 million, and put in 5 million more.",
+  "The team was called Pixar.",
+  "Twenty years later, Disney bought it for 7.4 billion dollars.",
+  "That's 740 times what Jobs put in.",
+  "Lesson: before you sell something, ask what it could become. Would you have sold it?"
+ ],
+ "frases_voz": [
+  "In nineteen eighty-six, George Lucas sold a small computer team.",
+  "After his divorce, he needed cash. He asked for thirty million dollars, and nobody bought it.",
+  "Then Steve Jobs paid five million, and put in five million more.",
+  "The team was called Pixar.",
+  "Twenty years later, Disney bought it for seven point four billion dollars.",
+  "That's seven hundred and forty times what Jobs put in.",
+  "Lesson. Before you sell something, ask what it could become. Would you have sold it?"
+ ],
+ "fuentes": [
+  "https://www.aol.com/finance/actually-pixar-not-apple-first-174307224.html",
+  "https://money.cnn.com/galleries/2009/fortune/0906/gallery.steve_jobs_career_timeline.fortune/5.html",
+  "https://cordcuttersnews.com/40-years-ago-today-pixar-became-a-reality-launching-an-era-of-computer-animation-magic/",
+  "https://www.biography.com/business-leaders/steve-jobs-pixar-animation-history"
+ ],
+ "escena": {
+  "momentos": [
+   [
+    "sold",
+    0,
+    "^sold"
+   ],
+   [
+    "team",
+    0,
+    "^team"
+   ],
+   [
+    "s_cash",
+    1,
+    null
+   ],
+   [
+    "divorce",
+    1,
+    "^divorce"
+   ],
+   [
+    "m30",
+    1,
+    "^thirty|^30"
+   ],
+   [
+    "nobody",
+    1,
+    "^nobody"
+   ],
+   [
+    "s_jobs",
+    2,
+    null
+   ],
+   [
+    "m5",
+    2,
+    "^five|^5"
+   ],
+   [
+    "more",
+    2,
+    "^more"
+   ],
+   [
+    "s_pixar",
+    3,
+    null
+   ],
+   [
+    "pixar",
+    3,
+    "^pixar"
+   ],
+   [
+    "s_disney",
+    4,
+    null
+   ],
+   [
+    "disney",
+    4,
+    "^disney"
+   ],
+   [
+    "b74",
+    4,
+    "^seven|^7"
+   ],
+   [
+    "s_rank",
+    5,
+    null
+   ],
+   [
+    "s_lesson",
+    6,
+    null
+   ],
+   [
+    "s_fin",
+    6,
+    "^would"
+   ]
+  ],
+  "escenas": [
+   {
+    "tipo": "historia",
+    "desde": "0",
+    "trans": "corte",
+    "set": "estudio",
+    "titulo": "1986 · LUCASFILM",
+    "props": [
+     {
+      "tipo": "escritorio",
+      "x": 720,
+      "y": 1420,
+      "s": 1.1
+     },
+     {
+      "tipo": "cartel",
+      "x": 250,
+      "y": 1180,
+      "s": 1.2,
+      "texto": "FOR SALE",
+      "k": "sold",
+      "pop": true
+     }
+    ],
+    "actores": [
+     {
+      "var": 3,
+      "look": "gamer",
+      "s": 0.8,
+      "keys": [
+       {
+        "k": 0,
+        "x": 720,
+        "y": 1420,
+        "pose": "juega",
+        "cara": "feliz",
+        "dir": -1
+       }
+      ]
+     },
+     {
+      "look": "ejecutivo",
+      "pelo": "#5d4037",
+      "barba": "#6d4c41",
+      "camisa": "#6d4c41",
+      "corbata": "",
+      "s": 1.0,
+      "keys": [
+       {
+        "k": 0,
+        "x": -120,
+        "y": 1480,
+        "pose": "parado",
+        "a": [
+         480,
+         1480
+        ],
+        "dur": 0.9
+       },
+       {
+        "k": "sold",
+        "x": 480,
+        "y": 1480,
+        "pose": "apunta",
+        "cara": "feliz",
+        "dir": -1
+       }
+      ]
+     }
+    ],
+    "chips": [
+     {
+      "k": "team",
+      "texto": "A SMALL COMPUTER TEAM",
+      "c": "cian",
+      "y": 1580
+     }
+    ]
+   },
+   {
+    "tipo": "historia",
+    "desde": "s_cash",
+    "trans": "barrido",
+    "set": "oficina",
+    "titulo": "NEEDED CASH",
+    "props": [
+     {
+      "tipo": "cartel",
+      "x": 700,
+      "y": 1080,
+      "s": 1.4,
+      "texto": "$30 MILLION",
+      "k": "m30",
+      "pop": true
+     }
+    ],
+    "actores": [
+     {
+      "look": "ejecutivo",
+      "pelo": "#5d4037",
+      "barba": "#6d4c41",
+      "camisa": "#6d4c41",
+      "corbata": "",
+      "s": 1.0,
+      "keys": [
+       {
+        "k": 0,
+        "x": 380,
+        "y": 1480,
+        "pose": "piensa",
+        "cara": "triste"
+       },
+       {
+        "k": "m30",
+        "x": 380,
+        "y": 1480,
+        "pose": "apunta",
+        "cara": "feliz",
+        "fx": "salto"
+       },
+       {
+        "k": "nobody",
+        "x": 380,
+        "y": 1480,
+        "pose": "cruzado",
+        "cara": "triste"
+       }
+      ]
+     }
+    ],
+    "burbujas": [
+     {
+      "k": "nobody",
+      "x": 380,
+      "y": 870,
+      "texto": "ANYONE...?"
+     }
+    ],
+    "chips": [
+     {
+      "k": "nobody",
+      "texto": "NO BUYERS",
+      "c": "rojo",
+      "y": 1580
+     }
+    ],
+    "zoom": [
+     {
+      "k": "nobody",
+      "s": 1.3,
+      "x": 420,
+      "y": 1200,
+      "dur": 0.7
+     }
+    ]
+   },
+   {
+    "tipo": "historia",
+    "desde": "s_jobs",
+    "trans": "barrido",
+    "set": "oficina",
+    "titulo": "THEN, ONE BUYER",
+    "props": [
+     {
+      "tipo": "cheque",
+      "texto": "$5M",
+      "s": 0.9,
+      "k": "m5",
+      "mov": [
+       {
+        "k": "m5",
+        "x": 720,
+        "y": 1180
+       },
+       {
+        "k": "more",
+        "x": 330,
+        "y": 1180,
+        "arco": 160
+       }
+      ]
+     },
+     {
+      "tipo": "bolsa_dinero",
+      "x": 760,
+      "y": 1480,
+      "s": 0.9,
+      "k": "more",
+      "pop": true
+     }
+    ],
+    "actores": [
+     {
+      "look": "ejecutivo",
+      "pelo": "#5d4037",
+      "barba": "#6d4c41",
+      "camisa": "#6d4c41",
+      "corbata": "",
+      "s": 1.0,
+      "keys": [
+       {
+        "k": 0,
+        "x": 330,
+        "y": 1480,
+        "pose": "cruzado",
+        "cara": "triste"
+       },
+       {
+        "k": "more",
+        "x": 330,
+        "y": 1480,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "brinca"
+       }
+      ]
+     },
+     {
+      "look": "gamer",
+      "camisa": "#263238",
+      "pant": "#455a64",
+      "pelo": "#3e2723",
+      "peloT": "corto",
+      "alto": 1.08,
+      "s": 1.0,
+      "keys": [
+       {
+        "k": 0,
+        "x": 1200,
+        "y": 1480,
+        "pose": "parado",
+        "dir": -1,
+        "a": [
+         760,
+         1480
+        ],
+        "dur": 1.0
+       },
+       {
+        "k": "m5",
+        "x": 760,
+        "y": 1480,
+        "pose": "ofrece",
+        "dir": -1,
+        "cara": "feliz"
+       }
+      ]
+     }
+    ],
+    "chips": [
+     {
+      "k": "m5",
+      "texto": "STEVE JOBS PAID $5M",
+      "c": "verde",
+      "y": 900
+     },
+     {
+      "k": "more",
+      "texto": "+ $5M MORE TO RUN IT",
+      "c": "amar",
+      "y": 1590
+     }
+    ]
+   },
+   {
+    "tipo": "historia",
+    "desde": "s_pixar",
+    "trans": "zoom",
+    "set": "estudio",
+    "titulo": "THE TEAM'S NAME",
+    "props": [
+     {
+      "tipo": "cartel",
+      "x": 540,
+      "y": 1000,
+      "s": 1.7,
+      "texto": "PIXAR",
+      "k": "pixar",
+      "pop": true
+     },
+     {
+      "tipo": "portatil",
+      "x": 300,
+      "y": 1430,
+      "s": 0.9
+     },
+     {
+      "tipo": "portatil",
+      "x": 800,
+      "y": 1430,
+      "s": 0.9
+     }
+    ],
+    "actores": [
+     {
+      "var": 3,
+      "look": "gamer",
+      "s": 0.8,
+      "keys": [
+       {
+        "k": 0,
+        "x": 300,
+        "y": 1440,
+        "pose": "juega"
+       },
+       {
+        "k": "pixar",
+        "x": 300,
+        "y": 1440,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "brinca"
+       }
+      ]
+     },
+     {
+      "var": 8,
+      "look": "gamer",
+      "s": 0.8,
+      "keys": [
+       {
+        "k": 0,
+        "x": 800,
+        "y": 1440,
+        "pose": "juega",
+        "dir": -1
+       },
+       {
+        "k": "pixar",
+        "x": 800,
+        "y": 1440,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "brinca",
+        "dir": -1
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "tipo": "historia",
+    "desde": "s_disney",
+    "trans": "barrido",
+    "set": "oficina",
+    "titulo": "20 YEARS LATER",
+    "props": [
+     {
+      "tipo": "bolsa_dinero",
+      "s": 1.0,
+      "k": "disney",
+      "mov": [
+       {
+        "k": "disney",
+        "x": 760,
+        "y": 1460
+       },
+       {
+        "k": "b74",
+        "x": 330,
+        "y": 1460,
+        "arco": 200
+       }
+      ]
+     },
+     {
+      "tipo": "billetes",
+      "x": 330,
+      "y": 1200,
+      "s": 1.2,
+      "k": "b74",
+      "pop": true
+     }
+    ],
+    "actores": [
+     {
+      "look": "gamer",
+      "camisa": "#263238",
+      "pant": "#455a64",
+      "pelo": "#3e2723",
+      "peloT": "corto",
+      "alto": 1.08,
+      "s": 1.0,
+      "keys": [
+       {
+        "k": 0,
+        "x": 330,
+        "y": 1480,
+        "pose": "cruzado",
+        "cara": "neutral"
+       },
+       {
+        "k": "b74",
+        "x": 330,
+        "y": 1480,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "salto"
+       }
+      ]
+     },
+     {
+      "look": "ejecutivo",
+      "var": 21,
+      "s": 1.0,
+      "keys": [
+       {
+        "k": 0,
+        "x": 1200,
+        "y": 1480,
+        "pose": "parado",
+        "dir": -1,
+        "a": [
+         760,
+         1480
+        ],
+        "dur": 0.8
+       },
+       {
+        "k": "disney",
+        "x": 760,
+        "y": 1480,
+        "pose": "ofrece",
+        "dir": -1
+       }
+      ]
+     }
+    ],
+    "chips": [
+     {
+      "k": "disney",
+      "texto": "DISNEY",
+      "c": "cian",
+      "x": 760,
+      "y": 880
+     },
+     {
+      "k": "b74",
+      "texto": "$7.4 BILLION",
+      "c": "verde",
+      "y": 1590,
+      "s": 1.4
+     }
+    ]
+   },
+   {
+    "tipo": "ranking",
+    "desde": "s_rank",
+    "titulo": "PIXAR · US DOLLARS",
+    "filas": [
+     {
+      "p": "JOBS PUT IN (1986)",
+      "v": "$10M",
+      "n": 10,
+      "k": "s_rank",
+      "c": "cian"
+     },
+     {
+      "p": "DISNEY PAID (2006)",
+      "v": "$7.4B",
+      "n": 7400,
+      "k": "s_rank",
+      "c": "verde",
+      "top": "×740"
+     }
+    ]
+   },
+   {
+    "tipo": "historia",
+    "desde": "s_lesson",
+    "trans": "sube",
+    "set": "estudio",
+    "titulo": "LESSON",
+    "props": [
+     {
+      "tipo": "cartel",
+      "x": 600,
+      "y": 1060,
+      "s": 1.1,
+      "texto": "WHAT COULD IT BECOME?",
+      "k": 0.4,
+      "pop": true
+     }
+    ],
+    "actores": [
+     {
+      "look": "ejecutivo",
+      "pelo": "#5d4037",
+      "barba": "#6d4c41",
+      "camisa": "#6d4c41",
+      "corbata": "",
+      "s": 1.0,
+      "keys": [
+       {
+        "k": 0,
+        "x": 330,
+        "y": 1480,
+        "pose": "piensa",
+        "cara": "neutral"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "tipo": "cierre",
+    "desde": "s_fin"
+   }
+  ],
+  "cierre": "SELL OR KEEP?",
+  "cierre2": "Would you have sold it? Comment",
+  "paises": [
+   "SELL",
+   "KEEP"
+  ],
+  "sfx": [
+   {
+    "f": "extra/ESM_SPG_fx_action_transaction_cash_register_ding_02.wav",
+    "k": "b74",
+    "off": 0.0,
+    "dur": 0.9,
+    "g": 0.12
+   }
+  ]
+ }
+}

@@ -1,0 +1,61 @@
+{
+  "titulo": "GTA 6 Has a Secret Car Scanner 📱",
+  "texto_pantalla": "SMASH = STOLEN?",
+  "lote": "G2026112101en",
+  "marca": "THE VICEVERSE GG",
+  "nota_datos": "Micronicho EN: hidden mechanics. Fuentes: allthings.how (key cloner, romper vidrio no basta, carjack), stealthygaming (Waink muestra cerradura/alarma/tracker/valor; key cloner por historia; según Shacknews no arranca sin cloner), finalboss.io (vidrio roto no vence inmovilizador), games.gg y toy-people (datos del escaneo Waink), timesaver.gg (carjack siempre disponible).",
+  "frases": [
+    "You think smashing a window steals any car in GTA 6?",
+    "Try it on an expensive one.",
+    "You get inside, but the engine won't start.",
+    "Modern cars have electronic keys. You need a key cloner, and you unlock it in the story.",
+    "But here's the secret: your phone has an app called Waink.",
+    "Scan a parked car and it shows the lock, the alarm, the tracker and its value.",
+    "Or skip all that, and take a car with the driver still inside.",
+    "Did you know about the scanner?"
+  ],
+  "frases_voz": [
+    "You think smashing a window steals any car in GTA six?",
+    "Try it on an expensive one.",
+    "You get inside, but the engine won't start.",
+    "Modern cars have electronic keys. You need a key cloner, and you unlock it in the story.",
+    "But here's the secret. Your phone has an app called Waink.",
+    "Scan a parked car, and it shows the lock, the alarm, the tracker, and its value.",
+    "Or skip all that, and take a car with the driver still inside.",
+    "Did you know about the scanner?"
+  ],
+  "fuentes": [
+    "https://allthings.how/?p=132243",
+    "https://stealthygaming.com/?p=37393",
+    "https://finalboss.io/grand-theft-auto-vi-how-to-use-waink-for-lockpick-or-smash-theft",
+    "https://games.gg/grand-theft-auto-vi/guides/gta-6-how-to-steal-cars/",
+    "https://timesaver.gg/blog/gta-6-car-stealing-waink-scanner-confirmed-2026"
+  ],
+  "escena": {
+    "momentos": [
+      ["smash", 0, "^smashing"],
+      ["s_exp", 1, null],
+      ["engine", 2, "^engine"],
+      ["cloner", 3, "^cloner"],
+      ["s_app", 4, null],
+      ["lock", 5, "^lock"],
+      ["alarm", 5, "^alarm"],
+      ["tracker", 5, "^tracker"],
+      ["value", 5, "^value"],
+      ["s_jack", 6, null],
+      ["s_fin", 7, null]
+    ],
+    "escenas": [
+      {"tipo": "robo", "desde": "0", "k1": "smash", "k2": "engine", "k3": "cloner", "titulo": "EXPENSIVE CAR", "c2": "ENGINE LOCKED", "c3": "NEEDS A KEY CLONER"},
+      {"tipo": "waink", "desde": "s_app", "app": "WAINK", "titulo": "HIDDEN APP", "ks": ["lock","alarm","tracker","value"], "filas": [["LOCK","ELECTRONIC","rosa"],["ALARM","YES","amar"],["TRACKER","YES","rojo"],["VALUE","$$$","verde"]]},
+      {"tipo": "aviso", "desde": "s_jack", "texto": "CARJACK", "sub": "Driver inside? Still works", "fondo": "THE OLD WAY", "color": "verde"},
+      {"tipo": "cierre", "desde": "s_fin"}
+    ],
+    "cierre": "DID YOU KNOW?",
+    "cierre2": "Comment: yes or no",
+    "paises": ["YES", "NO"],
+    "sfx": [
+      {"f": "extra/CarEngineRev_BW.52086.wav", "k": "0", "off": 0.0, "dur": 1.2, "fade": 0.5, "g": 0.12}
+    ]
+  }
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calibración 1 Gatorade vs. Powerade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{ /* hoja de trabajo: una columna de tramos, cada uno con filas de opciones de un clic */
+  --fondo:#f3f5f8; --papel:#ffffff; --tinta:#1b2230; --suave:#5a6577; --linea:#d7dce5; --marca:#1d5bb8; --marca-tinta:#ffffff; --listo:#1f7a4d;
+  --cuerpo:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif; --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --fondo:#11141a; --papel:#1a1f28; --tinta:#e7eaf0; --suave:#9aa5b6; --linea:#2d3441; --marca:#77a8ff; --marca-tinta:#0d1626; --listo:#5fcf95; color-scheme:dark; } }
+:root[data-theme="dark"]{
+  --fondo:#11141a; --papel:#1a1f28; --tinta:#e7eaf0; --suave:#9aa5b6; --linea:#2d3441; --marca:#77a8ff; --marca-tinta:#0d1626; --listo:#5fcf95; color-scheme:dark; }
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--tinta);font-family:var(--cuerpo);font-size:15px;line-height:1.45}
+main{max-width:860px;margin:0 auto;padding:24px 16px 96px;display:flex;flex-direction:column;gap:16px}
+h1{font-size:24px;font-weight:600;margin:0;text-wrap:balance}
+h2{font-size:16px;font-weight:600;margin:0}
+p{margin:0}
+.suave{color:var(--suave)}
+.caja{background:var(--papel);border:1px solid var(--linea);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px}
+ol.pasos{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px}
+a{color:var(--marca)}
+.glos{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.glos h3{font-size:13px;font-weight:600;margin:0 0 4px;text-transform:uppercase;letter-spacing:.04em;color:var(--suave)}
+.glos dl{margin:0;display:flex;flex-direction:column;gap:3px;font-size:13.5px}
+.glos dt{font-weight:600;display:inline}
+.glos dd{display:inline;margin:0;color:var(--suave)}
+.tramo{background:var(--papel);border:1px solid var(--linea);border-left:4px solid var(--linea);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:10px}
+.tramo.completo{border-left-color:var(--listo)}
+.cab{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline}
+.num{font-family:var(--mono);font-size:13px;color:var(--suave)}
+.tiempo{font-family:var(--mono);font-size:14px;font-variant-numeric:tabular-nums;text-decoration:none;border:1px solid var(--linea);border-radius:6px;padding:1px 8px}
+.tiempo:hover{border-color:var(--marca)}
+.desc{flex:1 1 300px;font-weight:500}
+.fila{display:grid;grid-template-columns:150px 1fr;gap:6px 10px;align-items:start}
+.fila>span{font-size:13px;color:var(--suave);padding-top:5px}
+.ops{display:flex;flex-wrap:wrap;gap:6px}
+.ops button{font:inherit;font-size:13.5px;color:var(--tinta);background:transparent;border:1px solid var(--linea);border-radius:999px;padding:3px 11px;cursor:pointer}
+.ops button:hover{border-color:var(--marca)}
+.ops button[aria-pressed="true"]{background:var(--marca);border-color:var(--marca);color:var(--marca-tinta);font-weight:500}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--marca);outline-offset:2px}
+input[type=text],textarea{font:inherit;color:var(--tinta);background:var(--fondo);border:1px solid var(--linea);border-radius:8px;padding:6px 10px;width:100%}
+textarea{min-height:64px;resize:vertical}
+.barra{position:fixed;left:0;right:0;bottom:0;background:var(--papel);border-top:1px solid var(--linea);padding:10px 16px}
+.barra div{max-width:860px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.cuenta{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.principal{font:inherit;font-weight:600;background:var(--marca);color:var(--marca-tinta);border:0;border-radius:8px;padding:8px 16px;cursor:pointer}
+#salida{font-family:var(--mono);font-size:12px;min-height:120px}
+@media (max-width:560px){.fila{grid-template-columns:1fr}.fila>span{padding-top:0}}
+</style>
+</head>
+<body>
+<main>
+  <header class="caja">
+    <h1>Calibración, video 1: Gatorade vs. Powerade</h1>
+    <p class="suave">Company Man · 12:31 · 25 tramos (de 0:24 a 11:15). El patrocinio del inicio y del final no se codifica.</p>
+    <ol class="pasos">
+      <li>Mira el video completo una vez, sin marcar nada: <a href="https://www.youtube.com/watch?v=P2V-vFct8FY" target="_blank" rel="noopener">abrir en YouTube</a>.</li>
+      <li>Vuelve aquí y marca una opción por fila en cada tramo. La hora de cada tramo abre el video en ese punto.</li>
+      <li>Si dudas entre dos opciones, elige la que domina y sigue. La duda también es un dato.</li>
+      <li>Al final, pulsa «Copiar mis respuestas» y pégalas en el chat.</li>
+    </ol>
+    <p class="suave">Tus respuestas se guardan en este navegador mientras avanzas. Claude ya dejó su codificación sellada y no ve la tuya hasta que la pegues.</p>
+  </header>
+
+  <section class="caja" aria-labelledby="g">
+    <h2 id="g">Qué significa cada opción</h2>
+    <div class="glos" id="glosario"></div>
+  </section>
+
+  <div id="tramos" style="display:flex;flex-direction:column;gap:12px"></div>
+
+  <section class="caja">
+    <h2>Dos preguntas sobre el video entero</h2>
+    <label for="irse">¿En qué momento te dieron ganas de irte? (minuto aproximado y por qué)</label>
+    <textarea id="irse"></textarea>
+    <label for="quedarse">¿En qué momento no podías dejar de mirar?</label>
+    <textarea id="quedarse"></textarea>
+    <label for="libre">¿Algo que el formulario no te dejó decir? (opcional)</label>
+    <textarea id="libre"></textarea>
+  </section>
+
+  <section class="caja">
+    <h2>Tus respuestas para pegar en el chat</h2>
+    <p class="suave" id="estado">Se arma al pulsar el botón. Si el botón no logra copiar, selecciona el texto y cópialo a mano.</p>
+    <textarea id="salida" readonly></textarea>
+  </section>
+</main>
+
+<div class="barra"><div>
+  <span class="cuenta" id="cuenta">0 de 200 marcadas</span>
+  <button class="principal" id="copiar" type="button">Copiar mis respuestas</button>
+</div></div>
+
+<script>
+const VIDEO='P2V-vFct8FY', CLAVE='calib1-'+VIDEO;
+const TRAMOS=[{"n": 1, "ini": "0:24", "fin": "0:44", "desc": "Presenta la rivalidad: Coca-Cola creó Powerade para competir con Gatorade y, tras casi 40 años, sigue lejos"}, {"n": 2, "ini": "0:44", "fin": "1:07", "desc": "Tamaño de la brecha: cuota de mercado de cada marca; reconoce un avance, pero no la ve líder"}, {"n": 3, "ini": "1:07", "fin": "1:20", "desc": "Anuncia el enfoque: rivalidad desigual pero movida, contada década por década"}, {"n": 4, "ini": "1:20", "fin": "2:03", "desc": "1960s: médicos de la U. de Florida inventan Gatorade, para qué servía y el ruido tras un triunfo del equipo"}, {"n": 5, "ini": "2:03", "fin": "2:20", "desc": "1960s: una empresa de alimentos compra los derechos, llega a las tiendas y a la NFL"}, {"n": 6, "ini": "2:20", "fin": "2:36", "desc": "1970s: década tranquila; crecimiento lento y un chicle de la marca"}, {"n": 7, "ini": "2:36", "fin": "2:55", "desc": "1970s: Olympade, el primer intento de Coca-Cola, y la oportunidad que dejó pasar"}, {"n": 8, "ini": "2:55", "fin": "3:18", "desc": "1980s: Quaker Oats compra la empresa dueña; Gatorade era lo que más le interesaba"}, {"n": 9, "ini": "3:18", "fin": "3:59", "desc": "1980s: expansión: público más amplio, sabores, NBA, el baño de Gatorade, otros países"}, {"n": 10, "ini": "3:59", "fin": "4:10", "desc": "1980s: resultado de la década: las ventas se multiplican"}, {"n": 11, "ini": "4:10", "fin": "4:35", "desc": "1990s: todos quieren entrar al mercado; aparecen marcas chicas"}, {"n": 12, "ini": "4:35", "fin": "5:00", "desc": "Pepsi lanza Mountain Dew Sport; la frase dura de su vocero contra Gatorade"}, {"n": 13, "ini": "5:00", "fin": "5:34", "desc": "Mountain Dew Sport desaparece; llega All Sport, con gas, y luego lo relanzan sin gas"}, {"n": 14, "ini": "5:34", "fin": "6:08", "desc": "Entra Powerade: primero solo en máquinas, después en botella; comercial que se compara con Gatorade"}, {"n": 15, "ini": "6:08", "fin": "6:19", "desc": "Powerade apuesta al deporte internacional (FIFA, Olímpicos)"}, {"n": 16, "ini": "6:19", "fin": "6:48", "desc": "Gatorade sigue arriba: Michael Jordan y sus campañas; cuota de mercado en 2000"}, {"n": 17, "ini": "6:48", "fin": "7:16", "desc": "2000s: Pepsi compra Quaker Oats por una cifra enorme; Gatorade vuelve a ser el motivo"}, {"n": 18, "ini": "7:16", "fin": "7:35", "desc": "Pepsi tiene que vender All Sport; desde ahí es un duelo entre dos marcas"}, {"n": 19, "ini": "7:35", "fin": "8:23", "desc": "Ida y vuelta de productos: cada marca responde con su versión (aguas, cero azúcar, etc.)"}, {"n": 20, "ini": "8:23", "fin": "8:49", "desc": "Figuras: el comercial de Jordan contra sí mismo; LeBron firma con Coca-Cola y años después cambia"}, {"n": 21, "ini": "8:49", "fin": "9:15", "desc": "2010s: Powerade crece; aparece un competidor nuevo, BodyArmor, ligado a Kobe Bryant"}, {"n": 22, "ini": "9:15", "fin": "9:54", "desc": "2020s: Coca-Cola compra BodyArmor; ahora tiene dos marcas y sigue lejos de Gatorade"}, {"n": 23, "ini": "9:54", "fin": "10:16", "desc": "2023: Powerade cambia etiqueta y fórmula; el narrador no sabe si eso la hace mejor"}, {"n": 24, "ini": "10:16", "fin": "10:43", "desc": "Resumen y opinión final sobre las dos marcas"}, {"n": 25, "ini": "10:43", "fin": "11:15", "desc": "Preguntas al público y pedido de comentarios"}];
+const DIM=[
+ {id:'funcion',nom:'Función del tramo',ops:[
+  ['Abrir','presenta de qué va y por qué importa'],['Situar','da el contexto u origen que hace falta para lo que viene'],
+  ['Avanzar','un hecho nuevo, en la misma dirección'],['Complicar','aparece un obstáculo, un rival o un problema'],
+  ['Girar','cambia la dirección o lo que uno creía'],['Respirar','baja la intensidad: curiosidad o pausa'],
+  ['Pagar','entrega un resultado o una respuesta que se esperaba'],['Reflexionar','el narrador interpreta u opina'],
+  ['Cerrar','resume, despide o pide algo al público']]},
+ {id:'enigma',nom:'Qué hace con la pregunta abierta',ops:[
+  ['Plantear','abre una pregunta'],['Prometer respuesta','avisa que la respuesta viene'],['Demorar','la aplaza con otro material'],
+  ['Despistar','sugiere una respuesta que no es'],['Responder a medias','da una parte de la respuesta'],
+  ['Suspender','deja la pregunta en el aire'],['Revelar','responde'],['Ninguno','no toca ninguna pregunta']]},
+ {id:'saber',nom:'Quién sabe más',ops:[
+  ['Público menos','los de la historia saben algo que nosotros todavía no'],['Igual','sabemos lo mismo'],
+  ['Público más','el tramo aprovecha que ya sabemos cómo termina'],['No aplica','no hay nadie actuando en el tramo']]},
+ {id:'apunta',nom:'A qué apunta',ops:[
+  ['Comprensión','que se entienda'],['Atención','que no te vayas: sorpresa, novedad, contraste'],
+  ['Emoción','que sientas algo: humor, nostalgia, tensión'],['Presencia','que te sientas dentro del lugar o del momento']]},
+ {id:'img_rel',nom:'La imagen frente a la voz',ops:[
+  ['Muestra','se ve lo que se dice'],['Anticipa','se ve antes de que se diga'],
+  ['Contradice','se ve algo que choca con lo dicho'],['Adorna','acompaña sin relación puntual']]},
+ {id:'img_tipo',nom:'Tipo de imagen que domina',ops:[
+  ['Documento o prueba','titular, cita, captura'],['Dato o gráfico','gráfico o cifra en pantalla'],
+  ['Archivo de época','comerciales, fotos o video antiguos'],['Producto','el objeto o la marca de la que se habla'],
+  ['Texto en pantalla','palabras como imagen principal'],['Relleno genérico','imagen de banco que serviría para cualquier video']]},
+ {id:'sonido',nom:'¿El sonido hace algo?',ops:[
+  ['Sí','música, efecto, silencio o audio ajeno que cambia cómo se siente el tramo'],['No','solo acompaña a la voz']]},
+ {id:'corte',nom:'¿El tramo está bien cortado?',ops:[
+  ['Bien','es una sola unidad'],['Lo partiría','aquí pasan dos cosas distintas'],['Lo uniría al anterior','es parte de lo mismo']]}
+];
+const total=TRAMOS.length*DIM.length;
+let R={c:{},n:{},s:{}};
+try{const g=JSON.parse(localStorage.getItem(CLAVE)||'null'); if(g&&g.c) R=g;}catch(e){}
+function guardar(){try{localStorage.setItem(CLAVE,JSON.stringify(R));}catch(e){}}
+function seg(t){const p=t.split(':');return (+p[0])*60+(+p[1]);}
+function el(tag,attrs,hijos){const e=document.createElement(tag);for(const k in (attrs||{})){if(k==='text')e.textContent=attrs[k];else e.setAttribute(k,attrs[k]);}(hijos||[]).forEach(h=>e.appendChild(h));return e;}
+
+const glos=document.getElementById('glosario');
+DIM.forEach(d=>{const dl=el('dl');d.ops.forEach(o=>{dl.appendChild(el('div',{},[el('dt',{text:o[0]+': '}),el('dd',{text:o[1]})]));});
+  glos.appendChild(el('div',{},[el('h3',{text:d.nom}),dl]));});
+
+const cont=document.getElementById('tramos');
+function marcar(n,dim,val,grupo){R.c[n]=R.c[n]||{};R.c[n][dim]=(R.c[n][dim]===val?undefined:val);
+  [...grupo.children].forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.v===R.c[n][dim])));guardar();contar();}
+TRAMOS.forEach(t=>{
+  const art=el('article',{class:'tramo',id:'t'+t.n});
+  const a=el('a',{class:'tiempo',href:'https://www.youtube.com/watch?v='+VIDEO+'&t='+seg(t.ini)+'s',target:'_blank',rel:'noopener',text:t.ini+' a '+t.fin});
+  art.appendChild(el('div',{class:'cab'},[el('span',{class:'num',text:'Tramo '+t.n}),a,el('span',{class:'desc',text:t.desc})]));
+  DIM.forEach(d=>{
+    const g=el('div',{class:'ops',role:'group','aria-label':d.nom});
+    d.ops.forEach(o=>{const b=el('button',{type:'button',title:o[1],text:o[0],'aria-pressed':String(((R.c[t.n]||{})[d.id])===o[0])});b.dataset.v=o[0];
+      b.addEventListener('click',()=>marcar(t.n,d.id,o[0],g));g.appendChild(b);});
+    art.appendChild(el('div',{class:'fila'},[el('span',{text:d.nom}),g]));
+  });
+  const son=el('input',{type:'text',id:'son'+t.n,placeholder:'Si el sonido hace algo: ¿qué? (opcional)'}); son.value=(R.s||{})[t.n]||'';
+  son.addEventListener('input',()=>{R.s=R.s||{};R.s[t.n]=son.value;guardar();});
+  const nota=el('input',{type:'text',id:'nota'+t.n,placeholder:'Duda o comentario sobre este tramo (opcional)'}); nota.value=(R.n||{})[t.n]||'';
+  nota.addEventListener('input',()=>{R.n=R.n||{};R.n[t.n]=nota.value;guardar();});
+  art.appendChild(el('div',{class:'fila'},[el('span',{text:'Notas'}),el('div',{style:'display:flex;flex-direction:column;gap:6px'},[son,nota])]));
+  cont.appendChild(art);
+});
+['irse','quedarse','libre'].forEach(id=>{const x=document.getElementById(id);x.value=(R[id]||'');x.addEventListener('input',()=>{R[id]=x.value;guardar();});});
+function contar(){let k=0;TRAMOS.forEach(t=>{let c=0;DIM.forEach(d=>{if((R.c[t.n]||{})[d.id])c++;});k+=c;
+  document.getElementById('t'+t.n).classList.toggle('completo',c===DIM.length);});
+  document.getElementById('cuenta').textContent=k+' de '+total+' marcadas';return k;}
+function armar(){const L=['CALIBRACION 1 · '+VIDEO+' · Tao','n|'+DIM.map(d=>d.id).join('|')+'|sonido_cual|nota'];
+  TRAMOS.forEach(t=>{const c=R.c[t.n]||{};L.push([t.n].concat(DIM.map(d=>c[d.id]||'-'),[((R.s||{})[t.n]||'').replace(/[|\n]/g,' '),((R.n||{})[t.n]||'').replace(/[|\n]/g,' ')]).join('|'));});
+  L.push('IRSE: '+(R.irse||'-'));L.push('QUEDARSE: '+(R.quedarse||'-'));L.push('LIBRE: '+(R.libre||'-'));return L.join('\n');}
+document.getElementById('copiar').addEventListener('click',()=>{
+  const txt=armar(),out=document.getElementById('salida'),est=document.getElementById('estado'),k=contar();
+  out.value=txt;const falta=total-k;const aviso=falta?(' Faltan '+falta+' casillas; puedes copiar igual.'):'';
+  const manual=()=>{out.focus();out.select();est.textContent='No se pudo copiar solo. El texto quedó seleccionado: cópialo con Cmd+C.'+aviso;};
+  try{navigator.clipboard.writeText(txt).then(()=>{est.textContent='Copiado. Pégalo en el chat.'+aviso;},manual);}catch(e){manual();}
+  out.scrollIntoView({block:'center'});
+});
+contar();
+</script>
+</body>
+</html>

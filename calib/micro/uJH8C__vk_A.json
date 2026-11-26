@@ -1,0 +1,53 @@
+{
+ "id": "uJH8C__vk_A",
+ "titulo": "The Zanfretta Abductions",
+ "canal": "Bedtime Stories",
+ "subs": 1090000,
+ "vistas": 324329,
+ "fecha": "20261031",
+ "dur_min": 28.2,
+ "idioma": "en",
+ "xN": 0.3,
+ "voz": {
+  "ppm": 114,
+  "ppm_primeros_30s": 140,
+  "pausas_min": 7.0
+ },
+ "imagen": {
+  "cortes_min": 0.0,
+  "plano_mediano": 1689.6,
+  "plano_max": 1689.6,
+  "sin_cambio": 9,
+  "cambios_locales_min": 1.6,
+  "racha_quieta_max": 32.4,
+  "en_rachas_5s": 5
+ },
+ "gancho": {
+  "cortes_30s": 0,
+  "seg_primer_corte": 1683.1,
+  "sin_cambio_30s": 0,
+  "primera_frase_palabras": 29,
+  "primera_pregunta": false,
+  "primera_con_numero": true,
+  "primera_con_tu": false
+ },
+ "lenguaje": {
+  "palabras": 3196,
+  "frases": 132,
+  "frase_media": 24.2,
+  "preguntas_100f": 0.0,
+  "tu_100": 0.0,
+  "yo_100": 0.0,
+  "contracciones_100": 0.25,
+  "numeros_100": 0.5,
+  "largo_palabra": 5.32,
+  "palabras_largas": 23.8,
+  "variedad": 0.791,
+  "flesch": 32.5,
+  "registro": "formal"
+ },
+ "sincronia": {
+  "frases_con_cambio_visual": 23,
+  "cortes_junto_a_inicio_de_frase": null
+ }
+}

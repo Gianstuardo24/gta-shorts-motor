@@ -1,0 +1,72 @@
+import sys; sys.path.insert(0,'/home/claude/d23'); from comun import *
+frases=["In 1899, the boss of Coca-Cola sold the right to bottle it for 1 dollar.",
+"Two lawyers from Tennessee asked Asa Candler for the rights to bottle Coke in almost all of the US.",
+"Back then, Coke was sold mostly at soda fountains. Candler didn't think bottles would matter.",
+"He signed for 1 dollar, and he never even collected it.",
+"Bottles took Coke everywhere, and bottling became a giant business.",
+"In 2010, Coca-Cola paid about 12.3 billion dollars for the North American business of its biggest bottler.",
+"Lesson: never sell the road your product travels on. Tell me if you would have signed.",
+"Follow for the next million dollar mistake."]
+voz=[f.replace("1899","eighteen ninety-nine").replace("1 dollar","one dollar").replace("the US","the U.S.").replace("2010","twenty ten").replace("12.3 billion","twelve point three billion") for f in frases]
+M=[["boss",0,"^boss"],["bottle0",0,"^bottle"],["d1",0,"^1$"],["s_law",1,None],["lawyers",1,"^lawyers"],["candler",1,"^candler"],["rights",1,"^rights"],
+["s_fount",2,None],["fountains",2,"^fountains"],["matter",2,"^matter"],["s_sign",3,None],["signed",3,"^signed"],["never",3,"^never"],["collected",3,"^collected"],
+["s_every",4,None],["everywhere",4,"^everywhere"],["giant",4,"^giant"],["s_2010",5,None],["b12",5,"^12"],["bottler",5,"^bottler"],
+["s_les",6,None],["road",6,"^road"],["s_fin",6,"^tell"],["s_cta",7,None]]
+CAND=dict(look="ejecutivo",var=51,pelo="#cfcfcf",camisa="#3e2723",s=1.0)
+P=[{"tipo":"escritorio","x":820,"y":1720,"s":1.1,"k":0.0,"z":1650,"fin":"s_fount"},
+   {"tipo":"documento","x":640,"y":1030,"s":0.9,"sello":"BOTTLING RIGHTS","selloc":"amar","k":"rights","cae":True,"z":1800,"fin":"s_fount"},
+   {"tipo":"escritorio","x":3250,"y":1720,"s":1.1,"k":"s_sign","z":1650,"fin":"s_every"},
+   {"tipo":"cheque","x":3250,"y":1250,"s":1.2,"texto":"$1","k":"signed","cae":True,"z":1800,"fin":"s_every"},
+   {"tipo":"cajita","x":4250,"y":1740,"s":2.0,"color":"#8d6e63","texto":"BOTTLES","k":"s_every","z":1600},
+   {"tipo":"cajita","x":4250,"y":1560,"s":2.0,"color":"#a1887f","texto":"BOTTLES","k":"s_every+0.3","cae":True,"z":1600},
+   {"tipo":"cajita","x":4520,"y":1740,"s":2.0,"color":"#8d6e63","texto":"BOTTLES","k":"s_every+0.5","cae":True,"z":1600},
+   {"tipo":"auto","x":4750,"y":1760,"s":0.9,"color":"rojo","k":"everywhere","z":1700,"mov":[{"k":"everywhere","x":5300,"y":1760},{"k":"everywhere+1.6","x":4700,"y":1760}]},
+   {"tipo":"bolsa_dinero","x":5600,"y":1690,"s":1.2,"k":"b12","cae":True},
+   {"tipo":"bolsa_dinero","x":5750,"y":1690,"s":1.2,"k":"b12+0.2","cae":True},
+   {"tipo":"bolsa_dinero","x":5675,"y":1580,"s":1.2,"k":"b12+0.4","cae":True},
+   {"tipo":"billetes","x":5350,"y":1720,"s":1.3,"k":"b12+0.3","cae":True},
+   {"tipo":"escritorio","x":6950,"y":1720,"s":1.1,"k":"s_les","z":1650}]
+A=[{**CAND,"hasta":"s_fount","keys":[{"k":0,"x":820,"y":1700,"pose":"parado","cara":"neutral","dir":-1},{"k":"bottle0","x":820,"y":1700,"pose":"ofrece","cara":"feliz","dir":-1,"objeto":"documento"},{"k":"s_law","x":820,"y":1700,"pose":"cruzado","cara":"neutral","dir":-1}]},
+   {"look":"ejecutivo","var":52,"camisa":"#455a64","pelo":"#3e2723","s":0.95,"hasta":"s_fount","keys":[{"k":0,"x":300,"y":1700,"pose":"parado","cara":"feliz"},{"k":"rights","x":330,"y":1700,"pose":"apunta","cara":"feliz"}]},
+   {"look":"ejecutivo","var":53,"camisa":"#6d4c41","pelo":"#1d1d1d","s":0.95,"hasta":"s_fount","keys":[{"k":0,"x":480,"y":1705,"pose":"parado","cara":"neutral"},{"k":"lawyers","x":480,"y":1705,"pose":"saluda","cara":"feliz"}]},
+   {"look":"cliente","var":61,"s":0.95,"desde":"s_fount","hasta":"s_sign","keys":[{"k":"s_fount","x":1500,"y":1700,"pose":"sostiene","cara":"feliz","objeto":"taza"}]},
+   {"look":"jugadora","var":62,"s":0.95,"desde":"s_fount","hasta":"s_sign","keys":[{"k":"s_fount","x":1700,"y":1705,"pose":"sostiene","cara":"risa","objeto":"taza","dir":-1}]},
+   {**CAND,"desde":"s_fount","hasta":"s_sign","keys":[{"k":"s_fount","x":2050,"y":1700,"pose":"cruzado","cara":"neutral","dir":-1},{"k":"matter","x":2050,"y":1700,"pose":"piensa","cara":"neutral","dir":-1}]},
+   {**CAND,"desde":"s_sign","hasta":"s_every","keys":[{"k":"s_sign","x":2950,"y":1700,"pose":"parado","cara":"feliz"},{"k":"signed","x":2950,"y":1700,"pose":"ofrece","cara":"risa","objeto":"documento"},{"k":"never","x":2950,"y":1700,"pose":"cruzado","cara":"feliz"}]},
+   {"look":"ejecutivo","var":52,"camisa":"#455a64","pelo":"#3e2723","s":0.95,"desde":"s_sign","hasta":"s_every","keys":[{"k":"s_sign","x":3450,"y":1700,"pose":"parado","cara":"feliz","dir":-1},{"k":"signed","x":3450,"y":1700,"pose":"celebra","cara":"risa","dir":-1,"fx":"salto"}]},
+   {"look":"repartidor","var":63,"s":0.95,"desde":"s_every","hasta":"s_2010","keys":[{"k":"s_every","x":4000,"y":1700,"pose":"empuja","cara":"feliz"},{"k":"giant","x":4000,"y":1700,"pose":"celebra","cara":"risa"}]},
+   {"look":"ejecutivo","var":64,"s":1.0,"desde":"s_2010","hasta":"s_les","keys":[{"k":"s_2010","x":5300,"y":1700,"pose":"parado","cara":"neutral"},{"k":"b12","x":5300,"y":1700,"pose":"sostiene","cara":"sorpresa","objeto":"documento","fx":"tiembla"}]},
+   {**CAND,"desde":"s_les","keys":[{"k":"s_les","x":6600,"y":1700,"pose":"piensa","cara":"triste"},{"k":"road","x":6600,"y":1700,"pose":"piensa","cara":"triste","fx":"tiembla"}]}]
+E={"momentos":M,"escenas":[{"tipo":"pelicula","desde":"0","escala":1.1,
+ "zonas":[{"x0":-300,"x1":1300,"set":"oficina"},{"x0":1300,"x1":2600,"set":"cafe","k":"s_fount"},{"x0":2600,"x1":3900,"set":"oficina","k":"s_sign","luz":"tenue"},
+          {"x0":3900,"x1":5100,"set":"calle","k":"s_every"},{"x0":5100,"x1":6300,"set":"banco","k":"s_2010"},{"x0":6300,"x1":7600,"set":"oficina","k":"s_les","luz":"tenue"}],
+ "pan":[{"k":"s_fount","x":1300,"dur":1.0},{"k":"s_sign","x":2600,"dur":0.9},{"k":"s_every","x":3900,"dur":0.9},{"k":"s_2010","x":5100,"dur":0.9},{"k":"s_les","x":6300,"dur":0.9}],
+ "props":P,"actores":A,
+ "burbujas":[{"k":"matter","de":5,"texto":"BOTTLES? NAH.","fin":"s_sign","dx":-120}],
+ "numeros":[{"k":"d1","n":1,"pre":"$","c":"amar","etq":"BOTTLING RIGHTS · 1899","fin":"s_law"},
+            {"k":"b12","n":12300000000,"pre":"$","c":"verde","etq":"COCA-COLA · 2010","fin":"s_les"}],
+ "zoom":[{"k":0.1,"s":1.06,"dur":0.6},{"k":"signed","s":1.25,"x":3250,"y":1350,"dur":0.4},{"k":"s_every","s":1.0,"dur":0.4},{"k":"b12","s":1.15,"x":5500,"y":1450,"dur":0.3},{"k":"s_les","s":1.0,"dur":0.4}],
+ "sacudidas":[{"k":"signed","f":12},{"k":"b12","f":22}],
+ "titulos":[{"k":0.2,"texto":"1899","c":"amar","fin":"s_law"},
+            {"k":"s_law","texto":"THE BOTTLING DEAL","c":"cian","fin":"s_fount"},
+            {"k":"s_fount","texto":"SODA FOUNTAINS","c":"rosa","fin":"s_sign"},
+            {"k":"s_sign","texto":"SOLD FOR $1","c":"amar","grande":True,"fin":"s_every"},
+            {"k":"s_every","texto":"BOTTLES EVERYWHERE","c":"cian","fin":"s_2010"},
+            {"k":"s_les+0.4","texto":"THE LESSON","c":"rojo","fin":"s_fin"}],
+ "chips":[{"k":"collected","texto":"NEVER COLLECTED","c":"rojo","fin":"s_every"},
+          {"k":"bottler","texto":"ITS BIGGEST BOTTLER","c":"verde","fin":"s_les"},
+          {"k":"road","texto":"DON'T SELL THE ROAD","c":"amar","fin":"s_fin"}]},
+ {"tipo":"cierre","desde":"s_fin"}],
+ "cierre":"SIGN OR PASS?","cierre2":"Would you have signed? Comment","paises":["SIGN","PASS"],
+ "sfx":[{"f":"extra/ESM_SPG_fx_action_transaction_cash_register_ding_02.wav","k":"b12","off":0.0,"dur":0.9,"g":0.12}],"cta":"FOLLOW FOR MORE","like":"LIKE"}
+# --- 23-nov: escenarios propios + insertos ---
+poner_sets(E,[("despacho1899V",{"hora":"dia","dia":"21"}),("fuenteSodaV",{}),("despacho1899V",{"hora":"noche","dia":"21"}),("embotelladoraV",{}),("corporativoV",{"ticker":"KO ▲","hora":"noche"}),("despacho1899V",{"hora":"tarde","dia":"21"})])
+quitar_props(E,["escritorio","auto"])
+e0=E["escenas"][0];e0["zoom"]=[z for z in e0["zoom"] if z["k"]!="signed"]
+insertar(E,"signed","s_every",3900,"mesaCenitalV",{"titulo":"BOTTLING RIGHTS","monto":"$1","firma":"signed"},[])
+insertar(E,"giant","s_2010",5100,"vitrinaV",{"fondo":["#3a5a4a","#1a2e24","#050a08"],"luz2":"220,255,230","pedestal":True},[{"tipo":"botella1899","x":540,"y":1300,"s":1.5,"etiqueta":"SODA"}])
+
+g={"titulo":"Coke's Bottling Rights Sold for $1 🥤","texto_pantalla":"SOLD FOR $1","lote":"M2026112301","marca":"MILLION DOLLAR MISTAKE",
+"nota_datos":"1899: Asa Candler (presidente de Coca-Cola) vendió a los abogados Benjamin Thomas y Joseph Whitehead (Chattanooga, Tennessee) los derechos exclusivos para embotellar Coca-Cola en casi todo EE.UU. por US$1, que nunca cobró; Coke se vendía sobre todo en fuentes de soda y Candler dudaba del embotellado. El sistema embotellador llevó Coke a todo el país y el mundo. 2010: Coca-Cola adquirió el negocio norteamericano de Coca-Cola Enterprises, su mayor embotellador, por unos US$12.300 millones. Fuentes: The Coca-Cola Company (historia), Tennessee Encyclopedia, History.com, Business Insider; FTC y SEC (8-K 2010) para el monto.",
+"frases":frases,"frases_voz":voz,"fuentes":["https://www.coca-colacompany.com/about-us/history/the-asa-candler-era","https://tennesseeencyclopedia.net/?p=595","https://www.ftc.gov/node/46978","https://www.sec.gov/Archives/edgar/data/0000021344/000134100410001678/ex99-1.htm"],"escena":E}
+guardar("M2026112301_src.json",g)

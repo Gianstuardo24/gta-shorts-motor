@@ -1,0 +1,53 @@
+{
+ "id": "zzrcjJv0B-c",
+ "titulo": "Nobody Can Solve The Coffee Lid Problem",
+ "canal": "Double Take",
+ "subs": 207,
+ "vistas": 719399,
+ "fecha": "20261028",
+ "dur_min": 15.2,
+ "idioma": "en",
+ "xN": 3475.4,
+ "voz": {
+  "ppm": 177,
+  "ppm_primeros_30s": 190,
+  "pausas_min": 3.2
+ },
+ "imagen": {
+  "cortes_min": 14.1,
+  "plano_mediano": 2.7,
+  "plano_max": 39.5,
+  "sin_cambio": 7,
+  "cambios_locales_min": 10.8,
+  "racha_quieta_max": 3.6,
+  "en_rachas_5s": 0
+ },
+ "gancho": {
+  "cortes_30s": 10,
+  "seg_primer_corte": 11.0,
+  "sin_cambio_30s": 7,
+  "primera_frase_palabras": 15,
+  "primera_pregunta": false,
+  "primera_con_numero": true,
+  "primera_con_tu": false
+ },
+ "lenguaje": {
+  "palabras": 2676,
+  "frases": 212,
+  "frase_media": 12.6,
+  "preguntas_100f": 6.6,
+  "tu_100": 2.65,
+  "yo_100": 3.06,
+  "contracciones_100": 3.18,
+  "numeros_100": 0.9,
+  "largo_palabra": 4.31,
+  "palabras_largas": 9.3,
+  "variedad": 0.728,
+  "flesch": 74.8,
+  "registro": "informal"
+ },
+ "sincronia": {
+  "frases_con_cambio_visual": 98,
+  "cortes_junto_a_inicio_de_frase": 64
+ }
+}

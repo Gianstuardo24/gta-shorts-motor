@@ -1,0 +1,35 @@
+"""Acorta insertos largos: si un plano de detalle dura mas que su maximo, vuelve antes al escenario.
+Uso: python3 recortar_insertos.py guion_final.json datos0.json   (modifica guion_final.json)"""
+import json, sys
+fj, fd = sys.argv[1:3]
+g = json.load(open(fj)); T = json.load(open(fd))["T"]
+e = g["escena"]["escenas"][0]
+MAX = {"capituloH": 1.9, "chequeH": 3.6, "tableroH": 3.0, "balanzaH": 3.2, "pilaH": 3.0, "diarioH": 2.8, "numeroH": 2.4,
+       "mesaCenital": 3.2, "vitrina": 2.8}
+VAR = [1.0, 0.85, 1.1, 0.9, 1.05]
+tt = lambda k: k if isinstance(k, (int, float)) else T.get(k)
+zona = {z["x0"] + 537: z.get("set") for z in e["zonas"]}
+pans = sorted(enumerate(e["pan"]), key=lambda ip: (tt(ip[1]["k"]) if tt(ip[1]["k"]) is not None else 1e9, ip[0]))
+quitar, nuevos, n = set(), [], 0
+for j, (i, p) in enumerate(pans):
+    if not (p.get("corte") and p["x"] >= 99000): continue
+    t_in = tt(p["k"]);
+    if t_in is None or j + 1 >= len(pans): continue
+    io, po = pans[j + 1]; t_out = tt(po["k"])
+    if t_out is None: continue
+    home = 0
+    for i2, p2 in pans[:j]:
+        if p2["x"] < 99000: home = p2["x"]
+    lim = MAX.get(zona.get(p["x"]), 3.0) * VAR[n % len(VAR)]; n += 1
+    if t_out - t_in <= lim + 0.3: continue
+    tn = round(t_in + lim, 2)
+    nuevos.append({"k": tn, "x": home, "dur": 0.04, "corte": 1, "dir": 1, "tr": po.get("tr", "lineas")})
+    e["zoom"].append({"k": tn, "s": 1.0, "dur": 0.01})
+    if po["x"] == home and po.get("corte"):
+        quitar.add(io)
+        for s in g["escena"].get("sfx", []):
+            if s.get("k") == po["k"]: s["k"], s["off"] = "0", round(tn - 0.05, 2)
+    print(f"{zona.get(p['x'])}: {t_out - t_in:.1f}s -> {lim:.1f}s")
+e["pan"] = [p for i, p in enumerate(e["pan"]) if i not in quitar] + nuevos
+json.dump(g, open(fj, "w"), ensure_ascii=False)
+print("recortados", len(nuevos))

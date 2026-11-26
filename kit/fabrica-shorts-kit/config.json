@@ -1,0 +1,8 @@
+{
+  "nombre_estudio": "Mi Estudio de Shorts",
+  "carpeta_salida": "~/Desktop/Shorts",
+  "zona_horaria": "America/Santiago",
+  "color": "#ff2d95",
+  "color2": "#00e5ff",
+  "puerto_estudio": 8765
+}

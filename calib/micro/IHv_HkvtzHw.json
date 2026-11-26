@@ -1,0 +1,53 @@
+{
+ "id": "IHv_HkvtzHw",
+ "titulo": "14 Things Cats SECRETLY Do When They Think They’re Your Baby",
+ "canal": "Leo Bennett Reads Cats",
+ "subs": 4910,
+ "vistas": 212265,
+ "fecha": "20261022",
+ "dur_min": 15.6,
+ "idioma": "en",
+ "xN": 43.2,
+ "voz": {
+  "ppm": 186,
+  "ppm_primeros_30s": 176,
+  "pausas_min": 1.0
+ },
+ "imagen": {
+  "cortes_min": 18.0,
+  "plano_mediano": 3.1,
+  "plano_max": 8.7,
+  "sin_cambio": 2,
+  "cambios_locales_min": 7.8,
+  "racha_quieta_max": 1.4,
+  "en_rachas_5s": 0
+ },
+ "gancho": {
+  "cortes_30s": 9,
+  "seg_primer_corte": 5.0,
+  "sin_cambio_30s": 1,
+  "primera_frase_palabras": 16,
+  "primera_pregunta": true,
+  "primera_con_numero": true,
+  "primera_con_tu": true
+ },
+ "lenguaje": {
+  "palabras": 2896,
+  "frases": 246,
+  "frase_media": 11.8,
+  "preguntas_100f": 2.4,
+  "tu_100": 6.42,
+  "yo_100": 1.8,
+  "contracciones_100": 4.52,
+  "numeros_100": 0.38,
+  "largo_palabra": 4.0,
+  "palabras_largas": 3.7,
+  "variedad": 0.732,
+  "flesch": 89.7,
+  "registro": "informal"
+ },
+ "sincronia": {
+  "frases_con_cambio_visual": 96,
+  "cortes_junto_a_inicio_de_frase": 71
+ }
+}

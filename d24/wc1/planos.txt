@@ -1,0 +1,2 @@
+planos: 12 en 57.9 s (uno cada 4.8 s) · tipos distintos: 12 · objeto×1, manos×1, tercio×1, detalle:papel×1, detalle:sube×1, detalle:deriva×1, medio×1, detalle:inclina×1, detalle:baja×1, alto×1, detalle:abre×1, acerca×1
+repetidos seguidos: 3

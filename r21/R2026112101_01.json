@@ -1,0 +1,178 @@
+{
+  "titulo": "We Said Hi to Aliens in 55 Languages 👽",
+  "texto_pantalla": "55 LANGUAGES",
+  "lote": "R2026112101",
+  "tema": "espacio",
+  "marca": "THE RABBIT LOOP",
+  "nota_datos": "Disco de Oro de las Voyager (1977): saludos en 55 idiomas (NASA, ONU, Wikipedia), incluye antiguos como acadio e hitita; saludo en amoy 'Friends of space, how are you all? Have you eaten yet?' (NASA); risas, música y sonidos de la Tierra; la tapa trae cómo tocarlo y dónde está la Tierra (NASA).",
+  "frases": [
+    "In 1977, we said hi to aliens in 55 languages.",
+    "It's on a golden record, flying on both Voyager spacecraft.",
+    "One greeting, from China, says: Friends of space, how are you all? Have you eaten yet?",
+    "Some languages are ancient, like Akkadian and Hittite.",
+    "It also carries music, laughter and sounds of Earth.",
+    "The cover even shows how to play it, and where Earth is.",
+    "So, what would you say to aliens?"
+  ],
+  "frases_voz": [
+    "In nineteen seventy-seven, we said hi to aliens in fifty-five languages.",
+    "It's on a golden record, flying on both Voyager spacecraft.",
+    "One greeting, from China, says. Friends of space, how are you all? Have you eaten yet?",
+    "Some languages are ancient, like Akkadian and Hittite.",
+    "It also carries music, laughter, and sounds of Earth.",
+    "The cover even shows how to play it, and where Earth is.",
+    "So, what would you say to aliens?"
+  ],
+  "fuentes": [
+    "https://science.nasa.gov/mission/voyager/golden-record-contents/greetings/",
+    "https://media.un.org/photo/en/collections/united-nations-history/voyager-golden-record",
+    "https://en.wikipedia.org/wiki/Contents_of_the_Voyager_Golden_Record",
+    "https://www.jalopnik.com/2218601/golden-record-nasa-message-aliens-carried-voyager-probes/",
+    "https://www.smithsonianmag.com/science-nature/what-is-on-voyagers-golden-record-73063839/"
+  ],
+  "escena": {
+    "momentos": [
+      [
+        "s_saludos",
+        0,
+        "^hi$"
+      ],
+      [
+        "s_disco",
+        1,
+        null
+      ],
+      [
+        "voyager",
+        1,
+        "^voyager"
+      ],
+      [
+        "s_cita",
+        2,
+        null
+      ],
+      [
+        "s_ant",
+        3,
+        null
+      ],
+      [
+        "s_son",
+        4,
+        null
+      ],
+      [
+        "musica",
+        4,
+        "^music"
+      ],
+      [
+        "risa",
+        4,
+        "^laughter"
+      ],
+      [
+        "tierra",
+        4,
+        "^earth"
+      ],
+      [
+        "s_tapa",
+        5,
+        null
+      ],
+      [
+        "play",
+        5,
+        "^play"
+      ],
+      [
+        "donde",
+        5,
+        "^earth"
+      ],
+      [
+        "s_fin",
+        6,
+        null
+      ]
+    ],
+    "escenas": [
+      {
+        "tipo": "saludos",
+        "desde": "0",
+        "n": 55,
+        "dur": 4.0,
+        "etq": "LANGUAGES"
+      },
+      {
+        "tipo": "disco_oro",
+        "desde": "s_disco",
+        "k": "voyager",
+        "chip": "VOYAGER 1 & 2 · 1977"
+      },
+      {
+        "tipo": "cita",
+        "desde": "s_cita",
+        "chip": "AMOY · CHINA",
+        "lineas": [
+          "Friends of space,",
+          "how are you all?",
+          "Have you eaten yet?"
+        ]
+      },
+      {
+        "tipo": "antiguas",
+        "desde": "s_ant",
+        "items": [
+          "AKKADIAN",
+          "HITTITE"
+        ],
+        "chip": "ANCIENT LANGUAGES"
+      },
+      {
+        "tipo": "sonidos",
+        "desde": "s_son",
+        "items": [
+          "MUSIC",
+          "LAUGHTER",
+          "EARTH"
+        ],
+        "ks": [
+          "musica",
+          "risa",
+          "tierra"
+        ]
+      },
+      {
+        "tipo": "tapa",
+        "desde": "s_tapa",
+        "k1": "play",
+        "c1": "HOW TO PLAY",
+        "k2": "donde",
+        "c2": "WHERE EARTH IS"
+      },
+      {
+        "tipo": "cierre",
+        "desde": "s_fin"
+      }
+    ],
+    "cierre": "YOUR MESSAGE?",
+    "cierre2": "What would you say? Comment",
+    "paises": [
+      "HELLO",
+      "STAY AWAY"
+    ],
+    "sfx": [
+      {
+        "f": "extra/CbRadioStatic_S08TE.394.wav",
+        "k": "0",
+        "off": 0.0,
+        "dur": 1.0,
+        "fade": 0.4,
+        "g": 0.08
+      }
+    ]
+  }
+}

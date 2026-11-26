@@ -1,0 +1,13 @@
+ok /home/claude/d24/ges19n/G2026112403.json dur 33.25
+T: humillo=0.62 hizo=2.10 solo=2.72 s_rec=3.64 pelicula=4.86 con=7.54 vistas=9.11 s_mayo=10.92 mayo=11.09 segundo=12.85 s_sum=14.76 plataformas=15.84 llego=16.63 s_gano=19.37 gano=20.36 por=20.89 s_loco=22.54 loco=23.53 s_falta=24.18 medio=25.34 saliera=26.46 s_fin=27.24 s_cta=29.22 fin=33.25
+  {"a": 0, "b": 1.756, "t": "GTA 6 humilló a Hollywood.", "k": ["6"], "w": [0.12, 0.345, 0.623, 1.062, 1.18]}
+  {"a": 1.756, "b": 3.5900000000000003, "t": "Y lo hizo en un solo día.", "k": ["hizo"], "w": [1.806, 1.924, 2.095, 2.374, 2.545, 2.716, 2.995]}
+  {"a": 3.5900000000000003, "b": 7.495, "t": "El récord era de una película: el tráiler de Deadpool y Wolverine,", "k": ["Wolverine,"], "w": [3.64, 3.818, 4.217, 
+  {"a": 7.495, "b": 10.87, "t": "con 365 millones de vistas en 24 horas.", "k": ["365", "24"], "w": [7.545, 7.778, 8.422, 8.932, 9.11, 9.509, 9.687, 10.153]}
+  {"a": 10.87, "b": 14.709999999999999, "t": "En mayo de 2025 salió el segundo tráiler de GTA 6.", "k": ["2025", "6."], "w": [10.92, 11.093, 11.374, 11.547, 12.34
+  {"a": 14.709999999999999, "b": 19.32, "t": "Sumando todas las plataformas, llegó a 475 millones en un día.", "k": ["475"], "w": [14.76, 15.236, 15.595, 15.839, 
+  {"a": 19.32, "b": 22.49, "t": "O sea, un videojuego le ganó al cine por más de 100 millones.", "k": ["100"], "w": [19.37, 19.455, 19.676, 19.8, 20.235, 20.359, 
+  {"a": 22.49, "b": 24.13, "t": "Y aquí viene lo más loco.", "k": ["viene"], "w": [22.54, 22.643, 22.887, 23.178, 23.328, 23.526]}
+  {"a": 24.13, "b": 27.189999999999998, "t": "Todavía faltaba un año y medio para que el juego saliera.", "k": ["saliera."], "w": [24.18, 24.547, 24.915, 25.058, 
+  {"a": 27.189999999999998, "b": 29.169999999999998, "t": "Comenta si tú lo viste ese día.", "k": ["tú"], "w": [27.24, 27.637, 27.792, 27.946, 28.101, 28.401, 28.
+  {"a": 29.169999999999998, "b": 33.2, "t": "Sigue el canal para más números de GTA 6.", "k": ["6."], "w": [29.22, 29.519, 29.674, 29.973, 30.224, 30.426, 30.822,

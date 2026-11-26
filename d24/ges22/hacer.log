@@ -1,0 +1,10 @@
+ok /home/claude/d24/ges22/G2026112402.json dur 28.55
+T: superar=1.23 enorme=2.27 s_copias=4.34 vendio=5.26 segun=7.02 s_uno=8.10 historia=9.85 s_partio=10.64 fuerte=11.82 antes=14.26 s_lleva=15.68 cerca=16.43 camino=17.91 s_pero=18.62 tomo=19.56 cifra=21.09 s_fin=21.79 s_cta=24.52 fin=28.55
+  {"a": 0, "b": 4.29, "t": "GTA 6 tiene que superar un número enorme: 215 millones.", "k": ["6", "215"], "w": [0.12, 0.355, 0.646, 0.992, 1.227, 1.685, 1.864, 2.2
+  {"a": 4.29, "b": 8.049999999999999, "t": "Son las copias que vendió GTA 5 desde 2013, según Take-Two.", "k": ["5", "2013,"], "w": [4.34, 4.536, 4.732, 5.068, 5.
+  {"a": 8.049999999999999, "b": 10.59, "t": "Es uno de los juegos más vendidos de la historia.", "k": ["historia."], "w": [8.1, 8.234, 8.41, 8.544, 8.72, 9.022, 9
+  {"a": 10.59, "b": 15.629999999999999, "t": "Y GTA 6 partió fuerte: 32,5 millones vendidos antes de salir.", "k": ["6", "32,5"], "w": [10.64, 10.779, 11.043, 11.
+  {"a": 15.629999999999999, "b": 18.57, "t": "O sea, ya lleva cerca del 15 por ciento del camino.", "k": ["15"], "w": [15.68, 15.775, 16.02, 16.158, 16.425, 16.69
+  {"a": 18.57, "b": 21.74, "t": "Pero a GTA 5 le tomó 13 años llegar a esa cifra.", "k": ["5", "13"], "w": [18.62, 18.865, 18.968, 19.166, 19.411, 19.562, 19.807,
+  {"a": 21.74, "b": 24.47, "t": "Comenta si crees que GTA 6 lo va a superar.", "k": ["6"], "w": [21.79, 22.186, 22.34, 22.64, 22.843, 23.045, 23.296, 23.451, 23.6
+  {"a": 24.47, "b": 28.5, "t": "Sigue el canal para más números de GTA 6.", "k": ["6."], "w": [24.52, 24.819, 24.974, 25.273, 25.524, 25.726, 26.122, 26.276, 26.4

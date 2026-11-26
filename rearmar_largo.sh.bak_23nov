@@ -1,0 +1,3 @@
+#!/bin/bash
+# rearmar_largo.sh DIR ID : b.py -> datos0 -> resolver -> recortar insertos -> datos.json
+cd "$1" && python3 b.py >/dev/null && /home/claude/datos_de_largo.sh $PWD/$2_src.json $PWD/vz.wav $PWD/vz_palabras.json $PWD/datos0.json && python3 /home/claude/resolver.py $2_src.json datos0.json $2.json | tail -1 && python3 /home/claude/recortar_insertos.py $2.json datos0.json | tail -30 && /home/claude/datos_de_largo.sh $PWD/$2.json $PWD/vz.wav $PWD/vz_palabras.json $PWD/datos.json && echo LISTO

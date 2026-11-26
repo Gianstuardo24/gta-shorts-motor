@@ -1,0 +1,374 @@
+{
+ "titulo": "Coffee Was Put on Trial in 1511 ☕",
+ "texto_pantalla": "GUILTY?",
+ "lote": "C2026112102",
+ "tema": "cafe",
+ "marca": "COFFEE, BUT WHY?",
+ "nota_datos": "Micronicho: el café prohibido. Meca, 1511: Kha'ir Beg vio hombres tomando café fuera de una mezquita y le pareció sospechoso (Atlas Obscura, Taylor & Francis); reunió a eruditos para decidir si prohibirlo (PopSci/Yahoo); cerraron cafés, quemaron granos y golpearon a bebedores (PopSci/Yahoo); el sultán de El Cairo, bebedor de café, lo revirtió (Tasting Table, PopSci); la prohibición no duró ni un año (Atlas Obscura: semanas; Tasting Table). El destino de Kha'ir Beg es discutido: no se menciona. Personajes = ilustración.",
+ "frases": [
+  "In 1511, an official in Mecca saw men drinking coffee, and he didn't like it.",
+  "So he called in scholars to judge one thing: coffee.",
+  "The verdict? Guilty. Coffee was banned.",
+  "Coffeehouses closed. Beans were burned. Drinkers were beaten.",
+  "Then the sultan in Cairo heard about it, and he drank coffee himself.",
+  "The ban didn't even last a year.",
+  "Would you have hidden your coffee?"
+ ],
+ "frases_voz": [
+  "In fifteen eleven, an official in Mecca saw men drinking coffee, and he didn't like it.",
+  "So he called in scholars to judge one thing. Coffee.",
+  "The verdict? Guilty. Coffee was banned.",
+  "Coffeehouses closed. Beans were burned. Drinkers were beaten.",
+  "Then the sultan in Cairo heard about it, and he drank coffee himself.",
+  "The ban didn't even last a year.",
+  "Would you have hidden your coffee?"
+ ],
+ "fuentes": [
+  "https://www.atlasobscura.com/articles/was-coffee-ever-illegal",
+  "https://www.popsci.com/health/coffee-ban-history/",
+  "https://tastingtable.com/1029221/times-coffee-was-banned-around-the-world"
+ ],
+ "escena": {
+  "momentos": [
+   [
+    "saw",
+    0,
+    "^saw"
+   ],
+   [
+    "didnt",
+    0,
+    "^didn"
+   ],
+   [
+    "s_judge",
+    1,
+    null
+   ],
+   [
+    "guilty",
+    2,
+    "^guilty"
+   ],
+   [
+    "banned",
+    2,
+    "^banned"
+   ],
+   [
+    "s_closed",
+    3,
+    null
+   ],
+   [
+    "burned",
+    3,
+    "^burned"
+   ],
+   [
+    "s_sultan",
+    4,
+    null
+   ],
+   [
+    "himself",
+    4,
+    "^himself"
+   ],
+   [
+    "s_over",
+    5,
+    null
+   ],
+   [
+    "s_fin",
+    6,
+    null
+   ]
+  ],
+  "escenas": [
+   {
+    "tipo": "historia",
+    "desde": "0",
+    "set": "calle",
+    "titulo": "MECCA · 1511",
+    "props": [
+     {
+      "tipo": "cajita",
+      "x": 470,
+      "y": 1400,
+      "s": 1.2,
+      "color": "#8d6e63"
+     }
+    ],
+    "actores": [
+     {
+      "look": "cliente",
+      "keys": [
+       {
+        "k": 0,
+        "x": 300,
+        "y": 1450,
+        "pose": "sentado",
+        "cara": "feliz"
+       }
+      ],
+      "objeto": "taza",
+      "os": 0.6,
+      "s": 1.06
+     },
+     {
+      "look": "inventor",
+      "keys": [
+       {
+        "k": 0,
+        "x": 600,
+        "y": 1450,
+        "pose": "sentado",
+        "cara": "feliz",
+        "dir": -1
+       }
+      ],
+      "objeto": "taza",
+      "os": 0.6,
+      "s": 1.06
+     },
+     {
+      "look": "oficial",
+      "keys": [
+       {
+        "k": 0,
+        "x": 1180,
+        "y": 1460,
+        "pose": "parado",
+        "cara": "enojado",
+        "dir": -1,
+        "a": [
+         880,
+         1460
+        ],
+        "dur": 1.6
+       }
+      ],
+      "s": 1.19
+     }
+    ],
+    "burbujas": [
+     {
+      "k": "didnt",
+      "x": 880,
+      "y": 840,
+      "texto": "HMM...",
+      "fin": "s_judge"
+     }
+    ]
+   },
+   {
+    "tipo": "historia",
+    "desde": "s_judge",
+    "set": "trono",
+    "titulo": "COFFEE ON TRIAL",
+    "color": "rojo",
+    "props": [
+     {
+      "tipo": "cajita",
+      "x": 540,
+      "y": 1330,
+      "s": 1.6,
+      "color": "#6d4c41"
+     },
+     {
+      "tipo": "taza",
+      "x": 540,
+      "y": 1150,
+      "s": 2.2,
+      "pop": true,
+      "k": 0.3
+     }
+    ],
+    "actores": [
+     {
+      "look": "sabio",
+      "keys": [
+       {
+        "k": 0,
+        "x": 210,
+        "y": 1470,
+        "pose": "cruzado",
+        "cara": "neutral"
+       }
+      ],
+      "s": 1.06
+     },
+     {
+      "look": "sabio",
+      "camisa": "#6a1b9a",
+      "keys": [
+       {
+        "k": 0,
+        "x": 860,
+        "y": 1470,
+        "pose": "cruzado",
+        "cara": "neutral",
+        "dir": -1
+       }
+      ],
+      "s": 1.06
+     },
+     {
+      "look": "oficial",
+      "keys": [
+       {
+        "k": 0,
+        "x": 330,
+        "y": 1490,
+        "pose": "apunta",
+        "cara": "enojado"
+       },
+       {
+        "k": "guilty",
+        "x": 330,
+        "y": 1490,
+        "pose": "arriba",
+        "cara": "enojado"
+       }
+      ],
+      "s": 1.19
+     }
+    ],
+    "prohibidos": [
+     {
+      "k": "banned",
+      "x": 540,
+      "y": 1150,
+      "r": 120
+     }
+    ],
+    "burbujas": [
+     {
+      "k": "guilty",
+      "x": 330,
+      "y": 800,
+      "texto": "GUILTY!",
+      "fin": "s_closed"
+     }
+    ]
+   },
+   {
+    "tipo": "historia",
+    "desde": "s_closed",
+    "set": "calle",
+    "titulo": "BANNED",
+    "color": "rojo",
+    "chip": "BEANS BURNED · DRINKERS BEATEN",
+    "chipc": "rojo",
+    "kc": "burned",
+    "props": [
+     {
+      "tipo": "puerta",
+      "x": 540,
+      "y": 1330,
+      "s": 1.3
+     },
+     {
+      "tipo": "cartel",
+      "x": 540,
+      "y": 900,
+      "s": 1.1,
+      "texto": "CLOSED",
+      "pop": true,
+      "k": 0.2
+     }
+    ],
+    "actores": [
+     {
+      "look": "cliente",
+      "keys": [
+       {
+        "k": 0,
+        "x": 230,
+        "y": 1470,
+        "pose": "parado",
+        "cara": "triste"
+       }
+      ],
+      "s": 1.06
+     },
+     {
+      "look": "inventor",
+      "keys": [
+       {
+        "k": 0,
+        "x": 860,
+        "y": 1470,
+        "pose": "parado",
+        "cara": "triste",
+        "dir": -1
+       }
+      ],
+      "s": 1.06
+     }
+    ]
+   },
+   {
+    "tipo": "historia",
+    "desde": "s_sultan",
+    "set": "trono",
+    "titulo": "THE SULTAN IN CAIRO",
+    "color": "amar",
+    "props": [
+     {
+      "tipo": "trono",
+      "x": 540,
+      "y": 1420,
+      "s": 1.1
+     }
+    ],
+    "actores": [
+     {
+      "look": "rey",
+      "keys": [
+       {
+        "k": 0,
+        "x": 540,
+        "y": 1420,
+        "pose": "sentado",
+        "cara": "feliz"
+       }
+      ],
+      "objeto": "taza",
+      "os": 0.7,
+      "s": 1.25
+     }
+    ],
+    "burbujas": [
+     {
+      "x": 760,
+      "y": 820,
+      "texto": "MORE COFFEE!",
+      "t": 1.0
+     }
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "desde": "s_over",
+    "texto": "BAN OVER",
+    "sub": "It didn't even last a year",
+    "fondo": "MECCA · 1511",
+    "color": "verde"
+   },
+   {
+    "tipo": "cierre",
+    "desde": "s_fin"
+   }
+  ],
+  "cierre": "HIDE IT OR DROP IT?",
+  "cierre2": "Would you have hidden it? Comment",
+  "paises": [
+   "HIDE IT",
+   "DROP IT"
+  ],
+  "sfx": []
+ }
+}

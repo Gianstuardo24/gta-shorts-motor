@@ -1,0 +1,135 @@
+{
+  "titulo": "GTA 6 Broke a Record Nobody Expected 💸",
+  "texto_pantalla": "DAY ONE RECORD",
+  "lote": "G2026112101en",
+  "marca": "THEVICEVERSE GG",
+  "nota_datos": "Sensor Tower (estimación, no oficial): ~24,5 M copias y ~US$2.360 M entre reservas y día 1; 'mayor lanzamiento de entretenimiento de la historia'; 75% PlayStation / 25% Xbox. Take-Two sin cifras oficiales (Memesita, LBC, The Report, India News Network).",
+  "frases": [
+    "GTA 6 just became the biggest entertainment launch in history.",
+    "Sensor Tower says it sold about 24.5 million copies, counting pre-orders and day one.",
+    "That's around 2.36 billion dollars.",
+    "And three out of four copies were on PlayStation.",
+    "But careful: these are estimates. Take-Two hasn't shared official numbers yet.",
+    "Did you buy it on day one?"
+  ],
+  "frases_voz": [
+    "GTA 6 just became the biggest entertainment launch in history.",
+    "Sensor Tower says it sold about twenty-four and a half million copies, counting pre-orders and day one.",
+    "That's around two point three six billion dollars.",
+    "And three out of four copies were on PlayStation.",
+    "But careful. These are estimates. Take-Two hasn't shared official numbers yet.",
+    "Did you buy it on day one?"
+  ],
+  "fuentes": [
+    "https://www.memesita.com/gta-6-sets-record-with-estimated-2-36-billion-in-sales-sensor-tower-says/",
+    "https://www.lbc.co.uk/article/gta-6-breaks-records-as-estimated-sales-top-23bn-5HjdnKw_2/",
+    "https://thereport.live/sci-tech/gta-6-breaks-records-with-2.36bn-in-estimated-launch-day-sales/42826"
+  ],
+  "escena": {
+    "momentos": [
+      [
+        "copias",
+        1,
+        "^24|^twenty"
+      ],
+      [
+        "s_monto",
+        2,
+        null
+      ],
+      [
+        "monto",
+        2,
+        "^2|^two$"
+      ],
+      [
+        "s_ps",
+        3,
+        null
+      ],
+      [
+        "s_ojo",
+        4,
+        null
+      ],
+      [
+        "s_fin",
+        5,
+        null
+      ]
+    ],
+    "escenas": [
+      {
+        "tipo": "contador",
+        "desde": "0",
+        "k": "copias",
+        "n": 24500000,
+        "pre": "",
+        "suf": "",
+        "titulo": "COPIES SOLD (EST.)",
+        "sub": "pre-orders + day one",
+        "color": "cian",
+        "loc": "en-US"
+      },
+      {
+        "tipo": "contador",
+        "desde": "s_monto",
+        "k": "monto",
+        "n": 2360,
+        "pre": "$",
+        "suf": "M",
+        "titulo": "REVENUE (EST.)",
+        "color": "verde",
+        "loc": "en-US",
+        "sub": "≈ $2.36 billion"
+      },
+      {
+        "tipo": "dona",
+        "desde": "s_ps",
+        "titulo": "WHERE IT SOLD",
+        "centro": "3 of 4",
+        "centro2": "on PlayStation",
+        "partes": [
+          {
+            "p": "PLAYSTATION",
+            "n": 75,
+            "c": "cian"
+          },
+          {
+            "p": "XBOX",
+            "n": 25,
+            "c": "verde"
+          }
+        ]
+      },
+      {
+        "tipo": "aviso",
+        "desde": "s_ojo",
+        "texto": "ESTIMATE",
+        "sub": "No official numbers yet",
+        "fondo": "Source: Sensor Tower"
+      },
+      {
+        "tipo": "cierre",
+        "desde": "s_fin"
+      }
+    ],
+    "cierre": "DAY ONE?",
+    "cierre2": "Did you buy it? Comment",
+    "paises": [
+      "DAY ONE",
+      "LATER",
+      "NEVER"
+    ],
+    "sfx": [
+      {
+        "f": "extra/CarEngineRev_BW.52086.wav",
+        "k": "0",
+        "off": 0.0,
+        "dur": 1.4,
+        "fade": 0.5,
+        "g": 0.14
+      }
+    ]
+  }
+}

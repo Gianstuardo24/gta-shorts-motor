@@ -1,0 +1,13 @@
+# What The Fastest Growing Faceless Channels Know That You Don't · vidIQ
+182k vistas · 11:00 · 31-jul-2026 · 4 palancas con casos y cifras (estimaciones de la herramienta vidIQ)
+
+1. **Nicho = escalera de RPM:** *Casual Finance* (stickman, 280k subs) ≈ **5.000 USD/mes** vs *Monkey Mind 101* (mindfulness, 300k subs) ≈ 1.000 USD/mes: mismo tamaño, 5× ingresos por la categoría. Si tu nicho paga ~2,5 USD por 1.000, mejores títulos no lo arreglan. **Mirar qué anunciantes hay en el nicho antes del primer video.**
+2. **Formato repetible > nicho:** *Chat History Compilations* (166k subs, **30 videos**) ≈ 9.000 USD/mes: mismo formato de título, estructura y **duración larga (muchos anuncios)** en todos. *Dark Ledger* ("ranking your life at every level of wealth, broke → millionaire") ≈ 2.000/mes; *Master POV* tomó **el mismo formato** con oficios → ~15.000/mes; *Chill POV Guy* (paramédicos, bomberos, médicos) ≈ 7.000/mes. **Encontrar 1 formato que funciona y repetirlo hasta que deje de funcionar.**
+3. **Autoridad prestada (día 1 sin confianza):** canal NBA faceless (100k subs, 40M vistas con 60 videos, ~3.000/mes): mitad de títulos con **nombres reales**, mitad **historias de underdog** ("cómo un alemán cualquiera ganó el campeonato"). *Tour from Home TV*: recorridos por lugares conocidos. Anclarse a algo **real y ya buscado** (sin inventar citas ni drama).
+4. **Tiempo de visualización masivo (TV / "lean back"):** 4.000 h = 24.000 vistas de un video de 10 min visto entero, o **2.000 vistas de uno de 2 h**. *Sleepless Historian* (700k subs, videos de **~2,5 h para dormirse**) ≈ 3.500/mes; canal de **comentario suave sobre gameplay tranquilo** para dormir/estudiar (botón de plata, ~3.000/mes). La TV se come cada vez más tiempo de visualización.
+**Visual:** cara + capturas + tarjetas oscuras "Step 01 / The Money Ladder", "Day 1: 0 subscribers, 0 views, 0 credibility", círculo 92 %; promociona el **MCP de vidIQ** (base de datos de canales conectada a la IA).
+**Para nosotros (⭐):**
+- **Formatos repetibles con nuestro motor:** "Rankeando tu vida en cada nivel de ___" (riqueza, oficios, épocas) con figuras que cambian de ropa/decorado = ideal para el estilo película.
+- **Largos para dormir/estudiar** (historia narrada calmada, 1–2,5 h): con voz Kokoro + escenas lentas, costo marginal bajo y **horas de visualización enormes** → la vía más rápida a 4.000 h. Riesgo: que se vea "masivo/repetitivo" → guion propio y escenas distintas.
+- Finanzas personales con stickman = RPM alto (MDM puede derivar a "finanzas explicadas").
+- Evaluar el **MCP de vidIQ** para buscar outliers desde Claude.

@@ -1,0 +1,134 @@
+{
+  "titulo": "¿GTA 6 ya recuperó lo que costó? 💸",
+  "texto_pantalla": "¿YA LO RECUPERÓ?",
+  "lote": "G2026112101",
+  "tema": "Costo estimado de GTA 6 (US$1.000-1.500 M según analistas, Business Insider/IGN; nunca confirmado) vs ventas estimadas de lanzamiento (Sensor Tower ~US$2.360 M con reservas). Ventas brutas, no ganancia.",
+  "frases": [
+    "¿Cuánto costó hacer GTA 6? Nadie lo sabe exacto.",
+    "Rockstar y Take-Two nunca dieron la cifra.",
+    "Pero los analistas calculan entre 1.000 y 1.500 millones de dólares.",
+    "Sería el juego más caro de la historia.",
+    "¿Y ya lo recuperó?",
+    "Según Sensor Tower, entre reservas y el primer día vendió unos 2.360 millones.",
+    "O sea, en ventas ya lo superó.",
+    "Ojo: eso no es ganancia. Las tiendas se quedan una parte, y falta el marketing.",
+    "¿Crees que valió la pena?"
+  ],
+  "frases_voz": [
+    "¿Cuánto costó hacer GTA 6? Nadie lo sabe exacto.",
+    "Rockstar y Take-Two nunca dieron la cifra.",
+    "Pero los analistas calculan entre mil y mil quinientos millones de dólares.",
+    "Sería el juego más caro de la historia.",
+    "¿Y ya lo recuperó?",
+    "Según Sensor Tower, entre reservas y el primer día vendió unos dos mil trescientos sesenta millones.",
+    "O sea, en ventas ya lo superó.",
+    "Ojo. Eso no es ganancia. Las tiendas se quedan una parte, y falta el marketing.",
+    "¿Crees que valió la pena?"
+  ],
+  "fuentes": [
+    "https://www.gosugamers.net/entertainment/news/78390-gta-6-estimated-to-cost-over-us-1-billion-set-to-become-the-most-expensive-game-ever-made",
+    "https://gamingbolt.com/grand-theft-auto-6-was-expensive-says-take-two-ceo-as-analysts-estimate-up-to-1-5-billion-cost",
+    "https://www.gfinityesports.com/article/gta-6-how-much-did-it-cost-to-make",
+    "https://gameluster.com/did-gta-6-really-cost-2-billion-to-make-what-the-e/",
+    "https://www.lbc.co.uk/article/gta-6-breaks-records-as-estimated-sales-top-23bn-5HjdnKw_2/",
+    "https://www.memesita.com/gta-6-sets-record-with-estimated-2-36-billion-in-sales-sensor-tower-says/"
+  ],
+  "nota_datos": "Costo: estimación de analistas (Business Insider vía IGN) US$1.000-1.500 M; hay cifras de 2.000-3.000 M sin respaldo sólido. Ventas: Sensor Tower, terceros, incluye reservas. Ventas brutas, no ganancia.",
+  "escena": {
+    "momentos": [
+      [
+        "costo",
+        2,
+        "^1000|^mil$"
+      ],
+      [
+        "s_record",
+        3,
+        null
+      ],
+      [
+        "s_meta",
+        4,
+        null
+      ],
+      [
+        "ventas",
+        5,
+        "^2360|^dos$"
+      ],
+      [
+        "supero",
+        6,
+        "^supero"
+      ],
+      [
+        "ganancia",
+        7,
+        "^ganancia"
+      ],
+      [
+        "s_fin",
+        8,
+        null
+      ]
+    ],
+    "escenas": [
+      {
+        "tipo": "contador",
+        "desde": "0",
+        "k": "costo",
+        "n": 1000,
+        "n2": 1500,
+        "titulo": "¿CUÁNTO COSTÓ GTA 6?",
+        "sub": "estimación de analistas",
+        "color": "rojo"
+      },
+      {
+        "tipo": "aviso",
+        "desde": "s_record",
+        "texto": "RÉCORD",
+        "color": "amar",
+        "sub": "El juego más caro de la historia",
+        "fondo": "Si la estimación es correcta"
+      },
+      {
+        "tipo": "meta",
+        "desde": "s_meta",
+        "titulo": "¿YA LO RECUPERÓ?",
+        "max": 2600,
+        "c1": 1000,
+        "c2": 1500,
+        "vCosto": "1.000 – 1.500 M",
+        "etqCosto": "COSTO ESTIMADO",
+        "n": 2360,
+        "k": "ventas",
+        "etqVentas": "VENTAS (Sensor Tower)",
+        "k2": "supero",
+        "ok": "EN VENTAS: SUPERADO",
+        "k3": "ganancia",
+        "nota": "Ventas, no ganancia: tiendas y marketing"
+      },
+      {
+        "tipo": "cierre",
+        "desde": "s_fin"
+      }
+    ],
+    "cierre": "¿VALIÓ LA PENA?",
+    "cierre2": "Comenta: sí o no",
+    "paises": [
+      "SÍ",
+      "NO",
+      "AÚN NO"
+    ],
+    "sfx": [
+      {
+        "f": "extra/CarEngineRev_BW.52086.wav",
+        "k": "0",
+        "off": 0.0,
+        "dur": 1.4,
+        "fade": 0.5,
+        "g": 0.14
+      }
+    ]
+  }
+}

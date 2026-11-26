@@ -1,0 +1,29 @@
+{
+ "1 Company Man": {
+  "seg": 651,
+  "ppm": 184,
+  "cortes_min": 14.5,
+  "cambios_locales_min": 7.2,
+  "sin_ningun_cambio": 0.32,
+  "racha_quieta_max": 17.0,
+  "en_rachas_de_5s_o_mas": 0.22
+ },
+ "2 toldinstone": {
+  "seg": 584,
+  "ppm": 132,
+  "cortes_min": 4.5,
+  "cambios_locales_min": 1.0,
+  "sin_ningun_cambio": 0.92,
+  "racha_quieta_max": 32.8,
+  "en_rachas_de_5s_o_mas": 0.83
+ },
+ "3 Kurzgesagt": {
+  "seg": 681,
+  "ppm": 164,
+  "cortes_min": 5.8,
+  "cambios_locales_min": 11.6,
+  "sin_ningun_cambio": 0.07,
+  "racha_quieta_max": 3.4,
+  "en_rachas_de_5s_o_mas": 0.0
+ }
+}

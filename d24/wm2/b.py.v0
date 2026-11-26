@@ -1,0 +1,29 @@
+import sys; sys.path.insert(0,'/home/claude/d24'); from formato import *
+F=["In 2000, one meeting decided who would rule your TV. And the giant said no.",
+"Netflix was a small startup mailing DVDs, and losing money.",
+"Its founders flew to meet Blockbuster, the king of movie rentals.",
+"Their price to sell: 50 million dollars. Blockbuster's CEO turned it down.",
+"Now the part that hurts.",
+"Blockbuster filed for bankruptcy in 2010. Today, only one store is left.",
+"Lesson: when a small player changes how people buy, take the meeting seriously.",
+"Tell me if you would have bought it.",
+"Follow for the next million dollar mistake."]
+V=[f.replace("In 2000","In two thousand").replace("50 million","fifty million").replace("2010","twenty ten") for f in F]
+E1=dict(look="ejecutivo",var=104,pelo="#9e9e9e",camisa="#263238",corbata="#1565c0",s=1.0)
+N1=dict(look="jugador",var=105,pelo="#4e342e",camisa="#eceff1",s=1.0)
+video("M2026112502_src.json","M2026112502","MILLION DOLLAR MISTAKE","Blockbuster Said No to Netflix 📼📉","THE GIANT SAID NO",F,V,
+ marcas=[("no0",0,"^no"),("dvds",1,"^dvds"),("losing",1,"^losing"),("king",2,"^king"),("m50",3,"^50"),("down",3,"^down"),("hurts",4,"^hurts"),("one",5,"^one"),("lesson",6,"^lesson")],
+ escenas=[
+  {"z":"nocheV","o":{"ciudad":True,"sem":51},"titulo":("2000","amar"),"props":[{"tipo":"cartel","x":540,"y":1330,"s":1.2,"texto":"VIDEO RENTALS","z":1500},{"tipo":"neblina","x":540,"y":1800,"a":.14}]},
+  {"k":"s_1","i":["#16243f","#0b1222","#020408"],"luz2":"190,210,255","pedestal":True,"props":[{"tipo":"sobre","x":540,"y":1300,"s":1.3,"color":"#1565c0","texto":"DVD BY MAIL"}]},
+  {"k":"s_2","z":"corporativoV","o":{"ticker":"NEW DEAL ▼"},"actores":[{**N1,"keys":[{"k":"s_2","x":300,"pose":"explica","cara":"feliz"}]},{**E1,"keys":[{"k":"s_2","x":780,"pose":"cruzado","cara":"neutral"}]}]},
+  {"k":"s_3","i":["#e8e2d2","#a89878","#2a2214"],"luz2":"255,245,220","props":[{"tipo":"papel","x":540,"y":1760,"s":1.25,"titulo":"OFFER · 2000","dato":"NETFLIX FOR $50 MILLION","sello":"REJECTED","selloc":"rojo","filaDato":5}]},
+  {"k":"s_4","z":"palacioV","actores":[{**E1,"keys":[{"k":"s_4","x":420,"pose":"piensa","cara":"triste"}]}]},
+  {"k":"s_5","i":["#1c1c24","#0c0c12","#020203"],"luz2":"255,210,150","pedestal":True,"props":[{"tipo":"calendario","x":540,"y":1300,"s":1.7,"mes":"BANKRUPTCY","anio":2010,"color":"#c62828"}]},
+  {"k":"s_6","z":"tallerV","actores":[{**N1,"keys":[{"k":"s_6","x":420,"pose":"explica","cara":"feliz"}]}],"props":[{"tipo":"sobre","x":820,"y":1700,"s":.6,"color":"#1565c0","z":1800}]}],
+ numeros=[{"k":"m50","n":50,"pre":"$","suf":" M","c":"verde","etq":"ASKING PRICE","fin":"s_4"}],
+ prohibidos=[{"k":"down","x":540,"y":1300,"r":230,"ins":2}],
+ emojis=[{"k":"no0","e":"😬"},{"k":"hurts","e":"📉"},{"k":"lesson","e":"💡","dur":1.2}],
+ gancho2=4,cierre="WOULD YOU BUY IT?",cierre2="Tell me. Comment",paises=["YES","NO"],
+ nota="2000: Reed Hastings y Marc Randolph ofrecieron vender Netflix (DVD por correo, con pérdidas) a Blockbuster por US$50 millones; el CEO John Antioco lo rechazó. Blockbuster se declaró en quiebra en 2010 (septiembre); hoy queda una sola tienda (Bend, Oregon). Fuentes: Marketplace (extracto de 'No Rules Rules' de Hastings), Fortune (2023, Randolph), Newsweek fact-check. No se usa la marca gráfica de ninguna empresa. Disparador: error con consecuencia. Gancho tipo 7.",
+ fuentes=["https://marketplace.org/2020/09/08/ceo-reed-hastings-on-how-netflix-beat-blockbuster","https://fortune.com/2023/04/14/netflix-cofounder-marc-randolph-recalls-blockbuster-rejecting-chance-to-buy-it/","https://newsweek.com/fact-check-did-blockbuster-turn-downchance-buy-netflix-50-million-1575557"])

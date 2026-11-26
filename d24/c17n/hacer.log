@@ -1,0 +1,16 @@
+ok /home/claude/d24/c17n/C2026112403.json dur 35.28
+T: stop=0.06 decaf0=0.82 hear=2.29 s_night=3.27 pour=3.89 relax=5.03 buzz=5.96 s_name=6.56 beans=7.94 soaked=8.43 roasting=9.10 pull=9.75 s_rule=11.14 rule=11.88 about=13.37 s_rev=15.02 still=15.80 usually=16.93 against=19.29 regular=20.80 s_part=21.89 matters=22.52 s_half=24.05 takes=24.51 half=26.55 s_sol=27.15 earlier=27.48 s_fin=30.20 s_cta=31.44 fin=35.28
+  {"a": 0, "b": 1.182, "t": "Stop drinking decaf.", "k": ["drinking"], "w": [0.056, 0.333, 0.823]}
+  {"a": 1.182, "b": 3.216, "t": "At least until you hear this.", "k": ["least"], "w": [1.232, 1.403, 1.733, 2.063, 2.287, 2.563]}
+  {"a": 3.216, "b": 6.506, "t": "Most people pour it at night, to relax without the buzz.", "k": ["without"], "w": [3.266, 3.528, 3.891, 4.153, 4.314, 4.476, 4.86
+  {"a": 6.506, "b": 9.546999999999999, "t": "To get that name, the green beans are soaked before roasting,", "k": ["roasting,"], "w": [6.556, 6.705, 6.901, 7.144,
+  {"a": 9.546999999999999, "b": 11.085999999999999, "t": "to pull the caffeine out.", "k": ["caffeine"], "w": [9.597, 9.747, 9.989, 10.185, 10.614]}
+  {"a": 11.085999999999999, "b": 11.834999999999999, "t": "But the U.S.", "k": ["U.S."], "w": [11.136, 11.376, 11.616]}
+  {"a": 11.834999999999999, "b": 14.966, "t": "rule only asks to remove about 97 percent.", "k": ["97"], "w": [11.885, 12.182, 12.479, 12.777, 12.959, 13.371, 13.
+  {"a": 14.966, "b": 19.237, "t": "So your decaf still has caffeine: usually 2 to 15 milligrams a cup,", "k": ["2", "15"], "w": [15.016, 15.187, 15.466, 15.797, 1
+  {"a": 19.237, "b": 21.836, "t": "against about 95 in a regular one.", "k": ["95"], "w": [19.287, 19.726, 20.058, 20.507, 20.678, 20.796, 21.235]}
+  {"a": 21.836, "b": 23.996, "t": "Now the part nobody tells you about.", "k": ["nobody"], "w": [21.886, 22.082, 22.278, 22.52, 22.856, 23.145, 23.341]}
+  {"a": 23.996, "b": 27.096, "t": "Caffeine takes about 5 hours just to drop by half.", "k": ["5"], "w": [24.046, 24.509, 24.821, 25.133, 25.395, 25.707, 25.969, 
+  {"a": 27.096, "b": 30.146, "t": "So the earlier you drink it, the less is left at bedtime.", "k": ["bedtime."], "w": [27.146, 27.292, 27.483, 27.856, 28.047, 28
+  {"a": 30.146, "b": 31.386, "t": "Tell me if you knew.", "k": ["knew."], "w": [30.196, 30.403, 30.53, 30.657, 30.824]}
+  {"a": 31.386, "b": 35.230000000000004, "t": "Follow for one coffee curiosity a day.", "k": ["curiosity"], "w": [31.436, 31.796, 32.006, 32.216, 32.575, 33.085, 

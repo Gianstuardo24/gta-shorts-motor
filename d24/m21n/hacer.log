@@ -1,0 +1,14 @@
+ok /home/claude/d24/m21n/M2026112403.json dur 34.09
+T: lost=0.58 p10=0.83 days0=2.25 s_found=3.32 jobs1=5.63 woz=6.55 logo=8.54 s_loan=9.27 d15=10.28 scared=13.85 s_only=14.64 owned=16.09 take=17.43 s_days=18.10 walked=18.41 sold=19.31 d800b=20.28 s_today=21.67 trillions=23.02 regret=25.23 s_les=26.31 price=27.33 s_fin=27.93 s_cta=30.08 fin=34.09
+  {"a": 0, "b": 3.27, "t": "This man lost 10 percent of Apple in 12 days.", "k": ["10", "12"], "w": [0.12, 0.372, 0.576, 0.829, 1.237, 1.635, 1.79, 2.091, 2.247, 
+  {"a": 3.27, "b": 7.071000000000001, "t": "Ronald Wayne founded Apple with Steve Jobs and Steve Wozniak.", "k": ["Wozniak."], "w": [3.32, 3.744, 4.11, 4.593, 4.9
+  {"a": 7.071000000000001, "b": 9.219999999999999, "t": "He even drew its first logo.", "k": ["first"], "w": [7.121, 7.309, 7.616, 7.922, 8.17, 8.535]}
+  {"a": 9.219999999999999, "b": 13.049, "t": "Then Jobs borrowed 15,000 dollars for their first big order,", "k": ["15,000", "dollars"], "w": [9.27, 9.538, 9.806,
+  {"a": 13.049, "b": 14.59, "t": "and Wayne got scared.", "k": ["scared."], "w": [13.099, 13.316, 13.635, 13.852]}
+  {"a": 14.59, "b": 18.05, "t": "He was the only partner who owned things a bank could take.", "k": ["partner"], "w": [14.64, 14.799, 15.007, 15.215, 15.473, 15.8
+  {"a": 18.05, "b": 21.62, "t": "So he walked away, and sold his share for 800 dollars.", "k": ["800", "dollars."], "w": [18.1, 18.258, 18.415, 18.77, 19.1, 19.30
+  {"a": 21.62, "b": 23.695999999999998, "t": "Today Apple is worth trillions.", "k": ["trillions."], "w": [21.67, 22.054, 22.438, 22.637, 23.021]}
+  {"a": 23.695999999999998, "b": 26.259999999999998, "t": "Wayne says he does not regret it.", "k": ["regret"], "w": [23.746, 24.13, 24.452, 24.65, 24.972, 25.233
+  {"a": 26.259999999999998, "b": 27.881999999999998, "t": "Lesson: fear has a price too.", "k": ["price"], "w": [26.31, 26.748, 27.01, 27.222, 27.332, 27.645]}
+  {"a": 27.881999999999998, "b": 30.029999999999998, "t": "Tell me if you would have stayed.", "k": ["stayed."], "w": [27.932, 28.194, 28.355, 28.516, 28.728, 29.
+  {"a": 30.029999999999998, "b": 34.040000000000006, "t": "Follow for the next million dollar mistake.", "k": ["mistake."], "w": [30.08, 30.424, 30.624, 30.824, 3

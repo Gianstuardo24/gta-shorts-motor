@@ -1,0 +1,2 @@
+planos: 7 en 27.6 s (uno cada 3.9 s) · tipos distintos: 7 · detalle:baja×1, recorre×1, detalle:sube×1, mano×1, detalle:deriva×1, general×1, detalle:papel×1
+repetidos seguidos: 0

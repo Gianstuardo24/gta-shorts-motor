@@ -1,0 +1,53 @@
+{
+ "id": "zQVroZez7Oc",
+ "titulo": "What Happened to Nerf?",
+ "canal": "Proxy",
+ "subs": 3530,
+ "vistas": 2641532,
+ "fecha": "20261110",
+ "dur_min": 9.5,
+ "idioma": "en",
+ "xN": 748.3,
+ "voz": {
+  "ppm": 202,
+  "ppm_primeros_30s": 212,
+  "pausas_min": 0.1
+ },
+ "imagen": {
+  "cortes_min": 31.9,
+  "plano_mediano": 1.2,
+  "plano_max": 16.0,
+  "sin_cambio": 1,
+  "cambios_locales_min": 15.0,
+  "racha_quieta_max": 0.6,
+  "en_rachas_5s": 0
+ },
+ "gancho": {
+  "cortes_30s": 8,
+  "seg_primer_corte": 3.6,
+  "sin_cambio_30s": 3,
+  "primera_frase_palabras": 14,
+  "primera_pregunta": false,
+  "primera_con_numero": false,
+  "primera_con_tu": false
+ },
+ "lenguaje": {
+  "palabras": 1917,
+  "frases": 121,
+  "frase_media": 15.8,
+  "preguntas_100f": 9.1,
+  "tu_100": 1.36,
+  "yo_100": 0.78,
+  "contracciones_100": 1.3,
+  "numeros_100": 0.99,
+  "largo_palabra": 4.5,
+  "palabras_largas": 11.8,
+  "variedad": 0.746,
+  "flesch": 66.5,
+  "registro": "neutro"
+ },
+ "sincronia": {
+  "frases_con_cambio_visual": 100,
+  "cortes_junto_a_inicio_de_frase": 50
+ }
+}

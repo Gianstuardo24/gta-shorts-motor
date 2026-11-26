@@ -1,0 +1,53 @@
+{
+ "id": "P2V-vFct8FY",
+ "titulo": "Gatorade vs. Powerade",
+ "canal": "Company Man",
+ "subs": 1800000,
+ "vistas": 629291,
+ "fecha": "20260826",
+ "dur_min": 12.5,
+ "idioma": "en",
+ "xN": 0.3,
+ "voz": {
+  "ppm": 181,
+  "ppm_primeros_30s": 116,
+  "pausas_min": 1.5
+ },
+ "imagen": {
+  "cortes_min": 13.7,
+  "plano_mediano": 3.0,
+  "plano_max": 25.7,
+  "sin_cambio": 32,
+  "cambios_locales_min": 7.1,
+  "racha_quieta_max": 17.0,
+  "en_rachas_5s": 23
+ },
+ "gancho": {
+  "cortes_30s": 4,
+  "seg_primer_corte": 2.3,
+  "sin_cambio_30s": 47,
+  "primera_frase_palabras": 21,
+  "primera_pregunta": false,
+  "primera_con_numero": false,
+  "primera_con_tu": true
+ },
+ "lenguaje": {
+  "palabras": 2236,
+  "frases": 111,
+  "frase_media": 20.1,
+  "preguntas_100f": 4.5,
+  "tu_100": 1.25,
+  "yo_100": 1.39,
+  "contracciones_100": 0.72,
+  "numeros_100": 2.42,
+  "largo_palabra": 4.59,
+  "palabras_largas": 14.9,
+  "variedad": 0.732,
+  "flesch": 56.5,
+  "registro": "neutro"
+ },
+ "sincronia": {
+  "frases_con_cambio_visual": 95,
+  "cortes_junto_a_inicio_de_frase": 42
+ }
+}

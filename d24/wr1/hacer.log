@@ -1,0 +1,22 @@
+ok /home/claude/d24/wr1/R2026112501.json dur 49.33
+T: real0=1.95 careful=4.41 s_1=7.43 tri1=10.45 s_2=12.39 leaked=12.90 own=15.74 s_3=17.11 alien=19.03 s_4=19.93 even=20.82 congress=24.08 s_5=24.96 catch=25.61 never=29.94 s_6=31.41 goggles=34.67 s_7=36.45 point=36.97 s_8=40.52 drones=43.16 s_fin=43.83 s_cta=46.33 fin=49.33
+  {"a": 0, "b": 2.233, "t": "The Pentagon confirmed this video is real.", "k": ["confirmed"], "w": [0.056, 0.264, 0.721, 1.227, 1.485, 1.792, 1.951]}
+  {"a": 2.233, "b": 4.361, "t": "But wait until you hear the explanation.", "k": ["explanation."], "w": [2.283, 2.492, 2.75, 3.057, 3.265, 3.523, 3.732]}
+  {"a": 4.361, "b": 7.376, "t": "Careful, the detail at the end might surprise you.", "k": ["Careful,"], "w": [4.411, 4.892, 5.101, 5.458, 5.617, 5.825, 6.033, 6.
+  {"a": 7.376, "b": 8.277999999999999, "t": "In 2019,", "k": ["2019,"], "w": [7.426, 7.586]}
+  {"a": 8.277999999999999, "b": 12.335999999999999, "t": "sailors on a Navy warship filmed glowing triangles flying over the ship.", "k": ["triangles"], "w": [8.3
+  {"a": 12.335999999999999, "b": 14.104, "t": "The video leaked in 2021,", "k": ["2021,"], "w": [12.386, 12.595, 12.902, 13.26, 13.419]}
+  {"a": 14.104, "b": 17.056, "t": "and the Pentagon confirmed its own sailors shot it.", "k": ["confirmed"], "w": [14.154, 14.362, 14.571, 15.028, 15.534, 15.743,
+  {"a": 17.056, "b": 19.875999999999998, "t": "Online, many people were sure it showed alien craft.", "k": ["Online,"], "w": [17.106, 17.506, 17.745, 18.076, 18.3
+  {"a": 19.875999999999998, "b": 20.772, "t": "In 2022,", "k": ["2022,"], "w": [19.926, 20.085]}
+  {"a": 20.772, "b": 24.906, "t": "even a Navy intelligence official played it in front of the US Congress.", "k": ["intelligence"], "w": [20.822, 21.081, 21.19, 
+  {"a": 24.906, "b": 26.858999999999998, "t": "But here's the catch with those triangles.", "k": ["triangles."], "w": [24.956, 25.143, 25.419, 25.606, 25.881, 26.
+  {"a": 26.858999999999998, "b": 28.492, "t": "They weren't what they looked like.", "k": ["weren't"], "w": [26.909, 27.14, 27.461, 27.692, 27.923, 28.244]}
+  {"a": 28.492, "b": 31.355999999999998, "t": "In fact, those triangles were never really triangles.", "k": ["triangles."], "w": [28.542, 28.684, 28.982, 29.258, 
+  {"a": 31.355999999999998, "b": 32.937000000000005, "t": "The shape came from the camera:", "k": ["camera:"], "w": [31.406, 31.603, 31.894, 32.138, 32.382, 32.57
+  {"a": 32.937000000000005, "b": 36.396, "t": "light passing through night vision goggles turned into triangles.", "k": ["triangles."], "w": [32.987, 33.277, 33.6
+  {"a": 36.396, "b": 38.899, "t": "Any bright point of light, seen through that setup,", "k": ["through"], "w": [36.446, 36.638, 36.967, 37.25, 37.396, 37.748, 37
+  {"a": 38.899, "b": 40.466, "t": "can show up as a triangle.", "k": ["triangle."], "w": [38.949, 39.141, 39.378, 39.525, 39.671, 39.771]}
+  {"a": 40.466, "b": 43.776, "t": "And the objects themselves, he said, were most likely drones.", "k": ["themselves,"], "w": [40.516, 40.712, 40.908, 41.29, 41.8
+  {"a": 43.776, "b": 46.276, "t": "Tell me if that explanation is enough for you.", "k": ["explanation"], "w": [43.826, 44.053, 44.193, 44.333, 44.56, 45.093, 45.
+  {"a": 46.276, "b": 49.28, "t": "Follow for the next case.", "k": ["Follow"], "w": [46.326, 46.641, 46.825, 47.009, 47.237]}

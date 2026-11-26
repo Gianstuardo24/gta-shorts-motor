@@ -1,0 +1,21 @@
+ok /home/claude/d24/wge2/G2026112502en.json dur 54.14
+T: hollywood=1.49 win=5.97 s_1=6.64 delays=8.87 s_2=9.57 m32=12.33 s_3=13.53 m379=16.94 s_4=18.27 movie=18.95 m12=22.32 s_5=24.88 three=26.11 history=29.84 s_6=30.69 shock=31.38 s_7=34.46 speechless=35.70 s_8=39.65 m99=40.93 zelda=45.16 s_fin=46.75 s_cta=50.46 fin=54.14
+  {"a": 0, "b": 4.297000000000001, "t": "GTA 6 just humiliated Hollywood with a record no one has ever touched.", "k": ["6"], "w": [0.056, 0.29, 0.579, 0.869, 1.4
+  {"a": 4.297000000000001, "b": 6.586, "t": "And that's not even its only win.", "k": ["that's"], "w": [4.347, 4.581, 4.926, 5.16, 5.45, 5.683, 5.973]}
+  {"a": 6.586, "b": 9.516, "t": "It launched on November 19, after two delays.", "k": ["19,"], "w": [6.636, 6.8, 7.27, 7.434, 7.904, 8.333, 8.65, 8.865]}
+  {"a": 9.516, "b": 13.475999999999999, "t": "Before day one, it had already sold 32.5 million copies.", "k": ["32.5"], "w": [9.566, 9.968, 10.202, 10.52, 10.698,
+  {"a": 13.475999999999999, "b": 18.215999999999998, "t": "Then Take-Two estimated its day one sales at 3.79 billion dollars.", "k": ["3.79", "dollars."], "w": [1
+  {"a": 18.215999999999998, "b": 21.184, "t": "The biggest movie opening ever, Avengers: Endgame,", "k": ["Avengers:"], "w": [18.266, 18.497, 18.949, 19.29, 19.74
+  {"a": 21.184, "b": 24.826, "t": "made about 1.2 billion dollars in its opening weekend.", "k": ["1.2", "dollars"], "w": [21.234, 21.52, 21.861, 22.324, 22.775, 
+  {"a": 24.826, "b": 27.896, "t": "So GTA 6 made about three times that in a single day.", "k": ["6"], "w": [24.876, 25.04, 25.255, 25.522, 25.788, 26.106, 26.424
+  {"a": 27.896, "b": 30.636, "t": "The biggest launch in entertainment history.", "k": ["entertainment"], "w": [27.946, 28.162, 28.582, 28.951, 29.115, 29.843]}
+  {"a": 30.636, "b": 32.765, "t": "But the biggest shock didn't come from the money.", "k": ["biggest"], "w": [30.686, 30.86, 31.035, 31.375, 31.632, 31.89, 32.10
+  {"a": 32.765, "b": 34.406000000000006, "t": "Sure, it was a surprise, but…", "k": ["surprise,"], "w": [32.815, 33.093, 33.226, 33.4, 33.492, 33.936]}
+  {"a": 34.406000000000006, "b": 36.236000000000004, "t": "the critics left everyone speechless.", "k": ["speechless."], "w": [34.456, 34.651, 35.03, 35.271, 35.6
+  {"a": 36.236000000000004, "b": 39.596000000000004, "t": "When the reviews landed on Metacritic, fans couldn't believe it.", "k": ["Metacritic,"], "w": [36.286, 
+  {"a": 39.596000000000004, "b": 42.294000000000004, "t": "The critics agreed on a 99 out of 100.", "k": ["99", "100."], "w": [39.646, 39.862, 40.285, 40.655, 40.
+  {"a": 42.294000000000004, "b": 44.792, "t": "A score no game had reached in 28 years,", "k": ["28", "years,"], "w": [42.344, 42.458, 42.777, 42.942, 43.21, 43.4
+  {"a": 44.792, "b": 46.696000000000005, "t": "since Zelda: Ocarina of Time.", "k": ["Ocarina"], "w": [44.842, 45.161, 45.558, 45.98, 46.145]}
+  {"a": 46.696000000000005, "b": 48.862, "t": "Tell me if you think it's the best game in history,", "k": ["history,"], "w": [46.746, 46.956, 47.085, 47.214, 47.3
+  {"a": 48.862, "b": 50.406000000000006, "t": "and if you've played it yet.", "k": ["you've"], "w": [48.912, 49.081, 49.211, 49.461, 49.751, 49.88]}
+  {"a": 50.406000000000006, "b": 54.09, "t": "Follow for more GTA 6 news.", "k": ["6"], "w": [50.456, 50.871, 51.113, 51.412, 51.654, 51.954]}

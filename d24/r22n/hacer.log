@@ -1,0 +1,12 @@
+ok /home/claude/d24/r22n/R2026112403.json dur 28.56
+T: dont=0.12 story0=1.25 s_1947=1.95 rancher=3.10 foil=4.75 sticks=5.87 s_army=7.42 disc=9.59 s_day=10.24 changed=11.16 balloon=12.86 s_cover=13.66 y1994=15.39 truth=17.64 s_mogul=18.39 mogul=19.20 listen=20.94 soviet=21.53 s_fin=23.07 s_cta=25.52 fin=28.56
+  {"a": 0, "b": 1.9, "t": "Don't trust the Roswell story.", "k": ["Roswell"], "w": [0.12, 0.366, 0.659, 0.858, 1.246]}
+  {"a": 1.9, "b": 5.083, "t": "In 1947, a rancher in New Mexico found foil,", "k": ["1947,"], "w": [1.95, 2.132, 2.975, 3.1, 3.567, 3.749, 3.988, 4.398, 4.751]}
+  {"a": 5.083, "b": 7.37, "t": "rubber, and sticks on his land.", "k": ["rubber,"], "w": [5.133, 5.628, 5.867, 6.277, 6.459, 6.699]}
+  {"a": 7.37, "b": 10.19, "t": "The Army announced it had recovered a flying disc.", "k": ["announced"], "w": [7.42, 7.615, 7.857, 8.332, 8.481, 8.676, 9.151, 9.2
+  {"a": 10.19, "b": 13.61, "t": "One day later, it changed the story: just a weather balloon.", "k": ["balloon."], "w": [10.24, 10.44, 10.64, 11.006, 11.159, 11.5
+  {"a": 13.61, "b": 15.173, "t": "That was a cover story too.", "k": ["cover"], "w": [13.66, 13.934, 14.155, 14.271, 14.597, 14.923]}
+  {"a": 15.173, "b": 18.34, "t": "In 1994, the Air Force admitted the truth.", "k": ["1994,"], "w": [15.223, 15.392, 16.171, 16.392, 16.613, 16.939, 17.424, 17.64
+  {"a": 18.34, "b": 23.02, "t": "It was Project Mogul: secret balloons built to listen for Soviet nuclear tests.", "k": ["balloons"], "w": [18.39, 18.556, 18.774,
+  {"a": 23.02, "b": 25.47, "t": "Tell me if you think that is the whole story.", "k": ["story."], "w": [23.07, 23.296, 23.435, 23.575, 23.757, 24.027, 24.253, 24.
+  {"a": 25.47, "b": 28.509999999999998, "t": "Follow for the next case.", "k": ["Follow"], "w": [25.52, 25.839, 26.026, 26.212, 26.443]}

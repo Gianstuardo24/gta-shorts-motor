@@ -1,0 +1,12 @@
+  0.00-  1.23 objeto    L=1.2 foco=71 n_vis=1
+  1.29-  1.93 detalle   (baja)
+  1.99-  3.08 camina    L=1.1 foco=- n_vis=0
+  3.14-  4.73 detalle   (abre)
+  4.80-  6.99 acerca    L=2.2 foco=71 n_vis=1
+  8.43-  9.81 primer    L=1.4 foco=72 n_vis=1
+ 11.25- 12.84 globo     L=1.6 foco=73 n_vis=1 burbuja
+ 12.90- 13.64 detalle   (sube)
+ 13.70- 15.37 general   L=1.7 foco=74 n_vis=1 burbuja
+ 15.44- 18.37 detalle   (papel)
+ 18.43- 20.89 medio     L=2.5 foco=75 n_vis=1
+ 20.89- 23.07 ojos      L=2.2 foco=75 n_vis=1

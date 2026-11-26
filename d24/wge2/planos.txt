@@ -1,0 +1,2 @@
+planos: 9 en 46.7 s (uno cada 5.2 s) · tipos distintos: 9 · objeto×1, detalle:deriva×1, medio×1, detalle:inclina×1, balanceo×1, detalle:sube×1, tercio×1, acerca×1, detalle:empuje×1
+repetidos seguidos: 0

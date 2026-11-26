@@ -1,0 +1,13 @@
+ok /home/claude/d24/r22/R2026112402.json dur 30.31
+T: real0=1.28 saucer=2.92 s_1947=3.70 rancher=4.85 foil=6.50 sticks=7.62 s_army=9.17 disc=11.34 s_day=11.99 changed=12.91 balloon=14.61 s_cover=15.41 y1994=17.14 truth=19.39 s_mogul=20.14 mogul=20.95 listen=22.69 soviet=23.28 s_fin=24.82 s_cta=27.27 fin=30.31
+  {"a": 0, "b": 1.5779999999999998, "t": "The Roswell crash was real.", "k": ["Roswell"], "w": [0.12, 0.335, 0.754, 1.071, 1.285]}
+  {"a": 1.5779999999999998, "b": 3.6500000000000004, "t": "But it was not a flying saucer.", "k": ["saucer."], "w": [1.628, 1.842, 2.006, 2.22, 2.435, 2.547, 2.91
+  {"a": 3.6500000000000004, "b": 6.833, "t": "In 1947, a rancher in New Mexico found foil,", "k": ["1947,"], "w": [3.7, 3.882, 4.725, 4.85, 5.317, 5.499, 5.738, 6
+  {"a": 6.833, "b": 9.12, "t": "rubber, and sticks on his land.", "k": ["rubber,"], "w": [6.883, 7.378, 7.617, 8.027, 8.209, 8.449]}
+  {"a": 9.12, "b": 11.94, "t": "The Army announced it had recovered a flying disc.", "k": ["announced"], "w": [9.17, 9.365, 9.607, 10.082, 10.231, 10.426, 10.901,
+  {"a": 11.94, "b": 15.36, "t": "One day later, it changed the story: just a weather balloon.", "k": ["balloon."], "w": [11.99, 12.19, 12.39, 12.756, 12.909, 13.2
+  {"a": 15.36, "b": 16.923, "t": "That was a cover story too.", "k": ["cover"], "w": [15.41, 15.684, 15.905, 16.021, 16.347, 16.673]}
+  {"a": 16.923, "b": 20.09, "t": "In 1994, the Air Force admitted the truth.", "k": ["1994,"], "w": [16.973, 17.142, 17.921, 18.142, 18.363, 18.689, 19.174, 19.39
+  {"a": 20.09, "b": 24.77, "t": "It was Project Mogul: secret balloons built to listen for Soviet nuclear tests.", "k": ["balloons"], "w": [20.14, 20.306, 20.524,
+  {"a": 24.77, "b": 27.22, "t": "Tell me if you think that is the whole story.", "k": ["story."], "w": [24.82, 25.046, 25.185, 25.325, 25.507, 25.777, 26.003, 26.
+  {"a": 27.22, "b": 30.259999999999998, "t": "Follow for the next case.", "k": ["Follow"], "w": [27.27, 27.589, 27.776, 27.962, 28.193]}

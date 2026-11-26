@@ -1,0 +1,2 @@
+planos: 13 en 23.5 s (uno cada 1.8 s) · tipos distintos: 8 · detalle×3, objeto×2, primer×2, acerca×2, globo×1, holandes×1, ojos×1, medio×1
+repetidos seguidos: 0

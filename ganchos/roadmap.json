@@ -1,0 +1,306 @@
+{
+ "actualizado": "2026-11-19 17:10",
+ "bloques": [
+  {
+   "nombre": "🏗️ Evolución a sistema de inteligencia (Fase 1 · fiabilidad)",
+   "tareas": [
+    {
+     "t": "F1.1 Puntaje compuesto sin tope (x1650 > x1000 > x100) + tipos x1000+/x100+/outlier/breakout/evergreen/tendencia/reproducible + historial de vistas · los x100+ se miran TODOS primero, de mayor a menor",
+     "estado": "hecho",
+     "como": "puntaje.py (lo usa analisis.py)"
+    },
+    {
+     "t": "F1.2 Procedencia y versiones: conocimiento_log (antes/después, motivo, videos de origen, versión de prompt) · prompts versionados · reglas en tabla con operaciones · arsenal con en contra, relaciones y archivo (nada se borra)",
+     "estado": "hecho",
+     "como": "procedencia.py · reglas.py · arsenal.py — historial: python procedencia.py arsenal <#> / regla <#>"
+    },
+    {
+     "t": "F1.3 Revisión obligatoria del guion: cada frase hecho/interpretación/hipótesis/especulación verificada en la web · promesa vs entrega · narrativa · originalidad · visual · reglas; aprueba el CÓDIGO (datos ≥7, promesa ≥7, sin graves, sin hechos sin verificar); 1 ronda de corrección; predicción guardada en evaluaciones para calibrar",
+     "estado": "hecho",
+     "como": "revisar.py — corre solo en armar_uno.sh y lote.py; a mano: python revisar.py <LOTE> --corregir"
+    },
+    {
+     "t": "F1.4 Perfil por canal: audiencia, motivaciones, temas prioritarios y prohibidos, ángulo ES vs EN, estilo, duración, hooks a usar/evitar, ritmo, visual, títulos y objetivo",
+     "estado": "hecho",
+     "como": "datos/perfiles/<canal>.json (gta, en, rabbit, mdm, cafe) — lo usan revisar.py, lote.py y el informe"
+    },
+    {
+     "t": "F2 Línea temporal narrativa (Biblioteca v2: fases, estado del espectador, tensión, preguntas que abren/cierran, revelación %, densidad, dice vs muestra, contraste con lo normal) → anatomía por tema en el informe y en la revisión de guiones · 🧠 Director 'qué hacer mañana' (pestaña principal)",
+     "estado": "hecho",
+     "como": "biblioteca.py v2 · analisis.py (anatomía) · director.py · Estudio › 🧠 Director"
+    },
+    {
+     "t": "F3 Laboratorio: 1 variable A/B, ≥6 réplicas por variante, asignación alternada (lote.py la aplica sola), métrica relativa a la mediana del canal, permutación + tamaño del efecto, 1 activo por canal, limitaciones registradas; si gana, la pieza del arsenal queda 🧪✅ comprobada (con procedencia). El Director propone, Tao activa",
+     "estado": "hecho",
+     "como": "laboratorio.py · Estudio › 🧠 Director › 🧪 Laboratorio"
+    },
+    {
+     "t": "Principio: separar DATOS (lo que pasó) · CONOCIMIENTO (lo que creemos) · DECISIONES (lo que haremos)",
+     "estado": "hecho"
+    },
+    {
+     "t": "F4.1 Storyboard automático: escena por frase, recurso legal (toma propia / oficial / ChatGPT / animación), prompts ChatGPT en hojas A/B/C en orden + portada, lista de grabación para GTA",
+     "estado": "hecho",
+     "como": "python storyboard.py <LOTE>"
+    },
+    {
+     "t": "F4.2 Control final del video (9:16, 1080p, fps, ≤180 s, −14 LUFS, pico, arranque sin negro/silencio, silencios, congelado, título ≤100, 3-5 hashtags, sin urgencia falsa, portada) + tiempo por paso (datos/produccion.csv) → el Director ve el costo por video",
+     "estado": "hecho",
+     "como": "corre solo al final de armar_uno.sh · a mano: python control_final.py --nuevos 30"
+    },
+    {
+     "t": "📤 Manual de publicación con evidencia (app móvil 🧪, oculto solo como higiene ✅, esperar horas ❌ mito) + experimento #4 app vs Studio",
+     "estado": "hecho",
+     "como": "Estudio › 🧠 Director › 📤 Publicación"
+    },
+    {
+     "t": "Montaje: que montar.py use las tomas propias de GTA (tomas_propias/<lote>_<frase>.mp4) y las capas de animación del storyboard",
+     "estado": "pendiente",
+     "quien": "necesita saber cómo graba Tao"
+    },
+    {
+     "t": "Base multiplataforma: TikTok e Instagram entran al mismo cerebro (links a mano, exports, muestras del navegador, API oficial de Instagram por hashtags 30/semana); se miden y clasifican igual; la Biblioteca profunda sigue solo con YouTube",
+     "estado": "hecho",
+     "como": "plataformas.py · datos/plataformas/"
+    },
+    {
+     "t": "Instagram oficial: crear app de Meta + token de la cuenta Business (repers) → secretos/instagram.json",
+     "estado": "curso",
+     "quien": "Tao (inicia sesión; Claude guía)",
+     "como": "python configurar_instagram.py (token oculto, nunca pasa por el chat)"
+    },
+    {
+     "t": "TikTok: muestreo del Creative Center con el navegador (Claude) → datos/plataformas/*.json",
+     "estado": "hecho",
+     "quien": "Tao"
+    },
+    {
+     "t": "GTA sin juego propio: formato GUÍAS/TRUCOS (modo historia) con animación propia + material oficial; guías largas de otros solo como FUENTE DE DATOS (subtítulos → datos con minuto, verificados en 2+ fuentes); nada de exploits online (política Rockstar)",
+     "estado": "hecho",
+     "quien": "Tao",
+     "como": "perfiles gta/en · storyboard modo sin juego · analisis.fuentes_gta"
+    },
+    {
+     "t": "Antes de producir: primera corrida completa del sistema (⚡ Rápido → 🧭 Nichos → 🌙 completo) y revisar Director",
+     "estado": "pendiente",
+     "quien": "Tao"
+    }
+   ]
+  },
+  {
+   "nombre": "📡 Radar completo / cerebro (desde 19-nov)",
+   "tareas": [
+    {
+     "t": "Análisis de palancas psicológicas (pérdida, FOMO, curiosidad, escasez, identidad) con nuestros datos + virales",
+     "estado": "hecho",
+     "como": "datos/estrategia/4-lecciones.md"
+    },
+    {
+     "t": "Radar de ganchos (API oficial ES+EN, etiqueta palanca/estructura/psicología)",
+     "estado": "hecho",
+     "como": "ganchos.py"
+    },
+    {
+     "t": "Radar completo: 1 solo botón (nuestros + YouTube + top x20/x100 + expertos), con pausas y control de temperatura",
+     "estado": "hecho",
+     "como": "Estudio › 📡 Radar",
+     "quien": "Mac de Tao"
+    },
+    {
+     "t": "Memoria que crece: canales, virales y corridas en datos/cerebro.db (nada se repite)",
+     "estado": "hecho"
+    },
+    {
+     "t": "Cerrar el ciclo: fórmulas + hooks + reglas vigentes entran solas al guionista (lote.py)",
+     "estado": "hecho"
+    },
+    {
+     "t": "Arsenal acumulativo por áreas (hooks, psicología, títulos, estructuras, cierres, formatos, ritmo/audio, visual) con evidencia y ✅/❌ propio",
+     "estado": "hecho",
+     "como": "Estudio › 📡 Radar › 🗃️ Arsenal (se alimenta solo)"
+    },
+    {
+     "t": "El guionista usa el arsenal y anota qué piezas usó → a las 24 h se mide si nos funcionó",
+     "estado": "hecho",
+     "como": "lote.py + arsenal.py"
+    },
+    {
+     "t": "Profundidad y perspectiva en todos los prompts (evidencia, contraste con normales, hipótesis alternativas, mecanismo, límites, confianza)",
+     "estado": "hecho"
+    },
+    {
+     "t": "Explorador de nichos (40 nichos ES/EN: puerta, constancia, techo, saturación, estabilidad)",
+     "estado": "hecho",
+     "como": "Estudio › 📡 Radar › 🧭 Nichos"
+    },
+    {
+     "t": "Primera corrida del explorador de nichos (repetir ~5 días para el mapa completo)",
+     "estado": "pendiente",
+     "como": "🧭 Explorar",
+     "quien": "Tao"
+    },
+    {
+     "t": "Primera corrida rápida del Radar completo (prueba)",
+     "estado": "pendiente",
+     "como": "Estudio › 📡 Radar › ⚡ Rápido",
+     "quien": "Tao"
+    },
+    {
+     "t": "Primera corrida completa (ideal de noche)",
+     "estado": "pendiente",
+     "como": "Estudio › 📡 Radar › 🌙 De noche",
+     "quien": "Tao"
+    },
+    {
+     "t": "Expertos de marketing: videos de estrategia de canales 200k+ (2 por corrida, se acumulan)",
+     "estado": "hecho",
+     "como": "dentro del Radar completo"
+    },
+    {
+     "t": "Probar voz Chatterbox (ES/EN)",
+     "estado": "pendiente",
+     "como": "bash probar_chatter.sh",
+     "quien": "Tao"
+    },
+    {
+     "t": "Canal de café EN 'Coffee, But Why?': perfil + 3 guiones",
+     "estado": "hecho",
+     "como": "canales/cafe.json · guiones C20261120/21/22"
+    },
+    {
+     "t": "Rabbit full aliens, 2 al día: 4 guiones (24 y 25 nov)",
+     "estado": "hecho",
+     "como": "guiones R20261124/25"
+    },
+    {
+     "t": "Imágenes ChatGPT de café + aliens (28 prompts)",
+     "estado": "pendiente",
+     "como": "datos/prompts/prompts_chatgpt_cafe_aliens.md"
+    },
+    {
+     "t": "GTA solo con tomas reales del juego (grabación propia u oficial de Rockstar)",
+     "estado": "espera",
+     "quien": "Tao: ¿tienes el juego y con qué grabas?"
+    },
+    {
+     "t": "MDM: decidir nicho (suerte vs negocios) con datos del Radar",
+     "estado": "espera"
+    },
+    {
+     "t": "Conectar Lab de Supabase al Radar completo (candidatos gratis)",
+     "estado": "pendiente"
+    },
+    {
+     "t": "Fase 2: TikTok e Instagram en el Radar (mejores casos por plataforma)",
+     "estado": "pendiente"
+    }
+   ]
+  },
+  {
+   "nombre": "🧠 Sistema que aprende solo",
+   "tareas": [
+    {
+     "t": "Análisis sofisticado de videos de estrategia / animación IA (mira pantallas, saca técnicas y tareas)",
+     "estado": "hecho"
+    },
+    {
+     "t": "Reanalizar los 16 videos de referencia con el formato nuevo",
+     "estado": "pendiente",
+     "como": "python biblioteca.py --reanalizar estrategia_youtube --manual",
+     "quien": "Mac de Tao (descarga)"
+    },
+    {
+     "t": "Banco de hooks humanos: estudiar hooks de los 30+ virales analizados y escribir reglas anti-'IA' (hooks.py; se inyecta al guionista)",
+     "estado": "hecho"
+    },
+    {
+     "t": "Corrida diaria automática: 30 virales por tema + fórmulas + hooks (launchd)",
+     "estado": "pendiente",
+     "como": "python diario.py  (una vez) · bash programar_diario.sh (todos los días 8:30)"
+    },
+    {
+     "t": "Fórmulas por tema alimentan guiones, hooks, portadas y gráficos (cerrar el ciclo)",
+     "estado": "pendiente"
+    },
+    {
+     "t": "Aprender de NUESTRAS métricas: qué hook/tema/hora rinde y ajustar solo",
+     "estado": "pendiente"
+    },
+    {
+     "t": "Rabbit Loop con flujo completo de lote (radar → plan → guiones) como GTA",
+     "estado": "pendiente"
+    }
+   ]
+  },
+  {
+   "nombre": "🎬 Calidad visual pro",
+   "tareas": [
+    {
+     "t": "Fase 1: subtítulos kinéticos con código de color + cortes y zooms al beat — colores: cifras amarillo, nombres cian, alertas rojo, clave en caja",
+     "estado": "hecho"
+    },
+    {
+     "t": "Fase 2: parallax 2.5D de capturas (Depth-Anything), recorte de personajes (rembg), grano/destello/glitch",
+     "estado": "pendiente"
+    },
+    {
+     "t": "Fase 3: gráficos genéricos (contador, lista, timeline…) hechos pero APAGADOS por genéricos → reemplazados por KIT VISUAL por video",
+     "estado": "hecho"
+    },
+    {
+     "t": "Kit visual por video: Claude diseña los elementos del guion → imagen en ChatGPT → arrastrar al Estudio → entran cuando se nombran, con movimiento y reacción",
+     "estado": "hecho",
+     "como": "Estudio → 🎨 Kit en cada video"
+    },
+    {
+     "t": "Estudiar animaciones premium de los videos de referencia (campo 'animaciones_observadas') y replicar las 5 mejores",
+     "estado": "pendiente",
+     "quien": "sale del análisis que corre hoy"
+    },
+    {
+     "t": "Portadas: personaje recortado delante del texto + opción de generar fondo con ChatGPT",
+     "estado": "pendiente"
+    },
+    {
+     "t": "Render 2x más rápido (VideoToolbox + Whisper MPS)",
+     "estado": "pendiente"
+    }
+   ]
+  },
+  {
+   "nombre": "🖥 Estudio",
+   "tareas": [
+    {
+     "t": "Pestaña Tareas (este tablero) para no saltarnos nada",
+     "estado": "hecho"
+    },
+    {
+     "t": "Pestaña Aprendizajes: resumen vivo de fórmulas, hooks y métricas",
+     "estado": "hecho"
+    },
+    {
+     "t": "Inicio resumido: qué subir hoy, qué está corriendo, qué aprendió hoy",
+     "estado": "pendiente"
+    }
+   ]
+  },
+  {
+   "nombre": "📦 Pendientes de contenido",
+   "tareas": [
+    {
+     "t": "Regenerar 2 por canal de hoy con el sistema nuevo (cuando Tao lo pida)",
+     "estado": "espera"
+    },
+    {
+     "t": "Lote nuevo en inglés L202611141829en: títulos y carpeta Nuevos",
+     "estado": "pendiente",
+     "como": "CANAL=en python publicar.py L202611141829en --nuevos"
+    },
+    {
+     "t": "Martes 17 EN 'Censors' → regenerar voz",
+     "estado": "pendiente"
+    }
+   ]
+  }
+ ]
+}

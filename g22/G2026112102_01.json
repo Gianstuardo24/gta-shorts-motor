@@ -1,0 +1,65 @@
+{
+  "titulo": "GTA 6 empató un récord de 1998 🎮",
+  "texto_pantalla": "¿99 DE 100?",
+  "lote": "G2026112102",
+  "marca": "VICEVERSO GG",
+  "nota_datos": "Metacritic al 18-19 nov 2026: GTA 6 = 99 (PS5), empata con Zelda: Ocarina of Time (1998), la nota más alta del sitio. GTA 4 = 98, GTA 5 = 97. TechPowerUp: 118 notas perfectas de 147 críticas PS5. Fuentes: TechPowerUp, Digital Trends, LevelUp, Dexerto, Dot Esports. La nota puede variar con más críticas.",
+  "frases": [
+    "GTA 6 sacó un 99 en Metacritic.",
+    "Es la nota más alta de la historia del sitio.",
+    "Pero no la tiene solo.",
+    "La comparte con un juego de 1998: Zelda, Ocarina of Time.",
+    "Y superó a GTA 4, con 98, y a GTA 5, con 97.",
+    "De 147 críticas, 118 le dieron nota perfecta.",
+    "¿Tú le darías un 100?"
+  ],
+  "frases_voz": [
+    "GTA seis sacó un noventa y nueve en Metacritic.",
+    "Es la nota más alta de la historia del sitio.",
+    "Pero no la tiene solo.",
+    "La comparte con un juego de mil novecientos noventa y ocho. Zelda, Ocarina of Time.",
+    "Y superó a GTA cuatro, con noventa y ocho, y a GTA cinco, con noventa y siete.",
+    "De ciento cuarenta y siete críticas, ciento dieciocho le dieron nota perfecta.",
+    "¿Tú le darías un cien?"
+  ],
+  "fuentes": [
+    "https://www.techpowerup.com/354998/gta-6-review-roundup-99-on-metacritic-and-118-perfect-scores",
+    "https://digitaltrends.com/gaming/gta-6-opens-to-roaring-critical-acclaim-matching-zeldas-historic-score",
+    "https://www.levelup.com/en/news/gta-6-receives-perfect-scores-on-metacritic-and-becomes-one-of-the-highest-rated-games-in-history/",
+    "https://www.dexerto.com/gta/gta-6-is-the-joint-best-reviewed-game-of-the-all-time-3429300/",
+    "https://dotesports.com/gta/news/gta-6-review-roundup"
+  ],
+  "escena": {
+    "momentos": [
+      ["n99", 0, "^noventa|^99"],
+      ["s_alta", 1, null],
+      ["historia", 1, "^alta"],
+      ["s_emp", 2, null],
+      ["zelda", 3, "^zelda"],
+      ["s_rank", 4, null],
+      ["g4", 4, "^gta"],
+      ["s_dona", 5, null],
+      ["s_fin", 6, null]
+    ],
+    "escenas": [
+      {"tipo": "nota", "desde": "0", "k": "n99", "n": 99, "titulo": "METACRITIC", "sub": "LA MÁS ALTA DE LA HISTORIA", "k2": "historia"},
+      {"tipo": "empate", "desde": "s_emp", "k": "zelda", "titulo": "EMPATE", "izq": "GTA 6", "izq2": "2026", "der": "1998", "der2": "Zelda: Ocarina of Time"},
+      {"tipo": "ranking", "desde": "s_rank", "titulo": "NOTAS EN METACRITIC", "filas": [
+        {"p": "GTA 6", "n": 99, "v": "99", "c": "verde", "top": "#1"},
+        {"p": "GTA 4", "n": 98, "v": "98", "c": "cian"},
+        {"p": "GTA 5", "n": 97, "v": "97", "c": "rosa"}
+      ]},
+      {"tipo": "dona", "desde": "s_dona", "titulo": "CRÍTICAS EN PS5", "centro": "118", "centro2": "de 147 perfectas", "partes": [
+        {"n": 80, "p": "PERFECTAS", "c": "verde"},
+        {"n": 20, "p": "EL RESTO", "c": "cian"}
+      ]},
+      {"tipo": "cierre", "desde": "s_fin"}
+    ],
+    "cierre": "¿LE DARÍAS 100?",
+    "cierre2": "Comenta tu nota",
+    "paises": ["100", "99", "MENOS"],
+    "sfx": [
+      {"f": "extra/CarEngineRev_BW.52086.wav", "k": "0", "off": 0.0, "dur": 1.4, "fade": 0.5, "g": 0.14}
+    ]
+  }
+}

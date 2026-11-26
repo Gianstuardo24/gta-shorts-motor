@@ -1,0 +1,30 @@
+import sys; sys.path.insert(0,'/home/claude/d24'); from formato import *
+F=["Don't drink a flat white. At least not until you see this.",
+"A latte, a cappuccino and a flat white are made of the same two things.",
+"Espresso and milk. What changes is how much milk, and how much foam.",
+"A cappuccino is usually small, with a thick cap of foam. A latte is the big one, with lots of milk.",
+"Now the part that changes your order.",
+"A flat white is small, with a double shot and just a thin layer of silky milk.",
+"So if you want more coffee taste and less milk, the flat white is your order.",
+"Tell me which one you order.",
+"Follow for one coffee curiosity a day."]
+CL=dict(look="cliente",var=76,pelo="#212121",camisa="#ec407a",s=1.0)
+BA=dict(look="vendedor",var=77,pelo="#3e2723",camisa="#6d4c41",s=1.0)
+video("C2026112501_src.json","C2026112501","COFFEE, BUT WHY?","DON'T DRINK FLAT WHITE ☕🚫","DON'T DRINK FLAT WHITE",F,
+ marcas=[("order0",0,"^drink"),("same",1,"^same"),("foam",2,"^foam"),("latte3",3,"^latte"),("changes",4,"^changes"),("double",5,"^double"),("taste",6,"^taste")],
+ escenas=[
+  {"i":["#3a2a20","#1c130d","#050302"],"luz2":"255,220,180","pedestal":True,"props":[{"tipo":"tazaPremium","x":540,"y":1330,"s":1.5,"texto":"FLAT WHITE","pcolor":"#ffcc80"},{"tipo":"neblina","y":1700,"a":.14}]},
+  {"k":"s_1","z":"fuenteSodaV","actores":[{**BA,"keys":[{"k":"s_1","x":330,"pose":"ofrece","cara":"feliz","objeto":"taza"}]},{**CL,"keys":[{"k":"s_1","x":760,"pose":"explica","cara":"feliz"}]}],
+   "props":[{"tipo":"cafetera","x":120,"y":1520,"s":.8,"z":1500}]},
+  {"k":"s_2","i":["#f0e2c8","#b89a6a","#2a1c0c"],"luz2":"255,240,210","pedestal":True,"props":[{"tipo":"capas","x":540,"y":1300,"s":1.2,"k":"s_2","etiquetas":1,"nombre":"ESPRESSO + MILK","capas":[[.4,"#4e2a12","ESPRESSO"],[.45,"#f3e5cf","MILK"],[.15,"#fffaf2","FOAM"]]}]},
+  {"k":"s_3","i":["#e9dcc8","#a88b66","#24180c"],"luz2":"255,240,210","props":[
+    {"tipo":"capas","x":300,"y":1560,"s":1.25,"h":250,"w":160,"k":"s_3","etiquetas":1,"nombre":"CAPPUCCINO","capas":[[.33,"#4e2a12","ESPRESSO"],[.27,"#f3e5cf","MILK"],[.4,"#fffaf2","FOAM"]]},
+    {"tipo":"capas","x":690,"y":1560,"s":1.25,"h":400,"w":190,"k":"s_3","etiquetas":1,"nombre":"LATTE","capas":[[.17,"#4e2a12","ESPRESSO"],[.73,"#f3e5cf","MILK"],[.1,"#fffaf2","FOAM"]]}]},
+  {"k":"s_4","z":"cocinaV","actores":[{**CL,"keys":[{"k":"s_4","x":420,"pose":"piensa","cara":"sorpresa"}]}],"props":[{"tipo":"humo","x":800,"y":1500,"s":.4,"a":.16}]},
+  {"k":"s_5","i":["#3a2a20","#1c130d","#050302"],"luz2":"255,220,180","pedestal":True,"props":[{"tipo":"capas","x":540,"y":1300,"s":1.3,"h":270,"w":170,"k":"s_5","etiquetas":1,"nombre":"FLAT WHITE","capas":[[.48,"#4e2a12","DOUBLE SHOT"],[.47,"#f3e5cf","SILKY MILK"],[.05,"#fffaf2","THIN FOAM"]]}]},
+  {"k":"s_6","z":"parqueV","o":{"hora":"tarde"},"actores":[{**CL,"keys":[{"k":"s_6","x":420,"pose":"bebe","cara":"feliz","objeto":"taza"}]}],"props":[{"tipo":"neblina","x":540,"y":1800,"a":.12}]}],
+ prohibidos=[{"k":"order0","x":540,"y":1180,"r":210,"ins":1}],sacudidas=[{"k":"order0","f":12}],
+ emojis=[{"k":"same","e":"🤔"},{"k":"changes","e":"👀"},{"k":"taste","e":"😋"}],
+ gancho2=4,cierre="WHICH ONE?",cierre2="Your order. Comment",paises=["LATTE","CAPPUCCINO","FLAT WHITE"],
+ nota="Latte, cappuccino y flat white: espresso + leche; cambia cantidad de leche y espuma. Cappuccino: taza chica (150-160 ml), capa gruesa de espuma. Latte: vaso grande (~225 ml+), mucha leche, poca espuma. Flat white: taza chica (~175-200 ml), espresso doble, capa muy fina de microespuma. Medidas varían por café: 'usually'. Solución: proporción espresso/leche más alta = más sabor a café (consecuencia de la receta). Proporciones de los vasos dibujados son ilustrativas. Fuentes: Wikipedia (Flat white, Latte, Cappuccino); SCA.",
+ fuentes=["https://en.wikipedia.org/wiki/Flat_white","https://en.wikipedia.org/wiki/Cappuccino","https://en.wikipedia.org/wiki/Latte"])

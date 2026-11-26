@@ -1,0 +1,26 @@
+import sys; sys.path.insert(0,'/home/claude/d24'); from formato import *
+F=["Your cat saves one sound just for you. Other cats almost never hear it.",
+"Kittens meow to call their mother.",
+"But adult cats rarely meow at each other. They use scent, body language, hisses and growls.",
+"The meows they keep for us.",
+"Now the part that explains the morning wake-ups.",
+"Meowing works on people, so cats keep using it: for food, a door, or attention.",
+"So when your cat meows at you, it's talking to you on purpose. Answer back.",
+"Tell me what your cat's meow usually means.",
+"Follow to decode your cat."]
+P=dict(look="cliente",var=103,pelo="#4e342e",camisa="#3949ab",s=1.0)
+video("K2026112502_src.json","K2026112502","THE CATS DECODER","Your Cat Saves This Sound for You 🐱🤫","SAVED JUST FOR YOU",F,
+ marcas=[("you0",0,"^just"),("hear",0,"^hear"),("kittens",1,"^kittens"),("rarely",2,"^rarely"),("hisses",2,"^hisses"),("us",3,"^us"),("wake",4,"^wake"),("food",5,"^food"),("door",5,"^door"),("answer",6,"^answer")],
+ escenas=[
+  {"z":"cafeGatosV","props":[gato(x=380,y=1740,dir=1,color="#ff9800"),gato(x=760,y=1740,dir=-1,color="#9e9e9e"),{"tipo":"rotulo","x":540,"y":1200,"s":1.0,"texto":"...","color":"#ffffff"}]},
+  {"k":"s_1","i":["#f0e2c8","#b89a6a","#2a1c0c"],"luz2":"255,240,210","pedestal":True,"props":[gato(x=440,y=1300,s=1.3,dir=1,color="#ff9800"),gato(x=660,y=1300,s=.7,dir=-1,color="#ffb74d"),{"tipo":"rotulo","x":660,"y":1000,"s":1.0,"texto":"MEW!","color":"#ffcc80","k":"kittens"}]},
+  {"k":"s_2","z":"parqueV","o":{"hora":"noche"},"props":[gato(x=330,y=1740,dir=1,color="#616161"),gato(x=760,y=1740,dir=-1,color="#bcaaa4"),{"tipo":"rotulo","x":330,"y":1250,"s":.9,"texto":"HISS","color":"#ef5350","k":"hisses"},{"tipo":"rotulo","x":760,"y":1250,"s":.9,"texto":"GRR","color":"#ef5350","k":"hisses"}]},
+  {"k":"s_3","z":"salaV","o":{"hora":"tarde","var":2,"sinSofa":True},"actores":[{**P,"keys":[{"k":"s_3","x":380,"pose":"explica","cara":"feliz"}]}],
+   "props":[gato(x=760,y=1740,dir=-1,color="#ff9800"),{"tipo":"rotulo","x":760,"y":1250,"s":1.0,"texto":"MEOW","color":"#ffd54f","k":"us","flota":6},{"tipo":"lamparaPie","x":1000,"y":1640,"s":1.0,"z":1500}]},
+  {"k":"s_4","z":"dormitorioV","o":{"persona":True,"zzz":True,"pared":["#3a4766","#252d47"]},"props":[gato(x=780,y=1740,dir=-1,color="#ff9800"),{"tipo":"rotulo","x":780,"y":1250,"s":1.0,"texto":"MEOW!","color":"#ffd54f","k":"wake","flota":8}]},
+  {"k":"s_5","i":["#e9dcc8","#a88b66","#24180c"],"luz2":"255,240,210","props":[{"tipo":"puerta","x":270,"y":1700,"s":.8},gato(x=760,y=1720,s=1.2,dir=-1,color="#ff9800"),{"tipo":"cajita","x":560,"y":1720,"s":1.3,"color":"#ffcc80","texto":"FOOD","k":"food","cae":True},{"tipo":"rotulo","x":270,"y":1180,"s":1.0,"texto":"DOOR","color":"#90caf9","k":"door"},{"tipo":"rotulo","x":760,"y":1180,"s":1.1,"texto":"MEOW!","color":"#ffd54f","flota":6}]},
+  {"k":"s_6","z":"cocinaV","actores":[{**P,"keys":[{"k":"s_6","x":360,"pose":"explica","cara":"risa"}]}],"props":[gato(x=760,y=1740,dir=-1,color="#ff9800")]}],
+ emojis=[{"k":"you0","e":"🤫"},{"k":"wake","e":"⏰"},{"k":"answer","e":"🐱","dur":1.2}],
+ gancho2=4,cierre="WHAT DOES IT MEAN?",cierre2="Tell me. Comment",paises=["FOOD","DOOR","LOVE"],
+ nota="Los gatitos maúllan a la madre; los gatos adultos casi no se maúllan entre sí (se comunican con olor, lenguaje corporal, bufidos, gruñidos). El maullido adulto va dirigido sobre todo a humanos y se usa para pedir comida, salir o atención. Fuentes: Purina (etología felina), Kinship, The Conversation/Phys.org (2024), Discover Magazine; Nicastro (2004) sobre maullidos y humanos. Disparador: secreto. Gancho tipo 2.",
+ fuentes=["https://www.purina.com/articles/cat/behavior/why-do-cats-meow","https://phys.org/news/2024-07-cats-meow-humans.html","https://www.discovermagazine.com/cats-rarely-meow-at-other-cats-do-they-save-their-voices-for-us-here-s-what-we-know-48602"])

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Estudio · teléfono</title>
+<style>
+:root{--bg:#0d0918;--card:#1a1330;--sub:#9d90c9;--txt:#f3eefe}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--bg);color:var(--txt);font:15px/1.4 -apple-system,system-ui,sans-serif;padding:14px 12px 40px}
+h1{font-size:19px;margin:4px 2px 2px}.sub{color:var(--sub);font-size:12.5px;margin:0 2px 12px}
+h2{font-size:14px;color:var(--sub);text-transform:uppercase;letter-spacing:.06em;margin:20px 2px 8px}
+.c{background:var(--card);border-radius:16px;padding:12px;margin-bottom:12px;display:flex;gap:12px}
+.c img{width:74px;height:132px;object-fit:cover;border-radius:10px;background:#000;flex:none}
+.m{min-width:0;flex:1;display:flex;flex-direction:column;gap:6px}
+.can{font-weight:800;font-size:13px}.t{font-weight:700}
+.d{color:var(--sub);font-size:12.5px;white-space:pre-wrap;max-height:3.9em;overflow:hidden}
+.b{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:auto}
+button,a.btn{border:0;border-radius:11px;padding:10px 6px;font:600 13.5px -apple-system,system-ui;color:#fff;background:#3a2c66;text-align:center;text-decoration:none}
+.v{background:#ff3cac}.ok{background:#1f9d55!important}
+.vacio{color:var(--sub);text-align:center;padding:40px 10px}
+#toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#000c;padding:10px 16px;border-radius:20px;opacity:0;transition:.2s;pointer-events:none}
+</style></head><body>
+<h1>📱 Para subir</h1>
+<p class="sub">Copia y pega directo en Instagram / YouTube. Para guardar un video: <b>▶ Ver</b> → botón Compartir → <b>Guardar video</b>.</p>
+<div id="L"><div class="vacio">Cargando…</div></div>
+<div id="toast"></div>
+<script>
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let V=[];
+function toast(t){const e=document.getElementById("toast");e.textContent=t;e.style.opacity=1;clearTimeout(e._t);e._t=setTimeout(()=>e.style.opacity=0,1400)}
+// en http (sin https) el telefono no deja usar navigator.clipboard: se copia con un textarea
+function copiar(txt,btn){
+  const ok=()=>{btn.classList.add("ok");const o=btn.textContent;btn.textContent="✓ Copiado";setTimeout(()=>{btn.classList.remove("ok");btn.textContent=o},1300)};
+  if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(txt).then(ok,()=>viejo(txt)&&ok());return}
+  if(viejo(txt))ok();else toast("No se pudo copiar: mantén presionado el texto")}
+function viejo(txt){const a=document.createElement("textarea");a.value=txt;a.setAttribute("readonly","");a.style.position="fixed";a.style.top="-100px";a.style.fontSize="16px";
+  document.body.appendChild(a);const r=document.createRange();r.selectNodeContents(a);const s=getSelection();s.removeAllRanges();s.addRange(r);a.setSelectionRange(0,txt.length);
+  let ok=false;try{ok=document.execCommand("copy")}catch(e){}a.remove();return ok}
+const url=(x,r,dl)=>r+"?src="+x.src+"&p="+encodeURIComponent(x.video)+(dl?"&dl=1":"");
+function dia(f){const h=new Date();const iso=d=>d.toISOString().slice(0,10);const hoy=new Date(h.getTime()-h.getTimezoneOffset()*6e4);
+  const man=new Date(hoy.getTime()+864e5);return f==iso(hoy)?"Hoy":f==iso(man)?"Mañana":f}
+async function cargar(){
+  try{V=await (await fetch("api",{cache:"no-store"})).json()}catch(e){document.getElementById("L").innerHTML='<div class="vacio">No me pude conectar con el Mac. ¿Está abierto el Estudio y estás en el mismo Wi-Fi?</div>';return}
+  if(!V.length){document.getElementById("L").innerHTML='<div class="vacio">✅ Nada pendiente para hoy ni mañana.</div>';return}
+  let h="",f0="";
+  V.forEach((x,i)=>{if(x.fecha!=f0){f0=x.fecha;h+=`<h2>${dia(f0)}</h2>`}
+    h+=`<div class="c"><img loading="lazy" src="${url(x,"mini")}"><div class="m">
+      <div class="can" style="color:${x.color}">${esc(x.canal)} · ${esc(x.hora)}h</div>
+      <div class="t">${esc(x.titulo)}</div><div class="d">${esc(x.desc)}</div>
+      <div class="b"><button onclick="copiar(V[${i}].titulo,this)">📋 Título</button><button onclick="copiar(V[${i}].desc,this)">📋 Descripción</button>
+      <a class="btn v" href="${url(x,"media")}" target="_blank">▶ Ver</a><a class="btn" href="${url(x,"media",1)}">⬇ Descargar</a></div></div></div>`});
+  document.getElementById("L").innerHTML=h}
+cargar();
+document.addEventListener("visibilitychange",()=>{if(!document.hidden)cargar()});
+</script></body></html>

@@ -1,0 +1,1047 @@
+{
+ "titulo": "A King Tried to Ban Coffee ☕",
+ "texto_pantalla": "BANNED?",
+ "lote": "C2026112101",
+ "tema": "cafe",
+ "frases": [
+  "In 1675, a king tried to ban coffee.",
+  "King Charles the Second ordered every coffee house in England to close.",
+  "Why? People sat there for hours, sharing news and gossip about the government.",
+  "The ban would start on January 10th.",
+  "London got angry. Fast.",
+  "Two days before the deadline, the king backed down.",
+  "The coffee houses stayed open.",
+  "So, would you give up coffee for a king?",
+  "Follow for more banned coffee stories."
+ ],
+ "frases_voz": [
+  "In sixteen seventy-five, a king tried to ban coffee.",
+  "King Charles the Second ordered every coffee house in England to close.",
+  "Why? People sat there for hours, sharing news and gossip about the government.",
+  "The ban would start on January tenth.",
+  "London got angry. Fast.",
+  "Two days before the deadline, the king backed down.",
+  "The coffee houses stayed open.",
+  "So, would you give up coffee for a king?",
+  "Follow for more banned coffee stories."
+ ],
+ "fuentes": [
+  "https://www.taylorfrancis.com/chapters/mono/10.4324/9781315094618-6/",
+  "https://rpsl.org.uk/rpsl/StandingDisplays/SD2016-01_Ian_Marshall_London_Coffee_Houses/files/basic-html/page7.html",
+  "https://www.ancientpages.com/2018/06/18/king-charles-ii-of-england-banned-coffeehouses-in-1675",
+  "https://exhibits.lafayette.edu/s/mate/item/34276"
+ ],
+ "escena": {
+  "momentos": [
+   [
+    "ban0",
+    0,
+    "^ban"
+   ],
+   [
+    "s1",
+    1,
+    null
+   ],
+   [
+    "ban",
+    1,
+    "^close"
+   ],
+   [
+    "s_casa",
+    2,
+    null
+   ],
+   [
+    "news",
+    2,
+    "^news"
+   ],
+   [
+    "gossip",
+    2,
+    "^gossip"
+   ],
+   [
+    "govt",
+    2,
+    "^government"
+   ],
+   [
+    "s_cal",
+    3,
+    null
+   ],
+   [
+    "enojo",
+    4,
+    "^angry"
+   ],
+   [
+    "s_atras",
+    5,
+    null
+   ],
+   [
+    "atras",
+    5,
+    "^backed|^down$"
+   ],
+   [
+    "abierto",
+    6,
+    "^open"
+   ],
+   [
+    "s_open",
+    6,
+    null
+   ],
+   [
+    "s_fin",
+    7,
+    null
+   ],
+   [
+    "s_cta",
+    8,
+    null
+   ],
+   [
+    "s_lon",
+    4,
+    null
+   ]
+  ],
+  "escenas": [
+   {
+    "tipo": "pelicula",
+    "desde": "0",
+    "escala": 1.12,
+    "zonas": [
+     {
+      "x0": -300,
+      "x1": 1300,
+      "set": "trono"
+     },
+     {
+      "x0": 1300,
+      "x1": 2600,
+      "set": "cafe",
+      "k": "s_casa"
+     },
+     {
+      "x0": 2600,
+      "x1": 3900,
+      "set": "calle",
+      "k": "s_lon",
+      "luz": "tenue"
+     },
+     {
+      "x0": 3900,
+      "x1": 5200,
+      "set": "trono",
+      "k": "s_atras",
+      "luz": "tenue"
+     },
+     {
+      "x0": 5200,
+      "x1": 6600,
+      "set": "cafe",
+      "k": "s_open",
+      "luz": "neon",
+      "neon": [
+       "OPEN",
+       "COFFEE"
+      ]
+     }
+    ],
+    "pan": [
+     {
+      "k": "s_casa",
+      "x": 1300,
+      "dur": 1.0
+     },
+     {
+      "k": "s_lon",
+      "x": 2600,
+      "dur": 0.9
+     },
+     {
+      "k": "s_atras",
+      "x": 3900,
+      "dur": 0.9
+     },
+     {
+      "k": "s_open",
+      "x": 5200,
+      "dur": 0.9
+     }
+    ],
+    "props": [
+     {
+      "tipo": "trono",
+      "x": 480,
+      "y": 1640,
+      "s": 1.1,
+      "k": 0.2
+     },
+     {
+      "tipo": "cajita",
+      "x": 830,
+      "y": 1720,
+      "s": 1.5,
+      "color": "#3e2723",
+      "k": 0.4
+     },
+     {
+      "tipo": "taza",
+      "x": 830,
+      "y": 1575,
+      "s": 1.4,
+      "k": 0.5
+     },
+     {
+      "tipo": "documento",
+      "x": 760,
+      "y": 1300,
+      "s": 1.1,
+      "sello": "CLOSED",
+      "k": "ban",
+      "cae": true,
+      "z": 1800
+     },
+     {
+      "tipo": "cajita",
+      "x": 1620,
+      "y": 1740,
+      "s": 1.7,
+      "color": "#5d4037",
+      "k": "s_casa",
+      "z": 1750
+     },
+     {
+      "tipo": "cajita",
+      "x": 2170,
+      "y": 1740,
+      "s": 1.7,
+      "color": "#5d4037",
+      "k": "s_casa",
+      "z": 1750
+     },
+     {
+      "tipo": "cartel",
+      "x": 2930,
+      "y": 1360,
+      "s": 1.0,
+      "texto": "COFFEE!",
+      "k": "enojo",
+      "cae": true
+     },
+     {
+      "tipo": "cartel",
+      "x": 3530,
+      "y": 1340,
+      "s": 1.0,
+      "texto": "KEEP IT OPEN",
+      "k": 17.0,
+      "cae": true
+     },
+     {
+      "tipo": "trono",
+      "x": 4480,
+      "y": 1640,
+      "s": 1.1,
+      "k": "s_atras"
+     },
+     {
+      "tipo": "documento",
+      "x": 4700,
+      "y": 1300,
+      "s": 1.1,
+      "sello": "CANCELLED",
+      "selloc": "verde",
+      "k": "atras",
+      "cae": true,
+      "z": 1800
+     },
+     {
+      "tipo": "cartel",
+      "x": 5850,
+      "y": 1330,
+      "s": 1.1,
+      "texto": "OPEN",
+      "k": "abierto",
+      "cae": true
+     }
+    ],
+    "actores": [
+     {
+      "look": "rey",
+      "var": 3,
+      "keys": [
+       {
+        "k": 0,
+        "x": 480,
+        "y": 1600,
+        "pose": "sentado",
+        "cara": "neutral",
+        "z": 1660
+       },
+       {
+        "k": "ban0",
+        "x": 480,
+        "y": 1680,
+        "pose": "apunta",
+        "cara": "enojado",
+        "fx": "salto"
+       },
+       {
+        "k": "s1",
+        "x": 480,
+        "y": 1680,
+        "pose": "cruzado",
+        "cara": "enojado"
+       },
+       {
+        "k": "ban",
+        "x": 480,
+        "y": 1680,
+        "pose": "apunta",
+        "cara": "enojado",
+        "fx": "tiembla"
+       }
+      ],
+      "hasta": "s_casa",
+      "s": 1.0
+     },
+     {
+      "look": "rey",
+      "var": 3,
+      "keys": [
+       {
+        "k": "govt",
+        "x": 2700,
+        "y": 1690,
+        "pose": "parado",
+        "dir": -1,
+        "a": [
+         2470,
+         1690
+        ],
+        "dur": 0.6
+       },
+       {
+        "k": 12.7,
+        "x": 2470,
+        "y": 1690,
+        "pose": "piensa",
+        "cara": "enojado",
+        "dir": -1
+       }
+      ],
+      "desde": "govt",
+      "hasta": "s_lon",
+      "s": 1.0
+     },
+     {
+      "look": "rey",
+      "var": 3,
+      "keys": [
+       {
+        "k": "s_atras",
+        "x": 4480,
+        "y": 1600,
+        "pose": "sentado",
+        "cara": "triste",
+        "z": 1660
+       },
+       {
+        "k": 19.2,
+        "x": 4480,
+        "y": 1600,
+        "pose": "sentado",
+        "cara": "neutral",
+        "z": 1660
+       },
+       {
+        "k": "atras",
+        "x": 4480,
+        "y": 1680,
+        "pose": "parado",
+        "cara": "triste",
+        "a": [
+         4250,
+         1680
+        ],
+        "dur": 1.0
+       },
+       {
+        "k": 21.2,
+        "x": 4250,
+        "y": 1680,
+        "pose": "cruzado",
+        "cara": "triste"
+       }
+      ],
+      "desde": "s_atras",
+      "hasta": "s_open",
+      "s": 1.0
+     },
+     {
+      "look": "cliente",
+      "var": 70,
+      "keys": [
+       {
+        "k": "s_casa",
+        "x": 1480,
+        "y": 1700,
+        "pose": "sostiene",
+        "cara": "feliz",
+        "objeto": "taza",
+        "dir": 1
+       },
+       {
+        "k": "news",
+        "x": 1480,
+        "y": 1700,
+        "pose": "sostiene",
+        "cara": "risa",
+        "objeto": "taza",
+        "fx": "salto",
+        "dir": 1
+       },
+       {
+        "k": "s_cal",
+        "x": 1480,
+        "y": 1700,
+        "pose": "sostiene",
+        "cara": "sorpresa",
+        "objeto": "taza",
+        "dir": 1
+       }
+      ],
+      "desde": "s_casa",
+      "hasta": "s_lon",
+      "s": 0.95
+     },
+     {
+      "look": "vendedor",
+      "var": 71,
+      "keys": [
+       {
+        "k": "s_casa",
+        "x": 1760,
+        "y": 1700,
+        "pose": "sostiene",
+        "cara": "risa",
+        "objeto": "taza",
+        "dir": -1
+       },
+       {
+        "k": "gossip",
+        "x": 1760,
+        "y": 1700,
+        "pose": "sostiene",
+        "cara": "risa",
+        "objeto": "taza",
+        "fx": "salto",
+        "dir": -1
+       },
+       {
+        "k": "s_cal",
+        "x": 1760,
+        "y": 1700,
+        "pose": "sostiene",
+        "cara": "sorpresa",
+        "objeto": "taza",
+        "dir": -1
+       }
+      ],
+      "desde": "s_casa",
+      "hasta": "s_lon",
+      "s": 0.95
+     },
+     {
+      "look": "jugadora",
+      "var": 72,
+      "keys": [
+       {
+        "k": "s_casa",
+        "x": 2040,
+        "y": 1700,
+        "pose": "sostiene",
+        "cara": "feliz",
+        "objeto": "taza",
+        "dir": 1
+       },
+       {
+        "k": "govt",
+        "x": 2040,
+        "y": 1700,
+        "pose": "sostiene",
+        "cara": "risa",
+        "objeto": "taza",
+        "fx": "salto",
+        "dir": 1
+       },
+       {
+        "k": "s_cal",
+        "x": 2040,
+        "y": 1700,
+        "pose": "sostiene",
+        "cara": "sorpresa",
+        "objeto": "taza",
+        "dir": 1
+       }
+      ],
+      "desde": "s_casa",
+      "hasta": "s_lon",
+      "s": 0.95
+     },
+     {
+      "look": "gamer",
+      "var": 73,
+      "keys": [
+       {
+        "k": "s_casa",
+        "x": 2300,
+        "y": 1700,
+        "pose": "sostiene",
+        "cara": "neutral",
+        "objeto": "taza",
+        "dir": -1
+       },
+       {
+        "k": 12.4,
+        "x": 2300,
+        "y": 1700,
+        "pose": "sostiene",
+        "cara": "risa",
+        "objeto": "taza",
+        "fx": "salto",
+        "dir": -1
+       },
+       {
+        "k": "s_cal",
+        "x": 2300,
+        "y": 1700,
+        "pose": "sostiene",
+        "cara": "sorpresa",
+        "objeto": "taza",
+        "dir": -1
+       }
+      ],
+      "desde": "s_casa",
+      "hasta": "s_lon",
+      "s": 0.95
+     },
+     {
+      "look": "cliente",
+      "var": 80,
+      "keys": [
+       {
+        "k": "s_lon",
+        "x": 2780,
+        "y": 1690,
+        "pose": "cruzado",
+        "cara": "enojado"
+       },
+       {
+        "k": "enojo",
+        "x": 2780,
+        "y": 1690,
+        "pose": "arriba",
+        "cara": "enojado",
+        "fx": "brinca"
+       }
+      ],
+      "desde": "s_lon",
+      "hasta": "s_atras",
+      "s": 0.95
+     },
+     {
+      "look": "vendedor",
+      "var": 81,
+      "keys": [
+       {
+        "k": "s_lon",
+        "x": 2990,
+        "y": 1730,
+        "pose": "cruzado",
+        "cara": "enojado"
+       },
+       {
+        "k": "enojo",
+        "x": 2990,
+        "y": 1730,
+        "pose": "arriba",
+        "cara": "enojado",
+        "fx": "brinca"
+       }
+      ],
+      "desde": "s_lon",
+      "hasta": "s_atras",
+      "s": 0.95
+     },
+     {
+      "look": "jugadora",
+      "var": 82,
+      "keys": [
+       {
+        "k": "s_lon",
+        "x": 3200,
+        "y": 1690,
+        "pose": "cruzado",
+        "cara": "enojado"
+       },
+       {
+        "k": "enojo",
+        "x": 3200,
+        "y": 1690,
+        "pose": "arriba",
+        "cara": "enojado",
+        "fx": "brinca"
+       }
+      ],
+      "desde": "s_lon",
+      "hasta": "s_atras",
+      "s": 0.95
+     },
+     {
+      "look": "gamer",
+      "var": 83,
+      "keys": [
+       {
+        "k": "s_lon",
+        "x": 3420,
+        "y": 1730,
+        "pose": "cruzado",
+        "cara": "enojado"
+       },
+       {
+        "k": "enojo",
+        "x": 3420,
+        "y": 1730,
+        "pose": "arriba",
+        "cara": "enojado",
+        "fx": "brinca"
+       }
+      ],
+      "desde": "s_lon",
+      "hasta": "s_atras",
+      "s": 0.95
+     },
+     {
+      "look": "jugador",
+      "var": 84,
+      "keys": [
+       {
+        "k": "s_lon",
+        "x": 3640,
+        "y": 1690,
+        "pose": "cruzado",
+        "cara": "enojado"
+       },
+       {
+        "k": "enojo",
+        "x": 3640,
+        "y": 1690,
+        "pose": "arriba",
+        "cara": "enojado",
+        "fx": "brinca"
+       }
+      ],
+      "desde": "s_lon",
+      "hasta": "s_atras",
+      "s": 0.95
+     },
+     {
+      "look": "oficial",
+      "var": 85,
+      "keys": [
+       {
+        "k": "s_lon",
+        "x": 3820,
+        "y": 1730,
+        "pose": "cruzado",
+        "cara": "enojado"
+       },
+       {
+        "k": "enojo",
+        "x": 3820,
+        "y": 1730,
+        "pose": "arriba",
+        "cara": "enojado",
+        "fx": "brinca"
+       }
+      ],
+      "desde": "s_lon",
+      "hasta": "s_atras",
+      "s": 0.95
+     },
+     {
+      "look": "jugadora",
+      "var": 90,
+      "keys": [
+       {
+        "k": "s_open",
+        "x": 5450,
+        "y": 1700,
+        "pose": "sostiene",
+        "cara": "feliz",
+        "objeto": "taza"
+       },
+       {
+        "k": "abierto",
+        "x": 5450,
+        "y": 1700,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "brinca"
+       }
+      ],
+      "desde": "s_open",
+      "s": 0.95
+     },
+     {
+      "look": "cliente",
+      "var": 91,
+      "keys": [
+       {
+        "k": "s_open",
+        "x": 5700,
+        "y": 1700,
+        "pose": "sostiene",
+        "cara": "feliz",
+        "objeto": "taza"
+       },
+       {
+        "k": "abierto",
+        "x": 5700,
+        "y": 1700,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "brinca"
+       }
+      ],
+      "desde": "s_open",
+      "s": 0.95
+     },
+     {
+      "look": "gamer",
+      "var": 92,
+      "keys": [
+       {
+        "k": "s_open",
+        "x": 5980,
+        "y": 1700,
+        "pose": "sostiene",
+        "cara": "feliz",
+        "objeto": "taza"
+       },
+       {
+        "k": "abierto",
+        "x": 5980,
+        "y": 1700,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "brinca"
+       }
+      ],
+      "desde": "s_open",
+      "s": 0.95
+     },
+     {
+      "look": "vendedor",
+      "var": 93,
+      "keys": [
+       {
+        "k": "s_open",
+        "x": 6220,
+        "y": 1700,
+        "pose": "sostiene",
+        "cara": "feliz",
+        "objeto": "taza"
+       },
+       {
+        "k": "abierto",
+        "x": 6220,
+        "y": 1700,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "brinca"
+       }
+      ],
+      "desde": "s_open",
+      "s": 0.95
+     }
+    ],
+    "extras": [
+     {
+      "look": "cliente",
+      "var": 101,
+      "x0": 2600,
+      "x1": 3900,
+      "vel": -90,
+      "y": 1380,
+      "s": 0.5,
+      "luz": 0.4,
+      "desde": "s_lon",
+      "hasta": "s_atras"
+     },
+     {
+      "look": "vendedor",
+      "var": 102,
+      "x0": 5200,
+      "x1": 6600,
+      "vel": 60,
+      "off": 200,
+      "y": 1380,
+      "s": 0.5,
+      "luz": 0.45,
+      "desde": "s_open"
+     }
+    ],
+    "prohibidos": [
+     {
+      "k": "ban0",
+      "x": 830,
+      "y": 1560,
+      "r": 130
+     }
+    ],
+    "burbujas": [
+     {
+      "k": "news",
+      "de": 3,
+      "texto": "NEWS!",
+      "fin": "gossip"
+     },
+     {
+      "k": "gossip",
+      "de": 5,
+      "texto": "DID YOU HEAR?",
+      "fin": "govt",
+      "dx": -90
+     },
+     {
+      "k": "govt",
+      "de": 6,
+      "texto": "THE KING...",
+      "fin": "s_cal"
+     }
+    ],
+    "numeros": [
+     {
+      "k": 14.45,
+      "n": 10,
+      "pre": "JAN ",
+      "x": 540,
+      "y": 820,
+      "c": "rojo",
+      "etq": "THE BAN STARTS",
+      "fin": "s_lon"
+     },
+     {
+      "k": 18.37,
+      "n": 2,
+      "suf": " DAYS",
+      "x": 540,
+      "y": 820,
+      "c": "amar",
+      "etq": "BEFORE THE DEADLINE",
+      "fin": "atras"
+     }
+    ],
+    "zoom": [
+     {
+      "k": 0.1,
+      "s": 1.06,
+      "dur": 0.6
+     },
+     {
+      "k": "ban0",
+      "s": 1.25,
+      "x": 650,
+      "y": 1450,
+      "dur": 0.3
+     },
+     {
+      "k": "s1",
+      "s": 1.35,
+      "x": 480,
+      "y": 1380,
+      "dur": 0.7
+     },
+     {
+      "k": "ban",
+      "s": 1.12,
+      "x": 650,
+      "y": 1450,
+      "dur": 0.5
+     },
+     {
+      "k": "s_casa",
+      "s": 1.0,
+      "dur": 0.5
+     },
+     {
+      "k": "news",
+      "s": 1.2,
+      "x": 1700,
+      "y": 1450,
+      "dur": 0.6
+     },
+     {
+      "k": "govt",
+      "s": 1.3,
+      "x": 2350,
+      "y": 1430,
+      "dur": 0.5
+     },
+     {
+      "k": "s_cal",
+      "s": 1.0,
+      "dur": 0.5
+     },
+     {
+      "k": "s_lon",
+      "s": 1.0,
+      "dur": 0.4
+     },
+     {
+      "k": "enojo",
+      "s": 1.22,
+      "x": 3250,
+      "y": 1450,
+      "dur": 0.25
+     },
+     {
+      "k": "s_atras",
+      "s": 1.0,
+      "dur": 0.4
+     },
+     {
+      "k": "atras",
+      "s": 1.3,
+      "x": 4450,
+      "y": 1420,
+      "dur": 0.7
+     },
+     {
+      "k": "s_open",
+      "s": 1.0,
+      "dur": 0.4
+     },
+     {
+      "k": "abierto",
+      "s": 1.15,
+      "x": 5850,
+      "y": 1450,
+      "dur": 0.5
+     }
+    ],
+    "sacudidas": [
+     {
+      "k": "ban0",
+      "f": 14
+     },
+     {
+      "k": "ban",
+      "f": 12
+     },
+     {
+      "k": "enojo",
+      "f": 22,
+      "dur": 0.6
+     },
+     {
+      "k": 17.27,
+      "f": 16
+     }
+    ],
+    "titulos": [
+     {
+      "k": 0.2,
+      "texto": "ENGLAND · 1675",
+      "c": "amar",
+      "fin": "s1"
+     },
+     {
+      "k": "s1",
+      "texto": "KING CHARLES II",
+      "c": "rosa",
+      "fin": "s_casa",
+      "grande": true
+     },
+     {
+      "k": "s_casa",
+      "texto": "LONDON COFFEE HOUSE",
+      "c": "amar",
+      "fin": "s_lon"
+     },
+     {
+      "k": "s_lon",
+      "texto": "LONDON",
+      "c": "rojo",
+      "fin": "s_atras"
+     },
+     {
+      "k": "s_atras",
+      "texto": "THE PALACE",
+      "c": "rosa",
+      "fin": "s_open"
+     },
+     {
+      "k": "s_open",
+      "texto": "COFFEE WINS",
+      "c": "verde",
+      "grande": true
+     }
+    ],
+    "chips": [
+     {
+      "k": "ban",
+      "texto": "EVERY COFFEE HOUSE: CLOSE",
+      "c": "rojo",
+      "fin": "s_casa"
+     },
+     {
+      "k": "enojo",
+      "texto": "LONDON GOT ANGRY",
+      "c": "rojo",
+      "fin": "s_atras"
+     },
+     {
+      "k": "atras",
+      "texto": "THE KING BACKED DOWN",
+      "c": "verde",
+      "fin": "s_open"
+     },
+     {
+      "k": "abierto",
+      "texto": "THEY STAYED OPEN",
+      "c": "verde"
+     }
+    ],
+    "chipY": 880
+   },
+   {
+    "tipo": "cierre",
+    "desde": "s_fin"
+   }
+  ],
+  "cierre": "COFFEE OR KING?",
+  "cierre2": "Would you give it up? Comment",
+  "paises": [
+   "COFFEE",
+   "KING"
+  ],
+  "sfx": [],
+  "cta": "FOLLOW FOR MORE"
+ },
+ "nota_datos": "Carlos II de Inglaterra: proclama del 29-dic-1675 para cerrar los coffee houses desde el 10-ene-1676; molestia general; el 8-ene-1676 dio marcha atrás (proclama adicional que posterga y nunca se aplicó).",
+ "marca": "COFFEE, BUT WHY?"
+}

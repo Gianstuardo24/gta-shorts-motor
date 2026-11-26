@@ -1,0 +1,46 @@
+{
+ "id": "caf1",
+ "canal": "Coffee But Why?",
+ "titulo": "Coffee 1",
+ "dur_min": 5.7,
+ "voz": {
+  "ppm": 162,
+  "ppm_primeros_30s": 168,
+  "pausas_min": 0.2
+ },
+ "imagen": {
+  "cortes_min": 0.9,
+  "plano_mediano": 34.9,
+  "plano_max": 157.2,
+  "sin_cambio": 6,
+  "cambios_locales_min": 3.9,
+  "racha_quieta_max": 18.4,
+  "en_rachas_5s": 5
+ },
+ "gancho": {
+  "cortes_30s": 0,
+  "sin_cambio_30s": 0,
+  "primera_frase_palabras": 18,
+  "primera_pregunta": false,
+  "primera_con_numero": false,
+  "primera_con_tu": false
+ },
+ "lenguaje": {
+  "palabras": 870,
+  "frases": 52,
+  "frase_media": 16.7,
+  "preguntas_100f": 0.0,
+  "tu_100": 1.38,
+  "yo_100": 0.46,
+  "contracciones_100": 0.0,
+  "numeros_100": 1.38,
+  "largo_palabra": 4.23,
+  "palabras_largas": 6.5,
+  "variedad": 0.676,
+  "flesch": 72.9,
+  "registro": "neutro"
+ },
+ "sincronia": {
+  "frases_con_cambio_visual": 100
+ }
+}

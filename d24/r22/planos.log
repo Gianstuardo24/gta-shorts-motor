@@ -1,0 +1,11 @@
+  0.00-  1.63 general   L=1.6 foco=71 n_vis=1
+  1.63-  3.27 recorre   L=1.6 foco=71 n_vis=1
+  4.89-  6.48 detalle
+  6.55-  8.74 objeto    L=2.2 foco=71 n_vis=1
+ 10.18- 11.56 holandes  L=1.4 foco=72 n_vis=1
+ 13.00- 14.59 globo     L=1.6 foco=73 n_vis=1 burbuja
+ 14.65- 15.39 detalle
+ 15.45- 17.09 globo     L=1.6 foco=74 n_vis=1 burbuja
+ 17.09- 19.71 objeto    L=2.6 foco=74 n_vis=1
+ 21.15- 23.23 vertical  L=2.1 foco=75 n_vis=1
+ 23.23- 24.82 objeto    L=1.6 foco=75 n_vis=1

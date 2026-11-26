@@ -1,0 +1,2 @@
+planos: 7 en 30.2 s (uno cada 4.3 s) · tipos distintos: 6 · general×2, camina×1, detalle:abre×1, medio×1, detalle:empuje×1, detalle:baja×1
+repetidos seguidos: 0

@@ -1,0 +1,12 @@
+ok /home/claude/d24/dog18/D2026112402.json dur 25.41
+T: smell=0.65 stressed0=1.43 s_2022=2.19 belfast=3.90 sweat=4.87 people=6.51 s_first=7.31 calm=8.43 math=9.99 s_four=11.06 pick=11.80 s_right=13.27 almost=14.26 tests=15.66 s_so=16.35 close=17.36 first5=19.28 s_fin=19.94 s_cta=22.23 fin=25.41
+  {"a": 0, "b": 2.14, "t": "Your dog can smell when you are stressed.", "k": ["stressed."], "w": [0.12, 0.324, 0.489, 0.654, 0.897, 1.101, 1.265, 1.43]}
+  {"a": 2.14, "b": 7.26, "t": "In 2022, scientists in Belfast collected sweat and breath from 36 people.", "k": ["2022,", "36"], "w": [2.19, 2.359, 3.139, 3.729, 
+  {"a": 7.26, "b": 8.709, "t": "First while they were calm.", "k": ["First"], "w": [7.31, 7.615, 7.919, 8.175, 8.43]}
+  {"a": 8.709, "b": 11.01, "t": "Then right after a hard math problem.", "k": ["problem."], "w": [8.759, 9.015, 9.32, 9.624, 9.732, 9.988, 10.243]}
+  {"a": 11.01, "b": 13.219999999999999, "t": "Four dogs had to pick the stressed sample.", "k": ["stressed"], "w": [11.06, 11.276, 11.491, 11.665, 11.798, 12.014,
+  {"a": 13.219999999999999, "b": 16.3, "t": "They got it right in almost 94 percent of the tests.", "k": ["94"], "w": [13.27, 13.504, 13.693, 13.837, 14.116, 14.2
+  {"a": 16.3, "b": 18.215, "t": "So when your dog stays close on a bad day,", "k": ["stays"], "w": [16.35, 16.485, 16.704, 16.923, 17.099, 17.36, 17.621, 17.756, 
+  {"a": 18.215, "b": 19.89, "t": "it may have smelled it first.", "k": ["smelled"], "w": [18.265, 18.4, 18.577, 18.796, 19.141, 19.276]}
+  {"a": 19.89, "b": 22.18, "t": "Tell me if your dog notices your bad days.", "k": ["notices"], "w": [19.94, 20.164, 20.302, 20.439, 20.663, 20.844, 21.197, 21.42
+  {"a": 22.18, "b": 25.36, "t": "Follow to decode your dog.", "k": ["Follow"], "w": [22.23, 22.574, 22.726, 23.07, 23.318]}

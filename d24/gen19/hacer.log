@@ -1,0 +1,15 @@
+ok /home/claude/d24/gen19/G2026112402en.json dur 32.02
+T: hiding=1.85 name0=2.50 y2018=4.13 s_jan=5.32 files=7.81 boat=8.58 nobody1=9.29 s_name=10.87 painted=11.76 leonida=12.66 s_state=13.43 state=14.30 s_unused=16.64 never=17.47 y8=19.87 s_fans=20.85 tease=22.37 leftover=23.97 rockstar=24.53 s_fin=26.52 s_cta=28.26 fin=32.02
+  {"a": 0, "b": 2.454, "t": "Red Dead Redemption 2 was hiding the", "k": ["2"], "w": [0.12, 0.362, 0.661, 1.306, 1.606, 1.847, 2.262]}
+  {"a": 2.454, "b": 5.2700000000000005, "t": "name of GTA 6's map since 2018.", "k": ["6's", "2018."], "w": [2.504, 2.803, 2.988, 3.229, 3.529, 3.771, 4.128]}
+  {"a": 5.2700000000000005, "b": 6.061, "t": "This January,", "k": ["January,"], "w": [5.32, 5.596]}
+  {"a": 6.061, "b": 10.819999999999999, "t": "fans digging through the game's files found a boat texture nobody had ever seen.", "k": ["digging"], "w": [6.111, 6.
+  {"a": 10.819999999999999, "b": 13.379999999999999, "t": "It had a ship name painted on it: The Leonida.", "k": ["Leonida."], "w": [10.87, 11.012, 11.199, 11.296
+  {"a": 13.379999999999999, "b": 16.59, "t": "Leonida is the state where GTA 6 takes place.", "k": ["6"], "w": [13.43, 13.889, 14.068, 14.303, 14.65, 14.996, 15.2
+  {"a": 16.59, "b": 18.684, "t": "The texture was never used in the game,", "k": ["texture"], "w": [16.64, 16.849, 17.257, 17.466, 17.774, 18.033, 18.192, 18.401]
+  {"a": 18.684, "b": 20.8, "t": "so nobody noticed for 8 years.", "k": ["8", "years."], "w": [18.734, 18.893, 19.252, 19.659, 19.868, 20.127]}
+  {"a": 20.8, "b": 22.723, "t": "Some fans call it a planned tease.", "k": ["planned"], "w": [20.85, 21.121, 21.392, 21.663, 21.83, 21.944, 22.371]}
+  {"a": 22.723, "b": 24.477999999999998, "t": "Others say it's just a leftover.", "k": ["leftover."], "w": [22.773, 23.148, 23.367, 23.585, 23.856, 23.971]}
+  {"a": 24.477999999999998, "b": 26.47, "t": "Rockstar has not said a word.", "k": ["Rockstar"], "w": [24.528, 25.008, 25.227, 25.445, 25.716, 25.831]}
+  {"a": 26.47, "b": 28.21, "t": "Tell me which one you believe.", "k": ["believe."], "w": [26.52, 26.743, 26.88, 27.145, 27.325, 27.505]}
+  {"a": 28.21, "b": 31.970000000000002, "t": "Follow for more GTA 6 secrets.", "k": ["6"], "w": [28.26, 28.651, 28.879, 29.162, 29.39, 29.673]}

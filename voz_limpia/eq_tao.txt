@@ -1,0 +1,1 @@
+lowshelf=f=450:g=1.6:t=s:w=0.6,equalizer=f=1000:t=o:w=0.5:g=-3.2,equalizer=f=2100:t=o:w=1.0:g=1.7,equalizer=f=4300:t=o:w=0.6:g=-2.8,equalizer=f=8000:t=o:w=0.6:g=-6,equalizer=f=11200:t=o:w=0.6:g=-0.3

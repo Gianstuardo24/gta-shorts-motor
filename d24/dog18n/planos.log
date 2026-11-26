@@ -1,0 +1,13 @@
+  0.00-  1.19 objeto    L=1.2 foco=31 n_vis=1
+  1.25-  1.88 detalle
+  1.94-  3.92 globo     L=2.0 foco=33 n_vis=1 burbuja
+  5.20-  6.97 primer    L=1.8 foco=32 n_vis=1
+  6.97-  8.01 objeto    L=1.0 foco=32 n_vis=1
+  8.98- 10.54 detalle
+ 10.61- 12.53 acerca    L=1.9 foco=34 n_vis=1 cifra
+ 12.53- 13.90 primer    L=1.4 foco=34 n_vis=1
+ 15.18- 17.11 holandes  L=1.9 foco=32 n_vis=1 cifra
+ 17.11- 18.92 acerca    L=1.8 foco=32 n_vis=1 cifra
+ 20.20- 21.11 ojos      L=0.9 foco=31 n_vis=1
+ 21.17- 22.89 detalle
+ 22.96- 23.50 medio     L=0.5 foco=31 n_vis=1

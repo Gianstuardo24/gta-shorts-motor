@@ -1,0 +1,15 @@
+ok /home/claude/d24/wge1/G2026112501en.json dur 31.31
+T: hiding=0.81 s_1=4.76 s_2=8.28 files=10.43 found=10.76 s_3=13.13 leonida=14.90 s_4=15.68 matters=16.84 s_5=17.64 state=18.51 s_6=20.76 tease=22.24 leftover=23.53 s_fin=25.83 s_cta=27.56 fin=31.31
+  {"a": 0, "b": 2.664, "t": "GTA 6 was hiding in another Rockstar game.", "k": ["6"], "w": [0.056, 0.288, 0.575, 0.807, 1.205, 1.382, 1.835, 2.344]}
+  {"a": 2.664, "b": 4.706, "t": "And nobody saw it for years.", "k": ["years."], "w": [2.714, 2.946, 3.344, 3.576, 3.752, 3.985]}
+  {"a": 4.706, "b": 8.225999999999999, "t": "In 2018, Rockstar released Red Dead Redemption 2.", "k": ["2018,", "2."], "w": [4.756, 4.924, 5.701, 6.183, 6.666, 6.
+  {"a": 8.225999999999999, "b": 9.014999999999999, "t": "This January,", "k": ["January,"], "w": [8.276, 8.551]}
+  {"a": 9.014999999999999, "b": 13.075999999999999, "t": "fans digging through its files found a boat texture nobody had seen.", "k": ["digging"], "w": [9.065, 9.
+  {"a": 13.075999999999999, "b": 15.626, "t": "It had a ship name painted on it: The Leonida.", "k": ["Leonida."], "w": [13.126, 13.267, 13.452, 13.549, 13.778, 1
+  {"a": 15.626, "b": 17.586, "t": "Now here's why that name matters.", "k": ["matters."], "w": [15.676, 15.871, 16.16, 16.355, 16.597, 16.839]}
+  {"a": 17.586, "b": 20.706, "t": "Leonida is the state where GTA 6 takes place.", "k": ["6"], "w": [17.636, 18.094, 18.272, 18.507, 18.853, 19.199, 19.434, 19.72
+  {"a": 20.706, "b": 22.578, "t": "Some fans call it a planned tease.", "k": ["planned"], "w": [20.756, 21.02, 21.284, 21.547, 21.71, 21.821, 22.237]}
+  {"a": 22.578, "b": 24.024, "t": "Others say it's a leftover.", "k": ["leftover."], "w": [22.628, 22.993, 23.206, 23.419, 23.531]}
+  {"a": 24.024, "b": 25.776, "t": "Rockstar hasn't said a word.", "k": ["Rockstar"], "w": [24.074, 24.54, 24.855, 25.119, 25.23]}
+  {"a": 25.776, "b": 27.506, "t": "Tell me which one you believe.", "k": ["believe."], "w": [25.826, 26.046, 26.182, 26.444, 26.622, 26.799]}
+  {"a": 27.506, "b": 31.259999999999998, "t": "Follow for more GTA 6 secrets.", "k": ["6"], "w": [27.556, 27.95, 28.18, 28.465, 28.694, 28.979]}

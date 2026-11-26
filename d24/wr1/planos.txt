@@ -1,0 +1,2 @@
+planos: 10 en 43.8 s (uno cada 4.4 s) · tipos distintos: 10 · general×1, balanceo×1, detalle:deriva×1, detalle:papel×1, recorre×1, mano×1, detalle:sube×1, detalle:empuje×1, detalle:inclina×1, medio×1
+repetidos seguidos: 3

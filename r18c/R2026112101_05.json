@@ -1,0 +1,677 @@
+{
+ "titulo": "The 'GoFast' UFO Was Finally Solved 👽",
+ "texto_pantalla": "GOFAST UFO",
+ "lote": "R2026112101",
+ "tema": "espacio",
+ "marca": "THE RABBIT LOOP",
+ "nota_datos": "Micronicho: casos OVNI cerrados. AARO GoFast Case Resolution: ene-2015, F/A-18F, FLIR, ~13.000 ft sobre el Atlántico frente a Florida; alta confianza de que no se movió a velocidad anómala; velocidad aparente por paralaje de movimiento; se movía con el viento (The Black Vault, iHeart/Kosloski ante el Congreso nov-2024). Ryan Graves (ex piloto de F/A-18) dijo que había más objetos y pidió seguir investigando (iHeart). Punto en pantalla = ilustración.",
+ "frases": [
+  "This Navy video looks like a UFO racing over the ocean.",
+  "A fighter jet filmed it in 2015, off the coast of Florida.",
+  "For years, people called it the GoFast UFO.",
+  "Then the Pentagon's UFO office ran the math.",
+  "It wasn't near the water. It was about 13,000 feet up.",
+  "The jet was moving so fast, it made the object look fast. That trick is called parallax.",
+  "Their verdict: nothing unusual. It was moving with the wind.",
+  "Still, a former Navy pilot says there were more objects that day.",
+  "Tell me if you think this case is really closed.",
+  "Follow for the next case."
+ ],
+ "frases_voz": [
+  "This Navy video looks like a U F O racing over the ocean.",
+  "A fighter jet filmed it in twenty fifteen, off the coast of Florida.",
+  "For years, people called it the Go Fast U F O.",
+  "Then the Pentagon's U F O office ran the math.",
+  "It wasn't near the water. It was about thirteen thousand feet up.",
+  "The jet was moving so fast, it made the object look fast. That trick is called parallax.",
+  "Their verdict. Nothing unusual. It was moving with the wind.",
+  "Still, a former Navy pilot says there were more objects that day.",
+  "Tell me if you think this case is really closed.",
+  "Follow for the next case."
+ ],
+ "fuentes": [
+  "https://www.aaro.mil/UAP-Cases/UAP-Case-Resolution-Reports",
+  "https://www.theblackvault.com/documentarchive/pentagon-releases-aaro-report-on-go-fast-video-analysis/",
+  "https://www.iheart.com/content/2024-11-20-pentagon-solves-one-its-highest-profile-ufo-cases/"
+ ],
+ "escena": {
+  "momentos": [
+   [
+    "s_jet",
+    1,
+    null
+   ],
+   [
+    "filmed",
+    1,
+    "^filmed"
+   ],
+   [
+    "florida",
+    1,
+    "^florida"
+   ],
+   [
+    "s_name",
+    2,
+    null
+   ],
+   [
+    "gofast",
+    2,
+    "^gofast|^go$"
+   ],
+   [
+    "s_math",
+    3,
+    null
+   ],
+   [
+    "math",
+    3,
+    "^math"
+   ],
+   [
+    "s_alt",
+    4,
+    null
+   ],
+   [
+    "parallax",
+    5,
+    "^parallax"
+   ],
+   [
+    "s_wind",
+    6,
+    null
+   ],
+   [
+    "unusual",
+    6,
+    "^unusual"
+   ],
+   [
+    "wind",
+    6,
+    "^wind"
+   ],
+   [
+    "s_pilot",
+    7,
+    null
+   ],
+   [
+    "more",
+    7,
+    "^more"
+   ],
+   [
+    "s_fin",
+    8,
+    null
+   ],
+   [
+    "s_cta",
+    9,
+    null
+   ],
+   [
+    "s_wind2",
+    6,
+    "^it$"
+   ],
+   [
+    "s_par",
+    5,
+    null
+   ],
+   [
+    "object",
+    5,
+    "^object"
+   ]
+  ],
+  "escenas": [
+   {
+    "tipo": "gofast",
+    "desde": "0",
+    "chip": "U.S. NAVY · FLIR",
+    "nota": "ILLUSTRATION",
+    "quieto": true
+   },
+   {
+    "tipo": "pelicula",
+    "desde": "s_jet",
+    "escala": 1.05,
+    "abre": {
+     "x": 540,
+     "y": 1000,
+     "w": 920,
+     "h": 880,
+     "dur": 1.2,
+     "espera": 0.1
+    },
+    "zonas": [
+     {
+      "x0": -300,
+      "x1": 1300,
+      "set": "cielo"
+     },
+     {
+      "x0": 1300,
+      "x1": 2600,
+      "set": "sala",
+      "k": "s_name"
+     },
+     {
+      "x0": 2600,
+      "x1": 3900,
+      "set": "oficina",
+      "k": "s_math",
+      "luz": "tenue"
+     },
+     {
+      "x0": 3900,
+      "x1": 5600,
+      "set": "cielo",
+      "k": "s_alt"
+     },
+     {
+      "x0": 5600,
+      "x1": 6900,
+      "set": "oficina",
+      "k": "s_wind"
+     },
+     {
+      "x0": 6900,
+      "x1": 8200,
+      "set": "cielo",
+      "k": "s_pilot",
+      "luz": "tenue"
+     }
+    ],
+    "pan": [
+     {
+      "k": "s_name",
+      "x": 1300
+     },
+     {
+      "k": "s_math",
+      "x": 2600
+     },
+     {
+      "k": "s_alt",
+      "x": 3900
+     },
+     {
+      "k": "object",
+      "x": 4300,
+      "dur": 0.5
+     },
+     {
+      "k": "s_wind",
+      "x": 5600
+     },
+     {
+      "k": "s_pilot",
+      "x": 6900
+     }
+    ],
+    "props": [
+     {
+      "tipo": "jet",
+      "x": -200,
+      "y": 950,
+      "s": 2.2,
+      "k": "s_jet",
+      "mov": [
+       {
+        "k": "s_jet",
+        "x": -250,
+        "y": 980
+       },
+       {
+        "k": "florida",
+        "x": 1550,
+        "y": 860
+       }
+      ],
+      "fin": "s_name"
+     },
+     {
+      "tipo": "orbe",
+      "x": 720,
+      "y": 1480,
+      "s": 0.6,
+      "k": "filmed"
+     },
+     {
+      "tipo": "sofa",
+      "x": 1950,
+      "y": 1700,
+      "s": 1.2,
+      "k": "s_name"
+     },
+     {
+      "tipo": "tv",
+      "x": 1950,
+      "y": 1080,
+      "s": 1.15,
+      "k": "s_name",
+      "ir": true
+     },
+     {
+      "tipo": "pc",
+      "x": 3350,
+      "y": 1650,
+      "s": 1.2,
+      "k": "s_math",
+      "texto": "UFO OFFICE"
+     },
+     {
+      "tipo": "orbe",
+      "x": 4700,
+      "y": 900,
+      "s": 0.55,
+      "k": "s_alt"
+     },
+     {
+      "tipo": "jet",
+      "x": 3800,
+      "y": 1250,
+      "s": 2.0,
+      "k": "s_par",
+      "mov": [
+       {
+        "k": "s_par",
+        "x": 3950,
+        "y": 1150
+       },
+       {
+        "k": 16.63,
+        "x": 5900,
+        "y": 1060
+       }
+      ],
+      "fin": 16.7
+     },
+     {
+      "tipo": "documento",
+      "x": 6250,
+      "y": 1300,
+      "s": 1.2,
+      "sello": "SOLVED",
+      "selloc": "verde",
+      "k": "s_wind",
+      "cae": true,
+      "z": 1800
+     },
+     {
+      "tipo": "orbe",
+      "x": 7500,
+      "y": 800,
+      "s": 0.45,
+      "k": "s_pilot"
+     },
+     {
+      "tipo": "orbe",
+      "x": 7250,
+      "y": 950,
+      "s": 0.4,
+      "k": "more"
+     },
+     {
+      "tipo": "orbe",
+      "x": 7700,
+      "y": 1050,
+      "s": 0.4,
+      "k": 25.83
+     },
+     {
+      "tipo": "orbe",
+      "x": 7380,
+      "y": 700,
+      "s": 0.35,
+      "k": 26.13
+     }
+    ],
+    "actores": [
+     {
+      "look": "gamer",
+      "var": 31,
+      "s": 0.95,
+      "desde": "s_name",
+      "hasta": "s_math",
+      "keys": [
+       {
+        "k": "s_name",
+        "x": 1830,
+        "y": 1682,
+        "pose": "sentado",
+        "cara": "neutral",
+        "z": 1780
+       },
+       {
+        "k": "gofast",
+        "x": 1830,
+        "y": 1690,
+        "pose": "arriba",
+        "cara": "sorpresa",
+        "fx": "salto"
+       }
+      ]
+     },
+     {
+      "look": "jugadora",
+      "var": 44,
+      "s": 0.95,
+      "desde": "s_name",
+      "hasta": "s_math",
+      "keys": [
+       {
+        "k": "s_name",
+        "x": 2080,
+        "y": 1682,
+        "pose": "sentado",
+        "cara": "neutral",
+        "dir": -1,
+        "z": 1780
+       },
+       {
+        "k": 6.03,
+        "x": 2080,
+        "y": 1690,
+        "pose": "apunta",
+        "cara": "sorpresa",
+        "fx": "salto",
+        "dir": -1
+       }
+      ]
+     },
+     {
+      "look": "ejecutivo",
+      "var": 52,
+      "s": 1.0,
+      "desde": "s_math",
+      "hasta": "s_alt",
+      "objeto": "lupa",
+      "os": 0.7,
+      "keys": [
+       {
+        "k": "s_math",
+        "x": 2950,
+        "y": 1690,
+        "pose": "sostiene",
+        "cara": "neutral"
+       },
+       {
+        "k": "math",
+        "x": 2950,
+        "y": 1690,
+        "pose": "piensa",
+        "cara": "sorpresa",
+        "fx": "salto"
+       }
+      ]
+     },
+     {
+      "look": "ejecutivo",
+      "var": 52,
+      "s": 1.0,
+      "desde": "s_wind",
+      "hasta": "s_pilot",
+      "keys": [
+       {
+        "k": "s_wind",
+        "x": 5900,
+        "y": 1690,
+        "pose": "cruzado",
+        "cara": "neutral"
+       },
+       {
+        "k": "unusual",
+        "x": 5900,
+        "y": 1690,
+        "pose": "apunta",
+        "cara": "feliz"
+       },
+       {
+        "k": "wind",
+        "x": 5900,
+        "y": 1690,
+        "pose": "saluda",
+        "cara": "risa"
+       }
+      ]
+     },
+     {
+      "look": "piloto",
+      "var": 71,
+      "s": 1.0,
+      "desde": "s_pilot",
+      "keys": [
+       {
+        "k": "s_pilot",
+        "x": 7000,
+        "y": 1690,
+        "pose": "parado",
+        "a": [
+         7150,
+         1690
+        ],
+        "dur": 0.8
+       },
+       {
+        "k": 24.53,
+        "x": 7150,
+        "y": 1690,
+        "pose": "piensa",
+        "cara": "neutral"
+       },
+       {
+        "k": "more",
+        "x": 7150,
+        "y": 1690,
+        "pose": "apunta",
+        "cara": "sorpresa",
+        "fx": "salto"
+       }
+      ]
+     }
+    ],
+    "tablet": {
+     "k": "math",
+     "fin": 11.33,
+     "titulo": "THE MATH",
+     "c": "cian",
+     "lineas": [
+      "> camera angle",
+      "> distance to object",
+      "> altitude: ~13,000 FT"
+     ],
+     "dur": 1.2,
+     "icono": false
+    },
+    "numeros": [
+     {
+      "k": 11.91,
+      "n": 13000,
+      "suf": " FT",
+      "x": 540,
+      "y": 760,
+      "c": "cian",
+      "etq": "ALTITUDE",
+      "fin": "s_par"
+     }
+    ],
+    "burbujas": [
+     {
+      "k": "gofast",
+      "de": 0,
+      "texto": "A UFO!!",
+      "fin": "s_math"
+     }
+    ],
+    "zoom": [
+     {
+      "k": "filmed",
+      "s": 1.25,
+      "x": 720,
+      "y": 1350,
+      "dur": 0.8
+     },
+     {
+      "k": "s_name",
+      "s": 1.0
+     },
+     {
+      "k": "gofast",
+      "s": 1.2,
+      "x": 1950,
+      "y": 1400
+     },
+     {
+      "k": "s_math",
+      "s": 1.0
+     },
+     {
+      "k": "s_alt",
+      "s": 1.0
+     },
+     {
+      "k": "s_wind",
+      "s": 1.0
+     },
+     {
+      "k": "unusual",
+      "s": 1.15,
+      "x": 6100,
+      "y": 1400
+     },
+     {
+      "k": "s_pilot",
+      "s": 1.0
+     },
+     {
+      "k": "more",
+      "s": 1.1,
+      "x": 7400,
+      "y": 1100
+     }
+    ],
+    "sacudidas": [
+     {
+      "k": "s_par",
+      "f": 14,
+      "dur": 0.6
+     }
+    ],
+    "titulos": [
+     {
+      "k": "s_jet",
+      "texto": "2015 · OFF FLORIDA",
+      "c": "cian",
+      "fin": "s_name"
+     },
+     {
+      "k": "s_name",
+      "texto": "THE INTERNET",
+      "c": "rosa",
+      "fin": "gofast"
+     },
+     {
+      "k": "s_math",
+      "texto": "PENTAGON UFO OFFICE",
+      "c": "amar",
+      "fin": "s_alt"
+     },
+     {
+      "k": "s_alt",
+      "texto": "NOT NEAR THE WATER",
+      "c": "cian",
+      "fin": "parallax"
+     },
+     {
+      "k": "s_wind",
+      "texto": "THE VERDICT",
+      "c": "verde",
+      "fin": "s_pilot"
+     },
+     {
+      "k": "s_pilot",
+      "texto": "STILL...",
+      "c": "rosa"
+     },
+     {
+      "k": "gofast",
+      "texto": "\"GOFAST\"",
+      "c": "verde",
+      "grande": true,
+      "fin": "s_math"
+     },
+     {
+      "k": "parallax",
+      "texto": "PARALLAX",
+      "c": "amar",
+      "grande": true,
+      "fin": "s_wind"
+     }
+    ],
+    "chips": [
+     {
+      "k": "florida",
+      "texto": "F/A-18 · INFRARED CAMERA",
+      "c": "cian",
+      "fin": "s_name"
+     },
+     {
+      "k": "unusual",
+      "texto": "NOTHING UNUSUAL",
+      "c": "verde",
+      "fin": "wind"
+     },
+     {
+      "k": "wind",
+      "texto": "MOVING WITH THE WIND",
+      "c": "cian",
+      "fin": "s_pilot"
+     },
+     {
+      "k": 24.23,
+      "texto": "A FORMER NAVY PILOT",
+      "c": "amar",
+      "fin": "more"
+     },
+     {
+      "k": "more",
+      "texto": "MORE OBJECTS THAT DAY?",
+      "c": "rosa"
+     }
+    ],
+    "chipY": 680
+   },
+   {
+    "tipo": "cierre",
+    "desde": "s_fin"
+   }
+  ],
+  "cierre": "CASE CLOSED?",
+  "cierre2": "Is it really closed? Comment",
+  "paises": [
+   "CLOSED",
+   "NOT YET"
+  ],
+  "sfx": [
+   {
+    "f": "extra/CbRadioStatic_S08TE.394.wav",
+    "k": "0",
+    "off": 0.0,
+    "dur": 1.0,
+    "fade": 0.4,
+    "g": 0.08
+   }
+  ],
+  "cta": "FOLLOW FOR MORE"
+ }
+}

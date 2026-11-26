@@ -1,0 +1,311 @@
+{
+ "titulo": "The 'Jellyfish' UFO Over Iraq 👽",
+ "texto_pantalla": "JELLYFISH UFO",
+ "lote": "R2026112102",
+ "tema": "espacio",
+ "marca": "THE RABBIT LOOP",
+ "nota_datos": "AARO case resolution 'The Al Taqaddum Object' (8 sep 2025): 23 oct 2017, sensor IR de un aerostato a ~2,700 ft, 17 min 30 s de video; se movía con el viento, sin firma térmica; conclusión: racimo de globos inflados y desinflados con cuerdas colgando. Filtrado por Jeremy Corbell en ene 2024 (Global News, Futurism, KYM). Medusa dibujada = ilustración, no el video real.",
+ "frases": [
+  "This 'jellyfish' UFO was filmed over a U.S. base in Iraq.",
+  "A military blimp caught it on infrared, for 17 minutes.",
+  "When the video leaked in 2024, many said it was alien.",
+  "In 2025, the Pentagon's UFO office finally gave its answer.",
+  "It drifted with the wind, and it gave off no heat.",
+  "Their verdict? A cluster of balloons, with strings hanging down.",
+  "So, do you buy it?"
+ ],
+ "frases_voz": [
+  "This jellyfish U F O was filmed over a U S base in Iraq.",
+  "A military blimp caught it on infrared, for seventeen minutes.",
+  "When the video leaked in twenty twenty-four, many said it was alien.",
+  "In twenty twenty-five, the Pentagon's U F O office finally gave its answer.",
+  "It drifted with the wind, and it gave off no heat.",
+  "Their verdict? A cluster of balloons, with strings hanging down.",
+  "So, do you buy it?"
+ ],
+ "fuentes": [
+  "https://www.aaro.mil/Portals/136/PDFs/case_resolution_reports/AARO_Al_Taqaddam_Case_Resolution_Final.pdf",
+  "https://www.ibtimes.co.uk/jellyfish-shaped-object-filmed-anchorage-1831876",
+  "https://globalnews.ca/news/10216527/jellyfish-ufo-iraq-video-uap",
+  "https://futurism.com/the-byte/internet-puzzled-jellyfish-ufo-video",
+  "https://knowyourmeme.com/memes/jellyfish-ufo-uap"
+ ],
+ "escena": {
+  "momentos": [
+   [
+    "s_dir",
+    1,
+    null
+   ],
+   [
+    "infrared",
+    1,
+    "^infrared"
+   ],
+   [
+    "s_leak",
+    2,
+    null
+   ],
+   [
+    "alien",
+    2,
+    "^alien"
+   ],
+   [
+    "s_ans",
+    3,
+    null
+   ],
+   [
+    "s_viento",
+    4,
+    null
+   ],
+   [
+    "wind",
+    4,
+    "^wind"
+   ],
+   [
+    "heat",
+    4,
+    "^heat"
+   ],
+   [
+    "s_ver",
+    5,
+    null
+   ],
+   [
+    "balloons",
+    5,
+    "^balloons"
+   ],
+   [
+    "strings",
+    5,
+    "^strings"
+   ],
+   [
+    "s_fin",
+    6,
+    null
+   ],
+   [
+    "answer",
+    3,
+    "^answer"
+   ],
+   [
+    "leaked",
+    2,
+    "^leaked"
+   ]
+  ],
+  "escenas": [
+   {
+    "tipo": "medusa",
+    "desde": "0",
+    "chip": "U.S. BASE · IRAQ",
+    "nota": "ILLUSTRATION"
+   },
+   {
+    "tipo": "dirigible",
+    "desde": "s_dir",
+    "k": "infrared",
+    "seg": 1050,
+    "chip": "MILITARY BLIMP",
+    "chip2": "17 MIN ON INFRARED"
+   },
+   {
+    "tipo": "historia",
+    "desde": "s_leak",
+    "trans": "barrido",
+    "set": "sala",
+    "titulo": "LEAKED · 2024",
+    "props": [
+     {
+      "tipo": "sofa",
+      "x": 540,
+      "y": 1460,
+      "s": 1.0
+     },
+     {
+      "tipo": "tv",
+      "x": 540,
+      "y": 960,
+      "s": 1.0
+     },
+     {
+      "tipo": "medusa",
+      "x": 540,
+      "y": 920,
+      "s": 0.28,
+      "k": 0.3,
+      "pop": true
+     }
+    ],
+    "actores": [
+     {
+      "var": 12,
+      "look": "gamer",
+      "s": 0.85,
+      "keys": [
+       {
+        "k": 0,
+        "x": 420,
+        "y": 1440,
+        "pose": "sentado",
+        "cara": "neutral"
+       },
+       {
+        "k": "alien",
+        "x": 420,
+        "y": 1440,
+        "pose": "arriba",
+        "cara": "sorpresa",
+        "fx": "salto"
+       }
+      ]
+     },
+     {
+      "var": 27,
+      "look": "gamer",
+      "s": 0.85,
+      "keys": [
+       {
+        "k": 0,
+        "x": 660,
+        "y": 1440,
+        "pose": "sentado",
+        "cara": "neutral",
+        "dir": -1
+       },
+       {
+        "k": "alien",
+        "x": 660,
+        "y": 1440,
+        "pose": "arriba",
+        "cara": "sorpresa",
+        "fx": "salto",
+        "dir": -1
+       }
+      ]
+     }
+    ],
+    "burbujas": [
+     {
+      "k": "alien",
+      "x": 840,
+      "y": 1100,
+      "texto": "ALIENS!?"
+     }
+    ],
+    "chips": [
+     {
+      "k": "leaked",
+      "texto": "THE VIDEO LEAKS",
+      "c": "rojo",
+      "y": 1590
+     }
+    ]
+   },
+   {
+    "tipo": "historia",
+    "desde": "s_ans",
+    "trans": "zoom",
+    "set": "oficina",
+    "titulo": "PENTAGON UFO OFFICE · 2025",
+    "props": [
+     {
+      "tipo": "documento",
+      "x": 600,
+      "y": 1160,
+      "s": 1.3,
+      "sello": "CLOSED",
+      "selloc": "verde",
+      "k": 0.3,
+      "pop": true
+     }
+    ],
+    "actores": [
+     {
+      "var": 52,
+      "look": "ejecutivo",
+      "s": 0.95,
+      "objeto": "lupa",
+      "os": 0.7,
+      "keys": [
+       {
+        "k": 0,
+        "x": 250,
+        "y": 1470,
+        "pose": "sostiene",
+        "cara": "neutral"
+       },
+       {
+        "k": "answer",
+        "x": 250,
+        "y": 1470,
+        "pose": "apunta",
+        "cara": "feliz",
+        "fx": "salto",
+        "objeto": ""
+       }
+      ]
+     }
+    ],
+    "chips": [
+     {
+      "k": "answer",
+      "texto": "THE OFFICIAL ANSWER",
+      "c": "verde",
+      "y": 1590
+     }
+    ]
+   },
+   {
+    "tipo": "viento",
+    "desde": "s_viento",
+    "k1": "wind",
+    "k2": "heat"
+   },
+   {
+    "tipo": "medusa",
+    "desde": "s_ver",
+    "k": "balloons",
+    "chip": "THE VERDICT",
+    "chips": [
+     "BALLOONS",
+     "STRINGS"
+    ],
+    "ks": [
+     "balloons",
+     "strings"
+    ],
+    "nota": "ILLUSTRATION"
+   },
+   {
+    "tipo": "cierre",
+    "desde": "s_fin"
+   }
+  ],
+  "cierre": "DO YOU BUY IT?",
+  "cierre2": "Balloons or aliens? Comment",
+  "paises": [
+   "BALLOONS",
+   "ALIENS"
+  ],
+  "sfx": [
+   {
+    "f": "extra/CbRadioStatic_S08TE.394.wav",
+    "k": "0",
+    "off": 0.0,
+    "dur": 1.0,
+    "fade": 0.4,
+    "g": 0.08
+   }
+  ]
+ }
+}

@@ -1,0 +1,5 @@
+UTILERIA.cartelPiso=(x,y,s,t,o)=>{o=o||{};X.save();X.translate(x,y);X.scale(s,s);X.fillStyle='rgba(120,180,255,.25)';X.beginPath();X.ellipse(0,0,420,60,0,0,7);X.fill();X.fillStyle='rgba(255,255,255,.35)';X.beginPath();X.ellipse(-120,-6,120,14,0,0,7);X.fill();
+ X.fillStyle='#f9a825';X.beginPath();X.moveTo(-200,0);X.lineTo(-60,-620);X.lineTo(60,-620);X.lineTo(200,0);X.lineTo(150,0);X.lineTo(40,-560);X.lineTo(-40,-560);X.lineTo(-150,0);X.closePath();X.fill();
+ X.fillStyle='#fdd835';X.beginPath();X.moveTo(-150,-20);X.lineTo(-48,-560);X.lineTo(48,-560);X.lineTo(150,-20);X.closePath();X.fill();X.fillStyle='#212121';X.beginPath();X.moveTo(0,-480);X.lineTo(70,-360);X.lineTo(-70,-360);X.closePath();X.fill();txt('!',0,-395,64,'#fdd835',{w:800});
+ txt(o.l1||'CAUTION',0,-280,46,'#212121',{w:800});txt(o.l2||'WET FLOOR',0,-220,40,'#212121',{w:800});
+ X.save();X.translate(-30,-120);X.rotate(-.3);X.fillStyle='#212121';X.beginPath();X.ellipse(0,0,40,14,0,0,7);X.fill();X.beginPath();X.arc(36,-28,16,0,7);X.fill();X.lineWidth=8;X.strokeStyle='#212121';X.beginPath();X.moveTo(0,0);X.lineTo(-40,40);X.moveTo(0,0);X.lineTo(30,50);X.stroke();X.restore();X.restore()};

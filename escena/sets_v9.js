@@ -1,0 +1,5 @@
+UTILERIA.calendarioP=(x,y,s,t,o)=>{o=o||{};calendario(x,y,s,o.mes||'MARCH',o.dia||'13',o.anio||'1997',o.col||'#b71c1c')};
+UTILERIA.bengala=(x,y,s,t,o)=>{X.save();X.translate(x,y+Math.sin(t*1.1)*10);X.scale(s,s);X.strokeStyle='rgba(220,220,230,.18)';X.lineWidth=40;X.beginPath();X.moveTo(0,40);X.bezierCurveTo(-40,300,60,500,0,800);X.stroke();
+ X.fillStyle='#e0e0e0';X.beginPath();X.arc(0,-260,140,Math.PI,0);X.fill();X.fillStyle='#bdbdbd';for(let i=0;i<5;i++){X.beginPath();X.moveTo(-140+i*70,-260);X.quadraticCurveTo(-105+i*70,-230,-70+i*70,-260);X.fill()}X.strokeStyle='#9e9e9e';X.lineWidth=2;for(let i=0;i<5;i++){X.beginPath();X.moveTo(-140+i*70,-260);X.lineTo(0,-10);X.stroke()}
+ X.save();X.globalCompositeOperation='lighter';const g=X.createRadialGradient(0,20,4,0,20,420);g.addColorStop(0,'rgba(255,240,200,.95)');g.addColorStop(.15,'rgba(255,190,90,.6)');g.addColorStop(1,'rgba(255,150,40,0)');X.fillStyle=g;X.beginPath();X.arc(0,20,420,0,7);X.fill();X.restore();
+ X.fillStyle='#fffdf0';X.beginPath();X.arc(0,20,34+Math.sin(t*20)*3,0,7);X.fill();X.fillStyle='#9e9e9e';X.fillRect(-12,-30,24,30);X.restore()};

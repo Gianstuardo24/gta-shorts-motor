@@ -1,0 +1,53 @@
+{
+ "id": "zozEm4f_dlw",
+ "titulo": "Astronomy Is In Crisis...And It's Incredibly Exciting",
+ "canal": "Kurzgesagt – In a Nutshell",
+ "subs": 25800000,
+ "vistas": 6318560,
+ "fecha": "20251202",
+ "dur_min": 11.3,
+ "idioma": "en",
+ "xN": 0.2,
+ "voz": {
+  "ppm": 168,
+  "ppm_primeros_30s": 178,
+  "pausas_min": 2.7
+ },
+ "imagen": {
+  "cortes_min": 5.8,
+  "plano_mediano": 6.9,
+  "plano_max": 43.7,
+  "sin_cambio": 7,
+  "cambios_locales_min": 11.6,
+  "racha_quieta_max": 3.4,
+  "en_rachas_5s": 0
+ },
+ "gancho": {
+  "cortes_30s": 2,
+  "seg_primer_corte": 13.4,
+  "sin_cambio_30s": 0,
+  "primera_frase_palabras": 9,
+  "primera_pregunta": false,
+  "primera_con_numero": false,
+  "primera_con_tu": false
+ },
+ "lenguaje": {
+  "palabras": 1861,
+  "frases": 115,
+  "frase_media": 16.2,
+  "preguntas_100f": 3.5,
+  "tu_100": 0.81,
+  "yo_100": 3.55,
+  "contracciones_100": 1.88,
+  "numeros_100": 0.91,
+  "largo_palabra": 4.64,
+  "palabras_largas": 13.2,
+  "variedad": 0.744,
+  "flesch": 60.7,
+  "registro": "neutro"
+ },
+ "sincronia": {
+  "frases_con_cambio_visual": 99,
+  "cortes_junto_a_inicio_de_frase": 68
+ }
+}

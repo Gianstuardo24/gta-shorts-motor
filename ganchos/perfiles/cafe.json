@@ -1,0 +1,40 @@
+{
+  "canal": "@ChiChibitsTV",
+  "idioma": "en",
+  "nota": "versión inicial 19-nov (criterio + datos de la semana del lanzamiento); el 📡 Radar la ajusta con evidencia · canal nuevo",
+  "audiencia": "coffee drinkers and café lovers 18-45, curious about everyday things",
+  "motivaciones": [
+    "understand something they do every day",
+    "correct a belief (identity)",
+    "share a surprising fact with a friend"
+  ],
+  "temas_prioritarios": [
+    "how coffee works (beans, roast, caffeine)",
+    "coffee history and bans",
+    "myths vs facts",
+    "why cafés do things a certain way"
+  ],
+  "temas_prohibidos": [
+    "health or medical claims",
+    "dosage/caffeine advice",
+    "brand logos or real baristas' faces"
+  ],
+  "estilo_narrativo": "'Coffee… But why?': everyday object → surprising why → simple explanation → question",
+  "duracion_objetivo_s": [
+    30,
+    45
+  ],
+  "hooks_preferidos": [
+    "'X isn't actually Y. But why?'",
+    "myth correction ('if you drink dark roast for caffeine…')",
+    "history surprise"
+  ],
+  "hooks_evitar": [
+    "recipes without a why",
+    "generic 'fun facts'"
+  ],
+  "ritmo": "warm, one idea per line, payoff on the 'why'",
+  "identidad_visual": "warm brown/cream photoreal ChatGPT images, no logos, no faces",
+  "titulos": "statement + 'But why?'",
+  "objetivo": "first 10 videos: find the format that beats channel median"
+}

@@ -1,0 +1,128 @@
+{
+  "titulo": "A King Tried to Ban Coffee ☕",
+  "texto_pantalla": "BANNED?",
+  "lote": "C2026112101",
+  "tema": "cafe",
+  "frases": [
+    "In 1675, a king tried to ban coffee.",
+    "King Charles the Second ordered every coffee house in England to close.",
+    "Why? People sat there for hours, sharing news and gossip about the government.",
+    "The ban would start on January 10th.",
+    "London got angry. Fast.",
+    "Two days before the deadline, the king backed down.",
+    "The coffee houses stayed open.",
+    "So, would you give up coffee for a king?"
+  ],
+  "frases_voz": [
+    "In sixteen seventy-five, a king tried to ban coffee.",
+    "King Charles the Second ordered every coffee house in England to close.",
+    "Why? People sat there for hours, sharing news and gossip about the government.",
+    "The ban would start on January tenth.",
+    "London got angry. Fast.",
+    "Two days before the deadline, the king backed down.",
+    "The coffee houses stayed open.",
+    "So, would you give up coffee for a king?"
+  ],
+  "fuentes": [
+    "https://www.taylorfrancis.com/chapters/mono/10.4324/9781315094618-6/",
+    "https://rpsl.org.uk/rpsl/StandingDisplays/SD2016-01_Ian_Marshall_London_Coffee_Houses/files/basic-html/page7.html",
+    "https://www.ancientpages.com/2018/06/18/king-charles-ii-of-england-banned-coffeehouses-in-1675",
+    "https://exhibits.lafayette.edu/s/mate/item/34276"
+  ],
+  "escena": {
+    "momentos": [
+      [
+        "ban",
+        1,
+        "^close"
+      ],
+      [
+        "s_casa",
+        2,
+        null
+      ],
+      [
+        "s_cal",
+        3,
+        null
+      ],
+      [
+        "enojo",
+        4,
+        "^angry"
+      ],
+      [
+        "s_atras",
+        5,
+        null
+      ],
+      [
+        "atras",
+        5,
+        "^backed|^down$"
+      ],
+      [
+        "abierto",
+        6,
+        "^open"
+      ],
+      [
+        "s_fin",
+        7,
+        null
+      ]
+    ],
+    "escenas": [
+      {
+        "tipo": "rey",
+        "desde": "0",
+        "lineas": [
+          "BY THE KING",
+          "A PROCLAMATION",
+          "for the Suppression",
+          "of Coffee-Houses",
+          "1675"
+        ],
+        "k": "ban",
+        "sello": "BANNED"
+      },
+      {
+        "tipo": "casa",
+        "desde": "s_casa",
+        "letrero": "COFFEE HOUSE"
+      },
+      {
+        "tipo": "calendario",
+        "desde": "s_cal",
+        "mes1": "JAN",
+        "dia1": "10",
+        "etq1": "BAN STARTS",
+        "mes2": "JAN",
+        "dia2": "8",
+        "etq2": "KING BACKS DOWN",
+        "k": "atras",
+        "ke": "enojo"
+      },
+      {
+        "tipo": "casa",
+        "desde": "abierto",
+        "letrero": "COFFEE HOUSE",
+        "abierto": "STILL OPEN",
+        "k2": "abierto"
+      },
+      {
+        "tipo": "cierre",
+        "desde": "s_fin"
+      }
+    ],
+    "cierre": "COFFEE OR KING?",
+    "cierre2": "Would you give it up? Comment",
+    "paises": [
+      "COFFEE",
+      "KING"
+    ],
+    "sfx": []
+  },
+  "nota_datos": "Carlos II de Inglaterra: proclama del 29-dic-1675 para cerrar los coffee houses desde el 10-ene-1676; molestia general; el 8-ene-1676 dio marcha atrás (proclama adicional que posterga y nunca se aplicó).",
+  "marca": "COFFEE, BUT WHY?"
+}

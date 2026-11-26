@@ -1,0 +1,165 @@
+{
+  "titulo": "10,000 Bitcoin for 2 Pizzas. Worth It? 🍕",
+  "texto_pantalla": "WORTH IT?",
+  "lote": "M2026112101",
+  "tema": "mdm",
+  "marca": "MILLION DOLLAR MISTAKE",
+  "nota_datos": "22-may-2010: Laszlo Hanyecz pagó 10.000 BTC por 2 pizzas (~US$41 entonces; Fortune, Decrypt, Gulf News). BTC el 20-nov-2026 ~US$59-61 mil (Fortune 61.321 a las 7:15 ET; Fool/Yahoo 'just under 60,000') -> ~US$600 M. Máximo ~US$126 mil (oct-2025; Fool, Binance) -> ~US$1.260 M. Él dice no arrepentirse (Decrypt). Primera compra real con bitcoin (Nasdaq/Bitcoin Magazine, Quartz).",
+  "frases": [
+    "In 2010, a man paid 10,000 bitcoins for two pizzas.",
+    "Back then, those coins were worth about 41 dollars.",
+    "How much would they be worth today?",
+    "At around 60,000 dollars per bitcoin, about 600 million dollars.",
+    "And at Bitcoin's peak, last year? About 1.26 billion.",
+    "Still, he says he has no regrets. It was the first time bitcoin bought something real.",
+    "Lesson: you never know what something will be worth. Would you have spent them?"
+  ],
+  "frases_voz": [
+    "In twenty ten, a man paid ten thousand bitcoins for two pizzas.",
+    "Back then, those coins were worth about forty-one dollars.",
+    "How much would they be worth today?",
+    "At around sixty thousand dollars per bitcoin, about six hundred million dollars.",
+    "And at Bitcoin's peak, last year? About one point two six billion.",
+    "Still, he says he has no regrets. It was the first time bitcoin bought something real.",
+    "Lesson. You never know what something will be worth. Would you have spent them?"
+  ],
+  "fuentes": [
+    "https://fortune.com/article/pizza-bitcoin-day-story-laszlo-hanyecz-papa-johns-pizzas-value/",
+    "https://gulfnews.com/amp/story/your-money%2Fcryptocurrency%2Fthe-10000-bitcoin-pizza-purchase-remembered-1.2032051",
+    "https://decrypt.co/29815/bitcoin-pizza-day-2020-how-two-papa-johns-pies-became-famous",
+    "https://fortune.com/article/price-of-bitcoin-11-20-2026/",
+    "https://www.fool.com/investing/2026/11/20/bitcoin-fell-more-than-20-in-november-history-says-this-happens-next/",
+    "https://www.binance.com/price/bitcoin"
+  ],
+  "escena": {
+    "momentos": [
+      [
+        "s_41",
+        1,
+        null
+      ],
+      [
+        "d41",
+        1,
+        "^41|^forty"
+      ],
+      [
+        "s_hoy",
+        2,
+        null
+      ],
+      [
+        "hoy",
+        3,
+        "^600|^six$|^hundred"
+      ],
+      [
+        "s_rank",
+        4,
+        null
+      ],
+      [
+        "pico",
+        4,
+        "^1"
+      ],
+      [
+        "s_no",
+        5,
+        null
+      ],
+      [
+        "s_fin",
+        6,
+        null
+      ]
+    ],
+    "escenas": [
+      {
+        "tipo": "trueque",
+        "desde": "0",
+        "izq": "10,000 BTC",
+        "der": "2 PIZZAS",
+        "chip": "MAY 22, 2010"
+      },
+      {
+        "tipo": "contador",
+        "desde": "s_41",
+        "k": "d41",
+        "n": 41,
+        "pre": "$",
+        "suf": "",
+        "titulo": "THEN (2010)",
+        "color": "verde"
+      },
+      {
+        "tipo": "contador",
+        "desde": "s_hoy",
+        "k": "hoy",
+        "n": 600,
+        "pre": "$",
+        "suf": " MILLION",
+        "titulo": "TODAY",
+        "sub": "at ~$60,000 per bitcoin",
+        "color": "verde"
+      },
+      {
+        "tipo": "ranking",
+        "desde": "s_rank",
+        "titulo": "10,000 BTC · US DOLLARS",
+        "filas": [
+          {
+            "p": "2010",
+            "v": "$41",
+            "n": 1,
+            "k": "s_rank",
+            "c": "cian"
+          },
+          {
+            "p": "TODAY",
+            "v": "$600M",
+            "n": 600,
+            "k": "s_rank",
+            "c": "verde"
+          },
+          {
+            "p": "PEAK (OCT 2025)",
+            "v": "$1.26B",
+            "n": 1260,
+            "k": "pico",
+            "c": "amar",
+            "top": "MAX"
+          }
+        ]
+      },
+      {
+        "tipo": "aviso",
+        "desde": "s_no",
+        "texto": "NO REGRETS",
+        "color": "verde",
+        "sub": "First real purchase with bitcoin",
+        "fondo": "Laszlo Hanyecz, 2010"
+      },
+      {
+        "tipo": "cierre",
+        "desde": "s_fin"
+      }
+    ],
+    "cierre": "SPEND OR HOLD?",
+    "cierre2": "Would you have spent them? Comment",
+    "paises": [
+      "SPEND",
+      "HOLD"
+    ],
+    "sfx": [
+      {
+        "f": "extra/ESM_SPG_fx_action_transaction_cash_register_ding_02.wav",
+        "k": "hoy",
+        "off": 0.0,
+        "dur": 0.9,
+        "g": 0.12
+      }
+    ]
+  },
+  "acento": "#5effa1"
+}

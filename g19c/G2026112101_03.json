@@ -1,0 +1,866 @@
+{
+ "titulo": "¿GTA 6 ya recuperó lo que costó? 💸",
+ "texto_pantalla": "¿YA LO RECUPERÓ?",
+ "lote": "G2026112101",
+ "tema": "",
+ "frases": [
+  "¿Cuánto costó hacer GTA 6? Nadie lo sabe exacto.",
+  "Rockstar y Take-Two nunca dieron la cifra.",
+  "Pero los analistas calculan entre 1.000 y 1.500 millones de dólares.",
+  "Sería el juego más caro de la historia.",
+  "¿Y ya lo recuperó?",
+  "Según Sensor Tower, entre reservas y el primer día vendió unos 2.360 millones.",
+  "O sea, en ventas ya lo superó.",
+  "Ojo: eso no es ganancia. Las tiendas se quedan una parte, y falta el marketing.",
+  "¿Crees que valió la pena?",
+  "Sigue el canal para más números de GTA 6."
+ ],
+ "frases_voz": [
+  "¿Cuánto costó hacer GTA 6? Nadie lo sabe exacto.",
+  "Rockstar y Take-Two nunca dieron la cifra.",
+  "Pero los analistas calculan entre mil y mil quinientos millones de dólares.",
+  "Sería el juego más caro de la historia.",
+  "¿Y ya lo recuperó?",
+  "Según Sensor Tower, entre reservas y el primer día vendió unos dos mil trescientos sesenta millones.",
+  "O sea, en ventas ya lo superó.",
+  "Ojo. Eso no es ganancia. Las tiendas se quedan una parte, y falta el marketing.",
+  "¿Crees que valió la pena?",
+  "Sigue el canal para más números de GTA seis."
+ ],
+ "fuentes": [
+  "https://www.gosugamers.net/entertainment/news/78390-gta-6-estimated-to-cost-over-us-1-billion-set-to-become-the-most-expensive-game-ever-made",
+  "https://gamingbolt.com/grand-theft-auto-6-was-expensive-says-take-two-ceo-as-analysts-estimate-up-to-1-5-billion-cost",
+  "https://www.gfinityesports.com/article/gta-6-how-much-did-it-cost-to-make",
+  "https://gameluster.com/did-gta-6-really-cost-2-billion-to-make-what-the-e/",
+  "https://www.lbc.co.uk/article/gta-6-breaks-records-as-estimated-sales-top-23bn-5HjdnKw_2/",
+  "https://www.memesita.com/gta-6-sets-record-with-estimated-2-36-billion-in-sales-sensor-tower-says/"
+ ],
+ "nota_datos": "Costo: estimación de analistas (Business Insider vía IGN) US$1.000-1.500 M; hay cifras de 2.000-3.000 M sin respaldo sólido. Ventas: Sensor Tower, terceros, incluye reservas. Ventas brutas, no ganancia.",
+ "escena": {
+  "momentos": [
+   [
+    "cuanto",
+    0,
+    "^cost"
+   ],
+   [
+    "s_rock",
+    1,
+    null
+   ],
+   [
+    "cifra",
+    1,
+    "^cifra"
+   ],
+   [
+    "s_anal",
+    2,
+    null
+   ],
+   [
+    "costo",
+    2,
+    "^1000|^mil$|^1\\.000"
+   ],
+   [
+    "s_record",
+    3,
+    null
+   ],
+   [
+    "s_meta",
+    4,
+    null
+   ],
+   [
+    "ventas",
+    5,
+    "^2360|^dos$|^2\\.360"
+   ],
+   [
+    "supero",
+    6,
+    "^super"
+   ],
+   [
+    "s_ojo",
+    7,
+    null
+   ],
+   [
+    "ganancia",
+    7,
+    "^ganancia"
+   ],
+   [
+    "tiendas",
+    7,
+    "^tiendas"
+   ],
+   [
+    "marketing",
+    7,
+    "^marketing"
+   ],
+   [
+    "s_fin",
+    8,
+    null
+   ],
+   [
+    "s_cta",
+    9,
+    null
+   ],
+   [
+    "sensor",
+    5,
+    "^sensor"
+   ]
+  ],
+  "escenas": [
+   {
+    "tipo": "pelicula",
+    "desde": "0",
+    "escala": 1.1,
+    "chipY": 880,
+    "zonas": [
+     {
+      "x0": -300,
+      "x1": 1300,
+      "set": "estudio"
+     },
+     {
+      "x0": 1300,
+      "x1": 2600,
+      "set": "oficina",
+      "k": "s_anal"
+     },
+     {
+      "x0": 2600,
+      "x1": 3900,
+      "set": "calle",
+      "k": "s_meta",
+      "luz": "neon",
+      "neon": [
+       "GAMES",
+       "DAY ONE"
+      ]
+     },
+     {
+      "x0": 3900,
+      "x1": 5200,
+      "set": "oficina",
+      "k": "s_ojo",
+      "luz": "tenue"
+     }
+    ],
+    "pan": [
+     {
+      "k": "s_anal",
+      "x": 1300
+     },
+     {
+      "k": "s_meta",
+      "x": 2600
+     },
+     {
+      "k": "s_ojo",
+      "x": 3900
+     }
+    ],
+    "props": [
+     {
+      "tipo": "pc",
+      "x": 640,
+      "y": 1650,
+      "s": 1.0,
+      "k": 0.2,
+      "texto": "VICE CITY"
+     },
+     {
+      "tipo": "pc",
+      "x": 1000,
+      "y": 1650,
+      "s": 1.0,
+      "k": 0.4
+     },
+     {
+      "tipo": "documento",
+      "x": 430,
+      "y": 1320,
+      "s": 1.1,
+      "sello": "CONFIDENCIAL",
+      "k": "cifra",
+      "cae": true,
+      "z": 1800
+     },
+     {
+      "tipo": "grafico",
+      "x": 1980,
+      "y": 1420,
+      "s": 1.3,
+      "k": "s_anal"
+     },
+     {
+      "tipo": "bolsa_dinero",
+      "x": 2150,
+      "y": 1690,
+      "s": 1.2,
+      "k": "s_record",
+      "cae": true
+     },
+     {
+      "tipo": "bolsa_dinero",
+      "x": 2300,
+      "y": 1690,
+      "s": 1.2,
+      "k": 10.4,
+      "cae": true
+     },
+     {
+      "tipo": "bolsa_dinero",
+      "x": 2225,
+      "y": 1580,
+      "s": 1.2,
+      "k": 10.7,
+      "cae": true
+     },
+     {
+      "tipo": "corona",
+      "x": 2225,
+      "y": 1430,
+      "s": 1.2,
+      "k": 11.0,
+      "cae": true
+     },
+     {
+      "tipo": "puerta",
+      "x": 3800,
+      "y": 1700,
+      "s": 1.0,
+      "k": "s_meta"
+     },
+     {
+      "tipo": "billetes",
+      "x": 4450,
+      "y": 1640,
+      "s": 1.5,
+      "k": "s_ojo",
+      "mov": [
+       {
+        "k": "s_ojo",
+        "x": 4450,
+        "y": 1640
+       },
+       {
+        "k": "tiendas",
+        "x": 4450,
+        "y": 1640
+       },
+       {
+        "k": 23.0,
+        "x": 4180,
+        "y": 1520
+       }
+      ]
+     },
+     {
+      "tipo": "billetes",
+      "x": 4600,
+      "y": 1650,
+      "s": 1.5,
+      "k": "s_ojo",
+      "mov": [
+       {
+        "k": "s_ojo",
+        "x": 4600,
+        "y": 1650
+       },
+       {
+        "k": "marketing",
+        "x": 4600,
+        "y": 1650
+       },
+       {
+        "k": 25.1,
+        "x": 4880,
+        "y": 1520
+       }
+      ]
+     },
+     {
+      "tipo": "billetes",
+      "x": 4525,
+      "y": 1600,
+      "s": 1.5,
+      "k": 21.0
+     }
+    ],
+    "actores": [
+     {
+      "look": "gamer",
+      "var": 101,
+      "s": 0.95,
+      "hasta": "s_anal",
+      "keys": [
+       {
+        "k": 0,
+        "x": 600,
+        "y": 1710,
+        "pose": "juega",
+        "cara": "neutral"
+       },
+       {
+        "k": "cuanto",
+        "x": 600,
+        "y": 1710,
+        "pose": "juega",
+        "cara": "sorpresa"
+       }
+      ]
+     },
+     {
+      "look": "jugadora",
+      "var": 102,
+      "s": 0.95,
+      "hasta": "s_anal",
+      "keys": [
+       {
+        "k": 0,
+        "x": 960,
+        "y": 1710,
+        "pose": "juega",
+        "cara": "feliz"
+       }
+      ]
+     },
+     {
+      "look": "ejecutivo",
+      "var": 103,
+      "s": 1.0,
+      "desde": "s_rock",
+      "hasta": "s_anal",
+      "keys": [
+       {
+        "k": "s_rock",
+        "x": -80,
+        "y": 1690,
+        "pose": "parado",
+        "a": [
+         230,
+         1690
+        ],
+        "dur": 0.8
+       },
+       {
+        "k": 4.6,
+        "x": 230,
+        "y": 1690,
+        "pose": "cruzado",
+        "cara": "neutral"
+       },
+       {
+        "k": "cifra",
+        "x": 230,
+        "y": 1690,
+        "pose": "cruzado",
+        "cara": "enojado",
+        "fx": "tiembla"
+       }
+      ]
+     },
+     {
+      "look": "cliente",
+      "var": 104,
+      "s": 1.0,
+      "lentes": true,
+      "desde": "s_anal",
+      "hasta": "s_meta",
+      "keys": [
+       {
+        "k": "s_anal",
+        "x": 1560,
+        "y": 1690,
+        "pose": "apunta",
+        "cara": "neutral"
+       },
+       {
+        "k": "costo",
+        "x": 1560,
+        "y": 1690,
+        "pose": "apunta",
+        "cara": "sorpresa",
+        "fx": "salto"
+       },
+       {
+        "k": "s_record",
+        "x": 1560,
+        "y": 1690,
+        "pose": "arriba",
+        "cara": "sorpresa"
+       }
+      ]
+     },
+     {
+      "look": "jugador",
+      "var": 120,
+      "s": 0.95,
+      "desde": "s_meta",
+      "hasta": "s_ojo",
+      "keys": [
+       {
+        "k": "s_meta",
+        "x": 2630,
+        "y": 1700,
+        "pose": "parado",
+        "a": [
+         2880,
+         1700
+        ],
+        "dur": 0.9
+       },
+       {
+        "k": "sensor",
+        "x": 2880,
+        "y": 1700,
+        "pose": "parado",
+        "cara": "neutral"
+       },
+       {
+        "k": "ventas",
+        "x": 2880,
+        "y": 1700,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "brinca"
+       }
+      ]
+     },
+     {
+      "look": "jugadora",
+      "var": 121,
+      "s": 0.95,
+      "desde": "s_meta",
+      "hasta": "s_ojo",
+      "keys": [
+       {
+        "k": "s_meta",
+        "x": 2810,
+        "y": 1700,
+        "pose": "parado",
+        "a": [
+         3060,
+         1700
+        ],
+        "dur": 0.9
+       },
+       {
+        "k": "sensor",
+        "x": 3060,
+        "y": 1700,
+        "pose": "parado",
+        "cara": "neutral"
+       },
+       {
+        "k": "ventas",
+        "x": 3060,
+        "y": 1700,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "brinca"
+       }
+      ]
+     },
+     {
+      "look": "gamer",
+      "var": 122,
+      "s": 0.95,
+      "desde": "s_meta",
+      "hasta": "s_ojo",
+      "keys": [
+       {
+        "k": "s_meta",
+        "x": 2990,
+        "y": 1700,
+        "pose": "parado",
+        "a": [
+         3240,
+         1700
+        ],
+        "dur": 0.9
+       },
+       {
+        "k": "sensor",
+        "x": 3240,
+        "y": 1700,
+        "pose": "parado",
+        "cara": "neutral"
+       },
+       {
+        "k": "ventas",
+        "x": 3240,
+        "y": 1700,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "brinca"
+       }
+      ]
+     },
+     {
+      "look": "cliente",
+      "var": 123,
+      "s": 0.95,
+      "desde": "s_meta",
+      "hasta": "s_ojo",
+      "keys": [
+       {
+        "k": "s_meta",
+        "x": 3170,
+        "y": 1700,
+        "pose": "parado",
+        "a": [
+         3420,
+         1700
+        ],
+        "dur": 0.9
+       },
+       {
+        "k": "sensor",
+        "x": 3420,
+        "y": 1700,
+        "pose": "parado",
+        "cara": "neutral"
+       },
+       {
+        "k": "ventas",
+        "x": 3420,
+        "y": 1700,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "brinca"
+       }
+      ]
+     },
+     {
+      "look": "vendedor",
+      "var": 124,
+      "s": 0.95,
+      "desde": "s_meta",
+      "hasta": "s_ojo",
+      "keys": [
+       {
+        "k": "s_meta",
+        "x": 3350,
+        "y": 1700,
+        "pose": "parado",
+        "a": [
+         3600,
+         1700
+        ],
+        "dur": 0.9
+       },
+       {
+        "k": "sensor",
+        "x": 3600,
+        "y": 1700,
+        "pose": "parado",
+        "cara": "neutral"
+       },
+       {
+        "k": "ventas",
+        "x": 3600,
+        "y": 1700,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "brinca"
+       }
+      ]
+     },
+     {
+      "look": "jugador",
+      "var": 130,
+      "s": 1.0,
+      "desde": "s_ojo",
+      "keys": [
+       {
+        "k": "s_ojo",
+        "x": 4520,
+        "y": 1730,
+        "pose": "parado",
+        "cara": "feliz"
+       },
+       {
+        "k": "ganancia",
+        "x": 4520,
+        "y": 1730,
+        "pose": "piensa",
+        "cara": "triste"
+       },
+       {
+        "k": "marketing",
+        "x": 4520,
+        "y": 1730,
+        "pose": "cruzado",
+        "cara": "triste"
+       }
+      ]
+     },
+     {
+      "look": "vendedor",
+      "var": 131,
+      "s": 1.0,
+      "desde": "s_ojo",
+      "keys": [
+       {
+        "k": "s_ojo",
+        "x": 4130,
+        "y": 1700,
+        "pose": "parado",
+        "cara": "neutral"
+       },
+       {
+        "k": "tiendas",
+        "x": 4130,
+        "y": 1700,
+        "pose": "sostiene",
+        "cara": "risa"
+       }
+      ]
+     },
+     {
+      "look": "ejecutivo",
+      "var": 132,
+      "s": 1.0,
+      "desde": "s_ojo",
+      "keys": [
+       {
+        "k": "s_ojo",
+        "x": 4930,
+        "y": 1700,
+        "pose": "parado",
+        "cara": "neutral",
+        "dir": -1
+       },
+       {
+        "k": "marketing",
+        "x": 4930,
+        "y": 1700,
+        "pose": "sostiene",
+        "cara": "risa",
+        "dir": -1
+       }
+      ]
+     }
+    ],
+    "burbujas": [
+     {
+      "k": "tiendas",
+      "de": 10,
+      "texto": "MI PARTE",
+      "fin": "marketing"
+     },
+     {
+      "k": "marketing",
+      "de": 11,
+      "texto": "PUBLICIDAD",
+      "fin": "s_fin"
+     }
+    ],
+    "numeros": [
+     {
+      "k": "costo",
+      "n": 1000,
+      "pre": "US$",
+      "suf": " M",
+      "loc": "es-CL",
+      "x": 540,
+      "y": 760,
+      "c": "amar",
+      "etq": "ANALISTAS: DESDE",
+      "fin": 8.3
+     },
+     {
+      "k": 8.35,
+      "n": 1500,
+      "pre": "US$",
+      "suf": " M",
+      "loc": "es-CL",
+      "x": 540,
+      "y": 760,
+      "c": "rojo",
+      "etq": "HASTA",
+      "fin": "s_record"
+     },
+     {
+      "k": "ventas",
+      "n": 2360,
+      "pre": "US$",
+      "suf": " M",
+      "loc": "es-CL",
+      "x": 540,
+      "y": 760,
+      "c": "verde",
+      "etq": "RESERVAS + DÍA 1",
+      "fin": "supero"
+     }
+    ],
+    "zoom": [
+     {
+      "k": 0.1,
+      "s": 1.05
+     },
+     {
+      "k": "s_rock",
+      "s": 1.2,
+      "x": 300,
+      "y": 1450
+     },
+     {
+      "k": "s_anal",
+      "s": 1.0
+     },
+     {
+      "k": "s_record",
+      "s": 1.15,
+      "x": 2200,
+      "y": 1480
+     },
+     {
+      "k": "s_meta",
+      "s": 1.0
+     },
+     {
+      "k": "ventas",
+      "s": 1.08,
+      "x": 3250,
+      "y": 1500
+     },
+     {
+      "k": "s_ojo",
+      "s": 1.0
+     },
+     {
+      "k": "tiendas",
+      "s": 1.12,
+      "x": 4350,
+      "y": 1480
+     },
+     {
+      "k": "marketing",
+      "s": 1.12,
+      "x": 4700,
+      "y": 1480
+     }
+    ],
+    "sacudidas": [
+     {
+      "k": "s_record",
+      "f": 12
+     },
+     {
+      "k": "ventas",
+      "f": 14
+     }
+    ],
+    "titulos": [
+     {
+      "k": 0.3,
+      "texto": "¿CUÁNTO COSTÓ GTA 6?",
+      "c": "rosa",
+      "grande": true,
+      "fin": "s_rock"
+     },
+     {
+      "k": "s_rock",
+      "texto": "ROCKSTAR · TAKE-TWO",
+      "c": "amar",
+      "fin": "s_anal"
+     },
+     {
+      "k": "s_anal",
+      "texto": "LOS ANALISTAS",
+      "c": "cian",
+      "fin": "s_record"
+     },
+     {
+      "k": "s_record",
+      "texto": "EL MÁS CARO",
+      "c": "amar",
+      "grande": true,
+      "fin": "s_meta"
+     },
+     {
+      "k": "s_meta",
+      "texto": "¿YA LO RECUPERÓ?",
+      "c": "amar",
+      "grande": true,
+      "fin": "sensor"
+     },
+     {
+      "k": "supero",
+      "texto": "YA LO SUPERÓ",
+      "c": "verde",
+      "grande": true,
+      "fin": "s_ojo"
+     },
+     {
+      "k": "s_ojo",
+      "texto": "OJO",
+      "c": "rojo"
+     }
+    ],
+    "chips": [
+     {
+      "k": "cifra",
+      "texto": "NUNCA DIERON LA CIFRA",
+      "c": "rojo",
+      "fin": "s_anal"
+     },
+     {
+      "k": "s_record",
+      "texto": "EL JUEGO MÁS CARO DE LA HISTORIA",
+      "c": "amar",
+      "y": 1000,
+      "fin": "s_meta"
+     },
+     {
+      "k": "sensor",
+      "texto": "SEGÚN SENSOR TOWER",
+      "c": "cian",
+      "y": 1000,
+      "fin": "supero"
+     },
+     {
+      "k": "ganancia",
+      "texto": "NO ES GANANCIA",
+      "c": "rojo"
+     }
+    ]
+   },
+   {
+    "tipo": "cierre",
+    "desde": "s_fin"
+   }
+  ],
+  "cierre": "¿VALIÓ LA PENA?",
+  "cierre2": "Comenta: sí o no",
+  "paises": [
+   "SÍ",
+   "NO",
+   "AÚN NO"
+  ],
+  "sfx": [
+   {
+    "f": "extra/CarEngineRev_BW.52086.wav",
+    "k": "0",
+    "off": 0.0,
+    "dur": 1.4,
+    "fade": 0.5,
+    "g": 0.14
+   }
+  ],
+  "cta": "SIGUE EL CANAL"
+ }
+}

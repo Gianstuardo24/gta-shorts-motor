@@ -1,0 +1,15 @@
+ok /home/claude/d24/wk1/K2026112501.json dur 27.29
+T: throw=0.34 need=2.40 s_1=3.29 shelter=7.42 s_2=8.12 half=8.12 nothing=10.86 s_3=11.58 less=12.58 s_4=14.34 without=15.55 s_5=16.48 weeks=17.34 s_6=18.44 give=20.01 s_fin=21.45 s_cta=24.10 fin=27.29
+  {"a": 0, "b": 1.502, "t": "Don't throw away that box.", "k": ["Don't"], "w": [0.056, 0.339, 0.676, 0.959, 1.242]}
+  {"a": 1.502, "b": 3.236, "t": "Your cat might need it.", "k": ["might"], "w": [1.552, 1.835, 2.064, 2.401, 2.684]}
+  {"a": 3.236, "b": 4.05, "t": "In 2014,", "k": ["2014,"], "w": [3.286, 3.431]}
+  {"a": 4.05, "b": 8.065999999999999, "t": "researchers in the Netherlands studied cats that had just arrived at a shelter.", "k": ["researchers"], "w": [4.1, 4.6
+  {"a": 8.065999999999999, "b": 9.854999999999999, "t": "Half of them got a box to hide in.", "k": ["Half"], "w": [8.116, 8.365, 8.519, 8.768, 8.97, 9.075, 9.277,
+  {"a": 9.854999999999999, "b": 11.526, "t": "The other half got nothing.", "k": ["nothing."], "w": [9.905, 10.107, 10.404, 10.653, 10.855]}
+  {"a": 11.526, "b": 14.286, "t": "The cats with a box were less stressed in their first days.", "k": ["stressed"], "w": [11.576, 11.737, 11.937, 12.136, 12.221, 
+  {"a": 14.286, "b": 16.426, "t": "Now the part about the cats without one.", "k": ["without"], "w": [14.336, 14.511, 14.686, 14.902, 15.16, 15.335, 15.551, 15.89
+  {"a": 16.426, "b": 18.386, "t": "They took about two weeks to catch up.", "k": ["about"], "w": [16.476, 16.692, 16.907, 17.164, 17.338, 17.595, 17.728, 17.985]}
+  {"a": 18.386, "b": 19.958, "t": "So if your cat is new or stressed,", "k": ["stressed,"], "w": [18.436, 18.572, 18.707, 18.927, 19.105, 19.241, 19.419, 19.555]}
+  {"a": 19.958, "b": 21.396, "t": "give it a box to hide in.", "k": ["give"], "w": [20.008, 20.228, 20.364, 20.457, 20.635, 20.771, 20.991]}
+  {"a": 21.396, "b": 24.046, "t": "Tell me the weirdest place your cat has squeezed into.", "k": ["weirdest"], "w": [21.446, 21.654, 21.783, 21.951, 22.32, 22.568
+  {"a": 24.046, "b": 27.24, "t": "Follow to decode your cat.", "k": ["Follow"], "w": [24.096, 24.448, 24.605, 24.957, 25.211]}

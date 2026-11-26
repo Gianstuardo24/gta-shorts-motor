@@ -1,0 +1,989 @@
+{
+ "titulo": "Pixar Was Sold for $5 Million 🎬",
+ "texto_pantalla": "$5 MILLION",
+ "lote": "M2026112102",
+ "tema": "mdm",
+ "marca": "MILLION DOLLAR MISTAKE",
+ "acento": "#5effa1",
+ "nota_datos": "Lucas vendió la división gráfica de Lucasfilm tras su divorcio de 1983; pidió ~US$30 M sin compradores (AOL/GOBankingRates). Jobs pagó US$5 M y puso US$5 M más de capital, 3-feb-1986 (Cord Cutters, CNN Money; Biography: US$10 M en total). Disney compró Pixar por ~US$7.400 M en acciones, ene/may 2006 (CNN Money, Cord Cutters). 7.400/10 = 740 veces.",
+ "frases": [
+  "In 1986, George Lucas sold a small computer team.",
+  "After his divorce he needed cash. He asked for 30 million dollars, and nobody bought it.",
+  "Then Steve Jobs paid 5 million, and put in 5 million more.",
+  "The team was called Pixar.",
+  "Twenty years later, Disney bought it for 7.4 billion dollars.",
+  "That's 740 times what Jobs put in.",
+  "Lesson: before you sell something, ask what it could become. Would you have sold it?",
+  "Follow for the next million dollar mistake."
+ ],
+ "frases_voz": [
+  "In nineteen eighty-six, George Lucas sold a small computer team.",
+  "After his divorce, he needed cash. He asked for thirty million dollars, and nobody bought it.",
+  "Then Steve Jobs paid five million, and put in five million more.",
+  "The team was called Pixar.",
+  "Twenty years later, Disney bought it for seven point four billion dollars.",
+  "That's seven hundred and forty times what Jobs put in.",
+  "Lesson. Before you sell something, ask what it could become. Would you have sold it?",
+  "Follow for the next million dollar mistake."
+ ],
+ "fuentes": [
+  "https://www.aol.com/finance/actually-pixar-not-apple-first-174307224.html",
+  "https://money.cnn.com/galleries/2009/fortune/0906/gallery.steve_jobs_career_timeline.fortune/5.html",
+  "https://cordcuttersnews.com/40-years-ago-today-pixar-became-a-reality-launching-an-era-of-computer-animation-magic/",
+  "https://www.biography.com/business-leaders/steve-jobs-pixar-animation-history"
+ ],
+ "escena": {
+  "momentos": [
+   [
+    "sold",
+    0,
+    "^sold"
+   ],
+   [
+    "team",
+    0,
+    "^team"
+   ],
+   [
+    "s_cash",
+    1,
+    null
+   ],
+   [
+    "divorce",
+    1,
+    "^divorce"
+   ],
+   [
+    "m30",
+    1,
+    "^thirty|^30"
+   ],
+   [
+    "nobody",
+    1,
+    "^nobody"
+   ],
+   [
+    "s_jobs",
+    2,
+    null
+   ],
+   [
+    "m5",
+    2,
+    "^five|^5"
+   ],
+   [
+    "more",
+    2,
+    "^more"
+   ],
+   [
+    "s_pixar",
+    3,
+    null
+   ],
+   [
+    "pixar",
+    3,
+    "^pixar"
+   ],
+   [
+    "s_disney",
+    4,
+    null
+   ],
+   [
+    "disney",
+    4,
+    "^disney"
+   ],
+   [
+    "b74",
+    4,
+    "^seven|^7"
+   ],
+   [
+    "s_rank",
+    5,
+    null
+   ],
+   [
+    "s_lesson",
+    6,
+    null
+   ],
+   [
+    "s_fin",
+    6,
+    "^would"
+   ],
+   [
+    "s_cta",
+    7,
+    null
+   ]
+  ],
+  "escenas": [
+   {
+    "tipo": "pelicula",
+    "desde": "0",
+    "escala": 1.12,
+    "zonas": [
+     {
+      "x0": -300,
+      "x1": 1300,
+      "set": "estudio"
+     },
+     {
+      "x0": 1300,
+      "x1": 2600,
+      "set": "oficina",
+      "k": "s_jobs",
+      "luz": "tenue"
+     },
+     {
+      "x0": 2600,
+      "x1": 3900,
+      "set": "estudio",
+      "k": "s_pixar",
+      "luz": "neon",
+      "neon": [
+       "ANIMATION",
+       "1986"
+      ]
+     },
+     {
+      "x0": 3900,
+      "x1": 5300,
+      "set": "banco",
+      "k": "s_disney"
+     }
+    ],
+    "pan": [
+     {
+      "k": "s_jobs",
+      "x": 1300,
+      "dur": 1.0
+     },
+     {
+      "k": "s_pixar",
+      "x": 2600,
+      "dur": 1.0
+     },
+     {
+      "k": "s_disney",
+      "x": 3900,
+      "dur": 1.0
+     }
+    ],
+    "props": [
+     {
+      "tipo": "pc",
+      "x": 700,
+      "y": 1640,
+      "s": 1.0,
+      "k": 0.3
+     },
+     {
+      "tipo": "pc",
+      "x": 1060,
+      "y": 1640,
+      "s": 1.0,
+      "k": 0.5
+     },
+     {
+      "tipo": "cartel",
+      "x": 580,
+      "y": 1330,
+      "s": 1.1,
+      "texto": "FOR SALE",
+      "k": "sold",
+      "cae": true
+     },
+     {
+      "tipo": "escritorio",
+      "x": 1950,
+      "y": 1640,
+      "s": 1.2,
+      "k": "s_jobs"
+     },
+     {
+      "tipo": "bolsa_dinero",
+      "x": 1840,
+      "y": 1505,
+      "s": 1.1,
+      "k": "m5",
+      "cae": true,
+      "z": 1800
+     },
+     {
+      "tipo": "bolsa_dinero",
+      "x": 2060,
+      "y": 1505,
+      "s": 1.1,
+      "k": 13.18,
+      "cae": true,
+      "z": 1800
+     },
+     {
+      "tipo": "pc",
+      "x": 2850,
+      "y": 1640,
+      "s": 1.0,
+      "k": "s_pixar"
+     },
+     {
+      "tipo": "pc",
+      "x": 3250,
+      "y": 1640,
+      "s": 1.0,
+      "k": 15.1
+     },
+     {
+      "tipo": "pc",
+      "x": 3650,
+      "y": 1640,
+      "s": 1.0,
+      "k": 15.4
+     },
+     {
+      "tipo": "billetes",
+      "x": 4250,
+      "y": 1600,
+      "s": 1.4,
+      "k": "disney",
+      "cae": true
+     },
+     {
+      "tipo": "billetes",
+      "x": 4420,
+      "y": 1600,
+      "s": 1.4,
+      "k": 18.4,
+      "cae": true
+     },
+     {
+      "tipo": "billetes",
+      "x": 4590,
+      "y": 1600,
+      "s": 1.4,
+      "k": 18.7,
+      "cae": true
+     },
+     {
+      "tipo": "billetes",
+      "x": 4760,
+      "y": 1600,
+      "s": 1.4,
+      "k": 19.0,
+      "cae": true
+     }
+    ],
+    "actores": [
+     {
+      "look": "gamer",
+      "var": 5,
+      "pelo": "#3b2a1e",
+      "peloT": "corto",
+      "barba": "#3b2a1e",
+      "camisa": "#6d7f8c",
+      "pant": "#2b2f45",
+      "zap": "#3e2723",
+      "s": 1.0,
+      "keys": [
+       {
+        "k": 0,
+        "x": -120,
+        "y": 1680,
+        "pose": "parado",
+        "a": [
+         170,
+         1680
+        ],
+        "dur": 0.7
+       },
+       {
+        "k": "sold",
+        "x": 170,
+        "y": 1680,
+        "pose": "apunta",
+        "cara": "feliz"
+       },
+       {
+        "k": "s_cash",
+        "x": 170,
+        "y": 1680,
+        "pose": "piensa",
+        "cara": "triste"
+       },
+       {
+        "k": "m30",
+        "x": 170,
+        "y": 1680,
+        "pose": "ofrece",
+        "cara": "feliz",
+        "fx": "salto"
+       },
+       {
+        "k": "nobody",
+        "x": 170,
+        "y": 1680,
+        "pose": "cruzado",
+        "cara": "triste"
+       },
+       {
+        "k": "s_jobs",
+        "x": 170,
+        "y": 1680,
+        "pose": "parado",
+        "a": [
+         1620,
+         1680
+        ],
+        "dur": 1.0
+       },
+       {
+        "k": "m5",
+        "x": 1620,
+        "y": 1680,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "brinca"
+       },
+       {
+        "k": "s_pixar",
+        "x": 1620,
+        "y": 1680,
+        "pose": "saluda",
+        "cara": "feliz",
+        "dir": -1
+       },
+       {
+        "k": "s_lesson",
+        "x": 3950,
+        "y": 1690,
+        "pose": "parado",
+        "a": [
+         4150,
+         1690
+        ],
+        "dur": 0.8
+       },
+       {
+        "k": 26.0,
+        "x": 4150,
+        "y": 1690,
+        "pose": "piensa",
+        "cara": "sorpresa"
+       },
+       {
+        "k": 27.3,
+        "x": 4150,
+        "y": 1690,
+        "pose": "piensa",
+        "cara": "triste"
+       }
+      ]
+     },
+     {
+      "look": "gamer",
+      "var": 12,
+      "s": 0.95,
+      "keys": [
+       {
+        "k": 0,
+        "x": 640,
+        "y": 1700,
+        "pose": "juega",
+        "cara": "neutral"
+       },
+       {
+        "k": "team",
+        "x": 640,
+        "y": 1700,
+        "pose": "saluda",
+        "cara": "feliz",
+        "fx": "salto"
+       },
+       {
+        "k": 4.2,
+        "x": 640,
+        "y": 1700,
+        "pose": "juega",
+        "cara": "neutral"
+       }
+      ],
+      "hasta": "s_pixar"
+     },
+     {
+      "look": "jugadora",
+      "var": 13,
+      "s": 0.95,
+      "keys": [
+       {
+        "k": 0,
+        "x": 1010,
+        "y": 1700,
+        "pose": "juega",
+        "cara": "neutral"
+       },
+       {
+        "k": "team",
+        "x": 1010,
+        "y": 1700,
+        "pose": "saluda",
+        "cara": "feliz",
+        "fx": "salto"
+       },
+       {
+        "k": 4.4,
+        "x": 1010,
+        "y": 1700,
+        "pose": "juega",
+        "cara": "neutral"
+       }
+      ],
+      "hasta": "s_pixar"
+     },
+     {
+      "look": "ejecutivo",
+      "var": 21,
+      "s": 1.0,
+      "desde": 6.2,
+      "hasta": "s_jobs",
+      "keys": [
+       {
+        "k": 6.2,
+        "x": 1500,
+        "y": 1730,
+        "pose": "parado",
+        "dir": -1,
+        "a": [
+         820,
+         1730
+        ],
+        "dur": 0.9
+       },
+       {
+        "k": 7.2,
+        "x": 820,
+        "y": 1730,
+        "pose": "piensa",
+        "cara": "neutral",
+        "dir": -1
+       },
+       {
+        "k": "m30",
+        "x": 820,
+        "y": 1730,
+        "pose": "parado",
+        "cara": "sorpresa",
+        "dir": -1,
+        "fx": "salto"
+       },
+       {
+        "k": "nobody",
+        "x": 820,
+        "y": 1730,
+        "pose": "cruzado",
+        "cara": "enojado",
+        "dir": -1
+       },
+       {
+        "k": 9.7,
+        "x": 820,
+        "y": 1730,
+        "pose": "parado",
+        "cara": "enojado",
+        "a": [
+         1500,
+         1730
+        ],
+        "dur": 1.1
+       }
+      ]
+     },
+     {
+      "look": "ejecutivo",
+      "var": 22,
+      "s": 0.95,
+      "desde": 6.5,
+      "hasta": "s_jobs",
+      "keys": [
+       {
+        "k": 6.5,
+        "x": 1560,
+        "y": 1760,
+        "pose": "parado",
+        "dir": -1,
+        "a": [
+         1080,
+         1760
+        ],
+        "dur": 0.9
+       },
+       {
+        "k": 7.5,
+        "x": 1080,
+        "y": 1760,
+        "pose": "cruzado",
+        "cara": "neutral",
+        "dir": -1
+       },
+       {
+        "k": 9.2,
+        "x": 1080,
+        "y": 1760,
+        "pose": "parado",
+        "cara": "enojado",
+        "a": [
+         1600,
+         1760
+        ],
+        "dur": 1.0
+       }
+      ]
+     },
+     {
+      "look": "gamer",
+      "var": 6,
+      "pelo": "#2b1b14",
+      "peloT": "corto",
+      "camisa": "#141414",
+      "pant": "#3b5a8a",
+      "zap": "#e0e0e0",
+      "lentes": true,
+      "s": 1.0,
+      "desde": "s_jobs",
+      "keys": [
+       {
+        "k": "s_jobs",
+        "x": 2650,
+        "y": 1690,
+        "pose": "parado",
+        "dir": -1,
+        "a": [
+         2200,
+         1690
+        ],
+        "dur": 1.0
+       },
+       {
+        "k": "m5",
+        "x": 2200,
+        "y": 1690,
+        "pose": "ofrece",
+        "cara": "feliz",
+        "dir": -1
+       },
+       {
+        "k": "more",
+        "x": 2200,
+        "y": 1690,
+        "pose": "ofrece",
+        "cara": "risa",
+        "dir": -1,
+        "fx": "salto"
+       },
+       {
+        "k": "s_pixar",
+        "x": 2200,
+        "y": 1690,
+        "pose": "parado",
+        "a": [
+         3020,
+         1700
+        ],
+        "dur": 1.0
+       },
+       {
+        "k": 15.8,
+        "x": 3020,
+        "y": 1700,
+        "pose": "arriba",
+        "cara": "risa",
+        "fx": "brinca"
+       },
+       {
+        "k": "s_disney",
+        "x": 3020,
+        "y": 1700,
+        "pose": "parado",
+        "a": [
+         4400,
+         1700
+        ],
+        "dur": 1.0
+       },
+       {
+        "k": "b74",
+        "x": 4400,
+        "y": 1700,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "brinca"
+       },
+       {
+        "k": "s_lesson",
+        "x": 4400,
+        "y": 1700,
+        "pose": "cruzado",
+        "cara": "feliz",
+        "dir": -1
+       }
+      ]
+     },
+     {
+      "look": "cliente",
+      "var": 41,
+      "s": 0.95,
+      "desde": 15.0,
+      "hasta": "s_disney",
+      "keys": [
+       {
+        "k": 15.0,
+        "x": 3250,
+        "y": 1700,
+        "pose": "juega",
+        "cara": "feliz"
+       }
+      ]
+     },
+     {
+      "look": "jugadora",
+      "var": 42,
+      "s": 0.95,
+      "desde": 15.3,
+      "hasta": "s_disney",
+      "keys": [
+       {
+        "k": 15.3,
+        "x": 3650,
+        "y": 1700,
+        "pose": "juega",
+        "cara": "feliz"
+       }
+      ]
+     },
+     {
+      "look": "gamer",
+      "var": 43,
+      "s": 0.95,
+      "desde": 14.9,
+      "hasta": "s_disney",
+      "keys": [
+       {
+        "k": 14.9,
+        "x": 2800,
+        "y": 1700,
+        "pose": "juega",
+        "cara": "feliz"
+       }
+      ]
+     },
+     {
+      "look": "ejecutivo",
+      "var": 51,
+      "s": 1.05,
+      "desde": "s_disney",
+      "corbata": "#1565c0",
+      "keys": [
+       {
+        "k": "s_disney",
+        "x": 5350,
+        "y": 1690,
+        "pose": "parado",
+        "dir": -1,
+        "a": [
+         4780,
+         1690
+        ],
+        "dur": 1.0
+       },
+       {
+        "k": "disney",
+        "x": 4780,
+        "y": 1690,
+        "pose": "ofrece",
+        "cara": "feliz",
+        "dir": -1
+       },
+       {
+        "k": "b74",
+        "x": 4780,
+        "y": 1690,
+        "pose": "apunta",
+        "cara": "risa",
+        "dir": -1
+       }
+      ]
+     }
+    ],
+    "extras": [
+     {
+      "look": "cliente",
+      "var": 61,
+      "x0": 1300,
+      "x1": 2600,
+      "vel": 70,
+      "y": 1380,
+      "s": 0.55,
+      "luz": 0.45,
+      "desde": "s_jobs",
+      "hasta": "s_pixar"
+     },
+     {
+      "look": "vendedor",
+      "var": 62,
+      "x0": 3900,
+      "x1": 5300,
+      "vel": -60,
+      "off": 300,
+      "y": 1380,
+      "s": 0.55,
+      "luz": 0.45,
+      "desde": "s_disney"
+     }
+    ],
+    "burbujas": [
+     {
+      "k": "divorce",
+      "de": 0,
+      "texto": "NEED CASH",
+      "fin": "m30"
+     },
+     {
+      "k": "nobody",
+      "de": 3,
+      "texto": "NO THANKS",
+      "fin": 9.7
+     }
+    ],
+    "numeros": [
+     {
+      "k": "m30",
+      "n": 30000000,
+      "pre": "$",
+      "x": 540,
+      "y": 760,
+      "c": "amar",
+      "etq": "ASKING PRICE",
+      "fin": "nobody"
+     },
+     {
+      "k": "m5",
+      "n": 5,
+      "pre": "$",
+      "suf": "M",
+      "x": 540,
+      "y": 760,
+      "c": "verde",
+      "etq": "JOBS PAID",
+      "fin": 13.1
+     },
+     {
+      "k": 13.18,
+      "n": 10,
+      "pre": "$",
+      "suf": "M",
+      "x": 540,
+      "y": 760,
+      "c": "verde",
+      "etq": "TOTAL IN",
+      "fin": "s_pixar"
+     },
+     {
+      "k": "b74",
+      "n": 7400000000,
+      "pre": "$",
+      "x": 540,
+      "y": 760,
+      "c": "verde",
+      "etq": "DISNEY PAID",
+      "fin": "s_rank"
+     },
+     {
+      "k": "s_rank",
+      "n": 740,
+      "suf": "×",
+      "x": 540,
+      "y": 760,
+      "c": "amar",
+      "etq": "WHAT JOBS PUT IN",
+      "fin": "s_lesson"
+     }
+    ],
+    "zoom": [
+     {
+      "k": 0.1,
+      "s": 1.06,
+      "dur": 0.6
+     },
+     {
+      "k": "sold",
+      "s": 1.25,
+      "x": 380,
+      "y": 1450,
+      "dur": 0.4
+     },
+     {
+      "k": "s_cash",
+      "s": 1.35,
+      "x": 300,
+      "y": 1400,
+      "dur": 0.5
+     },
+     {
+      "k": "m30",
+      "s": 1.0,
+      "dur": 0.5
+     },
+     {
+      "k": "nobody",
+      "s": 1.2,
+      "x": 950,
+      "y": 1450,
+      "dur": 0.5
+     },
+     {
+      "k": "s_jobs",
+      "s": 1.0,
+      "dur": 0.5
+     },
+     {
+      "k": "m5",
+      "s": 1.18,
+      "x": 1950,
+      "y": 1500,
+      "dur": 0.5
+     },
+     {
+      "k": "s_pixar",
+      "s": 1.0,
+      "dur": 0.5
+     },
+     {
+      "k": "pixar",
+      "s": 1.1,
+      "x": 3250,
+      "y": 1450,
+      "dur": 0.8
+     },
+     {
+      "k": "s_disney",
+      "s": 1.0,
+      "dur": 0.5
+     },
+     {
+      "k": "disney",
+      "s": 1.08,
+      "x": 4500,
+      "y": 1520,
+      "dur": 0.6
+     },
+     {
+      "k": "s_rank",
+      "s": 1.0,
+      "dur": 0.5
+     },
+     {
+      "k": "s_lesson",
+      "s": 1.3,
+      "x": 4200,
+      "y": 1420,
+      "dur": 0.8
+     }
+    ],
+    "sacudidas": [
+     {
+      "k": "m5",
+      "f": 10
+     },
+     {
+      "k": 13.18,
+      "f": 10
+     },
+     {
+      "k": "b74",
+      "f": 24,
+      "dur": 0.6
+     }
+    ],
+    "titulos": [
+     {
+      "k": 0.2,
+      "texto": "1986 · LUCASFILM",
+      "c": "amar",
+      "fin": "s_jobs"
+     },
+     {
+      "k": "s_jobs",
+      "texto": "STEVE JOBS",
+      "c": "verde",
+      "fin": "s_pixar"
+     },
+     {
+      "k": "pixar",
+      "texto": "PIXAR",
+      "c": "cian",
+      "fin": "s_disney",
+      "grande": true
+     },
+     {
+      "k": "s_disney",
+      "texto": "2006 · DISNEY",
+      "c": "amar",
+      "fin": "s_lesson"
+     },
+     {
+      "k": "s_lesson",
+      "texto": "THE LESSON",
+      "c": "rosa"
+     }
+    ],
+    "chips": [
+     {
+      "k": "team",
+      "texto": "A SMALL COMPUTER TEAM",
+      "c": "cian",
+      "fin": "s_cash"
+     },
+     {
+      "k": "nobody",
+      "texto": "NOBODY BOUGHT IT",
+      "c": "rojo",
+      "fin": "s_jobs"
+     },
+     {
+      "k": "s_lesson",
+      "texto": "ASK WHAT IT COULD BECOME",
+      "c": "amar"
+     }
+    ],
+    "chipY": 880
+   },
+   {
+    "tipo": "cierre",
+    "desde": "s_fin"
+   }
+  ],
+  "cierre": "SELL OR KEEP?",
+  "cierre2": "Would you have sold it? Comment",
+  "paises": [
+   "SELL",
+   "KEEP"
+  ],
+  "sfx": [
+   {
+    "f": "extra/ESM_SPG_fx_action_transaction_cash_register_ding_02.wav",
+    "k": "b74",
+    "off": 0.0,
+    "dur": 0.9,
+    "g": 0.12
+   }
+  ],
+  "cta": "FOLLOW FOR MORE"
+ }
+}

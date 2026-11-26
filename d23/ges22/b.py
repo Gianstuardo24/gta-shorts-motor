@@ -1,0 +1,67 @@
+import sys; sys.path.insert(0,'/home/claude/d23'); from comun import *
+frases=["GTA 6 vendió 32,5 millones de copias antes de salir.",
+"Take-Two dice que es récord en todas las plataformas.",
+"Para comparar: GTA 5 vendió 11,2 millones en su primer día.",
+"O sea, casi el triple, sin que nadie lo hubiera jugado.",
+"Y salió solo en dos consolas: PlayStation 5 y Xbox Series.",
+"Comenta si tú lo reservaste.",
+"Sigue el canal para más números de GTA 6."]
+voz=["GTA seis vendió treinta y dos coma cinco millones de copias antes de salir.",
+"Téik Tu dice que es récord en todas las plataformas.",
+"Para comparar. GTA cinco vendió once coma dos millones en su primer día.",
+"O sea, casi el triple, sin que nadie lo hubiera jugado.",
+"Y salió solo en dos consolas. Pleistéishon cinco, y Equis box Series.",
+"Comenta si tú lo reservaste.",
+"Sigue el canal para más números de GTA seis."]
+M=[["k32",0,"^32"],["copias",0,"^copias"],["salir",0,"^salir"],
+["s_rec",1,None],["record",1,"^record"],["plat",1,"^plataformas"],
+["s_comp",2,None],["k11",2,"^11"],["dia2",2,"^dia"],
+["s_x3",3,None],["triple",3,"^triple"],["jugado",3,"^jugado"],
+["s_cons",4,None],["ps",4,"^playstation"],["xbox",4,"^xbox"],
+["s_fin",5,None],["s_cta",6,None]]
+P=[{"tipo":"cajita","x":560,"y":1700,"s":1.2,"color":"#ff4fa3","texto":"GTA 6","k":"k32","cae":True,"fin":"s_rec"},
+   {"tipo":"cajita","x":720,"y":1700,"s":1.2,"color":"#2be8ff","texto":"GTA 6","k":"k32+0.15","cae":True,"fin":"s_rec"},
+   {"tipo":"cajita","x":640,"y":1595,"s":1.2,"color":"#ffd23f","texto":"GTA 6","k":"k32+0.3","cae":True,"fin":"s_rec"},
+   {"tipo":"cajita","x":880,"y":1700,"s":1.2,"color":"#ff4fa3","texto":"GTA 6","k":"copias","cae":True,"fin":"s_rec"},
+   {"tipo":"cajita","x":800,"y":1595,"s":1.2,"color":"#2be8ff","texto":"GTA 6","k":"copias+0.15","cae":True,"fin":"s_rec"},
+   {"tipo":"grafico","x":2080,"y":1220,"s":1.0,"k":"record","z":1800,"fin":"s_comp"},
+   {"tipo":"sofa","x":3150,"y":1730,"s":1.2,"k":"s_comp","fin":"s_cons"},
+   {"tipo":"tv","x":3150,"y":1260,"s":1.15,"k":"s_comp","fin":"s_cons"},
+   {"tipo":"consola","x":4230,"y":1700,"s":1.9,"k":"ps","cae":True},
+   {"tipo":"cartel","x":4230,"y":1300,"s":1.1,"texto":"PS5","k":"ps","cae":True,"z":1500},
+   {"tipo":"consola","x":4670,"y":1700,"s":1.9,"k":"xbox","cae":True},
+   {"tipo":"cartel","x":4670,"y":1300,"s":1.1,"texto":"XBOX SERIES","k":"xbox","cae":True,"z":1500}]
+A=[{"look":"vendedor","var":91,"s":1.0,"hasta":"s_rec","keys":[{"k":0,"x":300,"y":1700,"pose":"ofrece","cara":"feliz","objeto":"cajita"},{"k":"k32","x":300,"y":1700,"pose":"celebra","cara":"sorpresa","fx":"salto"},{"k":"salir","x":300,"y":1700,"pose":"apunta","cara":"risa"}]},
+   {"look":"ejecutivo","var":92,"camisa":"#263238","pelo":"#3e2723","s":1.0,"desde":"s_rec","hasta":"s_comp","keys":[{"k":"s_rec","x":1650,"y":1700,"pose":"apunta","cara":"feliz"},{"k":"plat","x":1650,"y":1700,"pose":"celebra","cara":"risa","fx":"brinca"}]},
+   {"look":"jugador","var":93,"s":0.95,"desde":"s_comp","hasta":"s_cons","keys":[{"k":"s_comp","x":3150,"y":1712,"pose":"sentado","cara":"feliz","z":1810},{"k":"triple","x":3150,"y":1712,"pose":"sentado","cara":"sorpresa","fx":"tiembla","z":1810}]},
+   {"look":"jugadora","var":94,"s":0.95,"desde":"s_cons","keys":[{"k":"s_cons","x":4450,"y":1710,"pose":"juega","cara":"feliz","objeto":"control"},{"k":"xbox","x":4450,"y":1710,"pose":"celebra","cara":"risa","fx":"brinca"}]}]
+E={"momentos":M,"escenas":[{"tipo":"pelicula","desde":"0","escala":1.1,
+ "zonas":[{"x0":-300,"x1":1300,"set":"calle","luz":"neon","neon":["RESERVA","24/7"]},{"x0":1300,"x1":2600,"set":"oficina","k":"s_rec"},{"x0":2600,"x1":3900,"set":"sala","k":"s_comp","luz":"tenue"},{"x0":3900,"x1":5200,"set":"estudio","k":"s_cons"}],
+ "pan":[{"k":"s_rec","x":1300,"dur":0.9},{"k":"s_comp","x":2600,"dur":0.9},{"k":"s_cons","x":3900,"dur":0.9}],
+ "props":P,"actores":A,
+ "numeros":[{"k":"k32","n":32500000,"suf":" COPIAS","loc":"es-CL","c":"amar","etq":"ANTES DE SALIR","fin":"s_rec"},
+            {"k":"k11","n":11210000,"suf":" COPIAS","loc":"es-CL","c":"cian","etq":"GTA 5 · PRIMER DÍA","fin":"s_x3"}],
+ "zoom":[{"k":0.1,"s":1.06,"dur":0.6},{"k":"k32","s":1.15,"x":640,"y":1500,"dur":0.4},{"k":"s_rec","s":1.0,"dur":0.4},
+         {"k":"triple","s":1.12,"x":3150,"y":1500,"dur":0.3},{"k":"s_cons","s":1.0,"dur":0.4},{"k":"xbox","s":1.12,"x":4450,"y":1450,"dur":0.4}],
+ "sacudidas":[{"k":"k32","f":16},{"k":"triple","f":20}],
+ "titulos":[{"k":0.2,"texto":"PREVENTA","c":"rosa","fin":"s_rec"},
+            {"k":"s_rec","texto":"RÉCORD","c":"amar","grande":True,"fin":"s_comp"},
+            {"k":"s_comp","texto":"GTA 5 (2013)","c":"cian","fin":"s_x3"},
+            {"k":"s_x3","texto":"CASI EL TRIPLE","c":"verde","grande":True,"fin":"s_cons"},
+            {"k":"s_cons+0.4","texto":"SOLO 2 CONSOLAS","c":"rosa","fin":"s_fin"}],
+ "chips":[{"k":"plat","texto":"EN TODAS LAS PLATAFORMAS","c":"amar","fin":"s_comp"},
+          {"k":"triple+0.6","texto":"SIN QUE NADIE LO JUGARA","c":"amar","fin":"s_cons"}]},
+ {"tipo":"cierre","desde":"s_fin"}],
+ "cierre":"¿LO RESERVASTE?","cierre2":"Comenta: sí o no","paises":["SÍ","NO"],
+ "sfx":[{"f":"extra/CarEngineRev_BW.52086.wav","k":"0","off":0.0,"dur":1.3,"fade":0.5,"g":0.13},
+        {"f":"extra/ESM_SPG_fx_action_transaction_cash_register_ding_02.wav","k":"k32","off":0.0,"dur":0.9,"g":0.12}],"cta":"SIGUE EL CANAL"}
+# --- 23-nov: escenarios propios + insertos ---
+poner_sets(E,[("tiendaJuegosV",{}),("corporativoV",{"ticker":"TTWO ▲","hora":"tarde","col":"#ffd740"}),("cuartoGamerV",{"era":"2013"}),("vitrinaV",{"fondo":["#5a2a7a","#2a1040","#0a0414"],"luz2":"255,120,220"})])
+quitar_props(E,["tv"])
+e0=E["escenas"][0];e0["zoom"]=[z for z in e0["zoom"] if z["k"]!="triple"]
+insertar(E,"triple","s_cons",2600,"vitrinaV",{"fondo":["#1d1440","#0d0820","#030108"],"luz2":"200,150,255"},[{"tipo":"comparaBarras","x":540,"y":1500,"s":1.0,"coma":True,"v":[[11.2,"GTA 5","#4fc3f7"],[32.5,"GTA 6","#ff2d95"]]}])
+
+g={"titulo":"GTA 6 vendió 32,5 millones sin salir 📦","texto_pantalla":"32,5 MILLONES","lote":"G2026112301","marca":"VICEVERSO GG",
+"nota_datos":"Take-Two (comunicado 8-K SEC, 20-nov-2026): GTA VI vendió 32,5 millones de unidades antes del lanzamiento, récord en todas las plataformas. GTA V: 11,21 M unidades en sus primeras 24 horas (Guinness, vía Fox). 32,5/11,21 = 2,9 → 'casi el triple'. Plataformas: PS5 y Xbox Series X|S (Fox/NurPhoto; Sensor Tower vía 80.lv: 75% PlayStation, resto Xbox).",
+"frases":frases,"frases_voz":voz,"fuentes":["https://www.sec.gov/Archives/edgar/data/0000946581/000162828026075217/exhibit9918k.htm","https://www.fox5ny.com/news/gta-vi-pulls-estimated-1-84-billion-release-day-more-than-double-gta-vs-launch-record","https://80.lv/articles/report-gta-6-generated-nearly-usd2b-in-sales-by-launch-day"],"escena":E}
+guardar("G2026112301_src.json",g)

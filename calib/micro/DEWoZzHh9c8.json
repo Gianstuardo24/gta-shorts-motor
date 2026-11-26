@@ -1,0 +1,30 @@
+{
+ "id": "DEWoZzHh9c8",
+ "titulo": "China’s 18,000-Person Building Mystery | The Rise and Fall of Regent International",
+ "canal": "SM Createx",
+ "subs": 93900,
+ "vistas": 10178611,
+ "fecha": "20261029",
+ "dur_min": 14.0,
+ "idioma": "hi",
+ "xN": 108.4,
+ "voz": {
+  "ppm": 177,
+  "ppm_primeros_30s": 134,
+  "pausas_min": 0.8
+ },
+ "imagen": {
+  "cortes_min": 18.3,
+  "plano_mediano": 2.6,
+  "plano_max": 15.6,
+  "sin_cambio": 2,
+  "cambios_locales_min": 8.4,
+  "racha_quieta_max": 2.0,
+  "en_rachas_5s": 0
+ },
+ "gancho": {
+  "cortes_30s": 8,
+  "seg_primer_corte": 8.3,
+  "sin_cambio_30s": 4
+ }
+}

@@ -1,0 +1,2 @@
+planos: 12 en 23.7 s (uno cada 2.0 s) · tipos distintos: 7 · objeto×4, general×2, detalle×2, camina×1, medio×1, acerca×1, aleja×1
+repetidos seguidos: 0

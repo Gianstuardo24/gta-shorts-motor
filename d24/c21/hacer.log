@@ -1,0 +1,14 @@
+ok /home/claude/d24/c21/C2026112402.json dur 32.88
+T: latte0=0.24 capp0=0.76 flat0=1.77 same=3.25 s_two=4.55 milk1=5.24 foam1=8.09 s_capp=8.78 small=10.31 thick=11.33 s_latte=12.74 big=13.99 little=16.25 s_flat=17.32 between=18.46 double=19.80 silky=21.87 s_who=22.88 argue=24.11 australia=25.58 zealand=26.51 s_fin=27.33 s_cta=29.00 fin=32.88
+  {"a": 0, "b": 1.379, "t": "A latte, a cappuccino,", "k": ["cappuccino,"], "w": [0.12, 0.236, 0.642, 0.759]}
+  {"a": 1.379, "b": 4.5, "t": "and a flat white are made of the same two things.", "k": ["things."], "w": [1.429, 1.65, 1.767, 2.041, 2.368, 2.59, 2.864, 3.033, 3
+  {"a": 4.5, "b": 5.541, "t": "Espresso and milk.", "k": ["Espresso"], "w": [4.55, 5.027, 5.244]}
+  {"a": 5.541, "b": 8.729999999999999, "t": "The difference is how much milk, and how much foam.", "k": ["difference"], "w": [5.591, 5.809, 6.389, 6.555, 6.772, 7
+  {"a": 8.729999999999999, "b": 12.69, "t": "A cappuccino is usually the small one, with a thick cap of foam.", "k": ["cappuccino"], "w": [8.78, 8.896, 9.487, 9.6
+  {"a": 12.69, "b": 14.459999999999999, "t": "A latte is usually the big one:", "k": ["usually"], "w": [12.74, 12.855, 13.179, 13.346, 13.774, 13.993, 14.213]}
+  {"a": 14.459999999999999, "b": 17.27, "t": "lots of steamed milk and just a little foam.", "k": ["steamed"], "w": [14.51, 14.782, 14.949, 15.377, 15.648, 15.868
+  {"a": 17.27, "b": 19.637, "t": "A flat white sits in between: a small cup,", "k": ["between:"], "w": [17.32, 17.434, 17.702, 18.023, 18.292, 18.457, 18.958, 19.
+  {"a": 19.637, "b": 22.83, "t": "a double shot, and a very thin layer of silky milk.", "k": ["double"], "w": [19.687, 19.801, 20.173, 20.519, 20.736, 20.85, 21.1
+  {"a": 22.83, "b": 27.279999999999998, "t": "And two countries still argue over who invented it: Australia and New Zealand.", "k": ["countries"], "w": [22.88, 23
+  {"a": 27.279999999999998, "b": 28.95, "t": "Tell me which one you order.", "k": ["order."], "w": [27.33, 27.555, 27.694, 27.963, 28.144, 28.326]}
+  {"a": 28.95, "b": 32.830000000000005, "t": "Follow for one coffee curiosity a day.", "k": ["curiosity"], "w": [29.0, 29.363, 29.574, 29.786, 30.148, 30.662, 30.

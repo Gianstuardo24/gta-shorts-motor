@@ -1,0 +1,14 @@
+/home/claude/d22/c17/C2026112201_01.json /home/claude/d22/c17/vz.wav /home/claude/d22/c17/vz_palabras.json /home/claude/d22/c17/v1.mp4 deep
+/home/claude/d22/m18/M2026112201_01.json /home/claude/d22/m18/vz.wav /home/claude/d22/m18/vz_palabras.json /home/claude/d22/m18/v1.mp4 deep
+/home/claude/d22/r18/R2026112201_01.json /home/claude/d22/r18/vz.wav /home/claude/d22/r18/vz_palabras.json /home/claude/d22/r18/v1.mp4 dark
+/home/claude/d22/dog18/D2026112201_01.json /home/claude/d22/dog18/vz.wav /home/claude/d22/dog18/vz_palabras.json /home/claude/d22/dog18/v1.mp4 deep
+/home/claude/d22/es19/G2026112201_01.json /home/claude/d22/es19/vz.wav /home/claude/d22/es19/vz_palabras.json /home/claude/d22/es19/v1.mp4 deep
+/home/claude/d22/en19/G2026112202en_01.json /home/claude/d22/en19/vz.wav /home/claude/d22/en19/vz_palabras.json /home/claude/d22/en19/v1.mp4 deep
+/home/claude/d22/m21/M2026112202_01.json /home/claude/d22/m21/vz.wav /home/claude/d22/m21/vz_palabras.json /home/claude/d22/m21/v1.mp4 deep
+/home/claude/d22/c21/C2026112202_01.json /home/claude/d22/c21/vz.wav /home/claude/d22/c21/vz_palabras.json /home/claude/d22/c21/v1.mp4 deep
+/home/claude/d22/cat21/K2026112201_01.json /home/claude/d22/cat21/vz.wav /home/claude/d22/cat21/vz_palabras.json /home/claude/d22/cat21/v1.mp4 deep
+/home/claude/d22/r22/R2026112202_01.json /home/claude/d22/r22/vz.wav /home/claude/d22/r22/vz_palabras.json /home/claude/d22/r22/v1.mp4 dark
+/home/claude/d22/es22/G2026112202_01.json /home/claude/d22/es22/vz.wav /home/claude/d22/es22/vz_palabras.json /home/claude/d22/es22/v1.mp4 deep
+/home/claude/d22/r18/R2026112201_01.json /home/claude/d22/r18/vz.wav /home/claude/d22/r18/vz_palabras.json /home/claude/d22/r18/v2.mp4 dark
+/home/claude/d22/r22/R2026112202_01.json /home/claude/d22/r22/vz.wav /home/claude/d22/r22/vz_palabras.json /home/claude/d22/r22/v2.mp4 dark
+FIN

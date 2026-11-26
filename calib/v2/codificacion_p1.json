@@ -1,0 +1,188 @@
+{
+ "codigos": {
+  "1": {
+   "apunta": "Atención",
+   "duda": "",
+   "funcion": "Abrir",
+   "img_tipo": "Pintura o ilustración",
+   "saber": "No aplica"
+  },
+  "10": {
+   "apunta": "Atención",
+   "duda": "img_tipo: El objeto o lugar real",
+   "funcion": "Complicar",
+   "img_tipo": "Pintura o ilustración",
+   "saber": "Igual"
+  },
+  "11": {
+   "apunta": "Atención",
+   "duda": "funcion: Avanzar",
+   "funcion": "Abrir",
+   "img_tipo": "Texto en pantalla",
+   "saber": "Igual"
+  },
+  "12": {
+   "apunta": "Comprensión",
+   "duda": "",
+   "funcion": "Avanzar",
+   "img_tipo": "Pintura o ilustración",
+   "saber": "Igual"
+  },
+  "13": {
+   "apunta": "Comprensión",
+   "duda": "",
+   "funcion": "Avanzar",
+   "img_tipo": "Mapa o esquema",
+   "saber": "Igual"
+  },
+  "14": {
+   "apunta": "Comprensión",
+   "duda": "funcion: Reflexionar",
+   "funcion": "Girar",
+   "img_tipo": "Pintura o ilustración",
+   "saber": "Igual"
+  },
+  "15": {
+   "apunta": "Comprensión",
+   "duda": "",
+   "funcion": "Pagar",
+   "img_tipo": "El objeto o lugar real",
+   "saber": "Igual"
+  },
+  "16": {
+   "apunta": "Comprensión",
+   "duda": "",
+   "funcion": "Situar",
+   "img_tipo": "Mapa o esquema",
+   "saber": "No aplica"
+  },
+  "17": {
+   "apunta": "Comprensión",
+   "duda": "funcion: Abrir",
+   "funcion": "Avanzar",
+   "img_tipo": "Mapa o esquema",
+   "saber": "Igual"
+  },
+  "18": {
+   "apunta": "Presencia",
+   "duda": "img_tipo: Mapa o esquema",
+   "funcion": "Avanzar",
+   "img_tipo": "El objeto o lugar real",
+   "saber": "Igual"
+  },
+  "19": {
+   "apunta": "Comprensión",
+   "duda": "",
+   "funcion": "Girar",
+   "img_tipo": "Dato o gráfico",
+   "saber": "Igual"
+  },
+  "2": {
+   "apunta": "Comprensión",
+   "duda": "",
+   "funcion": "Situar",
+   "img_tipo": "Pintura o ilustración",
+   "saber": "No aplica"
+  },
+  "20": {
+   "apunta": "Emoción",
+   "duda": "funcion: Cerrar",
+   "funcion": "Pagar",
+   "img_tipo": "El objeto o lugar real",
+   "saber": "Igual"
+  },
+  "3": {
+   "apunta": "Emoción",
+   "duda": "img_tipo: Dato o gráfico",
+   "funcion": "Complicar",
+   "img_tipo": "Documento o prueba",
+   "saber": "Igual"
+  },
+  "4": {
+   "apunta": "Comprensión",
+   "duda": "funcion: Complicar",
+   "funcion": "Avanzar",
+   "img_tipo": "Pintura o ilustración",
+   "saber": "Igual"
+  },
+  "5": {
+   "apunta": "Comprensión",
+   "duda": "funcion: Pagar",
+   "funcion": "Avanzar",
+   "img_tipo": "Mapa o esquema",
+   "saber": "Igual"
+  },
+  "6": {
+   "apunta": "Comprensión",
+   "duda": "",
+   "funcion": "Girar",
+   "img_tipo": "Mapa o esquema",
+   "saber": "Público más"
+  },
+  "7": {
+   "apunta": "Comprensión",
+   "duda": "funcion: Pagar",
+   "funcion": "Avanzar",
+   "img_tipo": "Pintura o ilustración",
+   "saber": "Igual"
+  },
+  "8": {
+   "apunta": "Comprensión",
+   "duda": "funcion: Abrir",
+   "funcion": "Situar",
+   "img_tipo": "Mapa o esquema",
+   "saber": "No aplica"
+  },
+  "9": {
+   "apunta": "Comprensión",
+   "duda": "funcion: Avanzar",
+   "funcion": "Situar",
+   "img_tipo": "Mapa o esquema",
+   "saber": "Igual"
+  }
+ },
+ "pasada": 1,
+ "preguntas": [
+  {
+   "abre": "0:30",
+   "cierra": "10:38",
+   "marca_abre": "anuncia que el video explora tres megaproyectos inconclusos",
+   "marca_cierra": "la ciudad se abandona tras una derrota; es el último de los tres",
+   "pregunta": "¿Cuáles son los tres proyectos y por qué quedaron sin terminar?",
+   "tipo": "explícita"
+  },
+  {
+   "abre": "2:03",
+   "cierra": "2:52",
+   "marca_abre": "César propone dos planes",
+   "marca_cierra": "lo asesinan antes de empezar",
+   "pregunta": "¿Se hizo el desvío del Tíber que propuso César?",
+   "tipo": "implícita"
+  },
+  {
+   "abre": "3:06",
+   "cierra": "3:26",
+   "marca_abre": "otra inundación inspira un plan",
+   "marca_cierra": "el Senado lo rechaza",
+   "pregunta": "¿Prosperó el plan de Tiberio de desviar afluentes?",
+   "tipo": "implícita"
+  },
+  {
+   "abre": "5:32",
+   "cierra": "7:42",
+   "marca_abre": "dice que verán su intento desastroso tras la pausa",
+   "marca_cierra": "la muerte de Nerón detiene la obra",
+   "pregunta": "¿Qué pasó con el intento de Nerón?",
+   "tipo": "explícita"
+  },
+  {
+   "abre": "9:10",
+   "cierra": "10:38",
+   "marca_abre": "la presenta como el producto más notable de la sobreextensión",
+   "marca_cierra": "se abandona poco más de una década después",
+   "pregunta": "¿Qué fue de la ciudad romana en Germania?",
+   "tipo": "implícita"
+  }
+ ],
+ "video": "qJIDOq0ezTs"
+}

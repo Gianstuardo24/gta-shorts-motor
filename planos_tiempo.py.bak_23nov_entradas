@@ -1,0 +1,618 @@
+"""Planos por tiempo real de la voz: un encuadre nuevo cada ~3-4 s, elegido segun lo que pasa en ese momento.
+Uso: python3 planos_tiempo.py guion.json datos0.json   (modifica guion.json; correr despues de recortar_insertos)
+- Corta en pausas de la voz (fin de frase > coma > entre palabras) o justo cuando aparece un objeto / un personaje cambia de accion.
+- Tipos: general, medio, primer, dos, holandes (inclinado), objeto (camara al objeto), camina (cruza y la camara lo sigue),
+  detalle (corte a manos: teclado / telefono / papeles / billetes segun las palabras dichas).
+- Plano general obligado mientras hay cifra grande, titulo grande o globo de dialogo en pantalla.
+- Mezcla cortes secos y acercamientos lentos; nunca el mismo tipo dos veces seguidas.
+- Respeta e["planos_hint"]: [{"k":clave,"tipo":"primer","var":301,"push":1}] (fuerza un plano en ese momento)."""
+import json, sys, os, re, random
+
+fj, fd = sys.argv[1:3]
+g = json.load(open(fj)); T = json.load(open(fd))["T"]
+e = g["escena"]["escenas"][0]
+PAL = json.load(open(os.path.join(os.path.dirname(os.path.abspath(fj)), "vz_palabras.json")))
+R = random.Random(11)
+ANCHO, SUELO = 2200, 1700
+FIN = PAL[-1]["f"] + 0.3
+
+
+def res(k):
+    if isinstance(k, (int, float)): return float(k)
+    if k in T: return float(T[k])
+    m = re.match(r"^(.*?)([+-]\d+(?:\.\d+)?)$", str(k))
+    if m and m.group(1) in T: return float(T[m.group(1)]) + float(m.group(2))
+    return None
+
+
+# ---------- huecos de la voz ----------
+GAPS = []
+for a, b in zip(PAL, PAL[1:]):
+    w = a["w"].rstrip('"\'')
+    GAPS.append(((a["f"] + b["i"]) / 2, 3 if w[-1:] in ".!?:" else 2 if w[-1:] in ",;" else 1))
+
+
+def snap(obj, lo, hi, eventos=()):
+    """Mejor punto de corte cerca de obj dentro de [lo,hi]: evento > fin de frase > coma > entre palabras."""
+    best, bs = None, -1e9
+    for tg, w in list(GAPS) + [(ev, 4) for ev in eventos]:
+        if lo <= tg <= hi:
+            sc = w - abs(tg - obj) * 1.1
+            if sc > bs: best, bs = tg, sc
+    return best if best is not None else obj
+
+
+# ---------- tramos en pantalla (segmentos de camara quieta) ----------
+pans = sorted([p for p in e["pan"] if res(p["k"]) is not None], key=lambda p: res(p["k"]))
+segs = []
+for i, p in enumerate(pans):
+    a = res(p["k"]); b = res(pans[i + 1]["k"]) if i + 1 < len(pans) else FIN
+    if p["x"] >= 99000: continue
+    llega = "corte" if p.get("corte") else "paneo"
+    if not p.get("corte"): a += (p.get("dur", 1.0) * 1.6) * 0.7
+    prev_ins = i > 0 and pans[i - 1]["x"] >= 99000
+    sale_ins = i + 1 < len(pans) and pans[i + 1]["x"] >= 99000
+    zset = next((z.get("set") for z in e["zonas"] if z["x0"] < p["x"] < z["x1"] and z["x0"] < 99000), None)
+    if b - a > 0.6: segs.append({"a": a, "b": b, "x": p["x"], "llega": llega, "vuelve": prev_ins, "sale": sale_ins, "set": zset})
+
+# ---------- cosas en pantalla ----------
+def iv(o, dfin=99):
+    a = res(o.get("k")); f = res(o["fin"]) if o.get("fin") is not None else None
+    return (a, f if f is not None else (a + dfin if a is not None else None))
+
+# cifras y titulos grandes: en pantalla maximo 5 s (luego la escena vuelve a variar)
+for c in e.get("numeros", []) + [t for t in e.get("titulos", []) if t.get("grande")]:
+    a0, f0 = iv(c, 5)
+    if a0 is not None and (f0 is None or f0 - a0 > 6.0): c["fin"] = round(a0 + 6.0, 2)
+DURO = []
+for n in e.get("numeros", []): DURO.append(iv(n, 4))
+for t in e.get("titulos", []):
+    if t.get("grande"): DURO.append(iv(t, 3))
+for bb in e.get("burbujas", []): DURO.append(iv(bb, 2.5))
+DURO = [d for d in DURO if d[0] is not None]
+NUMS = [iv(n, 4) for n in e.get("numeros", [])]
+NUMS = [d for d in NUMS if d[0] is not None]
+PROPS = [p for p in e.get("props", []) if p.get("x", 0) < 99000 and res(p.get("k")) is not None]
+for p in PROPS: p["_a"], p["_f"] = iv(p, 99)
+ACT = [a for a in e.get("actores", []) if a.get("keys")]
+for a in ACT:
+    for kk in a["keys"]: kk["_t"] = res(kk.get("k"))
+    a["_d"] = res(a.get("desde", 0)) or 0; a["_h"] = res(a.get("hasta")) if a.get("hasta") else FIN
+
+
+# personajes que aparecen a mitad de escena: entran caminando desde el borde mas cercano y la camara se les acerca al llegar
+ENTRADAS = []
+RE_, vistos = random.Random(5), set()
+for ac in sorted(ACT, key=lambda a_: a_["_d"]):
+    sg = next((g_ for g_ in segs if g_["a"] + 0.3 < ac["_d"] < g_["b"] - 1.8), None)
+    k0 = ac["keys"][0]
+    primera = ac.get("var") not in vistos; vistos.add(ac.get("var"))
+    if not sg or k0.get("a") or k0["_t"] is None or abs(k0["_t"] - ac["_d"]) > 0.05: continue
+    if RE_.random() > (0.65 if primera else 0.15): continue      # de vez en cuando: sobre todo cuando se presenta un personaje
+    lo_, hi_ = sg["x"] - 437, sg["x"] - 437 + 1950
+    xt = k0["x"]; izq = xt - lo_ < hi_ - xt
+    x0 = lo_ - 170 if izq else hi_ + 170; D = round(min(1.6, max(1.0, abs(xt - x0) / 700)), 2)
+    nk = {"k": round(ac["_d"], 3), "x": round(x0), "y": SUELO, "a": [xt, SUELO], "dur": D, "ease": "eio", "dir": 1 if izq else -1,
+          "pose": "parado", "cara": k0.get("cara", "feliz"), "_t": ac["_d"]}
+    k0["k"] = round(ac["_d"] + D, 3); k0["_t"] = ac["_d"] + D
+    ac["keys"].insert(0, nk)
+    ENTRADAS.append((ac["_d"], ac["_d"] + D, ac.get("var")))
+
+
+# personajes que se van a mitad de un tramo: a veces salen caminando por el borde mas cercano
+SALIDAS = []
+RS_ = random.Random(8)
+
+
+def _estado0(a, t):
+    cur = None
+    for kk in a["keys"]:
+        if kk["_t"] is not None and t >= kk["_t"]: cur = kk
+    return cur or a["keys"][0]
+
+
+for ac in ACT:
+    h = ac["_h"]
+    if h >= FIN - 0.5: continue
+    sg = next((g_ for g_ in segs if g_["a"] + 2.2 < h < g_["b"] - 0.3), None)
+    if not sg or RS_.random() > 0.55: continue
+    cur = _estado0(ac, h - 1.8); x = cur["a"][0] if cur.get("a") else cur["x"]
+    if cur.get("pose") in ("sentado", "juega") or cur.get("objeto") or cur.get("a") and (cur["_t"] or 0) + cur.get("dur", 1.2) > h - 1.8: continue
+    if any(kk["_t"] and h - 1.9 < kk["_t"] < h for kk in ac["keys"]): continue
+    lo_, hi_ = sg["x"] - 437, sg["x"] - 437 + 1950
+    izq = x - lo_ < hi_ - x; xd = lo_ - 220 if izq else hi_ + 220
+    D = round(min(1.6, max(1.0, abs(x - xd) / 700)), 2); k0 = h - D - 0.05
+    nk = {"k": round(k0, 3), "x": round(x), "y": SUELO, "a": [round(xd), SUELO], "dur": D, "ease": "eio", "dir": -1 if izq else 1,
+          "pose": "parado", "cara": cur.get("cara", "feliz"), "_t": k0}
+    pos = next((n for n, kk in enumerate(ac["keys"]) if (kk["_t"] or 0) > k0), len(ac["keys"]))
+    ac["keys"].insert(pos, nk); SALIDAS.append((k0, h, ac.get("var")))
+
+
+def estado(a, t):
+    cur = None
+    for kk in a["keys"]:
+        if kk["_t"] is not None and t >= kk["_t"]: cur = kk
+    if cur is None: cur = a["keys"][0]
+    x = cur["a"][0] if cur.get("a") else cur["x"]
+    mov = bool(cur.get("a")) and t < (cur["_t"] or 0) + cur.get("dur", 1.2)
+    return cur, x, mov
+
+
+def visibles(t, lo, hi):
+    return [a for a in ACT if a["_d"] <= t < a["_h"] and lo - 50 <= estado(a, t)[1] <= hi + 50]
+
+
+# cortes fuera del escenario: nombre -> (set, palabras que lo disparan, opciones). Manos: llevan la manga del personaje en foco
+CORTES = {   # nombre -> (set, palabras, opciones, prioridad). Mas prioridad = idea mas especifica. Cada uno se usa UNA vez.
+    "despido": ("cajaMudanzaH", ["fired", "quit", "resigned", "ousted", "pushed out", "forced out"], {}, 3),
+    "roto": ("contratoRotoH", ["apart", "collapsed", "cancelled", "canceled", "broke"], {"titulo": "AGREEMENT"}, 3),
+    "jefe": ("sillaJefeH", ["boss", "ceo", "chairman"], {"texto": "NEW CEO"}, 3),
+    "proyector": ("proyectorH", ["showed disney", "showed them", "screened", "screening", "test screening", "audience"], {}, 3),
+    "sello": ("selloH", ["rejected", "refused", "jerk", "hated", "stopped", "denied", "declined"], {"texto": "REJECTED"}, 3),
+    "guion": ("guionH", ["rewrote", "rewrite", "rewritten", "script", "writers", "story"], {}, 2),
+    "rollo": ("rolloH", ["film", "films", "movie", "movies", "feature", "full-length"], {}, 2),
+    "lupa": ("lupaH", ["attention", "noticed", "nobody", "hidden", "overlooked", "secret"], {}, 2),
+    "billetes": ("billetesH", ["cash", "money", "paid", "pay", "price", "bought", "rich"], {}, 2),
+    "papeles": ("papelesH", ["contract", "signed", "sign", "agreement", "lawyer", "divorce", "terms", "deal"], {}, 1),
+    "telefono": ("telefonoH", ["phone", "phoned", "offer", "offered", "news", "warned", "convinced"], {}, 1),
+    "teclado": ("manosTeclado", ["software", "code", "program", "programmers", "experts", "engineers", "tools"], {}, 1),
+    "claqueta": ("claquetaH", ["filmmaking", "director", "short", "scene", "hollywood", "premiere", "studio"], {}, 1),
+    "render": ("renderH", ["render", "rendering", "animated", "animation", "computer-animated", "cgi", "graphics", "effect", "effects"], {}, 1),
+    "sube": ("graficoH", ["stock", "shares", "ipo", "worth", "value", "soared", "grew", "rose", "profit", "success", "record", "smash"], {"dir": "sube"}, 1),
+    "cae": ("graficoH", ["losing", "lost", "loss", "losses", "crash", "failed", "failure", "debt", "struggled", "expensive"], {"dir": "cae"}, 1),
+    "edificio": ("edificioH", ["company", "headquarters", "office", "offices", "building", "firm"], {}, 1),
+    "dados": ("dadosH", ["bet", "risk", "gamble", "risky", "chance", "luck", "odds"], {}, 1),
+}
+MANOS = {"billetesH", "papelesH", "telefonoH", "manosTeclado"}
+ANIO = re.compile(r"^(19[5-9]\d|20[0-3]\d)s?\W*$")
+ult_corte = {}           # nombre -> ultimo tiempo usado (no repetir antes de 60 s)
+anio_prev = [None]
+
+
+SET_CORTE = {"lab80": ["render", "teclado"], "animacion": ["render", "claqueta"], "cineH": ["claqueta", "rollo"], "despacho80": ["papeles", "billetes"],
+             "reunion": ["papeles"], "casona": ["papeles"], "bolsaH": ["sube", "billetes"], "servidoresH": ["render", "teclado"],
+             "premiacionH": ["claqueta"], "medicoH": ["telefono"], "setTVH": ["claqueta", "telefono"], "restauranteH": ["telefono", "papeles"], "museoH": ["billetes", "papeles"],
+             "vitrina": ["render"]}
+
+
+N_ANIOS = [0]
+TOPP = [0]       # prioridad del mejor inserto posible en este plano (3 = idea muy especifica: va siempre)
+
+
+def cortes_set(s, setn):    # relleno por escenario: solo insertos que todavia no se usaron
+    return [(n, CORTES[n][0], dict(CORTES[n][2])) for n in SET_CORTE.get(setn, []) if n not in ult_corte]
+
+
+def cortes_posibles(s, L):
+    if L < 1.8: return []
+    ws = [w for w in PAL if s - 0.1 <= w["i"] < s + 2.8]
+    txt = " ".join(w["w"].lower() for w in ws)
+    out = []
+    for n, (st, kws, op, pr) in CORTES.items():
+        if n in ult_corte: continue          # regla: cada inserto una sola vez (los recuerdos a proposito van a mano en b.py)
+        pos = [m.start() for k in kws for m in [re.search(r"(^|\W)" + re.escape(k) + r"(\W|$)", txt)] if m]
+        if pos: out.append((n, st, dict(op), pr, min(pos)))
+    for w in ws:
+        m = ANIO.match(w["w"])
+        if m and "anio" + m.group(1) not in ult_corte and N_ANIOS[0] < 3 and s - max([v for kk, v in ult_corte.items() if kk.startswith("anio")] + [-99]) > 45:
+            y = int(m.group(1)); out.append(("anio" + m.group(1), "lineaTiempoH", {"anio": y, "desde": anio_prev[0] or y - 6}, 2, txt.find(m.group(1)))); break
+    if not out: return []
+    top = max(o[3] for o in out); out = [o for o in out if o[3] == top]; TOPP[0] = top   # la idea mas especifica gana
+    pri = min(o[4] for o in out)
+    return [o[:3] for o in out if o[4] == pri]                           # y si empatan, la que se dice primero
+
+
+def palabras(a, b):
+    return " ".join(w["w"].lower() for w in PAL if a <= w["i"] < b)
+
+
+# ---------- insertos de detalle ----------
+XI = max([z["x0"] + 100 for z in e["zonas"] if z["x0"] >= 99000] + [100000]) + 2600
+TRD = ["seco", "seco", "luz", "seco", "lineas", "seco"]
+ndet = 0
+
+
+def detalle(s, d, st, op, home):
+    global XI, ndet
+    e["zonas"].append({"x0": XI - 100, "x1": XI + ANCHO + 100, "set": st, "o": dict(op, k=round(s, 3))})
+    tr = TRD[ndet % len(TRD)]; ndet += 1
+    e["pan"].append({"k": round(s, 3), "x": XI + 437, "dur": 0.04, "corte": 1, "tr": tr})
+    e["pan"].append({"k": round(s + d, 3), "x": home, "dur": 0.04, "corte": 1, "dir": 1, "tr": "seco"})
+    mv = R.choice(["acerca", "fijo", "sube", "acerca", "baja"])
+    Z = {"acerca": [(1.0, 0.01, 1200), (1.07, d, 1250)], "fijo": [(1.0, 0.01, 1200)], "sube": [(1.07, 0.01, 1290), (1.07, d, 1220)],
+         "baja": [(1.07, 0.01, 1220), (1.07, d, 1290)]}[mv]
+    for j, (sz, du, y) in enumerate(Z):
+        NZ.append({"k": round(s + 0.02 * j, 3), "s": sz, "dur": du, "y": y})
+    XI += 2600
+
+
+def libre_arriba(S, X, Y, s, f, lo, hi):
+    """Ningun objeto alto (etiquetas, precios, carteles) puede subir hasta la franja de subtitulos: baja el centro o abre el plano."""
+    if S <= 1.0: return S, Y
+    for _ in range(6):
+        cx = max(lo + 975 / S, min(hi - 975 / S, X)); v0, v1 = cx - 975 / S, cx + 975 / S
+        tops = []
+        for p in PROPS:
+            if not (p["_a"] < f and p["_f"] > s) or not (v0 - 100 < p["x"] < v1 + 100): continue
+            al, anc = ALTO.get(p.get("tipo"), (240, "c")); py = p.get("y", SUELO); ps = p.get("s", 1)
+            tops.append(py - al * ps if anc == "b" else py - al * ps / 2)
+        if not tops: return S, Y
+        lim = min(tops) + 300 / S
+        if Y <= lim: return S, Y
+        if lim >= 1150: return S, lim
+        S = max(1.0, S - 0.12)
+    return S, Y
+
+
+ALTO = {"compu85": (660, "b"), "cartel": (340, "b"), "bolsa_dinero": (140, "b"), "cajita": (130, "b"), "trono": (430, "b"), "linterna": (320, "b"),
+        "pc": (320, "b"), "tv": (210, "c"), "documento": (300, "c"), "grafico": (210, "c"), "cheque": (130, "c"), "corona": (130, "c")}
+
+# ---------- planos nuevos (23-nov, tarde) ----------
+FUERTES = {"never", "fired", "failed", "lost", "jerk", "stopped", "divorce", "bankrupt", "worst", "billion", "billions", "million",
+           "millions", "risk", "everything", "nobody", "impossible", "biggest", "first", "smash", "losing", "all"}
+
+
+def fuerte(s, f):
+    for w in PAL:
+        if s + 0.25 <= w["i"] < min(f - 0.6, s + 1.6) and re.sub(r"[^a-z0-9.]", "", w["w"].lower()).strip(".") in FUERTES: return w["i"]
+    return None
+
+
+MARCO = {"despacho80": "puerta", "casona": "puerta", "reunion": "puerta", "restauranteH": "planta", "museoH": "planta",
+         "animacion": "planta", "lab80": "puerta", "servidoresH": "puerta", "medicoH": "puerta", "premiacionH": "planta"}
+SAC = e.setdefault("sacudidas", [])
+GESTOS = ["apunta", "explica", "ofrece", "saluda", "explica"]
+REACC = ["cruzado", "piensa"]
+cnt = {"marco": 0, "gesto": 0}
+
+
+def meter_key(ac, nk):
+    pos = next((n for n, kk in enumerate(ac["keys"]) if (kk["_t"] or 0) > nk["_t"]), len(ac["keys"]))
+    ac["keys"].insert(pos, nk)
+
+
+def gesticular(ac, cur, x, otro, s, f, reaccion):
+    """El personaje hace un gesto hacia el otro (apunta / ofrece / saluda) y vuelve a como estaba; el otro a veces reacciona."""
+    xo = estado(otro, s)[1]; dr = 1 if xo > x else -1
+    pose = GESTOS[cnt["gesto"] % len(GESTOS)]; cnt["gesto"] += 1
+    base = {kk: v for kk, v in cur.items() if kk not in ("a", "dur", "ease", "fx", "k", "_t")}
+    meter_key(ac, dict(base, k=round(s + 0.35, 3), x=round(x), y=SUELO, pose=pose, dir=dr, _t=s + 0.35))
+    meter_key(ac, dict(base, k=round(f - 0.12, 3), x=round(x), y=SUELO, _t=f - 0.12))
+    if reaccion:
+        c2, x2, _ = estado(otro, s); b2 = {kk: v for kk, v in c2.items() if kk not in ("a", "dur", "ease", "fx", "k", "_t")}
+        meter_key(otro, dict(b2, k=round(s + 0.95, 3), x=round(x2), y=SUELO, pose=REACC[cnt["gesto"] % 2], dir=-dr, _t=s + 0.95))
+        meter_key(otro, dict(b2, k=round(f - 0.1, 3), x=round(x2), y=SUELO, _t=f - 0.1))
+    return pose
+
+
+def libre(ac, s, f):
+    cur, x, mov = estado(ac, s)
+    if mov or cur.get("objeto") or cur.get("pose") in ("sentado", "juega") or cur.get("fx"): return None
+    if any(kk["_t"] and s - 0.3 < kk["_t"] < f + 0.2 for kk in ac["keys"]): return None
+    return cur, x
+
+
+# ---------- planificar ----------
+NZ, usados, hist, LOG = [], [], [], []
+hints = [dict(h, _t=res(h["k"])) for h in e.get("planos_hint", []) if res(h["k"]) is not None]
+for d0, d1, vr in ENTRADAS:
+    if any(a0 <= d1 + 1.5 and b0 >= d0 for a0, b0 in DURO): continue
+    hints += [{"k": d0, "_t": d0, "tipo": "general"}, {"k": d1, "_t": d1, "tipo": "medio", "var": vr, "push": 1}]
+hints.sort(key=lambda h: h["_t"])
+ult_det, nhol = -9, 0
+cuenta = {}
+for sg in segs:
+    a, b, camx = sg["a"], sg["b"], sg["x"]
+    lo, hi = camx - 437, camx - 437 + 1950
+    cl = lambda x, s: max(lo + 975 / s, min(hi - 975 / s, x))
+    ev = sorted({p["_a"] - 0.05 for p in PROPS if a + 1.2 < p["_a"] < b - 1.0 and lo <= p["x"] <= hi} |
+                {kk["_t"] - 0.05 for ac in ACT for kk in ac["keys"] if kk["_t"] and a + 1.2 < kk["_t"] < b - 1.0 and ac["_d"] <= kk["_t"] < ac["_h"]})
+    fijos = [h["_t"] - 0.05 for h in hints if a + 0.8 < h["_t"] < b - 1.2]
+    cortes, t = [a], a
+    while True:
+        nxt = [f for f in fijos if f > t + 0.8]
+        if nxt and nxt[0] < t + 4.6:
+            t = nxt[0]
+        else:
+            L = R.uniform(2.4, 3.4)
+            t = snap(t + L, t + 2.0, min(t + 4.2, b - 1.2), [x for x in ev if x > t + 2.0])
+        if t >= b - 1.2: break
+        cortes.append(t)
+    i = 0
+    while i < len(cortes):
+        s = cortes[i]; f = cortes[i + 1] if i + 1 < len(cortes) else b; L = f - s
+        gpar = par = tw = solo = None; amplio = False
+        vis = visibles(s + 0.1, lo, hi)
+        hint = next((h for h in hints if abs(h["_t"] - 0.05 - s) < 0.06 or (i == 0 and a - 0.2 <= h["_t"] < a + 0.85)), None)
+        duro = any(d0 < f and d1 > s for d0, d1 in DURO)
+        aparece = [p for p in PROPS if s - 0.3 <= p["_a"] < s + 1.0 and lo <= p["x"] <= hi]
+        pv = [p for p in PROPS if p["_a"] <= s + 0.2 < p["_f"] and lo <= p["x"] <= hi]
+        prev = hist[-1] if hist else None
+        # actor "activo": el que acaba de cambiar de accion (o la cambia pronto)
+        def activo():
+            best, bt = None, -1e9
+            for ac in vis:
+                for kk in ac["keys"]:
+                    if kk["_t"] is not None and kk["_t"] <= s + 1.5 and kk["_t"] > bt and kk["_t"] >= s - 3: best, bt = ac, kk["_t"]
+            return best or (vis[(len(hist) // 2) % len(vis)] if vis else None)
+        foco = activo()
+        if hint:
+            tipo = hint["tipo"]; foco = next((ac for ac in vis if ac.get("var") == hint.get("var")), foco)
+        elif duro:
+            entra = any(d0 < f and d0 + 3.0 > s for d0, d1 in NUMS) or any(d0 < f and d1 > s for d0, d1 in DURO if (d0, d1) not in NUMS)
+            TOPP[0] = 0
+            cps = [] if entra or prev == "detalle" or (f >= b - 0.01 and sg["sale"]) else cortes_posibles(s, L)
+            if cps and (R.random() < 0.75 or TOPP[0] >= 3): tipo = "detalle"
+            else:   # con cifra o titulo en pantalla: siempre abierto, pero variando la forma
+                amplio = True
+                cw = {"general": 1.0, "recorre": 1.2, "marco": 1.1, "mano": 1.0, "abre": 1.2}
+                if L <= 2.0: cw.pop("recorre", None)
+                if L < 2.4: cw.pop("abre", None)
+                if L < 2.2: cw.pop("marco", None)
+                for x in list(cw):
+                    if x in hist[-5:] and len(cw) > 1: cw.pop(x)
+                tipo = R.choices(*zip(*cw.items()))[0]
+        elif i == 0 and sg["llega"] == "paneo":
+            tipo = "general"
+        elif aparece:
+            tipo = R.choices(["objeto", "general"], [3, 1])[0]
+        else:
+            c = {"medio": 3, "primer": 2, "dos": 2, "holandes": 1.2, "camina": 2.0, "objeto": 1.6, "general": 1.0,
+                 "aleja": 1.5, "vertical": 1.3, "ojos": 1.0, "hombro": 2.4, "marco": 1.4, "mano": 1.4, "gesto": 2.6, "rapido": 2.6}
+            if len(vis) < 2 or abs(estado(vis[0], s)[1] - estado(vis[-1], s)[1]) > 1950 / 1.2 - 300: c.pop("dos", None)
+            if not vis: [c.pop(x, None) for x in ("medio", "primer", "holandes", "camina", "dos", "aleja", "vertical", "ojos", "hombro", "mano", "gesto", "rapido")]
+            if not pv: c.pop("objeto", None)
+            # sobre el hombro: otro personaje a una distancia razonable del que esta en foco
+            fB = foco if foco in vis else (vis[0] if vis else None)
+            par = None
+            if fB:
+                xB = estado(fB, s)[1]
+                cand = [o for o in vis if o is not fB and 320 < abs(estado(o, s)[1] - xB) < 1500]
+                if cand: par = (min(cand, key=lambda o: abs(estado(o, s)[1] - xB)), fB)
+            if not par: c.pop("hombro", None)
+            # gesto: alguien libre (sin otra accion en el plano) y otro personaje a quien mirar
+            gpar = None
+            for ac_ in sorted(vis, key=lambda v: v is not foco):
+                lb = libre(ac_, s, f); otros = [o for o in vis if o is not ac_]
+                if lb and otros and abs(estado(min(otros, key=lambda o: abs(estado(o, s)[1] - lb[1])), s)[1] - lb[1]) < 1500:
+                    gpar = (ac_, lb[0], lb[1], min(otros, key=lambda o: abs(estado(o, s)[1] - lb[1]))); break
+            if not gpar or L < 2.0: c.pop("gesto", None)
+            if foco in vis and L >= 2.2: solo = libre(foco, s, f)
+            tw = fuerte(s, f) if vis and L >= 1.6 else None
+            if tw is None: c.pop("rapido", None)
+            if L < 2.6: c.pop("aleja", None)
+            if L < 2.2: [c.pop(x, None) for x in ("vertical", "marco")]
+            # regla de Tao: un tipo no vuelve dentro de 5 planos, salvo que traiga una accion nueva (un gesto)
+            recientes = set(hist[-5:])
+            for x in list(c):
+                if x in recientes:
+                    if x in ("medio", "primer", "dos", "hombro", "mano") and (gpar or solo) and L >= 2.0: c[x] *= 0.3
+                    else: c.pop(x, None)
+            TOPP[0] = 0
+            cps = cortes_posibles(s, L) or (cortes_set(s, sg["set"]) if L >= 1.8 and R.random() < 0.8 else [])
+            if (i == 0 and sg["vuelve"]) or (f >= b - 0.01 and sg["sale"]) or (hist and hist[-1] == "detalle"): cps = []   # nunca inserto pegado a otro inserto
+            libres = []
+            for ac in vis:
+                cur, x, mov = estado(ac, s)
+                if mov or cur.get("objeto") or cur.get("pose") in ("sentado", "juega") or cur.get("fx"): continue
+                if any(kk["_t"] and s - 0.3 < kk["_t"] < f + 0.2 for kk in ac["keys"]): continue
+                libres.append((ac, cur, x))
+            if not libres or L < 1.8: c.pop("camina", None)
+            if prev: c.pop(prev, None)
+            if prev in ("medio", "holandes"): c.pop("holandes" if prev == "medio" else "medio", None)
+            if len(hist) > 1 and {hist[-1], hist[-2]} <= {"medio", "primer", "holandes"}:
+                for x in ("medio", "primer", "holandes"): c.pop(x, None)
+            for x in c: c[x] = c[x] / (1 + 0.04 * cuenta.get(x, 0))
+            if cps and (R.random() < 0.92 or TOPP[0] >= 3): tipo = "detalle"
+            else:
+                if not c:
+                    pool = [x for x in ("aleja", "marco", "general", "medio") if x != prev and (vis or x in ("marco", "general"))
+                            and not (x == "aleja" and L < 2.6) and not (x == "marco" and L < 2.2)] or ["general"]
+                    c = {min(pool, key=lambda x: max([n for n, hh in enumerate(hist) if hh == x] + [-1])): 1}
+                tipo = R.choices(*zip(*c.items()))[0]
+        hist.append(tipo); cuenta[tipo] = cuenta.get(tipo, 0) + 1
+        LOG.append(f"{s:7.2f}-{f:7.2f} {tipo:9s} foco={foco.get('var') if foco else None} vis={[v.get('var') for v in vis]} seg={sg['a']:.2f}")
+        ax = estado(foco, s)[1] if foco else lo + 975
+        push = (hint and hint.get("push")) or R.random() < 0.5
+        if tipo == "detalle":
+            ult_det = len(hist)
+            n, st, op = R.choice(cps); ult_corte[n] = s
+            if n.startswith("anio"): anio_prev[0] = op["anio"]; N_ANIOS[0] += 1
+            if st in MANOS: op["manga"] = (foco or (vis[0] if vis else {})).get("camisa", "#455a64")
+            d = round(min(2.8, max(1.8, L)), 2)
+            if L > d + 1.4:          # vuelve a la escena en una pausa y sigue con otro plano
+                r = snap(s + 2.3, s + 1.9, s + 2.8)
+                cortes.insert(i + 1, r); d = r - s
+            else:
+                d = L
+            detalle(s, d, st, op, camx)
+            LOG[-1] += " " + n
+            i += 1; continue
+        if tipo == "camina":
+            ac, cur, rest = R.choice(libres); dr = cur.get("dir", 1)
+            x0 = max(lo + 160, min(hi - 160, rest - dr * 400))
+            if abs(x0 - rest) >= 220:
+                D = round(min(2.7, max(1.4, L - 0.3)), 2)
+                nk = {"k": round(s, 3), "x": round(x0), "y": SUELO, "a": [rest, SUELO], "dur": D, "ease": "eio", "dir": dr,
+                      "pose": cur.get("pose", "parado"), "cara": cur.get("cara", "feliz"), "_t": s}
+                pos = next((n for n, kk in enumerate(ac["keys"]) if (kk["_t"] or 0) > s), len(ac["keys"]))
+                ac["keys"].insert(pos, nk)
+                NZ.append({"k": round(s, 3), "s": 1.3, "x": round(cl(x0 + dr * 150, 1.3)), "y": 1330, "dur": 0.01})
+                NZ.append({"k": round(s + 0.03, 3), "s": 1.3, "x": round(cl(rest + dr * 150, 1.3)), "y": 1330, "dur": D})
+                i += 1; continue
+            tipo = "medio"; hist[-1] = "medio"
+        r = 0; extra = {}
+        if tipo == "holandes":
+            nhol += 1; r = 0.045 if nhol % 2 else -0.045
+        if tipo == "recorre":
+            nrec = cuenta.get("recorre", 0); dx = 110 if nrec % 2 else -110
+            NZ.append({"k": round(s, 3), "s": 1.12, "x": round(cl(lo + 975 - dx, 1.12)), "y": 1230, "dur": 0.01})
+            NZ.append({"k": round(s + 0.03, 3), "s": 1.12, "x": round(cl(lo + 975 + dx, 1.12)), "y": 1230, "dur": round(L - 0.1, 2)})
+            i += 1; continue
+        # --- planos de dos claves (empiezan en un encuadre y terminan en otro) ---
+        dos_claves = None
+        if tipo == "abre":         # con cifra en pantalla: apenas cerrado y se abre
+            dos_claves = ((1.15, lo + 975, 1210), (1.0, lo + 975, 1200), {})
+        elif tipo == "aleja":        # parte en la cara y se abre hasta mostrar el set
+            S1, Y1 = libre_arriba(1.8, ax, 1265, s, f, lo, hi)
+            dos_claves = ((S1, ax, Y1), (1.0, lo + 975, 1200), {})
+        elif tipo == "vertical":   # sube desde los objetos / los pies hasta la cara
+            S1, Y2 = libre_arriba(1.5, ax, 1290, s, f, lo, hi)
+            dos_claves = ((S1, ax, 1560), (S1, ax, Y2), {})
+        elif tipo == "rapido":     # golpe de camara a la cara en la palabra fuerte
+            NZ.append({"k": round(s, 3), "s": 1.05, "x": round(cl(ax, 1.05)), "y": 1220, "dur": 0.01})
+            S2, Y2 = libre_arriba(1.75, ax, 1265, s, f, lo, hi)
+            NZ.append({"k": round(tw - 0.14, 3), "s": S2, "x": round(cl(ax, S2)), "y": round(Y2), "dur": 0.2})
+            NZ.append({"k": round(tw + 0.1, 3), "s": round(S2 * 1.06, 3), "x": round(cl(ax, S2 * 1.06)), "y": round(Y2), "dur": round(max(0.4, f - tw - 0.2), 2)})
+            SAC.append({"k": round(tw + 0.06, 3), "f": 9, "dur": 0.3})
+            LOG[-1] += " @" + "%.2f" % tw
+            i += 1; continue
+        if dos_claves:
+            (S1, X1, Y1), (S2, X2, Y2), ex = dos_claves
+            NZ.append(dict({"k": round(s, 3), "s": S1, "x": round(cl(X1, S1)), "y": round(Y1), "dur": 0.01}, **ex))
+            NZ.append({"k": round(s + 0.03, 3), "s": S2, "x": round(cl(X2, S2)), "y": round(Y2), "dur": round(L - 0.1, 2)})
+            i += 1; continue
+        if tipo == "objeto":      # la camara va al objeto, pero sin que su parte alta (etiquetas, precios) llegue a los subtitulos
+            p = (aparece or pv)[0]; ps = p.get("s", 1)
+            al, anc = ALTO.get(p.get("tipo"), (240, "c")); py = p.get("y", SUELO)
+            top, bot = (py - al * ps, py) if anc == "b" else (py - al * ps / 2, py + al * ps / 2)
+            S = max(1.0, min(1.38, 0.9 * 880 / max(1, bot - top)))
+            lo_y, hi_y = bot - 580 / S + 30, top + 300 / S
+            Y = max(1100, min(1500, (lo_y + hi_y) / 2 if lo_y > hi_y else min(hi_y, max(lo_y, (top + bot) / 2))))
+            X = p["x"]
+        elif tipo in ("dos", "gesto") and len(vis) >= 2:
+            if tipo == "gesto":
+                ac_, cur_, x_, otro_ = gpar; xs = [x_, estado(otro_, s)[1]]
+                g_ = gesticular(ac_, cur_, x_, otro_, s, f, R.random() < 0.6 and libre(otro_, s, f) is not None)
+                LOG[-1] += " " + g_
+            else:
+                xs = [estado(ac, s)[1] for ac in vis]
+            S, X, Y = 1.2, (min(xs) + max(xs)) / 2, 1350
+        elif tipo == "hombro":     # por encima del hombro desenfocado del otro personaje
+            A, B = par; xA, xB = estado(A, s)[1], estado(B, s)[1]; sg_ = 1 if xB > xA else -1
+            S = 1.45; half = 975 / S
+            X = xA + sg_ * (half + 90)
+            if abs(X - xB) > half - 170: X = xB - sg_ * (half - 170)
+            Y = 1300
+            extra = {"hombro": {"lado": -sg_, "camisa": A.get("camisa", "#2b3440"), "pelo": A.get("pelo", "#1c1c22")}}
+            LOG[-1] += " hombro=%s" % A.get("var")
+        elif tipo == "marco":      # a traves de una persiana / planta / puerta desenfocada
+            mk = MARCO.get(sg.get("set")) or ["planta", "puerta"][cnt["marco"] % 2]; cnt["marco"] += 1
+            S, X, Y = (1.0, lo + 975, 1200) if amplio else (1.2, (ax if vis else lo + 975), 1260)
+            extra = {"marco": mk, "lado": 1 if cnt["marco"] % 2 else -1}
+            LOG[-1] += " " + mk
+        else:
+            S, X, Y = {"general": (1.0, lo + 975, 1200), "medio": (1.32, ax, 1330), "holandes": (1.32, ax, 1330), "mano": (1.32, ax, 1320),
+                       "primer": (1.8, ax, 1265), "ojos": (2.45, ax, 1235), "dos": (1.32, ax, 1330)}.get(tipo, (1.0, lo + 975, 1200))
+            if tipo == "mano":
+                extra = {"mano": 1}
+                if amplio: S, X, Y = 1.04, lo + 975, 1200
+        # accion dentro del plano: un gesto hacia el otro personaje, o (solo) explicar / apuntar al objeto que hay en el set.
+        # Obligatoria si el tipo de plano se repite dentro de 5 planos.
+        repite = tipo in set(hist[-6:-1])
+        if tipo in ("medio", "primer", "dos", "hombro", "mano", "vertical", "marco", "ojos") and L >= 2.0 and (repite or R.random() < 0.45):
+            if gpar and tipo in ("dos", "hombro", "medio", "mano", "marco"):
+                ac_, cur_, x_, otro_ = gpar
+                LOG[-1] += " +" + gesticular(ac_, cur_, x_, otro_, s, f, R.random() < 0.5 and libre(otro_, s, f) is not None)
+            elif solo and tipo != "ojos":
+                cur_, x_ = solo; base = {kk: v for kk, v in cur_.items() if kk not in ("a", "dur", "ease", "fx", "k", "_t")}
+                if pv:
+                    pp = min(pv, key=lambda p_: abs(p_["x"] - x_)); pose_, dr_ = "apunta", (1 if pp["x"] > x_ else -1)
+                else:
+                    pose_, dr_ = ("explica" if cnt["gesto"] % 3 else "saluda"), cur_.get("dir", 1)
+                cnt["gesto"] += 1
+                meter_key(foco, dict(base, k=round(s + 0.35, 3), x=round(x_), y=SUELO, pose=pose_, dir=dr_, _t=s + 0.35))
+                meter_key(foco, dict(base, k=round(f - 0.12, 3), x=round(x_), y=SUELO, _t=f - 0.12))
+                LOG[-1] += " +" + pose_
+        S, Y = libre_arriba(S, X, Y, s, f, lo, hi)
+        z = dict({"k": round(s, 3), "s": S, "x": round(cl(X, S)), "y": round(Y), "dur": 0.01}, **extra)
+        if r: z["r"] = r
+        NZ.append(z)
+        # movimiento dentro de cada plano: acercar, o si no, deslizar de lado (casi nunca quieto)
+        if L > 1.5:
+            mv = "push" if push and not amplio else ("desliza" if R.random() < 0.8 or amplio else "quieto")
+            if mv == "push":
+                S2 = min(S * (1.1 if tipo != "ojos" else 1.05), 2.6)
+                z2 = {"k": round(s + 0.03, 3), "s": round(S2, 3), "x": round(cl(X, S2)), "y": Y, "dur": round(L - 0.1, 2)}
+                if r: z2["r"] = r * 1.4
+                NZ.append(z2)
+            elif mv == "desliza":
+                dx = (70 if len(hist) % 2 else -70) / S
+                z2 = {"k": round(s + 0.03, 3), "s": round(S * 1.03, 3), "x": round(cl(X + dx, S * 1.03)), "y": Y, "dur": round(L - 0.1, 2)}
+                if r: z2["r"] = r
+                NZ.append(z2)
+        i += 1
+
+# ---------- sonido en cada plano de afuera (efectos sinteticos hechos con codigo) ----------
+SFXSET = {"chequeH": [("sintet/lapiz.wav", .2, .10)], "balanzaH": [("sintet/balanza.wav", "kder", .16)],
+          "pilaH": [("sintet/billetes.wav", .1, .08), ("extra/ESM_SPG_fx_action_transaction_cash_register_ding_02.wav", 1.1, .07)],
+          "tableroH": [("sintet/aletas.wav", .05, .10)], "diarioH": [("sintet/hoja.wav", 0, .12)], "mesaCenital": [("sintet/hoja.wav", .1, .10)],
+          "manosTeclado": [("sintet/teclas.wav", 0, .12)], "telefonoH": [("sintet/timbre.wav", 0, .09), ("sintet/descuelga.wav", 1.0, .12)],
+          "papelesH": [("sintet/hoja.wav", .45, .11), ("sintet/hoja.wav", 1.35, .11)], "billetesH": [("sintet/billetes.wav", 0, .11)],
+          "claquetaH": [("sintet/claqueta.wav", .66, .18), ("sintet/proyector.wav", .8, .07)], "renderH": [("sintet/compu.wav", 0, .10)],
+          "edificioH": [("sintet/ciudad.wav", 0, .10)], "dadosH": [("sintet/dados.wav", 0, .14)], "lineaTiempoH": [("sintet/tics.wav", 0, .10)],
+          "capituloH": [("impacto/kick_01.wav", 0.02, .16)],
+          "cajaMudanzaH": [("impacto/kick_01.wav", .38, .06), ("impacto/kick_01.wav", .73, .06), ("impacto/kick_01.wav", 1.08, .06), ("sintet/hoja.wav", 1.8, .10)],
+          "contratoRotoH": [("sintet/hoja.wav", .72, .18)], "sillaJefeH": [("sintet/aletas.wav", 1.1, .08)], "proyectorH": [("sintet/proyector.wav", 0, .13)],
+          "selloH": [("impacto/kick_01.wav", .55, .18)], "guionH": [("sintet/lapiz.wav", .1, .12)], "rolloH": [("sintet/proyector.wav", 0, .10)],
+          "lupaH": [("sintet/sube.wav", 0, .04)]}
+SFX = g["escena"].setdefault("sfx", [])
+zx = {z["x0"] + 537: z for z in e["zonas"] if z["x0"] >= 99000}
+pans2 = sorted([p for p in e["pan"] if res(p["k"]) is not None], key=lambda p: res(p["k"]))
+nsfx = 0
+for j, p in enumerate(pans2):
+    z = zx.get(p["x"])
+    if not z: continue
+    ti = res(p["k"]); to = res(pans2[j + 1]["k"]) if j + 1 < len(pans2) else FIN; d = to - ti; o = z.get("o", {})
+    lista = list(SFXSET.get(z.get("set"), []))
+    if z.get("set") == "graficoH": lista = [("sintet/" + ("baja" if o.get("dir") == "cae" else "sube") + ".wav", 0, .06)]
+    if z.get("set") == "cuatroH": lista = [("sintet/chinche.wav", res(c) - ti + 0.3, .16) for c in o.get("claves", []) if res(c) is not None]
+    for f, off, gg in lista:
+        if off == "kder": off = (res(o["kder"]) - ti) if o.get("kder") and res(o["kder"]) is not None else 0.5
+        if off > d - 0.15: continue
+        SFX.append({"f": f, "k": "0", "off": round(ti + off, 3), "dur": round(d - off, 2), "fade": 0.12, "g": gg}); nsfx += 1
+# musica con momentos: subida antes de cada cifra grande y del lado ganador de la balanza
+for n in e.get("numeros", []):
+    tn = res(n["k"])
+    if tn: SFX.append({"f": "impacto/riser_01.wav", "k": "0", "off": round(tn, 3), "g": .08, "pico": 1}); nsfx += 1
+for z in zx.values():
+    o = z.get("o", {})
+    if z.get("set") == "balanzaH" and o.get("kder") and res(o["kder"]):
+        SFX.append({"f": "impacto/riser_01.wav", "k": "0", "off": round(res(o["kder"]), 3), "g": .08, "pico": 1}); nsfx += 1
+print("efectos de sonido agregados", nsfx)
+
+# ---------- escenarios vivos: gente que cruza al fondo (siluetas) en lugares publicos ----------
+GENTE = {"reunion", "bolsaH", "restauranteH", "museoH", "premiacionH", "animacion", "lab80", "servidoresH", "medicoH", "setTVH", "vitrina"}
+RG = random.Random(3); ext = e.setdefault("extras", []); nge = 0
+ROPA = [("#3b4252", "#262b36"), ("#4a3f3a", "#2b2522"), ("#2f4250", "#1f2a33"), ("#4b3b52", "#2c2433")]
+for sg in segs:
+    if sg.get("set") not in GENTE or sg["b"] - sg["a"] < 4 or RG.random() > 0.7: continue
+    lo, hi = sg["x"] - 437, sg["x"] - 437 + 1950
+    for j in range(1 if RG.random() < 0.7 else 2):
+        cam_, pan_ = ROPA[(nge + j) % len(ROPA)]; v = RG.choice([-1, 1]) * RG.uniform(70, 110)
+        ext.append({"x0": lo - 260, "x1": hi + 260, "vel": round(v, 1), "off": round(RG.uniform(0, 2400), 1), "y": 1535, "s": 0.78, "silueta": 1, "alfa": 0.8,
+                    "look": "gamer", "var": 60 + nge + j, "camisa": cam_, "pant": pan_, "piel": "#86766c", "pelo": "#1c1c22",
+                    "desde": round(sg["a"], 3), "hasta": round(sg["b"], 3)})
+    nge += 1
+# fisica: los objetos que caen suenan al tocar el suelo
+for p in PROPS:
+    if p.get("cae") and p["_a"]: SFX.append({"f": "impacto/kick_01.wav", "k": "0", "off": round(p["_a"] + 0.27, 3), "g": 0.06, "dur": 0.4})
+print("gente de fondo en", nge, "escenas")
+
+# limpiar campos internos
+for a in ACT:
+    for kk in a["keys"]: kk.pop("_t", None)
+    a.pop("_d", None); a.pop("_h", None)
+for p in PROPS: p.pop("_a", None); p.pop("_f", None)
+# quitar zooms viejos que caen dentro de un tramo en pantalla (p.ej. el "vuelve a 1.0" original de un inserto ya recortado):
+# los planos nuevos definen el encuadre en todo el tramo
+dentro = lambda t: t is not None and any(sg["a"] + 0.05 < t < sg["b"] - 0.05 for sg in segs)
+viejos = e.get("zoom", [])
+quit = [z for z in viejos if dentro(res(z["k"]))]
+e["zoom"] = [z for z in viejos if z not in quit] + NZ
+print("zooms viejos quitados", len(quit))
+e.pop("planos_hint", None)
+json.dump(g, open(fj, "w"), ensure_ascii=False)
+open("/tmp/planos_log.txt", "w").write("\n".join(LOG))
+print("planos", len(hist), dict(sorted(cuenta.items(), key=lambda x: -x[1])), "detalles", ndet,
+      "promedio %.1fs" % (sum(sg["b"] - sg["a"] for sg in segs) / max(1, len(hist))))

@@ -1,0 +1,137 @@
+{
+  "titulo": "Lo que nadie notó del mapa de GTA 6",
+  "texto_pantalla": "3 VECES RED DEAD 2",
+  "lote": "G2026112004",
+  "tema": "Mapa ~3x RDR2 (según quienes lo vieron en Rockstar), Leonida es una isla, se ve muy lejos; en la sesión de El Rubius entraron a un hotel y subieron piso por piso en ascensor hasta la azotea sin pantallas de carga.",
+  "frases": [
+    "El mapa de GTA 6 es unas tres veces más grande que Red Dead 2.",
+    "Eso dicen quienes ya lo vieron en Rockstar.",
+    "Pero hay un detalle que nadie notó: Leonida es una isla.",
+    "Y desde cualquier punto ves muy lejos.",
+    "Y además: hay edificios que se exploran piso por piso.",
+    "En la sesión de Rubius entraron a un hotel y subieron en ascensor hasta la azotea. Sin pantallas de carga.",
+    "¿A qué parte vas primero?"
+  ],
+  "frases_voz": [
+    "El mapa de GTA seis es unas tres veces más grande que Red Dead dos.",
+    "Eso dicen quienes ya lo vieron en Rockstar.",
+    "Pero hay un detalle que nadie notó. Leonida es una isla.",
+    "Y desde cualquier punto ves muy lejos.",
+    "Y además, hay edificios que se exploran piso por piso.",
+    "En la sesión de Rubius entraron a un hotel y subieron en ascensor hasta la azotea. Sin pantallas de carga.",
+    "¿A qué parte vas primero?"
+  ],
+  "fuentes": [
+    "https://techwiser.com/gta-6-gameplay-details-el-rubius/",
+    "https://allthings.how/?p=136186",
+    "https://www.notebookcheck.net/GTA-6-Most-important-details-from-nearly-3-hours-of-gameplay-summarized.1387421.0.html"
+  ],
+  "escena": {
+    "momentos": [
+      [
+        "triple",
+        0,
+        "^tres"
+      ],
+      [
+        "s_isla",
+        2,
+        null
+      ],
+      [
+        "island",
+        2,
+        "^isla"
+      ],
+      [
+        "lejos",
+        3,
+        "^lejos"
+      ],
+      [
+        "s_edif",
+        4,
+        null
+      ],
+      [
+        "floor",
+        4,
+        "^piso"
+      ],
+      [
+        "hotel",
+        5,
+        "^hotel"
+      ],
+      [
+        "loading",
+        5,
+        "^carga"
+      ],
+      [
+        "s_fin",
+        6,
+        null
+      ]
+    ],
+    "escenas": [
+      {
+        "tipo": "escala",
+        "desde": "0",
+        "k": "triple",
+        "n": 3,
+        "a": "RED DEAD 2",
+        "b": "GTA 6",
+        "titulo": "TAMAÑO DEL MAPA",
+        "nota": "Según quienes ya lo vieron"
+      },
+      {
+        "tipo": "isla",
+        "desde": "s_isla",
+        "k": "island",
+        "etq": "ES UNA ISLA",
+        "kr": "lejos",
+        "regiones": [
+          "VICE CITY",
+          "KEYS",
+          "GRASSRIVERS",
+          "PORT GELLHORN",
+          "AMBROSIA",
+          "MOUNT KALAGA"
+        ]
+      },
+      {
+        "tipo": "edificio",
+        "desde": "s_edif",
+        "k": "floor",
+        "dur": 5.5,
+        "pisos": 12,
+        "chip1": "HOTEL",
+        "chip2": "AZOTEA",
+        "k2": "loading",
+        "chip3": "SIN CARGAS"
+      },
+      {
+        "tipo": "cierre",
+        "desde": "s_fin"
+      }
+    ],
+    "cierre": "¿DÓNDE PRIMERO?",
+    "cierre2": "¿A qué parte vas primero? Comenta",
+    "paises": [
+      "VICE CITY",
+      "KEYS",
+      "KALAGA"
+    ],
+    "sfx": [
+      {
+        "f": "extra/CarEngineRev_BW.52086.wav",
+        "k": "0",
+        "off": 0.0,
+        "dur": 1.4,
+        "fade": 0.5,
+        "g": 0.14
+      }
+    ]
+  }
+}

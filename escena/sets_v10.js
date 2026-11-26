@@ -1,0 +1,4 @@
+UTILERIA.comparaBarras=(x,y,s,t,o)=>{o=o||{};X.save();X.translate(x,y);X.scale(s,s);const V=o.v||[[11.2,'GTA 5','#4fc3f7'],[32.5,'GTA 6','#ff2d95']],mx=Math.max(...V.map(v=>v[0])),k0=o.t0||0;
+ X.fillStyle='rgba(255,255,255,.08)';X.fillRect(-380,-900,760,900);X.strokeStyle='rgba(255,255,255,.25)';X.lineWidth=3;X.beginPath();X.moveTo(-380,0);X.lineTo(380,0);X.stroke();
+ V.forEach(([v,l,c],i)=>{const bw=220,bx=-300+i*360,p=Math.min(1,Math.max(0,(t-(o.k!==undefined?tk(o.k,window.__A||0):0)-.2)/1.2)),bh=800*v/mx*eo(p);glow(c,30,()=>{X.fillStyle=c;X.fillRect(bx,-bh,bw,bh)});X.fillStyle='rgba(255,255,255,.25)';X.fillRect(bx,-bh,bw,10);
+  txt((o.pre||'')+(v*eo(p)).toFixed(o.dec===undefined?1:o.dec).replace('.',o.coma?',':'.')+(o.suf===undefined?' M':o.suf),bx+bw/2,-bh-50,54,'#fff',{w:800});txt(l,bx+bw/2,60,48,c,{w:800})});X.restore()};

@@ -1,0 +1,543 @@
+{
+ "frases": [
+  {
+   "a": 0,
+   "b": 3.37,
+   "t": "If your cat slowly closes its eyes at you, it's not sleepy.",
+   "k": [
+    "sleepy."
+   ],
+   "w": [
+    0.12,
+    0.263,
+    0.494,
+    0.681,
+    1.002,
+    1.323,
+    1.51,
+    1.742,
+    1.884,
+    2.138,
+    2.325,
+    2.512
+   ]
+  },
+  {
+   "a": 3.37,
+   "b": 7.3,
+   "t": "In 2020, psychologists at Sussex and Portsmouth tested it.",
+   "k": [
+    "2020,"
+   ],
+   "w": [
+    3.42,
+    3.576,
+    4.298,
+    4.991,
+    5.147,
+    5.498,
+    5.703,
+    6.249,
+    6.601
+   ]
+  },
+  {
+   "a": 7.3,
+   "b": 9.107999999999999,
+   "t": "When owners slow-blinked at their cats,",
+   "k": [
+    "slow-blinked"
+   ],
+   "w": [
+    7.35,
+    7.581,
+    7.901,
+    8.443,
+    8.585,
+    8.86
+   ]
+  },
+  {
+   "a": 9.107999999999999,
+   "b": 11.719999999999999,
+   "t": "the cats were more likely to slow-blink back.",
+   "k": [
+    "slow-blink"
+   ],
+   "w": [
+    9.158,
+    9.344,
+    9.575,
+    9.806,
+    10.037,
+    10.357,
+    10.499,
+    10.952
+   ]
+  },
+  {
+   "a": 11.719999999999999,
+   "b": 13.66,
+   "t": "Then a stranger tried it.",
+   "k": [
+    "stranger"
+   ],
+   "w": [
+    11.77,
+    12.039,
+    12.152,
+    12.627,
+    12.947
+   ]
+  },
+  {
+   "a": 13.66,
+   "b": 15.571,
+   "t": "Cats were more likely to walk up to the",
+   "k": [
+    "likely"
+   ],
+   "w": [
+    13.71,
+    13.948,
+    14.185,
+    14.423,
+    14.752,
+    14.899,
+    15.136,
+    15.283,
+    15.429
+   ]
+  },
+  {
+   "a": 15.571,
+   "b": 18.72,
+   "t": "stranger after a slow blink than after a neutral face.",
+   "k": [
+    "stranger"
+   ],
+   "w": [
+    15.621,
+    16.042,
+    16.325,
+    16.426,
+    16.664,
+    16.947,
+    17.185,
+    17.468,
+    17.569,
+    17.944
+   ]
+  },
+  {
+   "a": 18.72,
+   "b": 22.11,
+   "t": "Researchers think it's a friendly signal, a bit like a smile.",
+   "k": [
+    "Researchers"
+   ],
+   "w": [
+    18.77,
+    19.315,
+    19.593,
+    19.78,
+    19.879,
+    20.29,
+    20.679,
+    20.777,
+    20.965,
+    21.197,
+    21.296
+   ]
+  },
+  {
+   "a": 22.11,
+   "b": 23.849,
+   "t": "Try it tonight: narrow your eyes,",
+   "k": [
+    "tonight:"
+   ],
+   "w": [
+    22.16,
+    22.362,
+    22.516,
+    22.982,
+    23.328,
+    23.577
+   ]
+  },
+  {
+   "a": 23.849,
+   "b": 26.439999999999998,
+   "t": "then close them for a couple of seconds.",
+   "k": [
+    "seconds."
+   ],
+   "w": [
+    23.899,
+    24.149,
+    24.447,
+    24.697,
+    24.899,
+    25.004,
+    25.35,
+    25.504
+   ]
+  },
+  {
+   "a": 26.439999999999998,
+   "b": 28.509999999999998,
+   "t": "Tell me if your cat blinks back.",
+   "k": [
+    "blinks"
+   ],
+   "w": [
+    26.49,
+    26.721,
+    26.863,
+    27.005,
+    27.236,
+    27.423,
+    27.742
+   ]
+  },
+  {
+   "a": 28.509999999999998,
+   "b": 31.919999999999998,
+   "t": "Follow to decode your cat.",
+   "k": [
+    "Follow"
+   ],
+   "w": [
+    28.56,
+    28.916,
+    29.075,
+    29.431,
+    29.688
+   ]
+  }
+ ],
+ "T": {
+  "slowly": 0.681,
+  "sleepy": 2.512,
+  "s_lab": 3.42,
+  "s_own": 7.35,
+  "back": 10.952,
+  "s_str": 11.77,
+  "s_walk": 13.71,
+  "walk": 14.899,
+  "neutral": 17.569,
+  "s_smile": 18.77,
+  "smile": 21.296,
+  "s_try": 22.16,
+  "close": 24.149,
+  "s_fin": 26.49,
+  "s_cta": 28.56,
+  "fin": 31.97
+ },
+ "marca": "CAT DECODED",
+ "cierre": "DID IT BLINK BACK?",
+ "cierre2": "Did yours blink back? Comment",
+ "paises": [
+  "YES",
+  "NOT YET"
+ ],
+ "cta": "FOLLOW FOR MORE",
+ "like": "LIKE",
+ "escenas": [
+  {
+   "tipo": "pelicula",
+   "desde": "0",
+   "escala": 1.0,
+   "chipY": 650,
+   "zonas": [
+    {
+     "x0": -300,
+     "x1": 1300,
+     "set": "sala",
+     "luz": "tenue"
+    },
+    {
+     "x0": 1300,
+     "x1": 2600,
+     "set": "estudio",
+     "k": "s_lab"
+    },
+    {
+     "x0": 2600,
+     "x1": 3900,
+     "set": "cafe",
+     "k": "s_str",
+     "luz": "tenue"
+    }
+   ],
+   "pan": [
+    {
+     "k": "s_lab",
+     "x": 1300,
+     "dur": 1.0
+    },
+    {
+     "k": "s_str",
+     "x": 2600,
+     "dur": 0.9
+    },
+    {
+     "k": "s_smile",
+     "x": 0,
+     "dur": 1.1
+    }
+   ],
+   "props": [
+    {
+     "tipo": "sofa",
+     "x": 330,
+     "y": 1720,
+     "s": 1.3,
+     "k": 0
+    },
+    {
+     "tipo": "gato",
+     "x": 770,
+     "y": 1735,
+     "s": 0.95,
+     "k": 0.3,
+     "pose": "sentado",
+     "dir": -1,
+     "estados": [
+      {
+       "k": "slowly",
+       "lento": true
+      },
+      {
+       "k": "s_lab",
+       "lento": false
+      },
+      {
+       "k": "s_smile",
+       "lento": true
+      }
+     ]
+    },
+    {
+     "tipo": "gato",
+     "x": 2150,
+     "y": 1735,
+     "s": 0.9,
+     "k": "s_lab",
+     "pose": "sentado",
+     "dir": -1,
+     "color": "#e0a060",
+     "color2": "#fbe9d4",
+     "oscuro": "#b06a2c",
+     "lejos": "#c98a4e",
+     "ojos": "#8bc34a",
+     "estados": [
+      {
+       "k": "back",
+       "lento": true
+      }
+     ],
+     "fin": "s_str"
+    },
+    {
+     "tipo": "gato",
+     "x": 2950,
+     "y": 1735,
+     "s": 0.9,
+     "k": "s_str",
+     "pose": "sentado",
+     "color": "#2a2a30",
+     "color2": "#f2f2f2",
+     "oscuro": "#111114",
+     "lejos": "#1c1c22",
+     "ojos": "#ffd54f",
+     "mov": [
+      {
+       "k": "s_str",
+       "x": 2950,
+       "y": 1735
+      },
+      {
+       "k": "walk",
+       "x": 2950,
+       "y": 1735
+      },
+      {
+       "k": "neutral",
+       "x": 3330,
+       "y": 1735
+      }
+     ],
+     "estados": [
+      {
+       "k": "walk",
+       "pose": "parado",
+       "camina": true
+      },
+      {
+       "k": "neutral",
+       "pose": "sentado",
+       "camina": false,
+       "lento": true
+      }
+     ]
+    }
+   ],
+   "actores": [
+    {
+     "look": "gamer",
+     "var": 201,
+     "camisa": "#26a69a",
+     "pelo": "#5d4037",
+     "peloT": "largo",
+     "s": 1.0,
+     "keys": [
+      {
+       "k": 0,
+       "x": 300,
+       "y": 1650,
+       "pose": "sentado",
+       "cara": "feliz",
+       "z": 1700
+      }
+     ]
+    },
+    {
+     "look": "jugadora",
+     "var": 202,
+     "camisa": "#ab47bc",
+     "s": 1.0,
+     "desde": "s_lab",
+     "hasta": "s_str",
+     "keys": [
+      {
+       "k": "s_lab",
+       "x": 1600,
+       "y": 1700,
+       "pose": "parado",
+       "cara": "feliz"
+      }
+     ],
+     "pelo": "#2b1b14",
+     "peloT": "largo"
+    },
+    {
+     "look": "ejecutivo",
+     "var": 203,
+     "corbata": "#1565c0",
+     "s": 1.0,
+     "desde": "s_str",
+     "hasta": "s_smile",
+     "keys": [
+      {
+       "k": "s_str",
+       "x": 3560,
+       "y": 1700,
+       "pose": "parado",
+       "cara": "neutral",
+       "dir": -1
+      },
+      {
+       "k": "walk",
+       "x": 3560,
+       "y": 1700,
+       "pose": "parado",
+       "cara": "feliz",
+       "dir": -1
+      }
+     ]
+    }
+   ],
+   "zoom": [
+    {
+     "k": "slowly",
+     "s": 1.2,
+     "x": 520,
+     "y": 1500,
+     "dur": 0.6
+    },
+    {
+     "k": "s_lab",
+     "s": 1.0,
+     "dur": 0.5
+    },
+    {
+     "k": "back",
+     "s": 1.22,
+     "x": 1900,
+     "y": 1520,
+     "dur": 0.6
+    },
+    {
+     "k": "s_str",
+     "s": 1.0,
+     "dur": 0.5
+    },
+    {
+     "k": "s_smile",
+     "s": 1.0,
+     "dur": 0.4
+    },
+    {
+     "k": "smile",
+     "s": 1.2,
+     "x": 520,
+     "y": 1500,
+     "dur": 0.6
+    }
+   ],
+   "titulos": [
+    {
+     "k": 0.2,
+     "texto": "SLOW BLINK",
+     "c": "amar",
+     "grande": true,
+     "fin": "s_lab"
+    },
+    {
+     "k": "s_lab",
+     "texto": "SUSSEX · 2020",
+     "c": "cian",
+     "fin": "s_str"
+    },
+    {
+     "k": "s_str",
+     "texto": "THE STRANGER TEST",
+     "c": "rosa",
+     "fin": "s_smile"
+    },
+    {
+     "k": "s_try",
+     "texto": "TRY IT TONIGHT",
+     "c": "amar",
+     "grande": true
+    }
+   ],
+   "chips": [
+    {
+     "k": "sleepy",
+     "texto": "NOT SLEEPY",
+     "c": "rojo",
+     "fin": "s_lab"
+    },
+    {
+     "k": "back",
+     "texto": "THEY BLINK BACK",
+     "c": "verde",
+     "fin": "s_str"
+    },
+    {
+     "k": "smile",
+     "texto": "A FRIENDLY SIGNAL",
+     "c": "verde",
+     "fin": "s_try"
+    }
+   ]
+  },
+  {
+   "tipo": "cierre",
+   "desde": "s_fin"
+  }
+ ]
+}

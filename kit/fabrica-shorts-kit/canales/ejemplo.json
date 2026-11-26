@@ -1,0 +1,26 @@
+{
+  "id": "ejemplo",
+  "nombre": "The Dogs Decoder",
+  "handle": "thedogsdecoder",
+  "carpeta": "DogsDecoder",
+  "idioma": "en",
+  "voz": "af_heart",
+  "velocidad": 1.2,
+  "pausa": 0.3,
+  "voz_joven": false,
+  "musica": "deep",
+  "categoria": "15",
+  "horas": [14, 18],
+  "marca": "THE DOGS DECODER",
+  "acento": "#e0a85b",
+  "micronicho": "Why your dog does that: dog behavior explained with science",
+  "formula_titulo": "Why Your Dog ___",
+  "cta_voz": "Follow to decode your dog.",
+  "firma": "🐶 The Dogs Decoder · Follow to decode your dog.",
+  "hashtags": ["#Shorts", "#dogs", "#dogbehavior"],
+  "protagonista": "Biscuit: perro dorado mestizo con collar rosa, junto a su humano en el sillón",
+  "reglas": [
+    "Solo conducta con estudio o fuente veterinaria (2+ fuentes).",
+    "Nada de salud ni consejos médicos."
+  ]
+}

@@ -1,0 +1,12 @@
+ok /home/claude/d24/dog14n/D2026112403.json dur 24.74
+T: dont=0.12 front=0.76 dog0=1.32 s_2008=1.88 london=3.63 tested=4.01 s_str=6.01 sat=6.58 simple=8.50 s_21=9.58 copied=11.26 s_then=12.34 mouth=13.70 one=14.35 reacted=14.81 s_rev=15.68 yawn=16.51 catches=17.31 people=18.87 s_fin=19.80 s_cta=21.56 fin=24.74
+  {"a": 0, "b": 1.8299999999999998, "t": "Don't do this in front of your dog.", "k": ["Don't"], "w": [0.12, 0.319, 0.442, 0.641, 0.763, 1.0, 1.123, 1.322]}
+  {"a": 1.8299999999999998, "b": 5.96, "t": "In 2008, scientists in London tested it with 29 dogs.", "k": ["2008,", "29"], "w": [1.88, 2.053, 2.85, 3.454, 3.627, 
+  {"a": 5.96, "b": 9.53, "t": "A stranger sat in front of each dog and did one simple thing.", "k": ["stranger"], "w": [6.01, 6.119, 6.576, 6.784, 6.943, 7.25, 7.
+  {"a": 9.53, "b": 12.29, "t": "21 of the 29 dogs copied him.", "k": ["21", "29"], "w": [9.58, 10.061, 10.244, 10.484, 10.964, 11.262, 11.674]}
+  {"a": 12.29, "b": 14.074, "t": "Then he only opened his mouth.", "k": ["opened"], "w": [12.34, 12.624, 12.798, 13.082, 13.475, 13.704]}
+  {"a": 14.074, "b": 15.629999999999999, "t": "Not one dog reacted.", "k": ["reacted."], "w": [14.124, 14.353, 14.582, 14.811]}
+  {"a": 15.629999999999999, "b": 16.794, "t": "The thing was a yawn.", "k": ["thing"], "w": [15.68, 15.888, 16.195, 16.403, 16.512]}
+  {"a": 16.794, "b": 19.75, "t": "Your dog catches your yawns, just like people do.", "k": ["catches"], "w": [16.844, 17.102, 17.31, 17.716, 17.974, 18.355, 18.61
+  {"a": 19.75, "b": 21.509999999999998, "t": "Tell me if your dog does it too.", "k": ["Tell"], "w": [19.8, 20.01, 20.14, 20.269, 20.48, 20.65, 20.86, 20.989]}
+  {"a": 21.509999999999998, "b": 24.689999999999998, "t": "Follow to decode your dog.", "k": ["Follow"], "w": [21.56, 21.904, 22.056, 22.4, 22.648]}

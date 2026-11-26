@@ -1,0 +1,15 @@
+ok /home/claude/d24/cat16n/K2026112403.json dur 31.69
+T: gps=1.01 show=2.16 s_2021=3.87 japan=5.54 alone=6.40 s_out=7.68 outside=8.15 voice2=9.44 s_in=10.13 same=11.05 inside=11.99 s_st=13.11 startled=13.89 teleported=15.46 s_map=16.40 map=17.64 sound=19.11 s_part=19.78 strange=20.59 s_only=21.64 noises=22.99 only=24.38 know=25.58 s_fin=26.23 s_cta=28.46 fin=31.69
+  {"a": 0, "b": 1.691, "t": "Your cat has a GPS on you.", "k": ["Your"], "w": [0.12, 0.412, 0.647, 0.883, 1.006, 1.242, 1.421]}
+  {"a": 1.691, "b": 3.8200000000000003, "t": "Let me show you how it works.", "k": ["works."], "w": [1.741, 1.976, 2.156, 2.448, 2.683, 2.919, 3.098]}
+  {"a": 3.8200000000000003, "b": 7.63, "t": "In 2021, scientists in Japan left cats alone in a room.", "k": ["2021,"], "w": [3.87, 4.035, 4.798, 5.376, 5.541, 5.8
+  {"a": 7.63, "b": 10.08, "t": "A speaker outside played their owner's voice.", "k": ["speaker"], "w": [7.68, 7.779, 8.148, 8.517, 8.841, 9.12, 9.444]}
+  {"a": 10.08, "b": 13.059999999999999, "t": "A moment later, the same voice came from inside the room.", "k": ["moment"], "w": [10.13, 10.225, 10.535, 10.868, 11
+  {"a": 13.059999999999999, "b": 16.349999999999998, "t": "The cats looked startled, as if their owner had teleported.", "k": ["teleported."], "w": [13.11, 13.307
+  {"a": 16.349999999999998, "b": 18.581, "t": "That means your cat keeps a map of where you are,", "k": ["means"], "w": [16.4, 16.62, 16.883, 17.103, 17.281, 17.5
+  {"a": 18.581, "b": 19.73, "t": "using only sound.", "k": ["sound."], "w": [18.631, 18.894, 19.114]}
+  {"a": 19.73, "b": 21.59, "t": "And here is the strange part.", "k": ["strange"], "w": [19.78, 19.981, 20.231, 20.384, 20.586, 20.979]}
+  {"a": 21.59, "b": 24.328, "t": "It did not work with random noises, or with other cats.", "k": ["random"], "w": [21.64, 21.788, 21.982, 22.176, 22.417, 22.657, 
+  {"a": 24.328, "b": 26.18, "t": "Only with the voice they know.", "k": ["voice"], "w": [24.378, 24.618, 24.859, 25.053, 25.34, 25.58]}
+  {"a": 26.18, "b": 28.41, "t": "Tell me if your cat finds you in every room.", "k": ["finds"], "w": [26.23, 26.437, 26.564, 26.692, 26.898, 27.066, 27.312, 27.47
+  {"a": 28.41, "b": 31.64, "t": "Follow to decode your cat.", "k": ["Follow"], "w": [28.46, 28.816, 28.975, 29.331, 29.588]}

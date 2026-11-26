@@ -1,0 +1,64 @@
+{
+  "titulo": "The 'GoFast' UFO Was Finally Solved 👽",
+  "texto_pantalla": "GOFAST UFO",
+  "lote": "R2026112101",
+  "tema": "espacio",
+  "marca": "THE RABBIT LOOP",
+  "nota_datos": "Micronicho: casos OVNI cerrados. AARO GoFast Case Resolution: ene-2015, F/A-18F, FLIR, ~13.000 ft sobre el Atlántico frente a Florida; alta confianza de que no se movió a velocidad anómala; velocidad aparente por paralaje de movimiento; se movía con el viento (The Black Vault, iHeart/Kosloski ante el Congreso nov-2024). Ryan Graves (ex piloto de F/A-18) dijo que había más objetos y pidió seguir investigando (iHeart). Punto en pantalla = ilustración.",
+  "frases": [
+    "This Navy video looks like a UFO racing over the ocean.",
+    "A fighter jet filmed it in 2015, off the coast of Florida.",
+    "For years, people called it the GoFast UFO.",
+    "Then the Pentagon's UFO office ran the math.",
+    "It wasn't near the water. It was about 13,000 feet up.",
+    "The jet was moving so fast, it made the object look fast. That trick is called parallax.",
+    "Their verdict: nothing unusual. It was moving with the wind.",
+    "Still, a former Navy pilot says there were more objects that day.",
+    "So, case closed?"
+  ],
+  "frases_voz": [
+    "This Navy video looks like a U F O racing over the ocean.",
+    "A fighter jet filmed it in twenty fifteen, off the coast of Florida.",
+    "For years, people called it the Go Fast U F O.",
+    "Then the Pentagon's U F O office ran the math.",
+    "It wasn't near the water. It was about thirteen thousand feet up.",
+    "The jet was moving so fast, it made the object look fast. That trick is called parallax.",
+    "Their verdict. Nothing unusual. It was moving with the wind.",
+    "Still, a former Navy pilot says there were more objects that day.",
+    "So, case closed?"
+  ],
+  "fuentes": [
+    "https://www.aaro.mil/UAP-Cases/UAP-Case-Resolution-Reports",
+    "https://www.theblackvault.com/documentarchive/pentagon-releases-aaro-report-on-go-fast-video-analysis/",
+    "https://www.iheart.com/content/2024-11-20-pentagon-solves-one-its-highest-profile-ufo-cases/"
+  ],
+  "escena": {
+    "momentos": [
+      ["s_jet", 1, null],
+      ["s_name", 2, null],
+      ["s_math", 3, null],
+      ["s_alt", 4, null],
+      ["parallax", 5, "^parallax"],
+      ["s_wind", 6, null],
+      ["unusual", 6, "^unusual"],
+      ["wind", 6, "^wind"],
+      ["s_pilot", 7, null],
+      ["s_fin", 8, null]
+    ],
+    "escenas": [
+      {"tipo": "gofast", "desde": "0", "chip": "U.S. NAVY · FLIR", "nota": "ILLUSTRATION"},
+      {"tipo": "gofast", "desde": "s_name", "chip": "\"GOFAST\" · 2015", "vel": "TOO FAST?", "nota": "ILLUSTRATION"},
+      {"tipo": "aviso", "desde": "s_math", "texto": "RE-CHECKED", "sub": "Pentagon UFO office (AARO)", "fondo": "THE MATH"},
+      {"tipo": "paralaje", "desde": "s_alt", "k": "parallax", "titulo": "NOT NEAR THE WATER", "h2": "13,000 FT", "chip": "PARALLAX"},
+      {"tipo": "viento", "desde": "s_wind", "punto": true, "k1": "unusual", "k2": "wind", "c1": "NOTHING UNUSUAL", "c2": "WITH THE WIND", "chip": "THE VERDICT"},
+      {"tipo": "aviso", "desde": "s_pilot", "texto": "MORE OBJECTS?", "sub": "A former Navy pilot disagrees", "fondo": "NOT EVERYONE AGREES"},
+      {"tipo": "cierre", "desde": "s_fin"}
+    ],
+    "cierre": "CASE CLOSED?",
+    "cierre2": "Closed or not? Comment",
+    "paises": ["CLOSED", "NOT YET"],
+    "sfx": [
+      {"f": "extra/CbRadioStatic_S08TE.394.wav", "k": "0", "off": 0.0, "dur": 1.0, "fade": 0.4, "g": 0.08}
+    ]
+  }
+}

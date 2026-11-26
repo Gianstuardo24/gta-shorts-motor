@@ -1,0 +1,14 @@
+wd1|Your dog knows what you're hiding. Even when you act normal. But a study found something nobody tells you.
+wd2|Stop buying red toys for your dog. At least until you see this. Careful, you might be wasting your money on the wrong colors.
+wk1|If you have a cat, never throw this away. Most people don't think twice about it, and it might be hurting yours.
+wk2|Your cat secretly speaks to you. And it might explain more than you think. Careful, there might be other details you're missing.
+wc1|If coffee sends you running to the bathroom, it's not just the caffeine. And there's a detail almost nobody knows.
+wc2|Never use boiling water for your coffee. Lots of people do it every morning, but it might be ruining every cup. And the solution might surprise you.
+wm1|Some call it Nike's dirtiest deal. The price was so low it sounds like a joke. But that's only half the story.
+wm2|Blockbuster lost everything. And it all came down to one decision. But there's a detail almost nobody knows.
+wr1|The Pentagon confirmed this video is real. But wait until you hear the explanation. Careful, the detail at the end might surprise you.
+wr2|Don't trust the flying saucer story. Everyone has heard it, but few know how it started. And the real story might surprise you.
+wge1|GTA 6 was hiding in another game. And nobody saw it for years. But that's not even the strangest part.
+wge2|GTA 6 just humiliated Hollywood with a record no one has ever touched. And that's not even its only win.
+wgs1|GTA 5 humilló a GTA 6. Y no es por lo que crees. Cuidado, el detalle que viene después podría cambiar lo que piensas de GTA 6.
+wgs2|La prensa se rindió ante GTA 6. Y lo hizo de una forma que nadie había logrado. Pero hay un detalle que casi nadie te cuenta.

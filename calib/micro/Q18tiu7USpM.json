@@ -1,0 +1,53 @@
+{
+ "id": "Q18tiu7USpM",
+ "titulo": "1967: A RED UFO Lands in Front of Him… He Gets Too CLOSE | Falcon Lake",
+ "canal": "Alienory",
+ "subs": 5160,
+ "vistas": 219054,
+ "fecha": "20261106",
+ "dur_min": 21.1,
+ "idioma": "en",
+ "xN": 42.5,
+ "voz": {
+  "ppm": 108,
+  "ppm_primeros_30s": 118,
+  "pausas_min": 8.8
+ },
+ "imagen": {
+  "cortes_min": 19.0,
+  "plano_mediano": 1.4,
+  "plano_max": 45.1,
+  "sin_cambio": 28,
+  "cambios_locales_min": 7.1,
+  "racha_quieta_max": 5.4,
+  "en_rachas_5s": 0
+ },
+ "gancho": {
+  "cortes_30s": 11,
+  "seg_primer_corte": 0.1,
+  "sin_cambio_30s": 16,
+  "primera_frase_palabras": 17,
+  "primera_pregunta": false,
+  "primera_con_numero": false,
+  "primera_con_tu": false
+ },
+ "lenguaje": {
+  "palabras": 2270,
+  "frases": 184,
+  "frase_media": 12.3,
+  "preguntas_100f": 1.1,
+  "tu_100": 0.22,
+  "yo_100": 0.13,
+  "contracciones_100": 1.01,
+  "numeros_100": 2.78,
+  "largo_palabra": 4.62,
+  "palabras_largas": 12.4,
+  "variedad": 0.761,
+  "flesch": 64.2,
+  "registro": "neutro"
+ },
+ "sincronia": {
+  "frases_con_cambio_visual": 90,
+  "cortes_junto_a_inicio_de_frase": 31
+ }
+}

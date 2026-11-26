@@ -1,0 +1,12 @@
+ok /home/claude/d24/dog14/D2026112401.json dur 26.08
+T: front=0.50 back=2.64 s_2008=3.28 london=5.03 tested=5.42 s_str=7.41 sat=7.93 yawned2=9.31 s_21=10.05 too=12.10 s_then=12.76 mouth=14.06 one=15.46 s_so=16.69 copying=17.58 catching=18.69 s_fin=20.93 s_cta=22.90 fin=26.08
+  {"a": 0, "b": 3.23, "t": "Yawn in front of your dog, and it will probably yawn back.", "k": ["probably"], "w": [0.12, 0.355, 0.5, 0.78, 0.924, 1.159, 1.417, 1.6
+  {"a": 3.23, "b": 7.36, "t": "In 2008, scientists in London tested it with 29 dogs.", "k": ["2008,", "29"], "w": [3.28, 3.453, 4.25, 4.854, 5.027, 5.415, 5.803, 
+  {"a": 7.36, "b": 10.0, "t": "A stranger sat in front of each dog and yawned.", "k": ["stranger"], "w": [7.41, 7.51, 7.929, 8.12, 8.266, 8.549, 8.694, 8.931, 9.1
+  {"a": 10.0, "b": 12.709999999999999, "t": "21 of the 29 dogs yawned too.", "k": ["21", "29"], "w": [10.05, 10.521, 10.7, 10.935, 11.406, 11.697, 12.101]}
+  {"a": 12.709999999999999, "b": 15.193, "t": "Then he only opened his mouth, with no yawn.", "k": ["opened"], "w": [12.76, 13.03, 13.196, 13.467, 13.841, 14.059,
+  {"a": 15.193, "b": 16.64, "t": "Not one dog yawned.", "k": ["yawned."], "w": [15.243, 15.462, 15.68, 15.898]}
+  {"a": 16.64, "b": 18.428, "t": "So your dog isn't copying a mouth.", "k": ["copying"], "w": [16.69, 16.849, 17.108, 17.318, 17.577, 17.985, 18.095]}
+  {"a": 18.428, "b": 20.88, "t": "It's catching your yawn, like people do.", "k": ["catching"], "w": [18.478, 18.687, 19.146, 19.405, 19.738, 19.997, 20.356]}
+  {"a": 20.88, "b": 22.849999999999998, "t": "Tell me if your dog yawns when you do.", "k": ["yawns"], "w": [20.93, 21.135, 21.262, 21.388, 21.593, 21.759, 22.004
+  {"a": 22.849999999999998, "b": 26.029999999999998, "t": "Follow to decode your dog.", "k": ["Follow"], "w": [22.9, 23.244, 23.396, 23.74, 23.988]}

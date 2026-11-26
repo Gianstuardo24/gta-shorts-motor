@@ -1,0 +1,539 @@
+{
+ "titulo": "The 'Jellyfish' UFO Over Iraq 👽",
+ "texto_pantalla": "JELLYFISH UFO",
+ "lote": "R2026112102",
+ "tema": "espacio",
+ "marca": "THE RABBIT LOOP",
+ "nota_datos": "AARO case resolution 'The Al Taqaddum Object' (8 sep 2025): 23 oct 2017, sensor IR de un aerostato a ~2,700 ft, 17 min 30 s de video; se movía con el viento, sin firma térmica; conclusión: racimo de globos inflados y desinflados con cuerdas colgando. Filtrado por Jeremy Corbell en ene 2024 (Global News, Futurism, KYM). Medusa dibujada = ilustración, no el video real.",
+ "frases": [
+  "This 'jellyfish' UFO was filmed over a U.S. base in Iraq.",
+  "A military blimp caught it on infrared, for 17 minutes.",
+  "When the video leaked in 2024, many said it was alien.",
+  "In 2025, the Pentagon's UFO office finally gave its answer.",
+  "It drifted with the wind, and it gave off no heat.",
+  "Their verdict: a cluster of balloons, with strings hanging down.",
+  "Tell me: balloons, or aliens.",
+  "Follow for the next case."
+ ],
+ "frases_voz": [
+  "This jellyfish U F O was filmed over a U S base in Iraq.",
+  "A military blimp caught it on infrared, for seventeen minutes.",
+  "When the video leaked in twenty twenty-four, many said it was alien.",
+  "In twenty twenty-five, the Pentagon's U F O office finally gave its answer.",
+  "It drifted with the wind, and it gave off no heat.",
+  "Their verdict. A cluster of balloons, with strings hanging down.",
+  "Tell me. Balloons, or aliens.",
+  "Follow for the next case."
+ ],
+ "fuentes": [
+  "https://www.aaro.mil/Portals/136/PDFs/case_resolution_reports/AARO_Al_Taqaddam_Case_Resolution_Final.pdf",
+  "https://www.ibtimes.co.uk/jellyfish-shaped-object-filmed-anchorage-1831876",
+  "https://globalnews.ca/news/10216527/jellyfish-ufo-iraq-video-uap",
+  "https://futurism.com/the-byte/internet-puzzled-jellyfish-ufo-video",
+  "https://knowyourmeme.com/memes/jellyfish-ufo-uap"
+ ],
+ "escena": {
+  "momentos": [
+   [
+    "s_dir",
+    1,
+    null
+   ],
+   [
+    "infrared",
+    1,
+    "^infrared"
+   ],
+   [
+    "s_leak",
+    2,
+    null
+   ],
+   [
+    "alien",
+    2,
+    "^alien"
+   ],
+   [
+    "s_ans",
+    3,
+    null
+   ],
+   [
+    "s_viento",
+    4,
+    null
+   ],
+   [
+    "wind",
+    4,
+    "^wind"
+   ],
+   [
+    "heat",
+    4,
+    "^heat"
+   ],
+   [
+    "s_ver",
+    5,
+    null
+   ],
+   [
+    "balloons",
+    5,
+    "^balloons"
+   ],
+   [
+    "strings",
+    5,
+    "^strings"
+   ],
+   [
+    "s_fin",
+    6,
+    null
+   ],
+   [
+    "answer",
+    3,
+    "^answer"
+   ],
+   [
+    "leaked",
+    2,
+    "^leaked"
+   ],
+   [
+    "s_cta",
+    7,
+    null
+   ],
+   [
+    "m17",
+    1,
+    "^17|^seventeen"
+   ]
+  ],
+  "escenas": [
+   {
+    "tipo": "medusa",
+    "desde": "0",
+    "chip": "U.S. BASE · IRAQ",
+    "nota": "ILLUSTRATION",
+    "quieto": true
+   },
+   {
+    "tipo": "pelicula",
+    "desde": "s_dir",
+    "escala": 1.05,
+    "chipY": 680,
+    "abre": {
+     "x": 540,
+     "y": 1000,
+     "w": 920,
+     "h": 880,
+     "dur": 1.2,
+     "espera": 0.1
+    },
+    "zonas": [
+     {
+      "x0": -300,
+      "x1": 1300,
+      "set": "cielo"
+     },
+     {
+      "x0": 1300,
+      "x1": 2600,
+      "set": "sala",
+      "k": "s_leak"
+     },
+     {
+      "x0": 2600,
+      "x1": 3900,
+      "set": "oficina",
+      "k": "s_ans",
+      "luz": "tenue"
+     },
+     {
+      "x0": 3900,
+      "x1": 5300,
+      "set": "cielo",
+      "k": "s_viento"
+     }
+    ],
+    "pan": [
+     {
+      "k": "s_leak",
+      "x": 1300
+     },
+     {
+      "k": "s_ans",
+      "x": 2600
+     },
+     {
+      "k": "s_viento",
+      "x": 3900
+     }
+    ],
+    "props": [
+     {
+      "tipo": "arena",
+      "x": 300,
+      "y": 1720,
+      "s": 1.5,
+      "k": "s_dir",
+      "z": 1400
+     },
+     {
+      "tipo": "arena",
+      "x": 1100,
+      "y": 1740,
+      "s": 1.2,
+      "k": "s_dir",
+      "z": 1401
+     },
+     {
+      "tipo": "dirigible",
+      "x": 260,
+      "y": 820,
+      "s": 1.0,
+      "k": "s_dir"
+     },
+     {
+      "tipo": "medusa",
+      "x": 760,
+      "y": 1120,
+      "s": 0.9,
+      "k": "s_dir",
+      "mov": [
+       {
+        "k": "s_dir",
+        "x": 720,
+        "y": 1120
+       },
+       {
+        "k": "s_leak",
+        "x": 900,
+        "y": 1080
+       }
+      ]
+     },
+     {
+      "tipo": "sofa",
+      "x": 1950,
+      "y": 1720,
+      "s": 1.2,
+      "k": "s_leak"
+     },
+     {
+      "tipo": "tv",
+      "x": 1950,
+      "y": 1080,
+      "s": 1.15,
+      "k": "s_leak",
+      "ir": true
+     },
+     {
+      "tipo": "pc",
+      "x": 3300,
+      "y": 1650,
+      "s": 1.1,
+      "k": "s_ans",
+      "texto": "CASE FILE"
+     },
+     {
+      "tipo": "documento",
+      "x": 3000,
+      "y": 1300,
+      "s": 1.1,
+      "sello": "RESOLVED",
+      "selloc": "verde",
+      "k": "answer",
+      "cae": true,
+      "z": 1800
+     },
+     {
+      "tipo": "arena",
+      "x": 4400,
+      "y": 1720,
+      "s": 1.5,
+      "k": "s_viento",
+      "z": 1400
+     },
+     {
+      "tipo": "viento",
+      "x": 4500,
+      "y": 1050,
+      "s": 1.2,
+      "k": "wind",
+      "fin": "s_fin"
+     },
+     {
+      "tipo": "medusa",
+      "x": 4300,
+      "y": 1100,
+      "s": 1.0,
+      "k": "s_viento",
+      "fin": "balloons",
+      "mov": [
+       {
+        "k": "s_viento",
+        "x": 4250,
+        "y": 1100
+       },
+       {
+        "k": "balloons",
+        "x": 4520,
+        "y": 1080
+       }
+      ]
+     },
+     {
+      "tipo": "globos",
+      "x": 4520,
+      "y": 1080,
+      "s": 2.0,
+      "k": "balloons",
+      "mov": [
+       {
+        "k": "balloons",
+        "x": 4520,
+        "y": 1080
+       },
+       {
+        "k": "s_fin",
+        "x": 4700,
+        "y": 1040
+       }
+      ]
+     }
+    ],
+    "actores": [
+     {
+      "look": "gamer",
+      "var": 301,
+      "s": 0.95,
+      "desde": "s_leak",
+      "hasta": "s_ans",
+      "keys": [
+       {
+        "k": "s_leak",
+        "x": 1830,
+        "y": 1702,
+        "pose": "sentado",
+        "cara": "neutral",
+        "z": 1800
+       },
+       {
+        "k": "alien",
+        "x": 1830,
+        "y": 1690,
+        "pose": "arriba",
+        "cara": "sorpresa",
+        "fx": "salto"
+       }
+      ]
+     },
+     {
+      "look": "jugadora",
+      "var": 302,
+      "s": 0.95,
+      "desde": "s_leak",
+      "hasta": "s_ans",
+      "keys": [
+       {
+        "k": "s_leak",
+        "x": 2080,
+        "y": 1702,
+        "pose": "sentado",
+        "cara": "neutral",
+        "dir": -1,
+        "objeto": "telefono",
+        "z": 1800
+       },
+       {
+        "k": "alien",
+        "x": 2080,
+        "y": 1690,
+        "pose": "apunta",
+        "cara": "sorpresa",
+        "fx": "salto",
+        "dir": -1
+       }
+      ]
+     },
+     {
+      "look": "ejecutivo",
+      "var": 303,
+      "s": 1.0,
+      "desde": "s_ans",
+      "hasta": "s_viento",
+      "keys": [
+       {
+        "k": "s_ans",
+        "x": 2850,
+        "y": 1700,
+        "pose": "piensa",
+        "cara": "neutral"
+       },
+       {
+        "k": "answer",
+        "x": 2850,
+        "y": 1700,
+        "pose": "apunta",
+        "cara": "feliz",
+        "fx": "salto"
+       }
+      ]
+     }
+    ],
+    "burbujas": [
+     {
+      "k": "alien",
+      "de": 0,
+      "texto": "ALIEN!",
+      "fin": "s_ans"
+     }
+    ],
+    "numeros": [
+     {
+      "k": "m17",
+      "n": 17,
+      "suf": " MIN",
+      "x": 540,
+      "y": 760,
+      "c": "rojo",
+      "etq": "ON INFRARED",
+      "fin": "s_leak"
+     }
+    ],
+    "zoom": [
+     {
+      "k": "m17",
+      "s": 1.15,
+      "x": 700,
+      "y": 1150,
+      "dur": 0.8
+     },
+     {
+      "k": "s_leak",
+      "s": 1.0
+     },
+     {
+      "k": "alien",
+      "s": 1.15,
+      "x": 1950,
+      "y": 1420
+     },
+     {
+      "k": "s_ans",
+      "s": 1.0
+     },
+     {
+      "k": "s_viento",
+      "s": 1.0
+     },
+     {
+      "k": "heat",
+      "s": 1.2,
+      "x": 4350,
+      "y": 1100
+     },
+     {
+      "k": "balloons",
+      "s": 1.3,
+      "x": 4520,
+      "y": 1080,
+      "dur": 0.9
+     },
+     {
+      "k": "strings",
+      "s": 1.4,
+      "x": 4520,
+      "y": 1150,
+      "dur": 0.8
+     }
+    ],
+    "titulos": [
+     {
+      "k": "s_dir",
+      "texto": "IRAQ · U.S. BASE",
+      "c": "amar",
+      "fin": "s_leak"
+     },
+     {
+      "k": "leaked",
+      "texto": "LEAKED · 2024",
+      "c": "rosa",
+      "fin": "s_ans"
+     },
+     {
+      "k": "s_ans",
+      "texto": "PENTAGON UFO OFFICE · 2025",
+      "c": "cian",
+      "fin": "s_viento"
+     },
+     {
+      "k": "s_viento",
+      "texto": "THE ANALYSIS",
+      "c": "cian",
+      "fin": "s_ver"
+     },
+     {
+      "k": "balloons",
+      "texto": "BALLOONS",
+      "c": "verde",
+      "grande": true
+     }
+    ],
+    "chips": [
+     {
+      "k": "infrared",
+      "texto": "MILITARY BLIMP · INFRARED",
+      "c": "rojo",
+      "fin": "s_leak"
+     },
+     {
+      "k": "wind",
+      "texto": "DRIFTED WITH THE WIND",
+      "c": "cian",
+      "fin": "heat"
+     },
+     {
+      "k": "heat",
+      "texto": "NO HEAT",
+      "c": "rojo",
+      "fin": "s_ver"
+     },
+     {
+      "k": "strings",
+      "texto": "STRINGS HANGING DOWN",
+      "c": "verde"
+     }
+    ]
+   },
+   {
+    "tipo": "cierre",
+    "desde": "s_fin"
+   }
+  ],
+  "cierre": "BALLOONS OR ALIENS?",
+  "cierre2": "What do you think? Comment",
+  "paises": [
+   "BALLOONS",
+   "ALIENS"
+  ],
+  "sfx": [
+   {
+    "f": "extra/CbRadioStatic_S08TE.394.wav",
+    "k": "0",
+    "off": 0.0,
+    "dur": 1.0,
+    "fade": 0.4,
+    "g": 0.08
+   }
+  ],
+  "cta": "FOLLOW FOR MORE"
+ }
+}

@@ -1,0 +1,139 @@
+{
+  "titulo": "Nobody Noticed This About GTA 6's Map",
+  "texto_pantalla": "3x RED DEAD 2",
+  "lote": "G2026112004en",
+  "marca": "THEVICEVERSE GG",
+  "tema": "Mapa ~3x RDR2 (según quienes lo vieron en Rockstar), Leonida es una isla, se ve muy lejos; en la sesión de El Rubius entraron a un hotel, subieron piso por piso en ascensor hasta el helipuerto sin pantallas de carga.",
+  "frases": [
+    "GTA 6's map is about three times the size of Red Dead 2.",
+    "That's what people who saw it at Rockstar said.",
+    "But here's the detail nobody noticed: Leonida is an island.",
+    "And you can see really far across it.",
+    "And also: you can explore buildings floor by floor.",
+    "In Rubius's session, they walked into a hotel and took the elevator up to the roof. No loading screens.",
+    "Which part are you visiting first?"
+  ],
+  "frases_voz": [
+    "GTA 6's map is about three times the size of Red Dead 2.",
+    "That's what people who saw it at Rockstar said.",
+    "But here's the detail nobody noticed. Leonida is an island.",
+    "And you can see really far across it.",
+    "And also, you can explore buildings floor by floor.",
+    "In Rubius's session, they walked into a hotel and took the elevator up to the roof. No loading screens.",
+    "Which part are you visiting first?"
+  ],
+  "fuentes": [
+    "https://techwiser.com/gta-6-gameplay-details-el-rubius/",
+    "https://allthings.how/?p=136186",
+    "https://www.notebookcheck.net/GTA-6-Most-important-details-from-nearly-3-hours-of-gameplay-summarized.1387421.0.html"
+  ],
+  "nota_datos": "No decir que TODOS los edificios se exploran: Rockstar habla de 'cientos de interiores'. El piso por piso es el hotel de la sesión de Rubius (2+ fuentes).",
+  "escena": {
+    "momentos": [
+      [
+        "triple",
+        0,
+        "^three"
+      ],
+      [
+        "s_isla",
+        2,
+        null
+      ],
+      [
+        "island",
+        2,
+        "^island"
+      ],
+      [
+        "lejos",
+        3,
+        "^far"
+      ],
+      [
+        "s_edif",
+        4,
+        null
+      ],
+      [
+        "floor",
+        4,
+        "^floor"
+      ],
+      [
+        "hotel",
+        5,
+        "^hotel"
+      ],
+      [
+        "loading",
+        5,
+        "^loading"
+      ],
+      [
+        "s_fin",
+        6,
+        null
+      ]
+    ],
+    "escenas": [
+      {
+        "tipo": "escala",
+        "desde": "0",
+        "k": "triple",
+        "n": 3,
+        "a": "RED DEAD 2",
+        "b": "GTA 6",
+        "titulo": "MAP SIZE",
+        "nota": "According to people who saw it"
+      },
+      {
+        "tipo": "isla",
+        "desde": "s_isla",
+        "k": "island",
+        "etq": "ISLAND",
+        "kr": "lejos",
+        "regiones": [
+          "VICE CITY",
+          "KEYS",
+          "GRASSRIVERS",
+          "PORT GELLHORN",
+          "AMBROSIA",
+          "MOUNT KALAGA"
+        ]
+      },
+      {
+        "tipo": "edificio",
+        "desde": "s_edif",
+        "k": "floor",
+        "dur": 7.0,
+        "pisos": 12,
+        "chip1": "HOTEL",
+        "chip2": "ROOFTOP",
+        "k2": "loading",
+        "chip3": "NO LOADING"
+      },
+      {
+        "tipo": "cierre",
+        "desde": "s_fin"
+      }
+    ],
+    "cierre": "WHERE FIRST?",
+    "cierre2": "Which part first? Comment",
+    "paises": [
+      "VICE CITY",
+      "KEYS",
+      "KALAGA"
+    ],
+    "sfx": [
+      {
+        "f": "extra/CarEngineRev_BW.52086.wav",
+        "k": "0",
+        "off": 0.0,
+        "dur": 1.4,
+        "fade": 0.5,
+        "g": 0.14
+      }
+    ]
+  }
+}

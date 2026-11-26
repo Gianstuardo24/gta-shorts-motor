@@ -1,0 +1,215 @@
+{
+  "codigos": {
+    "1": {
+      "funcion": "Abrir",
+      "img_tipo": "Pintura o ilustración",
+      "apunta": "Atención",
+      "saber": "No aplica",
+      "porque": "Presenta el tema del video (tres megaobras romanas inconclusas) con el contraste 'hasta los romanos se quedaron cortos', sobre una ilustración de obra y un grabado que ocupan casi todo el tramo.",
+      "duda": "apunta: Comprensión"
+    },
+    "2": {
+      "funcion": "Abrir",
+      "img_tipo": "Archivo de época",
+      "apunta": "Comprensión",
+      "saber": "No aplica",
+      "porque": "Anuncia la parte nueva ('Number three, moving the Tiber') y dice por qué importa el río para Roma, casi todo sobre un fresco romano de una barca de grano.",
+      "duda": "funcion: Situar"
+    },
+    "3": {
+      "funcion": "Complicar",
+      "img_tipo": "Documento o prueba",
+      "apunta": "Presencia",
+      "saber": "Igual",
+      "porque": "Con el 'however' aparece el problema de las inundaciones y la cita de Casio Dión en pantalla (más segundos que la línea de tiempo) mete al espectador dentro de la crecida del 54 a. C.",
+      "duda": "funcion: Situar"
+    },
+    "4": {
+      "funcion": "Avanzar",
+      "img_tipo": "Pintura o ilustración",
+      "apunta": "Comprensión",
+      "saber": "No aplica",
+      "porque": "Suma consecuencias en la misma dirección del problema ya planteado (muelles, graneros, mosquitos, empeoramiento) sobre una sola pintura de un diluvio.",
+      "duda": "funcion: Complicar"
+    },
+    "5": {
+      "funcion": "Avanzar",
+      "img_tipo": "Mapa o esquema",
+      "apunta": "Comprensión",
+      "saber": "Igual",
+      "porque": "Hecho nuevo: César propone dos planes y se explica el más radical con un mapa satelital rotulado (Roma, Ostia, Terracina) que dura más que la pintura inicial.",
+      "duda": "saber: Público más"
+    },
+    "6": {
+      "funcion": "Avanzar",
+      "img_tipo": "Mapa o esquema",
+      "apunta": "Comprensión",
+      "saber": "Público más",
+      "porque": "Explica el segundo plan sobre el mapa con el trazado del canal, y el 'would have... Or so Caesar hoped' se apoya en que ya sabemos que no se hizo.",
+      "duda": "funcion: Girar"
+    },
+    "7": {
+      "funcion": "Pagar",
+      "img_tipo": "Pintura o ilustración",
+      "apunta": "Comprensión",
+      "saber": "Igual",
+      "porque": "Entrega el desenlace de la primera obra: César muere antes de empezar, Augusto solo draga, el Senado rechaza el plan de Tiberio y el río sigue inundando hasta el siglo XIX, casi todo sobre pinturas.",
+      "duda": "funcion: Complicar"
+    },
+    "8": {
+      "funcion": "Abrir",
+      "img_tipo": "Mapa o esquema",
+      "apunta": "Comprensión",
+      "saber": "No aplica",
+      "porque": "Abre la segunda parte ('Number two, Nero's Corinth Canal') y muestra en un mapa con la ruta por qué importaba evitar el rodeo del Peloponeso.",
+      "duda": "funcion: Situar"
+    },
+    "9": {
+      "funcion": "Situar",
+      "img_tipo": "Mapa o esquema",
+      "apunta": "Comprensión",
+      "saber": "Igual",
+      "porque": "Da el contexto previo al canal: cómo se cruzaba el Istmo por el Diolkos y quiénes pasaron flotas por ahí, con mapa y esquema dominando sobre el grabado del barco.",
+      "duda": "saber: No aplica"
+    },
+    "10": {
+      "funcion": "Complicar",
+      "img_tipo": "Pintura o ilustración",
+      "apunta": "Comprensión",
+      "saber": "Público más",
+      "porque": "Aparecen los obstáculos para abrir un canal (roca sólida y la creencia de que el mar del oeste estaba más alto), creencia que el espectador sabe equivocada; la marina pintada ocupa algo más que la foto del Diolkos.",
+      "duda": "saber: Igual"
+    },
+    "11": {
+      "funcion": "Avanzar",
+      "img_tipo": "Archivo de época",
+      "apunta": "Atención",
+      "saber": "Igual",
+      "porque": "Hecho nuevo (César y Calígula lo pensaron, solo Nerón lo empezó) rematado con el gancho del 'disastrous attempt' tras la pausa; dominan los bustos antiguos rotulados sobre el fondo pintado.",
+      "duda": "img_tipo: Pintura o ilustración"
+    },
+    "12": {
+      "funcion": "Avanzar",
+      "img_tipo": "Pintura o ilustración",
+      "apunta": "Comprensión",
+      "saber": "Igual",
+      "porque": "Cuenta el arranque de la obra (pala de oro, 6.000 prisioneros, 32 pozos) sobre dos pinturas que duran más que la vista satelital del final.",
+      "duda": "saber: Público más"
+    },
+    "13": {
+      "funcion": "Avanzar",
+      "img_tipo": "Mapa o esquema",
+      "apunta": "Comprensión",
+      "saber": "Igual",
+      "porque": "Sigue el avance de la excavación con cifras mientras la vista satelital del Istmo marca en amarillo los tramos cavados, funcionando como esquema.",
+      "duda": "img_tipo: El objeto o lugar real"
+    },
+    "14": {
+      "funcion": "Pagar",
+      "img_tipo": "Pintura o ilustración",
+      "apunta": "Comprensión",
+      "saber": "Igual",
+      "porque": "Responde al 'intento desastroso' anunciado: la muerte de Nerón y la guerra civil detienen la obra, que queda como ejemplo de soberbia; las pinturas suman más segundos que el mapa con la estatua.",
+      "duda": "funcion: Reflexionar"
+    },
+    "15": {
+      "funcion": "Avanzar",
+      "img_tipo": "Archivo de época",
+      "apunta": "Comprensión",
+      "saber": "Igual",
+      "porque": "Agrega lo que pasó después (Herodes Ático, obra del siglo XIX en 12 años, huellas antiguas borradas) con busto antiguo y foto de la construcción sumando más que la foto actual del canal.",
+      "duda": "img_tipo: El objeto o lugar real"
+    },
+    "16": {
+      "funcion": "Abrir",
+      "img_tipo": "Mapa o esquema",
+      "apunta": "Comprensión",
+      "saber": "No aplica",
+      "porque": "Abre la tercera parte ('Number one, a capital for Germania') y la enmarca con otros restos de conquistas truncas ubicados en un mapa del imperio.",
+      "duda": "funcion: Situar"
+    },
+    "17": {
+      "funcion": "Avanzar",
+      "img_tipo": "Mapa o esquema",
+      "apunta": "Comprensión",
+      "saber": "Igual",
+      "porque": "Hecho central de la parte: los romanos fundan una ciudad civil en Waldgirmes, ubicada en un mapa de Germania que dura más que la ilustración de legionarios.",
+      "duda": "apunta: Atención"
+    },
+    "18": {
+      "funcion": "Avanzar",
+      "img_tipo": "El objeto o lugar real",
+      "apunta": "Presencia",
+      "saber": "No aplica",
+      "porque": "Recorre la ciudad calle por calle hasta el foro con sus estatuas, y las fotos de la cabeza de caballo dorada y del sitio ocupan más segundos que el plano inicial.",
+      "duda": "apunta: Comprensión"
+    },
+    "19": {
+      "funcion": "Pagar",
+      "img_tipo": "Dato o gráfico",
+      "apunta": "Comprensión",
+      "saber": "Igual",
+      "porque": "Entrega el desenlace esperado de la tercera obra (fundada hacia el 4 a. C. y abandonada una década después tras Teutoburgo) sobre una línea de tiempo.",
+      "duda": "funcion: Girar"
+    },
+    "20": {
+      "funcion": "Avanzar",
+      "img_tipo": "El objeto o lugar real",
+      "apunta": "Emoción",
+      "saber": "Igual",
+      "porque": "Últimos hechos en la misma dirección (edificios quemados, cabeza de la estatua en un pozo hasta 1990, sitio olvidado) con tono de pérdida, sobre la foto de la estatua ecuestre en el lugar.",
+      "duda": "apunta: Atención"
+    }
+  },
+  "preguntas": [
+    {
+      "pregunta": "¿Cuáles son las tres megaobras romanas que quedaron sin terminar?",
+      "abre": "0:33",
+      "marca_abre": "El narrador anuncia que el video de hoy explora tres megaproyectos inconclusos.",
+      "cierra": "8:36",
+      "marca_cierra": "Se nombra la tercera y última de la cuenta regresiva: 'Number one, a capital for Germania'.",
+      "tipo": "explícita"
+    },
+    {
+      "pregunta": "¿Se llevará a cabo el plan de Julio César para desviar el Tíber?",
+      "abre": "2:08",
+      "marca_abre": "Para acabar con las inundaciones, César propone dos planes para cambiar el curso del río.",
+      "cierra": "2:53",
+      "marca_cierra": "'O eso esperaba César': fue asesinado antes de que empezaran los trabajos.",
+      "tipo": "implícita"
+    },
+    {
+      "pregunta": "¿Prosperará el plan de la época de Tiberio para desviar los afluentes del Tíber?",
+      "abre": "3:08",
+      "marca_abre": "Otra inundación grave inspira un plan para reducir el caudal desviando afluentes.",
+      "cierra": "3:29",
+      "marca_cierra": "Las protestas de los pueblos afectados hacen que el Senado rechace el plan.",
+      "tipo": "implícita"
+    },
+    {
+      "pregunta": "¿Llegará a abrirse un canal a través del Istmo de Corinto?",
+      "abre": "4:58",
+      "marca_abre": "Se dice que desde la época arcaica griega hubo planes para cortar un canal.",
+      "cierra": "8:24",
+      "marca_cierra": "No se trabajó más hasta el siglo XIX y aun entonces tomó 12 años terminarlo.",
+      "tipo": "implícita"
+    },
+    {
+      "pregunta": "¿Qué pasó con el intento 'desastroso' de Nerón de abrir el canal?",
+      "abre": "5:36",
+      "marca_abre": "El narrador promete hablar del intento desastroso de Nerón después del patrocinio.",
+      "cierra": "7:43",
+      "marca_cierra": "La muerte de Nerón y la guerra civil que siguió detuvieron la obra, que nunca se retomó.",
+      "tipo": "explícita"
+    },
+    {
+      "pregunta": "¿Qué fue de la ciudad que los romanos fundaron en Germania?",
+      "abre": "9:12",
+      "marca_abre": "Se presenta como el producto más notable de la sobreextensión imperial una ciudad fundada al este del Rin.",
+      "cierra": "10:38",
+      "marca_cierra": "La ciudad fue abandonada poco más de una década después, tras la batalla del bosque de Teutoburgo.",
+      "tipo": "implícita"
+    }
+  ],
+  "observaciones": "En funcion lo más difícil fue separar Abrir de Situar en los tramos que arrancan cada parte (2, 8 y 16: tres segundos de título y luego contexto previo) y Situar de Complicar/Avanzar cuando el contexto previo ya es el problema (las inundaciones, tramos 3 y 4); también Avanzar frente a Pagar en los epílogos (15 y 20). En img_tipo el libro no dice dónde va el arte antiguo auténtico (fresco romano, bustos de emperadores): lo puse como Archivo de época y no como Pintura o ilustración ni El objeto o lugar real, y eso decide los tramos 2, 11 y 15; tampoco es claro si una vista satelital anotada es Mapa o esquema o El objeto o lugar real (tramo 13), y en saber la frontera entre Igual y No aplica depende de si se cuentan actores mencionados de pasada. En el registro de preguntas las dos explícitas (anuncio inicial y promesa antes del patrocinio) fueron fáciles; las implícitas exigieron decidir si un plan o una fundación cuenta como marca de apertura y si planes encadenados (César/Tiberio, planes de canal/intento de Nerón) son una pregunta o varias."
+}

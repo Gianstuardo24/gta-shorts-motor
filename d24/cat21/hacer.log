@@ -1,0 +1,16 @@
+ok /home/claude/d24/cat21/K2026112402.json dur 29.57
+T: box0=1.98 needs=2.49 s_2014=3.46 netherlands=5.23 shelter=7.71 s_half=8.51 hiding=9.15 nothing=10.97 s_less=11.85 stressed=13.23 faster=14.84 s_why=15.56 safety=17.43 behind=19.09 s_so=19.84 squeezes=20.53 relax=22.98 s_fin=23.68 s_cta=26.34 fin=29.57
+  {"a": 0, "b": 2.257, "t": "Your cat doesn't just like that box.", "k": ["doesn't"], "w": [0.12, 0.42, 0.662, 1.078, 1.378, 1.678, 1.978]}
+  {"a": 2.257, "b": 3.41, "t": "It needs it.", "k": ["needs"], "w": [2.307, 2.491, 2.849]}
+  {"a": 3.41, "b": 4.257000000000001, "t": "In 2014,", "k": ["2014,"], "w": [3.46, 3.611]}
+  {"a": 4.257000000000001, "b": 8.459999999999999, "t": "researchers in the Netherlands tested cats that had just arrived at a shelter.", "k": ["researchers"], "w
+  {"a": 8.459999999999999, "b": 9.821, "t": "Half got a hiding box.", "k": ["hiding"], "w": [8.51, 8.799, 9.032, 9.154, 9.554]}
+  {"a": 9.821, "b": 11.799999999999999, "t": "The other half got nothing.", "k": ["nothing."], "w": [9.871, 10.104, 10.449, 10.738, 10.971]}
+  {"a": 11.799999999999999, "b": 13.646999999999998, "t": "The cats with a box were less stressed,", "k": ["stressed,"], "w": [11.85, 12.034, 12.262, 12.491, 12.5
+  {"a": 13.646999999999998, "b": 15.51, "t": "and they settled in days faster.", "k": ["settled"], "w": [13.697, 13.882, 14.11, 14.47, 14.61, 14.838]}
+  {"a": 15.51, "b": 17.785, "t": "For a cat, a small closed space means safety:", "k": ["safety:"], "w": [15.56, 15.756, 15.858, 16.124, 16.227, 16.516, 16.852, 1
+  {"a": 17.785, "b": 19.79, "t": "nothing can sneak up from behind.", "k": ["nothing"], "w": [17.835, 18.218, 18.414, 18.703, 18.852, 19.094]}
+  {"a": 19.79, "b": 21.54, "t": "So when yours squeezes into a box,", "k": ["squeezes"], "w": [19.84, 19.992, 20.238, 20.532, 20.969, 21.215, 21.32]}
+  {"a": 21.54, "b": 23.63, "t": "it's choosing a safe spot to relax.", "k": ["choosing"], "w": [21.59, 21.789, 22.226, 22.33, 22.576, 22.823, 22.975]}
+  {"a": 23.63, "b": 26.29, "t": "Tell me the weirdest place your cat has squeezed into.", "k": ["weirdest"], "w": [23.68, 23.89, 24.019, 24.188, 24.56, 24.81, 25.
+  {"a": 26.29, "b": 29.52, "t": "Follow to decode your cat.", "k": ["Follow"], "w": [26.34, 26.696, 26.855, 27.211, 27.468]}

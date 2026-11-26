@@ -1,0 +1,13 @@
+ok /home/claude/d24/wr2/R2026112502.json dur 32.94
+T: witness=3.16 s_1=4.02 nine=6.85 s_2=9.46 skipping=11.29 s_3=12.53 stuck=15.34 s_4=16.07 headline=17.04 s_5=18.12 hundreds=18.86 s_6=22.38 crescent=24.39 s_fin=27.59 s_cta=29.94 fin=32.94
+  {"a": 0, "b": 2.031, "t": "A newspaper invented flying saucers.", "k": ["newspaper"], "w": [0.056, 0.172, 0.708, 1.192, 1.571]}
+  {"a": 2.031, "b": 3.966, "t": "Not a pilot, not a witness.", "k": ["witness."], "w": [2.081, 2.302, 2.418, 2.823, 3.044, 3.16]}
+  {"a": 3.966, "b": 9.405999999999999, "t": "In June 1947, pilot Kenneth Arnold saw nine shiny objects near Mount Rainier.", "k": ["1947,"], "w": [4.016, 4.201, 4
+  {"a": 9.405999999999999, "b": 12.475999999999999, "t": "He compared the way they moved to a saucer skipping across water.", "k": ["compared"], "w": [9.456, 9.58
+  {"a": 12.475999999999999, "b": 16.016, "t": "But the papers ran it as flying saucers, and the name stuck.", "k": ["saucers,"], "w": [12.526, 12.734, 12.943, 13.
+  {"a": 16.016, "b": 18.066, "t": "Now watch what one headline did.", "k": ["headline"], "w": [16.066, 16.272, 16.577, 16.832, 17.038, 17.49]}
+  {"a": 18.066, "b": 22.326, "t": "Within weeks, hundreds of people across the country reported flying saucers.", "k": ["country"], "w": [18.116, 18.475, 18.86, 1
+  {"a": 22.326, "b": 25.151, "t": "And Arnold later drew his objects thin and crescent shaped.", "k": ["crescent"], "w": [22.376, 22.566, 22.891, 23.172, 23.407, 
+  {"a": 25.151, "b": 27.535999999999998, "t": "So the classic saucer started as a headline.", "k": ["headline."], "w": [25.201, 25.346, 25.536, 25.906, 26.232, 26
+  {"a": 27.535999999999998, "b": 29.886, "t": "Tell me if you knew where the name came from.", "k": ["where"], "w": [27.586, 27.801, 27.933, 28.065, 28.239, 28.45
+  {"a": 29.886, "b": 32.89, "t": "Follow for the next case.", "k": ["Follow"], "w": [29.936, 30.251, 30.435, 30.619, 30.847]}

@@ -1,0 +1,22 @@
+ok /home/claude/d24/wm2/M2026112502.json dur 62.3
+T: lost0=0.78 decision=3.60 s_1=7.15 king=9.12 m9000=10.94 s_2=12.40 dvds=14.59 losing=15.23 s_3=16.37 m50=20.80 s_4=22.46 laughed=23.87 flat=25.84 s_5=26.69 detail=27.20 s_6=29.35 hours=32.21 jet=38.01 s_7=39.74 shorts=40.94 s_8=43.33 bankruptcy=45.64 billions=47.58 s_9=48.45 one=49.17 s_10=52.00 lesson=52.00 s_fin=56.54 s_cta=58.33 fin=62.30
+  {"a": 0, "b": 1.801, "t": "Blockbuster lost everything.", "k": ["Blockbuster"], "w": [0.056, 0.783, 1.094]}
+  {"a": 1.801, "b": 4.192, "t": "And it all came down to one decision.", "k": ["decision."], "w": [1.851, 2.101, 2.292, 2.543, 2.853, 3.163, 3.353, 3.604]}
+  {"a": 4.192, "b": 7.096, "t": "But there's a detail almost nobody knows.", "k": ["there's"], "w": [4.242, 4.492, 4.922, 5.053, 5.482, 5.912, 6.341]}
+  {"a": 7.096, "b": 12.346, "t": "In 2000, Blockbuster was the king of movie rentals, with about 9,000 stores.", "k": ["2000,", "9,000"], "w": [7.146, 7.309, 8.06
+  {"a": 12.346, "b": 16.316, "t": "Netflix was a small startup mailing DVDs, and losing money.", "k": ["Netflix"], "w": [12.396, 12.879, 13.127, 13.257, 13.622, 1
+  {"a": 16.316, "b": 19.082, "t": "Its founders got a meeting with Blockbuster's CEO.", "k": ["Blockbuster's"], "w": [16.366, 16.589, 17.077, 17.3, 17.417, 17.852
+  {"a": 19.082, "b": 22.406, "t": "Their offer: sell Netflix for 50 million dollars.", "k": ["50", "dollars."], "w": [19.132, 19.461, 19.87, 20.146, 20.581, 20.80
+  {"a": 22.406, "b": 23.108999999999998, "t": "He listened.", "k": ["listened."], "w": [22.456, 22.618]}
+  {"a": 23.108999999999998, "b": 26.636, "t": "At first, he laughed, and then he followed with a flat no.", "k": ["laughed,"], "w": [23.159, 23.321, 23.71, 23.872
+  {"a": 26.636, "b": 29.296, "t": "Now the detail almost nobody knows.", "k": ["detail"], "w": [26.686, 26.944, 27.202, 27.644, 28.085, 28.527]}
+  {"a": 29.296, "b": 33.536, "t": "Netflix's founders got the invitation less than 12 hours before the meeting.", "k": ["12"], "w": [29.346, 29.81, 30.274, 30.485
+  {"a": 33.536, "b": 35.961000000000006, "t": "With the clock against them and almost broke,", "k": ["against"], "w": [33.586, 33.848, 34.06, 34.373, 34.786, 35.0
+  {"a": 35.961000000000006, "b": 39.686, "t": "they spent money they didn't have on a jet, just to hear that no.", "k": ["didn't"], "w": [36.011, 36.273, 36.586, 
+  {"a": 39.686, "b": 43.276, "t": "They walked in wearing shorts, flip-flops and a Hawaiian shirt.", "k": ["flip-flops"], "w": [39.736, 39.999, 40.362, 40.524, 40
+  {"a": 43.276, "b": 46.307, "t": "Ten years later, Blockbuster filed for bankruptcy.", "k": ["years"], "w": [43.326, 43.564, 43.916, 44.353, 45.046, 45.398, 45.6
+  {"a": 46.307, "b": 48.396, "t": "Netflix became worth billions.", "k": ["billions."], "w": [46.357, 46.822, 47.231, 47.583]}
+  {"a": 48.396, "b": 51.946000000000005, "t": "Today, only one Blockbuster is still alive, in Oregon.", "k": ["Blockbuster"], "w": [48.446, 48.881, 49.175, 49.412
+  {"a": 51.946000000000005, "b": 56.486000000000004, "t": "Lesson: when a small player changes how people buy, take the meeting seriously.", "k": ["seriously."], 
+  {"a": 56.486000000000004, "b": 58.276, "t": "Tell me if you would have bought it.", "k": ["bought"], "w": [56.536, 56.728, 56.846, 56.964, 57.12, 57.348, 57.541
+  {"a": 58.276, "b": 62.25, "t": "Follow for the next million dollar mistake.", "k": ["mistake."], "w": [58.326, 58.667, 58.866, 59.065, 59.311, 59.7, 60.041]}

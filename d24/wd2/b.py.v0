@@ -1,0 +1,31 @@
+import sys; sys.path.insert(0,'/home/claude/d24'); from formato import *
+F=["Stop buying your dog red toys. At least until you see this.",
+"For years, people thought dogs saw the world in black and white.",
+"In 1989, scientist Jay Neitz showed that dogs do see color, just fewer than us.",
+"They see blues and yellows, but not reds and greens.",
+"Now the part that changes playtime.",
+"To your dog, a red ball on green grass looks almost the same color as the grass.",
+"So for games outside, pick blue or yellow toys. They stand out much more.",
+"Tell me what color your dog's favorite toy is.",
+"Follow to decode your dog."]
+V=[f.replace("1989","nineteen eighty-nine") for f in F]
+P=dict(look="cliente",var=95,pelo="#212121",camisa="#e53935",s=1.0)
+video("D2026112502_src.json","D2026112502","THE DOGS DECODER","Stop Buying Your Dog Red Toys 🔴🚫","STOP BUYING RED TOYS",F,V,
+ marcas=[("red0",0,"^red"),("white",1,"^white"),("color",2,"^color"),("blues",3,"^blues"),("reds",3,"^reds"),("playtime",4,"^playtime"),("same",5,"^same"),("blue",6,"^blue")],
+ escenas=[
+  {"i":["#3a1414","#1c0808","#050101"],"luz2":"255,200,200","pedestal":True,"props":[{"tipo":"pelota","x":540,"y":1300,"s":2.2,"color":"#e53935"},{"tipo":"neblina","y":1700,"a":.12}]},
+  {"k":"s_1","z":"salaV","o":{"hora":"tarde","var":4,"sinSofa":True},"actores":[{**P,"keys":[{"k":"s_1","x":360,"pose":"explica","cara":"feliz"}]}],
+   "props":[perro(x=780,y=1760,s=1.05,dir=-1),{"tipo":"tv","x":980,"y":1500,"s":.7,"z":1500}]},
+  {"k":"s_2","z":"labV","o":{"pantalla":"DOG VISION","pantalla2":"1989"},"titulo":("1989","amar"),
+   "actores":[{"look":"inventor","var":96,"lentes":True,"pelo":"#8d6e63","camisa":"#eceff1","s":.98,"keys":[{"k":"s_2","x":330,"pose":"lee","cara":"neutral","objeto":"documento"},{"k":"color","x":330,"pose":"explica","cara":"feliz"}]}],
+   "props":[perro(x=780,y=1760,s=.95,dir=-1)]},
+  {"k":"s_3","i":["#1c2a44","#0d1424","#020408"],"luz2":"200,220,255","props":[{"tipo":"visionPerro","x":540,"y":1600,"s":1.0,"k":"s_3","a":"YOU","b":"YOUR DOG"}]},
+  {"k":"s_4","z":"parqueV","o":{"hora":"tarde"},"actores":[{**P,"keys":[{"k":"s_4","x":330,"pose":"ofrece","cara":"feliz","objeto":"pelota"}]}],"props":[perro(x=780,y=1760,s=1.05,dir=-1)]},
+  {"k":"s_5","i":["#203a1c","#0f1d0d","#030602"],"luz2":"220,255,200","props":[{"tipo":"visionPerro","x":540,"y":1600,"s":1.0,"k":"s_5","a":"RED BALL","b":"TO YOUR DOG"}]},
+  {"k":"s_6","z":"casaPalmasV","o":{"sinCasa":True},"actores":[{**P,"keys":[{"k":"s_6","x":330,"pose":"celebra","cara":"risa"}]}],
+   "props":[perro(x=760,y=1760,s=1.05,dir=-1),{"tipo":"pelota","x":600,"y":1720,"s":.9,"color":"#1e88e5","k":"blue"},{"tipo":"pelota","x":900,"y":1740,"s":.8,"color":"#fdd835","k":"blue"}]}],
+ prohibidos=[{"k":"red0","x":540,"y":1180,"r":220,"ins":1}],sacudidas=[{"k":"red0","f":12}],
+ emojis=[{"k":"white","e":"🤔"},{"k":"playtime","e":"🎾"},{"k":"blue","e":"💙","dur":1.2}],
+ gancho2=4,cierre="WHAT COLOR IS IT?",cierre2="Tell me. Comment",paises=["RED","BLUE","YELLOW"],
+ nota="Neitz, Geist y Jacobs (1989), Visual Neuroscience, UC Santa Barbara: los perros son dicromáticos (dos tipos de conos); ven azules y amarillos, no distinguen rojo de verde. Un juguete rojo sobre pasto verde se ve de un tono parecido al pasto (más oscuro). AKC: los mejores juguetes son azules y amarillos. Fuentes: Scientific American, AKC, Psychology Today (Coren). Disparador: prohibición. Gancho tipo 8.",
+ fuentes=["https://www.scientificamerican.com/article/what-colors-do-dogs-see/","https://www.akc.org/expert-advice/health/are-dogs-color-blind/"])

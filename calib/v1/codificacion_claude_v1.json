@@ -1,0 +1,258 @@
+{
+ "codificador": "Claude",
+ "codigos": {
+  "1": {
+   "apunta": "Atención",
+   "enigma": "Plantear",
+   "funcion": "Abrir",
+   "img_rel": "Muestra",
+   "img_tipo": "Producto",
+   "porque": "Abre con una paradoja: el más grande del rubro no logra alcanzar al líder. Deja la pregunta de por qué",
+   "saber": "No aplica",
+   "sonido": "No puedo oír"
+  },
+  "10": {
+   "apunta": "Comprensión",
+   "enigma": "Ninguno",
+   "funcion": "Pagar",
+   "img_rel": "Muestra",
+   "img_tipo": "Dato o gráfico",
+   "porque": "Cierra la década con el resultado medible de lo anterior",
+   "saber": "Igual",
+   "sonido": "No puedo oír"
+  },
+  "11": {
+   "apunta": "Atención",
+   "enigma": "Plantear",
+   "funcion": "Complicar",
+   "img_rel": "Muestra",
+   "img_tipo": "Archivo de época",
+   "porque": "Aparece la competencia en masa: abre la pregunta de quién va a desafiar al líder",
+   "saber": "Igual",
+   "sonido": "No puedo oír"
+  },
+  "12": {
+   "apunta": "Emoción",
+   "enigma": "Demorar",
+   "funcion": "Complicar",
+   "img_rel": "Muestra",
+   "img_tipo": "Documento o prueba",
+   "porque": "Ataque directo de Pepsi con una cita picante. El rival del título (Powerade) todavía no aparece",
+   "saber": "Igual",
+   "sonido": "No puedo oír"
+  },
+  "13": {
+   "apunta": "Comprensión",
+   "enigma": "Revelar",
+   "funcion": "Girar",
+   "img_rel": "Muestra",
+   "img_tipo": "Archivo de época",
+   "porque": "El producto tan anunciado desaparece rápido: se resuelve esa subpregunta",
+   "saber": "Igual",
+   "sonido": "No puedo oír"
+  },
+  "14": {
+   "apunta": "Comprensión",
+   "enigma": "Responder a medias",
+   "funcion": "Complicar",
+   "img_rel": "Muestra",
+   "img_tipo": "Documento o prueba",
+   "porque": "Por fin entra el rival del título, a los 5:34. Su lanzamiento tibio es otra parte del porqué",
+   "saber": "Público más",
+   "sonido": "Sí (audio de un comercial, detectado en los subtítulos)"
+  },
+  "15": {
+   "apunta": "Comprensión",
+   "enigma": "Responder a medias",
+   "funcion": "Avanzar",
+   "img_rel": "Muestra",
+   "img_tipo": "Archivo de época",
+   "porque": "Otra parte del porqué: las ligas grandes ya eran de Gatorade",
+   "saber": "Igual",
+   "sonido": "No puedo oír"
+  },
+  "16": {
+   "apunta": "Comprensión",
+   "enigma": "Responder a medias",
+   "funcion": "Pagar",
+   "img_rel": "Muestra",
+   "img_tipo": "Archivo de época",
+   "porque": "Resultado de la década y una causa más (Jordan). Termina en el gráfico de cuota",
+   "saber": "Igual",
+   "sonido": "No puedo oír"
+  },
+  "17": {
+   "apunta": "Atención",
+   "enigma": "Ninguno",
+   "funcion": "Girar",
+   "img_rel": "Muestra",
+   "img_tipo": "Documento o prueba",
+   "porque": "El retador compra al líder: cambia el mapa. Cifra grande y titular",
+   "saber": "Igual",
+   "sonido": "No puedo oír"
+  },
+  "18": {
+   "apunta": "Comprensión",
+   "enigma": "Ninguno",
+   "funcion": "Situar",
+   "img_rel": "Muestra",
+   "img_tipo": "Documento o prueba",
+   "porque": "Reordena el tablero: quedan dos. Prepara lo que sigue",
+   "saber": "Igual",
+   "sonido": "No puedo oír"
+  },
+  "19": {
+   "apunta": "Comprensión",
+   "enigma": "Ninguno",
+   "funcion": "Avanzar",
+   "img_rel": "Muestra",
+   "img_tipo": "Producto",
+   "porque": "Enumeración larga de productos; el propio narrador dice que no quiere enredarse en detalles",
+   "saber": "Igual",
+   "sonido": "No puedo oír"
+  },
+  "2": {
+   "apunta": "Comprensión",
+   "enigma": "Revelar",
+   "funcion": "Situar",
+   "img_rel": "Muestra",
+   "img_tipo": "Dato o gráfico",
+   "porque": "Da el desenlace de entrada (no la ve líder). Mata el \"quién gana\" y deja solo el \"cómo pasó\"",
+   "saber": "No aplica",
+   "sonido": "No puedo oír"
+  },
+  "20": {
+   "apunta": "Emoción",
+   "enigma": "Ninguno",
+   "funcion": "Respirar",
+   "img_rel": "Muestra",
+   "img_tipo": "Archivo de época",
+   "porque": "Anécdotas de figuras conocidas; baja la densidad después de la lista",
+   "saber": "Igual",
+   "sonido": "No puedo oír"
+  },
+  "21": {
+   "apunta": "Comprensión",
+   "enigma": "Plantear",
+   "funcion": "Complicar",
+   "img_rel": "Muestra",
+   "img_tipo": "Producto",
+   "porque": "Tercer jugador nuevo: abre la pregunta de a quién amenaza",
+   "saber": "Igual",
+   "sonido": "No puedo oír"
+  },
+  "22": {
+   "apunta": "Comprensión",
+   "enigma": "Revelar",
+   "funcion": "Girar",
+   "img_rel": "Muestra",
+   "img_tipo": "Documento o prueba",
+   "porque": "Coca-Cola compra al tercero y aun así sigue lejos: es la respuesta final a la pregunta del inicio",
+   "saber": "Igual",
+   "sonido": "No puedo oír"
+  },
+  "23": {
+   "apunta": "Comprensión",
+   "enigma": "Suspender",
+   "funcion": "Avanzar",
+   "img_rel": "Muestra",
+   "img_tipo": "Documento o prueba",
+   "porque": "Última jugada; el narrador deja abierto si sirve",
+   "saber": "Igual",
+   "sonido": "No puedo oír"
+  },
+  "24": {
+   "apunta": "Comprensión",
+   "enigma": "Ninguno",
+   "funcion": "Reflexionar",
+   "img_rel": "Adorna",
+   "img_tipo": "Producto",
+   "porque": "Interpretación del narrador; imágenes de producto sin relación puntual con lo dicho",
+   "saber": "No aplica",
+   "sonido": "No puedo oír"
+  },
+  "25": {
+   "apunta": "Atención",
+   "enigma": "Plantear",
+   "funcion": "Cerrar",
+   "img_rel": "Adorna",
+   "img_tipo": "Producto",
+   "porque": "Pide comentarios y lanza la pregunta sobre el futuro. Ninguna opción de \"a qué apunta\" calza bien: invita a participar",
+   "saber": "No aplica",
+   "sonido": "No puedo oír"
+  },
+  "3": {
+   "apunta": "Comprensión",
+   "enigma": "Prometer respuesta",
+   "funcion": "Abrir",
+   "img_rel": "Adorna",
+   "img_tipo": "Producto",
+   "porque": "Hoja de ruta: promete un recorrido y dice \"ya verás\". Imagen de máquina expendedora sin relación directa",
+   "saber": "No aplica",
+   "sonido": "No puedo oír"
+  },
+  "4": {
+   "apunta": "Comprensión",
+   "enigma": "Ninguno",
+   "funcion": "Situar",
+   "img_rel": "Muestra",
+   "img_tipo": "Archivo de época",
+   "porque": "Origen necesario para entender el resto. No mueve ninguna pregunta",
+   "saber": "Igual",
+   "sonido": "No puedo oír"
+  },
+  "5": {
+   "apunta": "Comprensión",
+   "enigma": "Ninguno",
+   "funcion": "Avanzar",
+   "img_rel": "Muestra",
+   "img_tipo": "Archivo de época",
+   "porque": "Hecho nuevo en la misma dirección: del laboratorio a las tiendas",
+   "saber": "Igual",
+   "sonido": "No puedo oír"
+  },
+  "6": {
+   "apunta": "Atención",
+   "enigma": "Ninguno",
+   "funcion": "Respirar",
+   "img_rel": "Muestra",
+   "img_tipo": "Archivo de época",
+   "porque": "El narrador admite que no pasa mucho; rellena con una curiosidad",
+   "saber": "Igual",
+   "sonido": "No puedo oír"
+  },
+  "7": {
+   "apunta": "Comprensión",
+   "enigma": "Responder a medias",
+   "funcion": "Avanzar",
+   "img_rel": "Muestra",
+   "img_tipo": "Texto en pantalla",
+   "porque": "Primera pista del porqué: Coca-Cola llegó temprano pero sin ganas. Usa la ventaja de saber el final",
+   "saber": "Público más",
+   "sonido": "No puedo oír"
+  },
+  "8": {
+   "apunta": "Comprensión",
+   "enigma": "Ninguno",
+   "funcion": "Avanzar",
+   "img_rel": "Muestra",
+   "img_tipo": "Documento o prueba",
+   "porque": "Compra que cambia la escala. Titular y cita como prueba",
+   "saber": "Igual",
+   "sonido": "No puedo oír"
+  },
+  "9": {
+   "apunta": "Comprensión",
+   "enigma": "Ninguno",
+   "funcion": "Avanzar",
+   "img_rel": "Muestra",
+   "img_tipo": "Archivo de época",
+   "porque": "Lista de jugadas de expansión, todas en la misma dirección",
+   "saber": "Igual",
+   "sonido": "No puedo oír"
+  }
+ },
+ "limites": "No oigo el audio: sonido sin codificar. Veo 1 cuadro cada 5 s y la lista de cortes. Texto: subtítulos automáticos.",
+ "sellado": "2026-11-24 antes de recibir la codificación de Tao",
+ "video": "P2V-vFct8FY"
+}

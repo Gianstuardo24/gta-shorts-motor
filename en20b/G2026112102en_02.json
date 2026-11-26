@@ -1,0 +1,55 @@
+{
+  "titulo": "GTA 6 Lets You Flip Your Car Back 🚗",
+  "texto_pantalla": "FLIPPED CAR?",
+  "lote": "G2026112102en",
+  "marca": "THE VICEVERSE GG",
+  "nota_datos": "Micronicho EN: hidden mechanics. Kotaku (20-nov-2026): acercarse al costado del auto volcado, clic en stick izquierdo, mantener Cuadrado/X para darlo vuelta; falla si es muy pesado, se acaba la stamina o en pendiente; misma mecánica para empujar un auto sin gasolina y para empujar un bote o jet ski de la arena al agua. PC Gamer: empujar bote varado y llevar el auto a la bencinera. RockstarINTEL y Mobalytics: empujar autos por delante o detrás (L3/LS).",
+  "frases": [
+    "Your car flipped over in GTA 6? Don't walk away.",
+    "Walk up to the side and click the left stick.",
+    "Then hold Square, or X on Xbox, and push it back on its wheels.",
+    "It fails if the car is too heavy, or you run out of stamina.",
+    "The same move lets you push a car with no gas to the station.",
+    "And you can shove a boat or a jet ski off the sand into the water.",
+    "Have you tried it yet?"
+  ],
+  "frases_voz": [
+    "Your car flipped over in GTA six? Don't walk away.",
+    "Walk up to the side, and click the left stick.",
+    "Then hold Square, or X on Xbox, and push it back on its wheels.",
+    "It fails if the car is too heavy, or you run out of stamina.",
+    "The same move lets you push a car with no gas to the station.",
+    "And you can shove a boat or a jet ski off the sand, into the water.",
+    "Have you tried it yet?"
+  ],
+  "fuentes": [
+    "https://kotaku.com/two-cool-hidden-features-gta-6-doesnt-explain-flipping-and-sitting-2000757835",
+    "https://www.pcgamer.com/games/grand-theft-auto/15-hidden-gta-6-controls-and-features-you-should-know-about/",
+    "https://rockstarintel.com/30-hidden-gta-6-controls-and-secret-mechanics-you-probably-missed/",
+    "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-hidden-details-you-missed"
+  ],
+  "escena": {
+    "momentos": [
+      ["s_stick", 1, null],
+      ["stick", 1, "^stick"],
+      ["hold", 2, "^hold"],
+      ["s_fail", 3, null],
+      ["heavy", 3, "^heavy"],
+      ["s_gas", 4, null],
+      ["s_boat", 5, null],
+      ["s_fin", 6, null]
+    ],
+    "escenas": [
+      {"tipo": "volteo", "desde": "0", "k1": "stick", "k2": "hold", "k3": "heavy", "b1": "L3", "b2": "□ / X", "titulo": "HIDDEN MOVE", "aviso": "TOO HEAVY? NO STAMINA? FAILS", "color": "cian"},
+      {"tipo": "empuje", "desde": "s_gas", "modo": "auto", "titulo": "NO GAS?", "chip": "PUSH IT", "color": "verde"},
+      {"tipo": "empuje", "desde": "s_boat", "modo": "bote", "titulo": "BOATS TOO", "chip": "BOAT OR JET SKI"},
+      {"tipo": "cierre", "desde": "s_fin"}
+    ],
+    "cierre": "TRIED IT YET?",
+    "cierre2": "Comment: yes or no",
+    "paises": ["YES", "NOT YET"],
+    "sfx": [
+      {"f": "extra/CarEngineRev_BW.52086.wav", "k": "0", "off": 0.0, "dur": 1.2, "fade": 0.5, "g": 0.12}
+    ]
+  }
+}

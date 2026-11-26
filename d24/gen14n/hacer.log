@@ -1,0 +1,16 @@
+ok /home/claude/d24/gen14n/G2026112403en.json dur 36.57
+T: nobody=0.12 door0=1.38 belongs=2.85 dangerous=4.48 s_isl=6.15 island=7.07 blue=7.92 s_floor=9.73 second=9.73 last=10.60 s_lock=12.38 locked=12.99 way=15.07 s_fans=15.84 noticed=16.40 exactly=18.30 s_dex=20.13 dexter=21.21 killer=22.96 s_det=23.73 detail=24.43 s_dock=25.70 boat=27.48 slice=28.09 same=29.15 s_fin=30.51 s_cta=32.81 fin=36.57
+  {"a": 0, "b": 2.367, "t": "Nobody can open this door in GTA 6.", "k": ["6."], "w": [0.12, 0.538, 0.781, 1.083, 1.384, 1.686, 1.872, 2.115]}
+  {"a": 2.367, "b": 6.1000000000000005, "t": "And it belongs to one of TV's most dangerous characters.", "k": ["characters."], "w": [2.417, 2.66, 2.846, 3.322, 3.
+  {"a": 6.1000000000000005, "b": 9.68, "t": "It's on Washington Island: a small blue building by the water.", "k": ["Washington"], "w": [6.15, 6.359, 6.518, 7.074
+  {"a": 9.68, "b": 10.553999999999998, "t": "Second floor.", "k": ["Second"], "w": [9.73, 10.152]}
+  {"a": 10.553999999999998, "b": 12.33, "t": "Last door on the left.", "k": ["left."], "w": [10.604, 10.908, 11.213, 11.401, 11.647]}
+  {"a": 12.33, "b": 13.356, "t": "The door is locked,", "k": ["locked,"], "w": [12.38, 12.582, 12.833, 12.987]}
+  {"a": 13.356, "b": 15.79, "t": "and so far no player has found a way in.", "k": ["player"], "w": [13.406, 13.608, 13.762, 13.964, 14.118, 14.465, 14.667, 14.966
+  {"a": 15.79, "b": 20.08, "t": "Then fans noticed the building looks almost exactly like one from TV.", "k": ["building"], "w": [15.84, 16.122, 16.404, 16.848, 1
+  {"a": 20.08, "b": 23.68, "t": "It's the apartment of Dexter: television's famous serial killer.", "k": ["television's"], "w": [20.13, 20.338, 20.546, 21.052, 21
+  {"a": 23.68, "b": 25.65, "t": "And here is the detail that sold it.", "k": ["detail"], "w": [23.73, 23.905, 24.122, 24.255, 24.43, 24.731, 24.947, 25.164]}
+  {"a": 25.65, "b": 28.883, "t": "At the dock next door, there's a boat named Slice of Life.", "k": ["there's"], "w": [25.7, 25.868, 26.09, 26.363, 26.637, 26.99,
+  {"a": 28.883, "b": 30.46, "t": "The same name as his.", "k": ["same"], "w": [28.933, 29.154, 29.428, 29.701, 29.87]}
+  {"a": 30.46, "b": 32.760000000000005, "t": "Tell me what you think is behind that door.", "k": ["behind"], "w": [30.51, 30.73, 30.866, 31.086, 31.264, 31.526, 3
+  {"a": 32.760000000000005, "b": 36.52, "t": "Follow for more GTA 6 secrets.", "k": ["6"], "w": [32.81, 33.201, 33.429, 33.712, 33.94, 34.223]}

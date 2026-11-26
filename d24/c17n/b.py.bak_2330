@@ -1,0 +1,68 @@
+import sys; sys.path.insert(0,'/home/claude/d24'); from comun import *
+frases=["Stop drinking decaf. At least until you hear this.",
+"Most people pour it at night, to relax without the buzz.",
+"To get that name, the green beans are soaked before roasting, to pull the caffeine out.",
+"But the U.S. rule only asks to remove about 97 percent.",
+"So your decaf still has caffeine: usually 2 to 15 milligrams a cup, against about 95 in a regular one.",
+"And here is the part that matters at night.",
+"Caffeine takes about 5 hours just to drop by half.",
+"Tell me if you knew.",
+"Follow for one coffee curiosity a day."]
+voz=[f.replace("U.S.","U S").replace("97 percent","ninety-seven percent").replace("2 to 15","two to fifteen").replace("about 95","about ninety-five").replace("5 hours","five hours") for f in frases]
+M=[["stop",0,"^stop"],["decaf0",0,"^decaf"],["hear",0,"^hear"],
+["s_night",1,None],["pour",1,"^pour"],["relax",1,"^relax"],["buzz",1,"^buzz"],
+["s_name",2,None],["beans",2,"^beans"],["soaked",2,"^soaked"],["roasting",2,"^roasting"],["pull",2,"^pull"],
+["s_rule",3,None],["rule",3,"^rule"],["about",3,"^about"],
+["s_rev",4,None],["still",4,"^still"],["usually",4,"^usually"],["against",4,"^against"],["regular",4,"^regular"],
+["s_part",5,None],["matters",5,"^matters"],
+["s_half",6,None],["takes",6,"^takes"],["half",6,"^half"],
+["s_fin",7,None],["s_cta",8,None]]
+CL=dict(look="cliente",var=62,pelo="#d7a86e",camisa="#5c6bc0",s=1.0)
+BA=dict(look="vendedor",var=61,pelo="#3e2723",camisa="#6d4c41",s=1.0)
+P=[{"tipo":"sofa","x":2150,"y":1700,"s":1.1,"k":"s_night","fin":"s_name"},
+   {"tipo":"granos","x":3360,"y":1705,"s":1.9,"color":"#8a9a5b","n":18,"k":"beans","fin":"s_rule"},
+   {"tipo":"remojo","x":3640,"y":1705,"s":0.5,"k":"soaked","fin":"s_rule"},
+   {"tipo":"bolsaCafe","x":5760,"y":1705,"s":1.2,"color":"#2e7d32","texto":"DECAF","sub":"2-15 MG","k":"still","cae":True,"z":1750,"fin":"s_part"},
+   {"tipo":"bolsaCafe","x":5990,"y":1705,"s":1.2,"color":"#6d4c41","texto":"REGULAR","sub":"95 MG","k":"against","cae":True,"z":1750,"fin":"s_part"},
+   {"tipo":"cafetera","x":6180,"y":1560,"s":0.8,"k":"s_rev","z":1600,"fin":"s_part"},
+   {"tipo":"camaDormida","x":7330,"y":1700,"s":1.0,"k":"s_part"}]
+A=[{**CL,"hasta":"s_night","keys":[{"k":0,"x":430,"y":1700,"pose":"bebe","cara":"feliz","objeto":"taza"},{"k":"stop","x":430,"y":1700,"pose":"sostiene","cara":"sorpresa","fx":"brinca","objeto":"taza"},{"k":"hear","x":430,"y":1700,"pose":"piensa","cara":"neutral"}]},
+   {**CL,"desde":"s_night","hasta":"s_name","keys":[{"k":"s_night","x":1160,"y":1700,"a":[1720,1700],"dur":1.4,"ease":"eio","pose":"sostiene","cara":"feliz","objeto":"taza"},{"k":"relax","x":1720,"y":1700,"pose":"bebe","cara":"feliz","objeto":"taza"}]},
+   {**BA,"desde":"s_name","hasta":"s_rule","keys":[{"k":"s_name","x":2960,"y":1700,"pose":"explica","cara":"feliz"},{"k":"beans","x":2960,"y":1700,"pose":"apunta","cara":"feliz"},{"k":"pull","x":2960,"y":1700,"pose":"explica","cara":"feliz"}]},
+   {"look":"inventor","var":66,"lentes":True,"pelo":"#9e9e9e","camisa":"#eceff1","s":0.98,"desde":"s_rule","hasta":"s_rev","keys":[{"k":"s_rule","x":4300,"y":1700,"pose":"lee","cara":"neutral","objeto":"documento"},{"k":"about","x":4300,"y":1700,"pose":"apunta","cara":"feliz"}]},
+   {**BA,"desde":"s_rev","hasta":"s_part","keys":[{"k":"s_rev","x":5480,"y":1700,"pose":"ofrece","cara":"feliz","objeto":"taza"},{"k":"still","x":5480,"y":1700,"pose":"explica","cara":"feliz"}]},
+   {**CL,"desde":"s_part","keys":[{"k":"s_part","x":6820,"y":1700,"pose":"bebe","cara":"neutral","objeto":"taza"},{"k":"matters","x":6820,"y":1700,"pose":"piensa","cara":"sorpresa"},{"k":"half","x":6820,"y":1700,"pose":"cruzado","cara":"sorpresa","fx":"tiembla"}]}]
+E={"momentos":M,"escenas":[{"tipo":"pelicula","desde":"0","escala":1.08,
+ "zonas":[{"x0":-300,"x1":1300,"set":"sala"},{"x0":1300,"x1":2600,"set":"sala","k":"s_night"},{"x0":2600,"x1":3900,"set":"calle","k":"s_name"},
+          {"x0":3900,"x1":5200,"set":"oficina","k":"s_rule"},{"x0":5200,"x1":6500,"set":"cafe","k":"s_rev"},{"x0":6500,"x1":7900,"set":"calle","k":"s_part"}],
+ "pan":[{"k":"s_night","x":1300,"dur":0.8},{"k":"s_name","x":2600,"dur":0.8},{"k":"s_rule","x":3900,"dur":0.8},{"k":"s_rev","x":5200,"dur":0.8},{"k":"s_part","x":6500,"dur":0.8}],
+ "props":P,"actores":A,
+ "prohibidos":[{"k":"stop","x":430,"y":1560,"r":120}],
+ "burbujas":[{"k":"matters","de":5,"texto":"WAIT...","fin":"s_half","dx":170}],
+ "numeros":[{"k":"about","n":97,"suf":" %","c":"verde","etq":"CAFFEINE REMOVED","fin":"s_rev"},
+            {"k":"usually","n":15,"pre":"2–","suf":" MG","c":"verde","etq":"DECAF · PER CUP","fin":"against"},
+            {"k":"regular","n":95,"suf":" MG","c":"rojo","etq":"REGULAR CUP","fin":"s_part"}],
+ "zoom":[],"planos_hint":[{"k":"matters","tipo":"primer","var":62}],
+ "sacudidas":[{"k":"stop","f":12},{"k":"still","f":14},{"k":"half","f":12}],
+ "titulos":[{"k":0.15,"texto":"STOP","c":"rojo","grande":True,"fin":"decaf0"},
+            {"k":"s_night","texto":"1 · WHY PEOPLE DRINK IT","c":"cian","fin":"s_name"},
+            {"k":"s_name","texto":"2 · HOW IT'S MADE","c":"verde","fin":"s_rule"},
+            {"k":"s_rule","texto":"3 · THE RULE","c":"amar","fin":"rule"},
+            {"k":"s_rev","texto":"4 · THE CATCH","c":"rojo","fin":"usually"},
+            {"k":"s_part","texto":"5 · AT NIGHT","c":"cian","fin":"takes"},
+            ],
+ "emojis":[{"k":"hear","e":"😳"},{"k":"relax","e":"😌"},{"k":"still","e":"😬"}],
+ "chips":[{"k":"relax","texto":"RELAX · NO BUZZ","c":"cian","fin":"s_name"},
+          {"k":"roasting","texto":"BEFORE ROASTING","c":"verde","fin":"s_rule"}]},
+ {"tipo":"cierre","desde":"s_fin"}],
+ "cierre":"DID YOU KNOW?","cierre2":"Yes or no? Comment","paises":["YES","NO"],"sfx":[],"cta":"FOLLOW FOR MORE","like":"LIKE"}
+poner_sets(E,[("dormitorioV",{"persona":False,"pared":["#3a4766","#252d47"]}),("salaV",{"hora":"noche","sinSofa":True,"var":2,"pared":["#4a3f5c","#2e2740"]}),("cafetalV",{}),("labV",{"pantalla":"DECAF RULE","pantalla2":"U.S."}),("cocinaV",{}),("nocheV",{"sem":14,"ciudad":True})])
+insertar(E,"decaf0","s_night",1300,"vitrinaV",{"fondo":["#1d2a4a","#0d1428","#03050c"],"luz2":"200,215,255","pedestal":True},[{"tipo":"tazaPremium","x":540,"y":1300,"s":2.0,"texto":"DECAFFEINATED","banda":"DECAF","color":"#2e7d32","z":1900}])
+insertar(E,"soaked","pull",2600,"vitrinaV",{"fondo":["#cfe8c0","#6f9a5a","#16280e"],"luz2":"235,255,225"},[{"tipo":"remojo","x":540,"y":1640,"s":1.5,"texto":"SOAKED IN WATER","sub":"THE CAFFEINE COMES OUT"}])
+insertar(E,"rule","about",3900,"vitrinaV",{"fondo":["#e8e2d2","#a89878","#2a2214"],"luz2":"255,245,220"},[{"tipo":"papel","x":540,"y":1760,"s":1.25,"titulo":"U.S. DECAF RULE","dato":"REMOVE ABOUT 97%","sello":"RULE","selloc":"amar","filaDato":6}])
+insertar(E,"usually","against",5200,"vitrinaV",{"fondo":["#f0e2c8","#b89a6a","#2a1c0c"],"luz2":"255,240,210"},[{"tipo":"bolsaCafe","x":330,"y":1640,"s":2.0,"color":"#2e7d32","texto":"DECAF","sub":"2-15 MG"},{"tipo":"bolsaCafe","x":760,"y":1640,"s":2.0,"color":"#6d4c41","texto":"CAFFEINE","sub":"95 MG"}])
+insertar(E,"takes","s_fin",6500,"vitrinaV",{"fondo":["#2a1d55","#120b2c","#030108"],"luz2":"200,150,255"},[{"tipo":"mitad","x":540,"y":1700,"s":1.05,"de":"takes","a":"half","texto":"CAFFEINE IN YOUR BODY","sub":"AFTER 5 HOURS","horas":5}])
+g={"titulo":"Stop Drinking Decaf ❌☕😳","texto_pantalla":"STOP DRINKING DECAF","lote":"C2026112403","marca":"COFFEE, BUT WHY?","cuerpo":"real",
+"nota_datos":"Formato nuevo (24-nov): gancho + promesa, desarrollo, primera respuesta, segunda pregunta y segundo dato, cierre. El descafeinado no es libre de cafeína: en EE.UU. se exige quitar ~97 %. Quedan normalmente 2-15 mg por taza de 8 oz (FDA); una taza normal tiene ~95 mg. La cafeína se extrae del grano verde, antes de tostar. Vida media de la cafeína en adultos sanos: ~5 horas en promedio (rango habitual 3-7 h). NO se afirma que el descafeinado perjudique el sueño: no hay estudio verificado para esas dosis. Fuentes: FDA ('Spilling the Beans'), Wikipedia (Decaffeination; Caffeine). Disparador: alarma. Tipo de gancho: 8.",
+"frases":frases,"frases_voz":voz,"fuentes":["https://en.wikipedia.org/wiki/Decaffeination","https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much","https://en.wikipedia.org/wiki/Caffeine"],"escena":E}
+guardar("C2026112403_src.json",g)

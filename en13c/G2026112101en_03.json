@@ -1,0 +1,553 @@
+{
+ "titulo": "GTA 6 Has a Secret Car Scanner 📱",
+ "texto_pantalla": "SMASH = STOLEN?",
+ "lote": "G2026112101en",
+ "marca": "THE VICEVERSE GG",
+ "nota_datos": "Micronicho EN: hidden mechanics. Fuentes: allthings.how (key cloner, romper vidrio no basta, carjack), stealthygaming (Waink muestra cerradura/alarma/tracker/valor; key cloner por historia; según Shacknews no arranca sin cloner), finalboss.io (vidrio roto no vence inmovilizador), games.gg y toy-people (datos del escaneo Waink), timesaver.gg (carjack siempre disponible).",
+ "frases": [
+  "You think smashing a window steals any car in GTA 6?",
+  "Try it on an expensive one.",
+  "You get inside, but the engine won't start.",
+  "Modern cars have electronic keys. You need a key cloner, and you unlock it in the story.",
+  "But here's the secret: your phone has an app called Waink.",
+  "Scan a parked car and it shows the lock, the alarm, the tracker and its value.",
+  "Or skip all that, and take a car with the driver still inside.",
+  "Did you know about the scanner?"
+ ],
+ "frases_voz": [
+  "You think smashing a window steals any car in GTA six?",
+  "Try it on an expensive one.",
+  "You get inside, but the engine won't start.",
+  "Modern cars have electronic keys. You need a key cloner, and you unlock it in the story.",
+  "But here's the secret. Your phone has an app called Waink.",
+  "Scan a parked car, and it shows the lock, the alarm, the tracker, and its value.",
+  "Or skip all that, and take a car with the driver still inside.",
+  "Did you know about the scanner?"
+ ],
+ "fuentes": [
+  "https://allthings.how/?p=132243",
+  "https://stealthygaming.com/?p=37393",
+  "https://finalboss.io/grand-theft-auto-vi-how-to-use-waink-for-lockpick-or-smash-theft",
+  "https://games.gg/grand-theft-auto-vi/guides/gta-6-how-to-steal-cars/",
+  "https://timesaver.gg/blog/gta-6-car-stealing-waink-scanner-confirmed-2026"
+ ],
+ "escena": {
+  "momentos": [
+   [
+    "smash",
+    0,
+    "^smashing"
+   ],
+   [
+    "s_exp",
+    1,
+    null
+   ],
+   [
+    "exp",
+    1,
+    "^expensive"
+   ],
+   [
+    "s_in",
+    2,
+    null
+   ],
+   [
+    "engine",
+    2,
+    "^engine"
+   ],
+   [
+    "s_keys",
+    3,
+    null
+   ],
+   [
+    "cloner",
+    3,
+    "^cloner"
+   ],
+   [
+    "story",
+    3,
+    "^story"
+   ],
+   [
+    "s_app",
+    4,
+    null
+   ],
+   [
+    "phone",
+    4,
+    "^phone"
+   ],
+   [
+    "waink",
+    4,
+    "^waink"
+   ],
+   [
+    "s_scan",
+    5,
+    null
+   ],
+   [
+    "lock",
+    5,
+    "^lock"
+   ],
+   [
+    "alarm",
+    5,
+    "^alarm"
+   ],
+   [
+    "tracker",
+    5,
+    "^tracker"
+   ],
+   [
+    "value",
+    5,
+    "^value"
+   ],
+   [
+    "s_jack",
+    6,
+    null
+   ],
+   [
+    "driver",
+    6,
+    "^driver"
+   ],
+   [
+    "s_fin",
+    7,
+    null
+   ],
+   [
+    "inside",
+    6,
+    "^inside"
+   ]
+  ],
+  "escenas": [
+   {
+    "tipo": "historia",
+    "desde": "0",
+    "trans": "corte",
+    "set": "calle",
+    "titulo": "VICE CITY · NIGHT",
+    "props": [
+     {
+      "tipo": "auto",
+      "x": 640,
+      "y": 1400,
+      "s": 1.05,
+      "color": "rosa"
+     }
+    ],
+    "actores": [
+     {
+      "look": "jugador",
+      "s": 1.0,
+      "keys": [
+       {
+        "k": 0,
+        "x": -120,
+        "y": 1470,
+        "pose": "parado",
+        "dir": 1,
+        "a": [
+         300,
+         1470
+        ],
+        "dur": 0.6
+       },
+       {
+        "k": "smash",
+        "x": 300,
+        "y": 1470,
+        "pose": "golpea",
+        "cara": "enojado",
+        "fx": "tiembla"
+       },
+       {
+        "k": "exp",
+        "x": 300,
+        "y": 1470,
+        "pose": "piensa",
+        "cara": "sorpresa"
+       }
+      ]
+     }
+    ],
+    "chips": [
+     {
+      "k": "smash",
+      "texto": "SMASH!",
+      "c": "rojo",
+      "y": 1560
+     },
+     {
+      "k": "exp",
+      "texto": "EXPENSIVE CAR",
+      "c": "amar",
+      "x": 640,
+      "y": 1150
+     }
+    ],
+    "zoom": [
+     {
+      "k": "exp",
+      "s": 1.25,
+      "x": 560,
+      "y": 1300,
+      "dur": 0.5
+     }
+    ],
+    "vidrios": [
+     {
+      "k": "smash",
+      "x": 520,
+      "y": 1330
+     }
+    ]
+   },
+   {
+    "tipo": "historia",
+    "desde": "s_in",
+    "trans": "zoom",
+    "set": "calle",
+    "titulo": "INSIDE...",
+    "props": [
+     {
+      "tipo": "auto",
+      "x": 540,
+      "y": 1420,
+      "s": 1.2,
+      "color": "rosa"
+     }
+    ],
+    "actores": [
+     {
+      "look": "jugador",
+      "s": 0.85,
+      "keys": [
+       {
+        "k": 0,
+        "x": 560,
+        "y": 1420,
+        "pose": "juega",
+        "cara": "feliz"
+       },
+       {
+        "k": "engine",
+        "x": 560,
+        "y": 1420,
+        "pose": "juega",
+        "cara": "enojado",
+        "fx": "tiembla"
+       }
+      ]
+     }
+    ],
+    "burbujas": [
+     {
+      "k": "engine",
+      "x": 700,
+      "y": 1000,
+      "texto": "WHAT?!"
+     }
+    ],
+    "chips": [
+     {
+      "k": "engine",
+      "texto": "ENGINE LOCKED",
+      "c": "rojo",
+      "y": 1560
+     }
+    ]
+   },
+   {
+    "tipo": "historia",
+    "desde": "s_keys",
+    "trans": "barrido",
+    "set": "garage",
+    "titulo": "MODERN CARS",
+    "props": [
+     {
+      "tipo": "telefono",
+      "x": 760,
+      "y": 1180,
+      "s": 1.3,
+      "texto": "KEY CLONER",
+      "pantalla": "#0b3d2e",
+      "k": "cloner",
+      "pop": true,
+      "gira": 0
+     }
+    ],
+    "actores": [
+     {
+      "look": "jugador",
+      "s": 1.0,
+      "keys": [
+       {
+        "k": 0,
+        "x": 330,
+        "y": 1470,
+        "pose": "piensa",
+        "cara": "neutral"
+       },
+       {
+        "k": "cloner",
+        "x": 330,
+        "y": 1470,
+        "pose": "apunta",
+        "cara": "feliz",
+        "fx": "salto"
+       }
+      ]
+     }
+    ],
+    "chips": [
+     {
+      "k": 0.4,
+      "texto": "ELECTRONIC KEYS",
+      "c": "cian",
+      "y": 900
+     },
+     {
+      "k": "story",
+      "texto": "UNLOCKED IN THE STORY",
+      "c": "amar",
+      "y": 1560
+     }
+    ]
+   },
+   {
+    "tipo": "historia",
+    "desde": "s_app",
+    "trans": "barrido",
+    "set": "calle",
+    "titulo": "THE SECRET",
+    "props": [
+     {
+      "tipo": "auto",
+      "x": 760,
+      "y": 1400,
+      "s": 0.85,
+      "color": "cian"
+     }
+    ],
+    "actores": [
+     {
+      "look": "jugador",
+      "s": 1.0,
+      "keys": [
+       {
+        "k": 0,
+        "x": -100,
+        "y": 1470,
+        "pose": "parado",
+        "a": [
+         330,
+         1470
+        ],
+        "dur": 0.7
+       },
+       {
+        "k": "phone",
+        "x": 330,
+        "y": 1470,
+        "pose": "telefono",
+        "cara": "feliz",
+        "objeto": "telefono"
+       }
+      ],
+      "os": 0.45,
+      "pantalla": "#0b3d2e",
+      "scan": true
+     }
+    ],
+    "burbujas": [
+     {
+      "k": "waink",
+      "x": 330,
+      "y": 930,
+      "texto": "WAINK"
+     }
+    ],
+    "zoom": [
+     {
+      "k": "waink",
+      "s": 1.35,
+      "x": 420,
+      "y": 1180,
+      "dur": 0.6
+     }
+    ]
+   },
+   {
+    "tipo": "waink",
+    "desde": "s_scan",
+    "app": "WAINK",
+    "titulo": "SCAN ANY PARKED CAR",
+    "ks": [
+     "lock",
+     "alarm",
+     "tracker",
+     "value"
+    ],
+    "filas": [
+     [
+      "LOCK",
+      "ELECTRONIC",
+      "rosa"
+     ],
+     [
+      "ALARM",
+      "YES",
+      "amar"
+     ],
+     [
+      "TRACKER",
+      "YES",
+      "rojo"
+     ],
+     [
+      "VALUE",
+      "$$$",
+      "verde"
+     ]
+    ]
+   },
+   {
+    "tipo": "historia",
+    "desde": "s_jack",
+    "trans": "barrido",
+    "set": "calle",
+    "titulo": "THE OLD WAY",
+    "props": [
+     {
+      "tipo": "auto",
+      "x": 640,
+      "y": 1400,
+      "s": 1.05,
+      "color": "verde",
+      "mov": [
+       {
+        "k": 0,
+        "x": 1500,
+        "y": 1400
+       },
+       {
+        "k": 0.9,
+        "x": 640,
+        "y": 1400
+       }
+      ]
+     }
+    ],
+    "actores": [
+     {
+      "var": 11,
+      "look": "gamer",
+      "s": 0.85,
+      "keys": [
+       {
+        "k": 0,
+        "x": 1500,
+        "y": 1410,
+        "pose": "juega",
+        "a": [
+         660,
+         1410
+        ],
+        "dur": 0.9
+       },
+       {
+        "k": "driver",
+        "x": 660,
+        "y": 1410,
+        "pose": "parado",
+        "cara": "sorpresa",
+        "fx": "salto",
+        "dir": 1,
+        "a": [
+         1250,
+         1470
+        ],
+        "dur": 0.8
+       }
+      ]
+     },
+     {
+      "look": "jugador",
+      "s": 1.0,
+      "keys": [
+       {
+        "k": 0,
+        "x": -120,
+        "y": 1470,
+        "pose": "parado",
+        "a": [
+         330,
+         1470
+        ],
+        "dur": 1.0
+       },
+       {
+        "k": "driver",
+        "x": 330,
+        "y": 1470,
+        "pose": "golpea",
+        "cara": "risa"
+       },
+       {
+        "k": "inside",
+        "x": 330,
+        "y": 1470,
+        "pose": "celebra",
+        "cara": "risa",
+        "fx": "brinca"
+       }
+      ]
+     }
+    ],
+    "chips": [
+     {
+      "k": "driver",
+      "texto": "CARJACK: STILL WORKS",
+      "c": "verde",
+      "y": 1580
+     }
+    ]
+   },
+   {
+    "tipo": "cierre",
+    "desde": "s_fin"
+   }
+  ],
+  "cierre": "DID YOU KNOW?",
+  "cierre2": "Comment: yes or no",
+  "paises": [
+   "YES",
+   "NO"
+  ],
+  "sfx": [
+   {
+    "f": "extra/CarEngineRev_BW.52086.wav",
+    "k": "0",
+    "off": 0.0,
+    "dur": 1.2,
+    "fade": 0.5,
+    "g": 0.12
+   }
+  ]
+ }
+}

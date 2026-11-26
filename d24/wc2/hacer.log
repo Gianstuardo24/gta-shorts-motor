@@ -1,0 +1,13 @@
+ok /home/claude/d24/wc2/C2026112502.json dur 30.59
+T: beats=1.12 s_1=4.38 stronger=5.17 s_2=7.50 m63=9.28 s_3=11.65 m95=14.94 s_4=15.77 use=16.61 s_5=17.47 double=17.60 m126=19.43 s_6=21.57 single=22.95 s_fin=25.12 s_cta=26.75 fin=30.59
+  {"a": 0, "b": 3.221, "t": "Your mug of coffee beats a shot of espresso on caffeine.", "k": ["caffeine."], "w": [0.056, 0.336, 0.562, 0.734, 1.122, 1.456, 1.575,
+  {"a": 3.221, "b": 4.3260000000000005, "t": "Cup for cup.", "k": ["cup."], "w": [3.271, 3.497, 3.723]}
+  {"a": 4.3260000000000005, "b": 7.446000000000001, "t": "Espresso tastes stronger, so it feels like it has more.", "k": ["stronger,"], "w": [4.376, 4.823, 5.172,
+  {"a": 7.446000000000001, "b": 11.596, "t": "And sip for sip, it does: about 63 milligrams in one small ounce.", "k": ["63"], "w": [7.496, 7.713, 7.93, 8.148, 8.
+  {"a": 11.596, "b": 15.716, "t": "But a regular 8 ounce mug of brewed coffee has about 95.", "k": ["8", "95."], "w": [11.646, 11.884, 12.009, 12.473, 12.768, 13.
+  {"a": 15.716, "b": 17.416, "t": "Now here's how to use that.", "k": ["here's"], "w": [15.766, 15.964, 16.257, 16.455, 16.606, 16.804]}
+  {"a": 17.416, "b": 21.516, "t": "A double shot gets you to about 126, more than the mug.", "k": ["126,"], "w": [17.466, 17.596, 18.019, 18.325, 18.632, 18.879, 
+  {"a": 21.516, "b": 23.622, "t": "So for less caffeine, go single shot.", "k": ["caffeine,"], "w": [21.566, 21.733, 21.952, 22.223, 22.78, 22.947, 23.322]}
+  {"a": 23.622, "b": 25.066, "t": "For more, go double.", "k": ["double."], "w": [23.672, 23.891, 24.24, 24.407]}
+  {"a": 25.066, "b": 26.695999999999998, "t": "Tell me which one you drink.", "k": ["drink."], "w": [25.116, 25.333, 25.467, 25.727, 25.902, 26.078]}
+  {"a": 26.695999999999998, "b": 30.54, "t": "Follow for one coffee curiosity a day.", "k": ["curiosity"], "w": [26.746, 27.106, 27.316, 27.526, 27.885, 28.395, 2

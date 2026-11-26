@@ -1,0 +1,53 @@
+{
+ "id": "V6-3wqQoxT0",
+ "titulo": "WTF Happened to Labubu?",
+ "canal": "Fortune & Fall",
+ "subs": 6670,
+ "vistas": 2307410,
+ "fecha": "20261022",
+ "dur_min": 16.5,
+ "idioma": "en",
+ "xN": 345.9,
+ "voz": {
+  "ppm": 146,
+  "ppm_primeros_30s": 132,
+  "pausas_min": 4.8
+ },
+ "imagen": {
+  "cortes_min": 10.6,
+  "plano_mediano": 4.3,
+  "plano_max": 27.2,
+  "sin_cambio": 31,
+  "cambios_locales_min": 17.3,
+  "racha_quieta_max": 5.4,
+  "en_rachas_5s": 1
+ },
+ "gancho": {
+  "cortes_30s": 7,
+  "seg_primer_corte": 1.2,
+  "sin_cambio_30s": 22,
+  "primera_frase_palabras": 24,
+  "primera_pregunta": false,
+  "primera_con_numero": true,
+  "primera_con_tu": false
+ },
+ "lenguaje": {
+  "palabras": 2393,
+  "frases": 200,
+  "frase_media": 12.0,
+  "preguntas_100f": 4.5,
+  "tu_100": 1.38,
+  "yo_100": 0.71,
+  "contracciones_100": 2.72,
+  "numeros_100": 4.22,
+  "largo_palabra": 4.53,
+  "palabras_largas": 9.9,
+  "variedad": 0.766,
+  "flesch": 69.6,
+  "registro": "neutro"
+ },
+ "sincronia": {
+  "frases_con_cambio_visual": 99,
+  "cortes_junto_a_inicio_de_frase": 73
+ }
+}

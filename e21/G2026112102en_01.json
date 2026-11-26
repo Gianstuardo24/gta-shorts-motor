@@ -1,0 +1,53 @@
+{
+  "titulo": "GTA 6 on PS5 Pro: Still 30 FPS? 🎮",
+  "texto_pantalla": "STILL 30 FPS",
+  "lote": "G2026112102en",
+  "marca": "THEVICEVERSE GG",
+  "nota_datos": "Rockstar: 30 FPS en PS5, Xbox Series X|S y PS5 Pro; la Pro suma PSSR y sombras con ray tracing; sin modo 60/40 FPS confirmado (Notebookcheck, TweakTown, GTABoom, games.gg, Tom's Hardware).",
+  "frases": [
+    "You paid extra for a PS5 Pro. GTA 6 still runs at 30 FPS.",
+    "Rockstar confirmed it: 30 FPS on every console, Pro included.",
+    "So what does the Pro get? Two things.",
+    "A sharper image, with Sony's PSSR upscaling.",
+    "And ray-traced shadows, only on the Pro.",
+    "No 60 FPS mode. No 40 FPS mode. At least for now.",
+    "Worth it or not?"
+  ],
+  "frases_voz": [
+    "You paid extra for a PS5 Pro. GTA 6 still runs at thirty frames per second.",
+    "Rockstar confirmed it. Thirty frames per second on every console, Pro included.",
+    "So what does the Pro get? Two things.",
+    "A sharper image, with Sony's P S S R upscaling.",
+    "And ray-traced shadows, only on the Pro.",
+    "No sixty F P S mode. No forty F P S mode. At least for now.",
+    "Worth it, or not?"
+  ],
+  "fuentes": [
+    "https://notebookcheck.net/Rockstar-reveals-GTA-6-console-performance-targets-and-PS5-Pro-upgrades.1447121.0.html",
+    "https://www.tweaktown.com/news/114598/rockstar-confirms-gta-6-targets-30-fps-on-ps5-pro-with-pssr-and-ray-traced-shadows/index.html",
+    "https://www.gtaboom.com/rockstar-confirms-gta-6-ps5-pro-upgrades-ahead-of-november-19-launch-f80c",
+    "https://games.gg/grand-theft-auto-vi/guides/gta-6-performance-mode/"
+  ],
+  "escena": {
+    "momentos": [
+      ["fps30", 0, "^thirty|^30$"],
+      ["consolas", 1, "^every"],
+      ["s_lista", 2, null],
+      ["pssr", 3, "^sharper"],
+      ["rt", 4, "^shadows"],
+      ["s_no", 5, null],
+      ["ahora", 5, "^now"],
+      ["s_fin", 6, null]
+    ],
+    "escenas": [
+      {"tipo": "medidor", "desde": "0", "k": "fps30", "v": 30, "max": 120, "k2": "consolas", "consolas": ["PS5", "XBOX", "PS5 PRO"]},
+      {"tipo": "lista", "desde": "s_lista", "titulo": "WHAT THE PRO GETS", "items": [["SHARPER IMAGE", "PSSR upscaling"], ["RAY-TRACED SHADOWS", "Pro only"]], "ks": ["pssr", "rt"]},
+      {"tipo": "tachado", "desde": "s_no", "items": ["60 FPS", "40 FPS"], "k": "ahora", "nota": "FOR NOW"},
+      {"tipo": "cierre", "desde": "s_fin"}
+    ],
+    "cierre": "WORTH IT?",
+    "cierre2": "Pro or not? Comment",
+    "paises": ["YES", "NO", "WAITING"],
+    "sfx": [{"f": "extra/CarEngineRev_BW.52086.wav", "k": "0", "off": 0.0, "dur": 1.4, "fade": 0.5, "g": 0.14}]
+  }
+}

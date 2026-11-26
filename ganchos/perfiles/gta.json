@@ -1,0 +1,53 @@
+{
+  "canal": "@ViceVersoGG",
+  "idioma": "es",
+  "nota": "versión inicial 19-nov (criterio + datos de la semana del lanzamiento); el 📡 Radar la ajusta con evidencia",
+  "audiencia": "jugadores hispanohablantes de 15 a 30 años que ya están jugando GTA 6 o lo siguen de cerca",
+  "motivaciones": [
+    "descubrir detalles REALES del juego antes que sus amigos",
+    "no perderse secretos, eventos o mecánicas",
+    "compararse: ¿a mí me pasa? ¿yo lo encontré?",
+    "dominar el juego (trucos, dinero, rutas)"
+  ],
+  "temas_prioritarios": [
+    "cómo ganar dinero (pasos verificados)",
+    "dónde está X en el mapa (ruta animada)",
+    "qué hacer primero / errores a evitar",
+    "trucos del MODO HISTORIA",
+    "comparaciones GTA 5 vs 6 con datos",
+    "detalles reales confirmados"
+  ],
+  "temas_prohibidos": [
+    "expectativa o rumores presentados como hechos",
+    "filtraciones",
+    "gameplay o material de otros creadores",
+    "promesas de dinero o glitches que no existen",
+    "republicar el mismo video",
+    "trampas o exploits del modo ONLINE (política de Rockstar)",
+    "spoilers de la historia (final, cinemáticas)",
+    "datos sin verificar en 2+ fuentes"
+  ],
+  "angulo_vs_en": "ES: pregunta de identidad y participación ('¿y tú?', '¿a ti te pasó?'); EN usa el 'why' + anomalía",
+  "estilo_narrativo": "cercano, rápido, de jugador a jugador; tuteo; español neutro",
+  "duracion_objetivo_s": [
+    25,
+    40
+  ],
+  "hooks_preferidos": [
+    "identidad: '¿eres de los que…?'",
+    "por qué + algo raro del juego",
+    "consecuencia para ti ('la policía no olvidará tu cara')",
+    "pérdida real: 'no hagas X antes de Y' (si es verdad)",
+    "'el 90% no sabe que...' solo con dato verificado"
+  ],
+  "hooks_evitar": [
+    "dato plano sin nada en juego",
+    "pregunta sin stakes ('¿dónde está el resto?')"
+  ],
+  "ritmo": "corte cada 1-2 s, texto en pantalla grande, remate antes del 70%",
+  "identidad_visual": "sin juego propio: animación con código (mapas/rutas/pasos), capturas OFICIALES de Rockstar, ilustraciones rotuladas; acentos rosa/cian",
+  "titulos": "concretos, con el detalle del juego; sin MAYÚSCULAS de clickbait",
+  "objetivo": "superar la mediana del canal a 24 h; % visto ≥ 80%",
+  "tiene_juego": false,
+  "formato_principal": "GUÍAS y TRUCOS explicados SIN gameplay propio: animación hecha con código (mapas, rutas, pasos, contadores, comparaciones), material oficial de Rockstar e ilustraciones rotuladas. Ver gameplays/guías de otros SOLO para aprender los datos (verificados en 2+ fuentes), nunca para usar sus imágenes."
+}

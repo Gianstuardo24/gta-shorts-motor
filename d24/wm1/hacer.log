@@ -1,0 +1,15 @@
+ok /home/claude/d24/wm1/M2026112501.json dur 34.97
+T: peanuts=0.66 half=2.90 s_1=4.24 s_2=8.21 student=9.27 s_3=11.14 m35=14.83 s_4=16.67 never=18.02 s_5=19.05 ring=21.66 m500=22.12 s_6=23.84 price=24.33 s_fin=29.13 s_cta=31.00 fin=34.97
+  {"a": 0, "b": 1.9519999999999997, "t": "Nike paid peanuts for its logo.", "k": ["paid"], "w": [0.056, 0.356, 0.657, 1.13, 1.372, 1.615]}
+  {"a": 1.9519999999999997, "b": 4.186, "t": "And that's only half the story.", "k": ["that's"], "w": [2.002, 2.244, 2.602, 2.903, 3.203, 3.445]}
+  {"a": 4.186, "b": 8.155999999999999, "t": "In 1971, Phil Knight needed a logo for his new shoes.", "k": ["1971,"], "w": [4.236, 4.418, 5.26, 5.556, 5.965, 6.375
+  {"a": 8.155999999999999, "b": 11.085999999999999, "t": "He asked a design student, Carolyn Davidson.", "k": ["Davidson."], "w": [8.206, 8.387, 8.736, 8.86, 9.26
+  {"a": 11.085999999999999, "b": 14.776, "t": "She charged 2 dollars an hour and worked about 17 hours:", "k": ["2", "dollars", "17"], "w": [11.136, 11.364, 11.81
+  {"a": 14.776, "b": 16.616, "t": "35 dollars in total.", "k": ["35", "dollars"], "w": [14.826, 15.282, 15.728, 15.902]}
+  {"a": 16.616, "b": 18.996, "t": "Now the part most people never hear.", "k": ["people"], "w": [16.666, 16.886, 17.105, 17.377, 17.649, 18.025, 18.35]}
+  {"a": 18.996, "b": 20.031, "t": "Twelve years later,", "k": ["years"], "w": [19.046, 19.399, 19.704]}
+  {"a": 20.031, "b": 23.785999999999998, "t": "Nike surprised her with a gold ring and 500 shares of stock.", "k": ["500"], "w": [20.081, 20.337, 20.837, 21.043, 
+  {"a": 23.785999999999998, "b": 26.172, "t": "Lesson: price the work, not the hours.", "k": ["price"], "w": [23.836, 24.331, 24.684, 24.924, 25.305, 25.544, 25.7
+  {"a": 26.172, "b": 29.076, "t": "A small job can become the face of a giant.", "k": ["become"], "w": [26.222, 26.347, 26.7, 26.94, 27.179, 27.589, 27.828, 28.12
+  {"a": 29.076, "b": 30.945999999999998, "t": "Tell me what you would have charged.", "k": ["charged."], "w": [29.126, 29.33, 29.455, 29.659, 29.823, 30.066, 30.2
+  {"a": 30.945999999999998, "b": 34.92, "t": "Follow for the next million dollar mistake.", "k": ["mistake."], "w": [30.996, 31.337, 31.536, 31.735, 31.981, 32.37

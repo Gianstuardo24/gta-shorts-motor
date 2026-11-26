@@ -1,0 +1,9 @@
+secretos/*
+!secretos/LEEME.md
+venv/
+modelos/
+datos/
+logs/
+__pycache__/
+motor/escena/_tmp/
+motor/escena/.produciendo

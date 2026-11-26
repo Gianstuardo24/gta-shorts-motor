@@ -1,0 +1,12 @@
+ok /home/claude/d24/c17/C2026112401.json dur 29.46
+T: still=0.72 caffeine0=1.18 s_us=2.00 about=3.77 removed=6.54 s_leaves=7.42 little=8.09 milligrams=9.64 s_reg=11.00 around=12.11 s_lot=13.37 lot=14.37 match=15.21 s_inv=16.92 germany=18.48 merchant=20.81 ludwig=21.70 s_fin=23.07 s_cta=25.58 fin=29.46
+  {"a": 0, "b": 1.95, "t": "Decaf coffee still has caffeine.", "k": ["caffeine."], "w": [0.12, 0.397, 0.718, 0.995, 1.182]}
+  {"a": 1.95, "b": 3.7190000000000003, "t": "To be called decaf in the U.S.,", "k": ["called"], "w": [2.0, 2.177, 2.355, 2.754, 3.098, 3.276, 3.508]}
+  {"a": 3.7190000000000003, "b": 7.37, "t": "about 97 percent of the caffeine has to be removed.", "k": ["97"], "w": [3.769, 4.113, 4.579, 5.034, 5.211, 5.444, 5.
+  {"a": 7.37, "b": 10.95, "t": "That leaves a little: usually 2 to 15 milligrams in a cup.", "k": ["2", "15"], "w": [7.42, 7.659, 7.989, 8.09, 8.489, 8.866, 9.104
+  {"a": 10.95, "b": 13.319999999999999, "t": "A regular cup has around 95.", "k": ["95."], "w": [11.0, 11.13, 11.614, 11.862, 12.109, 12.534]}
+  {"a": 13.319999999999999, "b": 16.87, "t": "So it would take a lot of decaf to match one regular coffee.", "k": ["regular"], "w": [13.37, 13.53, 13.69, 14.001, 
+  {"a": 16.87, "b": 20.029, "t": "And decaf was invented in Germany, in 1903,", "k": ["1903,"], "w": [16.92, 17.163, 17.521, 17.763, 18.295, 18.479, 19.04, 19.224
+  {"a": 20.029, "b": 23.02, "t": "by a coffee merchant named Ludwig Roselius.", "k": ["Roselius."], "w": [20.079, 20.264, 20.391, 20.807, 21.338, 21.696, 22.112]}
+  {"a": 23.02, "b": 25.529999999999998, "t": "Tell me if you knew decaf wasn't caffeine free.", "k": ["caffeine"], "w": [23.07, 23.299, 23.44, 23.581, 23.765, 23.
+  {"a": 25.529999999999998, "b": 29.41, "t": "Follow for one coffee curiosity a day.", "k": ["curiosity"], "w": [25.58, 25.943, 26.154, 26.366, 26.728, 27.242, 27

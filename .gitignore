@@ -1,0 +1,48 @@
+# Repositorio del entorno de trabajo de la fábrica (motor, pipeline, pruebas). Creado en la E0 (26-nov-2026).
+# Se versiona el código, los datos y los documentos; NO los medios pesados ni lo generado.
+# Carpetas ocultas del sistema y herramientas
+/.*
+!/.gitignore
+node_modules/
+__pycache__/
+*.pyc
+venv*/
+_tmp/
+# Medios y salidas generadas (van al respaldo fechado cuando hacen falta, no a git)
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.avi
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.flac
+*.ogg
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.pdf
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.bundle
+*.npy
+*.npz
+*.pt
+*.pth
+*.onnx
+*.bin
+*.safetensors
+*.mp4.log
+# Secretos: nunca (las claves viven en el Mac, en secretos/)
+secretos/
+*.env
+# Excepciones: activos que el motor necesita para renderizar o armar el audio
+!escena/sonidos/**
+!pruebas/corpus/**/*.wav
+!pruebas/corpus/**/*.json

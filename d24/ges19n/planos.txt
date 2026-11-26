@@ -1,0 +1,2 @@
+planos: 14 en 27.2 s (uno cada 1.9 s) · tipos distintos: 14 · objeto×1, detalle:baja×1, alto×1, primer×1, detalle:papel×1, camina×1, balanceo×1, vertical×1, medio×1, detalle:abre×1, mano×1, ojos×1, detalle:deriva×1, globo×1
+repetidos seguidos: 0

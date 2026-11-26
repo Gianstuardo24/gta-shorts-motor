@@ -1,0 +1,48 @@
+# Laboratorio faceless · 22-nov · formato: grupo | link   (líneas con # se ignoran)
+# --- Los 11 que mandó Tao ---
+tao | https://www.youtube.com/watch?v=THH3K7X3hSE
+tao | https://www.youtube.com/watch?v=R4vzO1xcs0E
+tao | https://www.youtube.com/watch?v=KNQUB9rvSoM
+tao | https://www.youtube.com/watch?v=uR-IFp1cXkw
+tao | https://www.youtube.com/watch?v=PT4E_7lABM0
+tao | https://www.youtube.com/watch?v=fneO9zx1JTI
+tao | https://www.youtube.com/watch?v=AKUh_f0MST4
+tao | https://www.youtube.com/watch?v=vYTSq9Cm22k
+tao | https://www.youtube.com/watch?v=mlNzBgArKco
+tao | https://www.youtube.com/watch?v=GxgPpYhN9cQ
+tao | https://www.youtube.com/watch?v=ujVcstvp-RI
+# --- Algoritmo (fuente oficial + datos) ---
+algoritmo | https://www.youtube.com/watch?v=rHLjxrbXmmY
+algoritmo | https://www.youtube.com/watch?v=7vkhoCM67PU
+algoritmo | https://www.youtube.com/watch?v=N-q-XLQymnU
+algoritmo | https://www.youtube.com/watch?v=ppnZvrFQv8A
+algoritmo | https://www.youtube.com/watch?v=3d-cRq7gl90
+algoritmo | https://www.youtube.com/watch?v=ryZt5pc2O5s
+# --- Canales faceless: reglas, nichos y riesgos ---
+faceless | https://www.youtube.com/watch?v=ye2T2FwubI4
+faceless | https://www.youtube.com/watch?v=FltNsyPXNdo
+faceless | https://www.youtube.com/watch?v=rStytOzzLwo
+faceless | https://www.youtube.com/watch?v=yA_ssk9obUs
+faceless | https://www.youtube.com/watch?v=C30nU7-5wZg
+faceless | https://www.youtube.com/watch?v=JTHpQp4mgK0
+faceless | https://www.youtube.com/watch?v=b3kcB-o4j94
+faceless | https://www.youtube.com/watch?v=zxFZE_-w54Y
+faceless | https://www.youtube.com/watch?v=vhHISBB0lEk
+# --- Casos reales (Shorts y largos) ---
+caso | https://www.youtube.com/watch?v=QXfugR3ZIAs
+caso | https://www.youtube.com/watch?v=SCK7NrhZl7Y
+caso | https://www.youtube.com/watch?v=R9HLtrNlRj4
+caso | https://www.youtube.com/watch?v=2n2P-rpql34
+caso | https://www.youtube.com/watch?v=c5-3gotpgz8
+
+# 22-nov · micronichos que se están consumiendo (outliers: muchas vistas para su tamaño) — para ver CÓMO se ven
+micro | https://www.youtube.com/watch?v=V6-3wqQoxT0
+micro | https://www.youtube.com/watch?v=zQVroZez7Oc
+micro | https://www.youtube.com/watch?v=DEWoZzHh9c8
+micro | https://www.youtube.com/watch?v=Q18tiu7USpM
+micro | https://www.youtube.com/watch?v=uJH8C__vk_A
+micro | https://www.youtube.com/watch?v=ORm6pPZIiAY
+micro | https://www.youtube.com/watch?v=IHv_HkvtzHw
+micro | https://www.youtube.com/watch?v=yZPkrR_1vCI
+micro | https://www.youtube.com/watch?v=zzrcjJv0B-c
+micro | https://www.youtube.com/watch?v=2J37vvHIFcU

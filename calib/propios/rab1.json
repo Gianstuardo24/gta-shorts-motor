@@ -1,0 +1,46 @@
+{
+ "id": "rab1",
+ "canal": "The Rabbit Loop",
+ "titulo": "Rabbit 1",
+ "dur_min": 8.3,
+ "voz": {
+  "ppm": 147,
+  "ppm_primeros_30s": 144,
+  "pausas_min": 3.2
+ },
+ "imagen": {
+  "cortes_min": 0.2,
+  "plano_mediano": 152.7,
+  "plano_max": 331.1,
+  "sin_cambio": 7,
+  "cambios_locales_min": 7.6,
+  "racha_quieta_max": 18.6,
+  "en_rachas_5s": 4
+ },
+ "gancho": {
+  "cortes_30s": 0,
+  "sin_cambio_30s": 15,
+  "primera_frase_palabras": 10,
+  "primera_pregunta": false,
+  "primera_con_numero": true,
+  "primera_con_tu": false
+ },
+ "lenguaje": {
+  "palabras": 1183,
+  "frases": 114,
+  "frase_media": 10.4,
+  "preguntas_100f": 0.0,
+  "tu_100": 0.25,
+  "yo_100": 0.42,
+  "contracciones_100": 0.25,
+  "numeros_100": 2.37,
+  "largo_palabra": 4.42,
+  "palabras_largas": 9.4,
+  "variedad": 0.739,
+  "flesch": 70.4,
+  "registro": "neutro"
+ },
+ "sincronia": {
+  "frases_con_cambio_visual": 100
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "id": "qJIDOq0ezTs",
+ "titulo": "Three Unfinished Roman Megaprojects",
+ "canal": "toldinstone",
+ "subs": 653000,
+ "vistas": 927292,
+ "fecha": "20260912",
+ "dur_min": 12.3,
+ "idioma": "en",
+ "xN": 1.4,
+ "voz": {
+  "ppm": 134,
+  "ppm_primeros_30s": 106,
+  "pausas_min": 8.8
+ },
+ "imagen": {
+  "cortes_min": 4.3,
+  "plano_mediano": 10.2,
+  "plano_max": 48.7,
+  "sin_cambio": 76,
+  "cambios_locales_min": 1.6,
+  "racha_quieta_max": 32.8,
+  "en_rachas_5s": 67
+ },
+ "gancho": {
+  "cortes_30s": 8,
+  "seg_primer_corte": 6.3,
+  "sin_cambio_30s": 96,
+  "primera_frase_palabras": 30,
+  "primera_pregunta": false,
+  "primera_con_numero": false,
+  "primera_con_tu": false
+ },
+ "lenguaje": {
+  "palabras": 1613,
+  "frases": 81,
+  "frase_media": 19.9,
+  "preguntas_100f": 0.0,
+  "tu_100": 0.62,
+  "yo_100": 0.87,
+  "contracciones_100": 1.43,
+  "numeros_100": 1.36,
+  "largo_palabra": 4.81,
+  "palabras_largas": 14.4,
+  "variedad": 0.747,
+  "flesch": 51.7,
+  "registro": "neutro"
+ },
+ "sincronia": {
+  "frases_con_cambio_visual": 40,
+  "cortes_junto_a_inicio_de_frase": 68
+ }
+}

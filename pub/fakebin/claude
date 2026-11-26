@@ -1,0 +1,3 @@
+#!/bin/sh
+cat >/dev/null
+echo 'Aqui va: [{"titulo":"GTA 6 test","descripcion":"Desc. ¿Y tú?","hashtags":["#GTA6","#Shorts"],"comentario_fijado":"Fijado"}]'

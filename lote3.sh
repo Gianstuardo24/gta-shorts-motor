@@ -1,0 +1,10 @@
+#!/bin/bash
+R=/home/claude/render_par.sh
+par(){ $R $1 &  $R $2 & wait; echo "LISTO $3"; }
+par "/home/claude/c17c/C2026112101_04.json /home/claude/c17c/vz_C2026112101_04.wav /home/claude/c17c/vz_C2026112101_04_palabras.json /home/claude/c17c/f3.mp4 deep" "/home/claude/r18c/R2026112101_05.json /home/claude/r18c/vz_R2026112101_05.wav /home/claude/r18c/vz_R2026112101_05_palabras.json /home/claude/r18c/f3.mp4 dark" "C17 R18"
+par "/home/claude/g19c/G2026112101_05.json /home/claude/g19c/vz_G2026112101_05.wav /home/claude/g19c/vz_G2026112101_05_palabras.json /home/claude/g19c/f3.mp4 deep" "/home/claude/en20b/G2026112102en_04.json /home/claude/en20b/vz_G2026112102en_04.wav /home/claude/en20b/vz_G2026112102en_04_palabras.json /home/claude/en20b/f3.mp4 deep" "G19 E20"
+par "/home/claude/m20c/M2026112101_04.json /home/claude/m20c/vz_M2026112101_04.wav /home/claude/m20c/vz_M2026112101_04_palabras.json /home/claude/m20c/f3.mp4 deep" "/home/claude/c21b/C2026112102_03.json /home/claude/c21b/vz_C2026112102_03.wav /home/claude/c21b/vz_C2026112102_03_palabras.json /home/claude/c21b/f3.mp4 deep" "M20 C21"
+par "/home/claude/r22c/R2026112102_04.json /home/claude/r22c/vz_R2026112102_04.wav /home/claude/r22c/vz_R2026112102_04_palabras.json /home/claude/r22c/f3.mp4 dark" "/home/claude/g22c/G2026112102_04.json /home/claude/g22c/vz_G2026112102_04.wav /home/claude/g22c/vz_G2026112102_04_palabras.json /home/claude/g22c/f3.mp4 deep" "R22 G22"
+par "/home/claude/en13d/G2026112101en_08.json /home/claude/en13d/vz8.wav /home/claude/en13d/vz8_palabras.json /home/claude/en13d/f3.mp4 deep" "/home/claude/m15c/M2026112102_04.json /home/claude/m15c/vz4.wav /home/claude/m15c/vz4_palabras.json /home/claude/m15c/f3.mp4 deep" "E13 M15"
+par "/home/claude/perro1/D2026112101_01.json /home/claude/perro1/vz.wav /home/claude/perro1/vz_palabras.json /home/claude/perro1/v1.mp4 deep" "/home/claude/gato1/K2026112101_01.json /home/claude/gato1/vz.wav /home/claude/gato1/vz_palabras.json /home/claude/gato1/v1.mp4 deep" "PERRO GATO"
+echo TODO_LISTO

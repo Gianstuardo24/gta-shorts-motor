@@ -1,0 +1,186 @@
+"""Constructor de videos LARGOS horizontales (escena_h.html).
+Cada 'tramo' es una zona de 2200 px del mundo; la camara va a i*2200 y se ve el tramo entero
+(coordenada de pantalla sx 0..1950, centro ~975). Los momentos de cada tramo se nombran b<i><nombre>."""
+import json, re
+
+ANCHO = 2200
+SUELO = 1700
+
+
+class Tramo:
+    def __init__(self, L, i, set_, luz=None, neon=None):
+        self.L, self.i = L, i
+        self.key = f"b{i}"
+        self.x0 = i * ANCHO - 437
+        self.f0 = len(L.frases)
+        z = {"x0": self.x0 - 100, "x1": self.x0 + ANCHO + 100, "set": set_}
+        if i > 0:
+            z["k"] = self.key
+        if luz: z["luz"] = luz
+        if neon: z["neon"] = neon
+        L.zonas.append(z)
+        if i > 0:
+            L.pan.append({"k": self.key, "x": i * ANCHO, "dur": 1.0})
+        L.M.append([self.key, self.f0, None])
+        self.props, self.actores = [], []
+
+    def X(self, sx):
+        return round(self.x0 + sx)
+
+    def dice(self, *frases):
+        for f in frases:
+            if isinstance(f, tuple):
+                self.L.frases.append(f[0]); self.L.voz.append(f[1])
+            else:
+                self.L.frases.append(f); self.L.voz.append(self.L.vozde(f))
+        return self
+
+    def m(self, nombre, frase, patron=None):
+        """momento: frase relativa al tramo (0 = primera frase del tramo)."""
+        k = f"{self.key}{nombre}"
+        self.L.M.append([k, self.f0 + frase, patron])
+        return k
+
+    def k(self, nombre):
+        return f"{self.key}{nombre}" if nombre not in ("", None) else self.key
+
+    def prop(self, tipo, sx, y=SUELO, s=1.0, k=None, fin=None, **o):
+        p = {"tipo": tipo, "x": self.X(sx), "y": y, "s": s, "k": k or self.key}
+        if fin: p["fin"] = fin
+        p.update(o)
+        if "mov" in p:
+            p["mov"] = [{"k": m[0], "x": self.X(m[1]), "y": m[2]} for m in p["mov"]]
+        self.props.append(p)
+        return p
+
+    def actor(self, base, keys, desde=None, hasta=None, **o):
+        a = dict(base); a.update(o)
+        objs = {kk.get("objeto") for kk in keys if kk.get("objeto")}
+        if "os" not in o and objs:                 # objeto en la mano: tamano segun el tipo
+            a["os"] = min({"documento": 0.42, "cheque": 0.5, "billetes": 0.55, "cajita": 0.6, "pelota": 0.9}.get(x, 0.6) for x in objs)
+        a["desde"] = desde or self.key
+        if hasta: a["hasta"] = hasta
+        ks = []
+        for kk in keys:
+            kk = dict(kk)
+            kk["x"] = self.X(kk.get("x", 975)); kk.setdefault("y", SUELO)
+            if "a" in kk: kk["a"] = [self.X(kk["a"][0]), kk["a"][1]]
+            kk.setdefault("k", self.key)
+            ks.append(kk)
+        a["keys"] = ks
+        self.actores.append(a)
+        return a
+
+
+class Largo:
+    def __init__(self, reemplazos=()):
+        self.frases, self.voz, self.M = [], [], []
+        self.zonas, self.pan, self.tramos = [], [], []
+        self.titulos, self.chips, self.numeros, self.burbujas, self.zoom, self.sacudidas, self.sfx = [], [], [], [], [], [], []
+        self.capitulos = {}
+        self.reemplazos = list(reemplazos)
+
+    def vozde(self, f):
+        for a, b in self.reemplazos:
+            f = re.sub(a, b, f)
+        return f
+
+    def tramo(self, set_, luz=None, neon=None, capitulo=None):
+        t = Tramo(self, len(self.tramos), set_, luz, neon)
+        self.tramos.append(t)
+        if capitulo:
+            self.capitulos[t.key if t.i else "0"] = capitulo
+        return t
+
+    def titulo(self, k, texto, c="amar", grande=False, fin=None):
+        d = {"k": k, "texto": texto, "c": c}
+        if grande: d["grande"] = True
+        if fin: d["fin"] = fin
+        self.titulos.append(d)
+
+    def chip(self, k, texto, c="verde", fin=None):
+        d = {"k": k, "texto": texto, "c": c}
+        if fin: d["fin"] = fin
+        self.chips.append(d)
+
+    def numero(self, k, n, etq, pre="", suf="", c="amar", fin=None, y=None):
+        d = {"k": k, "n": n, "pre": pre, "suf": suf, "c": c, "etq": etq}
+        if fin: d["fin"] = fin
+        if y: d["y"] = y
+        self.numeros.append(d)
+
+    def burbuja(self, k, de_actor, texto, fin=None, dx=0):
+        self.burbujas.append({"k": k, "de": de_actor, "texto": texto, "fin": fin, "dx": dx})
+
+    def inserto(self, k_in, k_out, set_="vitrina", o=None, props=(), whoosh=True, mov=None):
+        """Corte a un plano de detalle sin personajes entre k_in y k_out (zona lejana del mundo).
+        Si k_out es el inicio de un tramo, ese paneo se vuelve corte; si no, vuelve al tramo de k_in.
+        props: x/y en coordenadas de tramo (sx 0..1950, centro ~975)."""
+        self._ins = getattr(self, "_ins", 0) + 1
+        XI = 100000 + self._ins * 2600                      # x0 'de tramo' de la zona del inserto
+        z = {"x0": XI - 100, "x1": XI + ANCHO + 100, "set": set_}
+        o = dict(o or {}); o.setdefault("k", k_in); z["o"] = o
+        self.zonas.append(z)
+        self.pan.append({"k": k_in, "x": XI + 437, "dur": 0.04, "corte": 1})
+        ex = [p for p in self.pan if p["k"] == k_out and not p.get("corte")]
+        if ex:
+            ex[0].update({"dur": 0.04, "corte": 1, "dir": 1})
+        else:
+            mt = re.match(r"^b(\d+)", str(k_in))
+            self.pan.append({"k": k_out, "x": (int(mt.group(1)) if mt else 0) * ANCHO, "dur": 0.04, "corte": 1, "dir": 1})
+        # movimiento de cámara VARIADO (para que no se note un patrón): se elige en ciclo o con mov=...
+        MOVS = ["acerca", "fijo", "aleja", "paneo", "golpe", "sube", "acerca", "baja", "aleja", "fijo"]
+        mov = mov or MOVS[(self._ins * 7) % len(MOVS)]
+        cx = XI + 977
+        Z = {"acerca": [{"k": k_in, "s": 1.0, "dur": 0.01}, {"k": k_in, "s": 1.06, "dur": 7, "y": 1250}],
+             "aleja":  [{"k": k_in, "s": 1.09, "dur": 0.01, "y": 1250}, {"k": k_in, "s": 1.0, "dur": 4.5}],
+             "paneo":  [{"k": k_in, "s": 1.08, "dur": 0.01, "x": cx - 90, "y": 1260}, {"k": k_in, "s": 1.08, "dur": 7, "x": cx + 90, "y": 1260}],
+             "sube":   [{"k": k_in, "s": 1.08, "dur": 0.01, "y": 1290}, {"k": k_in, "s": 1.08, "dur": 6, "y": 1220}],
+             "baja":   [{"k": k_in, "s": 1.08, "dur": 0.01, "y": 1220}, {"k": k_in, "s": 1.08, "dur": 6, "y": 1290}],
+             "golpe":  [{"k": k_in, "s": 1.0, "dur": 0.01}, {"k": f"{k_in}+0.45", "s": 1.09, "dur": 0.22, "y": 1260}],
+             "fijo":   [{"k": k_in, "s": 1.0, "dur": 0.01}]}[mov]
+        self.zoom += Z + [{"k": k_out, "s": 1.0, "dur": 0.01}]
+        mt = re.match(r"^b(\d+)", str(k_in)); t = self.tramos[int(mt.group(1))] if mt else self.tramos[0]
+        for p in props:
+            p = dict(p); p["x"] = XI + p.get("x", 975); p.setdefault("y", SUELO)
+            p.setdefault("k", k_in); p.setdefault("fin", k_out); p.setdefault("z", 1800)
+            t.props.append(p)
+        if whoosh:   # sonidos de entrada/salida variados; a veces corte seco
+            W = ["extra/Whip_Whoosh_BW.11026.wav", "extra/MODE_BE2_fx_foley_whoosh_03.wav", "extra/WhipWhooshHeavy_SFXB.1080.wav", None,
+                 "extra/MODE_BE2_fx_foley_whoosh_04.wav"]
+            wi, wo = W[self._ins % len(W)], W[(self._ins * 3 + 1) % len(W)]
+            if wi: self.sfx.append({"f": wi, "k": k_in, "off": -0.06, "dur": 0.3, "g": 0.10})
+            if wo: self.sfx.append({"f": wo, "k": k_out, "off": -0.05, "dur": 0.3, "g": 0.09})
+
+    def armar(self, meta, cola=18.0, final=None):
+        n = len(self.tramos)
+        props, actores = [], []
+        for j, t in enumerate(self.tramos):
+            sig = self.tramos[j + 1].key if j + 1 < n else "s_end"
+            for p in t.props:
+                p.setdefault("fin", sig)
+                props.append(p)
+            for a in t.actores:
+                a.setdefault("hasta", sig)
+                actores.append(a)
+        # indices de actores para burbujas: se resuelven por objeto
+        for b in self.burbujas:
+            if isinstance(b.get("de"), dict):
+                b["de"] = actores.index(b["de"])
+            if b.get("fin") is None:
+                b.pop("fin", None)
+        for c in self.titulos + self.chips + self.numeros:
+            if "fin" not in c:                      # termina al empezar el tramo siguiente al suyo
+                mt = re.match(r"^b(\d+)", str(c["k"]))
+                if mt:
+                    j = int(mt.group(1))
+                    c["fin"] = self.tramos[j + 1].key if j + 1 < n else "s_end"
+        E = {"momentos": self.M + [["s_end", len(self.frases) - 1, None]],
+             "escenas": [{"tipo": "pelicula", "desde": "0", "escala": 1.35, "zonas": self.zonas, "pan": self.pan,
+                          "props": props, "actores": actores, "burbujas": self.burbujas, "numeros": self.numeros,
+                          "zoom": self.zoom, "sacudidas": self.sacudidas, "titulos": self.titulos, "chips": self.chips},
+                         dict({"tipo": "finalH", "desde": "s_end"}, **(final or {}))],
+             "sfx": self.sfx, "cola": cola, "cta": "SUBSCRIBE"}
+        g = dict(meta)
+        g.update({"frases": self.frases, "frases_voz": self.voz, "escena": E, "capitulos": self.capitulos})
+        return g

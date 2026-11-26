@@ -1,0 +1,39 @@
+{
+  "canal": "@MillionDollarMistake",
+  "idioma": "en",
+  "nota": "versión inicial 19-nov (criterio + datos de la semana del lanzamiento); el 📡 Radar la ajusta con evidencia · NICHO EN EVALUACIÓN (negocios vs suerte)",
+  "audiencia": "adults 20-45 interested in business, money and decisions",
+  "motivaciones": [
+    "avoid making the same mistake (loss)",
+    "feel the size of the money lost",
+    "learn a lesson in 45 s"
+  ],
+  "temas_prioritarios": [
+    "famous business mistakes with real numbers",
+    "deals rejected that later exploded",
+    "brands that collapsed and why"
+  ],
+  "temas_prohibidos": [
+    "financial or investment advice",
+    "defamation or unverified accusations",
+    "promises of money"
+  ],
+  "estilo_narrativo": "story with a twist + clear lesson at the end ('the lesson?')",
+  "duracion_objetivo_s": [
+    35,
+    50
+  ],
+  "hooks_preferidos": [
+    "huge number + loss",
+    "'they said no to $X'",
+    "'would you have trusted the data?'"
+  ],
+  "hooks_evitar": [
+    "company history without a mistake",
+    "vague lessons"
+  ],
+  "ritmo": "numbers on screen, one twist mid-video, lesson in last 2 lines",
+  "identidad_visual": "ChatGPT cinematic recreations, green/gold, no logos, no real people",
+  "titulos": "$ amount + decision",
+  "objetivo": "pass the first YouTube test (0 of 4 so far): reach channel median, then 1.5x"
+}

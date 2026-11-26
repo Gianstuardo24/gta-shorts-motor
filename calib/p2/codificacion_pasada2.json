@@ -1,0 +1,256 @@
+{
+  "codigos": {
+    "1": {
+      "funcion": "Abrir",
+      "enigma": "Plantear",
+      "saber": "Igual",
+      "apunta": "Atención",
+      "img_rel": "Muestra",
+      "img_tipo": "Producto",
+      "porque": "Presenta la rivalidad y el contraste que la hace llamativa (la mayor empresa de bebidas lleva casi 40 años sin acercarse), lo que deja abierta la pregunta de por qué; se ven la tarjeta Gatorade vs Powerade, la lata de Coca-Cola y botellas de Powerade cuando se nombran.",
+      "duda": "saber: No aplica"
+    },
+    "2": {
+      "funcion": "Abrir",
+      "enigma": "Plantear",
+      "saber": "No aplica",
+      "apunta": "Comprensión",
+      "img_rel": "Muestra",
+      "img_tipo": "Dato o gráfico",
+      "porque": "Sigue la introducción dando la magnitud de la brecha (60-65% contra 15%) y la duda de si Powerade podrá liderar alguna vez; domina el gráfico de cuota de mercado que muestra justo esas cifras.",
+      "duda": "funcion: Situar"
+    },
+    "3": {
+      "funcion": "Abrir",
+      "enigma": "Prometer respuesta",
+      "saber": "No aplica",
+      "apunta": "Atención",
+      "img_rel": "Adorna",
+      "img_tipo": "Producto",
+      "porque": "El narrador anuncia el plan del video (recorrido década por década) y promete que la historia fue movida pese a ser desigual; las imágenes de Gatorade en una máquina expendedora solo acompañan.",
+      "duda": "enigma: Ninguno"
+    },
+    "4": {
+      "funcion": "Situar",
+      "enigma": "Responder a medias",
+      "saber": "Igual",
+      "apunta": "Comprensión",
+      "img_rel": "Muestra",
+      "img_tipo": "Archivo de época",
+      "porque": "Cuenta el origen de Gatorade y de toda la categoría en 1965, primera pieza de por qué lleva ventaja; dominan fotos en blanco y negro y metraje antiguo de fútbol americano que ilustran lo narrado.",
+      "duda": "enigma: Ninguno"
+    },
+    "5": {
+      "funcion": "Avanzar",
+      "enigma": "Responder a medias",
+      "saber": "Igual",
+      "apunta": "Comprensión",
+      "img_rel": "Muestra",
+      "img_tipo": "Archivo de época",
+      "porque": "Suma hechos en la misma dirección (distribución con Stokely-Van Camp y acuerdo con la NFL) que consolidan la ventaja; se ven el plato de frijoles, el anuncio antiguo de la lata Stokely Gatorade y el logo de la NFL al nombrarlos.",
+      "duda": "img_tipo: Producto"
+    },
+    "6": {
+      "funcion": "Respirar",
+      "enigma": "Demorar",
+      "saber": "Igual",
+      "apunta": "Atención",
+      "img_rel": "Muestra",
+      "img_tipo": "Archivo de época",
+      "porque": "El propio narrador admite que la década fue poco movida y mete una curiosidad menor (Gator Gum) que no aporta a la pregunta; se ven un comercial antiguo y el paquete de Gator Gum.",
+      "duda": "apunta: Emoción"
+    },
+    "7": {
+      "funcion": "Reflexionar",
+      "enigma": "Responder a medias",
+      "saber": "Público más",
+      "apunta": "Comprensión",
+      "img_rel": "Muestra",
+      "img_tipo": "Producto",
+      "porque": "Tras presentar Olympade, el narrador interpreta con mirada retrospectiva que esa fue la oportunidad perdida de Coca-Cola para alcanzar a Gatorade; se ven las botellas de Coca-Cola, el nombre Olympade y su lata.",
+      "duda": "funcion: Avanzar"
+    },
+    "8": {
+      "funcion": "Avanzar",
+      "enigma": "Ninguno",
+      "saber": "Igual",
+      "apunta": "Comprensión",
+      "img_rel": "Muestra",
+      "img_tipo": "Documento o prueba",
+      "porque": "Hecho nuevo en la línea principal (Quaker Oats compra Stokely-Van Camp por Gatorade) que prepara lo que sigue sin tocar todavía la brecha con Powerade; dominan el titular de prensa y la cita textual del portavoz.",
+      "duda": "enigma: Responder a medias"
+    },
+    "9": {
+      "funcion": "Avanzar",
+      "enigma": "Responder a medias",
+      "saber": "Igual",
+      "apunta": "Comprensión",
+      "img_rel": "Muestra",
+      "img_tipo": "Archivo de época",
+      "porque": "Encadena los movimientos con los que Quaker amplió la marca (público más amplio, sabores, NBA, el baño de Gatorade, mercados internacionales), que explican parte de la ventaja; dominan comerciales antiguos y el metraje del baño al entrenador.",
+      "duda": "saber: Público más"
+    },
+    "10": {
+      "funcion": "Pagar",
+      "enigma": "Responder a medias",
+      "saber": "No aplica",
+      "apunta": "Comprensión",
+      "img_rel": "Muestra",
+      "img_tipo": "Dato o gráfico",
+      "porque": "Entrega el resultado de la década (ventas cinco veces mayores) y concluye que ahí el mercado se volvió atractivo; el gráfico de ventas de Gatorade 1982 contra 1989 ocupa todo el tramo.",
+      "duda": "funcion: Avanzar"
+    },
+    "11": {
+      "funcion": "Complicar",
+      "enigma": "Plantear",
+      "saber": "Igual",
+      "apunta": "Atención",
+      "img_rel": "Muestra",
+      "img_tipo": "Archivo de época",
+      "porque": "Aparecen de golpe muchos rivales y se anuncian los de Pepsi y Coca-Cola, lo que abre la pregunta de si alguno podrá con Gatorade; dominan comerciales de los noventa, entre ellos el de 10K cuando se nombra.",
+      "duda": "enigma: Prometer respuesta"
+    },
+    "12": {
+      "funcion": "Complicar",
+      "enigma": "Demorar",
+      "saber": "Público más",
+      "apunta": "Emoción",
+      "img_rel": "Muestra",
+      "img_tipo": "Documento o prueba",
+      "porque": "Un rival (Mountain Dew Sport) ataca de frente a Gatorade y el narrador lo presenta como gracioso porque ya sabemos quién terminó dominando; la cita textual del portavoz de Pepsi ocupa la mayor parte del tramo.",
+      "duda": "enigma: Despistar"
+    },
+    "13": {
+      "funcion": "Avanzar",
+      "enigma": "Demorar",
+      "saber": "Igual",
+      "apunta": "Atención",
+      "img_rel": "Muestra",
+      "img_tipo": "Archivo de época",
+      "porque": "Sigue la historia del lado de Pepsi (fin de Mountain Dew Sport, All Sport con gas, relanzamiento de 1996) subrayando lo extraño de carbonatar una bebida deportiva, sin tocar aún a Powerade; dominan comerciales antiguos de All Sport.",
+      "duda": "funcion: Girar"
+    },
+    "14": {
+      "funcion": "Complicar",
+      "enigma": "Responder a medias",
+      "saber": "Igual",
+      "apunta": "Comprensión",
+      "img_rel": "Muestra",
+      "img_tipo": "Documento o prueba",
+      "porque": "Entra por fin el rival Powerade y su arranque tardío y limitado (solo en fuentes, embotellado recién en 1992) da parte de la explicación de su rezago; domina el recorte de prensa resaltado, junto al logo y un comercial antiguo.",
+      "duda": "funcion: Situar"
+    },
+    "15": {
+      "funcion": "Avanzar",
+      "enigma": "Responder a medias",
+      "saber": "Igual",
+      "apunta": "Comprensión",
+      "img_rel": "Muestra",
+      "img_tipo": "Archivo de época",
+      "porque": "Explica que Powerade se fue a deportes internacionales porque Gatorade ya tenía las ligas de EE. UU., otra pieza de la respuesta; se ven el vaso de Gatorade en la cancha y la placa antigua de bebida oficial de los Juegos Olímpicos.",
+      "duda": "img_tipo: Producto"
+    },
+    "16": {
+      "funcion": "Pagar",
+      "enigma": "Responder a medias",
+      "saber": "Igual",
+      "apunta": "Comprensión",
+      "img_rel": "Muestra",
+      "img_tipo": "Archivo de época",
+      "porque": "Da el resultado de la batalla de los noventa (Gatorade sigue arriba con 86% en 2000) y lo atribuye en parte a las campañas con Michael Jordan; dominan los comerciales de esas campañas y cierra con el gráfico de cuota.",
+      "duda": "img_tipo: Dato o gráfico"
+    },
+    "17": {
+      "funcion": "Girar",
+      "enigma": "Responder a medias",
+      "saber": "Igual",
+      "apunta": "Atención",
+      "img_rel": "Muestra",
+      "img_tipo": "Documento o prueba",
+      "porque": "Cambia el tablero: Pepsi, dueña del rival All Sport, compra Quaker y pasa a ser líder indiscutido, lo que deja a Coca-Cola frente a un gigante; domina el titular de prensa de la compra por 13.400 millones.",
+      "duda": "enigma: Ninguno"
+    },
+    "18": {
+      "funcion": "Avanzar",
+      "enigma": "Ninguno",
+      "saber": "Igual",
+      "apunta": "Comprensión",
+      "img_rel": "Muestra",
+      "img_tipo": "Producto",
+      "porque": "Consecuencia de la compra (Pepsi debe vender All Sport, que se apaga) y el narrador marca el momento en que queda un duelo de dos marcas; tras el titular breve domina la tarjeta Gatorade vs Powerade, que es justo lo que se dice.",
+      "duda": "funcion: Pagar"
+    },
+    "19": {
+      "funcion": "Avanzar",
+      "enigma": "Demorar",
+      "saber": "Igual",
+      "apunta": "Comprensión",
+      "img_rel": "Muestra",
+      "img_tipo": "Producto",
+      "porque": "Lista de lanzamientos de ida y vuelta (Propel, Option, Zero, Power Water, Lower Sugar) que el propio narrador trata como detalle; cada producto aparece en pantalla al ser nombrado.",
+      "duda": "enigma: Responder a medias"
+    },
+    "20": {
+      "funcion": "Respirar",
+      "enigma": "Demorar",
+      "saber": "Igual",
+      "apunta": "Atención",
+      "img_rel": "Muestra",
+      "img_tipo": "Archivo de época",
+      "porque": "Paréntesis de curiosidades sobre patrocinios (el comercial de Jordan contra su yo joven, el acuerdo de LeBron James con Coca-Cola y su paso a Pepsi) que no mueve la pregunta; dominan fotos y comerciales de 2003 más un titular del acuerdo.",
+      "duda": "funcion: Avanzar"
+    },
+    "21": {
+      "funcion": "Complicar",
+      "enigma": "Plantear",
+      "saber": "Igual",
+      "apunta": "Comprensión",
+      "img_rel": "Muestra",
+      "img_tipo": "Producto",
+      "porque": "Entra un competidor nuevo (BodyArmor) que altera la pelea por el segundo puesto y abre qué pasará con él; se ven botellas de Powerade y de BodyArmor al nombrarlas.",
+      "duda": "enigma: Demorar"
+    },
+    "22": {
+      "funcion": "Girar",
+      "enigma": "Responder a medias",
+      "saber": "Igual",
+      "apunta": "Comprensión",
+      "img_rel": "Muestra",
+      "img_tipo": "Documento o prueba",
+      "porque": "El rival nuevo pasa a ser de Coca-Cola en su mayor compra y aun con dos marcas suma solo un cuarto del mercado frente a más de la mitad de Gatorade; el titular de la adquisición es lo que más tiempo ocupa y cierra con el gráfico de cuota.",
+      "duda": "funcion: Pagar"
+    },
+    "23": {
+      "funcion": "Avanzar",
+      "enigma": "Suspender",
+      "saber": "Igual",
+      "apunta": "Comprensión",
+      "img_rel": "Muestra",
+      "img_tipo": "Producto",
+      "porque": "Último movimiento de Powerade (nueva etiqueta y fórmula) cuyo efecto el narrador deja sin resolver; dominan los envases nuevos, aunque la etiqueta dice 50% más electrolitos y la voz dice el doble.",
+      "duda": "enigma: Demorar"
+    },
+    "24": {
+      "funcion": "Cerrar",
+      "enigma": "Revelar",
+      "saber": "No aplica",
+      "apunta": "Comprensión",
+      "img_rel": "Muestra",
+      "img_tipo": "Producto",
+      "porque": "El narrador resume y da la respuesta explícita: Gatorade creó la categoría y sacó ventaja antes de que los demás reaccionaran; montaje rápido de botellas y anuncios de cada marca según se van nombrando.",
+      "duda": "funcion: Reflexionar"
+    },
+    "25": {
+      "funcion": "Cerrar",
+      "enigma": "Suspender",
+      "saber": "No aplica",
+      "apunta": "Atención",
+      "img_rel": "Adorna",
+      "img_tipo": "Producto",
+      "porque": "Pide comentarios y deja al público la pregunta de si Powerade podrá superar algún día a Gatorade; las tomas de botellas y góndolas acompañan sin relación puntual con lo que se pregunta.",
+      "duda": "enigma: Plantear"
+    }
+  },
+  "pregunta_central": "¿Por qué Powerade, creada por Coca-Cola para competir de frente con Gatorade, no ha logrado acercarse en casi 40 años (y podrá hacerlo alguna vez)? Se plantea en los tramos 1-2, se responde por partes a lo largo del recorrido (sobre todo 4-5, 7, 9-10, 14-16 y 22) y de forma explícita en el resumen del tramo 24; la parte sobre el futuro queda abierta en el tramo 25.",
+  "observaciones": "La dimensión enigma fue la más difícil: en un recorrido cronológico la pregunta se plantea al inicio y no se vuelve a nombrar, así que la frontera entre Responder a medias, Demorar y Ninguno depende de cuánto se considere que cada hecho de la historia de Gatorade explica la brecha (usé Responder a medias cuando el tramo aporta una causa de la ventaja o del rezago, Demorar para material lateral y Ninguno para pasos de trámite). En saber, Igual, No aplica y Público más se solapan porque todo lo cuenta un narrador que ya conoce el final; reservé No aplica para tramos de puro dato u opinión y Público más para los que explotan la mirada retrospectiva (7 y 12). También dudé entre Cerrar y Reflexionar en el resumen (24), en apunta para el pedido de comentarios (25, ninguna opción encaja bien) y en img_tipo cuando un comercial antiguo muestra el producto o cuando el tramo mezcla titular, gráfico y anuncio en partes casi iguales (5, 14, 15, 16, 23)."
+}

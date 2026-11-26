@@ -1,0 +1,71 @@
+import sys; sys.path.insert(0,'/home/claude/d24'); from comun import *
+frases=["El tráiler de GTA 6 tuvo 475 millones de vistas en un solo día.",
+"Fue el segundo tráiler, en mayo de 2025, sumando todas las plataformas.",
+"El dato lo dio Take-Two, la dueña de Rockstar.",
+"El récord anterior era de una película: Deadpool y Wolverine, con 365 millones.",
+"O sea, un videojuego le ganó a Hollywood por más de 100 millones.",
+"Y todavía faltaba un año y medio para que el juego saliera.",
+"Comenta si tú lo viste ese día.",
+"Sigue el canal para más números de GTA 6."]
+voz=["El tráiler de GTA seis tuvo cuatrocientos setenta y cinco millones de vistas en un solo día.",
+"Fue el segundo tráiler, en mayo de dos mil veinticinco, sumando todas las plataformas.",
+"El dato lo dio Téik Tu, la dueña de Rockstar.",
+"El récord anterior era de una película. Dedpul y Wúlverin, con trescientos sesenta y cinco millones.",
+"O sea, un videojuego le ganó a Jóligud por más de cien millones.",
+"Y todavía faltaba un año y medio para que el juego saliera.",
+"Comenta si tú lo viste ese día.",
+"Sigue el canal para más números de GTA seis."]
+M=[["tuvo",0,"^tuvo"],["vistas",0,"^vistas"],["solo",0,"^solo"],
+["s_seg",1,None],["mayo",1,"^mayo"],["sumando",1,"^sumando"],
+["s_take",2,None],["duena",2,"^due"],
+["s_rec",3,None],["pelicula",3,"^pel"],["con",3,"^con$"],
+["s_gano",4,None],["gano",4,"^gan"],["por",4,"^por$"],
+["s_falta",5,None],["medio",5,"^medio"],["saliera",5,"^saliera"],
+["s_fin",6,None],["s_cta",7,None]]
+GAM=dict(look="gamer",var=81,pelo="#3e2723",camisa="#e53935",lentes=False,s=1.0)
+P=[{"tipo":"tv","x":760,"y":1300,"s":1.3,"k":0.0,"fin":"s_seg"},
+   {"tipo":"documento","x":2050,"y":1180,"s":1.0,"sello":"MAYO 2025","selloc":"cian","k":"mayo","cae":True,"z":1800,"fin":"s_take"},
+   {"tipo":"telefono","x":2260,"y":1560,"s":1.1,"k":"sumando","z":1800,"fin":"s_take"},
+   {"tipo":"documento","x":3560,"y":1160,"s":0.95,"sello":"OFICIAL","selloc":"verde","k":"duena","cae":True,"z":1800,"fin":"s_rec"},
+   {"tipo":"trofeo","x":4850,"y":1640,"s":1.0,"k":"pelicula","fin":"s_gano"},
+   {"tipo":"consola","x":6150,"y":1690,"s":1.2,"k":"s_gano","fin":"s_falta"},
+   {"tipo":"documento","x":7450,"y":1180,"s":1.0,"sello":"19 NOV 2026","selloc":"rojo","k":"medio","cae":True,"z":1800,"fin":"s_fin"},
+   {"tipo":"cronometro","x":7150,"y":1500,"s":0.9,"texto":"1,5 AÑOS","k":"medio+0.3","z":1800,"fin":"s_fin"}]
+A=[{**GAM,"hasta":"s_seg","keys":[{"k":0,"x":320,"y":1700,"pose":"apunta","cara":"sorpresa"},{"k":"vistas","x":320,"y":1700,"pose":"celebra","cara":"risa","fx":"salto"}]},
+   {"look":"jugadora","var":85,"s":0.97,"peloT":"cola","desde":"s_seg","hasta":"s_take","keys":[{"k":"s_seg","x":1380,"y":1700,"pose":"camina","cara":"feliz"},{"k":"s_seg+0.9","x":1660,"y":1700,"pose":"telefono","cara":"feliz"},{"k":"sumando","x":1660,"y":1700,"pose":"apunta","cara":"sorpresa"}]},
+   {"look":"ejecutivo","var":82,"camisa":"#263238","pelo":"#3e2723","s":1.0,"desde":"s_take","hasta":"s_rec","keys":[{"k":"s_take","x":3000,"y":1700,"pose":"telefono","cara":"feliz"},{"k":"duena","x":3000,"y":1700,"pose":"apunta","cara":"feliz"}]},
+   {"look":"cliente","var":86,"s":0.97,"desde":"s_rec","hasta":"s_gano","keys":[{"k":"s_rec","x":4350,"y":1700,"pose":"cruzado","cara":"neutral"},{"k":"con","x":4350,"y":1700,"pose":"piensa","cara":"sorpresa"}]},
+   {**GAM,"desde":"s_gano","hasta":"s_falta","keys":[{"k":"s_gano","x":5560,"y":1700,"pose":"juega","cara":"feliz","objeto":"control"},{"k":"gano","x":5560,"y":1700,"pose":"celebra","cara":"risa","fx":"salto"}]},
+   {"look":"cliente","var":86,"s":0.97,"desde":"s_gano","hasta":"s_falta","keys":[{"k":"s_gano","x":6050,"y":1700,"pose":"parado","cara":"triste","dir":-1}]},
+   {**GAM,"desde":"s_falta","keys":[{"k":"s_falta","x":6860,"y":1700,"pose":"piensa","cara":"neutral"},{"k":"saliera","x":6860,"y":1700,"pose":"cruzado","cara":"sorpresa"}]}]
+E={"momentos":M,"escenas":[{"tipo":"pelicula","desde":"0","escala":1.08,
+ "zonas":[{"x0":-300,"x1":1300,"set":"sala"},{"x0":1300,"x1":2600,"set":"calle","k":"s_seg"},{"x0":2600,"x1":3900,"set":"oficina","k":"s_take"},
+          {"x0":3900,"x1":5200,"set":"estudio","k":"s_rec"},{"x0":5200,"x1":6500,"set":"sala","k":"s_gano"},{"x0":6500,"x1":7900,"set":"oficina","k":"s_falta","luz":"tenue"}],
+ "pan":[{"k":"s_seg","x":1300,"dur":0.9},{"k":"s_take","x":2600,"dur":0.9},{"k":"s_rec","x":3900,"dur":0.9},{"k":"s_gano","x":5200,"dur":0.9},{"k":"s_falta","x":6500,"dur":0.9}],
+ "props":P,"actores":A,
+ "burbujas":[{"k":"saliera","de":6,"texto":"¡Y NI HABÍA SALIDO!","fin":"s_fin","dx":150}],
+ "numeros":[{"k":"tuvo","n":475,"suf":" M","c":"amar","etq":"VISTAS EN 24 HORAS","fin":"s_seg"},
+            {"k":"con","n":365,"suf":" M","c":"cian","etq":"RÉCORD ANTERIOR","fin":"s_gano"},
+            {"k":"por","n":110,"pre":"+","suf":" M","c":"verde","etq":"DE DIFERENCIA","fin":"s_falta"}],
+ "zoom":[{"k":0.1,"s":1.1,"x":560,"y":1400,"dur":0.6},{"k":"tuvo","s":1.0,"dur":0.3},{"k":"mayo","s":1.12,"x":1880,"y":1350,"dur":0.4},{"k":"s_take","s":1.0,"dur":0.3},
+         {"k":"duena","s":1.22,"x":3060,"y":1420,"dur":0.4},{"k":"s_rec","s":1.0,"dur":0.3},{"k":"pelicula","s":1.15,"x":4600,"y":1500,"dur":0.4},{"k":"con","s":1.0,"dur":0.3},
+         {"k":"s_falta","s":1.0,"dur":0.3},{"k":"medio","s":1.1,"x":7150,"y":1300,"dur":0.4},{"k":"saliera","s":1.0,"dur":0.3}],
+ "sacudidas":[{"k":"tuvo","f":14},{"k":"gano","f":16}],
+ "titulos":[{"k":0.2,"texto":"TRÁILER 2","c":"rosa","fin":"s_seg"},
+            {"k":"s_seg","texto":"MAYO 2025","c":"cian","fin":"s_take"},
+            {"k":"s_take","texto":"DATO OFICIAL","c":"verde","fin":"s_rec"},
+            {"k":"s_rec","texto":"EL RÉCORD ANTERIOR","c":"amar","fin":"s_gano"},
+            {"k":"s_gano","texto":"JUEGO 1 · CINE 0","c":"rosa","grande":True,"fin":"s_falta"},
+            {"k":"s_falta","texto":"FALTABA 1 AÑO Y MEDIO","c":"rojo","fin":"s_fin"}],
+ "chips":[{"k":"sumando","texto":"TODAS LAS PLATAFORMAS","c":"cian","fin":"s_take"},
+          {"k":"duena","texto":"TAKE-TWO · DUEÑA DE ROCKSTAR","c":"amar","fin":"s_rec"},
+          {"k":"pelicula","texto":"DEADPOOL Y WOLVERINE","c":"rojo","fin":"s_gano"}]},
+ {"tipo":"cierre","desde":"s_fin"}],
+ "cierre":"¿LO VISTE ESE DÍA?","cierre2":"Comenta: sí o no","paises":["SÍ","NO"],"sfx":[],"cta":"SIGUE EL CANAL","like":"LIKE"}
+poner_sets(E,[("cuartoGamerV",{"era":"2025"}),("nocheV",{"sem":7,"gente":True}),("corporativoV",{"ticker":"TTWO ▲","hora":"tarde"}),("escenarioV",{}),None,("corporativoV",{"ticker":"19 NOV 2026","hora":"noche","col":"#ffd740"})])
+insertar(E,"vistas","s_seg",1300,"mesaCenitalV",{"titulo":"TRÁILER 2 · 24 HORAS","monto":"475 M","firma":"vistas"},[])
+insertar(E,"gano","s_falta",6500,"vitrinaV",{"fondo":["#5a2a7a","#2a1040","#0a0414"],"luz2":"255,120,220","pedestal":True},[{"tipo":"trofeo","x":540,"y":1560,"s":2.0}])
+g={"titulo":"El tráiler de GTA 6: 475 millones en 1 día 🎬","texto_pantalla":"475 MILLONES","lote":"G2026112401","marca":"VICEVERSO GG",
+"nota_datos":"Tráiler 2 de GTA VI (6-may-2025): más de 475 millones de vistas en 24 horas sumando todas las plataformas; el mayor estreno de un video hasta entonces (Rockstar, mayo 2025; presentación a inversionistas de Take-Two, ago-2026, citada por FandomWire). Récord anterior: tráiler de Deadpool & Wolverine, 365 millones en 24 h (The Hollywood Reporter). 475-365 = 110 → 'más de 100 millones'. GTA VI salió el 19-nov-2026: 18 meses después → 'un año y medio'.",
+"frases":frases,"frases_voz":voz,"fuentes":["https://fandomwire.com/every-record-gta-6-has-officially-broken-so-far/","https://www.hollywoodreporter.com/"],"escena":E}
+guardar("G2026112401_src.json",g)

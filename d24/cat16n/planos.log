@@ -1,0 +1,14 @@
+  0.00-  0.96 objeto    L=1.0 foco=51 n_vis=2
+  0.96-  2.14 objeto    L=1.2 foco=51 n_vis=2
+  2.20-  3.85 detalle   (abre)
+  3.91-  5.49 camina    L=1.6 foco=- n_vis=0
+  5.49-  7.30 holandes  L=1.8 foco=52 n_vis=1
+  8.58-  9.42 tercio    L=0.8 foco=animal n_vis=1
+  9.49- 10.11 detalle   (inclina)
+ 10.17- 11.94 mano      L=1.8 foco=animal n_vis=1
+ 11.94- 13.87 primer    L=1.9 foco=animal n_vis=1
+ 13.93- 16.38 detalle   (baja)
+ 16.44- 19.40 general   L=3.0 foco=animal n_vis=2
+ 20.68- 22.97 dos       L=2.3 foco=animal n_vis=3
+ 23.03- 24.36 detalle   (deriva)
+ 24.42- 26.23 aleja     L=1.8 foco=51 n_vis=4

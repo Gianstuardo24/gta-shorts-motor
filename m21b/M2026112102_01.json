@@ -1,0 +1,182 @@
+{
+  "titulo": "Pixar Was Sold for $5 Million 🎬",
+  "texto_pantalla": "$5 MILLION",
+  "lote": "M2026112102",
+  "tema": "mdm",
+  "marca": "MILLION DOLLAR MISTAKE",
+  "acento": "#5effa1",
+  "nota_datos": "Lucas vendió la división gráfica de Lucasfilm tras su divorcio de 1983; pidió ~US$30 M sin compradores (AOL/GOBankingRates). Jobs pagó US$5 M y puso US$5 M más de capital, 3-feb-1986 (Cord Cutters, CNN Money; Biography: US$10 M en total). Disney compró Pixar por ~US$7.400 M en acciones, ene/may 2006 (CNN Money, Cord Cutters). 7.400/10 = 740 veces.",
+  "frases": [
+    "In 1986, George Lucas sold a small computer team.",
+    "After his divorce he needed cash. He asked for 30 million dollars, and nobody bought it.",
+    "Then Steve Jobs paid 5 million, and put in 5 million more.",
+    "The team was called Pixar.",
+    "Twenty years later, Disney bought it for 7.4 billion dollars.",
+    "That's 740 times what Jobs put in.",
+    "Lesson: before you sell something, ask what it could become. Would you have sold it?"
+  ],
+  "frases_voz": [
+    "In nineteen eighty-six, George Lucas sold a small computer team.",
+    "After his divorce, he needed cash. He asked for thirty million dollars, and nobody bought it.",
+    "Then Steve Jobs paid five million, and put in five million more.",
+    "The team was called Pixar.",
+    "Twenty years later, Disney bought it for seven point four billion dollars.",
+    "That's seven hundred and forty times what Jobs put in.",
+    "Lesson. Before you sell something, ask what it could become. Would you have sold it?"
+  ],
+  "fuentes": [
+    "https://www.aol.com/finance/actually-pixar-not-apple-first-174307224.html",
+    "https://money.cnn.com/galleries/2009/fortune/0906/gallery.steve_jobs_career_timeline.fortune/5.html",
+    "https://cordcuttersnews.com/40-years-ago-today-pixar-became-a-reality-launching-an-era-of-computer-animation-magic/",
+    "https://www.biography.com/business-leaders/steve-jobs-pixar-animation-history"
+  ],
+  "escena": {
+    "momentos": [
+      [
+        "s_cash",
+        1,
+        null
+      ],
+      [
+        "m30",
+        1,
+        "^thirty|^30"
+      ],
+      [
+        "nobody",
+        1,
+        "^nobody"
+      ],
+      [
+        "s_jobs",
+        2,
+        null
+      ],
+      [
+        "m5",
+        2,
+        "^five|^5"
+      ],
+      [
+        "s_pixar",
+        3,
+        null
+      ],
+      [
+        "s_disney",
+        4,
+        null
+      ],
+      [
+        "b74",
+        4,
+        "^seven|^7"
+      ],
+      [
+        "s_rank",
+        5,
+        null
+      ],
+      [
+        "s_fin",
+        6,
+        null
+      ]
+    ],
+    "escenas": [
+      {
+        "tipo": "aviso",
+        "desde": "0",
+        "texto": "FOR SALE",
+        "sub": "A small computer graphics team",
+        "fondo": "1986 · GEORGE LUCAS",
+        "color": "amar"
+      },
+      {
+        "tipo": "contador",
+        "desde": "s_cash",
+        "k": "m30",
+        "n": 30,
+        "pre": "$",
+        "suf": " MILLION",
+        "titulo": "ASKING PRICE",
+        "chip": "NO BUYERS",
+        "k2": "nobody",
+        "color": "rojo",
+        "loc": "en-US"
+      },
+      {
+        "tipo": "contador",
+        "desde": "s_jobs",
+        "k": "m5",
+        "n": 5,
+        "pre": "$",
+        "suf": " MILLION",
+        "titulo": "STEVE JOBS PAID",
+        "sub": "+ $5 million more to run it",
+        "color": "verde",
+        "loc": "en-US"
+      },
+      {
+        "tipo": "aviso",
+        "desde": "s_pixar",
+        "texto": "PIXAR",
+        "sub": "The same small team",
+        "fondo": "ITS NAME",
+        "color": "verde"
+      },
+      {
+        "tipo": "contador",
+        "desde": "s_disney",
+        "k": "b74",
+        "n": 7400,
+        "pre": "$",
+        "suf": "M",
+        "loc": "en-US",
+        "titulo": "DISNEY PAID (2006)",
+        "color": "verde"
+      },
+      {
+        "tipo": "ranking",
+        "desde": "s_rank",
+        "titulo": "PIXAR · US DOLLARS",
+        "filas": [
+          {
+            "p": "JOBS PUT IN (1986)",
+            "v": "$10M",
+            "n": 10,
+            "k": "s_rank",
+            "c": "cian"
+          },
+          {
+            "p": "DISNEY PAID (2006)",
+            "v": "$7.4B",
+            "n": 7400,
+            "k": "s_rank",
+            "c": "verde",
+            "top": "×740"
+          }
+        ]
+      },
+      {
+        "tipo": "cierre",
+        "desde": "s_fin"
+      }
+    ],
+    "cierre": "SELL OR KEEP?",
+    "cierre2": "Would you have sold it? Comment",
+    "paises": [
+      "SELL",
+      "KEEP"
+    ],
+    "sfx": [
+      {
+        "f": "extra/ESM_SPG_fx_action_transaction_cash_register_ding_02.wav",
+        "k": "b74",
+        "off": 0.0,
+        "dur": 0.9,
+        "g": 0.12
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+ok /home/claude/d24/wd2/D2026112502.json dur 47.1
+T: red0=0.64 wasting=4.34 s_1=6.66 white=9.20 s_2=9.78 color=13.12 s_3=14.91 three=15.30 two=17.99 s_4=18.52 blues=19.28 reds=20.33 s_5=23.74 nobody=24.70 waste=27.09 s_6=27.80 blends=31.32 s_7=32.16 spot=34.79 past=36.45 s_8=37.18 blue=38.59 s_fin=41.58 s_cta=43.96 fin=47.10
+  {"a": 0, "b": 1.744, "t": "Stop buying red toys for your dog.", "k": ["buying"], "w": [0.056, 0.301, 0.64, 0.838, 1.083, 1.28, 1.525]}
+  {"a": 1.744, "b": 3.1900000000000004, "t": "At least until you see this.", "k": ["least"], "w": [1.794, 1.944, 2.236, 2.528, 2.726, 2.924]}
+  {"a": 3.1900000000000004, "b": 6.606, "t": "Careful, you might be wasting your money on the wrong colors.", "k": ["Careful,"], "w": [3.24, 3.696, 3.894, 4.186, 
+  {"a": 6.606, "b": 9.725999999999999, "t": "For years, people thought dogs saw the world in black and white.", "k": ["years,"], "w": [6.656, 6.832, 7.154, 7.456,
+  {"a": 9.725999999999999, "b": 13.479, "t": "In 1989, scientist Jay Neitz showed that dogs do see color,", "k": ["1989,"], "w": [9.776, 9.944, 10.723, 11.26, 11.
+  {"a": 13.479, "b": 14.856, "t": "just fewer than us.", "k": ["fewer"], "w": [13.529, 13.803, 14.129, 14.403]}
+  {"a": 14.856, "b": 17.215, "t": "We have three types of color cells in our eyes.", "k": ["three"], "w": [14.906, 15.055, 15.298, 15.588, 15.878, 16.027, 16.317,
+  {"a": 17.215, "b": 18.465999999999998, "t": "Dogs have only two.", "k": ["Dogs"], "w": [17.265, 17.508, 17.751, 17.994]}
+  {"a": 18.465999999999998, "b": 20.278, "t": "Specifically, blues and yellows.", "k": ["Specifically,"], "w": [18.516, 19.281, 19.604, 19.823]}
+  {"a": 20.278, "b": 23.686, "t": "Reds look dark and muddy instead, almost brownish gray.", "k": ["instead,"], "w": [20.328, 20.599, 20.87, 21.14, 21.359, 21.682
+  {"a": 23.686, "b": 25.441, "t": "Now the part almost nobody notices.", "k": ["notices."], "w": [23.736, 23.931, 24.127, 24.369, 24.704, 25.039]}
+  {"a": 25.441, "b": 27.746, "t": "And it's where your money goes to waste.", "k": ["waste."], "w": [25.491, 25.686, 25.882, 26.17, 26.412, 26.701, 26.943, 27.092
+  {"a": 27.746, "b": 29.589, "t": "Green grass looks dull to them too.", "k": ["Green"], "w": [27.796, 28.097, 28.399, 28.7, 28.953, 29.109, 29.362]}
+  {"a": 29.589, "b": 32.106, "t": "So a red ball on the lawn almost blends in.", "k": ["almost"], "w": [29.639, 29.795, 29.901, 30.106, 30.359, 30.514, 30.718, 30
+  {"a": 32.106, "b": 35.059000000000005, "t": "That bright toy you paid for is hard for your dog to spot.", "k": ["paid"], "w": [32.156, 32.403, 32.746, 32.945, 3
+  {"a": 35.059000000000005, "b": 37.126000000000005, "t": "That's why it may run right past it.", "k": ["That's"], "w": [35.109, 35.403, 35.603, 35.755, 35.955, 3
+  {"a": 37.126000000000005, "b": 39.389, "t": "So for games outside, pick blue or yellow.", "k": ["outside,"], "w": [37.176, 37.335, 37.543, 37.851, 38.332, 38.59
+  {"a": 39.389, "b": 41.526, "t": "Those are the colors dogs see best.", "k": ["colors"], "w": [39.439, 39.747, 39.955, 40.164, 40.521, 40.779, 40.987]}
+  {"a": 41.526, "b": 43.906000000000006, "t": "Tell me what color your dog's favorite toy is.", "k": ["favorite"], "w": [41.576, 41.795, 41.93, 42.149, 42.41, 42.
+  {"a": 43.906000000000006, "b": 47.050000000000004, "t": "Follow to decode your dog.", "k": ["Follow"], "w": [43.956, 44.296, 44.446, 44.786, 45.031]}
