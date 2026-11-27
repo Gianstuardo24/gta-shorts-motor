@@ -89,7 +89,7 @@ function zapato(cx,by,s,o){if(!(o&&o.sinSombra))sombraZapato(cx,by,s);X.save();X
  // costuras
  X.setLineDash([7,6]);X.strokeStyle='rgba(120,110,95,.7)';X.lineWidth=2;X.beginPath();X.moveTo(-244,-128);X.quadraticCurveTo(-214,-92,-205,-52);X.moveTo(206,-240);X.quadraticCurveTo(180,-150,205,-70);X.moveTo(-140,-58);X.quadraticCurveTo(40,-72,198,-78);X.stroke();X.setLineDash([]);
  // lateral: lugar del logo (archivo de Tao). Solo desde la línea 6; sin el archivo queda vacío
- if(o&&o.marca)logoEn(24,-140,318,-.17);
+ if(o&&o.marca)logoEn(26,-132,300,-.10);
  // brillo suave en el lateral vacío
  const br=X.createLinearGradient(-90,-200,170,-90);br.addColorStop(0,'rgba(255,255,255,.55)');br.addColorStop(1,'rgba(255,255,255,0)');X.fillStyle=br;X.beginPath();X.ellipse(40,-150,150,42,-.18,0,7);X.fill();
  X.restore()}
@@ -353,7 +353,7 @@ function anillo(x,y,s){X.save();X.translate(x,y);X.scale(s,s);X.lineJoin='round'
  X.strokeStyle=LIN;X.lineWidth=15;X.beginPath();X.ellipse(0,14,30,20,0,0,7);X.stroke();
  X.strokeStyle='#e2b23a';X.lineWidth=10;X.beginPath();X.ellipse(0,14,30,20,0,0,7);X.stroke();
  X.strokeStyle='rgba(255,240,170,.85)';X.lineWidth=3;X.beginPath();X.ellipse(0,14,30,20,0,3.4,5.2);X.stroke();
- logoEn(0,-14,92,-.10,'oro');
+ [[-1.6,0],[1.6,0],[0,-1.6],[0,1.6]].forEach(d=>logoEn(d[0],-16+d[1],96,-.10,'borde'));logoEn(0,-16,96,-.10,'oro');
  X.fillStyle='#eaf6ff';X.beginPath();X.moveTo(28,-28);X.lineTo(37,-19);X.lineTo(28,-10);X.lineTo(19,-19);X.closePath();X.fill();trazo(LIN,1.8);
  X.fillStyle='rgba(255,255,255,.95)';X.beginPath();X.moveTo(28,-26);X.lineTo(33,-19);X.lineTo(28,-19);X.closePath();X.fill();
  X.restore()}
@@ -463,15 +463,24 @@ function p09b(L,t){p03(L,lerp(K('x_35')-.06,K('x_35_fin')+.02,seg(t,K('c9b'),K('
 
 // ---------- gancho (línea 1) y cierre (líneas 11–12): el escritorio de madera, bajo una lámpara ----------
 function p00(L,t){
- // Una mano deja la factura en el centro; el "$35" domina y la cámara se acerca despacio. Sin logo.
- const S=1.3,ox=7,oy=93,bx=ox+513*S,by=oy+890*S,u0=seg(t,.7,K('c1')+.3),z=.65*u0+.35*eio(u0);   // acercamiento lento y sostenido: no se detiene antes del corte
- cam(L,bx,by,1+.16*z,lerp(bx,600,z),lerp(by,1205,z),()=>{
+ // Gancho v2 (Tao, 27-nov 00:57: el primero era lento y aburrido; sin la franja oscura de arriba).
+ // 1) la mano planta la factura · 2) con "The price" la cámara salta al "$35" · 3) con "joke" el papel se sacude
+ // 4) con "But that's only half the story" la cámara se aleja: la factura queda a la izquierda y la otra mitad de la mesa, vacía.
+ const xp=K('x_price'),xj=K('x_joke'),xb=K('x_but'),HO=[60,600],HS=.62,HR=-.05,B=[405.2,1135.4];   // la hoja en el mundo y el centro de su TOTAL
+ const pu=eo(seg(t,xp-.06,xp+.24)),al=eio(seg(t,xb-.05,xb+.95));
+ const fin=seg(t,xb+.9,K('c1')+.5);
+ const s=lerp(lerp(lerp(1.30,1.62,seg(t,.3,xp-.06)),3.74*(1+.02*seg(t,xp+.24,xb)),pu),1+.05*fin,al);   // 3,74: el renglón de arriba sale de cuadro y nada escrito queda bajo los subtítulos
+ cam(L,B[0],B[1],s,lerp(lerp(633,540,pu),B[0]-40*fin,al),lerp(lerp(1391,1375,pu),B[1],al),()=>{
   maderaArriba(L);
-  const en=eo(seg(t,-.75,.95)),dx=-330*(1-en),dy=420*(1-en);
-  X.save();X.translate(L+ox+dx,oy+dy+1495);X.rotate(-.02-.12*(1-en));X.translate(0,-1495);X.scale(S,S);facturaVieja();X.restore();
-  const sa=eio(seg(t,1.05,1.8));if(sa<1)manoArriba(L+ox+dx+410*S-sa*520,oy+dy+1050*S+sa*560,1.5,Object.assign({},CAROL,{esp:-1,sinLapiz:true,rot:.2,piel:'#dca783'}));
+  const u=seg(t,-.05,.5),e=1+2.70158*Math.pow(u-1,3)+1.70158*Math.pow(u-1,2),sh=t>xj?Math.exp(-(t-xj)*5)*Math.sin((t-xj)*24):0;
+  const dx=-430*(1-e)+3*sh,dy=540*(1-e),rot=HR-.30*(1-e)+.007*sh,cr=Math.cos(rot),sr=Math.sin(rot);
+  X.save();X.translate(L+HO[0]+dx,HO[1]+dy);X.rotate(rot);X.scale(HS,HS);facturaVieja();X.restore();
+  const sa=eio(seg(t,.52,1.15));
+  if(sa<1){const lx=410*HS,ly=1050*HS;manoArriba(L+HO[0]+dx+lx*cr-ly*sr-sa*330,HO[1]+dy+lx*sr+ly*cr+sa*400,1.03,Object.assign({},CAROL,{esp:-1,sinLapiz:true,rot:.2,piel:'#dca783'}))}
  });
- penumbra(L,1060,650);vineta(L,.5)}
+ // sombra suave, solo mientras el papel queda bajo los subtítulos (el acercamiento al "$35")
+ const so=.78*pu*(1-al);if(so>0){const g=X.createLinearGradient(0,-400,0,600);g.addColorStop(0,'rgba(14,8,4,'+so+')');g.addColorStop(.8,'rgba(14,8,4,'+so+')');g.addColorStop(1,'rgba(14,8,4,0)');X.fillStyle=g;X.fillRect(L-300,-400,1680,1000)}
+ vineta(L,.45)}
 
 function p10(L,t){
  // Cierre. Línea 11: la factura de $35 frente al anillo y las acciones (lo de después se ilumina con "A small job…").
@@ -500,7 +509,7 @@ function carpetaAbierta(cx,cy,rot,ab){X.save();X.translate(cx,cy-246);X.rotate(r
  X.fillStyle='rgba(20,10,5,.40)';rr(-158,-206,340,452,10);X.fill();
  X.fillStyle='#2c6a50';rr(-170,-250,340,472,8);X.fill();trazo(LIN,3);
  X.fillStyle='#f6f1e3';X.fillRect(-116,-204,270,410);X.strokeStyle='rgba(60,45,30,.6)';X.lineWidth=2;X.strokeRect(-116,-204,270,410);
- logoEn(19,-10,214,-.12,'grafito');
+ logoEn(19,-14,228,-.06,'grafito');
  const c=Math.cos(ab*1.745);
  X.save();X.translate(-170,0);
  if(c>=0){X.scale(Math.max(c,.02),1);X.translate(170,0);
@@ -559,7 +568,7 @@ function p05b(L,t){
  try{Object.defineProperty(window,'LISTO',{configurable:true,get(){return motor&&cargado},set(v){motor=v}})}catch(e){}
  const im=new Image();
  im.onload=()=>{const w=im.naturalWidth||im.width||600,h=im.naturalHeight||im.height||300,lienzo=c=>{const k=document.createElement('canvas');k.width=w;k.height=h;const x=k.getContext('2d');x.drawImage(im,0,0,w,h);if(c){x.globalCompositeOperation='source-in';x.fillStyle=c;x.fillRect(0,0,w,h)}return k};
-  LOGO.img=lienzo(null);LOGO.tintas.oro=lienzo('#dba622');LOGO.tintas.grafito=lienzo('#2b2a30');LOGO.ok=true;cargado=true};
+  LOGO.img=lienzo(null);LOGO.tintas.oro=lienzo('#dba622');LOGO.tintas.grafito=lienzo('#2b2a30');LOGO.tintas.borde=lienzo('#3a2410');LOGO.ok=true;cargado=true};
  im.onerror=()=>{cargado=true};im.src=src})();
 
 const SET=f=>({osc:.1,luces(){return []},fondo(z,t,q){f(FV(z).L,t)}});

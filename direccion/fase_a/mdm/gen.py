@@ -21,6 +21,8 @@ def w(linea, palabra, n=0):
     c = [p for p in pal if a - 1e-6 <= p["i"] < b - 1e-6 and p["w"].lower().startswith(palabra.lower())]
     return c[n]["i"]
 T = {"fin": D, "s_fin": D,
+     # gancho · línea 1
+     "x_price": w(1, "price"), "x_joke": w(1, "joke"), "x_but": w(1, "But"),
      # plano 01 · líneas 2–3 (c1: primer cuadro del plano, 0,12 s antes de la línea 2)
      "c1": ini[1] - 0.12, "x_needed": w(2, "needed"), "x_logo": w(2, "logo"), "x_logo_fin": w(2, "for"), "x_asked": w(3, "He"),
      "c2": w(3, "design") - 0.02, "x_carolyn": w(3, "Carolyn"),
@@ -31,7 +33,7 @@ T = {"fin": D, "s_fin": D,
      "c4": ini[4] - 0.02, "x_love0": w(5, "didn't"), "x_love1": w(5, "it,") + 0.15, "x_grow": w(5, "would"), "x_on": w(5, "on"),
      "c5": ini[5],
      # planos 05A y 05B · línea 6 (esperan el archivo del logo)
-     "x_swoosh": w(6, "swoosh"), "c5b": w(6, "one") - 0.03, "x_most": w(6, "most"), "x_logos": w(6, "logos"),
+     "x_swoosh": w(6, "swoosh"), "c5b": w(6, "of") - 0.03, "x_most": w(6, "most"), "x_logos": w(6, "logos"),
      # plano 06 · línea 7 y "In 1983"
      "c6": ini[6] - 0.12, "x_one": w(7, "the", 2), "x_misses": w(7, "misses"),
      # plano 07 · línea 8

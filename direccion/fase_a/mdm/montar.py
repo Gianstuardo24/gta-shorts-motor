@@ -12,24 +12,22 @@ video, salida = sys.argv[1:3]
 T = json.loads((AQUI / "datos.json").read_text())["T"]
 D = T["fin"]
 # Efectos: solo acciones que se ven. (clave de tiempo, desfase, archivo, duración, ganancia)
-SFX = [("0", 0.05, "sintet/hoja.wav", None, .12),                       # gancho: la factura se desliza a su lugar
+SFX = [("0", 0.05, "sintet/hoja.wav", None, .12),                       # gancho: la mano planta la factura
+       ("x_price", -0.20, "transicion/whoosh_04.wav", .28, .06),         # gancho: la cámara salta al "$35"
+       ("x_joke", 0, "impacto/kick_01.wav", .16, .06),                   # gancho: el papel se sacude
        ("c1", -0.30, "transicion/whoosh_02.wav", .30, .08),              # del gancho a la historia (termina antes de la voz)
        ("c1", 1.44, "impacto/kick_01.wav", .18, .07),                    # 01: la zapatilla se apoya
-       ("x_carolyn", .22, "sintet/lapiz.wav", 1.0, .10),                 # 02: empieza a dibujar
-       ("x_2", -.05, "sintet/lapiz.wav", 1.2, .11), ("x_17", 0, "sintet/lapiz.wav", 1.3, .11), ("x_35", 0, "sintet/lapiz.wav", .8, .11),
        ("x_rasga", .12, "sintet/hoja.wav", None, .14),                   # 03: arranca la hoja
        ("x_on", .06, "sintet/chinche.wav", None, .16),                   # 04: clava la carpeta
        ("x_swoosh", -.20, "sintet/hoja.wav", None, .12),                 # 05A: abre la tapa
        ("c5b", .14, "impacto/kick_01.wav", .16, .08), ("x_most", .30, "impacto/kick_01.wav", .16, .06),   # 05B: primeros dos pasos
        ("c6", -0.30, "transicion/whoosh_03.wav", .30, .08),              # salto a 1983 (termina antes de la voz)
-       ("c6", 0, "sintet/lapiz.wav", 1.25, .09), ("c6", 1.95, "sintet/lapiz.wav", 2.25, .08),     # 06: sigue dibujando…
-       ("x_one", .25, "sintet/hoja.wav", None, .10),                     # …mientras llega el sobre
+       ("x_one", .25, "sintet/hoja.wav", None, .10),                     # 06: llega el sobre
        ("x_gold", -.26, "sintet/descuelga.wav", None, .12),              # 07: abre el estuche
        ("x_gold", .62, "ui/ding_01.wav", .9, .05),                       # 07: el anillo
        ("x_500", 0, "sintet/hoja.wav", None, .12),                       # 08: saca el documento
-       ("c9b", .08, "sintet/lapiz.wav", .9, .11),                        # 09b: recuerdo, escribe "$35"
-       ("c9c", .62, "sintet/lapiz.wav", 1.5, .09),                       # 09c: retoma la línea
        ("x_tell", .50, "sintet/chinche.wav", None, .10)]                 # cierre: deja el lápiz
+# Sin sonidos de escritura: Tao los encontró molestos (27-nov 00:57).
 fx = np.zeros(int(D * SR) + SR, np.float32)
 for k, off, f, dur, g in SFX:
     x = A.leer(SON / f)
