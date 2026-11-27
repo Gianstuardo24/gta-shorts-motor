@@ -61,9 +61,10 @@ function manoArriba(tx,ty,s,o){o=o||{};const esp=o.esp||1;X.save();X.translate(t
  X.restore()}
 
 // ---------- zapato sin marca (lateral vacío). Origen: centro de la suela sobre la mesa; punta a la izquierda ----------
-function zapato(cx,by,s){X.save();X.translate(cx,by);X.scale(s,s);X.lineJoin='round';X.lineCap='round';
- // sombra de contacto
- const sh=X.createRadialGradient(0,6,10,0,6,360);sh.addColorStop(0,'rgba(20,12,6,.55)');sh.addColorStop(1,'rgba(20,12,6,0)');X.save();X.scale(1,.07);X.fillStyle=sh;X.beginPath();X.arc(0,90,360,0,7);X.fill();X.restore();
+// sombra de contacto del zapato sobre la mesa (k: intensidad, w: ancho relativo)
+function sombraZapato(cx,by,s,k,w){k=k===undefined?1:k;w=w||1;X.save();X.translate(cx,by);X.scale(s*w,s);const sh=X.createRadialGradient(0,6,10,0,6,360);sh.addColorStop(0,'rgba(20,12,6,'+(.55*k)+')');sh.addColorStop(1,'rgba(20,12,6,0)');X.scale(1,.07);X.fillStyle=sh;X.beginPath();X.arc(0,90,360,0,7);X.fill();X.restore()}
+// o.rot: giro sobre la punta (talón levantado si es negativo) · o.sinSombra: la sombra se dibuja aparte
+function zapato(cx,by,s,o){if(!(o&&o.sinSombra))sombraZapato(cx,by,s);X.save();X.translate(cx,by);X.scale(s,s);if(o&&o.rot){X.translate(-296,0);X.rotate(o.rot);X.translate(296,0)}X.lineJoin='round';X.lineCap='round';
  // lengüeta (detrás)
  X.fillStyle='#e6e0d2';X.beginPath();X.moveTo(-6,-246);X.quadraticCurveTo(18,-306,74,-290);X.lineTo(70,-236);X.closePath();X.fill();trazo(LIN,3);
  // suela
@@ -122,23 +123,37 @@ const CAROL={manga:'#efe6d6',puno:'#0e8f8a',boton:'#f2c230',piel:'#eab590',piel2
 const KNIGHT={manga:'#232f4d',puno:'#f4f1ea',piel:'#e3a985',piel2:'#c98f6b'};
 const MY=1322; // línea de apoyo sobre la mesa
 
+// mezcla entre dos poses de mano {o:[x,y], a, c:[4 dedos], p: pulgar, pc: curva del pulgar}
+function mezcla(A,B,u){return {o:[lerp(A.o[0],B.o[0],u),lerp(A.o[1],B.o[1],u)],a:lerp(A.a,B.a,u),c:A.c.map((v,i)=>lerp(v,B.c[i],u)),p:lerp(A.p,B.p,u),pc:lerp(A.pc,B.pc,u)}}
+
 function p01(L,t){
+ // Una sola mano de Knight, en cuadro desde el primer cuadro hasta el corte (Tao, 26-nov 23:55):
+ // entra sosteniendo la zapatilla → la apoya (punta, después talón) → la suelta → toca el lateral vacío con "logo"
+ // → pasa al talón → con "He asked" la desliza hasta su lugar y la deja ahí. Carolyn la recibe por la punta.
  X.save();X.translate(0,-70);taller(L);
- const k0=K('x_asked')+.02,k1=K('c2')-.04,emp=eio(seg(t,k0,k1)),cx=620-180*emp-30*seg(t,k1,k1+.25),ES=.85;
- const rec=eio(seg(t,k1-.30,k1+.02));
- zapato(L+cx,MY,ES);
- // dedo de Knight toca el lateral vacío con "logo"
- const tA=K('x_needed')-.75,tT=K('x_logo'),tS=K('x_logo_fin')+.55;
- // entra con "Phil Knight" (queda a la vista y en suspenso) y toca con "logo"
- if(t>tA&&t<tS+.6){const en=.8*eio(seg(t,tA,tA+.6))+.2*eio(seg(t,tT-.24,tT)),sa=eio(seg(t,tS,tS+.55)),pr=Math.sin(seg(t,tT,tT+.22)*Math.PI)*7;
-  const px=L+662+(1-en)*520+sa*560-pr,py=MY-128-(1-en)*40-sa*30,o=origen(px,py,-.2,1.45,-1,224,-20);
-  if(en>=1&&sa<=0){X.fillStyle='rgba(60,40,20,.20)';X.beginPath();X.ellipse(px-6,py+10,24,11,0,0,7);X.fill()}
-  manoLado(o[0],o[1],-.2,1.45,-1,Object.assign({},KNIGHT,{curl:[0,1.02,1.06,1.1],pulgar:.22,pulgarCurl:.25}))}
- // mano abierta de Knight empuja el talón con "He asked"
- const tE=K('x_asked')-.55;
- if(t>tE){const en=eio(seg(t,tE,k0)),hx=L+cx+272+(1-en)*420,hy=MY-100,o=origen(hx,hy,-.05,1.45,-1,224,-6);
-  manoLado(o[0],o[1],-.05,1.45,-1,Object.assign({},KNIGHT,{curl:[.06,.08,.1,.12],pulgar:.35}))}
- // mano de Carolyn (puño de color) espera a la izquierda y recibe la punta
+ const ES=.85,HS=1.45,C1=K('c1'),tT=K('x_logo'),tS=K('x_logo_fin')+.55,k0=K('x_asked')-.04,k1=k0+.47,XF=435;
+ const tP=C1+1.05,tH=tP+.42,tA=tH+.30,emp=eio(seg(t,k0,k1));
+ const cx=lerp(760,620,eo(seg(t,C1,tP+.15)))-(620-XF)*emp,alt=90*(1-eio(seg(t,C1,tP))),rot=-.14*(1-eio(seg(t,tP-.10,tH))),aire=alt/90;
+ // punto del zapato (relativo a su centro, ya apoyado) llevado al mundo con el giro sobre la punta y la altura
+ const pvx=L+cx-296*ES,pvy=MY-alt,cr=Math.cos(rot),sr=Math.sin(rot),alMundo=(qx,qy)=>{const x=qx+296*ES;return [pvx+x*cr-qy*sr,pvy+x*sr+qy*cr]};
+ // agarre: desde arriba y atrás, dedos por detrás del talón y pulgar por delante; al soltar se retira a lo largo del brazo
+ const gO=alMundo(322,-315),sol=eio(seg(t,tH+.04,tA));
+ const G={o:[gO[0]+80.5*sol,gO[1]-75*sol],a:-.75+rot,c:[.8-.2*sol,.85-.2*sol,.9-.2*sol,.95-.2*sol],p:.3,pc:0};
+ // toque en el lateral vacío
+ const pr=Math.sin(seg(t,tT,tT+.22)*Math.PI)*7,px=L+662-pr,py=MY-128;
+ const PT={o:origen(px,py,-.2,HS,-1,224,-20),a:-.2,c:[0,1.02,1.06,1.1],p:.22,pc:.25};
+ // empuje desde el talón y soltar
+ const sue=eio(seg(t,k1+.02,k1+.20)),eO=origen(L+cx+272,MY-100,-.05,HS,-1,224,-6);
+ const EM={o:[eO[0]+55*sue,eO[1]-8*sue],a:-.05-.04*sue,c:[.06+.1*sue,.08+.1*sue,.1+.1*sue,.12+.1*sue],p:.35,pc:.08};
+ const agarre=t<tA,H=agarre?G:(t<tS?mezcla(G,PT,eio(seg(t,tA,tT))):mezcla(PT,EM,eio(seg(t,tS,k0-.06))));
+ const mano=parte=>manoLado(H.o[0],H.o[1],H.a,HS,-1,Object.assign({},KNIGHT,{curl:H.c,pulgar:H.p,pulgarCurl:H.pc,parte:parte}));
+ sombraZapato(L+cx,MY,ES,lerp(.35,1,1-aire)*(1+.25*rot/.14),1+.12*aire);
+ if(agarre)mano('atras');
+ zapato(L+cx,MY-alt,ES,{rot:rot,sinSombra:true});
+ if(t>=tT&&t<tS){X.fillStyle='rgba(60,40,20,.20)';X.beginPath();X.ellipse(px-6,py+10,24,11,0,0,7);X.fill()}
+ mano(agarre?'pulgar':'todo');
+ // mano de Carolyn (puño de color) espera a la izquierda y recibe la punta; queda en la pose con que abre el plano 02
+ const rec=eio(seg(t,k1-.22,k1+.12));
  manoLado(L+92-14*rec,MY-62-86*rec,-.02+.20*rec,1.15,1,Object.assign({},CAROL,{curl:[.10+.30*rec,.13+.30*rec,.16+.30*rec,.19+.28*rec],pulgar:.42+.1*rec,pulgarCurl:.02,graf:true}));
  X.restore();vineta(L,.5)}
 
@@ -154,12 +169,13 @@ function p02(L,t){
  const lap=(x1,y1,x2,y2)=>{const an=Math.atan2(y2-y1,x2-x1),ln=Math.hypot(x2-x1,y2-y1);X.save();X.translate(x1,y1);X.rotate(an);X.fillStyle='#e9d2a8';X.beginPath();X.moveTo(0,0);X.lineTo(20,-6);X.lineTo(20,6);X.closePath();X.fill();trazo(LIN,1.5);X.fillStyle='#3a3a40';X.beginPath();X.moveTo(0,0);X.lineTo(7,-2);X.lineTo(7,2);X.closePath();X.fill();
   X.fillStyle='#b8382c';X.fillRect(20,-6,ln-40,12);X.strokeStyle=LIN;X.lineWidth=1.5;X.strokeRect(20,-6,ln-40,12);X.fillStyle='#c9c4b8';X.fillRect(ln-20,-6,10,12);X.fillStyle='#d98a86';X.fillRect(ln-10,-6,10,12);X.strokeRect(ln-20,-6,20,12);X.restore()};
  // la mano entra por la izquierda (su lado): suelta la punta del zapato, toma el lápiz con "Carolyn" y dibuja (el papel queda de canto: el trazo no se ve)
- const a=K('c2'),tt=K('x_carolyn')-.10,tom=eio(seg(t,a+.22,tt)),esc=seg(t,tt+.30,tt+.48);
+ const a=K('c2'),tt=K('x_carolyn')-.10,tom=eio(seg(t,a+.10,tt)),esc=seg(t,tt+.30,tt+.48);
  // el lápiz se levanta pivotando sobre su punta hasta la inclinación con que queda en la mano (sin salto)
  if(tom<1){const lev=eio(seg(t,tt-.16,tt)),A=lerp(Math.atan2(-6,-236),-2.005,lev),ty=1326-5*lev;lap(L+P+20,ty,L+P+20+236*Math.cos(A),ty+236*Math.sin(A))}
  const w=Math.sin((t-tt)*12)*esc,px=L+lerp(P+20,P+4,eio(seg(t,tt+.05,tt+.4)))+9*w,py=1321-Math.sin(seg(t,tt,tt+.38)*Math.PI)*30,an=.04-.05*w;
- const o1=origen(px,py,an,1.25,1,190,150),ox=lerp(L+P-14,o1[0],tom),oy=lerp(1196,o1[1],tom)-Math.sin(tom*Math.PI)*26,ang=lerp(.12,an,tom);
- manoLado(ox,oy,ang,1.25,1,Object.assign({},CAROL,{curl:[lerp(.28,.55,tom),lerp(.32,.62,tom),lerp(.36,.7,tom),lerp(.40,.76,tom)],pulgar:.35,pulgarCurl:.02,graf:true,
+ // pose inicial = la del último cuadro del plano 01, relativa a la punta (zapato en L+P+496; allá en 435 y la mano a escala 1,15)
+ const o1=origen(px,py,an,1.25,1,190,150),ox=lerp(L+P+119,o1[0],tom),oy=lerp(MY-152.6,o1[1],tom)-Math.sin(tom*Math.PI)*26,ang=lerp(.18,an,tom);
+ manoLado(ox,oy,ang,1.25,1,Object.assign({},CAROL,{curl:[lerp(.40,.55,tom),lerp(.43,.62,tom),lerp(.46,.7,tom),lerp(.47,.76,tom)],pulgar:lerp(.52,.35,tom),pulgarCurl:.02,graf:true,
   entre:tom>=1?()=>{X.save();X.translate(190,150);X.rotate(Math.atan2(-.89,-.456));X.scale(1/1.25,1/1.25);lapLocal();X.restore()}:null}));
  function lapLocal(){X.fillStyle='#e9d2a8';X.beginPath();X.moveTo(0,0);X.lineTo(20,-6);X.lineTo(20,6);X.closePath();X.fill();trazo(LIN,1.5);X.fillStyle='#3a3a40';X.beginPath();X.moveTo(0,0);X.lineTo(7,-2);X.lineTo(7,2);X.closePath();X.fill();X.fillStyle='#b8382c';X.fillRect(20,-6,196,12);X.strokeStyle=LIN;X.lineWidth=1.5;X.strokeRect(20,-6,196,12);X.fillStyle='#c9c4b8';X.fillRect(216,-6,10,12);X.fillStyle='#d98a86';X.fillRect(226,-6,10,12);X.strokeRect(216,-6,20,12)}
  X.restore();vineta(L,.5)}

@@ -21,8 +21,8 @@ def w(linea, palabra, n=0):
     c = [p for p in pal if a - 1e-6 <= p["i"] < b - 1e-6 and p["w"].lower().startswith(palabra.lower())]
     return c[n]["i"]
 T = {"fin": D, "s_fin": D,
-     # plano 01 · líneas 2–3
-     "x_needed": w(2, "needed"), "x_logo": w(2, "logo"), "x_logo_fin": w(2, "for"), "x_asked": w(3, "He"),
+     # plano 01 · líneas 2–3 (c1: primer cuadro del plano, 0,12 s antes de la línea 2)
+     "c1": ini[1] - 0.12, "x_needed": w(2, "needed"), "x_logo": w(2, "logo"), "x_logo_fin": w(2, "for"), "x_asked": w(3, "He"),
      "c2": w(3, "design") - 0.02, "x_carolyn": w(3, "Carolyn"),
      # plano 03 · línea 4
      "c3": ini[3] - 0.03, "x_2": w(4, "2"), "x_hour_fin": w(4, "After") - 0.08, "x_17": w(4, "17"), "x_work_fin": w(4, "the") - 0.05,
