@@ -74,7 +74,7 @@ def instalar(v):
     s = (RAMA / "escena" / "escena.html").read_text(encoding="utf-8")
     marca = "// ===== P27 · FIN =====\n</script>"
     assert s.count(marca) == 1 and "DC ·" not in s
-    b = (AQUI / "base.js").read_text() + "\n" + (v.DIR / "bloque.js").read_text()
+    b = (AQUI / "base.js").read_text() + "\n" + "".join((AQUI / x).read_text() + "\n" for x in getattr(v, "INCLUYE", [])) + (v.DIR / "bloque.js").read_text()
     (dst / "escena.html").write_text(s.replace(marca, marca + "\n" + b), encoding="utf-8")
     for f in list((RAMA / "escena").glob("*.ttf")) + [RAMA / "escena" / "render.py"]: shutil.copy(f, dst / f.name)
 

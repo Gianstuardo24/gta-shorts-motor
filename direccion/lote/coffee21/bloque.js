@@ -174,6 +174,7 @@ function p09(L,t){const c=T.c09,k=T.x_tell;
  cam(L,cm[0],cm[1],cm[2],540,1000,()=>{cocina(L);persona(L,t,{boca:{s:.75*s},ty,trot,cafe:C_OK});vapor(L+570,ty-250,t,.6,1,5)});
  cierreCanal(L,t,k)}
 
+window.DC_CAFE={cocina,meson,vapor,llama,hervidor,pico,chorro,gotero,taza,reloj30,boca,persona,tazaArriba,perilla,quemador,mez,golpe,ruta,MANO,PIEL,PIEL2,CREMA,ACERO,ACERO2,NEGRO,C_OSC,C_OK,C_PAL,MOLIDO};   // piezas del canal, para Coffee 17h
 NUEVOS.dc_coffee21_p01a=SET(p01a);NUEVOS.dc_coffee21_p01b=SET(p01b);NUEVOS.dc_coffee21_p02=SET(p02);NUEVOS.dc_coffee21_p03=SET(p03);NUEVOS.dc_coffee21_p04=SET(p04);NUEVOS.dc_coffee21_p05=SET(p05);
 NUEVOS.dc_coffee21_p06=SET(p06);NUEVOS.dc_coffee21_p07=SET(p07);NUEVOS.dc_coffee21_p08a=SET(p08a);NUEVOS.dc_coffee21_p08b=SET(p08b);NUEVOS.dc_coffee21_p09=SET(p09);
 })();
