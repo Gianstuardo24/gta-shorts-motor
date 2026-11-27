@@ -288,8 +288,75 @@ function p04(L,t){
  X.strokeStyle='rgba(255,255,255,.07)';X.lineWidth=5;X.beginPath();X.moveTo(L+500,2100);X.quadraticCurveTo(L+540,1770,L+770,1652);X.quadraticCurveTo(L+960,1574,L+1380,1612);X.stroke();
  vineta(L,.5)}
 
+// ---------- 1983 · mesa de recepción neutra (plano 06; dramatización, sin marcas ni quién entrega) ----------
+const AJENA={manga:'#6b5238',puno:'#cfdfee',piel:'#dba27e',piel2:'#c28a66'};   // mano que entrega: ni Knight ni Carolyn
+function recepcion(L){
+ X.fillStyle=gl(0,0,0,700,[[0,'#2a201c'],[.6,'#49372f'],[1,'#5c4639']]);X.fillRect(L-300,-400,1680,1110);
+ for(let i=0;i<10;i++){const x=L-90+i*138+rnd(i)*36;X.fillStyle='rgba(18,10,7,'+(.10+.07*rnd(i+3))+')';X.fillRect(x,-400,40+rnd(i+5)*34,1070)}
+ const g=X.createRadialGradient(L+770,600,30,L+770,600,640);g.addColorStop(0,'rgba(255,212,148,.30)');g.addColorStop(1,'rgba(255,212,148,0)');X.fillStyle=g;X.fillRect(L-300,-400,1680,1110);
+ // mantel: plano de la mesa visto en tres cuartos, desde un poco más arriba
+ X.fillStyle=gl(0,650,0,1920,[[0,'#d6c8ad'],[.22,'#e9dfc9'],[1,'#dacdb3']]);X.fillRect(L-300,650,1680,1700);
+ X.fillStyle='rgba(60,40,20,.30)';X.fillRect(L-300,650,1680,9);X.fillStyle='rgba(255,250,236,.55)';X.fillRect(L-300,659,1680,4);
+ X.strokeStyle='rgba(120,100,70,.10)';X.lineWidth=3;for(let i=0;i<7;i++){const x=L-120+i*210+rnd(i+11)*60;X.beginPath();X.moveTo(x,662);X.lineTo(x+(x-L-540)*.55,1960);X.stroke()}
+ const lz=X.createRadialGradient(L+620,1120,60,L+620,1120,900);lz.addColorStop(0,'rgba(255,236,196,.34)');lz.addColorStop(1,'rgba(255,236,196,0)');X.fillStyle=lz;X.fillRect(L-300,650,1680,1700)}
+function taza(x,y,s){X.save();X.translate(x,y);X.scale(s,s);X.lineJoin='round';X.lineCap='round';
+ X.fillStyle='rgba(60,40,20,.22)';X.beginPath();X.ellipse(18,26,122,30,0,0,7);X.fill();
+ X.fillStyle='#f6f2e8';X.beginPath();X.ellipse(0,18,112,30,0,0,7);X.fill();trazo(LIN,2.5);
+ X.strokeStyle='rgba(120,100,80,.35)';X.lineWidth=2;X.beginPath();X.ellipse(0,16,78,19,0,0,7);X.stroke();
+ X.strokeStyle=LIN;X.lineWidth=18;X.beginPath();X.arc(64,-26,24,-1.15,1.25);X.stroke();X.strokeStyle='#f3eee3';X.lineWidth=12;X.beginPath();X.arc(64,-26,24,-1.15,1.25);X.stroke();
+ X.fillStyle=gl(-60,0,60,0,[[0,'#fbf8f0'],[1,'#ddd6c6']]);X.beginPath();X.moveTo(-60,-58);X.lineTo(60,-58);X.quadraticCurveTo(58,6,34,14);X.lineTo(-34,14);X.quadraticCurveTo(-58,6,-60,-58);X.closePath();X.fill();trazo(LIN,2.5);
+ X.fillStyle='#fbf8f0';X.beginPath();X.ellipse(0,-58,60,17,0,0,7);X.fill();trazo(LIN,2.5);
+ X.fillStyle='#4a2c1a';X.beginPath();X.ellipse(0,-56,50,12,0,0,7);X.fill();
+ X.restore()}
+// sobre plano cerrado y estuche cerrado (sin marcas)
+function sobre(cx,cy,r){X.save();X.translate(cx,cy);X.rotate(r);X.scale(.92,.74);X.lineJoin='round';
+ X.fillStyle='rgba(60,40,20,.26)';rr(-184,-108,384,246,8);X.fill();
+ X.fillStyle='#f8f2e4';rr(-190,-120,380,240,8);X.fill();trazo(LIN,2.5);
+ X.strokeStyle='rgba(120,100,80,.6)';X.lineWidth=2.5;X.beginPath();X.moveTo(-188,-116);X.lineTo(0,14);X.lineTo(188,-116);X.stroke();
+ X.restore()}
+function estuche(cx,cy,r){X.save();X.translate(cx,cy);X.rotate(r);X.lineJoin='round';
+ X.fillStyle='rgba(40,20,10,.32)';X.beginPath();X.ellipse(10,62,118,26,0,0,7);X.fill();
+ X.fillStyle=gl(0,-6,0,60,[[0,'#5a1d2a'],[1,'#3b111b']]);rr(-96,-12,192,72,14);X.fill();trazo(LIN,2.5);
+ X.fillStyle=gl(0,-90,0,4,[[0,'#8e3346'],[1,'#6a2232']]);rr(-96,-92,192,100,18);X.fill();trazo(LIN,2.5);
+ X.fillStyle='rgba(255,255,255,.14)';rr(-80,-82,160,22,11);X.fill();
+ X.strokeStyle='rgba(20,8,10,.65)';X.lineWidth=2;X.beginPath();X.moveTo(-92,24);X.lineTo(92,24);X.stroke();
+ X.fillStyle='#d9b24c';rr(-13,15,26,17,4);X.fill();trazo(LIN,2);
+ X.restore()}
+// bloc de dibujo en perspectiva; (u,v) en [0,1] sobre la hoja
+const Q6={TL:[150,880],TR:[650,850],BR:[722,1600],BL:[108,1652]};
+function p6(L,u,v){const ax=lerp(Q6.TL[0],Q6.TR[0],u),ay=lerp(Q6.TL[1],Q6.TR[1],u),bx=lerp(Q6.BL[0],Q6.BR[0],u),by=lerp(Q6.BL[1],Q6.BR[1],u);return [L+lerp(ax,bx,v),lerp(ay,by,v)]}
+function cuad6(L,u0,v0,u1,v1){const a=p6(L,u0,v0),b=p6(L,u1,v0),c=p6(L,u1,v1),d=p6(L,u0,v1);X.beginPath();X.moveTo(a[0],a[1]);X.lineTo(b[0],b[1]);X.lineTo(c[0],c[1]);X.lineTo(d[0],d[1]);X.closePath()}
+function raya6(L,v,u0,u1){if(u1<=u0)return;const a=p6(L,u0,v),b=p6(L,u1,v);X.strokeStyle='rgba(52,50,58,.92)';X.lineWidth=5;X.lineCap='round';X.beginPath();X.moveTo(a[0],a[1]);X.lineTo(b[0],b[1]);X.stroke()}
+// avance de la tercera línea: la misma función sirve a los planos siguientes (se detiene con "surprised her")
+function linea3(t){return .5*seg(t,K('c6')+1.95,K('x_surprised'))}
+
+function p06(L,t){
+ // Línea 7 y "In 1983": Carolyn dibuja; el regalo (sobre y estuche cerrados) llega con "the one that everyone misses" y ella no lo nota.
+ recepcion(L);taza(L+196,742,1);
+ const a=K('c6');
+ // bloc: sombra, hoja y lomo
+ X.save();X.translate(14,18);X.fillStyle='rgba(60,40,20,.25)';cuad6(L,0,0,1,1);X.fill();X.restore();
+ X.fillStyle='#fbf8ee';cuad6(L,0,0,1,1);X.fill();trazo(LIN,2.5);
+ X.fillStyle='#5a4634';cuad6(L,0,-.035,1,.02);X.fill();trazo(LIN,2.5);
+ // lo ya dibujado: un recuadro y la primera línea
+ X.strokeStyle='rgba(52,50,58,.92)';X.lineWidth=5;X.lineJoin='round';cuad6(L,.12,.09,.88,.36);X.stroke();
+ raya6(L,.48,.12,.88);
+ // segunda línea (la termina), paso a la tercera y avance de la tercera: el trazo aparece bajo la punta
+ const q2=lerp(.62,1,seg(t,a-.2,a+1.25)),m=eio(seg(t,a+1.35,a+1.85)),q3=linea3(t);
+ raya6(L,.60,.12,lerp(.12,.88,q2));raya6(L,.72,.12,lerp(.12,.88,q3));
+ const f2=p6(L,lerp(.12,.88,q2),.60),i3=p6(L,lerp(.12,.88,q3),.72);
+ const pen=t<a+1.35?f2:[lerp(f2[0],i3[0],m),lerp(f2[1],i3[1],m)-34*Math.sin(m*Math.PI)];
+ // regalo: sobre con el estuche encima, empujado por una mano que entra por la derecha y se retira
+ const g=eio(seg(t,K('x_one')-.15,K('x_misses')+.15)),gx=L+lerp(1460,888,g),gy=lerp(1100,1082,g),ret=eio(seg(t,K('x_misses')+.32,K('x_misses')+1.25));
+ sobre(gx,gy,-.10);estuche(gx-74,gy-30,-.06);
+ if(g>0&&ret<1){const o=origen(gx+52+ret*600,gy-4-ret*26,.05,1.25,-1,224,-6);
+  manoLado(o[0],o[1],.05,1.25,-1,Object.assign({},AJENA,{curl:[.08+.1*ret,.1+.1*ret,.12+.1*ret,.14+.1*ret],pulgar:.35}))}
+ // mano de Carolyn (puño de color, grafito en el índice): sigue dibujando
+ manoArriba(pen[0],pen[1],1.12,Object.assign({},CAROL,{graf:true,rot:.16}));
+ vineta(L,.45)}
+
 const SET=f=>({osc:.1,luces(){return []},fondo(z,t,q){f(FV(z).L,t)}});
-NUEVOS.dc_mdm_p01=SET(p01);NUEVOS.dc_mdm_p02=SET(p02);NUEVOS.dc_mdm_p03=SET(p03);NUEVOS.dc_mdm_p04=SET(p04);
+NUEVOS.dc_mdm_p01=SET(p01);NUEVOS.dc_mdm_p02=SET(p02);NUEVOS.dc_mdm_p03=SET(p03);NUEVOS.dc_mdm_p04=SET(p04);NUEVOS.dc_mdm_p06=SET(p06);
 })();
 // ===== DC_MDM · FIN =====
 </script>

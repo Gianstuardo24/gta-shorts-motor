@@ -29,15 +29,20 @@ T = {"fin": D, "s_fin": D,
      "x_35": w(4, "35"), "x_35_fin": w(4, "dollars", 1) + 0.30, "x_rasga": w(4, "dollars", 1) + 0.38,
      # plano 04 · línea 5
      "c4": ini[4] - 0.02, "x_love0": w(5, "didn't"), "x_love1": w(5, "it,") + 0.15, "x_grow": w(5, "would"), "x_on": w(5, "on"),
-     "c5": ini[5]}
-L = [100000 + 2600 * i for i in range(4)]
-CORTES = [None, "c2", "c3", "c4"]
-zonas = [{"x0": L[i], "x1": L[i] + 1300, "cam": L[i], "set": f"dc_mdm_p0{i + 1}", "entorno": f"dc_mdm_p0{i + 1}",
+     "c5": ini[5],
+     # plano 06 · línea 7 y "In 1983" (los planos 05A y 05B, reservados, van entre c5 y c6)
+     "c6": ini[6] - 0.12, "x_one": w(7, "the", 2), "x_misses": w(7, "misses"), "x_surprised": w(8, "surprised"),
+     "c7": w(8, "Nike") - 0.04}
+# (número de plano, clave del corte de entrada, razón). Cada plano tiene su zona fija según su número.
+PLANOS = [(1, None, "zapato sin marca: el encargo"), (2, "c2", "empieza el trabajo"), (3, "c3", "ella fija el precio"),
+          (4, "c4", "la duda de Knight"), (6, "c6", "el regalo llega y ella no lo nota")]
+L = [100000 + 2600 * (n - 1) for n, _, _ in PLANOS]
+CORTES = [k for _, k, _ in PLANOS]
+zonas = [{"x0": L[i], "x1": L[i] + 1300, "cam": L[i], "set": f"dc_mdm_p0{n}", "entorno": f"dc_mdm_p0{n}",
           "transicion": "inicio" if i == 0 else "corte", "camara": "fija", "acabado": "ninguno",
-          "razon": ["zapato sin marca: el encargo", "empieza el trabajo", "ella fija el precio", "la duda de Knight"][i],
-          **({"k": CORTES[i]} if i else {})} for i in range(4)]
+          "razon": r, **({"k": k} if i else {})} for i, (n, k, r) in enumerate(PLANOS)]
 pan = [{"k": -1, "x": L[0], "corte": 1, "dur": 0.04, "efecto": "ninguno"}] + \
-      [{"k": CORTES[i], "x": L[i], "corte": 1, "dur": 0.04, "dir": 1, "efecto": "ninguno"} for i in (1, 2, 3)]
+      [{"k": CORTES[i], "x": L[i], "corte": 1, "dur": 0.04, "dir": 1, "efecto": "ninguno"} for i in range(1, len(PLANOS))]
 escena = {"tipo": "pelicula", "desde": "0", "luz": False, "p27_fija": True, "escala": 1.24,
           "zoom": [{"k": -1, "s": 1.0, "dur": .01, "y": 1200}], "zonas": zonas, "pan": pan, "props": [], "actores": [],
           "fondos": perfil_de("MILLION DOLLAR MISTAKE")}
