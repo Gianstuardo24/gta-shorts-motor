@@ -501,7 +501,13 @@ function p10(L,t){
   if(en>=1)lapizSuelto(T[0],T[1],1.2,.16);
   if(en>0&&sa<1)manoArriba(T[0]+(1-en)*420+sa*460,T[1]+(1-en)*520+sa*560,1.2,MC({sinLapiz:en>=1}));
  });
- penumbra(L,560,400);vineta(L,.5)}
+ penumbra(L,560,400);
+ // Cierre del canal (Tao, 27-nov 01:18): pregunta, "comenta", LIKE y FOLLOW en pantalla, con los elementos del motor (sin sus haces de luz).
+ // Entran con la línea 12; la mitad de arriba se oscurece para que se lean y el TOTAL vacío queda iluminado debajo.
+ const co=eio(seg(t,xt-.25,xt+.35));
+ if(co>0){const g=X.createLinearGradient(0,-400,0,1010);g.addColorStop(0,'rgba(14,8,4,'+(.7*co)+')');g.addColorStop(.9,'rgba(14,8,4,'+(.7*co)+')');g.addColorStop(1,'rgba(14,8,4,0)');X.fillStyle=g;X.fillRect(L-300,-400,1680,1410)}
+ if(t>xt-.6&&typeof cierre==='function'){const sf=T.s_fin,hz=window.haz;T.s_fin=xt-.75;window.haz=function(){};X.save();X.translate(L,0);try{cierre(t)}finally{X.restore();T.s_fin=sf;window.haz=hz}}
+ vineta(L,.5)}
 
 // ---------- plano 05A: la carpeta se abre como una puerta (bisagra en el lomo) y deja ver la hoja ----------
 // ab 0→1: la tapa gira hasta ≈100°. En la hoja va el dibujo: es el lugar del logo (archivo de Tao).

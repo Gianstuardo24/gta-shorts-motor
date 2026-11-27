@@ -43,7 +43,8 @@ T = {"fin": D, "s_fin": D,
      # plano 09 · línea 10 (09b: recuerdo de 1971 con "She set her price")
      "c9": ini[9] - 0.12, "c9b": w(10, "She") - 0.04, "c9c": w(10, "and") - 0.04,
      # cierre · líneas 11 y 12
-     "c10": ini[10] - 0.12, "x_small": w(11, "A"), "x_tell": ini[11], "x_follow": w(12, "Follow")}
+     "c10": ini[10] - 0.12, "x_small": w(11, "A"), "x_tell": ini[11], "x_follow": w(12, "Follow"),
+     "s_cta": w(12, "Follow")}                       # el botón de seguir entra con "Follow"
 # (plano, set, clave del corte de entrada, casilla de su zona, razón). La casilla fija la posición de la zona.
 PLANOS = [("00", "p00", None, -1, "gancho: la factura de $35"),
           ("01", "p01", "c1", 0, "zapato sin marca: el encargo"), ("02", "p02", "c2", 1, "empieza el trabajo"),
@@ -64,6 +65,8 @@ escena = {"tipo": "pelicula", "desde": "0", "luz": False, "p27_fija": True, "esc
           "zoom": [{"k": -1, "s": 1.0, "dur": .01, "y": 1200}], "zonas": zonas, "pan": pan, "props": [], "actores": [],
           "fondos": perfil_de("MILLION DOLLAR MISTAKE")}
 datos = {"frases": fr, "T": T, "marca": "MILLION DOLLAR MISTAKE", "tema": "mdm", "escenas": [escena], "p27_fija": True,
-         "fondos": escena["fondos"], "cierre": "", "cierre2": "", "paises": []}
+         "fondos": escena["fondos"],
+         # cierre del canal (como en los demás videos de MDM): pregunta de la línea 12, comentar, like y seguir
+         "cierre": "WHAT WOULD YOU CHARGE?", "cierre2": "Tell me. Comment", "paises": [], "cta": "FOLLOW FOR MORE", "like": "LIKE"}
 (AQUI / "datos.json").write_text(json.dumps(datos, ensure_ascii=False))
 print("T", {k: round(v, 2) for k, v in sorted(T.items(), key=lambda x: x[1])})
