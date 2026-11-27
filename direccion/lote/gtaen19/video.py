@@ -50,3 +50,4 @@ TAGS = "#GTA6 #Shorts #RockstarGames #GTAVI #Gaming"
 PREVIA = [(0.6, "01 cae la claqueta"), (1.0, "01 el golpe"), (3.2, "01 el récord se quiebra"), (6.0, "01 no es su única copa"), (8.2, "02 19 de noviembre"), (9.2, "02 dos retrasos"),
           (11.0, "03 las cajas"), (12.9, "03 32.5 millones"), (17.4, "04 día uno"), (22.6, "05 la película"), (24.4, "05 fin de semana"), (27.0, "05 tres veces"), (30.0, "05 a escala"),
           (32.3, "06 se apaga"), (34.0, "06 la sala"), (37.6, "07 caen las reseñas"), (41.9, "07 99 de 100"), (46.3, "07 28 años"), (53.0, "08 cierre")]
+NIVEL_FX = 1.0   # producido antes del cambio de nivel del 27-nov: se conserva el nivel con que se aprobó

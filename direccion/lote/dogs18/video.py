@@ -48,3 +48,4 @@ FIRMA = "🐶 The Dogs Decoder · Follow to decode your dog."
 TAGS = "#Shorts #dogs #dogbehavior #doglover #dogfacts"
 PREVIA = [(0.9, "01 elige la roja"), (1.9, "01 en el pasto"), (3.6, "01 como la ve el perro"), (9.3, "02 casi gris"), (13.4, "03 1989"), (18.1, "04 conos 3 y 2"), (20.6, "05"),
           (22.6, "05 cambia la paleta"), (26.5, "06 a ras de pasto"), (29.4, "06 el pasto"), (31.9, "06 la pelota"), (36.4, "07 pasa de largo"), (40.8, "08 elige"), (45.5, "08 cierre")]
+NIVEL_FX = 1.0   # producido antes del cambio de nivel del 27-nov: se conserva el nivel con que se aprobó

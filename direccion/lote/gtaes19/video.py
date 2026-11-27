@@ -42,3 +42,4 @@ FIRMA = "Sigue a @ViceVersoGG 🎮"
 TAGS = "#GTA6 #Shorts #RockstarGames #GTAVI #Gaming"
 PREVIA = [(0.2, "01 la partida"), (1.3, "01 el que va adelante"), (3.2, "01 los dos carriles"), (6.6, "01 GTA 6"), (9.6, "02 215 millones"), (11.2, "02 desde 2013"), (14.6, "02 lo recorrido"),
           (17.6, "03 32,5 antes de salir"), (21.2, "03 enorme"), (23.6, "04 la cinta"), (27.4, "04 15 %"), (30.6, "05 tramos"), (32.4, "05 casi siete"), (35.3, "06 13 años"), (37.3, "06 recién empieza"), (44.0, "07 cierre")]
+NIVEL_FX = 1.0   # producido antes del cambio de nivel del 27-nov: se conserva el nivel con que se aprobó

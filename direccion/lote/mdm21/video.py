@@ -56,3 +56,4 @@ TAGS = "#Shorts #MillionDollarMistake #business #Netflix #Blockbuster"
 PREVIA = [(0.5, "01 entra el casete"), (3.6, "01 el reflejo"), (6.8, "01 tienda vacía"), (7.3, "02 la misma, llena"), (11.4, "02 9,000"), (14.6, "03 sobre y DVD"), (18.4, "04 dos sillas"), (21.4, "04 la oferta"),
           (23.2, "05 la toma"), (26.2, "05 el no"), (29.6, "06 el reloj"), (32.6, "06 menos de 12"), (36.9, "06 el pasaje"), (41.4, "07 de espaldas"), (44.4, "08 diez años"), (45.9, "08 persiana"),
           (47.4, "08 la pantalla"), (51.4, "09 Oregon"), (54.8, "09 la carpeta"), (59.6, "09 cierre")]
+NIVEL_FX = 1.0   # producido antes del cambio de nivel del 27-nov: se conserva el nivel con que se aprobó

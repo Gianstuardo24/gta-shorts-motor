@@ -97,6 +97,13 @@ def revisar(v):
     print("aislados:", r3.stdout.strip().split("\n")[0][-60:])
     return r.returncode
 
+# Sonidos que no se montan nunca, aunque alguien los vuelva a poner en la carpeta.
+PROHIBIDOS = {"transicion/whoosh_01.wav": "es el Roll Whoosh; Tao pidió sacarlo del todo (27-nov-2026)",
+              "_retirados/whoosh_01_roll_whoosh.wav": "es el Roll Whoosh; Tao pidió sacarlo del todo (27-nov-2026)"}
+# Nivel general de los efectos. Desde el 27-nov-2026 van más bajos (pedido de Tao: "que el volumen no sea tan alto").
+# Los videos producidos antes fijan NIVEL_FX = 1.0 en su video.py para conservar el nivel con que se aprobaron.
+NIVEL_FX = 0.65
+
 def montar(v, mudo=None, salida=None):
     import numpy as np, soundfile as sf, armar_escena as A, musica
     from scipy.ndimage import maximum_filter1d, uniform_filter1d
@@ -104,10 +111,12 @@ def montar(v, mudo=None, salida=None):
     mudo = mudo or v.TMP / "mudo.mp4"; salida = salida or v.TMP / "montado.mp4"
     T = json.loads((v.DIR / "datos.json").read_text())["T"]; D = T["fin"]
     fx = np.zeros(int(D * SR) + SR, np.float32)
+    nivel = getattr(v, "NIVEL_FX", NIVEL_FX)
     for k, off, f, dur, g in v.SFX:
+        if f in PROHIBIDOS: raise SystemExit(f"sonido prohibido en {v.ID}: {f} · {PROHIBIDOS[f]}")
         x = A.leer(SON / f)
         if dur: x = A.recorte(x, dur, .12)
-        A.poner(fx, x, max(0, (0 if k == "0" else T[k]) + off), g)
+        A.poner(fx, x, max(0, (0 if k == "0" else T[k]) + off), g * nivel)
     fx = fx[: int(D * SR)]
     vz = A.leer(v.DIR / "voz" / "vz.wav")
     musica.CARPETA = SON / "musica"

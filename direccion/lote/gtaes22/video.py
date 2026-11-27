@@ -43,3 +43,4 @@ FIRMA = "Sigue a @ViceVersoGG 🎮"
 TAGS = "#GTA6 #Shorts #RockstarGames #GTAVI #Gaming"
 PREVIA = [(0.2, "01 la pared"), (1.6, "01 forma el 99"), (6.4, "01 el detalle"), (9.4, "02 18 de noviembre"), (12.4, "02 el promedio"), (14.5, "02 99 de 100"), (16.4, "03 solo un juego"), (19.2, "03 de 1998"),
           (22.0, "03 el mejor"), (23.2, "04 desde el 99"), (27.4, "04 22 reseñas"), (30.7, "04 más de 140"), (33.4, "06 la balanza"), (38.0, "06 seis veces"), (40.6, "07 el 99"), (49.4, "07 cierre")]
+NIVEL_FX = 1.0   # producido antes del cambio de nivel del 27-nov: se conserva el nivel con que se aprobó

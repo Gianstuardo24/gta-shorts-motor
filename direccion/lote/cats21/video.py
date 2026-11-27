@@ -46,3 +46,4 @@ FIRMA = "🐱 The Cats Decoder · Follow to decode your cat."
 TAGS = "#Shorts #cats #catbehavior #catlover #catfacts"
 PREVIA = [(1.0, "01 gancho"), (5.9, "01 de cerca"), (6.5, "02 gatito y madre"), (10.8, "03 se huelen"), (11.7, "03 postura"), (13.0, "04 en casa"), (14.5, "04 sin personas"),
           (16.9, "04 para nosotros"), (21.95, "05 comida"), (22.85, "05 puerta"), (23.8, "05 atención"), (25.9, "06 repite"), (29.4, "07 amanecer"), (37.5, "08 cierre")]
+NIVEL_FX = 1.0   # producido antes del cambio de nivel del 27-nov: se conserva el nivel con que se aprobó

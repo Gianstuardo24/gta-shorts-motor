@@ -54,3 +54,4 @@ FIRMA = "☕ Coffee, But Why? · Follow for one coffee curiosity a day."
 TAGS = "#Shorts #coffee #coffeelover #coffeefacts #morningcoffee"
 PREVIA = [(1.2, "01 vertido"), (4.6, "01 prueba"), (5.7, "01 mueca"), (11.4, "02 sube el fuego"), (19.4, "03 tarjeta"), (21.0, "03 hierve a 212"), (23.6, "04 saca de más"),
           (31.9, "05 se apaga y 30"), (34.0, "06 despeja"), (37.4, "06 queda lo simple"), (40.0, "07 espera"), (41.3, "07 vierte"), (43.6, "08 en el rango"), (46.6, "08 pálida")]
+NIVEL_FX = 1.0   # producido antes del cambio de nivel del 27-nov: se conserva el nivel con que se aprobó

@@ -49,3 +49,4 @@ FIRMA = "🐇 The Rabbit Teller · Follow @TheRabbitLoop: one story leads to ano
 TAGS = "#Shorts #TheRabbitLoop #UFO #aliens #flyingsaucer"
 PREVIA = [(3.9, "01 cabina"), (10.0, "01 nueve destellos"), (13.0, "02 rápidos"), (15.5, "02 la trayectoria"), (17.6, "02 rebota"), (20.3, "03 se hunde"), (22.8, "04 teletipo"),
           (24.2, "04 titular"), (27.0, "05 porche"), (31.6, "05 todo el país"), (34.0, "06 es papel"), (40.2, "07 el dibujo"), (44.5, "07 un titular"), (52.5, "07 cierre")]
+NIVEL_FX = 1.0   # producido antes del cambio de nivel del 27-nov: se conserva el nivel con que se aprobó

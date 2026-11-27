@@ -45,3 +45,4 @@ FIRMA = "Follow @TheViceVerseGG 🎮"
 TAGS = "#GTA6 #Shorts #RockstarGames #GTAVI #Gaming"
 PREVIA = [(1.0, "01 el barco"), (4.9, "01 junto al casco"), (7.6, "02 2018"), (11.4, "03 el farol"), (13.8, "03 la marca"), (16.2, "04 una textura más"), (18.5, "04 se gira"), (19.9, "04 The Leonida"),
           (22.8, "04 el nombre"), (23.5, "05 las mismas letras"), (27.3, "05 Leonida"), (29.0, "06 2018"), (31.3, "06 bajo llave"), (34.4, "06 cinco años después"), (37.9, "07 dos fichas"), (39.2, "07 sin veredicto"), (44.0, "07 cierre")]
+NIVEL_FX = 1.0   # producido antes del cambio de nivel del 27-nov: se conserva el nivel con que se aprobó

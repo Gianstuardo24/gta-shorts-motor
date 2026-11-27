@@ -29,16 +29,33 @@ function equipo(x,y,s,rot,o){o=o||{};X.save();X.translate(x,y);X.rotate(rot);X.s
 function p01a(L,t){const xr=T.x_real,cong=t>=xr-.02,tt=cong?xr-.02:t,f=Math.exp(-Math.max(0,t-xr+.02)*9)*(cong?1:0);
  X.fillStyle='#030705';X.fillRect(L-400,-500,1900,2900);visor(L+540,1020,lerp(640,620,seg(t,0,xr)),tt+6,{});
  if(cong){X.fillStyle=`rgba(234,255,234,${f*.7})`;X.fillRect(L-400,-500,1900,2900);X.strokeStyle='#eaffea';X.lineWidth=9;X.lineCap='square';[[-1,-1],[1,-1],[1,1],[-1,1]].forEach(q=>{const cx=L+540+q[0]*420,cy=1020+q[1]*420;X.beginPath();X.moveTo(cx,cy-q[1]*90);X.lineTo(cx,cy);X.lineTo(cx-q[0]*90,cy);X.stroke()})}}
-// ---------- P01b · el aparato: una cámara con su visor nocturno, en manos de alguien ----------
-function p01b(L,t){const c=T.c01b,xc=T.x_careful,fin=T.c02;
- const cm=ruta(t,[[c,560,1020,1.05],[xc,540,1010,1.16],[fin,500,1000,1.32]]);
+// ---------- P01b · el aparato visto desde atrás: la cámara en dos manos, con la imagen congelada en su pantalla ----------
+// (rehecho el 27-nov a pedido de Tao: el encuadre anterior mostraba la cámara de lado, cortada y saliéndose del cuadro)
+function camaraAtras(x,y,s){X.save();X.translate(x,y);X.scale(s,s);X.lineJoin='round';
+ // el lente, hacia el fondo: se ve por encima del cuerpo
+ X.fillStyle='#2f3a26';rr(-124,-340,248,160,28);X.fill();trazo(LIN,4);X.fillStyle='rgba(0,0,0,.22)';[-74,-24,26,76].forEach(v=>X.fillRect(v-6,-334,12,84));X.fillStyle='#3f4d33';rr(-138,-256,276,38,10);X.fill();trazo(LIN,3);
+ // visor superior
+ X.fillStyle='#22262d';rr(-92,-240,184,74,14);X.fill();trazo(LIN,4);X.fillStyle='#0d1015';rr(-54,-226,108,42,10);X.fill();
+ // cuerpo
+ X.fillStyle='rgba(0,0,0,.4)';rr(-306,-170,640,420,44);X.fill();rr(-320,-190,640,420,44);X.fillStyle='#3a3f47';X.fill();trazo(LIN,4);
+ X.save();rr(-320,-190,640,420,44);X.clip();X.fillStyle='#2c3138';X.fillRect(-320,-190,640,66);X.fillStyle='rgba(255,255,255,.06)';X.fillRect(-320,-124,640,6);X.restore();
+ // empuñadura y botones
+ X.fillStyle='#2a2e35';rr(200,-108,104,318,30);X.fill();trazo(LIN,3);X.fillStyle='rgba(0,0,0,.25)';for(let i=0;i<7;i++)X.fillRect(214,-40+i*34,76,8);
+ X.fillStyle='#1c1f25';X.beginPath();X.arc(252,-150,22,0,7);X.fill();trazo(LIN,3);X.fillStyle='#c0392b';X.beginPath();X.arc(252,-150,10,0,7);X.fill();
+ X.fillStyle='#1c1f25';[-250,-196].forEach(v=>{rr(v,-166,40,22,8);X.fill()});
+ // marco de la pantalla
+ rr(-296,-106,480,326,20);X.fillStyle='#0d1015';X.fill();trazo(LIN,4);X.restore()}
+function p01b(L,t){const c=T.c01b,xc=T.x_careful,fin=T.c02,by=Math.sin(t*1.3)*5,S=1.05;
+ const cm=ruta(t,[[c,540,1050,1.0],[xc,540,1040,1.1],[fin,540,1020,1.2]]);
  cam(L,cm[0],cm[1],cm[2],540,1000,()=>{noche(L,1500,t);X.fillStyle='#0a1020';X.fillRect(L-1600,1600,5400,3000);X.fillStyle='#1c2a4a';X.fillRect(L-1600,1590,5400,22);[0,1,2,3,4,5].forEach(i=>X.fillRect(L-300+i*330,1430,16,170));X.fillRect(L-1600,1424,5400,14);
-  const o2=origen(L+420,1120,-1.2,1.3,1,118,44),o1=origen(L+800,1140,-.5,1.3,-1,118,44);
-  manoLado(o2[0],o2[1],-1.2,1.3,1,Object.assign({},MANO,{curl:[.5,.54,.58,.6],pulgar:.35,parte:'atras'}));manoLado(o1[0],o1[1],-.5,1.3,-1,Object.assign({},MANO,{curl:[.55,.6,.64,.66],pulgar:.3,parte:'atras'}));
-  equipo(L+700,1010,1.15,.22,{brillo:seg(t,xc+.5,xc+1.5)});
-  // pantalla trasera con la imagen congelada
-  X.save();X.translate(L+770,1040);X.rotate(.22);rr(-10,-104,180,208,16);X.fillStyle='#0d1015';X.fill();X.restore();visor(L+852,1058,84,T.x_real+6,{});
-  manoLado(o2[0],o2[1],-1.2,1.3,1,Object.assign({},MANO,{curl:[.5,.54,.58,.6],pulgar:.35,parte:'pulgar'}));manoLado(o1[0],o1[1],-.5,1.3,-1,Object.assign({},MANO,{curl:[.55,.6,.64,.66],pulgar:.3,parte:'pulgar'}))})}
+  const cx=L+540,cy=1070+by,oi=origen(cx-292,cy+86,-1.2,1.25,1,118,44),od=origen(cx+292,cy+86,1.2,1.25,-1,118,44),MI=Object.assign({},MANO,{curl:[.5,.54,.58,.6],pulgar:.35}),MD=Object.assign({},MANO,{curl:[.5,.54,.58,.6],pulgar:.35});
+  manoLado(oi[0],oi[1],-1.2,1.25,1,Object.assign({},MI,{parte:'atras'}));manoLado(od[0],od[1],1.2,1.25,-1,Object.assign({},MD,{parte:'atras'}));
+  camaraAtras(cx,cy,S);
+  // la imagen congelada, en la pantalla trasera
+  const px=cx-56*S,py=cy+57*S,pw=446*S,ph=292*S;X.save();X.beginPath();X.rect(px-pw/2,py-ph/2,pw,ph);X.clip();X.fillStyle='#061a0c';X.fillRect(px-pw/2,py-ph/2,pw,ph);visor(px,py-10,300*S,T.x_real+6,{});
+  const br=seg(t,xc+.35,xc+1.35);if(br>0&&br<1){X.fillStyle='rgba(234,255,234,.14)';X.beginPath();const bx=px-pw+br*pw*2;X.moveTo(bx,py-ph/2);X.lineTo(bx+90,py-ph/2);X.lineTo(bx-40,py+ph/2);X.lineTo(bx-130,py+ph/2);X.closePath();X.fill()}X.restore();
+  X.strokeStyle='#eaffea';X.lineWidth=5;X.lineCap='square';[[-1,-1],[1,-1],[1,1],[-1,1]].forEach(q=>{const ex=px+q[0]*(pw/2-26),ey=py+q[1]*(ph/2-24);X.beginPath();X.moveTo(ex,ey-q[1]*34);X.lineTo(ex,ey);X.lineTo(ex-q[0]*34,ey);X.stroke()});
+  manoLado(oi[0],oi[1],-1.2,1.25,1,Object.assign({},MI,{parte:'pulgar'}));manoLado(od[0],od[1],1.2,1.25,-1,Object.assign({},MD,{parte:'pulgar'}))})}
 // ---------- P02 · la cubierta del buque: siluetas apuntan la cámara a unas luces sobre el mar ----------
 function marinero(x,y,s,brazo){X.save();X.translate(x,y);X.scale(s,s);X.fillStyle='#070b16';X.beginPath();X.arc(0,-250,34,0,7);X.fill();rr(-42,-216,84,150,26);X.fill();X.fillRect(-36,-80,30,80);X.fillRect(6,-80,30,80);X.fillRect(-44,-290,88,14);
  if(brazo){X.strokeStyle='#070b16';X.lineWidth=24;X.lineCap='round';X.beginPath();X.moveTo(-20,-190);X.lineTo(-74,-250);X.lineTo(-104,-300);X.stroke();X.fillRect(-150,-336,70,34)}X.restore()}

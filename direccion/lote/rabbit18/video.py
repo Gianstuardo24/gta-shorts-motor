@@ -35,7 +35,7 @@ SFX = [("x_real", -.02, "tematicos/obturador_01.wav", None, .10),      # 01: la 
        ("c02", -0.28, "transicion/whoosh_02.wav", .28, .06),           # a la cubierta
        ("x_conf3", -.06, "impacto/kick_01.wav", .16, .08),             # 03: el sello
        ("c04a", .3, "ui/pop_03.wav", None, .06), ("c04a", .6, "ui/pop_03.wav", None, .06), ("c04a", .9, "ui/pop_03.wav", None, .06),   # 04: los comentarios
-       ("x_they", -.1, "transicion/whoosh_01.wav", None, .05),         # 05: la cámara se aparta
+       ("x_they", -.1, "transicion/whoosh_02.wav", .28, .05),         # 05: la cámara se aparta
        ("x_turned", -.05, "ui/pop_01.wav", None, .08), ("x_seen", .4, "ui/pop_01.wav", None, .07), ("x_tri8", -.3, "ui/pop_01.wav", None, .07),   # 06: cada punto sale como triángulo
        ("c07", -.25, "transicion/whoosh_02.wav", .28, .06),            # destello hacia el mar
        ("x_tell", -.28, "transicion/whoosh_02.wav", .28, .07)]         # cierre
@@ -46,3 +46,4 @@ FIRMA = "🐇 The Rabbit Teller · Follow @TheRabbitLoop: one story leads to ano
 TAGS = "#Shorts #TheRabbitLoop #aliens #UFO #Pentagon"
 PREVIA = [(1.0, "01 dentro del visor"), (2.1, "01 se congela"), (5.6, "01 el aparato"), (10.6, "02 cubierta"), (15.6, "03 documento"), (18.6, "04 en línea"), (23.4, "04 pantalla 2022"),
           (26.2, "05 dentro"), (30.2, "05 afuera: puntos"), (35.9, "06 punto a triángulo"), (39.9, "06 cualquier punto"), (41.0, "07 visor"), (43.3, "07 probable dron"), (47.6, "07 cierre")]
+NIVEL_FX = 1.0   # producido antes del cambio de nivel del 27-nov: se conserva el nivel con que se aprobó
