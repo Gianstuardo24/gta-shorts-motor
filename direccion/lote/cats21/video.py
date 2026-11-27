@@ -41,7 +41,7 @@ SFX = [("c03", -0.28, "transicion/whoosh_02.wav", .28, .06),           # del nid
        ("x_tell", -.28, "transicion/whoosh_02.wav", .28, .07)]         # cierre
 PORTADA = ("SECRETLY SPEAKS TO YOU", 1.0)
 PUBLICAR = "Vie 27/11 21:00"
-DESC = "Other cats almost never hear it. 🤫"
+DESC = "Other cats almost never hear it. 🤫\nSources: Live Science; Bradshaw, The Domestic Cat (Cambridge University Press)."
 FIRMA = "🐱 The Cats Decoder · Follow to decode your cat."
 TAGS = "#Shorts #cats #catbehavior #catlover #catfacts"
 PREVIA = [(1.0, "01 gancho"), (5.9, "01 de cerca"), (6.5, "02 gatito y madre"), (10.8, "03 se huelen"), (11.7, "03 postura"), (13.0, "04 en casa"), (14.5, "04 sin personas"),

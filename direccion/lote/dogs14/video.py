@@ -52,7 +52,7 @@ SFX = [("c03", -0.28, "transicion/whoosh_02.wav", .28, .07),          # del espe
        ("x_tell", -.28, "transicion/whoosh_02.wav", .28, .07)]          # cierre
 PORTADA = ("YOUR DOG KNOWS", 1.0)
 PUBLICAR = "Vie 27/11 14:00"
-DESC = "You can fake a smile. Not for your dog. 🐶"
+DESC = "You can fake a smile. Not for your dog. 🐶\nSource: Wilson et al. (2022), PLOS ONE, Queen's University Belfast."
 FIRMA = "🐶 The Dogs Decoder · Follow to decode your dog."
 TAGS = "#Shorts #dogs #dogbehavior #doglover #dogfacts"
 PREVIA = [(0.5, "01 gancho"), (3.7, "01 primer plano"), (6.6, "02"), (10.85, "03"), (13.0, "04 muestra A"), (16.6, "04 muestra B"), (19.9, "05 tira"),

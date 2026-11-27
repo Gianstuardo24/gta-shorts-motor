@@ -43,7 +43,7 @@ SFX = [("x_see", -.05, "transicion/whoosh_04.wav", None, .06),        # 01: camb
        ("x_tell", -.28, "transicion/whoosh_02.wav", .28, .07)]         # cierre
 PORTADA = ("STOP BUYING RED TOYS", 1.0)
 PUBLICAR = "Vie 27/11 18:00"
-DESC = "There's a reason your dog keeps losing that ball. 🎾"
+DESC = "Your dog might be missing half the fun. 🎾\nSources: Neitz, Geist & Jacobs (1989), Visual Neuroscience; American Kennel Club."
 FIRMA = "🐶 The Dogs Decoder · Follow to decode your dog."
 TAGS = "#Shorts #dogs #dogbehavior #doglover #dogfacts"
 PREVIA = [(0.9, "01 elige la roja"), (1.9, "01 en el pasto"), (3.6, "01 como la ve el perro"), (9.3, "02 casi gris"), (13.4, "03 1989"), (18.1, "04 conos 3 y 2"), (20.6, "05"),

@@ -45,7 +45,7 @@ SFX = [("x_and", .28, "impacto/kick_01.wav", .16, .07),               # 01: la p
        ("x_tell", -.28, "transicion/whoosh_02.wav", .28, .07)]         # cierre
 PORTADA = ("NEVER THROW THIS AWAY", 1.0)
 PUBLICAR = "Vie 27/11 16:00"
-DESC = "Science says your cat might need it. 📦"
+DESC = "Science says your cat might need it. 📦\nSource: Vinke, Godijn & van der Leij (2014), Applied Animal Behaviour Science."
 FIRMA = "🐱 The Cats Decoder · Follow to decode your cat."
 TAGS = "#Shorts #cats #catbehavior #catlover #catfacts"
 PREVIA = [(0.6, "01 gancho"), (4.6, "01 la pata"), (7.2, "02"), (12.6, "03"), (17.3, "04 cenital"), (18.95, "05 día tres"), (20.5, "05 sale"),
