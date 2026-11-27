@@ -1,0 +1,5 @@
+[
+  {"video": "Rabbit", "potencial_narrativo_1a5": 4, "idea_especifica_1a5": 4, "historia_entre_planos_1a5": 4, "se_siente_ia_generica": false, "planos_que_marcaria": [5, 7], "aprobaria_producir": true},
+  {"video": "MDM", "potencial_narrativo_1a5": 3, "idea_especifica_1a5": 3, "historia_entre_planos_1a5": 4, "se_siente_ia_generica": true, "planos_que_marcaria": [4, 5, 6], "aprobaria_producir": false},
+  {"video": "Dogs", "potencial_narrativo_1a5": 4, "idea_especifica_1a5": 4, "historia_entre_planos_1a5": 4, "se_siente_ia_generica": false, "planos_que_marcaria": [2, 6], "aprobaria_producir": true}
+]
