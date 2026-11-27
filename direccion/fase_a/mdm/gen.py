@@ -30,17 +30,32 @@ T = {"fin": D, "s_fin": D,
      # plano 04 · línea 5
      "c4": ini[4] - 0.02, "x_love0": w(5, "didn't"), "x_love1": w(5, "it,") + 0.15, "x_grow": w(5, "would"), "x_on": w(5, "on"),
      "c5": ini[5],
-     # plano 06 · línea 7 y "In 1983" (los planos 05A y 05B, reservados, van entre c5 y c6)
-     "c6": ini[6] - 0.12, "x_one": w(7, "the", 2), "x_misses": w(7, "misses"), "x_surprised": w(8, "surprised"),
-     "c7": w(8, "Nike") - 0.04}
-# (número de plano, clave del corte de entrada, razón). Cada plano tiene su zona fija según su número.
-PLANOS = [(1, None, "zapato sin marca: el encargo"), (2, "c2", "empieza el trabajo"), (3, "c3", "ella fija el precio"),
-          (4, "c4", "la duda de Knight"), (6, "c6", "el regalo llega y ella no lo nota")]
-L = [100000 + 2600 * (n - 1) for n, _, _ in PLANOS]
-CORTES = [k for _, k, _ in PLANOS]
-zonas = [{"x0": L[i], "x1": L[i] + 1300, "cam": L[i], "set": f"dc_mdm_p0{n}", "entorno": f"dc_mdm_p0{n}",
+     # planos 05A y 05B · línea 6 (esperan el archivo del logo)
+     "x_swoosh": w(6, "swoosh"), "c5b": w(6, "one") - 0.03, "x_most": w(6, "most"), "x_logos": w(6, "logos"),
+     # plano 06 · línea 7 y "In 1983"
+     "c6": ini[6] - 0.12, "x_one": w(7, "the", 2), "x_misses": w(7, "misses"),
+     # plano 07 · línea 8
+     "c7": w(8, "Nike") - 0.04, "x_surprised": w(8, "surprised"), "x_gold": w(8, "gold"), "x_ring": w(8, "ring"),
+     # plano 08 · línea 9
+     "c8": ini[8] - 0.12, "x_500": w(9, "500"), "x_shares": w(9, "shares"),
+     # plano 09 · línea 10 (09b: recuerdo de 1971 con "She set her price")
+     "c9": ini[9] - 0.12, "c9b": w(10, "She") - 0.04, "c9c": w(10, "and") - 0.04,
+     # cierre · líneas 11 y 12
+     "c10": ini[10] - 0.12, "x_small": w(11, "A"), "x_tell": ini[11], "x_follow": w(12, "Follow")}
+# (plano, set, clave del corte de entrada, casilla de su zona, razón). La casilla fija la posición de la zona.
+PLANOS = [("00", "p00", None, -1, "gancho: la factura de $35"),
+          ("01", "p01", "c1", 0, "zapato sin marca: el encargo"), ("02", "p02", "c2", 1, "empieza el trabajo"),
+          ("03", "p03", "c3", 2, "ella fija el precio"), ("04", "p04", "c4", 3, "la duda de Knight"),
+          ("05a", "p05a", "c5", 4, "la carpeta se abre: el dibujo"), ("05b", "p05b", "c5b", 10, "uno, dos, multitud"),
+          ("06", "p06", "c6", 5, "el regalo llega y ella no lo nota"), ("07", "p07", "c7", 6, "el anillo"),
+          ("08", "p08", "c8", 7, "las 500 acciones"), ("09a", "p09", "c9", 8, "no fue un mal trato"),
+          ("09b", "p09b", "c9b", 9, "recuerdo: ella puso el precio"), ("09c", "p09", "c9c", 11, "retoma la línea"),
+          ("10", "p10", "c10", 12, "cierre: el precio y lo que vino después")]
+L = [100000 + 2600 * c for _, _, _, c, _ in PLANOS]
+CORTES = [k for _, _, k, _, _ in PLANOS]
+zonas = [{"x0": L[i], "x1": L[i] + 1300, "cam": L[i], "set": f"dc_mdm_{st}", "entorno": f"dc_mdm_{st}",
           "transicion": "inicio" if i == 0 else "corte", "camara": "fija", "acabado": "ninguno",
-          "razon": r, **({"k": k} if i else {})} for i, (n, k, r) in enumerate(PLANOS)]
+          "razon": r, **({"k": k} if i else {})} for i, (_, st, k, _, r) in enumerate(PLANOS)]
 pan = [{"k": -1, "x": L[0], "corte": 1, "dur": 0.04, "efecto": "ninguno"}] + \
       [{"k": CORTES[i], "x": L[i], "corte": 1, "dur": 0.04, "dir": 1, "efecto": "ninguno"} for i in range(1, len(PLANOS))]
 escena = {"tipo": "pelicula", "desde": "0", "luz": False, "p27_fija": True, "escala": 1.24,

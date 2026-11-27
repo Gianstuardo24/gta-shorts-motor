@@ -88,6 +88,8 @@ function zapato(cx,by,s,o){if(!(o&&o.sinSombra))sombraZapato(cx,by,s);X.save();X
  X.strokeStyle=LIN;X.lineWidth=1.5;X.beginPath();X.moveTo(40,-248);X.quadraticCurveTo(96,-306,122,-246);X.moveTo(40,-248);X.quadraticCurveTo(2,-318,-38,-268);X.stroke();
  // costuras
  X.setLineDash([7,6]);X.strokeStyle='rgba(120,110,95,.7)';X.lineWidth=2;X.beginPath();X.moveTo(-244,-128);X.quadraticCurveTo(-214,-92,-205,-52);X.moveTo(206,-240);X.quadraticCurveTo(180,-150,205,-70);X.moveTo(-140,-58);X.quadraticCurveTo(40,-72,198,-78);X.stroke();X.setLineDash([]);
+ // lateral: lugar del logo (archivo de Tao). Solo desde la línea 6; sin el archivo queda vacío
+ if(o&&o.marca)logoEn(24,-140,318,-.17);
  // brillo suave en el lateral vacío
  const br=X.createLinearGradient(-90,-200,170,-90);br.addColorStop(0,'rgba(255,255,255,.55)');br.addColorStop(1,'rgba(255,255,255,0)');X.fillStyle=br;X.beginPath();X.ellipse(40,-150,150,42,-.18,0,7);X.fill();
  X.restore()}
@@ -258,8 +260,8 @@ function carpeta(cx,cy,rot,pin){X.save();X.translate(cx,cy-246);X.rotate(rot);X.
  X.fillStyle='#b9b4a6';X.beginPath();X.arc(150,6,9,0,7);X.fill();trazo(LIN,2);
  if(pin)chinche(0,-236,'#c8372d');X.restore()}
 
-function p04(L,t){
- // pared y corcho
+// pared, corcho y factura clavada (planos 04 y 05A)
+function oficina(L){
  X.fillStyle=gl(0,0,0,1920,[[0,'#465660'],[1,'#2c373e']]);X.fillRect(L-300,-400,1680,3000);
  const lg=X.createRadialGradient(L+260,640,80,L+260,640,1200);lg.addColorStop(0,'rgba(255,236,200,.26)');lg.addColorStop(1,'rgba(255,236,200,0)');X.fillStyle=lg;X.fillRect(L-300,-400,1680,3000);
  X.fillStyle='rgba(10,8,6,.40)';rr(L+92,466,920,990,10);X.fill();
@@ -268,7 +270,10 @@ function p04(L,t){
  for(let i=0;i<420;i++){const x=L+108+rnd(i)*864,y=478+rnd(i+500)*924;X.fillStyle=i%3?'rgba(90,58,26,.28)':'rgba(255,232,190,.25)';X.fillRect(x,y,3+rnd(i*3)*4,2+rnd(i*5)*3)}
  X.fillStyle='rgba(30,18,8,.18)';X.fillRect(L+104,474,872,18);
  // factura clavada (la misma del plano 03)
- X.save();X.translate(L+150,600);X.rotate(-.03);X.fillStyle='rgba(30,16,6,.34)';X.fillRect(12,16,328,460);X.scale(.4,.4);hojaFactura(1,1,1,true);X.restore();chinche(L+312,618,'#2f6fb5');
+ X.save();X.translate(L+150,600);X.rotate(-.03);X.fillStyle='rgba(30,16,6,.34)';X.fillRect(12,16,328,460);X.scale(.4,.4);hojaFactura(1,1,1,true);X.restore();chinche(L+312,618,'#2f6fb5');}
+
+function p04(L,t){
+ oficina(L);
  // tiempos de la duda
  const b0=K('x_love0')-.05,b1=K('x_love1'),s0=K('x_grow')-.05,s1=K('x_on')-.12,pinT=K('x_on')+.06,sol=K('x_on')+.30;
  const baja=eio(seg(t,b0,b1)),sube=eio(seg(t,s0,s1)),sue=eio(seg(t,sol,sol+.3)),osc=Math.sin(t*1.7)*3*(1-sube);
@@ -308,13 +313,34 @@ function taza(x,y,s){X.save();X.translate(x,y);X.scale(s,s);X.lineJoin='round';X
  X.fillStyle='#fbf8f0';X.beginPath();X.ellipse(0,-58,60,17,0,0,7);X.fill();trazo(LIN,2.5);
  X.fillStyle='#4a2c1a';X.beginPath();X.ellipse(0,-56,50,12,0,0,7);X.fill();
  X.restore()}
-// sobre plano cerrado y estuche cerrado (sin marcas)
-function sobre(cx,cy,r){X.save();X.translate(cx,cy);X.rotate(r);X.scale(.92,.74);X.lineJoin='round';
- X.fillStyle='rgba(60,40,20,.26)';rr(-184,-108,384,246,8);X.fill();
- X.fillStyle='#f8f2e4';rr(-190,-120,380,240,8);X.fill();trazo(LIN,2.5);
- X.strokeStyle='rgba(120,100,80,.6)';X.lineWidth=2.5;X.beginPath();X.moveTo(-188,-116);X.lineTo(0,14);X.lineTo(188,-116);X.stroke();
+// ---------- lugar del logo: recurso externo que entrega Tao como archivo. Si no está, no se dibuja nada. ----------
+const LOGO={img:null,ok:false,tintas:{}};
+function logoEn(x,y,w,rot,tinta,alfa){if(!LOGO.ok)return;const im=(tinta&&LOGO.tintas[tinta])||LOGO.img,h=w*LOGO.img.height/LOGO.img.width;X.save();X.translate(x,y);if(rot)X.rotate(rot);if(alfa!==undefined)X.globalAlpha*=alfa;X.drawImage(im,-w/2,-h/2,w,h);X.restore()}
+
+// ---------- cámara propia de cada plano y penumbra de lámpara (arriba oscuro: los subtítulos se leen) ----------
+function cam(L,cx,cy,s,ax,ay,fn,rot){X.save();X.translate(L+ax,ay);if(rot)X.rotate(rot);X.scale(s,s);X.translate(-(L+cx),-cy);fn();X.restore()}
+function penumbra(L,y1,y0){y0=y0||330;X.fillStyle='rgba(14,8,4,.985)';X.fillRect(L-300,-400,1680,y0+402);const g=X.createLinearGradient(0,y0,0,y1);g.addColorStop(0,'rgba(14,8,4,.985)');g.addColorStop(.42,'rgba(14,8,4,.6)');g.addColorStop(1,'rgba(14,8,4,0)');X.fillStyle=g;X.fillRect(L-300,y0,1680,y1-y0)}
+// la factura de 1971, ya escrita y con los años encima (gancho y cierre). Coordenadas de la hoja: 820×1150
+function facturaVieja(){X.fillStyle='rgba(30,16,6,.32)';X.fillRect(16,20,820,1136);X.save();X.translate(0,-14);hojaFactura(1,1,1,true);X.restore();
+ X.fillStyle='rgba(150,100,40,.10)';X.fillRect(0,-14,820,1150);
+ [372,760].forEach(y=>{X.fillStyle='rgba(90,60,15,.16)';X.fillRect(0,y,820,3);X.fillStyle='rgba(255,246,200,.30)';X.fillRect(0,y+3,820,2)});
+ X.fillStyle='rgba(90,60,15,.10)';X.fillRect(408,-14,3,1150);
+ const e=X.createRadialGradient(410,560,420,410,560,800);e.addColorStop(0,'rgba(120,80,30,0)');e.addColorStop(1,'rgba(120,80,30,.26)');X.fillStyle=e;X.fillRect(0,-14,820,1150)}
+// lápiz apoyado: igual, y en el mismo lugar, que el que sostiene manoArriba(tx,ty,s,{rot})
+function lapizSuelto(tx,ty,s,rot){X.save();X.translate(tx,ty);X.rotate(rot||0);X.scale(s,s);X.lineJoin='round';X.rotate(Math.atan2(.6,.8));
+ X.fillStyle='rgba(40,24,10,.22)';X.fillRect(30,6,290,12);
+ X.fillStyle='#e9d2a8';X.beginPath();X.moveTo(0,0);X.lineTo(34,-9);X.lineTo(34,9);X.closePath();X.fill();trazo(LIN,2);X.fillStyle='#3a3a40';X.beginPath();X.moveTo(0,0);X.lineTo(11,-3);X.lineTo(11,3);X.closePath();X.fill();
+ X.fillStyle='#b8382c';X.fillRect(34,-9,250,18);X.fillStyle='rgba(255,255,255,.22)';X.fillRect(34,-6,250,4);X.strokeStyle=LIN;X.lineWidth=2;X.strokeRect(34,-9,250,18);X.fillStyle='#c9c4b8';X.fillRect(284,-9,20,18);X.strokeRect(284,-9,20,18);X.fillStyle='#d98a86';rr(304,-9,22,18,5);X.fill();X.stroke();X.restore()}
+
+// ---------- 1983: objetos (sin marcas) ----------
+// sobre: la solapa queda del lado de Carolyn. o.abierto: solapa abierta · o.parte: 'fondo' | 'cuerpo' (para que algo salga entre los dos)
+function sobre(cx,cy,r,o){o=o||{};X.save();X.translate(cx,cy);X.rotate(r);X.scale(.92,.74);X.lineJoin='round';
+ if(o.parte!=='cuerpo'){X.fillStyle='rgba(60,40,20,.26)';rr(-184,-108,384,246,8);X.fill();
+  if(o.abierto){X.fillStyle='#e9e0cb';X.beginPath();X.moveTo(-186,116);X.lineTo(0,236);X.lineTo(186,116);X.closePath();X.fill();trazo(LIN,2.5)}}
+ if(o.parte!=='fondo'){X.fillStyle='#f8f2e4';rr(-190,-120,380,240,8);X.fill();trazo(LIN,2.5);
+  if(!o.abierto){X.strokeStyle='rgba(120,100,80,.6)';X.lineWidth=2.5;X.beginPath();X.moveTo(-188,116);X.lineTo(0,-14);X.lineTo(188,116);X.stroke()}}
  X.restore()}
-function estuche(cx,cy,r){X.save();X.translate(cx,cy);X.rotate(r);X.lineJoin='round';
+function estuche(cx,cy,r,k){k=k||1;X.save();X.translate(cx,cy);X.rotate(r);X.scale(k,k);X.lineJoin='round';
  X.fillStyle='rgba(40,20,10,.32)';X.beginPath();X.ellipse(10,62,118,26,0,0,7);X.fill();
  X.fillStyle=gl(0,-6,0,60,[[0,'#5a1d2a'],[1,'#3b111b']]);rr(-96,-12,192,72,14);X.fill();trazo(LIN,2.5);
  X.fillStyle=gl(0,-90,0,4,[[0,'#8e3346'],[1,'#6a2232']]);rr(-96,-92,192,100,18);X.fill();trazo(LIN,2.5);
@@ -322,41 +348,222 @@ function estuche(cx,cy,r){X.save();X.translate(cx,cy);X.rotate(r);X.lineJoin='ro
  X.strokeStyle='rgba(20,8,10,.65)';X.lineWidth=2;X.beginPath();X.moveTo(-92,24);X.lineTo(92,24);X.stroke();
  X.fillStyle='#d9b24c';rr(-13,15,26,17,4);X.fill();trazo(LIN,2);
  X.restore()}
+// anillo de oro con un diamante. La cabeza del anillo es el logo (archivo de Tao): sin el archivo ese lugar queda vacío.
+function anillo(x,y,s){X.save();X.translate(x,y);X.scale(s,s);X.lineJoin='round';X.lineCap='round';
+ X.strokeStyle=LIN;X.lineWidth=15;X.beginPath();X.ellipse(0,14,30,20,0,0,7);X.stroke();
+ X.strokeStyle='#e2b23a';X.lineWidth=10;X.beginPath();X.ellipse(0,14,30,20,0,0,7);X.stroke();
+ X.strokeStyle='rgba(255,240,170,.85)';X.lineWidth=3;X.beginPath();X.ellipse(0,14,30,20,0,3.4,5.2);X.stroke();
+ logoEn(0,-14,92,-.10,'oro');
+ X.fillStyle='#eaf6ff';X.beginPath();X.moveTo(28,-28);X.lineTo(37,-19);X.lineTo(28,-10);X.lineTo(19,-19);X.closePath();X.fill();trazo(LIN,1.8);
+ X.fillStyle='rgba(255,255,255,.95)';X.beginPath();X.moveTo(28,-26);X.lineTo(33,-19);X.lineTo(28,-19);X.closePath();X.fill();
+ X.restore()}
+// estuche que se abre (ap 0→1): la tapa gira hacia atrás y deja ver el cojín y el anillo
+function estucheAbierto(cx,cy,r,ap,conAnillo,k){if(ap<=0){estuche(cx,cy,r,k);return}
+ k=k||1;X.save();X.translate(cx,cy);X.rotate(r);X.scale(k,k);X.lineJoin='round';
+ const th=ap*1.83,yf=-92+100*Math.cos(th)-70*Math.sin(th);
+ X.fillStyle='rgba(40,20,10,.32)';X.beginPath();X.ellipse(10,62,118,26,0,0,7);X.fill();
+ if(yf<-92){const h=-92-yf;X.fillStyle='#5a1d2a';rr(-96,yf,192,h+14,Math.min(14,(h+14)/2));X.fill();trazo(LIN,2.5);if(h>14){X.fillStyle='#efe4cf';rr(-82,yf+9,164,h-10,Math.min(9,(h-10)/2));X.fill()}}
+ X.fillStyle=gl(0,-6,0,60,[[0,'#5a1d2a'],[1,'#3b111b']]);rr(-96,-12,192,72,14);X.fill();trazo(LIN,2.5);
+ X.fillStyle='#6a2232';rr(-96,-92,192,100,18);X.fill();trazo(LIN,2.5);
+ X.fillStyle='#f1e8d4';rr(-82,-80,164,76,12);X.fill();X.strokeStyle='rgba(120,100,80,.5)';X.lineWidth=2;X.stroke();
+ X.strokeStyle='rgba(120,100,80,.55)';X.lineWidth=3;X.beginPath();X.moveTo(-40,-34);X.lineTo(40,-34);X.stroke();
+ if(conAnillo)anillo(0,-50,.82);
+ if(yf>-92){const h=yf+92;X.fillStyle=gl(0,-92,0,8,[[0,'#8e3346'],[1,'#6a2232']]);rr(-96,-92,192,h,Math.min(16,h/2));X.fill();trazo(LIN,2.5)}
+ X.strokeStyle='rgba(20,8,10,.65)';X.lineWidth=2;X.beginPath();X.moveTo(-92,24);X.lineTo(92,24);X.stroke();X.fillStyle='#d9b24c';rr(-13,15,26,17,4);X.fill();trazo(LIN,2);
+ X.restore()}
+// certificado de acciones: solo "500 SHARES" (sin valor, cotización, fecha ni emisor)
+function certificado(cx,cy,r,k){k=k||1;X.save();X.translate(cx,cy);X.rotate(r);X.scale(k,k*.78);X.lineJoin='miter';
+ X.fillStyle='rgba(60,40,20,.25)';X.fillRect(-161,-99,330,212);
+ X.fillStyle='#f5f0e0';X.fillRect(-165,-105,330,210);X.strokeStyle=LIN;X.lineWidth=2.5;X.strokeRect(-165,-105,330,210);
+ X.strokeStyle='#2f5d4f';X.lineWidth=6;X.strokeRect(-152,-92,304,184);X.lineWidth=2;X.strokeRect(-143,-83,286,166);
+ X.textAlign='center';X.textBaseline='alphabetic';X.fillStyle='#2f5d4f';X.font='700 17px P';X.fillText('STOCK CERTIFICATE',0,-46);
+ X.fillStyle='#1d1b22';X.font='700 44px P';X.fillText('500 SHARES',0,14);
+ X.strokeStyle='rgba(40,40,50,.45)';X.lineWidth=3;[40,58].forEach((y,i)=>{X.beginPath();X.moveTo(-110+i*18,y);X.lineTo(110-i*18,y);X.stroke()});
+ X.textAlign='left';X.restore()}
 // bloc de dibujo en perspectiva; (u,v) en [0,1] sobre la hoja
 const Q6={TL:[150,880],TR:[650,850],BR:[722,1600],BL:[108,1652]};
 function p6(L,u,v){const ax=lerp(Q6.TL[0],Q6.TR[0],u),ay=lerp(Q6.TL[1],Q6.TR[1],u),bx=lerp(Q6.BL[0],Q6.BR[0],u),by=lerp(Q6.BL[1],Q6.BR[1],u);return [L+lerp(ax,bx,v),lerp(ay,by,v)]}
 function cuad6(L,u0,v0,u1,v1){const a=p6(L,u0,v0),b=p6(L,u1,v0),c=p6(L,u1,v1),d=p6(L,u0,v1);X.beginPath();X.moveTo(a[0],a[1]);X.lineTo(b[0],b[1]);X.lineTo(c[0],c[1]);X.lineTo(d[0],d[1]);X.closePath()}
 function raya6(L,v,u0,u1){if(u1<=u0)return;const a=p6(L,u0,v),b=p6(L,u1,v);X.strokeStyle='rgba(52,50,58,.92)';X.lineWidth=5;X.lineCap='round';X.beginPath();X.moveTo(a[0],a[1]);X.lineTo(b[0],b[1]);X.stroke()}
-// avance de la tercera línea: la misma función sirve a los planos siguientes (se detiene con "surprised her")
+// avance de la tercera línea: se detiene con "surprised her" (plano 07) y se retoma en el plano 09
 function linea3(t){return .5*seg(t,K('c6')+1.95,K('x_surprised'))}
-
-function p06(L,t){
- // Línea 7 y "In 1983": Carolyn dibuja; el regalo (sobre y estuche cerrados) llega con "the one that everyone misses" y ella no lo nota.
- recepcion(L);taza(L+196,742,1);
- const a=K('c6');
- // bloc: sombra, hoja y lomo
+function mesa83(L){recepcion(L);taza(L+196,742,1)}
+function bloc83(L,q2,q3){
  X.save();X.translate(14,18);X.fillStyle='rgba(60,40,20,.25)';cuad6(L,0,0,1,1);X.fill();X.restore();
  X.fillStyle='#fbf8ee';cuad6(L,0,0,1,1);X.fill();trazo(LIN,2.5);
  X.fillStyle='#5a4634';cuad6(L,0,-.035,1,.02);X.fill();trazo(LIN,2.5);
- // lo ya dibujado: un recuadro y la primera línea
  X.strokeStyle='rgba(52,50,58,.92)';X.lineWidth=5;X.lineJoin='round';cuad6(L,.12,.09,.88,.36);X.stroke();
- raya6(L,.48,.12,.88);
- // segunda línea (la termina), paso a la tercera y avance de la tercera: el trazo aparece bajo la punta
+ raya6(L,.48,.12,.88);raya6(L,.60,.12,lerp(.12,.88,q2));raya6(L,.72,.12,lerp(.12,.88,q3))}
+const E83=[888,1082],C83=[814,1052];          // sobre y estuche (encima del sobre), en coordenadas del plano 06
+const MC=o=>Object.assign({},CAROL,{graf:true,rot:.16},o||{});
+
+function p06(L,t){
+ // Línea 7 y "In 1983": Carolyn dibuja; el regalo (sobre y estuche cerrados) llega con "the one that everyone misses" y ella no lo nota.
+ mesa83(L);const a=K('c6');
  const q2=lerp(.62,1,seg(t,a-.2,a+1.25)),m=eio(seg(t,a+1.35,a+1.85)),q3=linea3(t);
- raya6(L,.60,.12,lerp(.12,.88,q2));raya6(L,.72,.12,lerp(.12,.88,q3));
+ bloc83(L,q2,q3);
  const f2=p6(L,lerp(.12,.88,q2),.60),i3=p6(L,lerp(.12,.88,q3),.72);
  const pen=t<a+1.35?f2:[lerp(f2[0],i3[0],m),lerp(f2[1],i3[1],m)-34*Math.sin(m*Math.PI)];
- // regalo: sobre con el estuche encima, empujado por una mano que entra por la derecha y se retira
- const g=eio(seg(t,K('x_one')-.15,K('x_misses')+.15)),gx=L+lerp(1460,888,g),gy=lerp(1100,1082,g),ret=eio(seg(t,K('x_misses')+.32,K('x_misses')+1.25));
+ const g=eio(seg(t,K('x_one')-.15,K('x_misses')+.15)),gx=L+lerp(1460,E83[0],g),gy=lerp(1100,E83[1],g),ret=eio(seg(t,K('x_misses')+.32,K('x_misses')+1.25));
  sobre(gx,gy,-.10);estuche(gx-74,gy-30,-.06);
  if(g>0&&ret<1){const o=origen(gx+52+ret*600,gy-4-ret*26,.05,1.25,-1,224,-6);
   manoLado(o[0],o[1],.05,1.25,-1,Object.assign({},AJENA,{curl:[.08+.1*ret,.1+.1*ret,.12+.1*ret,.14+.1*ret],pulgar:.35}))}
- // mano de Carolyn (puño de color, grafito en el índice): sigue dibujando
- manoArriba(pen[0],pen[1],1.12,Object.assign({},CAROL,{graf:true,rot:.16}));
+ manoArriba(pen[0],pen[1],1.12,MC());
  vineta(L,.45)}
 
+function p07(L,t){
+ // Línea 8. Con "surprised her" deja de dibujar; abre el estuche; con "gold swoosh ring" levanta el anillo. La cámara se acerca.
+ const a=K('c7'),xs=K('x_surprised'),xg=K('x_gold'),z=eio(seg(t,a,xg+.9));
+ cam(L,lerp(640,800,z),lerp(1180,1075,z),lerp(1.25,1.6,z),540,1150,()=>{
+  mesa83(L);const q3=linea3(t);bloc83(L,1,q3);
+  const tip=p6(L,lerp(.12,.88,q3),.72),C=[L+C83[0],C83[1]];
+  const m1=eio(seg(t,xs+.26,xs+.68)),gira=eio(seg(t,xs+.68,xs+.88)),ap=eio(seg(t,xg-.28,xg+.04)),m2=eio(seg(t,xg+.07,xg+.28)),sube=eio(seg(t,xg+.28,xg+.82));
+  sobre(L+E83[0],E83[1],-.10);
+  estucheAbierto(C[0],C[1],lerp(-.06,.03,gira),ap,m2<1);
+  if(t>=xs+.26)lapizSuelto(tip[0],tip[1],1.12,.16);
+  const th=ap*1.83,borde=[C[0]-10,C[1]-92+100*Math.cos(th)-70*Math.sin(th)],an0=[C[0]+4,C[1]-44],an1=[C[0]-76,C[1]-196];
+  let P;if(m1<1)P=[lerp(tip[0],borde[0],m1),lerp(tip[1],borde[1],m1)-40*Math.sin(m1*Math.PI)];
+  else if(m2<=0)P=borde;else if(m2<1)P=[lerp(borde[0],an0[0],m2),lerp(borde[1],an0[1],m2)];
+  else P=[lerp(an0[0],an1[0],sube),lerp(an0[1],an1[1],sube)+3*Math.sin(t*2.2)*sube];
+  if(m2>=1)anillo(P[0]-6,P[1]-8,lerp(.82,1.9,sube));
+  manoArriba(P[0],P[1],1.12,MC({sinLapiz:t>=xs+.26}));
+  const hg=X.createRadialGradient(L+1230,2030,250,L+1230,2030,500);hg.addColorStop(0,'rgba(206,194,174,1)');hg.addColorStop(.8,'rgba(176,164,146,.96)');hg.addColorStop(1,'rgba(150,138,120,0)');X.fillStyle=hg;X.beginPath();X.arc(L+1230,2030,500,0,7);X.fill();     // hombro de Carolyn, fuera de foco (sale con el acercamiento)
+ });
+ vineta(L,.45)}
+
+function p08(L,t){
+ // Línea 9. Una sola acción: saca el documento del sobre; "500 SHARES" se lee con "500 shares". El anillo sigue a la vista.
+ const x5=K('x_500');
+ cam(L,880,1200,1.45,540,1240,()=>{
+  mesa83(L);bloc83(L,1,.5);const tip=p6(L,lerp(.12,.88,.5),.72);lapizSuelto(tip[0],tip[1],1.12,.16);
+  const sale=eio(seg(t,x5-.12,x5+.62)),D=[L+lerp(E83[0],872,sale),lerp(E83[1]+18,1262,sale)];
+  sobre(L+E83[0],E83[1],-.10,{abierto:true,parte:'fondo'});certificado(D[0],D[1],lerp(-.10,-.03,sale));sobre(L+E83[0],E83[1],-.10,{abierto:true,parte:'cuerpo'});
+  estucheAbierto(L+C83[0],C83[1],.03,1,true);
+  const su=eio(seg(t,x5+.78,x5+1.5));
+  manoArriba(D[0]-50+su*46,D[1]+82+su*128,1.12,MC({sinLapiz:true}));
+ });
+ vineta(L,.45)}
+
+function p09(L,t){
+ // Línea 10 (1983). La mano descansa junto al anillo y al documento; después del recuerdo vuelve al lápiz y retoma la línea interrumpida.
+ const c=K('c9c'),z=seg(t,K('c9'),K('c10'));
+ cam(L,600,1220,lerp(1.10,1.16,z),540,1210,()=>{
+  mesa83(L);const q3=.5+.4*seg(t,c+.62,K('c10')+.3);bloc83(L,1,q3);
+  const tip=p6(L,lerp(.12,.88,q3),.72),tip0=p6(L,lerp(.12,.88,.5),.72);
+  sobre(L+E83[0],E83[1],-.10,{abierto:true,parte:'fondo'});certificado(L+872,1262,-.03);sobre(L+E83[0],E83[1],-.10,{abierto:true,parte:'cuerpo'});
+  estucheAbierto(L+C83[0],C83[1],.03,1,true);
+  const v=eio(seg(t,c+.08,c+.58)),toma=v>=1;
+  if(!toma)lapizSuelto(tip0[0],tip0[1],1.12,.16);
+  const P=toma?tip:[lerp(L+760,tip0[0],v),lerp(1402,tip0[1],v)-30*Math.sin(v*Math.PI)];
+  manoArriba(P[0],P[1],1.12,MC({sinLapiz:!toma}));
+ },-.045);
+ vineta(L,.45)}
+// "She set her price": recuerdo de 1971, el mismo plano 03 en el momento de escribir "$35"
+function p09b(L,t){p03(L,lerp(K('x_35')-.06,K('x_35_fin')+.02,seg(t,K('c9b'),K('c9c'))))}
+
+// ---------- gancho (línea 1) y cierre (líneas 11–12): el escritorio de madera, bajo una lámpara ----------
+function p00(L,t){
+ // Una mano deja la factura en el centro; el "$35" domina y la cámara se acerca despacio. Sin logo.
+ const S=1.3,ox=7,oy=93,bx=ox+513*S,by=oy+890*S,u0=seg(t,.7,K('c1')+.3),z=.65*u0+.35*eio(u0);   // acercamiento lento y sostenido: no se detiene antes del corte
+ cam(L,bx,by,1+.16*z,lerp(bx,600,z),lerp(by,1205,z),()=>{
+  maderaArriba(L);
+  const en=eo(seg(t,-.75,.95)),dx=-330*(1-en),dy=420*(1-en);
+  X.save();X.translate(L+ox+dx,oy+dy+1495);X.rotate(-.02-.12*(1-en));X.translate(0,-1495);X.scale(S,S);facturaVieja();X.restore();
+  const sa=eio(seg(t,1.05,1.8));if(sa<1)manoArriba(L+ox+dx+410*S-sa*520,oy+dy+1050*S+sa*560,1.5,Object.assign({},CAROL,{esp:-1,sinLapiz:true,rot:.2,piel:'#dca783'}));
+ });
+ penumbra(L,1060,650);vineta(L,.5)}
+
+function p10(L,t){
+ // Cierre. Línea 11: la factura de $35 frente al anillo y las acciones (lo de después se ilumina con "A small job…").
+ // Línea 12: Carolyn deja el lápiz junto a la hoja en blanco y la cámara se acerca al TOTAL vacío. Sin cifras nuevas.
+ const xs=K('x_small'),xt=K('x_tell'),S2=.6,PXb=300,PYb=1190,bx=PXb+513*S2,by=PYb+890*S2,z=eio(seg(t,xt+.9,xt+4.7));
+ cam(L,lerp(540,bx,z),lerp(960,by,z),lerp(1,2.2,z),lerp(540,640,z),lerp(960,1120,z),()=>{
+  maderaArriba(L);
+  X.save();X.translate(L+70,530);X.rotate(-.05);X.scale(.56,.56);facturaVieja();X.restore();
+  certificado(L+808,660,.05,1.3);estucheAbierto(L+800,990,.02,1,true,1.45);
+  // hoja siguiente del talonario, en blanco
+  X.save();X.translate(L+PXb,PYb);X.scale(S2,S2);X.fillStyle='rgba(30,16,6,.38)';X.fillRect(14,-44,836,1220);X.fillStyle='#7a5a34';X.fillRect(-6,-56,832,70);X.strokeStyle=LIN;X.lineWidth=2;X.strokeRect(-6,-56,832,70);hojaFactura(0,0,0,false);X.restore();
+  // luz: primero el precio; después, lo que vino; al final, la hoja en blanco
+  const v1=.6*(1-eio(seg(t,xs-.1,xs+.6))),v2=.55*(1-eio(seg(t,xt-.35,xt+.4)));
+  if(v1>0){const g=X.createLinearGradient(L+520,0,L+620,0);g.addColorStop(0,'rgba(16,9,5,0)');g.addColorStop(1,'rgba(16,9,5,'+v1+')');X.fillStyle=g;X.fillRect(L+520,-400,900,1560)}
+  if(v2>0){const g=X.createLinearGradient(0,1100,0,1200);g.addColorStop(0,'rgba(16,9,5,0)');g.addColorStop(1,'rgba(16,9,5,'+v2+')');X.fillStyle=g;X.fillRect(L-300,1100,1700,1500)}
+  // la mano deja el lápiz junto al papel y se retira
+  const T=[L+852,1470],en=eio(seg(t,xt-.05,xt+.5)),sa=eio(seg(t,xt+.62,xt+1.3));
+  if(en>=1)lapizSuelto(T[0],T[1],1.2,.16);
+  if(en>0&&sa<1)manoArriba(T[0]+(1-en)*420+sa*460,T[1]+(1-en)*520+sa*560,1.2,MC({sinLapiz:en>=1}));
+ });
+ penumbra(L,560,400);vineta(L,.5)}
+
+// ---------- plano 05A: la carpeta se abre como una puerta (bisagra en el lomo) y deja ver la hoja ----------
+// ab 0→1: la tapa gira hasta ≈100°. En la hoja va el dibujo: es el lugar del logo (archivo de Tao).
+function carpetaAbierta(cx,cy,rot,ab){X.save();X.translate(cx,cy-246);X.rotate(rot);X.translate(0,246);X.lineJoin='round';
+ X.fillStyle='rgba(20,10,5,.40)';rr(-158,-206,340,452,10);X.fill();
+ X.fillStyle='#2c6a50';rr(-170,-250,340,472,8);X.fill();trazo(LIN,3);
+ X.fillStyle='#f6f1e3';X.fillRect(-116,-204,270,410);X.strokeStyle='rgba(60,45,30,.6)';X.lineWidth=2;X.strokeRect(-116,-204,270,410);
+ logoEn(19,-10,214,-.12,'grafito');
+ const c=Math.cos(ab*1.745);
+ X.save();X.translate(-170,0);
+ if(c>=0){X.scale(Math.max(c,.02),1);X.translate(170,0);
+  X.fillStyle=gl(-170,-220,170,222,[[0,'#256048'],[1,'#1b4a37']]);rr(-170,-220,340,442,8);X.fill();trazo(LIN,3);
+  X.fillStyle='#14251e';X.fillRect(-170,-220,46,442);X.strokeStyle=LIN;X.lineWidth=3;X.strokeRect(-170,-220,46,442);
+  X.fillStyle='#14251e';X.beginPath();X.moveTo(170,-220);X.lineTo(120,-220);X.lineTo(170,-170);X.closePath();X.fill();X.beginPath();X.moveTo(170,222);X.lineTo(120,222);X.lineTo(170,172);X.closePath();X.fill();
+  X.fillStyle='#efe6cf';rr(-70,-150,190,74,6);X.fill();trazo(LIN,2);
+  X.fillStyle='rgba(0,0,0,'+(.35*(1-c))+')';X.fillRect(-170,-220,340,442)}
+ else{X.scale(c,1);X.fillStyle='#3b7d62';rr(0,-220,340,442,8);X.fill();trazo(LIN,3);X.fillStyle='rgba(0,0,0,.18)';X.fillRect(0,-220,340,442)}   // cara interior de la tapa
+ X.restore();
+ chinche(0,-236,'#c8372d');X.restore()}
+
+function p05a(L,t){
+ // "That logo became the swoosh…": mismo corcho y misma factura; la mano de Knight abre la tapa. El dibujo no se ve antes de "the swoosh".
+ const a=K('c5'),xw=K('x_swoosh');
+ cam(L,540,900,1.3,540,1060,()=>{
+  oficina(L);
+  const cx=L+702,cy=912,rot=-.075,ab=eio(seg(t,xw-.22,xw+.26)),en=eio(seg(t,a+.04,a+.58));
+  const xe=-170+340*Math.cos(ab*1.745)-18,ye=396+150,cr=Math.cos(rot),sr=Math.sin(rot);
+  const hx=cx+xe*cr-ye*sr+(1-en)*520,hy=cy-246+xe*sr+ye*cr+(1-en)*460,o=origen(hx,hy,.95,1.5,-1,60,10);
+  const KN=Object.assign({},KNIGHT,{curl:[.16,.18,.2,.22],pulgar:.5,pulgarCurl:.05});
+  manoLado(o[0],o[1],.95,1.5,-1,Object.assign({},KN,{parte:'atras'}));
+  carpetaAbierta(cx,cy,rot,ab);
+  manoLado(o[0],o[1],.95,1.5,-1,Object.assign({},KN,{parte:'pulgar'}));
+ });
+ vineta(L,.5)}
+
+// ---------- plano 05B: el diseño sale al mundo. Uno → dos → multitud, a ras de suelo, un solo suelo ----------
+function pierna(cx,by,s,col){X.save();X.translate(cx,by);X.scale(s,s);X.lineJoin='round';
+ X.fillStyle=col;X.beginPath();X.moveTo(52,-318);X.lineTo(276,-318);X.lineTo(300,-1900);X.lineTo(10,-1900);X.closePath();X.fill();trazo(LIN,3);
+ X.fillStyle='#ece7da';X.beginPath();X.moveTo(74,-190);X.lineTo(252,-190);X.lineTo(258,-326);X.lineTo(70,-326);X.closePath();X.fill();trazo(LIN,3);
+ X.fillStyle=col;X.fillRect(48,-340,232,30);X.strokeStyle=LIN;X.lineWidth=3;X.strokeRect(48,-340,232,30);
+ X.restore()}
+const GENTE=[[150,.50,'#2b3b55',1,0],[330,.56,'#4a3a2c',-1,.08],[520,.48,'#3c4a3a',1,.16],[700,.54,'#30303a',-1,.05],[880,.50,'#553238',1,.22],[1010,.46,'#2b3b55',-1,.12],
+             [60,.62,'#3a3348',-1,.30],[250,.66,'#2f4a52',1,.38],[450,.60,'#4a3a2c',-1,.26],[640,.68,'#2b3b55',1,.34],[840,.62,'#3c4a3a',-1,.42],[1000,.66,'#30303a',1,.20]];
+function p05b(L,t){
+ // "…one of the most famous logos on Earth": el zapato del plano 01, ya con el logo, pisa y se sostiene; entra otro; después, muchos.
+ const a=K('c5b'),xm=K('x_most'),xl=K('x_logos');
+ X.fillStyle=gl(0,0,0,1500,[[0,'#232b33'],[1,'#4b565f']]);X.fillRect(L-300,-400,1680,1920);
+ X.fillStyle=gl(0,1490,0,1920,[[0,'#8f8778'],[.12,'#b7af9f'],[1,'#a39b8c']]);X.fillRect(L-300,1490,1680,900);
+ X.fillStyle='rgba(30,22,14,.35)';X.fillRect(L-300,1490,1680,8);
+ X.strokeStyle='rgba(60,50,40,.16)';X.lineWidth=3;for(let i=0;i<9;i++){const x=L-200+i*190;X.beginPath();X.moveTo(x,1498);X.lineTo(x+(x-L-540)*.9,1960);X.stroke()}
+ const paso=(x,by,s,col,dir,u,marca)=>{if(u<=0)return;const e=eo(u),alt=130*(1-eio(Math.min(1,u*1.25))),rot=-.2*(1-eio(Math.min(1,u*1.1))),px=x+dir*(1-e)*420;
+  X.save();X.translate(L+px,0);X.scale(dir,1);X.translate(-(L+px),0);
+  sombraZapato(L+px,by,s,lerp(.3,1,1-alt/130),1+.1*alt/130);pierna(L+px,by-alt,s,col);zapato(L+px,by-alt,s,{rot:rot,sinSombra:true,marca:marca});X.restore()};
+ // multitud (al fondo, en dos filas), con "logos on Earth"
+ GENTE.forEach((g,i)=>{const u=seg(t,xl-.12+g[4],xl+.5+g[4]),bob=u>=1?Math.abs(Math.sin((t+i)*5))*8*g[1]:0;paso(g[0]+(u>=1?g[3]*-26*(t-xl-.5-g[4]):0),(i<6?1528:1560)-bob,g[1],g[2],g[3],u,true)});
+ // segundo, con "most famous"
+ paso(770,1640,.92,'#4a3a2c',-1,seg(t,xm-.1,xm+.42),true);
+ // primero: el zapato del plano 01, sostenido para que el logo se lea
+ paso(430,1730,1.22,'#2b3b55',1,seg(t,a-.34,a+.22),true);
+ penumbra(L,1250,760);vineta(L,.5)}
+
+// ---------- carga del logo: instalar.py lo inserta como window.DC_MDM_LOGO (data URI) solo si Tao entregó el archivo ----------
+(function(){const src=window.DC_MDM_LOGO;if(!src)return;let motor=window.LISTO===true,cargado=false;
+ try{Object.defineProperty(window,'LISTO',{configurable:true,get(){return motor&&cargado},set(v){motor=v}})}catch(e){}
+ const im=new Image();
+ im.onload=()=>{const w=im.naturalWidth||im.width||600,h=im.naturalHeight||im.height||300,lienzo=c=>{const k=document.createElement('canvas');k.width=w;k.height=h;const x=k.getContext('2d');x.drawImage(im,0,0,w,h);if(c){x.globalCompositeOperation='source-in';x.fillStyle=c;x.fillRect(0,0,w,h)}return k};
+  LOGO.img=lienzo(null);LOGO.tintas.oro=lienzo('#dba622');LOGO.tintas.grafito=lienzo('#2b2a30');LOGO.ok=true;cargado=true};
+ im.onerror=()=>{cargado=true};im.src=src})();
+
 const SET=f=>({osc:.1,luces(){return []},fondo(z,t,q){f(FV(z).L,t)}});
-NUEVOS.dc_mdm_p01=SET(p01);NUEVOS.dc_mdm_p02=SET(p02);NUEVOS.dc_mdm_p03=SET(p03);NUEVOS.dc_mdm_p04=SET(p04);NUEVOS.dc_mdm_p06=SET(p06);
+NUEVOS.dc_mdm_p01=SET(p01);NUEVOS.dc_mdm_p02=SET(p02);NUEVOS.dc_mdm_p03=SET(p03);NUEVOS.dc_mdm_p04=SET(p04);NUEVOS.dc_mdm_p06=SET(p06);NUEVOS.dc_mdm_p00=SET(p00);NUEVOS.dc_mdm_p07=SET(p07);NUEVOS.dc_mdm_p08=SET(p08);NUEVOS.dc_mdm_p09=SET(p09);NUEVOS.dc_mdm_p09b=SET(p09b);NUEVOS.dc_mdm_p10=SET(p10);NUEVOS.dc_mdm_p05a=SET(p05a);NUEVOS.dc_mdm_p05b=SET(p05b);
 })();
 // ===== DC_MDM · FIN =====
 </script>
