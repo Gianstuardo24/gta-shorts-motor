@@ -1,6 +1,7 @@
 <script>
 // ===== DC · RABBIT22 · INICIO ===== (Rabbit 22h · Don't TRUST the Flying Saucer Story · paquete 9 del lote del 27-nov)
 // Regla del paquete: antes del dibujo final no aparece ningún platillo volador físico. Lo de Arnold son destellos y trayectorias; el "platillo" es papel impreso.
+// 27-nov 18:27 · Tao pidió abrir con un platillo y cortar a la cabina a los ~6 s: el del gancho (P00) es un recorte plano de papel de diario, para no romper la regla.
 (function(){
 const {LIN,K,cap,trazo,manoLado,manoArriba,origen,cam,cierreCanal,SET}=window.DC;
 const golpe=(t,k,d)=>{const u=(t-k)/d;return u<0||u>1?0:Math.sin(u*Math.PI)};
@@ -15,6 +16,27 @@ function montes(L,dx){X.fillStyle='#22324f';X.beginPath();X.moveTo(L-400+dx,1260
  X.fillStyle='#e3ecf5';[[150,820,70,150],[860,640,130,240]].forEach(q=>{X.beginPath();X.moveTo(L+q[0]+dx,q[1]);X.lineTo(L+q[0]+dx-q[2],q[1]+q[3]);X.lineTo(L+q[0]+dx-q[2]*.4,q[1]+q[3]*.72);X.lineTo(L+q[0]+dx,q[1]+q[3]*.95);X.lineTo(L+q[0]+dx+q[2]*.45,q[1]+q[3]*.7);X.lineTo(L+q[0]+dx+q[2],q[1]+q[3]);X.closePath();X.fill()});
  X.fillStyle='#1a2740';X.fillRect(L-1600,1250,5400,3000)}
 function nubes(L,t,y,a){X.fillStyle=`rgba(255,255,255,${a})`;for(let i=0;i<6;i++){const x=L+((i*420+rnd(i)*200-t*(30+i*6))%2400+2400)%2400-600,yy=y+rnd(i+9)*260;X.beginPath();X.ellipse(x,yy,150+rnd(i+3)*90,26,0,0,7);X.ellipse(x+80,yy-18,90,22,0,0,7);X.fill()}}
+// ---------- P00 · el platillo que todos imaginan: un recorte de papel de diario que flota de noche (27-nov, pedido de Tao) ----------
+function platilloPapel(x,y,s,o){o=o||{};X.save();X.translate(x,y);X.rotate(o.rot||0);X.scale(s*(o.sx===undefined?1:o.sx),s);
+ const forma=()=>{X.beginPath();X.moveTo(-270,8);X.quadraticCurveTo(-170,-58,-100,-66);X.quadraticCurveTo(-92,-176,0,-178);X.quadraticCurveTo(92,-176,100,-66);X.quadraticCurveTo(170,-58,270,8);X.quadraticCurveTo(150,72,64,78);X.quadraticCurveTo(0,116,-64,78);X.quadraticCurveTo(-150,72,-270,8);X.closePath()};
+ X.save();X.translate(12,16);X.fillStyle='rgba(0,0,0,.28)';forma();X.fill();X.restore();
+ X.fillStyle=PAPEL;forma();X.fill();X.strokeStyle='rgba(42,32,25,.55)';X.lineWidth=4;X.lineJoin='round';X.stroke();
+ X.save();forma();X.clip();
+ lineasGrises(-70,-150,140,4,9,2);lineasGrises(-200,-52,400,2,9,9);
+ X.fillStyle=TINTA;X.fillRect(-280,-10,560,7);for(let i=-3;i<=3;i++){X.beginPath();X.arc(i*62,26,13,0,7);X.fill()}
+ lineasGrises(-40,60,80,2,7,31);X.fillStyle='rgba(0,0,0,.09)';X.fillRect(40,-200,300,340);
+ X.restore();X.restore()}
+function p00(L,t){const xf=T.x_few,xs=T.x_surprise,fin=T.c01;
+ const z=lerp(1.2,1,eio(seg(t,0,xf+.4)))*lerp(1,1.05,seg(t,xf+.4,fin));
+ cam(L,540,1040,z,540,1040,()=>{cielo(L,'#0c1230','#3a3566',1500);
+  for(let i=0;i<46;i++){const x=L-200+rnd(i)*1480,y=520+rnd(i+50)*820,a=.35+.3*Math.sin(t*1.3+i*2.1);X.fillStyle=`rgba(255,246,201,${a})`;X.beginPath();X.arc(x,y,2.2+rnd(i+90)*2.6,0,7);X.fill()}
+  nubes(L,t*1.6,620,.07);nubes(L,t*1.6+40,1250,.06);
+  X.fillStyle='#141a36';X.beginPath();X.moveTo(L-600,1700);X.quadraticCurveTo(L+200,1560,L+620,1640);X.quadraticCurveTo(L+1100,1720,L+1700,1600);X.lineTo(L+1700,2600);X.lineTo(L-600,2600);X.closePath();X.fill();
+  for(let i=0;i<13;i++){const x=L-160+i*118+rnd(i+7)*50,yb=1650+Math.sin(i*1.7)*34,h=120+rnd(i+20)*110;X.fillStyle='#0d1228';X.beginPath();X.moveTo(x,yb-h);X.lineTo(x-34-h*.1,yb+10);X.lineTo(x+34+h*.1,yb+10);X.closePath();X.fill()}
+  const sale=eio(seg(t,xs+.05,xs+.6)),canto=eio(seg(t,xs-.3,xs+.05)),tiemb=golpe(t,xf-.05,.7);
+  const x=L+540+Math.sin(t*.9)*30+sale*1500,y=1040+Math.sin(t*1.7)*20-sale*260,rot=Math.sin(t*1.1)*.05+tiemb*.1-sale*.25;
+  const gl=X.createRadialGradient(x,y,40,x,y,520);gl.addColorStop(0,`rgba(255,246,201,${.2*(1-sale)})`);gl.addColorStop(1,'rgba(255,246,201,0)');X.fillStyle=gl;X.fillRect(x-560,y-560,1120,1120);
+  platilloPapel(x,y,1.35,{rot,sx:lerp(1,.07,canto)})})}
 // ---------- P01 · desde la cabina: nueve destellos cruzan de pico a pico ----------
 function reloj(x,y,r,u){X.fillStyle='#0d1015';X.beginPath();X.arc(x,y,r*1.14,0,7);X.fill();X.fillStyle='#e9e2d2';X.beginPath();X.arc(x,y,r,0,7);X.fill();X.strokeStyle=TINTA;X.lineCap='round';for(let i=0;i<12;i++){const q=i*Math.PI/6;X.lineWidth=i%3?3:6;X.beginPath();X.moveTo(x+Math.cos(q)*r*.78,y+Math.sin(q)*r*.78);X.lineTo(x+Math.cos(q)*r*.9,y+Math.sin(q)*r*.9);X.stroke()}
  const a=-Math.PI/2+u*Math.PI*2;X.strokeStyle='#c0392b';X.lineWidth=r*.07;X.beginPath();X.moveTo(x,y);X.lineTo(x+Math.cos(a)*r*.72,y+Math.sin(a)*r*.72);X.stroke();X.fillStyle=TINTA;X.beginPath();X.arc(x,y,r*.09,0,7);X.fill();X.fillStyle='#8e98a4';rr(x-r*.14,y-r*1.36,r*.28,r*.26,r*.06);X.fill()}
@@ -26,13 +48,13 @@ function cabina(L,t,u,o){const g='#11151b';X.fillStyle=g;X.fillRect(L-300,-400,1
  // libreta con lápiz y, en la línea 2, la fecha
  X.save();X.translate(L+850,1335);X.rotate(-.08);X.fillStyle=PAPEL;X.fillRect(-120,-40,240,150);X.strokeStyle=LIN;X.lineWidth=3;X.strokeRect(-120,-40,240,150);if(o.fecha>0){txt('JUNE',0,2,40,TINTA,{w:220,a:o.fecha});txt('1947',0,58,60,TINTA,{w:220,a:o.fecha})}X.restore();
  X.save();X.translate(L+250+Math.sin(t*1.3)*14,1318);X.rotate(.05+Math.sin(t*1.3)*.03);X.fillStyle='#e9b949';X.fillRect(-110,-9,200,18);X.strokeStyle=LIN;X.lineWidth=2;X.strokeRect(-110,-9,200,18);X.fillStyle='#e9d2a8';X.beginPath();X.moveTo(90,-9);X.lineTo(122,0);X.lineTo(90,9);X.closePath();X.fill();X.stroke();X.restore()}
-function p01(L,t){const x2=T.c01b,xn=T.x_nine,fin=T.c02a,xf=T.x_few;
- const tr=Math.sin(t*37)*1.6,base=lerp(.02,1.06,seg(t,.2,fin)),u=seg(t,xf+.15,fin);
- const z=lerp(1,1.1,eio(seg(t,0,fin)));
+function p01(L,t){const x2=T.c01b,xn=T.x_nine,fin=T.c02a,k=x2+1.5;   // desde el 27-nov entra en la línea 2: todo se mide desde x2
+ const tr=Math.sin(t*37)*1.6,base=lerp(.02,1.06,seg(t,x2+.05,fin)),u=seg(t,k,fin);
+ const z=lerp(1,1.1,eio(seg(t,x2,fin)));
  cam(L,540,880,z,540+tr,880,()=>{cielo(L,'#1c2b4a','#6c86ad',1250);nubes(L,t,520,.10);montes(L,0);nubes(L,t+40,900,.08);
   for(let i=0;i<9;i++){const q=base-i*.05;if(q>0&&q<1.04){const x=L+lerp(130,1010,q),y=760-70*Math.sin(q*Math.PI)+24*Math.sin(q*16+i),br=.55+.45*Math.sin(t*9+i*1.9)+1.2*golpe(t,xn+i*.07,.3);destello(x,y,(14+7*q)*(1+.4*golpe(t,xn+i*.07,.3)),Math.min(1,br+.2)*seg(q,0,.04))}}});
  cabina(L,t,u,{fecha:eio(seg(t,x2+.15,x2+.6))});
- const p=eio(seg(t,xf-.4,xf+.1))*(1-eio(seg(t,xf+.3,xf+.9)));if(p>0){const hx=L+520+40,hy=1480-130-20+(1-p)*500,o=origen(hx+(1-p)*300,hy,-1.25,1.2,-1,150,20);manoLado(o[0],o[1],-1.25,1.2,-1,Object.assign({},MANO,{curl:[.2,.5,.55,.6],pulgar:.5}))}}
+ const p=eio(seg(t,k-.55,k-.05))*(1-eio(seg(t,k+.15,k+.75)));if(p>0){const hx=L+520+40,hy=1480-130-20+(1-p)*500,o=origen(hx+(1-p)*300,hy,-1.25,1.2,-1,150,20);manoLado(o[0],o[1],-1.25,1.2,-1,Object.assign({},MANO,{curl:[.2,.5,.55,.6],pulgar:.5}))}}
 // ---------- P02a · rápidos: las estelas; la trayectoria queda como línea punteada ----------
 function avion(x,y,s){X.save();X.translate(x,y);X.scale(s,s);X.fillStyle='#0f1622';X.beginPath();X.ellipse(0,0,90,16,0,0,7);X.fill();X.beginPath();X.moveTo(-20,0);X.lineTo(10,-70);X.lineTo(34,-70);X.lineTo(30,0);X.closePath();X.fill();X.beginPath();X.moveTo(-84,-4);X.lineTo(-96,-40);X.lineTo(-78,-40);X.lineTo(-62,-4);X.closePath();X.fill();X.fillRect(88,-22,6,44);X.restore()}
 function p02a(L,t){const c=T.c02a,xf=T.x_faster,fin=T.c02b,congela=eio(seg(t,fin-.75,fin-.3));
@@ -119,7 +141,7 @@ function p07(L,t){const c=T.c07,xa=T.x_something,xb=T.x_boom,xn=T.x_notround,xs=
   else if(t>xq-.2){const e2=eio(seg(t,xq-.2,xq+.4))*(1-eio(seg(t,xq+1.5,xq+2.1)));manoArriba(L+560+(1-e2)*900,1040-toca*26+(1-e2)*700,1.25,{manga:MANO.manga,puno:MANO.puno,graf:true})}});
  cierreCanal(L,t,k)}
 
-NUEVOS.dc_rabbit22_p01=SET(p01);NUEVOS.dc_rabbit22_p02a=SET(p02a);NUEVOS.dc_rabbit22_p02b=SET(p02b);NUEVOS.dc_rabbit22_p03=SET(p03);NUEVOS.dc_rabbit22_p04a=SET(p04a);NUEVOS.dc_rabbit22_p04b=SET(p04b);
+NUEVOS.dc_rabbit22_p00=SET(p00);NUEVOS.dc_rabbit22_p01=SET(p01);NUEVOS.dc_rabbit22_p02a=SET(p02a);NUEVOS.dc_rabbit22_p02b=SET(p02b);NUEVOS.dc_rabbit22_p03=SET(p03);NUEVOS.dc_rabbit22_p04a=SET(p04a);NUEVOS.dc_rabbit22_p04b=SET(p04b);
 NUEVOS.dc_rabbit22_p05=SET(p05);NUEVOS.dc_rabbit22_p06=SET(p06);NUEVOS.dc_rabbit22_p07=SET(p07);
 })();
 // ===== DC · RABBIT22 · FIN =====
