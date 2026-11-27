@@ -127,9 +127,16 @@ def montar(v, mudo=None, salida=None):
     ln = f"volume={-14.0 - float(med['input_i']):.2f}dB,alimiter=limit=0.84:level=false:attack=5:release=150"
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(mudo), "-i", str(tmp), "-af", ln, "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
                     "-shortest", "-movflags", "+faststart", str(salida)], check=True)
-    tmp.unlink()
-    r = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(salida), "-af", "ebur128=peak=true", "-f", "null", "-"], capture_output=True, text=True).stderr
-    i = r.rindex("Integrated loudness"); print("volumen:", " ".join(r[i:i + 60].split()))
+    def medir():
+        r = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(salida), "-af", "ebur128=peak=true", "-f", "null", "-"], capture_output=True, text=True).stderr
+        i = r.rindex("Integrated loudness"); return float(r[i:i + 60].split()[3])
+    lu = medir()
+    if lu < -14.8:                                   # el limitador bajó de más: una segunda pasada con la diferencia
+        ln2 = f"volume={-14.0 - float(med['input_i']) + (-14.3 - lu):.2f}dB,alimiter=limit=0.84:level=false:attack=5:release=150"
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(mudo), "-i", str(tmp), "-af", ln2, "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
+                        "-shortest", "-movflags", "+faststart", str(salida)], check=True)
+        lu = medir()
+    tmp.unlink(); print(f"volumen: {lu:.1f} LUFS")
     return salida
 
 def empacar(v, carpeta=None):
