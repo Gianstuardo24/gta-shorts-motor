@@ -149,7 +149,7 @@ def montar(v, mudo=None, salida=None):
     return salida
 
 def empacar(v, carpeta=None):
-    F = pathlib.Path(carpeta or f"/mnt/user-data/outputs/lote/{v.CANAL}"); F.mkdir(parents=True, exist_ok=True)
+    F = pathlib.Path(carpeta or getattr(v, "CARPETA", None) or f"/mnt/user-data/outputs/lote/{v.CANAL}"); F.mkdir(parents=True, exist_ok=True)
     nombre = f"{v.HORA}h - " + v.TITULO.rsplit(" ", 1)[0].replace(":", "")
     video = F / f"{nombre}.mp4"; shutil.copy(v.TMP / "montado.mp4", video)
     subprocess.run([sys.executable, "/home/claude/escena/portada.py", str(video), str(v.PORTADA[1]), v.PORTADA[0], str(F / f"{nombre}.portada.jpg")], check=True, capture_output=True)

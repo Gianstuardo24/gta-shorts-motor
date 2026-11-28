@@ -4,6 +4,10 @@ import sys, subprocess, pathlib
 from PIL import Image, ImageDraw, ImageFont
 import kit
 v = kit.cargar(sys.argv[1]); video = v.TMP / "montado.mp4"
+if v.PREVIA == "auto":
+    import json
+    T = json.loads((v.DIR / "datos.json").read_text())["T"]; ini = [0.0] + [T["c" + pl[0]] for pl in v.PLANOS[1:]] + [T["fin"]]
+    v.PREVIA = [(round(ini[i] + (ini[i + 1] - ini[i]) * 0.55, 2), v.PLANOS[i][0]) for i in range(len(v.PLANOS))]
 W, H, COLS = 270, 480, 7
 fil = -(-len(v.PREVIA) // COLS); im = Image.new("RGB", (W * COLS, (H + 34) * fil), "#14110f"); d = ImageDraw.Draw(im)
 try: f = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 15)
